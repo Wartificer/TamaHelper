@@ -1,0 +1,6 @@
+[gd_scene format=3 uid="uid://7gt6kypr5uwj"]
+
+[node name="TextureRect" type="TextureRect"]
+custom_minimum_size = Vector2(0, 120)
+expand_mode = 3
+stretch_mode = 4

@@ -1,0 +1,17 @@
+[gd_scene format=3 uid="uid://ug7u8n6nbluo"]
+
+[node name="CharacterButton" type="Button"]
+custom_minimum_size = Vector2(108, 143.67)
+size_flags_horizontal = 0
+size_flags_vertical = 0
+flat = true
+
+[node name="TextureRect" type="TextureRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+expand_mode = 4
+stretch_mode = 4

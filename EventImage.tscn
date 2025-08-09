@@ -1,0 +1,4 @@
+[gd_scene format=3 uid="uid://4cpkc2c25rvq"]
+
+[node name="TextureRect" type="TextureRect"]
+stretch_mode = 2

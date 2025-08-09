@@ -1,0 +1,30 @@
+; Engine configuration file.
+; It's best edited using the editor UI and not directly,
+; since the parameters that go here are not all obvious.
+;
+; Format:
+;   [section] ; section goes between []
+;   param=value ; assign values to parameters
+
+config_version=5
+
+[application]
+
+config/name="TamaHelper"
+config/description="Utility that scans the screen and shows choice rewards in UmaMusume."
+config/version="1.0"
+run/main_scene="uid://dbqd80d1l70t4"
+config/features=PackedStringArray("4.4", "Forward Plus")
+boot_splash/image="uid://qpowt8nxanbj"
+config/icon="uid://f8wq2ycqek6e"
+
+[autoload]
+
+OCRManager="*res://OCRManager.gd"
+ImageReader="*res://ImageReader.gd"
+FuzzyTextMatcher="*res://FuzzyTextMatcher.gd"
+
+[display]
+
+window/size/viewport_width=400
+window/size/viewport_height=600
