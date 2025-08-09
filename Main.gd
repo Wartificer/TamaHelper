@@ -54,20 +54,27 @@ var character_button_scene = load("res://CharacterButton.tscn")
 func load_character_list():
 	for character in character_data:
 		var character_button = character_button_scene.instantiate()
-		character_button.get_child(0).texture = load("res://CharacterData/" + character.preview)
+		character_button.get_child(0).texture = load("res://data/characters/images/" + to_snake_case(character.name) + "-icon.png")
+		character_button.get_child(1).text = character.name
 		character_button.pressed.connect(on_character_selected.bind(character))
 		%CharacterList.add_child(character_button)
+
+func to_snake_case(text : String):
+	return text.replacen(" ", "_")
 
 ## Initialize OCR Manager
 func _ready():
 	get_screen_size()
-	character_data = load_json_data("CharacterData/data.json")
-	support_data = load_json_data("SupportData/data.json")
+	character_data = load_json_data("data/characters/data.json")
+	character_data.sort_custom(func(a, b):
+		return a["name"] < b["name"]
+	)
+	support_data = load_json_data("data/supports/data.json")
 	load_character_list()
 	load_settings()
-	# Connect to OCR signals
-	OCRManager.ocr_completed.connect(_on_ocr_completed)
-	OCRManager.ocr_failed.connect(_on_ocr_failed)
+	## Connect to OCR signals
+	#OCRManager.ocr_completed.connect(_on_ocr_completed)
+	#OCRManager.ocr_failed.connect(_on_ocr_failed)
 
 func get_screen_size():
 	screen_size = DisplayServer.screen_get_size(current_screen)
@@ -276,7 +283,7 @@ func find_dict_by_name(dict_list: Array, target_name: String) -> Dictionary:
 func set_selected_character_ui():
 	%ClickToChangeLabel.show()
 	%CareerCharacterLabel.text = "Career: " + selected_character.name
-	%SelectedCharacter.texture = load("res://CharacterData/" + selected_character.preview)
+	%SelectedCharacter.texture = load("res://data/characters/images/" + to_snake_case(selected_character.name) + "-icon.png")
 
 func _on_settings_menu_button_pressed() -> void:
 	%Settings.show()

@@ -86,8 +86,9 @@ func get_image_texts(screen_size : Vector2, matched : Dictionary, img : Image):
 		var scaled_area_size = scale_position_to_screen(screen_size, text_area.size)
 		# Extract an image of the area
 		var text_area_image = img.get_region(Rect2(scaled_pixel_position.x, scaled_pixel_position.y, scaled_area_size.x, scaled_area_size.y))
+
 		# Extract text from the image area
-		var text : String = await OCRManager.extract_text_tesseract(text_area_image)
+		var text : String = await OCRManager.extract_text_from_image_async(text_area_image)
 		print("Extracted text: " + text)
 		texts.push_back(text)
 	return texts

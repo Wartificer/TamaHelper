@@ -20,7 +20,6 @@ config/icon="uid://f8wq2ycqek6e"
 
 [autoload]
 
-OCRManager="*res://OCRManager.gd"
 ImageReader="*res://ImageReader.gd"
 FuzzyTextMatcher="*res://FuzzyTextMatcher.gd"
 

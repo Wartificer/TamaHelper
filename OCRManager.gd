@@ -1,188 +1,44 @@
-# OCR_Manager.gd
-# Tesseract OCR with threading support
-extends Node
+class_name OCRManager
+extends RefCounted
 
-signal ocr_completed(text: String)
-signal ocr_failed(error: String)
+# For async operations, we need a node-based singleton
+static var _singleton: OCRManagerSingleton
 
-var _thread: Thread
-var _mutex: Mutex
-var _should_exit: bool = false
-var _ocr_queue: Array = []
-var _pending_requests: Dictionary = {}
-var _request_counter: int = 0
+static func get_singleton() -> OCRManagerSingleton:
+	if not _singleton:
+		_singleton = OCRManagerSingleton.new()
+		# Add to scene tree so it can handle threading
+		var main = Engine.get_main_loop() as SceneTree
+		if main and main.current_scene:
+			main.current_scene.add_child(_singleton)
+	return _singleton
 
-func _ready():
-	_thread = Thread.new()
-	_mutex = Mutex.new()
-	_thread.start(_thread_function)
+static var temp_counter: int = 0
 
-func _exit_tree():
-	# Signal thread to exit
-	_mutex.lock()
-	_should_exit = true
-	_mutex.unlock()
-	
-	# Wait for thread to finish
-	if _thread.is_started():
-		_thread.wait_to_finish()
+# ASYNC versions - these don't freeze the app
+static func extract_text_from_image_async(image: Image) -> String:
+	return await get_singleton()._extract_text_from_image_async(image)
 
-# Thread function that processes OCR requests
-func _thread_function():
-	while true:
-		# Check for exit condition
-		_mutex.lock()
-		if _should_exit:
-			_mutex.unlock()
-			break
-		
-		# Get next request if available
-		var ocr_request = null
-		if not _ocr_queue.is_empty():
-			ocr_request = _ocr_queue.pop_front()
-		_mutex.unlock()
-		
-		if ocr_request:
-			# Process the OCR request
-			_process_ocr_request(ocr_request)
-		else:
-			# Sleep briefly if no work available
-			OS.delay_msec(10)
+static func extract_text_from_file_async(image_path: String) -> String:
+	return await get_singleton()._extract_text_from_file_async(image_path)
 
-# Process OCR request in thread
-func _process_ocr_request(request: Dictionary):
-	var image = request.image as Image
-	var temp_path = request.temp_path as String
-	var request_id = request.request_id as int
-	
-	var result = _thread_extract_text_tesseract(image, temp_path)
-	
-	# Send result back to main thread
-	call_deferred("_handle_ocr_result", request_id, result)
+static func extract_text_from_texture_async(texture: ImageTexture) -> String:
+	return await get_singleton()._extract_text_from_texture_async(texture)
 
-# Tesseract OCR in thread
-func _thread_extract_text_tesseract(image: Image, temp_path: String) -> Dictionary:
-	var absolute_path = ProjectSettings.globalize_path(temp_path)
-	
-	# Save the image temporarily
-	image = preprocess_image_for_ocr(image)
-	var error = image.save_png(temp_path)
-	if error != OK:
-		return {"success": false, "error": "Failed to save temporary image: " + str(error)}
-	
-	# Prepare tesseract command with quiet option
-	var output = []
-	var tesseract_args = [absolute_path, "stdout", "quiet"]  # -q for quiet mode
-	
-	# Execute tesseract without showing window
-	var exit_code = OS.execute("tesseract", tesseract_args, output, true, false)
-	
-	# Clean up temporary file
-	DirAccess.remove_absolute(absolute_path)
-	
-	if exit_code == 0:
-		var extracted_text = ""
-		for line in output:
-			# Filter out diagnostic messages
-			var clean_line = line.strip_edges()
-			if not _is_diagnostic_message(clean_line):
-				extracted_text += line
-		
-		return {"success": true, "text": _clean_ocr_text(extracted_text)}
-	else:
-		return {"success": false, "error": "Tesseract failed with exit code: " + str(exit_code)}
+static func extract_text_advanced_async(image_path: String, language: String = "eng", page_seg_mode: int = 3) -> String:
+	return await get_singleton()._extract_text_advanced_async(image_path, language, page_seg_mode)
 
-# Helper function to identify diagnostic messages
-func _is_diagnostic_message(line: String) -> bool:
-	var diagnostic_patterns = [
-		"Estimating resolution as",
-		"Warning:",
-		"Error:",
-		"Tesseract Open Source OCR Engine",
-		"Page segmentation modes:",
-		"OCR Engine modes:",
-		"OEM",
-		"PSM"
-	]
-	
-	for pattern in diagnostic_patterns:
-		if line.begins_with(pattern):
-			return true
-	
-	return false
+# SYNC versions - these will freeze the app (use only for testing or single operations)
+static func extract_text_from_file(image_path: String) -> String:
+	var global_path = ProjectSettings.globalize_path(image_path)
+	return _run_tesseract(global_path)
 
-# Helper function to clean the extracted text
-func _clean_ocr_text(text: String) -> String:
-	# Remove excessive whitespace and normalize line endings
-	var cleaned = text.strip_edges()
+# Extract text from Image resource
+static func extract_text_from_image(image: Image) -> String:
+	# Save image to temp file
+	var temp_path = _get_temp_image_path()
 	
-	# Replace multiple consecutive newlines with single newlines
-	var regex = RegEx.new()
-	regex.compile("\\n{3,}")  # 3 or more newlines
-	cleaned = regex.sub(cleaned, "\n\n", true)  # Replace with double newline
-	
-	# Replace multiple consecutive spaces with single spaces
-	regex.compile(" {2,}")  # 2 or more spaces
-	cleaned = regex.sub(cleaned, " ", true)  # Replace with single space
-	
-	return cleaned
-
-# Handle OCR result on main thread
-func _handle_ocr_result(request_id: int, result: Dictionary):
-	if _pending_requests.has(request_id):
-		var request_data = _pending_requests[request_id]
-		_pending_requests.erase(request_id)
-		
-		if result.success:
-			request_data.result = result.text
-			request_data.completed = true
-		else:
-			request_data.error = result.error
-			request_data.completed = true
-			push_error("OCR Error: " + result.error)
-
-# Main OCR function - queues work and returns result when complete
-func extract_text_tesseract(image: Image, temp_path: String = "user://temp_ocr_image.png") -> String:
-	# Generate unique request ID
-	_request_counter += 1
-	var request_id = _request_counter
-	
-	# Create request data
-	var request_data = {
-		"result": "",
-		"error": "",
-		"completed": false
-	}
-	
-	# Store pending request
-	_pending_requests[request_id] = request_data
-	
-	# Queue the OCR request
-	var request = {
-		"image": image,
-		"temp_path": temp_path + str(request_id) + ".png",  # Unique filename
-		"request_id": request_id
-	}
-	
-	_mutex.lock()
-	_ocr_queue.append(request)
-	_mutex.unlock()
-	
-	# Wait for completion
-	while not request_data.completed:
-		await get_tree().process_frame
-	
-	# Return result
-	if request_data.error != "":
-		return ""
-	else:
-		return request_data.result
-
-# Utility function to preprocess image for better OCR results
-func preprocess_image_for_ocr(image: Image) -> Image:
-	# Convert to grayscale for better OCR
 	var processed_image = image.duplicate()
-	
 	# Simple grayscale conversion
 	for x in range(processed_image.get_width()):
 		for y in range(processed_image.get_height()):
@@ -199,18 +55,152 @@ func preprocess_image_for_ocr(image: Image) -> Image:
 			Image.INTERPOLATE_LANCZOS
 		)
 	
-	return processed_image
+	processed_image.save_png(temp_path)
+	
+	# Extract text
+	var result = _run_tesseract(temp_path)
+	
+	# Clean up temp file
+	DirAccess.remove_absolute(temp_path)
+	
+	return result
 
-# Check if OCR queue is busy
-func is_ocr_processing() -> bool:
-	_mutex.lock()
-	var busy = not _ocr_queue.is_empty()
-	_mutex.unlock()
-	return busy
+# Extract text from ImageTexture
+static func extract_text_from_texture(texture: ImageTexture) -> String:
+	var image = texture.get_image()
+	return extract_text_from_image(image)
 
-# Get number of pending OCR requests
-func get_queue_size() -> int:
-	_mutex.lock()
-	var size = _ocr_queue.size()
-	_mutex.unlock()
-	return size
+# Main function that calls Tesseract
+static func _run_tesseract(image_path: String) -> String:
+	var tesseract_path = ProjectSettings.globalize_path("res://tesseract/tesseract.exe")
+	var tessdata_path = ProjectSettings.globalize_path("res://tesseract/tessdata")
+	
+	# Prepare command arguments
+	var args = [
+		"--tessdata-dir", tessdata_path,
+		"-l", "eng",  # Language (change as needed)
+		image_path,
+		"stdout",  # Output to stdout instead of file
+		"quiet"
+	]
+	
+	# Execute Tesseract (changed last parameter from true to false to hide CMD window)
+	var output = []
+	var exit_code = OS.execute(tesseract_path, args, output, true, false)
+	if exit_code != 0:
+		push_error("Tesseract failed with exit code: " + str(exit_code))
+		if output.size() > 0:
+			push_error("Error output: " + str(output))
+		return ""
+	
+	# Join output lines and return
+	if output.size() > 0:
+		return "\n".join(output).strip_edges()
+	else:
+		return ""
+
+# Generate unique temp file path
+static func _get_temp_image_path() -> String:
+	temp_counter += 1
+	var temp_dir = ProjectSettings.globalize_path("res://temp_images/")
+	
+	# Ensure temp directory exists
+	if not DirAccess.dir_exists_absolute(temp_dir):
+		DirAccess.make_dir_recursive_absolute(temp_dir)
+	
+	return temp_dir + "temp_ocr_" + str(temp_counter) + ".png"
+
+# Advanced: Extract text with custom options
+static func extract_text_advanced(image_path: String, language: String = "eng", page_seg_mode: int = 3) -> String:
+	var tesseract_path = ProjectSettings.globalize_path("res://tesseract/tesseract.exe")
+	var tessdata_path = ProjectSettings.globalize_path("res://tesseract/tessdata")
+	var global_image_path = ProjectSettings.globalize_path(image_path)
+	
+	var args = [
+		"--tessdata-dir", tessdata_path,
+		"-l", language,
+		"--psm", str(page_seg_mode),  # Page segmentation mode
+		global_image_path,
+		"stdout"
+	]
+	
+	var output = []
+	var exit_code = OS.execute(tesseract_path, args, output, true, false)  # Changed to false
+	
+	if exit_code != 0:
+		push_error("Tesseract failed with exit code: " + str(exit_code))
+		return ""
+	
+	if output.size() > 0:
+		return "\n".join(output).strip_edges()
+	else:
+		return ""
+
+# Get available languages
+static func get_available_languages() -> Array[String]:
+	var tesseract_path = ProjectSettings.globalize_path("res://tesseract/tesseract.exe")
+	var tessdata_path = ProjectSettings.globalize_path("res://tesseract/tessdata")
+	
+	var args = ["--tessdata-dir", tessdata_path, "--list-langs"]
+	var output = []
+	var exit_code = OS.execute(tesseract_path, args, output, true, false)  # Changed to false
+	
+	if exit_code != 0:
+		return ["eng"]  # Fallback
+	
+	var languages: Array[String] = []
+	for line in output:
+		var lang = line.strip_edges()
+		if lang != "" and lang != "List of available languages (1):":
+			languages.append(lang)
+	
+	return languages
+
+# Node-based singleton for async operations
+class OCRManagerSingleton extends Node:
+	
+	# Async version of extract_text_from_image
+	func _extract_text_from_image_async(image: Image) -> String:
+		return await _run_in_thread(func(): return OCRManager.extract_text_from_image(image))
+	
+	# Async version of extract_text_from_file  
+	func _extract_text_from_file_async(image_path: String) -> String:
+		return await _run_in_thread(func(): return OCRManager.extract_text_from_file(image_path))
+	
+	# Async version of extract_text_from_texture
+	func _extract_text_from_texture_async(texture: ImageTexture) -> String:
+		return await _run_in_thread(func(): return OCRManager.extract_text_from_texture(texture))
+	
+	# Async version of extract_text_advanced
+	func _extract_text_advanced_async(image_path: String, language: String, page_seg_mode: int) -> String:
+		return await _run_in_thread(func(): return OCRManager.extract_text_advanced(image_path, language, page_seg_mode))
+	
+	# Generic function to run any callable in a thread
+	func _run_in_thread(callable: Callable) -> String:
+		var thread = Thread.new()
+		var mutex = Mutex.new()
+		var result_data = {"text": "", "finished": false}
+		
+		# Thread function
+		var thread_func = func():
+			var result = callable.call()
+			mutex.lock()
+			result_data.text = result
+			result_data.finished = true
+			mutex.unlock()
+		
+		# Start thread
+		thread.start(thread_func)
+		
+		# Wait for completion
+		while true:
+			await get_tree().process_frame
+			mutex.lock()
+			var finished = result_data.finished
+			var text = result_data.text
+			mutex.unlock()
+			
+			if finished:
+				thread.wait_to_finish()
+				return text
+		return ""
