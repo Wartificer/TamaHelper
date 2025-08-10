@@ -34,6 +34,11 @@ Lastly, I'll be updating it as I use it. Right now it only detects multiple choi
 <img width="376" height="84" alt="image" src="https://github.com/user-attachments/assets/9b280be0-d7cd-4684-9aed-7e30a4ec7aba" />
 
 
+## Plans for the future:
+1) Add a timeline of G1 races + Notify current turn G1 races available. Useful for farming G1 Sparks.
+2) Add a timeline to inspiration + beach vacation. Useful for planning stamina.
+
+
 ## License:
 **MIT License**
 
