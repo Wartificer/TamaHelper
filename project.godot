@@ -20,6 +20,7 @@ config/icon="uid://f8wq2ycqek6e"
 
 [autoload]
 
+Utils="*res://Utils.gd"
 ImageReader="*res://ImageReader.gd"
 FuzzyTextMatcher="*res://FuzzyTextMatcher.gd"
 
@@ -27,3 +28,7 @@ FuzzyTextMatcher="*res://FuzzyTextMatcher.gd"
 
 window/size/viewport_width=400
 window/size/viewport_height=600
+
+[gui]
+
+theme/custom_font="uid://djyn5xlw44y00"

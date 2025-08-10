@@ -54,13 +54,14 @@ var character_button_scene = load("res://CharacterButton.tscn")
 func load_character_list():
 	for character in character_data:
 		var character_button = character_button_scene.instantiate()
-		character_button.get_child(0).texture = load("res://data/characters/images/" + to_snake_case(character.name) + "-icon.png")
+		var image = load("res://data/characters/images/" + Utils.to_snake_case(character.name) + "-icon.png")
+		if !image:
+			image = load("res://Images/missing-image.png")
+		character_button.get_child(0).texture = image
 		character_button.get_child(1).text = character.name
 		character_button.pressed.connect(on_character_selected.bind(character))
 		%CharacterList.add_child(character_button)
 
-func to_snake_case(text : String):
-	return text.replacen(" ", "_")
 
 ## Initialize OCR Manager
 func _ready():
@@ -139,15 +140,13 @@ func _on_disable_anims_toggled(toggled_on: bool) -> void:
 	save_settings()
 
 
-var item_image_scene = load("res://ItemImage.tscn")
-var event_image_scene = load("res://EventImage.tscn")
 func process_capture(capture : Image):
 	var result = ImageReader.check_matching_pixels(screen_size, capture)
 	# If there was no match, stop
 	if result == {}:
 		return
 	
-	print("MATCHING: " + result.label)
+	#print("MATCHING: " + result.label)
 	
 	## If there is something matching on screen, get the text inside the designated areas
 	var texts_result : Array[String] = await ImageReader.get_image_texts(screen_size, result, capture)
@@ -165,28 +164,32 @@ func process_capture(capture : Image):
 		for text in texts_result:
 			var found
 			# Find text in character data
-			found = find_text_in_data([selected_character], "res://CharacterData/", text)
+			found = find_text_in_data([selected_character], "character", "res://data/characters/", text)
 			# Find text in supports instead
 			if !found:
-				found = find_text_in_data(support_data, "res://SupportData/", text)
+				found = find_text_in_data(support_data, "support", "res://data/supports/", text)
 				
 			# If an event was found for text, present it
 			if found:
 				show_event_info(found)
 
 # Replace your original function with this fuzzy version
-func find_text_in_data(data : Variant, path: String, text : String) -> Variant:
-	return FuzzyTextMatcher.find_text_in_data_fuzzy(data, path, text, 0.85)
+func find_text_in_data(data : Variant, type : String, path: String, text : String) -> Variant:
+	return FuzzyTextMatcher.find_text_in_data_fuzzy(data, type, path, text, 0.85)
 
+var item_image_scene = load("res://ItemImage.tscn")
+var event_texts_scene = load("res://EventTexts.tscn")
 func show_event_info(info : Dictionary):
-	var item_image = load(info.path + info.item)
-	var event_image = load(info.path + info.event)
+	var item_image = load(info.path + "images/" + info.image + ".png")
+	if !item_image:
+		item_image = load("res://Images/missing-image.png")
 	# Show Item image
 	%ItemPreview.texture = item_image
-	# Show Item event
-	var item_event_image = event_image_scene.instantiate()
-	item_event_image.texture = event_image
-	INFO_CONTAINER.add_child(item_event_image)
+	
+	# Show Item event text
+	var item_event_texts = event_texts_scene.instantiate()
+	item_event_texts.present(info.texts)
+	INFO_CONTAINER.add_child(item_event_texts)
 	
 	if !disable_anims:
 		play_random_animation()
@@ -204,7 +207,6 @@ func play_random_animation():
 	var selected_animation = get_weighted_random_animation()
 	if selected_animation != "":
 		TAMANIMATION_PLAYER.play(selected_animation)
-		print("Playing animation: ", selected_animation)
 
 func get_weighted_random_animation() -> String:
 	if animations.is_empty():
@@ -245,7 +247,6 @@ func save_settings():
 	config.set_value("career", "character", selected_character.name if selected_character != {} else "")
 	
 	config.save(SETTINGS_FILE)
-	print("Settings saved!")
 
 func load_settings():
 	var err = config.load(SETTINGS_FILE)
@@ -271,8 +272,6 @@ func load_settings():
 		selected_character = find_dict_by_name(character_data, saved_selected_character)
 		if selected_character.has("preview"):
 			set_selected_character_ui()
-	
-	print("Settings loaded!")
 
 func find_dict_by_name(dict_list: Array, target_name: String) -> Dictionary:
 	for dict in dict_list:
@@ -283,7 +282,7 @@ func find_dict_by_name(dict_list: Array, target_name: String) -> Dictionary:
 func set_selected_character_ui():
 	%ClickToChangeLabel.show()
 	%CareerCharacterLabel.text = "Career: " + selected_character.name
-	%SelectedCharacter.texture = load("res://data/characters/images/" + to_snake_case(selected_character.name) + "-icon.png")
+	%SelectedCharacter.texture = load("res://data/characters/images/" + Utils.to_snake_case(selected_character.name) + "-icon.png")
 
 func _on_settings_menu_button_pressed() -> void:
 	%Settings.show()

@@ -1,0 +1,9 @@
+[gd_resource type="Theme" load_steps=2 format=3 uid="uid://dws1jwukuyny2"]
+
+[ext_resource type="FontFile" uid="uid://cfchokkffmto5" path="res://fonts/Galindo/Galindo-Regular.ttf" id="1_3rehe"]
+
+[resource]
+default_font = ExtResource("1_3rehe")
+RichTextLabel/colors/font_shadow_color = Color(0, 0, 0, 1)
+RichTextLabel/constants/shadow_offset_x = 2
+RichTextLabel/constants/shadow_offset_y = 3

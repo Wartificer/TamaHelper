@@ -62,8 +62,8 @@ func scale_position_to_screen(screen_size, reference_pos: Vector2) -> Vector2:
 	# Calculate scaling factors
 	var scale_x = screen_size.x / float(REFERENCE_WIDTH)
 	var scale_y = screen_size.y / float(REFERENCE_HEIGHT)
-	print(screen_size)
-	print(REFERENCE_HEIGHT)
+	#print(screen_size)
+	#print(REFERENCE_HEIGHT)
 	
 	# Scale the position
 	var scaled_pos = Vector2(
@@ -78,7 +78,6 @@ func scale_position_to_screen(screen_size, reference_pos: Vector2) -> Vector2:
 
 ## Gets text inside the areas from the matched check
 func get_image_texts(screen_size : Vector2, matched : Dictionary, img : Image):
-	print("GETTING IMAGE TEXT")
 	var texts : Array[String] = []
 	# For each "text_area" in a matched check
 	for text_area in matched.text_areas:
@@ -89,7 +88,7 @@ func get_image_texts(screen_size : Vector2, matched : Dictionary, img : Image):
 
 		# Extract text from the image area
 		var text : String = await OCRManager.extract_text_from_image_async(text_area_image)
-		print("Extracted text: " + text)
+		#print("Extracted text: " + text)
 		texts.push_back(text)
 	return texts
 	

@@ -120,7 +120,7 @@ static func jaro_similarity(s1: String, s2: String) -> float:
 			float(matches - transpositions/2) / matches) / 3.0
 
 # Find fuzzy match in your specific data structure
-static func find_text_in_data_fuzzy(data: Variant, path: String, text: String, threshold: float = 0.85) -> Variant:
+static func find_text_in_data_fuzzy(data: Variant, type : String, path: String, text: String, threshold: float = 0.85) -> Variant:
 	var cleaned_text = clean_ocr_text(text)
 	var best_match = null
 	var best_similarity = 0.0
@@ -128,21 +128,35 @@ static func find_text_in_data_fuzzy(data: Variant, path: String, text: String, t
 	# First pass: try exact match
 	for item in data:
 		for event in item.events:
-			for event_key in event.keys():
-				if event_key.to_lower() == cleaned_text.to_lower():
-					return {"item": item.preview, "path": path, "event": event[event_key], "similarity": 1.0}
+			if event.name.to_lower() == cleaned_text.to_lower():
+				return {
+					"image": Utils.to_snake_case(item.name) if type == "character" else get_support_image(item),
+					"path": path,
+					"texts": event.text,
+					"similarity": 1.0
+				}
 	
 	# Second pass: fuzzy matching
 	for item in data:
 		for event in item.events:
-			for event_key in event.keys():
-				var similarity = similarity_percentage(cleaned_text.to_lower(), event_key.to_lower())
-				
-				if similarity > best_similarity and similarity >= threshold:
-					best_similarity = similarity
-					best_match = {"item": item.preview, "path": path, "event": event[event_key], "similarity": similarity}
+			var similarity = similarity_percentage(cleaned_text.to_lower(), event.name.to_lower())
+			if similarity > best_similarity and similarity >= threshold:
+				best_similarity = similarity
+				best_match = {
+					"image": Utils.to_snake_case(item.name) if type == "character" else get_support_image(item),
+					"path": path,
+					"texts": event.text,
+					"similarity": similarity
+				}
 	
 	return best_match if best_match else false
+
+static func get_support_image(item : Dictionary) -> String:
+	var filename = ""
+	filename += item.type.capitalize() + "_"
+	filename += item.rarity.to_upper() + "_"
+	filename += Utils.to_snake_case(item.name)
+	return filename
 
 # Alternative version that returns all matches above threshold (useful for debugging)
 static func find_all_matches_in_data(data: Variant, path: String, text: String, threshold: float = 0.85) -> Array:

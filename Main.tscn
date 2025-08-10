@@ -1,12 +1,13 @@
-[gd_scene load_steps=14 format=3 uid="uid://dbqd80d1l70t4"]
+[gd_scene load_steps=15 format=3 uid="uid://dbqd80d1l70t4"]
 
-[ext_resource type="Theme" uid="uid://bsi5c1o138wn4" path="res://Theme.tres" id="1_fos0i"]
+[ext_resource type="Theme" uid="uid://bsi5c1o138wn4" path="res://Theme/Theme.tres" id="1_fos0i"]
 [ext_resource type="Script" uid="uid://beuccnthoabwk" path="res://Main.gd" id="1_glv2v"]
 [ext_resource type="Texture2D" uid="uid://qpowt8nxanbj" path="res://Images/tamamo.png" id="2_r0du0"]
 [ext_resource type="Texture2D" uid="uid://b2ypti31necbr" path="res://Images/icon-config.svg" id="3_3dxm6"]
 [ext_resource type="Texture2D" uid="uid://dhghiuefn05vy" path="res://Images/tamamo-handyou.png" id="3_cm0pq"]
 [ext_resource type="Texture2D" uid="uid://yib5kbnmqiot" path="res://Images/tamamo-handup.png" id="4_fos0i"]
 [ext_resource type="Texture2D" uid="uid://bfde0cfunamdg" path="res://Images/select-character-placeholder.png" id="4_trn2v"]
+[ext_resource type="Theme" uid="uid://dws1jwukuyny2" path="res://Theme/ChoicesTheme.tres" id="5_03owx"]
 [ext_resource type="Texture2D" uid="uid://dn3bjstcka6te" path="res://Images/icon-close.svg" id="7_lgr22"]
 
 [sub_resource type="Animation" id="Animation_lgr22"]
@@ -309,19 +310,22 @@ stretch_mode = 6
 layout_mode = 2
 size_flags_vertical = 3
 
-[node name="VBoxContainer" type="VBoxContainer" parent="VBoxContainer2/VBoxContainer/PanelContainer/VBoxContainer/PanelContainer/VBoxContainer/ScrollContainer"]
+[node name="MarginContainer" type="MarginContainer" parent="VBoxContainer2/VBoxContainer/PanelContainer/VBoxContainer/PanelContainer/VBoxContainer/ScrollContainer"]
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
+theme_override_constants/margin_left = 40
+theme_override_constants/margin_top = 40
+theme_override_constants/margin_right = 40
+theme_override_constants/margin_bottom = 40
 
-[node name="CenterContainer" type="CenterContainer" parent="VBoxContainer2/VBoxContainer/PanelContainer/VBoxContainer/PanelContainer/VBoxContainer/ScrollContainer/VBoxContainer"]
-layout_mode = 2
-size_flags_vertical = 3
-
-[node name="InfoContainer" type="VBoxContainer" parent="VBoxContainer2/VBoxContainer/PanelContainer/VBoxContainer/PanelContainer/VBoxContainer/ScrollContainer/VBoxContainer/CenterContainer"]
+[node name="InfoContainer" type="VBoxContainer" parent="VBoxContainer2/VBoxContainer/PanelContainer/VBoxContainer/PanelContainer/VBoxContainer/ScrollContainer/MarginContainer"]
 unique_name_in_owner = true
 layout_mode = 2
 size_flags_horizontal = 3
+size_flags_vertical = 6
+theme = ExtResource("5_03owx")
+theme_override_constants/separation = 20
 alignment = 1
 
 [node name="HBoxContainer" type="HBoxContainer" parent="VBoxContainer2"]
