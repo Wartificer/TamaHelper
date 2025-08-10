@@ -130,7 +130,7 @@ static func find_text_in_data_fuzzy(data: Variant, type : String, path: String, 
 		for event in item.events:
 			if event.name.to_lower() == cleaned_text.to_lower():
 				return {
-					"image": Utils.to_snake_case(item.name) if type == "character" else get_support_image(item),
+					"image": get_support_image(item) if type == "support" else Utils.to_snake_case(item.name),
 					"path": path,
 					"texts": event.text,
 					"similarity": 1.0

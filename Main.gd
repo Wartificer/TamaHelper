@@ -28,6 +28,7 @@ var previous_texts_result : Array[String]
 ## All data linking event text and their images
 var character_data : Variant
 var support_data : Variant
+var scenario_data : Variant
 
 ## Current career character
 var selected_character : Dictionary
@@ -71,6 +72,8 @@ func _ready():
 		return a["name"] < b["name"]
 	)
 	support_data = load_json_data("data/supports/data.json")
+	scenario_data = load_json_data("data/scenarios/data.json")
+	
 	load_character_list()
 	load_settings()
 	## Connect to OCR signals
@@ -165,6 +168,9 @@ func process_capture(capture : Image):
 			var found
 			# Find text in character data
 			found = find_text_in_data([selected_character], "character", "res://data/characters/", text)
+			# Find text in scenario instead
+			if !found:
+				found = find_text_in_data(scenario_data, "scenario", "res://data/scenarios/", text)
 			# Find text in supports instead
 			if !found:
 				found = find_text_in_data(support_data, "support", "res://data/supports/", text)
@@ -175,7 +181,7 @@ func process_capture(capture : Image):
 
 # Replace your original function with this fuzzy version
 func find_text_in_data(data : Variant, type : String, path: String, text : String) -> Variant:
-	return FuzzyTextMatcher.find_text_in_data_fuzzy(data, type, path, text, 0.85)
+	return FuzzyTextMatcher.find_text_in_data_fuzzy(data, type, path, text, 0.5)
 
 var item_image_scene = load("res://ItemImage.tscn")
 var event_texts_scene = load("res://EventTexts.tscn")
@@ -236,6 +242,12 @@ func get_weighted_random_animation() -> String:
 
 #region Save/Load Settings
 
+# Call this function when the application is closing
+func _notification(what):
+	if what == NOTIFICATION_WM_CLOSE_REQUEST:
+		save_settings()
+		get_tree().quit()
+
 var config = ConfigFile.new()
 
 func save_settings():
@@ -243,6 +255,12 @@ func save_settings():
 	config.set_value("program", "keep_alive", keep_alive)
 	config.set_value("program", "always_on_top", always_on_top)
 	config.set_value("program", "disable_anims", disable_anims)
+	
+	# Save window position and size
+	config.set_value("window", "position_x", DisplayServer.window_get_position().x)
+	config.set_value("window", "position_y", DisplayServer.window_get_position().y)
+	config.set_value("window", "size_x", DisplayServer.window_get_size().x)
+	config.set_value("window", "size_y", DisplayServer.window_get_size().y)
 	
 	config.set_value("career", "character", selected_character.name if selected_character != {} else "")
 	
@@ -254,6 +272,19 @@ func load_settings():
 	if err != OK:
 		print("No settings file found, using defaults")
 		return
+	
+	# Load window position and size
+	var pos_x = config.get_value("window", "position_x", -1)
+	var pos_y = config.get_value("window", "position_y", -1)
+	var size_x = config.get_value("window", "size_x", -1)
+	var size_y = config.get_value("window", "size_y", -1)
+	
+	# Only restore if valid values were saved
+	if pos_x != -1 and pos_y != -1:
+		DisplayServer.window_set_position(Vector2i(pos_x, pos_y))
+	
+	if size_x != -1 and size_y != -1:
+		DisplayServer.window_set_size(Vector2i(size_x, size_y))
 	
 	# Load values with defaults if they don't exist
 	current_screen = config.get_value("program", "screen", 0)
@@ -270,7 +301,7 @@ func load_settings():
 	var saved_selected_character = config.get_value("career", "character", "")
 	if saved_selected_character != "":
 		selected_character = find_dict_by_name(character_data, saved_selected_character)
-		if selected_character.has("preview"):
+		if selected_character.has("name"):
 			set_selected_character_ui()
 
 func find_dict_by_name(dict_list: Array, target_name: String) -> Dictionary:

@@ -31,6 +31,14 @@ var replacement_dict = {
 	"Guts-": "[img width="+icon_size+"]res://Images/icon-guts.tres[/img]",
 	"Wit+": "[img width="+icon_size+"]res://Images/icon-wit.tres[/img]",
 	"Wit-": "[img width="+icon_size+"]res://Images/icon-wit.tres[/img]",
+	"1stats": "[img width="+icon_size+"]res://Images/icon-random.tres[/img]",
+	"2stats": "[img width="+icon_size+"]res://Images/icon-random.tres[/img][img width="+icon_size+"]res://Images/icon-random.tres[/img]",
+	"3stats": "[img width="+icon_size+"]res://Images/icon-random.tres[/img][img width="+icon_size+"]res://Images/icon-random.tres[/img][img width="+icon_size+"]res://Images/icon-random.tres[/img]",
+	"4stats": "[img width="+icon_size+"]res://Images/icon-random.tres[/img][img width="+icon_size+"]res://Images/icon-random.tres[/img][img width="+icon_size+"]res://Images/icon-random.tres[/img][img width="+icon_size+"]res://Images/icon-random.tres[/img]",
+	"All+": "[img width="+icon_size+"]res://Images/icon-random.tres[/img][img width="+icon_size+"]res://Images/icon-random.tres[/img][img width="+icon_size+"]res://Images/icon-random.tres[/img][img width="+icon_size+"]res://Images/icon-random.tres[/img][img width="+icon_size+"]res://Images/icon-random.tres[/img]",
+	"All-": "[img width="+icon_size+"]res://Images/icon-random.tres[/img][img width="+icon_size+"]res://Images/icon-random.tres[/img][img width="+icon_size+"]res://Images/icon-random.tres[/img][img width="+icon_size+"]res://Images/icon-random.tres[/img][img width="+icon_size+"]res://Images/icon-random.tres[/img]",
+	"healaff": "[img width="+icon_size+"]res://Images/icon-heal.tres[/img]",
+	"healall": "[img width="+icon_size+"]res://Images/icon-heal-all.tres[/img]",
 	# Add more replacements as needed
 }
 

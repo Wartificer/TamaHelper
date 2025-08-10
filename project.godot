@@ -11,8 +11,8 @@ config_version=5
 [application]
 
 config/name="TamaHelper"
-config/description="Utility that scans the screen and shows choice rewards in UmaMusume."
-config/version="1.0"
+config/description="Companion app that scans the screen and shows choice effects in UmaMusume."
+config/version="2.0"
 run/main_scene="uid://dbqd80d1l70t4"
 config/features=PackedStringArray("4.4", "Forward Plus")
 boot_splash/image="uid://qpowt8nxanbj"
