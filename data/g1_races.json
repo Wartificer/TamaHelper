@@ -1,0 +1,486 @@
+[
+  {
+    "name": "Asahi Hai Futurity Stakes",
+    "date": "Junior Year Early Dec",
+    "terrain": "Turf",
+    "distance": "Mile",
+    "factors": [
+      "Speed",
+      "Guts"
+    ],
+    "icon": "data/race_images/asahi_hai_futurity_stakes.png"
+  },
+  {
+    "name": "Hanshin Juvenile Fillies",
+    "date": "Junior Year Early Dec",
+    "terrain": "Turf",
+    "distance": "Mile",
+    "factors": [
+      "Speed",
+      "Power"
+    ],
+    "icon": "data/race_images/hanshin_juvenile_fillies.png"
+  },
+  {
+    "name": "Hopeful Stakes",
+    "date": "Junior Year Late Dec",
+    "terrain": "Turf",
+    "distance": "Medium",
+    "factors": [
+      "Speed",
+      "Stamina"
+    ],
+    "icon": "data/race_images/hopeful_stakes.png"
+  },
+  {
+    "name": "Oka Sho",
+    "date": "Classic Year Early Apr",
+    "terrain": "Turf",
+    "distance": "Mile",
+    "factors": [
+      "{hint:Hanshin Racecourse}",
+      "Guts"
+    ],
+    "icon": "data/race_images/oka_sho.png"
+  },
+  {
+    "name": "Satsuki Sho",
+    "date": "Classic Year Early Apr",
+    "terrain": "Turf",
+    "distance": "Medium",
+    "factors": [
+      "{hint:Nakayama Racecourse}",
+      "Power"
+    ],
+    "icon": "data/race_images/satsuki_sho.png"
+  },
+  {
+    "name": "NHK Mile Cup",
+    "date": "Classic Year Early May",
+    "terrain": "Turf",
+    "distance": "Mile",
+    "factors": [
+      "Speed",
+      "Power"
+    ],
+    "icon": "data/race_images/nhk_mile_cup.png"
+  },
+  {
+    "name": "Japanese Oaks",
+    "date": "Classic Year Late May",
+    "terrain": "Turf",
+    "distance": "Medium",
+    "factors": [
+      "{hint:Tokyo Racecourse}",
+      "Stamina"
+    ],
+    "icon": "data/race_images/japanese_oaks.png"
+  },
+  {
+    "name": "Tokyo Yushun (Japanese Derby)",
+    "date": "Classic Year Late May",
+    "terrain": "Turf",
+    "distance": "Medium",
+    "factors": [
+      "{hint:Tokyo Racecourse}",
+      "Guts"
+    ],
+    "icon": "data/race_images/tokyo_yushun_japanese_derby.png"
+  },
+  {
+    "name": "Yasuda Kinen",
+    "date": "Classic Year Early Jun",
+    "terrain": "Turf",
+    "distance": "Mile",
+    "factors": [
+      "{hint:Tokyo Racecourse}",
+      "Speed"
+    ],
+    "icon": "data/race_images/yasuda_kinen.png"
+  },
+  {
+    "name": "Takarazuka Kinen",
+    "date": "Classic Year Late Jun",
+    "terrain": "Turf",
+    "distance": "Medium",
+    "factors": [
+      "{hint:Summer Runner}",
+      "Guts"
+    ],
+    "icon": "data/race_images/takarazuka_kinen.png"
+  },
+  {
+    "name": "Japan Dirt Derby",
+    "date": "Classic Year Early Jul",
+    "terrain": "Dirt",
+    "distance": "Medium",
+    "factors": [
+      "{hint:Oi Racecourse}",
+      "Power"
+    ],
+    "icon": "data/race_images/japan_dirt_derby.png"
+  },
+  {
+    "name": "Sprinters Stakes",
+    "date": "Classic Year Late Sep",
+    "terrain": "Turf",
+    "distance": "Short",
+    "factors": [
+      "{hint:Standard Distance}",
+      "Speed"
+    ],
+    "icon": "data/race_images/sprinters_stakes.png"
+  },
+  {
+    "name": "Kikuka Sho",
+    "date": "Classic Year Late Oct",
+    "terrain": "Turf",
+    "distance": "Long",
+    "factors": [
+      "{hint:Kyoto Racecourse}",
+      "Stamina"
+    ],
+    "icon": "data/race_images/kikuka_sho.png"
+  },
+  {
+    "name": "Shuka Sho",
+    "date": "Classic Year Late Oct",
+    "terrain": "Turf",
+    "distance": "Medium",
+    "factors": [
+      "{hint:Kyoto Racecourse}",
+      "Wit"
+    ],
+    "icon": "data/race_images/shuka_sho.png"
+  },
+  {
+    "name": "Tenno Sho (Autumn)",
+    "date": "Classic Year Late Oct",
+    "terrain": "Turf",
+    "distance": "Medium",
+    "factors": [
+      "{hint:Fall Runner}",
+      "Speed"
+    ],
+    "icon": "data/race_images/tenno_sho_autumn.png"
+  },
+  {
+    "name": "JBC Classic",
+    "date": "Classic Year Early Nov",
+    "terrain": "Dirt",
+    "distance": "Medium",
+    "factors": [
+      "Stamina",
+      "Guts"
+    ],
+    "icon": "data/race_images/jbc_classic.png"
+  },
+  {
+    "name": "JBC Ladies’ Classic",
+    "date": "Classic Year Early Nov",
+    "terrain": "Dirt",
+    "distance": "Mile",
+    "factors": [
+      "Speed",
+      "Guts"
+    ],
+    "icon": "data/race_images/jbc_ladies_classic.png"
+  },
+  {
+    "name": "JBC Sprint",
+    "date": "Classic Year Early Nov",
+    "terrain": "Dirt",
+    "distance": "Short",
+    "factors": [
+      "Power",
+      "Guts"
+    ],
+    "icon": "data/race_images/jbc_sprint.png"
+  },
+  {
+    "name": "Queen Elizabeth II Cup",
+    "date": "Classic Year Early Nov",
+    "terrain": "Turf",
+    "distance": "Medium",
+    "factors": [
+      "{hint:Non-Standard Distance}",
+      "Stamina"
+    ],
+    "icon": "data/race_images/queen_elizabeth_ii_cup.png"
+  },
+  {
+    "name": "Japan Cup",
+    "date": "Classic Year Late Nov",
+    "terrain": "Turf",
+    "distance": "Medium",
+    "factors": [
+      "{hint:Tokyo Racecourse}",
+      "Stamina"
+    ],
+    "icon": "data/race_images/japan_cup.png"
+  },
+  {
+    "name": "Mile Championship",
+    "date": "Classic Year Late Nov",
+    "terrain": "Turf",
+    "distance": "Mile",
+    "factors": [
+      "{hint:Standard Distance}",
+      "Speed"
+    ],
+    "icon": "data/race_images/mile_championship.png"
+  },
+  {
+    "name": "Champions Cup",
+    "date": "Classic Year Early Dec",
+    "terrain": "Dirt",
+    "distance": "Mile",
+    "factors": [
+      "{hint:Chukyo Racecourse}",
+      "Power"
+    ],
+    "icon": "data/race_images/champions_cup.png"
+  },
+  {
+    "name": "Arima Kinen",
+    "date": "Classic Year Late Dec",
+    "terrain": "Turf",
+    "distance": "Long",
+    "factors": [
+      "{hint:Nakayama Racecourse}",
+      "Guts"
+    ],
+    "icon": "data/race_images/arima_kinen.png"
+  },
+  {
+    "name": "Tokyo Daishoten",
+    "date": "Classic Year Late Dec",
+    "terrain": "Dirt",
+    "distance": "Medium",
+    "factors": [
+      "{hint:Oi Racecourse}",
+      "Power"
+    ],
+    "icon": "data/race_images/tokyo_daishoten.png"
+  },
+  {
+    "name": "February Stakes",
+    "date": "Senior Year Late Feb",
+    "terrain": "Dirt",
+    "distance": "Mile",
+    "factors": [
+      "{hint:Winter Runner}",
+      "Power"
+    ],
+    "icon": "data/race_images/february_stakes.png"
+  },
+  {
+    "name": "Osaka Hai",
+    "date": "Senior Year Late Mar",
+    "terrain": "Turf",
+    "distance": "Medium",
+    "factors": [
+      "{hint:Standard Distance}",
+      "Guts"
+    ],
+    "icon": "data/race_images/osaka_hai.png"
+  },
+  {
+    "name": "Takamatsunomiya Kinen",
+    "date": "Senior Year Late Mar",
+    "terrain": "Turf",
+    "distance": "Short",
+    "factors": [
+      "{hint:Chukyo Racecourse}",
+      "Speed"
+    ],
+    "icon": "data/race_images/takamatsunomiya_kinen.png"
+  },
+  {
+    "name": "Tenno Sho (Spring)",
+    "date": "Senior Year Late Apr",
+    "terrain": "Turf",
+    "distance": "Long",
+    "factors": [
+      "{hint:Spring Runner}",
+      "Stamina"
+    ],
+    "icon": "data/race_images/tenno_sho_spring.png"
+  },
+  {
+    "name": "Victoria Mile",
+    "date": "Senior Year Early May",
+    "terrain": "Turf",
+    "distance": "Mile",
+    "factors": [
+      "Speed",
+      "Power"
+    ],
+    "icon": "data/race_images/victoria_mile.png"
+  },
+  {
+    "name": "Yasuda Kinen",
+    "date": "Senior Year Early Jun",
+    "terrain": "Turf",
+    "distance": "Mile",
+    "factors": [
+      "{hint:Tokyo Racecourse}",
+      "Speed"
+    ],
+    "icon": "data/race_images/yasuda_kinen.png"
+  },
+  {
+    "name": "Takarazuka Kinen",
+    "date": "Senior Year Late Jun",
+    "terrain": "Turf",
+    "distance": "Medium",
+    "factors": [
+      "{hint:Summer Runner}",
+      "Guts"
+    ],
+    "icon": "data/race_images/takarazuka_kinen.png"
+  },
+  {
+    "name": "Teio Sho",
+    "date": "Senior Year Late Jun",
+    "terrain": "Dirt",
+    "distance": "Medium",
+    "factors": [
+      "{hint:Oi Racecourse}",
+      "Power"
+    ],
+    "icon": "data/race_images/teio_sho.png"
+  },
+  {
+    "name": "Sprinters Stakes",
+    "date": "Senior Year Late Sep",
+    "terrain": "Turf",
+    "distance": "Short",
+    "factors": [
+      "{hint:Standard Distance}",
+      "Speed"
+    ],
+    "icon": "data/race_images/sprinters_stakes.png"
+  },
+  {
+    "name": "Tenno Sho (Autumn)",
+    "date": "Senior Year Late Oct",
+    "terrain": "Turf",
+    "distance": "Medium",
+    "factors": [
+      "{hint:Fall Runner}",
+      "Speed"
+    ],
+    "icon": "data/race_images/tenno_sho_autumn.png"
+  },
+  {
+    "name": "JBC Classic",
+    "date": "Senior Year Early Nov",
+    "terrain": "Dirt",
+    "distance": "Medium",
+    "factors": [
+      "Stamina",
+      "Guts"
+    ],
+    "icon": "data/race_images/jbc_classic.png"
+  },
+  {
+    "name": "JBC Ladies’ Classic",
+    "date": "Senior Year Early Nov",
+    "terrain": "Dirt",
+    "distance": "Mile",
+    "factors": [
+      "Speed",
+      "Guts"
+    ],
+    "icon": "data/race_images/jbc_ladies_classic.png"
+  },
+  {
+    "name": "JBC Sprint",
+    "date": "Senior Year Early Nov",
+    "terrain": "Dirt",
+    "distance": "Short",
+    "factors": [
+      "Power",
+      "Guts"
+    ],
+    "icon": "data/race_images/jbc_sprint.png"
+  },
+  {
+    "name": "Queen Elizabeth II Cup",
+    "date": "Senior Year Early Nov",
+    "terrain": "Turf",
+    "distance": "Medium",
+    "factors": [
+      "{hint:Non-Standard Distance}",
+      "Stamina"
+    ],
+    "icon": "data/race_images/queen_elizabeth_ii_cup.png"
+  },
+  {
+    "name": "Japan Cup",
+    "date": "Senior Year Late Nov",
+    "terrain": "Turf",
+    "distance": "Medium",
+    "factors": [
+      "{hint:Tokyo Racecourse}",
+      "Stamina"
+    ],
+    "icon": "data/race_images/japan_cup.png"
+  },
+  {
+    "name": "Mile Championship",
+    "date": "Senior Year Late Nov",
+    "terrain": "Turf",
+    "distance": "Mile",
+    "factors": [
+      "{hint:Standard Distance}",
+      "Speed"
+    ],
+    "icon": "data/race_images/mile_championship.png"
+  },
+  {
+    "name": "Champions Cup",
+    "date": "Senior Year Early Dec",
+    "terrain": "Dirt",
+    "distance": "Mile",
+    "factors": [
+      "{hint:Chukyo Racecourse}",
+      "Power"
+    ],
+    "icon": "data/race_images/champions_cup.png"
+  },
+  {
+    "name": "Arima Kinen",
+    "date": "Senior Year Late Dec",
+    "terrain": "Turf",
+    "distance": "Long",
+    "factors": [
+      "{hint:Nakayama Racecourse}",
+      "Guts"
+    ],
+    "icon": "data/race_images/arima_kinen.png"
+  },
+  {
+    "name": "Tokyo Daishoten",
+    "date": "Senior Year Late Dec",
+    "terrain": "Dirt",
+    "distance": "Medium",
+    "factors": [
+      "{hint:Oi Racecourse}",
+      "Power"
+    ],
+    "icon": "data/race_images/tokyo_daishoten.png"
+  },
+  {
+    "name": "URA FinalsURA Finale",
+    "date": "---",
+    "terrain": "",
+    "distance": "",
+    "factors": [
+      "Speed",
+      "Stamina"
+    ],
+    "icon": "data/race_images/ura_finalsura_finale.png"
+  }
+]

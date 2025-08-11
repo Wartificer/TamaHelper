@@ -1,0 +1,106 @@
+[
+  {
+    "name": "Main Skill Up 1",
+    "date": "Senior Year Early Feb",
+    "factors": [
+      "Req: 60,000 Fans"
+    ],
+    "icon": "Images/icon-skill-up.png"
+  },
+  {
+    "name": "Main Skill Up 2",
+    "date": "Senior Year Early Apr",
+    "factors": [
+      "Req: 70,000 fans + Director bond green"
+    ],
+    "icon": "Images/icon-skill-up.png"
+  },
+  {
+    "name": "Main Skill Up 3",
+    "date": "Senior Year Late Dec",
+    "factors": [
+      "Req: 120,000 fans"
+    ],
+    "icon": "Images/icon-skill-up.png"
+  },
+  {
+    "name": "Main Skill Up 3",
+    "date": "Classic Year Early Jul",
+    "factors": [
+      "Beach"
+    ],
+    "icon": "Images/icon-beach.png"
+  },
+  {
+    "name": "Main Skill Up 3",
+    "date": "Classic Year Late Jul",
+    "factors": [
+      "Beach"
+    ],
+    "icon": "Images/icon-beach.png"
+  },
+  {
+    "name": "Main Skill Up 3",
+    "date": "Classic Year Early Aug",
+    "factors": [
+      "Beach"
+    ],
+    "icon": "Images/icon-beach.png"
+  },
+  {
+    "name": "Main Skill Up 3",
+    "date": "Classic Year Late Aug",
+    "factors": [
+      "Beach"
+    ],
+    "icon": "Images/icon-beach.png"
+  },
+  {
+    "name": "Main Skill Up 3",
+    "date": "Senior Year Early Jul",
+    "factors": [
+      "Beach"
+    ],
+    "icon": "Images/icon-beach.png"
+  },
+  {
+    "name": "Main Skill Up 3",
+    "date": "Senior Year Late Jul",
+    "factors": [
+      "Beach"
+    ],
+    "icon": "Images/icon-beach.png"
+  },
+  {
+    "name": "Main Skill Up 3",
+    "date": "Senior Year Early Aug",
+    "factors": [
+      "Beach"
+    ],
+    "icon": "Images/icon-beach.png"
+  },
+  {
+    "name": "Main Skill Up 3",
+    "date": "Senior Year Late Aug",
+    "factors": [
+      "Beach"
+    ],
+    "icon": "Images/icon-beach.png"
+  },
+  {
+    "name": "Main Skill Up 3",
+    "date": "Classic Year Early Apr",
+    "factors": [
+      "Inspiration"
+    ],
+    "icon": "Images/icon-inspiration.png"
+  },
+  {
+    "name": "Main Skill Up 3",
+    "date": "Senior Year Early Apr",
+    "factors": [
+      "Inspiration"
+    ],
+    "icon": "Images/icon-inspiration.png"
+  }
+]

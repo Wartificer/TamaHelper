@@ -64,6 +64,41 @@ func load_character_list():
 		%CharacterList.add_child(character_button)
 
 
+var timeline_item_scene = load("res://TimelineItem.tscn")
+func load_important_events():
+	var events_data = load_json_data("data/important_events.json")
+	
+	var dates_list = []
+	for date in Utils.dates:
+		var date_object = {"name": date, "items": []}
+		for event in events_data:
+			if event.date == date:
+				date_object.items.push_back(event)
+		dates_list.push_back(date_object)
+	
+	for date_object in dates_list:
+		var timeline_item = timeline_item_scene.instantiate()
+		timeline_item.set_data(date_object, true)
+		%ImportantEventsTimeline.add_child(timeline_item)
+
+func load_g1s():
+	var g1_data = load_json_data("data/g1_races.json")
+	
+	var dates_list = []
+	for date in Utils.dates:
+		var date_object = {"name": date, "items": []}
+		for race in g1_data:
+			if race.date == date:
+				date_object.items.push_back(race)
+		dates_list.push_back(date_object)
+	
+	for date_object in dates_list:
+		var timeline_item = timeline_item_scene.instantiate()
+		timeline_item.set_data(date_object)
+		%G1RacesTimeline.add_child(timeline_item)
+
+
+
 ## Initialize OCR Manager
 func _ready():
 	get_screen_size()
@@ -73,6 +108,9 @@ func _ready():
 	)
 	support_data = load_json_data("data/supports/data.json")
 	scenario_data = load_json_data("data/scenarios/data.json")
+	
+	load_important_events()
+	load_g1s()
 	
 	load_character_list()
 	load_settings()
@@ -143,7 +181,18 @@ func _on_disable_anims_toggled(toggled_on: bool) -> void:
 	save_settings()
 
 
+var date_position_data = {
+		"text_areas": [
+			{"pos": Vector2(260, 38), "size": Vector2(180, 18)},
+		]
+}
 func process_capture(capture : Image):
+	# Always check date to keep timeline updated
+	var date_result : Array[String] = await ImageReader.get_image_texts(screen_size, date_position_data, capture)
+	update_date(date_result[0])
+	
+	#####################################################################
+	# Check for choices
 	var result = ImageReader.check_matching_pixels(screen_size, capture)
 	# If there was no match, stop
 	if result == {}:
@@ -200,6 +249,23 @@ func show_event_info(info : Dictionary):
 	if !disable_anims:
 		play_random_animation()
 
+func update_date(date_on_screen : String):
+	for i in Utils.dates.size():
+		var date = Utils.dates[i]
+		if date == date_on_screen:
+			var date_pos = 50 * i * -1 + 75.0
+			%ImportantEventsTimeline.offset_left = date_pos
+			%G1RacesTimeline.offset_left = date_pos
+
+func show_tooltip(data):
+	if data.has("terrain"):
+		%TooltipLabel.text = data.name + "\n" + data.terrain + " - " + data.distance + "\n" + (" + ").join(data.factors)
+	else:
+		%TooltipLabel.text = (" + ").join(data.factors)
+	%Tooltip.show()
+
+func hide_tooltip():
+	%Tooltip.hide()
 
 #region Tamanimations
 
