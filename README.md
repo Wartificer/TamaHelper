@@ -11,16 +11,16 @@ This app is up-do-date with the game as of August 10, 2025.
 <img width="1110" height="391" alt="image" src="https://github.com/user-attachments/assets/88d42942-1ceb-454b-a349-4b2aade1e0c2" />
 
 ## Is it safe to use?
-I designed this app for myself, and I'm going hard at the game. That's why going back and forth between the game and my browser to check what each event choice rewards got tiring.
+I designed this app for myself, and I'm going hard at the game. That's why not getting banned is my top priority. Going back and forth between the game and my browser to check what each event choice rewards got really tiring.
 
-This app was made with this in mind "never interact with the game". The only thing this app does is capture your screen so it can read specific pixels, and if it detects choices, will read the name of the event and provide the information in real time.
+This app was made with this in mind "never interact with the game". The only thing this app does is capture your screen so it can read specific pixels, and if it detects choices, will read the name of the event and provide the information in real time. The game itself has no way of knowing this app exist while you play, so you're safe to use it.
 
 All of the images and the information used by this app is stored locally inside the executable file, so it doesn't need connection to the internet. This also means I will need to update it whenever a new character or card is released, which I intend to do at least for the time being.
 
 ## Important Considerations
-This app was designed to work on PC with a screen size of 1920x1080 and the game on full-screen. I have tested and it works with 1366x768 but I can't guarantee it'll work for any other screen sizes. This app needs to take precise colored pixels from the screen in order to detect choices appearing in-game since it doesn't interact with it in any way.
+This app was designed to work on PC with a screen size of 1920x1080 and the game on full-screen. I've tested other screen configurations and resolutions and it works on those as well, at least for 16/9. I've added fallbacks for special resolutions such as WUXGA, but can't guarantee it working.
 
-Make sure the horseshoes at the left of each choice are not obscured by your cursor or any other window, as this app looks for exact pixel colors in those icons. This also applies for the event name at the top left.
+IMPORTANT!!! - Make sure the horseshoes at the left of each choice are not obscured by your cursor or any other window, as this app looks for exact pixel colors in those icons. This also applies for the event name at the top left.
 
 <img width="213" height="281" alt="image" src="https://github.com/user-attachments/assets/512acef9-fdff-4533-90c1-c35d175e7f11" />
 <img width="500" height="185" alt="image" src="https://github.com/user-attachments/assets/258c6b73-87ea-4f09-8dae-071d3418c4c4" />
