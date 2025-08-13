@@ -30,11 +30,36 @@ IMPORTANT!!! - Make sure the horseshoes at the left of each choice are not obscu
 
 
 Lastly, I'll be updating it as I use it. Right now it only detects multiple choices of 2 and 3 buttons only. It won't work with 4 or more choices, I'll update the application as these cases appear on my playthroughs.
+</br>
+</br>
+
 
 ## How to use:
 1) Grab the app from [Releases](https://github.com/Wartificer/TamaHelper/releases) uncompress and run TamaHelper.exe. Then, click the "start" button.
 2) Use the small preview on the bottom-left to make sure your correct screen is being captured, if not, open the settings menu at the top-right and switch screens.
 <img width="376" height="84" alt="image" src="https://github.com/user-attachments/assets/9b280be0-d7cd-4684-9aed-7e30a4ec7aba" />
+</br>
+</br>
+
+## Troubleshooting:
+First before anything, make sure tha app reads the correct screen, next to the mascot there should be a miniature of your screen:
+
+<img width="400" height="96" alt="477323243-d9205553-6dd5-4399-9057-98c3c4c966a4" src="https://github.com/user-attachments/assets/2abcbf11-b609-4826-a885-fb83e478f2bd" />
+
+If the issue persists, try downloading the debug build on the lattest [Release](https://github.com/Wartificer/TamaHelper/releases) and opening the "console.exe" file, then, click "start" with "loop" OFF and the game visible. This way, the images it tries to read from the screen will be saved next to the app in folder "temp_images", you should have something like this:
+
+<img width="3000" height="300" alt="477322843-cf4432ab-aabf-46ef-ac7c-92258de91069" src="https://github.com/user-attachments/assets/9e6fae02-4aa4-49ac-801b-9fd4438d8ad7" />
+
+Also, on the console that opens next to the app, there will be some logs like this:
+
+<img width="316" height="91" alt="477322922-9894f173-54ba-4991-9f92-9d8024fe8fce" src="https://github.com/user-attachments/assets/592e86c7-0072-4069-9766-8f2e0599dc38" />
+
+Note: "No choices on screen" should instead show the name of the event if there is one on screen.
+
+If you are having issues create a new issue or contact me with this information and I'll do what I can to fix it.
+</br>
+</br>
+</br>
 
 
 
