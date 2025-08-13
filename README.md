@@ -1,10 +1,13 @@
 # TamaHelper
 <img width="128" height="128" alt="favicon" src="https://github.com/user-attachments/assets/2c0e726a-60df-4a48-ba92-f44fdb26e7d1" />
-<img width="1107" height="491" alt="image" src="https://github.com/user-attachments/assets/aea97896-9b0a-404a-bb53-8ced244e714e" />
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/50d5e4eb-8c52-4e3a-99b2-3eb6191cce46" />
+
 
 
 ## Introduction
 TamaHelper is a simple Quality-of-Life companion app for UmaMusume that automatically shows you the effects of each choice while playing, so you don't have to search them yourself.
+It also adds a timeline where you can see incoming G1 races and events such as: Beach Vacation, Inspirations, Skill-Ups. Hovering over them will provide additional information.
+<img width="1107" height="491" alt="image" src="https://github.com/user-attachments/assets/aea97896-9b0a-404a-bb53-8ced244e714e" />
 
 This app is up-do-date with the game as of August 10, 2025.
 
@@ -33,10 +36,6 @@ Lastly, I'll be updating it as I use it. Right now it only detects multiple choi
 2) Use the small preview on the bottom-left to make sure your correct screen is being captured, if not, open the settings menu at the top-right and switch screens.
 <img width="376" height="84" alt="image" src="https://github.com/user-attachments/assets/9b280be0-d7cd-4684-9aed-7e30a4ec7aba" />
 
-
-## Plans for the future:
-1) Add a timeline of G1 races + Notify current turn G1 races available. Useful for farming G1 Sparks.
-2) Add a timeline to inspiration + beach vacation. Useful for planning stamina.
 
 
 ## License:
