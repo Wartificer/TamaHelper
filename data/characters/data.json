@@ -110,7 +110,8 @@
 		]
 	  },
 	  {
-		"name": "Failed training (Get Well Soon!)",
+		"name": "Get Well Soon!",
+		"initiator": "Failed training",
 		"text": [
 		  "\nPrevious training -5\n[[possible]] Aquires {link:Practice Poor}\n[[Mood-]]-1",
 		  "\nAquires {link:Practice Perfect}\n[[or]]\nPrevious training -10\n[[possible]] Aquires {link:Practice Poor}\n[[Mood-]]-1"
@@ -177,102 +178,102 @@
 		]
 	  },
 	  {
-		"name": "Victory! (G1)",
+		"name": "Victory!", "initiator": "(G1)",
 		"text": [
 		  "[[Energy-]]-15\n[[sp+]]+45\n[[1stats]] +10\n[[possible]]Race skill hint [[hint]]",
 		  "[[Energy-]]-5/-20\n[[sp+]]+45\n[[1stats]] +10\n[[possible]]Race skill hint [[hint]]"
 		]
 	  },
 	  {
-		"name": "Victory! (G2/G3)",
+		"name": "Victory!", "initiator": "(G2/G3)",
 		"text": [
 		  "[[Energy-]]-15\n[[sp+]]+35\n[[1stats]] +8\n[[possible]]Race skill hint [[hint]]",
 		  "[[Energy-]]-5/-20\n[[sp+]]+35\n[[1stats]] +8\n[[possible]]Race skill hint [[hint]]"
 		]
 	  },
 	  {
-		"name": "Victory! (Pre/OP)",
+		"name": "Victory!", "initiator": "(Pre/OP)",
 		"text": [
 		  "[[Energy-]]-15\n[[sp+]]+30\n[[1stats]] +5\n[[possible]]Race skill hint [[hint]]",
 		  "[[Energy-]]-5/-20\n[[sp+]]+30\n[[1stats]] +5\n[[possible]]Race skill hint [[hint]]"
 		]
 	  },
 	  {
-		"name": "Solid Showing (G1)",
+		"name": "Solid Showing", "initiator": "(G1)",
 		"text": [
 		  "[[Energy-]]-20\n[[sp+]]+45\n[[1stats]] +8\n[[possible]]Race skill hint [[hint]]",
 		  "[[Energy-]]-10/-30\n[[sp+]]+45\n[[1stats]] +8\n[[possible]]Race skill hint [[hint]]"
 		]
 	  },
 	  {
-		"name": "Solid Showing (G2/G3)",
+		"name": "Solid Showing", "initiator": "(G2/G3)",
 		"text": [
 		  "[[Energy-]]-20\n[[sp+]]+35\n[[1stats]] +5\n[[possible]]Race skill hint [[hint]]",
 		  "[[Energy-]]-10/-30\n[[sp+]]+35\n[[1stats]] +5\n[[possible]]Race skill hint [[hint]]"
 		]
 	  },
 	  {
-		"name": "Solid Showing (Pre/OP)",
+		"name": "Solid Showing", "initiator": "(Pre/OP)",
 		"text": [
 		  "[[Energy-]]-20\n[[sp+]]+30\n[[1stats]] +3\n[[possible]]Race skill hint [[hint]]",
 		  "[[Energy-]]-10/-30\n[[sp+]]+30\n[[1stats]] +3\n[[possible]]Race skill hint [[hint]]"
 		]
 	  },
 	  {
-		"name": "Defeat (G1)",
+		"name": "Defeat", "initiator": "(G1)",
 		"text": [
 		  "[[Energy-]]-25\n[[sp+]]+25\n[[1stats]] +4\n[[possible]]Race skill hint [[hint]]",
 		  "[[Energy-]]-15/-35\n[[sp+]]+25\n[[1stats]] +4\n[[possible]]Race skill hint [[hint]]"
 		]
 	  },
 	  {
-		"name": "Defeat (G2/G3)",
+		"name": "Defeat", "initiator": "(G2/G3)",
 		"text": [
 		  "[[Energy-]]-25\n[[sp+]]+20\n[[1stats]] +3\n[[possible]]Race skill hint [[hint]]",
 		  "[[Energy-]]-15/-35\n[[sp+]]+20\n[[1stats]] +3\n[[possible]]Race skill hint [[hint]]"
 		]
 	  },
 	  {
-		"name": "Defeat (Pre/OP)",
+		"name": "Defeat", "initiator": "(Pre/OP)",
 		"text": [
 		  "[[Energy-]]-25\n[[sp+]]+10\n[[possible]]Race skill hint [[hint]]",
 		  "[[Energy-]]-15/-35\n[[sp+]]+10\n[[possible]]Race skill hint [[hint]]"
 		]
 	  },
 	  {
-		"name": "Etsuko's Elated Coverage (G1)",
+		"name": "Etsuko's Elated Coverage", "initiator": "(G1)",
 		"text": [
 		  "[[Energy-]]-15\n[[sp+]]+45\n[[Fans+]]+500\n[[1stats]] +10\n[[possible]]Race skill hint [[hint]]\nEtsuko Otonashi [[bond+]]+15\n[[Mood+]]+1"
 		]
 	  },
 	  {
-		"name": "Etsuko's Elated Coverage (G2/G3)",
+		"name": "Etsuko's Elated Coverage", "initiator": "(G2/G3)",
 		"text": [
 		  "[[Energy-]]-15\n[[sp+]]+35\n[[Fans+]]+500\n[[1stats]] +8\n[[possible]]Race skill hint [[hint]]\nEtsuko Otonashi [[bond+]]+15\n[[Mood+]]+1"
 		]
 	  },
 	  {
-		"name": "Etsuko's Elated Coverage (Pre/OP)",
+		"name": "Etsuko's Elated Coverage", "initiator": "(Pre/OP)",
 		"text": [
 		  "[[Energy-]]-15\n[[sp+]]+30\n[[Fans+]]+500\n[[1stats]] +5\n[[possible]]Race skill hint [[hint]]\nEtsuko Otonashi [[bond+]]+15\n[[Mood+]]+1"
 		]
 	  },
 	  {
-		"name": "Etsuko's Exhaustive Coverage (G1)",
+		"name": "Etsuko's Exhaustive Coverage", "initiator": "(G1)",
 		"text": [
 		  "[[Energy-]]-15\n[[Energy-]]-25\n[[sp+]]+25\n[[sp+]]+25\n[[1stats]] +4\n[[or]]\n[[1stats]] +4\nEtsuko Otonashi [[bond+]]+15\nEtsuko Otonashi [[bond-]]-10\n[[Mood+]]+1\n[[Mood-]]-1",
 		  "[[Energy-]]-20\n[[sp+]]+25\n[[1stats]] +4\nEtsuko Otonashi [[bond+]]+10"
 		]
 	  },
 	  {
-		"name": "Etsuko's Exhaustive Coverage (G2/G3)",
+		"name": "Etsuko's Exhaustive Coverage", "initiator": "(G2/G3)",
 		"text": [
 		  "[[Energy-]]-15\n[[Energy-]]-25\n[[sp+]]+20\n[[sp+]]+20\n[[1stats]] +3\n[[or]]\n[[1stats]] +3\nEtsuko Otonashi [[bond+]]+15\nEtsuko Otonashi [[bond-]]-10\n[[Mood+]]+1\n[[Mood-]]-1",
 		  "[[Energy-]]-20\n[[sp+]]+20\n[[1stats]] +3\nEtsuko Otonashi [[bond+]]+10"
 		]
 	  },
 	  {
-		"name": "Etsuko's Exhaustive Coverage (Pre/OP)",
+		"name": "Etsuko's Exhaustive Coverage", "initiator": "(Pre/OP)",
 		"text": [
 		  "[[Energy-]]-15\n[[Energy-]]-25\n[[sp+]]+10\n[[sp+]]+10\n[[or]]\nEtsuko Otonashi [[bond+]]+15\nEtsuko Otonashi [[bond-]]-10\n[[Mood+]]+1\n[[Mood-]]-1",
 		  "[[Energy-]]-20\n[[sp+]]+10\nEtsuko Otonashi [[bond+]]+10"
@@ -459,7 +460,8 @@
 		]
 	  },
 	  {
-		"name": "Failed training (Get Well Soon!)",
+		"name": "Get Well Soon!",
+		"initiator": "Failed training",
 		"text": [
 		  "\nPrevious training -5\n[[possible]] Aquires {link:Practice Poor}\n[[Mood-]]-1",
 		  "\nAquires {link:Practice Perfect}\n[[or]]\nPrevious training -10\n[[possible]] Aquires {link:Practice Poor}\n[[Mood-]]-1"
@@ -526,102 +528,102 @@
 		]
 	  },
 	  {
-		"name": "Victory! (G1)",
+		"name": "Victory!", "initiator": "(G1)",
 		"text": [
 		  "[[Energy-]]-15\n[[sp+]]+45\n[[1stats]] +10\n[[possible]]Race skill hint [[hint]]",
 		  "[[Energy-]]-5/-20\n[[sp+]]+45\n[[1stats]] +10\n[[possible]]Race skill hint [[hint]]"
 		]
 	  },
 	  {
-		"name": "Victory! (G2/G3)",
+		"name": "Victory!", "initiator": "(G2/G3)",
 		"text": [
 		  "[[Energy-]]-15\n[[sp+]]+35\n[[1stats]] +8\n[[possible]]Race skill hint [[hint]]",
 		  "[[Energy-]]-5/-20\n[[sp+]]+35\n[[1stats]] +8\n[[possible]]Race skill hint [[hint]]"
 		]
 	  },
 	  {
-		"name": "Victory! (Pre/OP)",
+		"name": "Victory!", "initiator": "(Pre/OP)",
 		"text": [
 		  "[[Energy-]]-15\n[[sp+]]+30\n[[1stats]] +5\n[[possible]]Race skill hint [[hint]]",
 		  "[[Energy-]]-5/-20\n[[sp+]]+30\n[[1stats]] +5\n[[possible]]Race skill hint [[hint]]"
 		]
 	  },
 	  {
-		"name": "Solid Showing (G1)",
+		"name": "Solid Showing", "initiator": "(G1)",
 		"text": [
 		  "[[Energy-]]-20\n[[sp+]]+45\n[[1stats]] +8\n[[possible]]Race skill hint [[hint]]",
 		  "[[Energy-]]-10/-30\n[[sp+]]+45\n[[1stats]] +8\n[[possible]]Race skill hint [[hint]]"
 		]
 	  },
 	  {
-		"name": "Solid Showing (G2/G3)",
+		"name": "Solid Showing", "initiator": "(G2/G3)",
 		"text": [
 		  "[[Energy-]]-20\n[[sp+]]+35\n[[1stats]] +5\n[[possible]]Race skill hint [[hint]]",
 		  "[[Energy-]]-10/-30\n[[sp+]]+35\n[[1stats]] +5\n[[possible]]Race skill hint [[hint]]"
 		]
 	  },
 	  {
-		"name": "Solid Showing (Pre/OP)",
+		"name": "Solid Showing", "initiator": "(Pre/OP)",
 		"text": [
 		  "[[Energy-]]-20\n[[sp+]]+30\n[[1stats]] +3\n[[possible]]Race skill hint [[hint]]",
 		  "[[Energy-]]-10/-30\n[[sp+]]+30\n[[1stats]] +3\n[[possible]]Race skill hint [[hint]]"
 		]
 	  },
 	  {
-		"name": "Defeat (G1)",
+		"name": "Defeat", "initiator": "(G1)",
 		"text": [
 		  "[[Energy-]]-25\n[[sp+]]+25\n[[1stats]] +4\n[[possible]]Race skill hint [[hint]]",
 		  "[[Energy-]]-15/-35\n[[sp+]]+25\n[[1stats]] +4\n[[possible]]Race skill hint [[hint]]"
 		]
 	  },
 	  {
-		"name": "Defeat (G2/G3)",
+		"name": "Defeat", "initiator": "(G2/G3)",
 		"text": [
 		  "[[Energy-]]-25\n[[sp+]]+20\n[[1stats]] +3\n[[possible]]Race skill hint [[hint]]",
 		  "[[Energy-]]-15/-35\n[[sp+]]+20\n[[1stats]] +3\n[[possible]]Race skill hint [[hint]]"
 		]
 	  },
 	  {
-		"name": "Defeat (Pre/OP)",
+		"name": "Defeat", "initiator": "(Pre/OP)",
 		"text": [
 		  "[[Energy-]]-25\n[[sp+]]+10\n[[possible]]Race skill hint [[hint]]",
 		  "[[Energy-]]-15/-35\n[[sp+]]+10\n[[possible]]Race skill hint [[hint]]"
 		]
 	  },
 	  {
-		"name": "Etsuko's Elated Coverage (G1)",
+		"name": "Etsuko's Elated Coverage", "initiator": "(G1)",
 		"text": [
 		  "[[Energy-]]-15\n[[sp+]]+45\n[[Fans+]]+500\n[[1stats]] +10\n[[possible]]Race skill hint [[hint]]\nEtsuko Otonashi [[bond+]]+15\n[[Mood+]]+1"
 		]
 	  },
 	  {
-		"name": "Etsuko's Elated Coverage (G2/G3)",
+		"name": "Etsuko's Elated Coverage", "initiator": "(G2/G3)",
 		"text": [
 		  "[[Energy-]]-15\n[[sp+]]+35\n[[Fans+]]+500\n[[1stats]] +8\n[[possible]]Race skill hint [[hint]]\nEtsuko Otonashi [[bond+]]+15\n[[Mood+]]+1"
 		]
 	  },
 	  {
-		"name": "Etsuko's Elated Coverage (Pre/OP)",
+		"name": "Etsuko's Elated Coverage", "initiator": "(Pre/OP)",
 		"text": [
 		  "[[Energy-]]-15\n[[sp+]]+30\n[[Fans+]]+500\n[[1stats]] +5\n[[possible]]Race skill hint [[hint]]\nEtsuko Otonashi [[bond+]]+15\n[[Mood+]]+1"
 		]
 	  },
 	  {
-		"name": "Etsuko's Exhaustive Coverage (G1)",
+		"name": "Etsuko's Exhaustive Coverage", "initiator": "(G1)",
 		"text": [
 		  "[[Energy-]]-15\n[[Energy-]]-25\n[[sp+]]+25\n[[sp+]]+25\n[[1stats]] +4\n[[or]]\n[[1stats]] +4\nEtsuko Otonashi [[bond+]]+15\nEtsuko Otonashi [[bond-]]-10\n[[Mood+]]+1\n[[Mood-]]-1",
 		  "[[Energy-]]-20\n[[sp+]]+25\n[[1stats]] +4\nEtsuko Otonashi [[bond+]]+10"
 		]
 	  },
 	  {
-		"name": "Etsuko's Exhaustive Coverage (G2/G3)",
+		"name": "Etsuko's Exhaustive Coverage", "initiator": "(G2/G3)",
 		"text": [
 		  "[[Energy-]]-15\n[[Energy-]]-25\n[[sp+]]+20\n[[sp+]]+20\n[[1stats]] +3\n[[or]]\n[[1stats]] +3\nEtsuko Otonashi [[bond+]]+15\nEtsuko Otonashi [[bond-]]-10\n[[Mood+]]+1\n[[Mood-]]-1",
 		  "[[Energy-]]-20\n[[sp+]]+20\n[[1stats]] +3\nEtsuko Otonashi [[bond+]]+10"
 		]
 	  },
 	  {
-		"name": "Etsuko's Exhaustive Coverage (Pre/OP)",
+		"name": "Etsuko's Exhaustive Coverage", "initiator": "(Pre/OP)",
 		"text": [
 		  "[[Energy-]]-15\n[[Energy-]]-25\n[[sp+]]+10\n[[sp+]]+10\n[[or]]\nEtsuko Otonashi [[bond+]]+15\nEtsuko Otonashi [[bond-]]-10\n[[Mood+]]+1\n[[Mood-]]-1",
 		  "[[Energy-]]-20\n[[sp+]]+10\nEtsuko Otonashi [[bond+]]+10"
@@ -822,7 +824,8 @@
 		]
 	  },
 	  {
-		"name": "Failed training (Get Well Soon!)",
+		"name": "Get Well Soon!",
+		"initiator": "Failed training",
 		"text": [
 		  "\nPrevious training -5\n[[possible]] Aquires {link:Practice Poor}\n[[Mood-]]-1",
 		  "\nAquires {link:Practice Perfect}\n[[or]]\nPrevious training -10\n[[possible]] Aquires {link:Practice Poor}\n[[Mood-]]-1"
@@ -889,102 +892,102 @@
 		]
 	  },
 	  {
-		"name": "Victory! (G1)",
+		"name": "Victory!", "initiator": "(G1)",
 		"text": [
 		  "[[Energy-]]-15\n[[sp+]]+45\n[[1stats]] +10\n[[possible]]Race skill hint [[hint]]",
 		  "[[Energy-]]-5/-20\n[[sp+]]+45\n[[1stats]] +10\n[[possible]]Race skill hint [[hint]]"
 		]
 	  },
 	  {
-		"name": "Victory! (G2/G3)",
+		"name": "Victory!", "initiator": "(G2/G3)",
 		"text": [
 		  "[[Energy-]]-15\n[[sp+]]+35\n[[1stats]] +8\n[[possible]]Race skill hint [[hint]]",
 		  "[[Energy-]]-5/-20\n[[sp+]]+35\n[[1stats]] +8\n[[possible]]Race skill hint [[hint]]"
 		]
 	  },
 	  {
-		"name": "Victory! (Pre/OP)",
+		"name": "Victory!", "initiator": "(Pre/OP)",
 		"text": [
 		  "[[Energy-]]-15\n[[sp+]]+30\n[[1stats]] +5\n[[possible]]Race skill hint [[hint]]",
 		  "[[Energy-]]-5/-20\n[[sp+]]+30\n[[1stats]] +5\n[[possible]]Race skill hint [[hint]]"
 		]
 	  },
 	  {
-		"name": "Solid Showing (G1)",
+		"name": "Solid Showing", "initiator": "(G1)",
 		"text": [
 		  "[[Energy-]]-20\n[[sp+]]+45\n[[1stats]] +8\n[[possible]]Race skill hint [[hint]]",
 		  "[[Energy-]]-10/-30\n[[sp+]]+45\n[[1stats]] +8\n[[possible]]Race skill hint [[hint]]"
 		]
 	  },
 	  {
-		"name": "Solid Showing (G2/G3)",
+		"name": "Solid Showing", "initiator": "(G2/G3)",
 		"text": [
 		  "[[Energy-]]-20\n[[sp+]]+35\n[[1stats]] +5\n[[possible]]Race skill hint [[hint]]",
 		  "[[Energy-]]-10/-30\n[[sp+]]+35\n[[1stats]] +5\n[[possible]]Race skill hint [[hint]]"
 		]
 	  },
 	  {
-		"name": "Solid Showing (Pre/OP)",
+		"name": "Solid Showing", "initiator": "(Pre/OP)",
 		"text": [
 		  "[[Energy-]]-20\n[[sp+]]+30\n[[1stats]] +3\n[[possible]]Race skill hint [[hint]]",
 		  "[[Energy-]]-10/-30\n[[sp+]]+30\n[[1stats]] +3\n[[possible]]Race skill hint [[hint]]"
 		]
 	  },
 	  {
-		"name": "Defeat (G1)",
+		"name": "Defeat", "initiator": "(G1)",
 		"text": [
 		  "[[Energy-]]-25\n[[sp+]]+25\n[[1stats]] +4\n[[possible]]Race skill hint [[hint]]",
 		  "[[Energy-]]-15/-35\n[[sp+]]+25\n[[1stats]] +4\n[[possible]]Race skill hint [[hint]]"
 		]
 	  },
 	  {
-		"name": "Defeat (G2/G3)",
+		"name": "Defeat", "initiator": "(G2/G3)",
 		"text": [
 		  "[[Energy-]]-25\n[[sp+]]+20\n[[1stats]] +3\n[[possible]]Race skill hint [[hint]]",
 		  "[[Energy-]]-15/-35\n[[sp+]]+20\n[[1stats]] +3\n[[possible]]Race skill hint [[hint]]"
 		]
 	  },
 	  {
-		"name": "Defeat (Pre/OP)",
+		"name": "Defeat", "initiator": "(Pre/OP)",
 		"text": [
 		  "[[Energy-]]-25\n[[sp+]]+10\n[[possible]]Race skill hint [[hint]]",
 		  "[[Energy-]]-15/-35\n[[sp+]]+10\n[[possible]]Race skill hint [[hint]]"
 		]
 	  },
 	  {
-		"name": "Etsuko's Elated Coverage (G1)",
+		"name": "Etsuko's Elated Coverage", "initiator": "(G1)",
 		"text": [
 		  "[[Energy-]]-15\n[[sp+]]+45\n[[Fans+]]+500\n[[1stats]] +10\n[[possible]]Race skill hint [[hint]]\nEtsuko Otonashi [[bond+]]+15\n[[Mood+]]+1"
 		]
 	  },
 	  {
-		"name": "Etsuko's Elated Coverage (G2/G3)",
+		"name": "Etsuko's Elated Coverage", "initiator": "(G2/G3)",
 		"text": [
 		  "[[Energy-]]-15\n[[sp+]]+35\n[[Fans+]]+500\n[[1stats]] +8\n[[possible]]Race skill hint [[hint]]\nEtsuko Otonashi [[bond+]]+15\n[[Mood+]]+1"
 		]
 	  },
 	  {
-		"name": "Etsuko's Elated Coverage (Pre/OP)",
+		"name": "Etsuko's Elated Coverage", "initiator": "(Pre/OP)",
 		"text": [
 		  "[[Energy-]]-15\n[[sp+]]+30\n[[Fans+]]+500\n[[1stats]] +5\n[[possible]]Race skill hint [[hint]]\nEtsuko Otonashi [[bond+]]+15\n[[Mood+]]+1"
 		]
 	  },
 	  {
-		"name": "Etsuko's Exhaustive Coverage (G1)",
+		"name": "Etsuko's Exhaustive Coverage", "initiator": "(G1)",
 		"text": [
 		  "[[Energy-]]-15\n[[Energy-]]-25\n[[sp+]]+25\n[[sp+]]+25\n[[1stats]] +4\n[[or]]\n[[1stats]] +4\nEtsuko Otonashi [[bond+]]+15\nEtsuko Otonashi [[bond-]]-10\n[[Mood+]]+1\n[[Mood-]]-1",
 		  "[[Energy-]]-20\n[[sp+]]+25\n[[1stats]] +4\nEtsuko Otonashi [[bond+]]+10"
 		]
 	  },
 	  {
-		"name": "Etsuko's Exhaustive Coverage (G2/G3)",
+		"name": "Etsuko's Exhaustive Coverage", "initiator": "(G2/G3)",
 		"text": [
 		  "[[Energy-]]-15\n[[Energy-]]-25\n[[sp+]]+20\n[[sp+]]+20\n[[1stats]] +3\n[[or]]\n[[1stats]] +3\nEtsuko Otonashi [[bond+]]+15\nEtsuko Otonashi [[bond-]]-10\n[[Mood+]]+1\n[[Mood-]]-1",
 		  "[[Energy-]]-20\n[[sp+]]+20\n[[1stats]] +3\nEtsuko Otonashi [[bond+]]+10"
 		]
 	  },
 	  {
-		"name": "Etsuko's Exhaustive Coverage (Pre/OP)",
+		"name": "Etsuko's Exhaustive Coverage", "initiator": "(Pre/OP)",
 		"text": [
 		  "[[Energy-]]-15\n[[Energy-]]-25\n[[sp+]]+10\n[[sp+]]+10\n[[or]]\nEtsuko Otonashi [[bond+]]+15\nEtsuko Otonashi [[bond-]]-10\n[[Mood+]]+1\n[[Mood-]]-1",
 		  "[[Energy-]]-20\n[[sp+]]+10\nEtsuko Otonashi [[bond+]]+10"
@@ -1178,7 +1181,8 @@
 		]
 	  },
 	  {
-		"name": "Failed training (Get Well Soon!)",
+		"name": "Get Well Soon!",
+		"initiator": "Failed training",
 		"text": [
 		  "\nPrevious training -5\n[[possible]] Aquires {link:Practice Poor}\n[[Mood-]]-1",
 		  "\nAquires {link:Practice Perfect}\n[[or]]\nPrevious training -10\n[[possible]] Aquires {link:Practice Poor}\n[[Mood-]]-1"
@@ -1245,102 +1249,102 @@
 		]
 	  },
 	  {
-		"name": "Victory! (G1)",
+		"name": "Victory!", "initiator": "(G1)",
 		"text": [
 		  "[[Energy-]]-15\n[[sp+]]+45\n[[1stats]] +10\n[[possible]]Race skill hint [[hint]]",
 		  "[[Energy-]]-5/-20\n[[sp+]]+45\n[[1stats]] +10\n[[possible]]Race skill hint [[hint]]"
 		]
 	  },
 	  {
-		"name": "Victory! (G2/G3)",
+		"name": "Victory!", "initiator": "(G2/G3)",
 		"text": [
 		  "[[Energy-]]-15\n[[sp+]]+35\n[[1stats]] +8\n[[possible]]Race skill hint [[hint]]",
 		  "[[Energy-]]-5/-20\n[[sp+]]+35\n[[1stats]] +8\n[[possible]]Race skill hint [[hint]]"
 		]
 	  },
 	  {
-		"name": "Victory! (Pre/OP)",
+		"name": "Victory!", "initiator": "(Pre/OP)",
 		"text": [
 		  "[[Energy-]]-15\n[[sp+]]+30\n[[1stats]] +5\n[[possible]]Race skill hint [[hint]]",
 		  "[[Energy-]]-5/-20\n[[sp+]]+30\n[[1stats]] +5\n[[possible]]Race skill hint [[hint]]"
 		]
 	  },
 	  {
-		"name": "Solid Showing (G1)",
+		"name": "Solid Showing", "initiator": "(G1)",
 		"text": [
 		  "[[Energy-]]-20\n[[sp+]]+45\n[[1stats]] +8\n[[possible]]Race skill hint [[hint]]",
 		  "[[Energy-]]-10/-30\n[[sp+]]+45\n[[1stats]] +8\n[[possible]]Race skill hint [[hint]]"
 		]
 	  },
 	  {
-		"name": "Solid Showing (G2/G3)",
+		"name": "Solid Showing", "initiator": "(G2/G3)",
 		"text": [
 		  "[[Energy-]]-20\n[[sp+]]+35\n[[1stats]] +5\n[[possible]]Race skill hint [[hint]]",
 		  "[[Energy-]]-10/-30\n[[sp+]]+35\n[[1stats]] +5\n[[possible]]Race skill hint [[hint]]"
 		]
 	  },
 	  {
-		"name": "Solid Showing (Pre/OP)",
+		"name": "Solid Showing", "initiator": "(Pre/OP)",
 		"text": [
 		  "[[Energy-]]-20\n[[sp+]]+30\n[[1stats]] +3\n[[possible]]Race skill hint [[hint]]",
 		  "[[Energy-]]-10/-30\n[[sp+]]+30\n[[1stats]] +3\n[[possible]]Race skill hint [[hint]]"
 		]
 	  },
 	  {
-		"name": "Defeat (G1)",
+		"name": "Defeat", "initiator": "(G1)",
 		"text": [
 		  "[[Energy-]]-25\n[[sp+]]+25\n[[1stats]] +4\n[[possible]]Race skill hint [[hint]]",
 		  "[[Energy-]]-15/-35\n[[sp+]]+25\n[[1stats]] +4\n[[possible]]Race skill hint [[hint]]"
 		]
 	  },
 	  {
-		"name": "Defeat (G2/G3)",
+		"name": "Defeat", "initiator": "(G2/G3)",
 		"text": [
 		  "[[Energy-]]-25\n[[sp+]]+20\n[[1stats]] +3\n[[possible]]Race skill hint [[hint]]",
 		  "[[Energy-]]-15/-35\n[[sp+]]+20\n[[1stats]] +3\n[[possible]]Race skill hint [[hint]]"
 		]
 	  },
 	  {
-		"name": "Defeat (Pre/OP)",
+		"name": "Defeat", "initiator": "(Pre/OP)",
 		"text": [
 		  "[[Energy-]]-25\n[[sp+]]+10\n[[possible]]Race skill hint [[hint]]",
 		  "[[Energy-]]-15/-35\n[[sp+]]+10\n[[possible]]Race skill hint [[hint]]"
 		]
 	  },
 	  {
-		"name": "Etsuko's Elated Coverage (G1)",
+		"name": "Etsuko's Elated Coverage", "initiator": "(G1)",
 		"text": [
 		  "[[Energy-]]-15\n[[sp+]]+45\n[[Fans+]]+500\n[[1stats]] +10\n[[possible]]Race skill hint [[hint]]\nEtsuko Otonashi [[bond+]]+15\n[[Mood+]]+1"
 		]
 	  },
 	  {
-		"name": "Etsuko's Elated Coverage (G2/G3)",
+		"name": "Etsuko's Elated Coverage", "initiator": "(G2/G3)",
 		"text": [
 		  "[[Energy-]]-15\n[[sp+]]+35\n[[Fans+]]+500\n[[1stats]] +8\n[[possible]]Race skill hint [[hint]]\nEtsuko Otonashi [[bond+]]+15\n[[Mood+]]+1"
 		]
 	  },
 	  {
-		"name": "Etsuko's Elated Coverage (Pre/OP)",
+		"name": "Etsuko's Elated Coverage", "initiator": "(Pre/OP)",
 		"text": [
 		  "[[Energy-]]-15\n[[sp+]]+30\n[[Fans+]]+500\n[[1stats]] +5\n[[possible]]Race skill hint [[hint]]\nEtsuko Otonashi [[bond+]]+15\n[[Mood+]]+1"
 		]
 	  },
 	  {
-		"name": "Etsuko's Exhaustive Coverage (G1)",
+		"name": "Etsuko's Exhaustive Coverage", "initiator": "(G1)",
 		"text": [
 		  "[[Energy-]]-15\n[[Energy-]]-25\n[[sp+]]+25\n[[sp+]]+25\n[[1stats]] +4\n[[or]]\n[[1stats]] +4\nEtsuko Otonashi [[bond+]]+15\nEtsuko Otonashi [[bond-]]-10\n[[Mood+]]+1\n[[Mood-]]-1",
 		  "[[Energy-]]-20\n[[sp+]]+25\n[[1stats]] +4\nEtsuko Otonashi [[bond+]]+10"
 		]
 	  },
 	  {
-		"name": "Etsuko's Exhaustive Coverage (G2/G3)",
+		"name": "Etsuko's Exhaustive Coverage", "initiator": "(G2/G3)",
 		"text": [
 		  "[[Energy-]]-15\n[[Energy-]]-25\n[[sp+]]+20\n[[sp+]]+20\n[[1stats]] +3\n[[or]]\n[[1stats]] +3\nEtsuko Otonashi [[bond+]]+15\nEtsuko Otonashi [[bond-]]-10\n[[Mood+]]+1\n[[Mood-]]-1",
 		  "[[Energy-]]-20\n[[sp+]]+20\n[[1stats]] +3\nEtsuko Otonashi [[bond+]]+10"
 		]
 	  },
 	  {
-		"name": "Etsuko's Exhaustive Coverage (Pre/OP)",
+		"name": "Etsuko's Exhaustive Coverage", "initiator": "(Pre/OP)",
 		"text": [
 		  "[[Energy-]]-15\n[[Energy-]]-25\n[[sp+]]+10\n[[sp+]]+10\n[[or]]\nEtsuko Otonashi [[bond+]]+15\nEtsuko Otonashi [[bond-]]-10\n[[Mood+]]+1\n[[Mood-]]-1",
 		  "[[Energy-]]-20\n[[sp+]]+10\nEtsuko Otonashi [[bond+]]+10"
@@ -1521,7 +1525,8 @@
 		]
 	  },
 	  {
-		"name": "Failed training (Get Well Soon!)",
+		"name": "Get Well Soon!",
+		"initiator": "Failed training",
 		"text": [
 		  "\nPrevious training -5\n[[possible]] Aquires {link:Practice Poor}\n[[Mood-]]-1",
 		  "\nAquires {link:Practice Perfect}\n[[or]]\nPrevious training -10\n[[possible]] Aquires {link:Practice Poor}\n[[Mood-]]-1"
@@ -1588,102 +1593,102 @@
 		]
 	  },
 	  {
-		"name": "Victory! (G1)",
+		"name": "Victory!", "initiator": "(G1)",
 		"text": [
 		  "[[Energy-]]-15\n[[sp+]]+45\n[[1stats]] +10\n[[possible]]Race skill hint [[hint]]",
 		  "[[Energy-]]-5/-20\n[[sp+]]+45\n[[1stats]] +10\n[[possible]]Race skill hint [[hint]]"
 		]
 	  },
 	  {
-		"name": "Victory! (G2/G3)",
+		"name": "Victory!", "initiator": "(G2/G3)",
 		"text": [
 		  "[[Energy-]]-15\n[[sp+]]+35\n[[1stats]] +8\n[[possible]]Race skill hint [[hint]]",
 		  "[[Energy-]]-5/-20\n[[sp+]]+35\n[[1stats]] +8\n[[possible]]Race skill hint [[hint]]"
 		]
 	  },
 	  {
-		"name": "Victory! (Pre/OP)",
+		"name": "Victory!", "initiator": "(Pre/OP)",
 		"text": [
 		  "[[Energy-]]-15\n[[sp+]]+30\n[[1stats]] +5\n[[possible]]Race skill hint [[hint]]",
 		  "[[Energy-]]-5/-20\n[[sp+]]+30\n[[1stats]] +5\n[[possible]]Race skill hint [[hint]]"
 		]
 	  },
 	  {
-		"name": "Solid Showing (G1)",
+		"name": "Solid Showing", "initiator": "(G1)",
 		"text": [
 		  "[[Energy-]]-20\n[[sp+]]+45\n[[1stats]] +8\n[[possible]]Race skill hint [[hint]]",
 		  "[[Energy-]]-10/-30\n[[sp+]]+45\n[[1stats]] +8\n[[possible]]Race skill hint [[hint]]"
 		]
 	  },
 	  {
-		"name": "Solid Showing (G2/G3)",
+		"name": "Solid Showing", "initiator": "(G2/G3)",
 		"text": [
 		  "[[Energy-]]-20\n[[sp+]]+35\n[[1stats]] +5\n[[possible]]Race skill hint [[hint]]",
 		  "[[Energy-]]-10/-30\n[[sp+]]+35\n[[1stats]] +5\n[[possible]]Race skill hint [[hint]]"
 		]
 	  },
 	  {
-		"name": "Solid Showing (Pre/OP)",
+		"name": "Solid Showing", "initiator": "(Pre/OP)",
 		"text": [
 		  "[[Energy-]]-20\n[[sp+]]+30\n[[1stats]] +3\n[[possible]]Race skill hint [[hint]]",
 		  "[[Energy-]]-10/-30\n[[sp+]]+30\n[[1stats]] +3\n[[possible]]Race skill hint [[hint]]"
 		]
 	  },
 	  {
-		"name": "Defeat (G1)",
+		"name": "Defeat", "initiator": "(G1)",
 		"text": [
 		  "[[Energy-]]-25\n[[sp+]]+25\n[[1stats]] +4\n[[possible]]Race skill hint [[hint]]",
 		  "[[Energy-]]-15/-35\n[[sp+]]+25\n[[1stats]] +4\n[[possible]]Race skill hint [[hint]]"
 		]
 	  },
 	  {
-		"name": "Defeat (G2/G3)",
+		"name": "Defeat", "initiator": "(G2/G3)",
 		"text": [
 		  "[[Energy-]]-25\n[[sp+]]+20\n[[1stats]] +3\n[[possible]]Race skill hint [[hint]]",
 		  "[[Energy-]]-15/-35\n[[sp+]]+20\n[[1stats]] +3\n[[possible]]Race skill hint [[hint]]"
 		]
 	  },
 	  {
-		"name": "Defeat (Pre/OP)",
+		"name": "Defeat", "initiator": "(Pre/OP)",
 		"text": [
 		  "[[Energy-]]-25\n[[sp+]]+10\n[[possible]]Race skill hint [[hint]]",
 		  "[[Energy-]]-15/-35\n[[sp+]]+10\n[[possible]]Race skill hint [[hint]]"
 		]
 	  },
 	  {
-		"name": "Etsuko's Elated Coverage (G1)",
+		"name": "Etsuko's Elated Coverage", "initiator": "(G1)",
 		"text": [
 		  "[[Energy-]]-15\n[[sp+]]+45\n[[Fans+]]+500\n[[1stats]] +10\n[[possible]]Race skill hint [[hint]]\nEtsuko Otonashi [[bond+]]+15\n[[Mood+]]+1"
 		]
 	  },
 	  {
-		"name": "Etsuko's Elated Coverage (G2/G3)",
+		"name": "Etsuko's Elated Coverage", "initiator": "(G2/G3)",
 		"text": [
 		  "[[Energy-]]-15\n[[sp+]]+35\n[[Fans+]]+500\n[[1stats]] +8\n[[possible]]Race skill hint [[hint]]\nEtsuko Otonashi [[bond+]]+15\n[[Mood+]]+1"
 		]
 	  },
 	  {
-		"name": "Etsuko's Elated Coverage (Pre/OP)",
+		"name": "Etsuko's Elated Coverage", "initiator": "(Pre/OP)",
 		"text": [
 		  "[[Energy-]]-15\n[[sp+]]+30\n[[Fans+]]+500\n[[1stats]] +5\n[[possible]]Race skill hint [[hint]]\nEtsuko Otonashi [[bond+]]+15\n[[Mood+]]+1"
 		]
 	  },
 	  {
-		"name": "Etsuko's Exhaustive Coverage (G1)",
+		"name": "Etsuko's Exhaustive Coverage", "initiator": "(G1)",
 		"text": [
 		  "[[Energy-]]-15\n[[Energy-]]-25\n[[sp+]]+25\n[[sp+]]+25\n[[1stats]] +4\n[[or]]\n[[1stats]] +4\nEtsuko Otonashi [[bond+]]+15\nEtsuko Otonashi [[bond-]]-10\n[[Mood+]]+1\n[[Mood-]]-1",
 		  "[[Energy-]]-20\n[[sp+]]+25\n[[1stats]] +4\nEtsuko Otonashi [[bond+]]+10"
 		]
 	  },
 	  {
-		"name": "Etsuko's Exhaustive Coverage (G2/G3)",
+		"name": "Etsuko's Exhaustive Coverage", "initiator": "(G2/G3)",
 		"text": [
 		  "[[Energy-]]-15\n[[Energy-]]-25\n[[sp+]]+20\n[[sp+]]+20\n[[1stats]] +3\n[[or]]\n[[1stats]] +3\nEtsuko Otonashi [[bond+]]+15\nEtsuko Otonashi [[bond-]]-10\n[[Mood+]]+1\n[[Mood-]]-1",
 		  "[[Energy-]]-20\n[[sp+]]+20\n[[1stats]] +3\nEtsuko Otonashi [[bond+]]+10"
 		]
 	  },
 	  {
-		"name": "Etsuko's Exhaustive Coverage (Pre/OP)",
+		"name": "Etsuko's Exhaustive Coverage", "initiator": "(Pre/OP)",
 		"text": [
 		  "[[Energy-]]-15\n[[Energy-]]-25\n[[sp+]]+10\n[[sp+]]+10\n[[or]]\nEtsuko Otonashi [[bond+]]+15\nEtsuko Otonashi [[bond-]]-10\n[[Mood+]]+1\n[[Mood-]]-1",
 		  "[[Energy-]]-20\n[[sp+]]+10\nEtsuko Otonashi [[bond+]]+10"
@@ -1877,7 +1882,8 @@
 		]
 	  },
 	  {
-		"name": "Failed training (Get Well Soon!)",
+		"name": "Get Well Soon!",
+		"initiator": "Failed training",
 		"text": [
 		  "\nPrevious training -5\n[[possible]] Aquires {link:Practice Poor}\n[[Mood-]]-1",
 		  "\nAquires {link:Practice Perfect}\n[[or]]\nPrevious training -10\n[[possible]] Aquires {link:Practice Poor}\n[[Mood-]]-1"
@@ -1944,102 +1950,102 @@
 		]
 	  },
 	  {
-		"name": "Victory! (G1)",
+		"name": "Victory!", "initiator": "(G1)",
 		"text": [
 		  "[[Energy-]]-15\n[[sp+]]+45\n[[1stats]] +10\n[[possible]]Race skill hint [[hint]]",
 		  "[[Energy-]]-5/-20\n[[sp+]]+45\n[[1stats]] +10\n[[possible]]Race skill hint [[hint]]"
 		]
 	  },
 	  {
-		"name": "Victory! (G2/G3)",
+		"name": "Victory!", "initiator": "(G2/G3)",
 		"text": [
 		  "[[Energy-]]-15\n[[sp+]]+35\n[[1stats]] +8\n[[possible]]Race skill hint [[hint]]",
 		  "[[Energy-]]-5/-20\n[[sp+]]+35\n[[1stats]] +8\n[[possible]]Race skill hint [[hint]]"
 		]
 	  },
 	  {
-		"name": "Victory! (Pre/OP)",
+		"name": "Victory!", "initiator": "(Pre/OP)",
 		"text": [
 		  "[[Energy-]]-15\n[[sp+]]+30\n[[1stats]] +5\n[[possible]]Race skill hint [[hint]]",
 		  "[[Energy-]]-5/-20\n[[sp+]]+30\n[[1stats]] +5\n[[possible]]Race skill hint [[hint]]"
 		]
 	  },
 	  {
-		"name": "Solid Showing (G1)",
+		"name": "Solid Showing", "initiator": "(G1)",
 		"text": [
 		  "[[Energy-]]-20\n[[sp+]]+45\n[[1stats]] +8\n[[possible]]Race skill hint [[hint]]",
 		  "[[Energy-]]-10/-30\n[[sp+]]+45\n[[1stats]] +8\n[[possible]]Race skill hint [[hint]]"
 		]
 	  },
 	  {
-		"name": "Solid Showing (G2/G3)",
+		"name": "Solid Showing", "initiator": "(G2/G3)",
 		"text": [
 		  "[[Energy-]]-20\n[[sp+]]+35\n[[1stats]] +5\n[[possible]]Race skill hint [[hint]]",
 		  "[[Energy-]]-10/-30\n[[sp+]]+35\n[[1stats]] +5\n[[possible]]Race skill hint [[hint]]"
 		]
 	  },
 	  {
-		"name": "Solid Showing (Pre/OP)",
+		"name": "Solid Showing", "initiator": "(Pre/OP)",
 		"text": [
 		  "[[Energy-]]-20\n[[sp+]]+30\n[[1stats]] +3\n[[possible]]Race skill hint [[hint]]",
 		  "[[Energy-]]-10/-30\n[[sp+]]+30\n[[1stats]] +3\n[[possible]]Race skill hint [[hint]]"
 		]
 	  },
 	  {
-		"name": "Defeat (G1)",
+		"name": "Defeat", "initiator": "(G1)",
 		"text": [
 		  "[[Energy-]]-25\n[[sp+]]+25\n[[1stats]] +4\n[[possible]]Race skill hint [[hint]]",
 		  "[[Energy-]]-15/-35\n[[sp+]]+25\n[[1stats]] +4\n[[possible]]Race skill hint [[hint]]"
 		]
 	  },
 	  {
-		"name": "Defeat (G2/G3)",
+		"name": "Defeat", "initiator": "(G2/G3)",
 		"text": [
 		  "[[Energy-]]-25\n[[sp+]]+20\n[[1stats]] +3\n[[possible]]Race skill hint [[hint]]",
 		  "[[Energy-]]-15/-35\n[[sp+]]+20\n[[1stats]] +3\n[[possible]]Race skill hint [[hint]]"
 		]
 	  },
 	  {
-		"name": "Defeat (Pre/OP)",
+		"name": "Defeat", "initiator": "(Pre/OP)",
 		"text": [
 		  "[[Energy-]]-25\n[[sp+]]+10\n[[possible]]Race skill hint [[hint]]",
 		  "[[Energy-]]-15/-35\n[[sp+]]+10\n[[possible]]Race skill hint [[hint]]"
 		]
 	  },
 	  {
-		"name": "Etsuko's Elated Coverage (G1)",
+		"name": "Etsuko's Elated Coverage", "initiator": "(G1)",
 		"text": [
 		  "[[Energy-]]-15\n[[sp+]]+45\n[[Fans+]]+500\n[[1stats]] +10\n[[possible]]Race skill hint [[hint]]\nEtsuko Otonashi [[bond+]]+15\n[[Mood+]]+1"
 		]
 	  },
 	  {
-		"name": "Etsuko's Elated Coverage (G2/G3)",
+		"name": "Etsuko's Elated Coverage", "initiator": "(G2/G3)",
 		"text": [
 		  "[[Energy-]]-15\n[[sp+]]+35\n[[Fans+]]+500\n[[1stats]] +8\n[[possible]]Race skill hint [[hint]]\nEtsuko Otonashi [[bond+]]+15\n[[Mood+]]+1"
 		]
 	  },
 	  {
-		"name": "Etsuko's Elated Coverage (Pre/OP)",
+		"name": "Etsuko's Elated Coverage", "initiator": "(Pre/OP)",
 		"text": [
 		  "[[Energy-]]-15\n[[sp+]]+30\n[[Fans+]]+500\n[[1stats]] +5\n[[possible]]Race skill hint [[hint]]\nEtsuko Otonashi [[bond+]]+15\n[[Mood+]]+1"
 		]
 	  },
 	  {
-		"name": "Etsuko's Exhaustive Coverage (G1)",
+		"name": "Etsuko's Exhaustive Coverage", "initiator": "(G1)",
 		"text": [
 		  "[[Energy-]]-15\n[[Energy-]]-25\n[[sp+]]+25\n[[sp+]]+25\n[[1stats]] +4\n[[or]]\n[[1stats]] +4\nEtsuko Otonashi [[bond+]]+15\nEtsuko Otonashi [[bond-]]-10\n[[Mood+]]+1\n[[Mood-]]-1",
 		  "[[Energy-]]-20\n[[sp+]]+25\n[[1stats]] +4\nEtsuko Otonashi [[bond+]]+10"
 		]
 	  },
 	  {
-		"name": "Etsuko's Exhaustive Coverage (G2/G3)",
+		"name": "Etsuko's Exhaustive Coverage", "initiator": "(G2/G3)",
 		"text": [
 		  "[[Energy-]]-15\n[[Energy-]]-25\n[[sp+]]+20\n[[sp+]]+20\n[[1stats]] +3\n[[or]]\n[[1stats]] +3\nEtsuko Otonashi [[bond+]]+15\nEtsuko Otonashi [[bond-]]-10\n[[Mood+]]+1\n[[Mood-]]-1",
 		  "[[Energy-]]-20\n[[sp+]]+20\n[[1stats]] +3\nEtsuko Otonashi [[bond+]]+10"
 		]
 	  },
 	  {
-		"name": "Etsuko's Exhaustive Coverage (Pre/OP)",
+		"name": "Etsuko's Exhaustive Coverage", "initiator": "(Pre/OP)",
 		"text": [
 		  "[[Energy-]]-15\n[[Energy-]]-25\n[[sp+]]+10\n[[sp+]]+10\n[[or]]\nEtsuko Otonashi [[bond+]]+15\nEtsuko Otonashi [[bond-]]-10\n[[Mood+]]+1\n[[Mood-]]-1",
 		  "[[Energy-]]-20\n[[sp+]]+10\nEtsuko Otonashi [[bond+]]+10"
@@ -2220,7 +2226,8 @@
 		]
 	  },
 	  {
-		"name": "Failed training (Get Well Soon!)",
+		"name": "Get Well Soon!",
+		"initiator": "Failed training",
 		"text": [
 		  "\nPrevious training -5\n[[possible]] Aquires {link:Practice Poor}\n[[Mood-]]-1",
 		  "\nAquires {link:Practice Perfect}\n[[or]]\nPrevious training -10\n[[possible]] Aquires {link:Practice Poor}\n[[Mood-]]-1"
@@ -2287,102 +2294,102 @@
 		]
 	  },
 	  {
-		"name": "Victory! (G1)",
+		"name": "Victory!", "initiator": "(G1)",
 		"text": [
 		  "[[Energy-]]-15\n[[sp+]]+45\n[[1stats]] +10\n[[possible]]Race skill hint [[hint]]",
 		  "[[Energy-]]-5/-20\n[[sp+]]+45\n[[1stats]] +10\n[[possible]]Race skill hint [[hint]]"
 		]
 	  },
 	  {
-		"name": "Victory! (G2/G3)",
+		"name": "Victory!", "initiator": "(G2/G3)",
 		"text": [
 		  "[[Energy-]]-15\n[[sp+]]+35\n[[1stats]] +8\n[[possible]]Race skill hint [[hint]]",
 		  "[[Energy-]]-5/-20\n[[sp+]]+35\n[[1stats]] +8\n[[possible]]Race skill hint [[hint]]"
 		]
 	  },
 	  {
-		"name": "Victory! (Pre/OP)",
+		"name": "Victory!", "initiator": "(Pre/OP)",
 		"text": [
 		  "[[Energy-]]-15\n[[sp+]]+30\n[[1stats]] +5\n[[possible]]Race skill hint [[hint]]",
 		  "[[Energy-]]-5/-20\n[[sp+]]+30\n[[1stats]] +5\n[[possible]]Race skill hint [[hint]]"
 		]
 	  },
 	  {
-		"name": "Solid Showing (G1)",
+		"name": "Solid Showing", "initiator": "(G1)",
 		"text": [
 		  "[[Energy-]]-20\n[[sp+]]+45\n[[1stats]] +8\n[[possible]]Race skill hint [[hint]]",
 		  "[[Energy-]]-10/-30\n[[sp+]]+45\n[[1stats]] +8\n[[possible]]Race skill hint [[hint]]"
 		]
 	  },
 	  {
-		"name": "Solid Showing (G2/G3)",
+		"name": "Solid Showing", "initiator": "(G2/G3)",
 		"text": [
 		  "[[Energy-]]-20\n[[sp+]]+35\n[[1stats]] +5\n[[possible]]Race skill hint [[hint]]",
 		  "[[Energy-]]-10/-30\n[[sp+]]+35\n[[1stats]] +5\n[[possible]]Race skill hint [[hint]]"
 		]
 	  },
 	  {
-		"name": "Solid Showing (Pre/OP)",
+		"name": "Solid Showing", "initiator": "(Pre/OP)",
 		"text": [
 		  "[[Energy-]]-20\n[[sp+]]+30\n[[1stats]] +3\n[[possible]]Race skill hint [[hint]]",
 		  "[[Energy-]]-10/-30\n[[sp+]]+30\n[[1stats]] +3\n[[possible]]Race skill hint [[hint]]"
 		]
 	  },
 	  {
-		"name": "Defeat (G1)",
+		"name": "Defeat", "initiator": "(G1)",
 		"text": [
 		  "[[Energy-]]-25\n[[sp+]]+25\n[[1stats]] +4\n[[possible]]Race skill hint [[hint]]",
 		  "[[Energy-]]-15/-35\n[[sp+]]+25\n[[1stats]] +4\n[[possible]]Race skill hint [[hint]]"
 		]
 	  },
 	  {
-		"name": "Defeat (G2/G3)",
+		"name": "Defeat", "initiator": "(G2/G3)",
 		"text": [
 		  "[[Energy-]]-25\n[[sp+]]+20\n[[1stats]] +3\n[[possible]]Race skill hint [[hint]]",
 		  "[[Energy-]]-15/-35\n[[sp+]]+20\n[[1stats]] +3\n[[possible]]Race skill hint [[hint]]"
 		]
 	  },
 	  {
-		"name": "Defeat (Pre/OP)",
+		"name": "Defeat", "initiator": "(Pre/OP)",
 		"text": [
 		  "[[Energy-]]-25\n[[sp+]]+10\n[[possible]]Race skill hint [[hint]]",
 		  "[[Energy-]]-15/-35\n[[sp+]]+10\n[[possible]]Race skill hint [[hint]]"
 		]
 	  },
 	  {
-		"name": "Etsuko's Elated Coverage (G1)",
+		"name": "Etsuko's Elated Coverage", "initiator": "(G1)",
 		"text": [
 		  "[[Energy-]]-15\n[[sp+]]+45\n[[Fans+]]+500\n[[1stats]] +10\n[[possible]]Race skill hint [[hint]]\nEtsuko Otonashi [[bond+]]+15\n[[Mood+]]+1"
 		]
 	  },
 	  {
-		"name": "Etsuko's Elated Coverage (G2/G3)",
+		"name": "Etsuko's Elated Coverage", "initiator": "(G2/G3)",
 		"text": [
 		  "[[Energy-]]-15\n[[sp+]]+35\n[[Fans+]]+500\n[[1stats]] +8\n[[possible]]Race skill hint [[hint]]\nEtsuko Otonashi [[bond+]]+15\n[[Mood+]]+1"
 		]
 	  },
 	  {
-		"name": "Etsuko's Elated Coverage (Pre/OP)",
+		"name": "Etsuko's Elated Coverage", "initiator": "(Pre/OP)",
 		"text": [
 		  "[[Energy-]]-15\n[[sp+]]+30\n[[Fans+]]+500\n[[1stats]] +5\n[[possible]]Race skill hint [[hint]]\nEtsuko Otonashi [[bond+]]+15\n[[Mood+]]+1"
 		]
 	  },
 	  {
-		"name": "Etsuko's Exhaustive Coverage (G1)",
+		"name": "Etsuko's Exhaustive Coverage", "initiator": "(G1)",
 		"text": [
 		  "[[Energy-]]-15\n[[Energy-]]-25\n[[sp+]]+25\n[[sp+]]+25\n[[1stats]] +4\n[[or]]\n[[1stats]] +4\nEtsuko Otonashi [[bond+]]+15\nEtsuko Otonashi [[bond-]]-10\n[[Mood+]]+1\n[[Mood-]]-1",
 		  "[[Energy-]]-20\n[[sp+]]+25\n[[1stats]] +4\nEtsuko Otonashi [[bond+]]+10"
 		]
 	  },
 	  {
-		"name": "Etsuko's Exhaustive Coverage (G2/G3)",
+		"name": "Etsuko's Exhaustive Coverage", "initiator": "(G2/G3)",
 		"text": [
 		  "[[Energy-]]-15\n[[Energy-]]-25\n[[sp+]]+20\n[[sp+]]+20\n[[1stats]] +3\n[[or]]\n[[1stats]] +3\nEtsuko Otonashi [[bond+]]+15\nEtsuko Otonashi [[bond-]]-10\n[[Mood+]]+1\n[[Mood-]]-1",
 		  "[[Energy-]]-20\n[[sp+]]+20\n[[1stats]] +3\nEtsuko Otonashi [[bond+]]+10"
 		]
 	  },
 	  {
-		"name": "Etsuko's Exhaustive Coverage (Pre/OP)",
+		"name": "Etsuko's Exhaustive Coverage", "initiator": "(Pre/OP)",
 		"text": [
 		  "[[Energy-]]-15\n[[Energy-]]-25\n[[sp+]]+10\n[[sp+]]+10\n[[or]]\nEtsuko Otonashi [[bond+]]+15\nEtsuko Otonashi [[bond-]]-10\n[[Mood+]]+1\n[[Mood-]]-1",
 		  "[[Energy-]]-20\n[[sp+]]+10\nEtsuko Otonashi [[bond+]]+10"
@@ -2563,7 +2570,8 @@
 		]
 	  },
 	  {
-		"name": "Failed training (Get Well Soon!)",
+		"name": "Get Well Soon!",
+		"initiator": "Failed training",
 		"text": [
 		  "\nPrevious training -5\n[[possible]] Aquires {link:Practice Poor}\n[[Mood-]]-1",
 		  "\nAquires {link:Practice Perfect}\n[[or]]\nPrevious training -10\n[[possible]] Aquires {link:Practice Poor}\n[[Mood-]]-1"
@@ -2630,102 +2638,102 @@
 		]
 	  },
 	  {
-		"name": "Victory! (G1)",
+		"name": "Victory!", "initiator": "(G1)",
 		"text": [
 		  "[[Energy-]]-15\n[[sp+]]+45\n[[1stats]] +10\n[[possible]]Race skill hint [[hint]]",
 		  "[[Energy-]]-5/-20\n[[sp+]]+45\n[[1stats]] +10\n[[possible]]Race skill hint [[hint]]"
 		]
 	  },
 	  {
-		"name": "Victory! (G2/G3)",
+		"name": "Victory!", "initiator": "(G2/G3)",
 		"text": [
 		  "[[Energy-]]-15\n[[sp+]]+35\n[[1stats]] +8\n[[possible]]Race skill hint [[hint]]",
 		  "[[Energy-]]-5/-20\n[[sp+]]+35\n[[1stats]] +8\n[[possible]]Race skill hint [[hint]]"
 		]
 	  },
 	  {
-		"name": "Victory! (Pre/OP)",
+		"name": "Victory!", "initiator": "(Pre/OP)",
 		"text": [
 		  "[[Energy-]]-15\n[[sp+]]+30\n[[1stats]] +5\n[[possible]]Race skill hint [[hint]]",
 		  "[[Energy-]]-5/-20\n[[sp+]]+30\n[[1stats]] +5\n[[possible]]Race skill hint [[hint]]"
 		]
 	  },
 	  {
-		"name": "Solid Showing (G1)",
+		"name": "Solid Showing", "initiator": "(G1)",
 		"text": [
 		  "[[Energy-]]-20\n[[sp+]]+45\n[[1stats]] +8\n[[possible]]Race skill hint [[hint]]",
 		  "[[Energy-]]-10/-30\n[[sp+]]+45\n[[1stats]] +8\n[[possible]]Race skill hint [[hint]]"
 		]
 	  },
 	  {
-		"name": "Solid Showing (G2/G3)",
+		"name": "Solid Showing", "initiator": "(G2/G3)",
 		"text": [
 		  "[[Energy-]]-20\n[[sp+]]+35\n[[1stats]] +5\n[[possible]]Race skill hint [[hint]]",
 		  "[[Energy-]]-10/-30\n[[sp+]]+35\n[[1stats]] +5\n[[possible]]Race skill hint [[hint]]"
 		]
 	  },
 	  {
-		"name": "Solid Showing (Pre/OP)",
+		"name": "Solid Showing", "initiator": "(Pre/OP)",
 		"text": [
 		  "[[Energy-]]-20\n[[sp+]]+30\n[[1stats]] +3\n[[possible]]Race skill hint [[hint]]",
 		  "[[Energy-]]-10/-30\n[[sp+]]+30\n[[1stats]] +3\n[[possible]]Race skill hint [[hint]]"
 		]
 	  },
 	  {
-		"name": "Defeat (G1)",
+		"name": "Defeat", "initiator": "(G1)",
 		"text": [
 		  "[[Energy-]]-25\n[[sp+]]+25\n[[1stats]] +4\n[[possible]]Race skill hint [[hint]]",
 		  "[[Energy-]]-15/-35\n[[sp+]]+25\n[[1stats]] +4\n[[possible]]Race skill hint [[hint]]"
 		]
 	  },
 	  {
-		"name": "Defeat (G2/G3)",
+		"name": "Defeat", "initiator": "(G2/G3)",
 		"text": [
 		  "[[Energy-]]-25\n[[sp+]]+20\n[[1stats]] +3\n[[possible]]Race skill hint [[hint]]",
 		  "[[Energy-]]-15/-35\n[[sp+]]+20\n[[1stats]] +3\n[[possible]]Race skill hint [[hint]]"
 		]
 	  },
 	  {
-		"name": "Defeat (Pre/OP)",
+		"name": "Defeat", "initiator": "(Pre/OP)",
 		"text": [
 		  "[[Energy-]]-25\n[[sp+]]+10\n[[possible]]Race skill hint [[hint]]",
 		  "[[Energy-]]-15/-35\n[[sp+]]+10\n[[possible]]Race skill hint [[hint]]"
 		]
 	  },
 	  {
-		"name": "Etsuko's Elated Coverage (G1)",
+		"name": "Etsuko's Elated Coverage", "initiator": "(G1)",
 		"text": [
 		  "[[Energy-]]-15\n[[sp+]]+45\n[[Fans+]]+500\n[[1stats]] +10\n[[possible]]Race skill hint [[hint]]\nEtsuko Otonashi [[bond+]]+15\n[[Mood+]]+1"
 		]
 	  },
 	  {
-		"name": "Etsuko's Elated Coverage (G2/G3)",
+		"name": "Etsuko's Elated Coverage", "initiator": "(G2/G3)",
 		"text": [
 		  "[[Energy-]]-15\n[[sp+]]+35\n[[Fans+]]+500\n[[1stats]] +8\n[[possible]]Race skill hint [[hint]]\nEtsuko Otonashi [[bond+]]+15\n[[Mood+]]+1"
 		]
 	  },
 	  {
-		"name": "Etsuko's Elated Coverage (Pre/OP)",
+		"name": "Etsuko's Elated Coverage", "initiator": "(Pre/OP)",
 		"text": [
 		  "[[Energy-]]-15\n[[sp+]]+30\n[[Fans+]]+500\n[[1stats]] +5\n[[possible]]Race skill hint [[hint]]\nEtsuko Otonashi [[bond+]]+15\n[[Mood+]]+1"
 		]
 	  },
 	  {
-		"name": "Etsuko's Exhaustive Coverage (G1)",
+		"name": "Etsuko's Exhaustive Coverage", "initiator": "(G1)",
 		"text": [
 		  "[[Energy-]]-15\n[[Energy-]]-25\n[[sp+]]+25\n[[sp+]]+25\n[[1stats]] +4\n[[or]]\n[[1stats]] +4\nEtsuko Otonashi [[bond+]]+15\nEtsuko Otonashi [[bond-]]-10\n[[Mood+]]+1\n[[Mood-]]-1",
 		  "[[Energy-]]-20\n[[sp+]]+25\n[[1stats]] +4\nEtsuko Otonashi [[bond+]]+10"
 		]
 	  },
 	  {
-		"name": "Etsuko's Exhaustive Coverage (G2/G3)",
+		"name": "Etsuko's Exhaustive Coverage", "initiator": "(G2/G3)",
 		"text": [
 		  "[[Energy-]]-15\n[[Energy-]]-25\n[[sp+]]+20\n[[sp+]]+20\n[[1stats]] +3\n[[or]]\n[[1stats]] +3\nEtsuko Otonashi [[bond+]]+15\nEtsuko Otonashi [[bond-]]-10\n[[Mood+]]+1\n[[Mood-]]-1",
 		  "[[Energy-]]-20\n[[sp+]]+20\n[[1stats]] +3\nEtsuko Otonashi [[bond+]]+10"
 		]
 	  },
 	  {
-		"name": "Etsuko's Exhaustive Coverage (Pre/OP)",
+		"name": "Etsuko's Exhaustive Coverage", "initiator": "(Pre/OP)",
 		"text": [
 		  "[[Energy-]]-15\n[[Energy-]]-25\n[[sp+]]+10\n[[sp+]]+10\n[[or]]\nEtsuko Otonashi [[bond+]]+15\nEtsuko Otonashi [[bond-]]-10\n[[Mood+]]+1\n[[Mood-]]-1",
 		  "[[Energy-]]-20\n[[sp+]]+10\nEtsuko Otonashi [[bond+]]+10"
@@ -2906,7 +2914,8 @@
 		]
 	  },
 	  {
-		"name": "Failed training (Get Well Soon!)",
+		"name": "Get Well Soon!",
+		"initiator": "Failed training",
 		"text": [
 		  "\nPrevious training -5\n[[possible]] Aquires {link:Practice Poor}\n[[Mood-]]-1",
 		  "\nAquires {link:Practice Perfect}\n[[or]]\nPrevious training -10\n[[possible]] Aquires {link:Practice Poor}\n[[Mood-]]-1"
@@ -2973,102 +2982,102 @@
 		]
 	  },
 	  {
-		"name": "Victory! (G1)",
+		"name": "Victory!", "initiator": "(G1)",
 		"text": [
 		  "[[Energy-]]-15\n[[sp+]]+45\n[[1stats]] +10\n[[possible]]Race skill hint [[hint]]",
 		  "[[Energy-]]-5/-20\n[[sp+]]+45\n[[1stats]] +10\n[[possible]]Race skill hint [[hint]]"
 		]
 	  },
 	  {
-		"name": "Victory! (G2/G3)",
+		"name": "Victory!", "initiator": "(G2/G3)",
 		"text": [
 		  "[[Energy-]]-15\n[[sp+]]+35\n[[1stats]] +8\n[[possible]]Race skill hint [[hint]]",
 		  "[[Energy-]]-5/-20\n[[sp+]]+35\n[[1stats]] +8\n[[possible]]Race skill hint [[hint]]"
 		]
 	  },
 	  {
-		"name": "Victory! (Pre/OP)",
+		"name": "Victory!", "initiator": "(Pre/OP)",
 		"text": [
 		  "[[Energy-]]-15\n[[sp+]]+30\n[[1stats]] +5\n[[possible]]Race skill hint [[hint]]",
 		  "[[Energy-]]-5/-20\n[[sp+]]+30\n[[1stats]] +5\n[[possible]]Race skill hint [[hint]]"
 		]
 	  },
 	  {
-		"name": "Solid Showing (G1)",
+		"name": "Solid Showing", "initiator": "(G1)",
 		"text": [
 		  "[[Energy-]]-20\n[[sp+]]+45\n[[1stats]] +8\n[[possible]]Race skill hint [[hint]]",
 		  "[[Energy-]]-10/-30\n[[sp+]]+45\n[[1stats]] +8\n[[possible]]Race skill hint [[hint]]"
 		]
 	  },
 	  {
-		"name": "Solid Showing (G2/G3)",
+		"name": "Solid Showing", "initiator": "(G2/G3)",
 		"text": [
 		  "[[Energy-]]-20\n[[sp+]]+35\n[[1stats]] +5\n[[possible]]Race skill hint [[hint]]",
 		  "[[Energy-]]-10/-30\n[[sp+]]+35\n[[1stats]] +5\n[[possible]]Race skill hint [[hint]]"
 		]
 	  },
 	  {
-		"name": "Solid Showing (Pre/OP)",
+		"name": "Solid Showing", "initiator": "(Pre/OP)",
 		"text": [
 		  "[[Energy-]]-20\n[[sp+]]+30\n[[1stats]] +3\n[[possible]]Race skill hint [[hint]]",
 		  "[[Energy-]]-10/-30\n[[sp+]]+30\n[[1stats]] +3\n[[possible]]Race skill hint [[hint]]"
 		]
 	  },
 	  {
-		"name": "Defeat (G1)",
+		"name": "Defeat", "initiator": "(G1)",
 		"text": [
 		  "[[Energy-]]-25\n[[sp+]]+25\n[[1stats]] +4\n[[possible]]Race skill hint [[hint]]",
 		  "[[Energy-]]-15/-35\n[[sp+]]+25\n[[1stats]] +4\n[[possible]]Race skill hint [[hint]]"
 		]
 	  },
 	  {
-		"name": "Defeat (G2/G3)",
+		"name": "Defeat", "initiator": "(G2/G3)",
 		"text": [
 		  "[[Energy-]]-25\n[[sp+]]+20\n[[1stats]] +3\n[[possible]]Race skill hint [[hint]]",
 		  "[[Energy-]]-15/-35\n[[sp+]]+20\n[[1stats]] +3\n[[possible]]Race skill hint [[hint]]"
 		]
 	  },
 	  {
-		"name": "Defeat (Pre/OP)",
+		"name": "Defeat", "initiator": "(Pre/OP)",
 		"text": [
 		  "[[Energy-]]-25\n[[sp+]]+10\n[[possible]]Race skill hint [[hint]]",
 		  "[[Energy-]]-15/-35\n[[sp+]]+10\n[[possible]]Race skill hint [[hint]]"
 		]
 	  },
 	  {
-		"name": "Etsuko's Elated Coverage (G1)",
+		"name": "Etsuko's Elated Coverage", "initiator": "(G1)",
 		"text": [
 		  "[[Energy-]]-15\n[[sp+]]+45\n[[Fans+]]+500\n[[1stats]] +10\n[[possible]]Race skill hint [[hint]]\nEtsuko Otonashi [[bond+]]+15\n[[Mood+]]+1"
 		]
 	  },
 	  {
-		"name": "Etsuko's Elated Coverage (G2/G3)",
+		"name": "Etsuko's Elated Coverage", "initiator": "(G2/G3)",
 		"text": [
 		  "[[Energy-]]-15\n[[sp+]]+35\n[[Fans+]]+500\n[[1stats]] +8\n[[possible]]Race skill hint [[hint]]\nEtsuko Otonashi [[bond+]]+15\n[[Mood+]]+1"
 		]
 	  },
 	  {
-		"name": "Etsuko's Elated Coverage (Pre/OP)",
+		"name": "Etsuko's Elated Coverage", "initiator": "(Pre/OP)",
 		"text": [
 		  "[[Energy-]]-15\n[[sp+]]+30\n[[Fans+]]+500\n[[1stats]] +5\n[[possible]]Race skill hint [[hint]]\nEtsuko Otonashi [[bond+]]+15\n[[Mood+]]+1"
 		]
 	  },
 	  {
-		"name": "Etsuko's Exhaustive Coverage (G1)",
+		"name": "Etsuko's Exhaustive Coverage", "initiator": "(G1)",
 		"text": [
 		  "[[Energy-]]-15\n[[Energy-]]-25\n[[sp+]]+25\n[[sp+]]+25\n[[1stats]] +4\n[[or]]\n[[1stats]] +4\nEtsuko Otonashi [[bond+]]+15\nEtsuko Otonashi [[bond-]]-10\n[[Mood+]]+1\n[[Mood-]]-1",
 		  "[[Energy-]]-20\n[[sp+]]+25\n[[1stats]] +4\nEtsuko Otonashi [[bond+]]+10"
 		]
 	  },
 	  {
-		"name": "Etsuko's Exhaustive Coverage (G2/G3)",
+		"name": "Etsuko's Exhaustive Coverage", "initiator": "(G2/G3)",
 		"text": [
 		  "[[Energy-]]-15\n[[Energy-]]-25\n[[sp+]]+20\n[[sp+]]+20\n[[1stats]] +3\n[[or]]\n[[1stats]] +3\nEtsuko Otonashi [[bond+]]+15\nEtsuko Otonashi [[bond-]]-10\n[[Mood+]]+1\n[[Mood-]]-1",
 		  "[[Energy-]]-20\n[[sp+]]+20\n[[1stats]] +3\nEtsuko Otonashi [[bond+]]+10"
 		]
 	  },
 	  {
-		"name": "Etsuko's Exhaustive Coverage (Pre/OP)",
+		"name": "Etsuko's Exhaustive Coverage", "initiator": "(Pre/OP)",
 		"text": [
 		  "[[Energy-]]-15\n[[Energy-]]-25\n[[sp+]]+10\n[[sp+]]+10\n[[or]]\nEtsuko Otonashi [[bond+]]+15\nEtsuko Otonashi [[bond-]]-10\n[[Mood+]]+1\n[[Mood-]]-1",
 		  "[[Energy-]]-20\n[[sp+]]+10\nEtsuko Otonashi [[bond+]]+10"
@@ -3281,7 +3290,8 @@
 		]
 	  },
 	  {
-		"name": "Failed training (Get Well Soon!)",
+		"name": "Get Well Soon!",
+		"initiator": "Failed training",
 		"text": [
 		  "\nPrevious training -5\n[[possible]] Aquires {link:Practice Poor}\n[[Mood-]]-1",
 		  "\nAquires {link:Practice Perfect}\n[[or]]\nPrevious training -10\n[[possible]] Aquires {link:Practice Poor}\n[[Mood-]]-1"
@@ -3348,102 +3358,102 @@
 		]
 	  },
 	  {
-		"name": "Victory! (G1)",
+		"name": "Victory!", "initiator": "(G1)",
 		"text": [
 		  "[[Energy-]]-15\n[[sp+]]+45\n[[1stats]] +10\n[[possible]]Race skill hint [[hint]]",
 		  "[[Energy-]]-5/-20\n[[sp+]]+45\n[[1stats]] +10\n[[possible]]Race skill hint [[hint]]"
 		]
 	  },
 	  {
-		"name": "Victory! (G2/G3)",
+		"name": "Victory!", "initiator": "(G2/G3)",
 		"text": [
 		  "[[Energy-]]-15\n[[sp+]]+35\n[[1stats]] +8\n[[possible]]Race skill hint [[hint]]",
 		  "[[Energy-]]-5/-20\n[[sp+]]+35\n[[1stats]] +8\n[[possible]]Race skill hint [[hint]]"
 		]
 	  },
 	  {
-		"name": "Victory! (Pre/OP)",
+		"name": "Victory!", "initiator": "(Pre/OP)",
 		"text": [
 		  "[[Energy-]]-15\n[[sp+]]+30\n[[1stats]] +5\n[[possible]]Race skill hint [[hint]]",
 		  "[[Energy-]]-5/-20\n[[sp+]]+30\n[[1stats]] +5\n[[possible]]Race skill hint [[hint]]"
 		]
 	  },
 	  {
-		"name": "Solid Showing (G1)",
+		"name": "Solid Showing", "initiator": "(G1)",
 		"text": [
 		  "[[Energy-]]-20\n[[sp+]]+45\n[[1stats]] +8\n[[possible]]Race skill hint [[hint]]",
 		  "[[Energy-]]-10/-30\n[[sp+]]+45\n[[1stats]] +8\n[[possible]]Race skill hint [[hint]]"
 		]
 	  },
 	  {
-		"name": "Solid Showing (G2/G3)",
+		"name": "Solid Showing", "initiator": "(G2/G3)",
 		"text": [
 		  "[[Energy-]]-20\n[[sp+]]+35\n[[1stats]] +5\n[[possible]]Race skill hint [[hint]]",
 		  "[[Energy-]]-10/-30\n[[sp+]]+35\n[[1stats]] +5\n[[possible]]Race skill hint [[hint]]"
 		]
 	  },
 	  {
-		"name": "Solid Showing (Pre/OP)",
+		"name": "Solid Showing", "initiator": "(Pre/OP)",
 		"text": [
 		  "[[Energy-]]-20\n[[sp+]]+30\n[[1stats]] +3\n[[possible]]Race skill hint [[hint]]",
 		  "[[Energy-]]-10/-30\n[[sp+]]+30\n[[1stats]] +3\n[[possible]]Race skill hint [[hint]]"
 		]
 	  },
 	  {
-		"name": "Defeat (G1)",
+		"name": "Defeat", "initiator": "(G1)",
 		"text": [
 		  "[[Energy-]]-25\n[[sp+]]+25\n[[1stats]] +4\n[[possible]]Race skill hint [[hint]]",
 		  "[[Energy-]]-15/-35\n[[sp+]]+25\n[[1stats]] +4\n[[possible]]Race skill hint [[hint]]"
 		]
 	  },
 	  {
-		"name": "Defeat (G2/G3)",
+		"name": "Defeat", "initiator": "(G2/G3)",
 		"text": [
 		  "[[Energy-]]-25\n[[sp+]]+20\n[[1stats]] +3\n[[possible]]Race skill hint [[hint]]",
 		  "[[Energy-]]-15/-35\n[[sp+]]+20\n[[1stats]] +3\n[[possible]]Race skill hint [[hint]]"
 		]
 	  },
 	  {
-		"name": "Defeat (Pre/OP)",
+		"name": "Defeat", "initiator": "(Pre/OP)",
 		"text": [
 		  "[[Energy-]]-25\n[[sp+]]+10\n[[possible]]Race skill hint [[hint]]",
 		  "[[Energy-]]-15/-35\n[[sp+]]+10\n[[possible]]Race skill hint [[hint]]"
 		]
 	  },
 	  {
-		"name": "Etsuko's Elated Coverage (G1)",
+		"name": "Etsuko's Elated Coverage", "initiator": "(G1)",
 		"text": [
 		  "[[Energy-]]-15\n[[sp+]]+45\n[[Fans+]]+500\n[[1stats]] +10\n[[possible]]Race skill hint [[hint]]\nEtsuko Otonashi [[bond+]]+15\n[[Mood+]]+1"
 		]
 	  },
 	  {
-		"name": "Etsuko's Elated Coverage (G2/G3)",
+		"name": "Etsuko's Elated Coverage", "initiator": "(G2/G3)",
 		"text": [
 		  "[[Energy-]]-15\n[[sp+]]+35\n[[Fans+]]+500\n[[1stats]] +8\n[[possible]]Race skill hint [[hint]]\nEtsuko Otonashi [[bond+]]+15\n[[Mood+]]+1"
 		]
 	  },
 	  {
-		"name": "Etsuko's Elated Coverage (Pre/OP)",
+		"name": "Etsuko's Elated Coverage", "initiator": "(Pre/OP)",
 		"text": [
 		  "[[Energy-]]-15\n[[sp+]]+30\n[[Fans+]]+500\n[[1stats]] +5\n[[possible]]Race skill hint [[hint]]\nEtsuko Otonashi [[bond+]]+15\n[[Mood+]]+1"
 		]
 	  },
 	  {
-		"name": "Etsuko's Exhaustive Coverage (G1)",
+		"name": "Etsuko's Exhaustive Coverage", "initiator": "(G1)",
 		"text": [
 		  "[[Energy-]]-15\n[[Energy-]]-25\n[[sp+]]+25\n[[sp+]]+25\n[[1stats]] +4\n[[or]]\n[[1stats]] +4\nEtsuko Otonashi [[bond+]]+15\nEtsuko Otonashi [[bond-]]-10\n[[Mood+]]+1\n[[Mood-]]-1",
 		  "[[Energy-]]-20\n[[sp+]]+25\n[[1stats]] +4\nEtsuko Otonashi [[bond+]]+10"
 		]
 	  },
 	  {
-		"name": "Etsuko's Exhaustive Coverage (G2/G3)",
+		"name": "Etsuko's Exhaustive Coverage", "initiator": "(G2/G3)",
 		"text": [
 		  "[[Energy-]]-15\n[[Energy-]]-25\n[[sp+]]+20\n[[sp+]]+20\n[[1stats]] +3\n[[or]]\n[[1stats]] +3\nEtsuko Otonashi [[bond+]]+15\nEtsuko Otonashi [[bond-]]-10\n[[Mood+]]+1\n[[Mood-]]-1",
 		  "[[Energy-]]-20\n[[sp+]]+20\n[[1stats]] +3\nEtsuko Otonashi [[bond+]]+10"
 		]
 	  },
 	  {
-		"name": "Etsuko's Exhaustive Coverage (Pre/OP)",
+		"name": "Etsuko's Exhaustive Coverage", "initiator": "(Pre/OP)",
 		"text": [
 		  "[[Energy-]]-15\n[[Energy-]]-25\n[[sp+]]+10\n[[sp+]]+10\n[[or]]\nEtsuko Otonashi [[bond+]]+15\nEtsuko Otonashi [[bond-]]-10\n[[Mood+]]+1\n[[Mood-]]-1",
 		  "[[Energy-]]-20\n[[sp+]]+10\nEtsuko Otonashi [[bond+]]+10"
@@ -3651,7 +3661,8 @@
 		]
 	  },
 	  {
-		"name": "Failed training (Get Well Soon!)",
+		"name": "Get Well Soon!",
+		"initiator": "Failed training",
 		"text": [
 		  "\nPrevious training -5\n[[possible]] Aquires {link:Practice Poor}\n[[Mood-]]-1",
 		  "\nAquires {link:Practice Perfect}\n[[or]]\nPrevious training -10\n[[possible]] Aquires {link:Practice Poor}\n[[Mood-]]-1"
@@ -3718,102 +3729,102 @@
 		]
 	  },
 	  {
-		"name": "Victory! (G1)",
+		"name": "Victory!", "initiator": "(G1)",
 		"text": [
 		  "[[Energy-]]-15\n[[sp+]]+45\n[[1stats]] +10\n[[possible]]Race skill hint [[hint]]",
 		  "[[Energy-]]-5/-20\n[[sp+]]+45\n[[1stats]] +10\n[[possible]]Race skill hint [[hint]]"
 		]
 	  },
 	  {
-		"name": "Victory! (G2/G3)",
+		"name": "Victory!", "initiator": "(G2/G3)",
 		"text": [
 		  "[[Energy-]]-15\n[[sp+]]+35\n[[1stats]] +8\n[[possible]]Race skill hint [[hint]]",
 		  "[[Energy-]]-5/-20\n[[sp+]]+35\n[[1stats]] +8\n[[possible]]Race skill hint [[hint]]"
 		]
 	  },
 	  {
-		"name": "Victory! (Pre/OP)",
+		"name": "Victory!", "initiator": "(Pre/OP)",
 		"text": [
 		  "[[Energy-]]-15\n[[sp+]]+30\n[[1stats]] +5\n[[possible]]Race skill hint [[hint]]",
 		  "[[Energy-]]-5/-20\n[[sp+]]+30\n[[1stats]] +5\n[[possible]]Race skill hint [[hint]]"
 		]
 	  },
 	  {
-		"name": "Solid Showing (G1)",
+		"name": "Solid Showing", "initiator": "(G1)",
 		"text": [
 		  "[[Energy-]]-20\n[[sp+]]+45\n[[1stats]] +8\n[[possible]]Race skill hint [[hint]]",
 		  "[[Energy-]]-10/-30\n[[sp+]]+45\n[[1stats]] +8\n[[possible]]Race skill hint [[hint]]"
 		]
 	  },
 	  {
-		"name": "Solid Showing (G2/G3)",
+		"name": "Solid Showing", "initiator": "(G2/G3)",
 		"text": [
 		  "[[Energy-]]-20\n[[sp+]]+35\n[[1stats]] +5\n[[possible]]Race skill hint [[hint]]",
 		  "[[Energy-]]-10/-30\n[[sp+]]+35\n[[1stats]] +5\n[[possible]]Race skill hint [[hint]]"
 		]
 	  },
 	  {
-		"name": "Solid Showing (Pre/OP)",
+		"name": "Solid Showing", "initiator": "(Pre/OP)",
 		"text": [
 		  "[[Energy-]]-20\n[[sp+]]+30\n[[1stats]] +3\n[[possible]]Race skill hint [[hint]]",
 		  "[[Energy-]]-10/-30\n[[sp+]]+30\n[[1stats]] +3\n[[possible]]Race skill hint [[hint]]"
 		]
 	  },
 	  {
-		"name": "Defeat (G1)",
+		"name": "Defeat", "initiator": "(G1)",
 		"text": [
 		  "[[Energy-]]-25\n[[sp+]]+25\n[[1stats]] +4\n[[possible]]Race skill hint [[hint]]",
 		  "[[Energy-]]-15/-35\n[[sp+]]+25\n[[1stats]] +4\n[[possible]]Race skill hint [[hint]]"
 		]
 	  },
 	  {
-		"name": "Defeat (G2/G3)",
+		"name": "Defeat", "initiator": "(G2/G3)",
 		"text": [
 		  "[[Energy-]]-25\n[[sp+]]+20\n[[1stats]] +3\n[[possible]]Race skill hint [[hint]]",
 		  "[[Energy-]]-15/-35\n[[sp+]]+20\n[[1stats]] +3\n[[possible]]Race skill hint [[hint]]"
 		]
 	  },
 	  {
-		"name": "Defeat (Pre/OP)",
+		"name": "Defeat", "initiator": "(Pre/OP)",
 		"text": [
 		  "[[Energy-]]-25\n[[sp+]]+10\n[[possible]]Race skill hint [[hint]]",
 		  "[[Energy-]]-15/-35\n[[sp+]]+10\n[[possible]]Race skill hint [[hint]]"
 		]
 	  },
 	  {
-		"name": "Etsuko's Elated Coverage (G1)",
+		"name": "Etsuko's Elated Coverage", "initiator": "(G1)",
 		"text": [
 		  "[[Energy-]]-15\n[[sp+]]+45\n[[Fans+]]+500\n[[1stats]] +10\n[[possible]]Race skill hint [[hint]]\nEtsuko Otonashi [[bond+]]+15\n[[Mood+]]+1"
 		]
 	  },
 	  {
-		"name": "Etsuko's Elated Coverage (G2/G3)",
+		"name": "Etsuko's Elated Coverage", "initiator": "(G2/G3)",
 		"text": [
 		  "[[Energy-]]-15\n[[sp+]]+35\n[[Fans+]]+500\n[[1stats]] +8\n[[possible]]Race skill hint [[hint]]\nEtsuko Otonashi [[bond+]]+15\n[[Mood+]]+1"
 		]
 	  },
 	  {
-		"name": "Etsuko's Elated Coverage (Pre/OP)",
+		"name": "Etsuko's Elated Coverage", "initiator": "(Pre/OP)",
 		"text": [
 		  "[[Energy-]]-15\n[[sp+]]+30\n[[Fans+]]+500\n[[1stats]] +5\n[[possible]]Race skill hint [[hint]]\nEtsuko Otonashi [[bond+]]+15\n[[Mood+]]+1"
 		]
 	  },
 	  {
-		"name": "Etsuko's Exhaustive Coverage (G1)",
+		"name": "Etsuko's Exhaustive Coverage", "initiator": "(G1)",
 		"text": [
 		  "[[Energy-]]-15\n[[Energy-]]-25\n[[sp+]]+25\n[[sp+]]+25\n[[1stats]] +4\n[[or]]\n[[1stats]] +4\nEtsuko Otonashi [[bond+]]+15\nEtsuko Otonashi [[bond-]]-10\n[[Mood+]]+1\n[[Mood-]]-1",
 		  "[[Energy-]]-20\n[[sp+]]+25\n[[1stats]] +4\nEtsuko Otonashi [[bond+]]+10"
 		]
 	  },
 	  {
-		"name": "Etsuko's Exhaustive Coverage (G2/G3)",
+		"name": "Etsuko's Exhaustive Coverage", "initiator": "(G2/G3)",
 		"text": [
 		  "[[Energy-]]-15\n[[Energy-]]-25\n[[sp+]]+20\n[[sp+]]+20\n[[1stats]] +3\n[[or]]\n[[1stats]] +3\nEtsuko Otonashi [[bond+]]+15\nEtsuko Otonashi [[bond-]]-10\n[[Mood+]]+1\n[[Mood-]]-1",
 		  "[[Energy-]]-20\n[[sp+]]+20\n[[1stats]] +3\nEtsuko Otonashi [[bond+]]+10"
 		]
 	  },
 	  {
-		"name": "Etsuko's Exhaustive Coverage (Pre/OP)",
+		"name": "Etsuko's Exhaustive Coverage", "initiator": "(Pre/OP)",
 		"text": [
 		  "[[Energy-]]-15\n[[Energy-]]-25\n[[sp+]]+10\n[[sp+]]+10\n[[or]]\nEtsuko Otonashi [[bond+]]+15\nEtsuko Otonashi [[bond-]]-10\n[[Mood+]]+1\n[[Mood-]]-1",
 		  "[[Energy-]]-20\n[[sp+]]+10\nEtsuko Otonashi [[bond+]]+10"
@@ -4007,7 +4018,8 @@
 		]
 	  },
 	  {
-		"name": "Failed training (Get Well Soon!)",
+		"name": "Get Well Soon!",
+		"initiator": "Failed training",
 		"text": [
 		  "\nPrevious training -5\n[[possible]] Aquires {link:Practice Poor}\n[[Mood-]]-1",
 		  "\nAquires {link:Practice Perfect}\n[[or]]\nPrevious training -10\n[[possible]] Aquires {link:Practice Poor}\n[[Mood-]]-1"
@@ -4074,102 +4086,102 @@
 		]
 	  },
 	  {
-		"name": "Victory! (G1)",
+		"name": "Victory!", "initiator": "(G1)",
 		"text": [
 		  "[[Energy-]]-15\n[[sp+]]+45\n[[1stats]] +10\n[[possible]]Race skill hint [[hint]]",
 		  "[[Energy-]]-5/-20\n[[sp+]]+45\n[[1stats]] +10\n[[possible]]Race skill hint [[hint]]"
 		]
 	  },
 	  {
-		"name": "Victory! (G2/G3)",
+		"name": "Victory!", "initiator": "(G2/G3)",
 		"text": [
 		  "[[Energy-]]-15\n[[sp+]]+35\n[[1stats]] +8\n[[possible]]Race skill hint [[hint]]",
 		  "[[Energy-]]-5/-20\n[[sp+]]+35\n[[1stats]] +8\n[[possible]]Race skill hint [[hint]]"
 		]
 	  },
 	  {
-		"name": "Victory! (Pre/OP)",
+		"name": "Victory!", "initiator": "(Pre/OP)",
 		"text": [
 		  "[[Energy-]]-15\n[[sp+]]+30\n[[1stats]] +5\n[[possible]]Race skill hint [[hint]]",
 		  "[[Energy-]]-5/-20\n[[sp+]]+30\n[[1stats]] +5\n[[possible]]Race skill hint [[hint]]"
 		]
 	  },
 	  {
-		"name": "Solid Showing (G1)",
+		"name": "Solid Showing", "initiator": "(G1)",
 		"text": [
 		  "[[Energy-]]-20\n[[sp+]]+45\n[[1stats]] +8\n[[possible]]Race skill hint [[hint]]",
 		  "[[Energy-]]-10/-30\n[[sp+]]+45\n[[1stats]] +8\n[[possible]]Race skill hint [[hint]]"
 		]
 	  },
 	  {
-		"name": "Solid Showing (G2/G3)",
+		"name": "Solid Showing", "initiator": "(G2/G3)",
 		"text": [
 		  "[[Energy-]]-20\n[[sp+]]+35\n[[1stats]] +5\n[[possible]]Race skill hint [[hint]]",
 		  "[[Energy-]]-10/-30\n[[sp+]]+35\n[[1stats]] +5\n[[possible]]Race skill hint [[hint]]"
 		]
 	  },
 	  {
-		"name": "Solid Showing (Pre/OP)",
+		"name": "Solid Showing", "initiator": "(Pre/OP)",
 		"text": [
 		  "[[Energy-]]-20\n[[sp+]]+30\n[[1stats]] +3\n[[possible]]Race skill hint [[hint]]",
 		  "[[Energy-]]-10/-30\n[[sp+]]+30\n[[1stats]] +3\n[[possible]]Race skill hint [[hint]]"
 		]
 	  },
 	  {
-		"name": "Defeat (G1)",
+		"name": "Defeat", "initiator": "(G1)",
 		"text": [
 		  "[[Energy-]]-25\n[[sp+]]+25\n[[1stats]] +4\n[[possible]]Race skill hint [[hint]]",
 		  "[[Energy-]]-15/-35\n[[sp+]]+25\n[[1stats]] +4\n[[possible]]Race skill hint [[hint]]"
 		]
 	  },
 	  {
-		"name": "Defeat (G2/G3)",
+		"name": "Defeat", "initiator": "(G2/G3)",
 		"text": [
 		  "[[Energy-]]-25\n[[sp+]]+20\n[[1stats]] +3\n[[possible]]Race skill hint [[hint]]",
 		  "[[Energy-]]-15/-35\n[[sp+]]+20\n[[1stats]] +3\n[[possible]]Race skill hint [[hint]]"
 		]
 	  },
 	  {
-		"name": "Defeat (Pre/OP)",
+		"name": "Defeat", "initiator": "(Pre/OP)",
 		"text": [
 		  "[[Energy-]]-25\n[[sp+]]+10\n[[possible]]Race skill hint [[hint]]",
 		  "[[Energy-]]-15/-35\n[[sp+]]+10\n[[possible]]Race skill hint [[hint]]"
 		]
 	  },
 	  {
-		"name": "Etsuko's Elated Coverage (G1)",
+		"name": "Etsuko's Elated Coverage", "initiator": "(G1)",
 		"text": [
 		  "[[Energy-]]-15\n[[sp+]]+45\n[[Fans+]]+500\n[[1stats]] +10\n[[possible]]Race skill hint [[hint]]\nEtsuko Otonashi [[bond+]]+15\n[[Mood+]]+1"
 		]
 	  },
 	  {
-		"name": "Etsuko's Elated Coverage (G2/G3)",
+		"name": "Etsuko's Elated Coverage", "initiator": "(G2/G3)",
 		"text": [
 		  "[[Energy-]]-15\n[[sp+]]+35\n[[Fans+]]+500\n[[1stats]] +8\n[[possible]]Race skill hint [[hint]]\nEtsuko Otonashi [[bond+]]+15\n[[Mood+]]+1"
 		]
 	  },
 	  {
-		"name": "Etsuko's Elated Coverage (Pre/OP)",
+		"name": "Etsuko's Elated Coverage", "initiator": "(Pre/OP)",
 		"text": [
 		  "[[Energy-]]-15\n[[sp+]]+30\n[[Fans+]]+500\n[[1stats]] +5\n[[possible]]Race skill hint [[hint]]\nEtsuko Otonashi [[bond+]]+15\n[[Mood+]]+1"
 		]
 	  },
 	  {
-		"name": "Etsuko's Exhaustive Coverage (G1)",
+		"name": "Etsuko's Exhaustive Coverage", "initiator": "(G1)",
 		"text": [
 		  "[[Energy-]]-15\n[[Energy-]]-25\n[[sp+]]+25\n[[sp+]]+25\n[[1stats]] +4\n[[or]]\n[[1stats]] +4\nEtsuko Otonashi [[bond+]]+15\nEtsuko Otonashi [[bond-]]-10\n[[Mood+]]+1\n[[Mood-]]-1",
 		  "[[Energy-]]-20\n[[sp+]]+25\n[[1stats]] +4\nEtsuko Otonashi [[bond+]]+10"
 		]
 	  },
 	  {
-		"name": "Etsuko's Exhaustive Coverage (G2/G3)",
+		"name": "Etsuko's Exhaustive Coverage", "initiator": "(G2/G3)",
 		"text": [
 		  "[[Energy-]]-15\n[[Energy-]]-25\n[[sp+]]+20\n[[sp+]]+20\n[[1stats]] +3\n[[or]]\n[[1stats]] +3\nEtsuko Otonashi [[bond+]]+15\nEtsuko Otonashi [[bond-]]-10\n[[Mood+]]+1\n[[Mood-]]-1",
 		  "[[Energy-]]-20\n[[sp+]]+20\n[[1stats]] +3\nEtsuko Otonashi [[bond+]]+10"
 		]
 	  },
 	  {
-		"name": "Etsuko's Exhaustive Coverage (Pre/OP)",
+		"name": "Etsuko's Exhaustive Coverage", "initiator": "(Pre/OP)",
 		"text": [
 		  "[[Energy-]]-15\n[[Energy-]]-25\n[[sp+]]+10\n[[sp+]]+10\n[[or]]\nEtsuko Otonashi [[bond+]]+15\nEtsuko Otonashi [[bond-]]-10\n[[Mood+]]+1\n[[Mood-]]-1",
 		  "[[Energy-]]-20\n[[sp+]]+10\nEtsuko Otonashi [[bond+]]+10"
@@ -4382,7 +4394,8 @@
 		]
 	  },
 	  {
-		"name": "Failed training (Get Well Soon!)",
+		"name": "Get Well Soon!",
+		"initiator": "Failed training",
 		"text": [
 		  "\nPrevious training -5\n[[possible]] Aquires {link:Practice Poor}\n[[Mood-]]-1",
 		  "\nAquires {link:Practice Perfect}\n[[or]]\nPrevious training -10\n[[possible]] Aquires {link:Practice Poor}\n[[Mood-]]-1"
@@ -4449,102 +4462,102 @@
 		]
 	  },
 	  {
-		"name": "Victory! (G1)",
+		"name": "Victory!", "initiator": "(G1)",
 		"text": [
 		  "[[Energy-]]-15\n[[sp+]]+45\n[[1stats]] +10\n[[possible]]Race skill hint [[hint]]",
 		  "[[Energy-]]-5/-20\n[[sp+]]+45\n[[1stats]] +10\n[[possible]]Race skill hint [[hint]]"
 		]
 	  },
 	  {
-		"name": "Victory! (G2/G3)",
+		"name": "Victory!", "initiator": "(G2/G3)",
 		"text": [
 		  "[[Energy-]]-15\n[[sp+]]+35\n[[1stats]] +8\n[[possible]]Race skill hint [[hint]]",
 		  "[[Energy-]]-5/-20\n[[sp+]]+35\n[[1stats]] +8\n[[possible]]Race skill hint [[hint]]"
 		]
 	  },
 	  {
-		"name": "Victory! (Pre/OP)",
+		"name": "Victory!", "initiator": "(Pre/OP)",
 		"text": [
 		  "[[Energy-]]-15\n[[sp+]]+30\n[[1stats]] +5\n[[possible]]Race skill hint [[hint]]",
 		  "[[Energy-]]-5/-20\n[[sp+]]+30\n[[1stats]] +5\n[[possible]]Race skill hint [[hint]]"
 		]
 	  },
 	  {
-		"name": "Solid Showing (G1)",
+		"name": "Solid Showing", "initiator": "(G1)",
 		"text": [
 		  "[[Energy-]]-20\n[[sp+]]+45\n[[1stats]] +8\n[[possible]]Race skill hint [[hint]]",
 		  "[[Energy-]]-10/-30\n[[sp+]]+45\n[[1stats]] +8\n[[possible]]Race skill hint [[hint]]"
 		]
 	  },
 	  {
-		"name": "Solid Showing (G2/G3)",
+		"name": "Solid Showing", "initiator": "(G2/G3)",
 		"text": [
 		  "[[Energy-]]-20\n[[sp+]]+35\n[[1stats]] +5\n[[possible]]Race skill hint [[hint]]",
 		  "[[Energy-]]-10/-30\n[[sp+]]+35\n[[1stats]] +5\n[[possible]]Race skill hint [[hint]]"
 		]
 	  },
 	  {
-		"name": "Solid Showing (Pre/OP)",
+		"name": "Solid Showing", "initiator": "(Pre/OP)",
 		"text": [
 		  "[[Energy-]]-20\n[[sp+]]+30\n[[1stats]] +3\n[[possible]]Race skill hint [[hint]]",
 		  "[[Energy-]]-10/-30\n[[sp+]]+30\n[[1stats]] +3\n[[possible]]Race skill hint [[hint]]"
 		]
 	  },
 	  {
-		"name": "Defeat (G1)",
+		"name": "Defeat", "initiator": "(G1)",
 		"text": [
 		  "[[Energy-]]-25\n[[sp+]]+25\n[[1stats]] +4\n[[possible]]Race skill hint [[hint]]",
 		  "[[Energy-]]-15/-35\n[[sp+]]+25\n[[1stats]] +4\n[[possible]]Race skill hint [[hint]]"
 		]
 	  },
 	  {
-		"name": "Defeat (G2/G3)",
+		"name": "Defeat", "initiator": "(G2/G3)",
 		"text": [
 		  "[[Energy-]]-25\n[[sp+]]+20\n[[1stats]] +3\n[[possible]]Race skill hint [[hint]]",
 		  "[[Energy-]]-15/-35\n[[sp+]]+20\n[[1stats]] +3\n[[possible]]Race skill hint [[hint]]"
 		]
 	  },
 	  {
-		"name": "Defeat (Pre/OP)",
+		"name": "Defeat", "initiator": "(Pre/OP)",
 		"text": [
 		  "[[Energy-]]-25\n[[sp+]]+10\n[[possible]]Race skill hint [[hint]]",
 		  "[[Energy-]]-15/-35\n[[sp+]]+10\n[[possible]]Race skill hint [[hint]]"
 		]
 	  },
 	  {
-		"name": "Etsuko's Elated Coverage (G1)",
+		"name": "Etsuko's Elated Coverage", "initiator": "(G1)",
 		"text": [
 		  "[[Energy-]]-15\n[[sp+]]+45\n[[Fans+]]+500\n[[1stats]] +10\n[[possible]]Race skill hint [[hint]]\nEtsuko Otonashi [[bond+]]+15\n[[Mood+]]+1"
 		]
 	  },
 	  {
-		"name": "Etsuko's Elated Coverage (G2/G3)",
+		"name": "Etsuko's Elated Coverage", "initiator": "(G2/G3)",
 		"text": [
 		  "[[Energy-]]-15\n[[sp+]]+35\n[[Fans+]]+500\n[[1stats]] +8\n[[possible]]Race skill hint [[hint]]\nEtsuko Otonashi [[bond+]]+15\n[[Mood+]]+1"
 		]
 	  },
 	  {
-		"name": "Etsuko's Elated Coverage (Pre/OP)",
+		"name": "Etsuko's Elated Coverage", "initiator": "(Pre/OP)",
 		"text": [
 		  "[[Energy-]]-15\n[[sp+]]+30\n[[Fans+]]+500\n[[1stats]] +5\n[[possible]]Race skill hint [[hint]]\nEtsuko Otonashi [[bond+]]+15\n[[Mood+]]+1"
 		]
 	  },
 	  {
-		"name": "Etsuko's Exhaustive Coverage (G1)",
+		"name": "Etsuko's Exhaustive Coverage", "initiator": "(G1)",
 		"text": [
 		  "[[Energy-]]-15\n[[Energy-]]-25\n[[sp+]]+25\n[[sp+]]+25\n[[1stats]] +4\n[[or]]\n[[1stats]] +4\nEtsuko Otonashi [[bond+]]+15\nEtsuko Otonashi [[bond-]]-10\n[[Mood+]]+1\n[[Mood-]]-1",
 		  "[[Energy-]]-20\n[[sp+]]+25\n[[1stats]] +4\nEtsuko Otonashi [[bond+]]+10"
 		]
 	  },
 	  {
-		"name": "Etsuko's Exhaustive Coverage (G2/G3)",
+		"name": "Etsuko's Exhaustive Coverage", "initiator": "(G2/G3)",
 		"text": [
 		  "[[Energy-]]-15\n[[Energy-]]-25\n[[sp+]]+20\n[[sp+]]+20\n[[1stats]] +3\n[[or]]\n[[1stats]] +3\nEtsuko Otonashi [[bond+]]+15\nEtsuko Otonashi [[bond-]]-10\n[[Mood+]]+1\n[[Mood-]]-1",
 		  "[[Energy-]]-20\n[[sp+]]+20\n[[1stats]] +3\nEtsuko Otonashi [[bond+]]+10"
 		]
 	  },
 	  {
-		"name": "Etsuko's Exhaustive Coverage (Pre/OP)",
+		"name": "Etsuko's Exhaustive Coverage", "initiator": "(Pre/OP)",
 		"text": [
 		  "[[Energy-]]-15\n[[Energy-]]-25\n[[sp+]]+10\n[[sp+]]+10\n[[or]]\nEtsuko Otonashi [[bond+]]+15\nEtsuko Otonashi [[bond-]]-10\n[[Mood+]]+1\n[[Mood-]]-1",
 		  "[[Energy-]]-20\n[[sp+]]+10\nEtsuko Otonashi [[bond+]]+10"
@@ -4732,7 +4745,8 @@
 		]
 	  },
 	  {
-		"name": "Failed training (Get Well Soon!)",
+		"name": "Get Well Soon!",
+		"initiator": "Failed training",
 		"text": [
 		  "\nPrevious training -5\n[[possible]] Aquires {link:Practice Poor}\n[[Mood-]]-1",
 		  "\nAquires {link:Practice Perfect}\n[[or]]\nPrevious training -10\n[[possible]] Aquires {link:Practice Poor}\n[[Mood-]]-1"
@@ -4799,102 +4813,102 @@
 		]
 	  },
 	  {
-		"name": "Victory! (G1)",
+		"name": "Victory!", "initiator": "(G1)",
 		"text": [
 		  "[[Energy-]]-15\n[[sp+]]+45\n[[1stats]] +10\n[[possible]]Race skill hint [[hint]]",
 		  "[[Energy-]]-5/-20\n[[sp+]]+45\n[[1stats]] +10\n[[possible]]Race skill hint [[hint]]"
 		]
 	  },
 	  {
-		"name": "Victory! (G2/G3)",
+		"name": "Victory!", "initiator": "(G2/G3)",
 		"text": [
 		  "[[Energy-]]-15\n[[sp+]]+35\n[[1stats]] +8\n[[possible]]Race skill hint [[hint]]",
 		  "[[Energy-]]-5/-20\n[[sp+]]+35\n[[1stats]] +8\n[[possible]]Race skill hint [[hint]]"
 		]
 	  },
 	  {
-		"name": "Victory! (Pre/OP)",
+		"name": "Victory!", "initiator": "(Pre/OP)",
 		"text": [
 		  "[[Energy-]]-15\n[[sp+]]+30\n[[1stats]] +5\n[[possible]]Race skill hint [[hint]]",
 		  "[[Energy-]]-5/-20\n[[sp+]]+30\n[[1stats]] +5\n[[possible]]Race skill hint [[hint]]"
 		]
 	  },
 	  {
-		"name": "Solid Showing (G1)",
+		"name": "Solid Showing", "initiator": "(G1)",
 		"text": [
 		  "[[Energy-]]-20\n[[sp+]]+45\n[[1stats]] +8\n[[possible]]Race skill hint [[hint]]",
 		  "[[Energy-]]-10/-30\n[[sp+]]+45\n[[1stats]] +8\n[[possible]]Race skill hint [[hint]]"
 		]
 	  },
 	  {
-		"name": "Solid Showing (G2/G3)",
+		"name": "Solid Showing", "initiator": "(G2/G3)",
 		"text": [
 		  "[[Energy-]]-20\n[[sp+]]+35\n[[1stats]] +5\n[[possible]]Race skill hint [[hint]]",
 		  "[[Energy-]]-10/-30\n[[sp+]]+35\n[[1stats]] +5\n[[possible]]Race skill hint [[hint]]"
 		]
 	  },
 	  {
-		"name": "Solid Showing (Pre/OP)",
+		"name": "Solid Showing", "initiator": "(Pre/OP)",
 		"text": [
 		  "[[Energy-]]-20\n[[sp+]]+30\n[[1stats]] +3\n[[possible]]Race skill hint [[hint]]",
 		  "[[Energy-]]-10/-30\n[[sp+]]+30\n[[1stats]] +3\n[[possible]]Race skill hint [[hint]]"
 		]
 	  },
 	  {
-		"name": "Defeat (G1)",
+		"name": "Defeat", "initiator": "(G1)",
 		"text": [
 		  "[[Energy-]]-25\n[[sp+]]+25\n[[1stats]] +4\n[[possible]]Race skill hint [[hint]]",
 		  "[[Energy-]]-15/-35\n[[sp+]]+25\n[[1stats]] +4\n[[possible]]Race skill hint [[hint]]"
 		]
 	  },
 	  {
-		"name": "Defeat (G2/G3)",
+		"name": "Defeat", "initiator": "(G2/G3)",
 		"text": [
 		  "[[Energy-]]-25\n[[sp+]]+20\n[[1stats]] +3\n[[possible]]Race skill hint [[hint]]",
 		  "[[Energy-]]-15/-35\n[[sp+]]+20\n[[1stats]] +3\n[[possible]]Race skill hint [[hint]]"
 		]
 	  },
 	  {
-		"name": "Defeat (Pre/OP)",
+		"name": "Defeat", "initiator": "(Pre/OP)",
 		"text": [
 		  "[[Energy-]]-25\n[[sp+]]+10\n[[possible]]Race skill hint [[hint]]",
 		  "[[Energy-]]-15/-35\n[[sp+]]+10\n[[possible]]Race skill hint [[hint]]"
 		]
 	  },
 	  {
-		"name": "Etsuko's Elated Coverage (G1)",
+		"name": "Etsuko's Elated Coverage", "initiator": "(G1)",
 		"text": [
 		  "[[Energy-]]-15\n[[sp+]]+45\n[[Fans+]]+500\n[[1stats]] +10\n[[possible]]Race skill hint [[hint]]\nEtsuko Otonashi [[bond+]]+15\n[[Mood+]]+1"
 		]
 	  },
 	  {
-		"name": "Etsuko's Elated Coverage (G2/G3)",
+		"name": "Etsuko's Elated Coverage", "initiator": "(G2/G3)",
 		"text": [
 		  "[[Energy-]]-15\n[[sp+]]+35\n[[Fans+]]+500\n[[1stats]] +8\n[[possible]]Race skill hint [[hint]]\nEtsuko Otonashi [[bond+]]+15\n[[Mood+]]+1"
 		]
 	  },
 	  {
-		"name": "Etsuko's Elated Coverage (Pre/OP)",
+		"name": "Etsuko's Elated Coverage", "initiator": "(Pre/OP)",
 		"text": [
 		  "[[Energy-]]-15\n[[sp+]]+30\n[[Fans+]]+500\n[[1stats]] +5\n[[possible]]Race skill hint [[hint]]\nEtsuko Otonashi [[bond+]]+15\n[[Mood+]]+1"
 		]
 	  },
 	  {
-		"name": "Etsuko's Exhaustive Coverage (G1)",
+		"name": "Etsuko's Exhaustive Coverage", "initiator": "(G1)",
 		"text": [
 		  "[[Energy-]]-15\n[[Energy-]]-25\n[[sp+]]+25\n[[sp+]]+25\n[[1stats]] +4\n[[or]]\n[[1stats]] +4\nEtsuko Otonashi [[bond+]]+15\nEtsuko Otonashi [[bond-]]-10\n[[Mood+]]+1\n[[Mood-]]-1",
 		  "[[Energy-]]-20\n[[sp+]]+25\n[[1stats]] +4\nEtsuko Otonashi [[bond+]]+10"
 		]
 	  },
 	  {
-		"name": "Etsuko's Exhaustive Coverage (G2/G3)",
+		"name": "Etsuko's Exhaustive Coverage", "initiator": "(G2/G3)",
 		"text": [
 		  "[[Energy-]]-15\n[[Energy-]]-25\n[[sp+]]+20\n[[sp+]]+20\n[[1stats]] +3\n[[or]]\n[[1stats]] +3\nEtsuko Otonashi [[bond+]]+15\nEtsuko Otonashi [[bond-]]-10\n[[Mood+]]+1\n[[Mood-]]-1",
 		  "[[Energy-]]-20\n[[sp+]]+20\n[[1stats]] +3\nEtsuko Otonashi [[bond+]]+10"
 		]
 	  },
 	  {
-		"name": "Etsuko's Exhaustive Coverage (Pre/OP)",
+		"name": "Etsuko's Exhaustive Coverage", "initiator": "(Pre/OP)",
 		"text": [
 		  "[[Energy-]]-15\n[[Energy-]]-25\n[[sp+]]+10\n[[sp+]]+10\n[[or]]\nEtsuko Otonashi [[bond+]]+15\nEtsuko Otonashi [[bond-]]-10\n[[Mood+]]+1\n[[Mood-]]-1",
 		  "[[Energy-]]-20\n[[sp+]]+10\nEtsuko Otonashi [[bond+]]+10"
@@ -5108,7 +5122,8 @@
 		]
 	  },
 	  {
-		"name": "Failed training (Get Well Soon!)",
+		"name": "Get Well Soon!",
+		"initiator": "Failed training",
 		"text": [
 		  "\nPrevious training -5\n[[possible]] Aquires {link:Practice Poor}\n[[Mood-]]-1",
 		  "\nAquires {link:Practice Perfect}\n[[or]]\nPrevious training -10\n[[possible]] Aquires {link:Practice Poor}\n[[Mood-]]-1"
@@ -5175,102 +5190,102 @@
 		]
 	  },
 	  {
-		"name": "Victory! (G1)",
+		"name": "Victory!", "initiator": "(G1)",
 		"text": [
 		  "[[Energy-]]-15\n[[sp+]]+45\n[[1stats]] +10\n[[possible]]Race skill hint [[hint]]",
 		  "[[Energy-]]-5/-20\n[[sp+]]+45\n[[1stats]] +10\n[[possible]]Race skill hint [[hint]]"
 		]
 	  },
 	  {
-		"name": "Victory! (G2/G3)",
+		"name": "Victory!", "initiator": "(G2/G3)",
 		"text": [
 		  "[[Energy-]]-15\n[[sp+]]+35\n[[1stats]] +8\n[[possible]]Race skill hint [[hint]]",
 		  "[[Energy-]]-5/-20\n[[sp+]]+35\n[[1stats]] +8\n[[possible]]Race skill hint [[hint]]"
 		]
 	  },
 	  {
-		"name": "Victory! (Pre/OP)",
+		"name": "Victory!", "initiator": "(Pre/OP)",
 		"text": [
 		  "[[Energy-]]-15\n[[sp+]]+30\n[[1stats]] +5\n[[possible]]Race skill hint [[hint]]",
 		  "[[Energy-]]-5/-20\n[[sp+]]+30\n[[1stats]] +5\n[[possible]]Race skill hint [[hint]]"
 		]
 	  },
 	  {
-		"name": "Solid Showing (G1)",
+		"name": "Solid Showing", "initiator": "(G1)",
 		"text": [
 		  "[[Energy-]]-20\n[[sp+]]+45\n[[1stats]] +8\n[[possible]]Race skill hint [[hint]]",
 		  "[[Energy-]]-10/-30\n[[sp+]]+45\n[[1stats]] +8\n[[possible]]Race skill hint [[hint]]"
 		]
 	  },
 	  {
-		"name": "Solid Showing (G2/G3)",
+		"name": "Solid Showing", "initiator": "(G2/G3)",
 		"text": [
 		  "[[Energy-]]-20\n[[sp+]]+35\n[[1stats]] +5\n[[possible]]Race skill hint [[hint]]",
 		  "[[Energy-]]-10/-30\n[[sp+]]+35\n[[1stats]] +5\n[[possible]]Race skill hint [[hint]]"
 		]
 	  },
 	  {
-		"name": "Solid Showing (Pre/OP)",
+		"name": "Solid Showing", "initiator": "(Pre/OP)",
 		"text": [
 		  "[[Energy-]]-20\n[[sp+]]+30\n[[1stats]] +3\n[[possible]]Race skill hint [[hint]]",
 		  "[[Energy-]]-10/-30\n[[sp+]]+30\n[[1stats]] +3\n[[possible]]Race skill hint [[hint]]"
 		]
 	  },
 	  {
-		"name": "Defeat (G1)",
+		"name": "Defeat", "initiator": "(G1)",
 		"text": [
 		  "[[Energy-]]-25\n[[sp+]]+25\n[[1stats]] +4\n[[possible]]Race skill hint [[hint]]",
 		  "[[Energy-]]-15/-35\n[[sp+]]+25\n[[1stats]] +4\n[[possible]]Race skill hint [[hint]]"
 		]
 	  },
 	  {
-		"name": "Defeat (G2/G3)",
+		"name": "Defeat", "initiator": "(G2/G3)",
 		"text": [
 		  "[[Energy-]]-25\n[[sp+]]+20\n[[1stats]] +3\n[[possible]]Race skill hint [[hint]]",
 		  "[[Energy-]]-15/-35\n[[sp+]]+20\n[[1stats]] +3\n[[possible]]Race skill hint [[hint]]"
 		]
 	  },
 	  {
-		"name": "Defeat (Pre/OP)",
+		"name": "Defeat", "initiator": "(Pre/OP)",
 		"text": [
 		  "[[Energy-]]-25\n[[sp+]]+10\n[[possible]]Race skill hint [[hint]]",
 		  "[[Energy-]]-15/-35\n[[sp+]]+10\n[[possible]]Race skill hint [[hint]]"
 		]
 	  },
 	  {
-		"name": "Etsuko's Elated Coverage (G1)",
+		"name": "Etsuko's Elated Coverage", "initiator": "(G1)",
 		"text": [
 		  "[[Energy-]]-15\n[[sp+]]+45\n[[Fans+]]+500\n[[1stats]] +10\n[[possible]]Race skill hint [[hint]]\nEtsuko Otonashi [[bond+]]+15\n[[Mood+]]+1"
 		]
 	  },
 	  {
-		"name": "Etsuko's Elated Coverage (G2/G3)",
+		"name": "Etsuko's Elated Coverage", "initiator": "(G2/G3)",
 		"text": [
 		  "[[Energy-]]-15\n[[sp+]]+35\n[[Fans+]]+500\n[[1stats]] +8\n[[possible]]Race skill hint [[hint]]\nEtsuko Otonashi [[bond+]]+15\n[[Mood+]]+1"
 		]
 	  },
 	  {
-		"name": "Etsuko's Elated Coverage (Pre/OP)",
+		"name": "Etsuko's Elated Coverage", "initiator": "(Pre/OP)",
 		"text": [
 		  "[[Energy-]]-15\n[[sp+]]+30\n[[Fans+]]+500\n[[1stats]] +5\n[[possible]]Race skill hint [[hint]]\nEtsuko Otonashi [[bond+]]+15\n[[Mood+]]+1"
 		]
 	  },
 	  {
-		"name": "Etsuko's Exhaustive Coverage (G1)",
+		"name": "Etsuko's Exhaustive Coverage", "initiator": "(G1)",
 		"text": [
 		  "[[Energy-]]-15\n[[Energy-]]-25\n[[sp+]]+25\n[[sp+]]+25\n[[1stats]] +4\n[[or]]\n[[1stats]] +4\nEtsuko Otonashi [[bond+]]+15\nEtsuko Otonashi [[bond-]]-10\n[[Mood+]]+1\n[[Mood-]]-1",
 		  "[[Energy-]]-20\n[[sp+]]+25\n[[1stats]] +4\nEtsuko Otonashi [[bond+]]+10"
 		]
 	  },
 	  {
-		"name": "Etsuko's Exhaustive Coverage (G2/G3)",
+		"name": "Etsuko's Exhaustive Coverage", "initiator": "(G2/G3)",
 		"text": [
 		  "[[Energy-]]-15\n[[Energy-]]-25\n[[sp+]]+20\n[[sp+]]+20\n[[1stats]] +3\n[[or]]\n[[1stats]] +3\nEtsuko Otonashi [[bond+]]+15\nEtsuko Otonashi [[bond-]]-10\n[[Mood+]]+1\n[[Mood-]]-1",
 		  "[[Energy-]]-20\n[[sp+]]+20\n[[1stats]] +3\nEtsuko Otonashi [[bond+]]+10"
 		]
 	  },
 	  {
-		"name": "Etsuko's Exhaustive Coverage (Pre/OP)",
+		"name": "Etsuko's Exhaustive Coverage", "initiator": "(Pre/OP)",
 		"text": [
 		  "[[Energy-]]-15\n[[Energy-]]-25\n[[sp+]]+10\n[[sp+]]+10\n[[or]]\nEtsuko Otonashi [[bond+]]+15\nEtsuko Otonashi [[bond-]]-10\n[[Mood+]]+1\n[[Mood-]]-1",
 		  "[[Energy-]]-20\n[[sp+]]+10\nEtsuko Otonashi [[bond+]]+10"
@@ -5457,7 +5472,8 @@
 		]
 	  },
 	  {
-		"name": "Failed training (Get Well Soon!)",
+		"name": "Get Well Soon!",
+		"initiator": "Failed training",
 		"text": [
 		  "\nPrevious training -5\n[[possible]] Aquires {link:Practice Poor}\n[[Mood-]]-1",
 		  "\nAquires {link:Practice Perfect}\n[[or]]\nPrevious training -10\n[[possible]] Aquires {link:Practice Poor}\n[[Mood-]]-1"
@@ -5524,102 +5540,102 @@
 		]
 	  },
 	  {
-		"name": "Victory! (G1)",
+		"name": "Victory!", "initiator": "(G1)",
 		"text": [
 		  "[[Energy-]]-15\n[[sp+]]+45\n[[1stats]] +10\n[[possible]]Race skill hint [[hint]]",
 		  "[[Energy-]]-5/-20\n[[sp+]]+45\n[[1stats]] +10\n[[possible]]Race skill hint [[hint]]"
 		]
 	  },
 	  {
-		"name": "Victory! (G2/G3)",
+		"name": "Victory!", "initiator": "(G2/G3)",
 		"text": [
 		  "[[Energy-]]-15\n[[sp+]]+35\n[[1stats]] +8\n[[possible]]Race skill hint [[hint]]",
 		  "[[Energy-]]-5/-20\n[[sp+]]+35\n[[1stats]] +8\n[[possible]]Race skill hint [[hint]]"
 		]
 	  },
 	  {
-		"name": "Victory! (Pre/OP)",
+		"name": "Victory!", "initiator": "(Pre/OP)",
 		"text": [
 		  "[[Energy-]]-15\n[[sp+]]+30\n[[1stats]] +5\n[[possible]]Race skill hint [[hint]]",
 		  "[[Energy-]]-5/-20\n[[sp+]]+30\n[[1stats]] +5\n[[possible]]Race skill hint [[hint]]"
 		]
 	  },
 	  {
-		"name": "Solid Showing (G1)",
+		"name": "Solid Showing", "initiator": "(G1)",
 		"text": [
 		  "[[Energy-]]-20\n[[sp+]]+45\n[[1stats]] +8\n[[possible]]Race skill hint [[hint]]",
 		  "[[Energy-]]-10/-30\n[[sp+]]+45\n[[1stats]] +8\n[[possible]]Race skill hint [[hint]]"
 		]
 	  },
 	  {
-		"name": "Solid Showing (G2/G3)",
+		"name": "Solid Showing", "initiator": "(G2/G3)",
 		"text": [
 		  "[[Energy-]]-20\n[[sp+]]+35\n[[1stats]] +5\n[[possible]]Race skill hint [[hint]]",
 		  "[[Energy-]]-10/-30\n[[sp+]]+35\n[[1stats]] +5\n[[possible]]Race skill hint [[hint]]"
 		]
 	  },
 	  {
-		"name": "Solid Showing (Pre/OP)",
+		"name": "Solid Showing", "initiator": "(Pre/OP)",
 		"text": [
 		  "[[Energy-]]-20\n[[sp+]]+30\n[[1stats]] +3\n[[possible]]Race skill hint [[hint]]",
 		  "[[Energy-]]-10/-30\n[[sp+]]+30\n[[1stats]] +3\n[[possible]]Race skill hint [[hint]]"
 		]
 	  },
 	  {
-		"name": "Defeat (G1)",
+		"name": "Defeat", "initiator": "(G1)",
 		"text": [
 		  "[[Energy-]]-25\n[[sp+]]+25\n[[1stats]] +4\n[[possible]]Race skill hint [[hint]]",
 		  "[[Energy-]]-15/-35\n[[sp+]]+25\n[[1stats]] +4\n[[possible]]Race skill hint [[hint]]"
 		]
 	  },
 	  {
-		"name": "Defeat (G2/G3)",
+		"name": "Defeat", "initiator": "(G2/G3)",
 		"text": [
 		  "[[Energy-]]-25\n[[sp+]]+20\n[[1stats]] +3\n[[possible]]Race skill hint [[hint]]",
 		  "[[Energy-]]-15/-35\n[[sp+]]+20\n[[1stats]] +3\n[[possible]]Race skill hint [[hint]]"
 		]
 	  },
 	  {
-		"name": "Defeat (Pre/OP)",
+		"name": "Defeat", "initiator": "(Pre/OP)",
 		"text": [
 		  "[[Energy-]]-25\n[[sp+]]+10\n[[possible]]Race skill hint [[hint]]",
 		  "[[Energy-]]-15/-35\n[[sp+]]+10\n[[possible]]Race skill hint [[hint]]"
 		]
 	  },
 	  {
-		"name": "Etsuko's Elated Coverage (G1)",
+		"name": "Etsuko's Elated Coverage", "initiator": "(G1)",
 		"text": [
 		  "[[Energy-]]-15\n[[sp+]]+45\n[[Fans+]]+500\n[[1stats]] +10\n[[possible]]Race skill hint [[hint]]\nEtsuko Otonashi [[bond+]]+15\n[[Mood+]]+1"
 		]
 	  },
 	  {
-		"name": "Etsuko's Elated Coverage (G2/G3)",
+		"name": "Etsuko's Elated Coverage", "initiator": "(G2/G3)",
 		"text": [
 		  "[[Energy-]]-15\n[[sp+]]+35\n[[Fans+]]+500\n[[1stats]] +8\n[[possible]]Race skill hint [[hint]]\nEtsuko Otonashi [[bond+]]+15\n[[Mood+]]+1"
 		]
 	  },
 	  {
-		"name": "Etsuko's Elated Coverage (Pre/OP)",
+		"name": "Etsuko's Elated Coverage", "initiator": "(Pre/OP)",
 		"text": [
 		  "[[Energy-]]-15\n[[sp+]]+30\n[[Fans+]]+500\n[[1stats]] +5\n[[possible]]Race skill hint [[hint]]\nEtsuko Otonashi [[bond+]]+15\n[[Mood+]]+1"
 		]
 	  },
 	  {
-		"name": "Etsuko's Exhaustive Coverage (G1)",
+		"name": "Etsuko's Exhaustive Coverage", "initiator": "(G1)",
 		"text": [
 		  "[[Energy-]]-15\n[[Energy-]]-25\n[[sp+]]+25\n[[sp+]]+25\n[[1stats]] +4\n[[or]]\n[[1stats]] +4\nEtsuko Otonashi [[bond+]]+15\nEtsuko Otonashi [[bond-]]-10\n[[Mood+]]+1\n[[Mood-]]-1",
 		  "[[Energy-]]-20\n[[sp+]]+25\n[[1stats]] +4\nEtsuko Otonashi [[bond+]]+10"
 		]
 	  },
 	  {
-		"name": "Etsuko's Exhaustive Coverage (G2/G3)",
+		"name": "Etsuko's Exhaustive Coverage", "initiator": "(G2/G3)",
 		"text": [
 		  "[[Energy-]]-15\n[[Energy-]]-25\n[[sp+]]+20\n[[sp+]]+20\n[[1stats]] +3\n[[or]]\n[[1stats]] +3\nEtsuko Otonashi [[bond+]]+15\nEtsuko Otonashi [[bond-]]-10\n[[Mood+]]+1\n[[Mood-]]-1",
 		  "[[Energy-]]-20\n[[sp+]]+20\n[[1stats]] +3\nEtsuko Otonashi [[bond+]]+10"
 		]
 	  },
 	  {
-		"name": "Etsuko's Exhaustive Coverage (Pre/OP)",
+		"name": "Etsuko's Exhaustive Coverage", "initiator": "(Pre/OP)",
 		"text": [
 		  "[[Energy-]]-15\n[[Energy-]]-25\n[[sp+]]+10\n[[sp+]]+10\n[[or]]\nEtsuko Otonashi [[bond+]]+15\nEtsuko Otonashi [[bond-]]-10\n[[Mood+]]+1\n[[Mood-]]-1",
 		  "[[Energy-]]-20\n[[sp+]]+10\nEtsuko Otonashi [[bond+]]+10"
@@ -5821,7 +5837,8 @@
 		]
 	  },
 	  {
-		"name": "Failed training (Get Well Soon!)",
+		"name": "Get Well Soon!",
+		"initiator": "Failed training",
 		"text": [
 		  "\nPrevious training -5\n[[possible]] Aquires {link:Practice Poor}\n[[Mood-]]-1",
 		  "\nAquires {link:Practice Perfect}\n[[or]]\nPrevious training -10\n[[possible]] Aquires {link:Practice Poor}\n[[Mood-]]-1"
@@ -5888,102 +5905,102 @@
 		]
 	  },
 	  {
-		"name": "Victory! (G1)",
+		"name": "Victory!", "initiator": "(G1)",
 		"text": [
 		  "[[Energy-]]-15\n[[sp+]]+45\n[[1stats]] +10\n[[possible]]Race skill hint [[hint]]",
 		  "[[Energy-]]-5/-20\n[[sp+]]+45\n[[1stats]] +10\n[[possible]]Race skill hint [[hint]]"
 		]
 	  },
 	  {
-		"name": "Victory! (G2/G3)",
+		"name": "Victory!", "initiator": "(G2/G3)",
 		"text": [
 		  "[[Energy-]]-15\n[[sp+]]+35\n[[1stats]] +8\n[[possible]]Race skill hint [[hint]]",
 		  "[[Energy-]]-5/-20\n[[sp+]]+35\n[[1stats]] +8\n[[possible]]Race skill hint [[hint]]"
 		]
 	  },
 	  {
-		"name": "Victory! (Pre/OP)",
+		"name": "Victory!", "initiator": "(Pre/OP)",
 		"text": [
 		  "[[Energy-]]-15\n[[sp+]]+30\n[[1stats]] +5\n[[possible]]Race skill hint [[hint]]",
 		  "[[Energy-]]-5/-20\n[[sp+]]+30\n[[1stats]] +5\n[[possible]]Race skill hint [[hint]]"
 		]
 	  },
 	  {
-		"name": "Solid Showing (G1)",
+		"name": "Solid Showing", "initiator": "(G1)",
 		"text": [
 		  "[[Energy-]]-20\n[[sp+]]+45\n[[1stats]] +8\n[[possible]]Race skill hint [[hint]]",
 		  "[[Energy-]]-10/-30\n[[sp+]]+45\n[[1stats]] +8\n[[possible]]Race skill hint [[hint]]"
 		]
 	  },
 	  {
-		"name": "Solid Showing (G2/G3)",
+		"name": "Solid Showing", "initiator": "(G2/G3)",
 		"text": [
 		  "[[Energy-]]-20\n[[sp+]]+35\n[[1stats]] +5\n[[possible]]Race skill hint [[hint]]",
 		  "[[Energy-]]-10/-30\n[[sp+]]+35\n[[1stats]] +5\n[[possible]]Race skill hint [[hint]]"
 		]
 	  },
 	  {
-		"name": "Solid Showing (Pre/OP)",
+		"name": "Solid Showing", "initiator": "(Pre/OP)",
 		"text": [
 		  "[[Energy-]]-20\n[[sp+]]+30\n[[1stats]] +3\n[[possible]]Race skill hint [[hint]]",
 		  "[[Energy-]]-10/-30\n[[sp+]]+30\n[[1stats]] +3\n[[possible]]Race skill hint [[hint]]"
 		]
 	  },
 	  {
-		"name": "Defeat (G1)",
+		"name": "Defeat", "initiator": "(G1)",
 		"text": [
 		  "[[Energy-]]-25\n[[sp+]]+25\n[[1stats]] +4\n[[possible]]Race skill hint [[hint]]",
 		  "[[Energy-]]-15/-35\n[[sp+]]+25\n[[1stats]] +4\n[[possible]]Race skill hint [[hint]]"
 		]
 	  },
 	  {
-		"name": "Defeat (G2/G3)",
+		"name": "Defeat", "initiator": "(G2/G3)",
 		"text": [
 		  "[[Energy-]]-25\n[[sp+]]+20\n[[1stats]] +3\n[[possible]]Race skill hint [[hint]]",
 		  "[[Energy-]]-15/-35\n[[sp+]]+20\n[[1stats]] +3\n[[possible]]Race skill hint [[hint]]"
 		]
 	  },
 	  {
-		"name": "Defeat (Pre/OP)",
+		"name": "Defeat", "initiator": "(Pre/OP)",
 		"text": [
 		  "[[Energy-]]-25\n[[sp+]]+10\n[[possible]]Race skill hint [[hint]]",
 		  "[[Energy-]]-15/-35\n[[sp+]]+10\n[[possible]]Race skill hint [[hint]]"
 		]
 	  },
 	  {
-		"name": "Etsuko's Elated Coverage (G1)",
+		"name": "Etsuko's Elated Coverage", "initiator": "(G1)",
 		"text": [
 		  "[[Energy-]]-15\n[[sp+]]+45\n[[Fans+]]+500\n[[1stats]] +10\n[[possible]]Race skill hint [[hint]]\nEtsuko Otonashi [[bond+]]+15\n[[Mood+]]+1"
 		]
 	  },
 	  {
-		"name": "Etsuko's Elated Coverage (G2/G3)",
+		"name": "Etsuko's Elated Coverage", "initiator": "(G2/G3)",
 		"text": [
 		  "[[Energy-]]-15\n[[sp+]]+35\n[[Fans+]]+500\n[[1stats]] +8\n[[possible]]Race skill hint [[hint]]\nEtsuko Otonashi [[bond+]]+15\n[[Mood+]]+1"
 		]
 	  },
 	  {
-		"name": "Etsuko's Elated Coverage (Pre/OP)",
+		"name": "Etsuko's Elated Coverage", "initiator": "(Pre/OP)",
 		"text": [
 		  "[[Energy-]]-15\n[[sp+]]+30\n[[Fans+]]+500\n[[1stats]] +5\n[[possible]]Race skill hint [[hint]]\nEtsuko Otonashi [[bond+]]+15\n[[Mood+]]+1"
 		]
 	  },
 	  {
-		"name": "Etsuko's Exhaustive Coverage (G1)",
+		"name": "Etsuko's Exhaustive Coverage", "initiator": "(G1)",
 		"text": [
 		  "[[Energy-]]-15\n[[Energy-]]-25\n[[sp+]]+25\n[[sp+]]+25\n[[1stats]] +4\n[[or]]\n[[1stats]] +4\nEtsuko Otonashi [[bond+]]+15\nEtsuko Otonashi [[bond-]]-10\n[[Mood+]]+1\n[[Mood-]]-1",
 		  "[[Energy-]]-20\n[[sp+]]+25\n[[1stats]] +4\nEtsuko Otonashi [[bond+]]+10"
 		]
 	  },
 	  {
-		"name": "Etsuko's Exhaustive Coverage (G2/G3)",
+		"name": "Etsuko's Exhaustive Coverage", "initiator": "(G2/G3)",
 		"text": [
 		  "[[Energy-]]-15\n[[Energy-]]-25\n[[sp+]]+20\n[[sp+]]+20\n[[1stats]] +3\n[[or]]\n[[1stats]] +3\nEtsuko Otonashi [[bond+]]+15\nEtsuko Otonashi [[bond-]]-10\n[[Mood+]]+1\n[[Mood-]]-1",
 		  "[[Energy-]]-20\n[[sp+]]+20\n[[1stats]] +3\nEtsuko Otonashi [[bond+]]+10"
 		]
 	  },
 	  {
-		"name": "Etsuko's Exhaustive Coverage (Pre/OP)",
+		"name": "Etsuko's Exhaustive Coverage", "initiator": "(Pre/OP)",
 		"text": [
 		  "[[Energy-]]-15\n[[Energy-]]-25\n[[sp+]]+10\n[[sp+]]+10\n[[or]]\nEtsuko Otonashi [[bond+]]+15\nEtsuko Otonashi [[bond-]]-10\n[[Mood+]]+1\n[[Mood-]]-1",
 		  "[[Energy-]]-20\n[[sp+]]+10\nEtsuko Otonashi [[bond+]]+10"
@@ -6236,7 +6253,8 @@
 		]
 	  },
 	  {
-		"name": "Failed training (Get Well Soon!)",
+		"name": "Get Well Soon!",
+		"initiator": "Failed training",
 		"text": [
 		  "\nPrevious training -5\n[[possible]] Aquires {link:Practice Poor}\n[[Mood-]]-1",
 		  "\nAquires {link:Practice Perfect}\n[[or]]\nPrevious training -10\n[[possible]] Aquires {link:Practice Poor}\n[[Mood-]]-1"
@@ -6303,102 +6321,102 @@
 		]
 	  },
 	  {
-		"name": "Victory! (G1)",
+		"name": "Victory!", "initiator": "(G1)",
 		"text": [
 		  "[[Energy-]]-15\n[[sp+]]+45\n[[1stats]] +10\n[[possible]]Race skill hint [[hint]]",
 		  "[[Energy-]]-5/-20\n[[sp+]]+45\n[[1stats]] +10\n[[possible]]Race skill hint [[hint]]"
 		]
 	  },
 	  {
-		"name": "Victory! (G2/G3)",
+		"name": "Victory!", "initiator": "(G2/G3)",
 		"text": [
 		  "[[Energy-]]-15\n[[sp+]]+35\n[[1stats]] +8\n[[possible]]Race skill hint [[hint]]",
 		  "[[Energy-]]-5/-20\n[[sp+]]+35\n[[1stats]] +8\n[[possible]]Race skill hint [[hint]]"
 		]
 	  },
 	  {
-		"name": "Victory! (Pre/OP)",
+		"name": "Victory!", "initiator": "(Pre/OP)",
 		"text": [
 		  "[[Energy-]]-15\n[[sp+]]+30\n[[1stats]] +5\n[[possible]]Race skill hint [[hint]]",
 		  "[[Energy-]]-5/-20\n[[sp+]]+30\n[[1stats]] +5\n[[possible]]Race skill hint [[hint]]"
 		]
 	  },
 	  {
-		"name": "Solid Showing (G1)",
+		"name": "Solid Showing", "initiator": "(G1)",
 		"text": [
 		  "[[Energy-]]-20\n[[sp+]]+45\n[[1stats]] +8\n[[possible]]Race skill hint [[hint]]",
 		  "[[Energy-]]-10/-30\n[[sp+]]+45\n[[1stats]] +8\n[[possible]]Race skill hint [[hint]]"
 		]
 	  },
 	  {
-		"name": "Solid Showing (G2/G3)",
+		"name": "Solid Showing", "initiator": "(G2/G3)",
 		"text": [
 		  "[[Energy-]]-20\n[[sp+]]+35\n[[1stats]] +5\n[[possible]]Race skill hint [[hint]]",
 		  "[[Energy-]]-10/-30\n[[sp+]]+35\n[[1stats]] +5\n[[possible]]Race skill hint [[hint]]"
 		]
 	  },
 	  {
-		"name": "Solid Showing (Pre/OP)",
+		"name": "Solid Showing", "initiator": "(Pre/OP)",
 		"text": [
 		  "[[Energy-]]-20\n[[sp+]]+30\n[[1stats]] +3\n[[possible]]Race skill hint [[hint]]",
 		  "[[Energy-]]-10/-30\n[[sp+]]+30\n[[1stats]] +3\n[[possible]]Race skill hint [[hint]]"
 		]
 	  },
 	  {
-		"name": "Defeat (G1)",
+		"name": "Defeat", "initiator": "(G1)",
 		"text": [
 		  "[[Energy-]]-25\n[[sp+]]+25\n[[1stats]] +4\n[[possible]]Race skill hint [[hint]]",
 		  "[[Energy-]]-15/-35\n[[sp+]]+25\n[[1stats]] +4\n[[possible]]Race skill hint [[hint]]"
 		]
 	  },
 	  {
-		"name": "Defeat (G2/G3)",
+		"name": "Defeat", "initiator": "(G2/G3)",
 		"text": [
 		  "[[Energy-]]-25\n[[sp+]]+20\n[[1stats]] +3\n[[possible]]Race skill hint [[hint]]",
 		  "[[Energy-]]-15/-35\n[[sp+]]+20\n[[1stats]] +3\n[[possible]]Race skill hint [[hint]]"
 		]
 	  },
 	  {
-		"name": "Defeat (Pre/OP)",
+		"name": "Defeat", "initiator": "(Pre/OP)",
 		"text": [
 		  "[[Energy-]]-25\n[[sp+]]+10\n[[possible]]Race skill hint [[hint]]",
 		  "[[Energy-]]-15/-35\n[[sp+]]+10\n[[possible]]Race skill hint [[hint]]"
 		]
 	  },
 	  {
-		"name": "Etsuko's Elated Coverage (G1)",
+		"name": "Etsuko's Elated Coverage", "initiator": "(G1)",
 		"text": [
 		  "[[Energy-]]-15\n[[sp+]]+45\n[[Fans+]]+500\n[[1stats]] +10\n[[possible]]Race skill hint [[hint]]\nEtsuko Otonashi [[bond+]]+15\n[[Mood+]]+1"
 		]
 	  },
 	  {
-		"name": "Etsuko's Elated Coverage (G2/G3)",
+		"name": "Etsuko's Elated Coverage", "initiator": "(G2/G3)",
 		"text": [
 		  "[[Energy-]]-15\n[[sp+]]+35\n[[Fans+]]+500\n[[1stats]] +8\n[[possible]]Race skill hint [[hint]]\nEtsuko Otonashi [[bond+]]+15\n[[Mood+]]+1"
 		]
 	  },
 	  {
-		"name": "Etsuko's Elated Coverage (Pre/OP)",
+		"name": "Etsuko's Elated Coverage", "initiator": "(Pre/OP)",
 		"text": [
 		  "[[Energy-]]-15\n[[sp+]]+30\n[[Fans+]]+500\n[[1stats]] +5\n[[possible]]Race skill hint [[hint]]\nEtsuko Otonashi [[bond+]]+15\n[[Mood+]]+1"
 		]
 	  },
 	  {
-		"name": "Etsuko's Exhaustive Coverage (G1)",
+		"name": "Etsuko's Exhaustive Coverage", "initiator": "(G1)",
 		"text": [
 		  "[[Energy-]]-15\n[[Energy-]]-25\n[[sp+]]+25\n[[sp+]]+25\n[[1stats]] +4\n[[or]]\n[[1stats]] +4\nEtsuko Otonashi [[bond+]]+15\nEtsuko Otonashi [[bond-]]-10\n[[Mood+]]+1\n[[Mood-]]-1",
 		  "[[Energy-]]-20\n[[sp+]]+25\n[[1stats]] +4\nEtsuko Otonashi [[bond+]]+10"
 		]
 	  },
 	  {
-		"name": "Etsuko's Exhaustive Coverage (G2/G3)",
+		"name": "Etsuko's Exhaustive Coverage", "initiator": "(G2/G3)",
 		"text": [
 		  "[[Energy-]]-15\n[[Energy-]]-25\n[[sp+]]+20\n[[sp+]]+20\n[[1stats]] +3\n[[or]]\n[[1stats]] +3\nEtsuko Otonashi [[bond+]]+15\nEtsuko Otonashi [[bond-]]-10\n[[Mood+]]+1\n[[Mood-]]-1",
 		  "[[Energy-]]-20\n[[sp+]]+20\n[[1stats]] +3\nEtsuko Otonashi [[bond+]]+10"
 		]
 	  },
 	  {
-		"name": "Etsuko's Exhaustive Coverage (Pre/OP)",
+		"name": "Etsuko's Exhaustive Coverage", "initiator": "(Pre/OP)",
 		"text": [
 		  "[[Energy-]]-15\n[[Energy-]]-25\n[[sp+]]+10\n[[sp+]]+10\n[[or]]\nEtsuko Otonashi [[bond+]]+15\nEtsuko Otonashi [[bond-]]-10\n[[Mood+]]+1\n[[Mood-]]-1",
 		  "[[Energy-]]-20\n[[sp+]]+10\nEtsuko Otonashi [[bond+]]+10"
@@ -6604,7 +6622,8 @@
 		]
 	  },
 	  {
-		"name": "Failed training (Get Well Soon!)",
+		"name": "Get Well Soon!",
+		"initiator": "Failed training",
 		"text": [
 		  "\nPrevious training -5\n[[possible]] Aquires {link:Practice Poor}\n[[Mood-]]-1",
 		  "\nAquires {link:Practice Perfect}\n[[or]]\nPrevious training -10\n[[possible]] Aquires {link:Practice Poor}\n[[Mood-]]-1"
@@ -6671,102 +6690,102 @@
 		]
 	  },
 	  {
-		"name": "Victory! (G1)",
+		"name": "Victory!", "initiator": "(G1)",
 		"text": [
 		  "[[Energy-]]-15\n[[sp+]]+45\n[[1stats]] +10\n[[possible]]Race skill hint [[hint]]",
 		  "[[Energy-]]-5/-20\n[[sp+]]+45\n[[1stats]] +10\n[[possible]]Race skill hint [[hint]]"
 		]
 	  },
 	  {
-		"name": "Victory! (G2/G3)",
+		"name": "Victory!", "initiator": "(G2/G3)",
 		"text": [
 		  "[[Energy-]]-15\n[[sp+]]+35\n[[1stats]] +8\n[[possible]]Race skill hint [[hint]]",
 		  "[[Energy-]]-5/-20\n[[sp+]]+35\n[[1stats]] +8\n[[possible]]Race skill hint [[hint]]"
 		]
 	  },
 	  {
-		"name": "Victory! (Pre/OP)",
+		"name": "Victory!", "initiator": "(Pre/OP)",
 		"text": [
 		  "[[Energy-]]-15\n[[sp+]]+30\n[[1stats]] +5\n[[possible]]Race skill hint [[hint]]",
 		  "[[Energy-]]-5/-20\n[[sp+]]+30\n[[1stats]] +5\n[[possible]]Race skill hint [[hint]]"
 		]
 	  },
 	  {
-		"name": "Solid Showing (G1)",
+		"name": "Solid Showing", "initiator": "(G1)",
 		"text": [
 		  "[[Energy-]]-20\n[[sp+]]+45\n[[1stats]] +8\n[[possible]]Race skill hint [[hint]]",
 		  "[[Energy-]]-10/-30\n[[sp+]]+45\n[[1stats]] +8\n[[possible]]Race skill hint [[hint]]"
 		]
 	  },
 	  {
-		"name": "Solid Showing (G2/G3)",
+		"name": "Solid Showing", "initiator": "(G2/G3)",
 		"text": [
 		  "[[Energy-]]-20\n[[sp+]]+35\n[[1stats]] +5\n[[possible]]Race skill hint [[hint]]",
 		  "[[Energy-]]-10/-30\n[[sp+]]+35\n[[1stats]] +5\n[[possible]]Race skill hint [[hint]]"
 		]
 	  },
 	  {
-		"name": "Solid Showing (Pre/OP)",
+		"name": "Solid Showing", "initiator": "(Pre/OP)",
 		"text": [
 		  "[[Energy-]]-20\n[[sp+]]+30\n[[1stats]] +3\n[[possible]]Race skill hint [[hint]]",
 		  "[[Energy-]]-10/-30\n[[sp+]]+30\n[[1stats]] +3\n[[possible]]Race skill hint [[hint]]"
 		]
 	  },
 	  {
-		"name": "Defeat (G1)",
+		"name": "Defeat", "initiator": "(G1)",
 		"text": [
 		  "[[Energy-]]-25\n[[sp+]]+25\n[[1stats]] +4\n[[possible]]Race skill hint [[hint]]",
 		  "[[Energy-]]-15/-35\n[[sp+]]+25\n[[1stats]] +4\n[[possible]]Race skill hint [[hint]]"
 		]
 	  },
 	  {
-		"name": "Defeat (G2/G3)",
+		"name": "Defeat", "initiator": "(G2/G3)",
 		"text": [
 		  "[[Energy-]]-25\n[[sp+]]+20\n[[1stats]] +3\n[[possible]]Race skill hint [[hint]]",
 		  "[[Energy-]]-15/-35\n[[sp+]]+20\n[[1stats]] +3\n[[possible]]Race skill hint [[hint]]"
 		]
 	  },
 	  {
-		"name": "Defeat (Pre/OP)",
+		"name": "Defeat", "initiator": "(Pre/OP)",
 		"text": [
 		  "[[Energy-]]-25\n[[sp+]]+10\n[[possible]]Race skill hint [[hint]]",
 		  "[[Energy-]]-15/-35\n[[sp+]]+10\n[[possible]]Race skill hint [[hint]]"
 		]
 	  },
 	  {
-		"name": "Etsuko's Elated Coverage (G1)",
+		"name": "Etsuko's Elated Coverage", "initiator": "(G1)",
 		"text": [
 		  "[[Energy-]]-15\n[[sp+]]+45\n[[Fans+]]+500\n[[1stats]] +10\n[[possible]]Race skill hint [[hint]]\nEtsuko Otonashi [[bond+]]+15\n[[Mood+]]+1"
 		]
 	  },
 	  {
-		"name": "Etsuko's Elated Coverage (G2/G3)",
+		"name": "Etsuko's Elated Coverage", "initiator": "(G2/G3)",
 		"text": [
 		  "[[Energy-]]-15\n[[sp+]]+35\n[[Fans+]]+500\n[[1stats]] +8\n[[possible]]Race skill hint [[hint]]\nEtsuko Otonashi [[bond+]]+15\n[[Mood+]]+1"
 		]
 	  },
 	  {
-		"name": "Etsuko's Elated Coverage (Pre/OP)",
+		"name": "Etsuko's Elated Coverage", "initiator": "(Pre/OP)",
 		"text": [
 		  "[[Energy-]]-15\n[[sp+]]+30\n[[Fans+]]+500\n[[1stats]] +5\n[[possible]]Race skill hint [[hint]]\nEtsuko Otonashi [[bond+]]+15\n[[Mood+]]+1"
 		]
 	  },
 	  {
-		"name": "Etsuko's Exhaustive Coverage (G1)",
+		"name": "Etsuko's Exhaustive Coverage", "initiator": "(G1)",
 		"text": [
 		  "[[Energy-]]-15\n[[Energy-]]-25\n[[sp+]]+25\n[[sp+]]+25\n[[1stats]] +4\n[[or]]\n[[1stats]] +4\nEtsuko Otonashi [[bond+]]+15\nEtsuko Otonashi [[bond-]]-10\n[[Mood+]]+1\n[[Mood-]]-1",
 		  "[[Energy-]]-20\n[[sp+]]+25\n[[1stats]] +4\nEtsuko Otonashi [[bond+]]+10"
 		]
 	  },
 	  {
-		"name": "Etsuko's Exhaustive Coverage (G2/G3)",
+		"name": "Etsuko's Exhaustive Coverage", "initiator": "(G2/G3)",
 		"text": [
 		  "[[Energy-]]-15\n[[Energy-]]-25\n[[sp+]]+20\n[[sp+]]+20\n[[1stats]] +3\n[[or]]\n[[1stats]] +3\nEtsuko Otonashi [[bond+]]+15\nEtsuko Otonashi [[bond-]]-10\n[[Mood+]]+1\n[[Mood-]]-1",
 		  "[[Energy-]]-20\n[[sp+]]+20\n[[1stats]] +3\nEtsuko Otonashi [[bond+]]+10"
 		]
 	  },
 	  {
-		"name": "Etsuko's Exhaustive Coverage (Pre/OP)",
+		"name": "Etsuko's Exhaustive Coverage", "initiator": "(Pre/OP)",
 		"text": [
 		  "[[Energy-]]-15\n[[Energy-]]-25\n[[sp+]]+10\n[[sp+]]+10\n[[or]]\nEtsuko Otonashi [[bond+]]+15\nEtsuko Otonashi [[bond-]]-10\n[[Mood+]]+1\n[[Mood-]]-1",
 		  "[[Energy-]]-20\n[[sp+]]+10\nEtsuko Otonashi [[bond+]]+10"
@@ -6942,7 +6961,8 @@
 		]
 	  },
 	  {
-		"name": "Failed training (Get Well Soon!)",
+		"name": "Get Well Soon!",
+		"initiator": "Failed training",
 		"text": [
 		  "\nPrevious training -5\n[[possible]] Aquires {link:Practice Poor}\n[[Mood-]]-1",
 		  "\nAquires {link:Practice Perfect}\n[[or]]\nPrevious training -10\n[[possible]] Aquires {link:Practice Poor}\n[[Mood-]]-1"
@@ -7009,102 +7029,102 @@
 		]
 	  },
 	  {
-		"name": "Victory! (G1)",
+		"name": "Victory!", "initiator": "(G1)",
 		"text": [
 		  "[[Energy-]]-15\n[[sp+]]+45\n[[1stats]] +10\n[[possible]]Race skill hint [[hint]]",
 		  "[[Energy-]]-5/-20\n[[sp+]]+45\n[[1stats]] +10\n[[possible]]Race skill hint [[hint]]"
 		]
 	  },
 	  {
-		"name": "Victory! (G2/G3)",
+		"name": "Victory!", "initiator": "(G2/G3)",
 		"text": [
 		  "[[Energy-]]-15\n[[sp+]]+35\n[[1stats]] +8\n[[possible]]Race skill hint [[hint]]",
 		  "[[Energy-]]-5/-20\n[[sp+]]+35\n[[1stats]] +8\n[[possible]]Race skill hint [[hint]]"
 		]
 	  },
 	  {
-		"name": "Victory! (Pre/OP)",
+		"name": "Victory!", "initiator": "(Pre/OP)",
 		"text": [
 		  "[[Energy-]]-15\n[[sp+]]+30\n[[1stats]] +5\n[[possible]]Race skill hint [[hint]]",
 		  "[[Energy-]]-5/-20\n[[sp+]]+30\n[[1stats]] +5\n[[possible]]Race skill hint [[hint]]"
 		]
 	  },
 	  {
-		"name": "Solid Showing (G1)",
+		"name": "Solid Showing", "initiator": "(G1)",
 		"text": [
 		  "[[Energy-]]-20\n[[sp+]]+45\n[[1stats]] +8\n[[possible]]Race skill hint [[hint]]",
 		  "[[Energy-]]-10/-30\n[[sp+]]+45\n[[1stats]] +8\n[[possible]]Race skill hint [[hint]]"
 		]
 	  },
 	  {
-		"name": "Solid Showing (G2/G3)",
+		"name": "Solid Showing", "initiator": "(G2/G3)",
 		"text": [
 		  "[[Energy-]]-20\n[[sp+]]+35\n[[1stats]] +5\n[[possible]]Race skill hint [[hint]]",
 		  "[[Energy-]]-10/-30\n[[sp+]]+35\n[[1stats]] +5\n[[possible]]Race skill hint [[hint]]"
 		]
 	  },
 	  {
-		"name": "Solid Showing (Pre/OP)",
+		"name": "Solid Showing", "initiator": "(Pre/OP)",
 		"text": [
 		  "[[Energy-]]-20\n[[sp+]]+30\n[[1stats]] +3\n[[possible]]Race skill hint [[hint]]",
 		  "[[Energy-]]-10/-30\n[[sp+]]+30\n[[1stats]] +3\n[[possible]]Race skill hint [[hint]]"
 		]
 	  },
 	  {
-		"name": "Defeat (G1)",
+		"name": "Defeat", "initiator": "(G1)",
 		"text": [
 		  "[[Energy-]]-25\n[[sp+]]+25\n[[1stats]] +4\n[[possible]]Race skill hint [[hint]]",
 		  "[[Energy-]]-15/-35\n[[sp+]]+25\n[[1stats]] +4\n[[possible]]Race skill hint [[hint]]"
 		]
 	  },
 	  {
-		"name": "Defeat (G2/G3)",
+		"name": "Defeat", "initiator": "(G2/G3)",
 		"text": [
 		  "[[Energy-]]-25\n[[sp+]]+20\n[[1stats]] +3\n[[possible]]Race skill hint [[hint]]",
 		  "[[Energy-]]-15/-35\n[[sp+]]+20\n[[1stats]] +3\n[[possible]]Race skill hint [[hint]]"
 		]
 	  },
 	  {
-		"name": "Defeat (Pre/OP)",
+		"name": "Defeat", "initiator": "(Pre/OP)",
 		"text": [
 		  "[[Energy-]]-25\n[[sp+]]+10\n[[possible]]Race skill hint [[hint]]",
 		  "[[Energy-]]-15/-35\n[[sp+]]+10\n[[possible]]Race skill hint [[hint]]"
 		]
 	  },
 	  {
-		"name": "Etsuko's Elated Coverage (G1)",
+		"name": "Etsuko's Elated Coverage", "initiator": "(G1)",
 		"text": [
 		  "[[Energy-]]-15\n[[sp+]]+45\n[[Fans+]]+500\n[[1stats]] +10\n[[possible]]Race skill hint [[hint]]\nEtsuko Otonashi [[bond+]]+15\n[[Mood+]]+1"
 		]
 	  },
 	  {
-		"name": "Etsuko's Elated Coverage (G2/G3)",
+		"name": "Etsuko's Elated Coverage", "initiator": "(G2/G3)",
 		"text": [
 		  "[[Energy-]]-15\n[[sp+]]+35\n[[Fans+]]+500\n[[1stats]] +8\n[[possible]]Race skill hint [[hint]]\nEtsuko Otonashi [[bond+]]+15\n[[Mood+]]+1"
 		]
 	  },
 	  {
-		"name": "Etsuko's Elated Coverage (Pre/OP)",
+		"name": "Etsuko's Elated Coverage", "initiator": "(Pre/OP)",
 		"text": [
 		  "[[Energy-]]-15\n[[sp+]]+30\n[[Fans+]]+500\n[[1stats]] +5\n[[possible]]Race skill hint [[hint]]\nEtsuko Otonashi [[bond+]]+15\n[[Mood+]]+1"
 		]
 	  },
 	  {
-		"name": "Etsuko's Exhaustive Coverage (G1)",
+		"name": "Etsuko's Exhaustive Coverage", "initiator": "(G1)",
 		"text": [
 		  "[[Energy-]]-15\n[[Energy-]]-25\n[[sp+]]+25\n[[sp+]]+25\n[[1stats]] +4\n[[or]]\n[[1stats]] +4\nEtsuko Otonashi [[bond+]]+15\nEtsuko Otonashi [[bond-]]-10\n[[Mood+]]+1\n[[Mood-]]-1",
 		  "[[Energy-]]-20\n[[sp+]]+25\n[[1stats]] +4\nEtsuko Otonashi [[bond+]]+10"
 		]
 	  },
 	  {
-		"name": "Etsuko's Exhaustive Coverage (G2/G3)",
+		"name": "Etsuko's Exhaustive Coverage", "initiator": "(G2/G3)",
 		"text": [
 		  "[[Energy-]]-15\n[[Energy-]]-25\n[[sp+]]+20\n[[sp+]]+20\n[[1stats]] +3\n[[or]]\n[[1stats]] +3\nEtsuko Otonashi [[bond+]]+15\nEtsuko Otonashi [[bond-]]-10\n[[Mood+]]+1\n[[Mood-]]-1",
 		  "[[Energy-]]-20\n[[sp+]]+20\n[[1stats]] +3\nEtsuko Otonashi [[bond+]]+10"
 		]
 	  },
 	  {
-		"name": "Etsuko's Exhaustive Coverage (Pre/OP)",
+		"name": "Etsuko's Exhaustive Coverage", "initiator": "(Pre/OP)",
 		"text": [
 		  "[[Energy-]]-15\n[[Energy-]]-25\n[[sp+]]+10\n[[sp+]]+10\n[[or]]\nEtsuko Otonashi [[bond+]]+15\nEtsuko Otonashi [[bond-]]-10\n[[Mood+]]+1\n[[Mood-]]-1",
 		  "[[Energy-]]-20\n[[sp+]]+10\nEtsuko Otonashi [[bond+]]+10"
@@ -7273,7 +7293,8 @@
 		]
 	  },
 	  {
-		"name": "Failed training (Get Well Soon!)",
+		"name": "Get Well Soon!",
+		"initiator": "Failed training",
 		"text": [
 		  "\nPrevious training -5\n[[possible]] Aquires {link:Practice Poor}\n[[Mood-]]-1",
 		  "\nAquires {link:Practice Perfect}\n[[or]]\nPrevious training -10\n[[possible]] Aquires {link:Practice Poor}\n[[Mood-]]-1"
@@ -7340,102 +7361,102 @@
 		]
 	  },
 	  {
-		"name": "Victory! (G1)",
+		"name": "Victory!", "initiator": "(G1)",
 		"text": [
 		  "[[Energy-]]-15\n[[sp+]]+45\n[[1stats]] +10\n[[possible]]Race skill hint [[hint]]",
 		  "[[Energy-]]-5/-20\n[[sp+]]+45\n[[1stats]] +10\n[[possible]]Race skill hint [[hint]]"
 		]
 	  },
 	  {
-		"name": "Victory! (G2/G3)",
+		"name": "Victory!", "initiator": "(G2/G3)",
 		"text": [
 		  "[[Energy-]]-15\n[[sp+]]+35\n[[1stats]] +8\n[[possible]]Race skill hint [[hint]]",
 		  "[[Energy-]]-5/-20\n[[sp+]]+35\n[[1stats]] +8\n[[possible]]Race skill hint [[hint]]"
 		]
 	  },
 	  {
-		"name": "Victory! (Pre/OP)",
+		"name": "Victory!", "initiator": "(Pre/OP)",
 		"text": [
 		  "[[Energy-]]-15\n[[sp+]]+30\n[[1stats]] +5\n[[possible]]Race skill hint [[hint]]",
 		  "[[Energy-]]-5/-20\n[[sp+]]+30\n[[1stats]] +5\n[[possible]]Race skill hint [[hint]]"
 		]
 	  },
 	  {
-		"name": "Solid Showing (G1)",
+		"name": "Solid Showing", "initiator": "(G1)",
 		"text": [
 		  "[[Energy-]]-20\n[[sp+]]+45\n[[1stats]] +8\n[[possible]]Race skill hint [[hint]]",
 		  "[[Energy-]]-10/-30\n[[sp+]]+45\n[[1stats]] +8\n[[possible]]Race skill hint [[hint]]"
 		]
 	  },
 	  {
-		"name": "Solid Showing (G2/G3)",
+		"name": "Solid Showing", "initiator": "(G2/G3)",
 		"text": [
 		  "[[Energy-]]-20\n[[sp+]]+35\n[[1stats]] +5\n[[possible]]Race skill hint [[hint]]",
 		  "[[Energy-]]-10/-30\n[[sp+]]+35\n[[1stats]] +5\n[[possible]]Race skill hint [[hint]]"
 		]
 	  },
 	  {
-		"name": "Solid Showing (Pre/OP)",
+		"name": "Solid Showing", "initiator": "(Pre/OP)",
 		"text": [
 		  "[[Energy-]]-20\n[[sp+]]+30\n[[1stats]] +3\n[[possible]]Race skill hint [[hint]]",
 		  "[[Energy-]]-10/-30\n[[sp+]]+30\n[[1stats]] +3\n[[possible]]Race skill hint [[hint]]"
 		]
 	  },
 	  {
-		"name": "Defeat (G1)",
+		"name": "Defeat", "initiator": "(G1)",
 		"text": [
 		  "[[Energy-]]-25\n[[sp+]]+25\n[[1stats]] +4\n[[possible]]Race skill hint [[hint]]",
 		  "[[Energy-]]-15/-35\n[[sp+]]+25\n[[1stats]] +4\n[[possible]]Race skill hint [[hint]]"
 		]
 	  },
 	  {
-		"name": "Defeat (G2/G3)",
+		"name": "Defeat", "initiator": "(G2/G3)",
 		"text": [
 		  "[[Energy-]]-25\n[[sp+]]+20\n[[1stats]] +3\n[[possible]]Race skill hint [[hint]]",
 		  "[[Energy-]]-15/-35\n[[sp+]]+20\n[[1stats]] +3\n[[possible]]Race skill hint [[hint]]"
 		]
 	  },
 	  {
-		"name": "Defeat (Pre/OP)",
+		"name": "Defeat", "initiator": "(Pre/OP)",
 		"text": [
 		  "[[Energy-]]-25\n[[sp+]]+10\n[[possible]]Race skill hint [[hint]]",
 		  "[[Energy-]]-15/-35\n[[sp+]]+10\n[[possible]]Race skill hint [[hint]]"
 		]
 	  },
 	  {
-		"name": "Etsuko's Elated Coverage (G1)",
+		"name": "Etsuko's Elated Coverage", "initiator": "(G1)",
 		"text": [
 		  "[[Energy-]]-15\n[[sp+]]+45\n[[Fans+]]+500\n[[1stats]] +10\n[[possible]]Race skill hint [[hint]]\nEtsuko Otonashi [[bond+]]+15\n[[Mood+]]+1"
 		]
 	  },
 	  {
-		"name": "Etsuko's Elated Coverage (G2/G3)",
+		"name": "Etsuko's Elated Coverage", "initiator": "(G2/G3)",
 		"text": [
 		  "[[Energy-]]-15\n[[sp+]]+35\n[[Fans+]]+500\n[[1stats]] +8\n[[possible]]Race skill hint [[hint]]\nEtsuko Otonashi [[bond+]]+15\n[[Mood+]]+1"
 		]
 	  },
 	  {
-		"name": "Etsuko's Elated Coverage (Pre/OP)",
+		"name": "Etsuko's Elated Coverage", "initiator": "(Pre/OP)",
 		"text": [
 		  "[[Energy-]]-15\n[[sp+]]+30\n[[Fans+]]+500\n[[1stats]] +5\n[[possible]]Race skill hint [[hint]]\nEtsuko Otonashi [[bond+]]+15\n[[Mood+]]+1"
 		]
 	  },
 	  {
-		"name": "Etsuko's Exhaustive Coverage (G1)",
+		"name": "Etsuko's Exhaustive Coverage", "initiator": "(G1)",
 		"text": [
 		  "[[Energy-]]-15\n[[Energy-]]-25\n[[sp+]]+25\n[[sp+]]+25\n[[1stats]] +4\n[[or]]\n[[1stats]] +4\nEtsuko Otonashi [[bond+]]+15\nEtsuko Otonashi [[bond-]]-10\n[[Mood+]]+1\n[[Mood-]]-1",
 		  "[[Energy-]]-20\n[[sp+]]+25\n[[1stats]] +4\nEtsuko Otonashi [[bond+]]+10"
 		]
 	  },
 	  {
-		"name": "Etsuko's Exhaustive Coverage (G2/G3)",
+		"name": "Etsuko's Exhaustive Coverage", "initiator": "(G2/G3)",
 		"text": [
 		  "[[Energy-]]-15\n[[Energy-]]-25\n[[sp+]]+20\n[[sp+]]+20\n[[1stats]] +3\n[[or]]\n[[1stats]] +3\nEtsuko Otonashi [[bond+]]+15\nEtsuko Otonashi [[bond-]]-10\n[[Mood+]]+1\n[[Mood-]]-1",
 		  "[[Energy-]]-20\n[[sp+]]+20\n[[1stats]] +3\nEtsuko Otonashi [[bond+]]+10"
 		]
 	  },
 	  {
-		"name": "Etsuko's Exhaustive Coverage (Pre/OP)",
+		"name": "Etsuko's Exhaustive Coverage", "initiator": "(Pre/OP)",
 		"text": [
 		  "[[Energy-]]-15\n[[Energy-]]-25\n[[sp+]]+10\n[[sp+]]+10\n[[or]]\nEtsuko Otonashi [[bond+]]+15\nEtsuko Otonashi [[bond-]]-10\n[[Mood+]]+1\n[[Mood-]]-1",
 		  "[[Energy-]]-20\n[[sp+]]+10\nEtsuko Otonashi [[bond+]]+10"
@@ -7643,7 +7664,8 @@
 		]
 	  },
 	  {
-		"name": "Failed training (Get Well Soon!)",
+		"name": "Get Well Soon!",
+		"initiator": "Failed training",
 		"text": [
 		  "\nPrevious training -5\n[[possible]] Aquires {link:Practice Poor}\n[[Mood-]]-1",
 		  "\nAquires {link:Practice Perfect}\n[[or]]\nPrevious training -10\n[[possible]] Aquires {link:Practice Poor}\n[[Mood-]]-1"
@@ -7710,102 +7732,102 @@
 		]
 	  },
 	  {
-		"name": "Victory! (G1)",
+		"name": "Victory!", "initiator": "(G1)",
 		"text": [
 		  "[[Energy-]]-15\n[[sp+]]+45\n[[1stats]] +10\n[[possible]]Race skill hint [[hint]]",
 		  "[[Energy-]]-5/-20\n[[sp+]]+45\n[[1stats]] +10\n[[possible]]Race skill hint [[hint]]"
 		]
 	  },
 	  {
-		"name": "Victory! (G2/G3)",
+		"name": "Victory!", "initiator": "(G2/G3)",
 		"text": [
 		  "[[Energy-]]-15\n[[sp+]]+35\n[[1stats]] +8\n[[possible]]Race skill hint [[hint]]",
 		  "[[Energy-]]-5/-20\n[[sp+]]+35\n[[1stats]] +8\n[[possible]]Race skill hint [[hint]]"
 		]
 	  },
 	  {
-		"name": "Victory! (Pre/OP)",
+		"name": "Victory!", "initiator": "(Pre/OP)",
 		"text": [
 		  "[[Energy-]]-15\n[[sp+]]+30\n[[1stats]] +5\n[[possible]]Race skill hint [[hint]]",
 		  "[[Energy-]]-5/-20\n[[sp+]]+30\n[[1stats]] +5\n[[possible]]Race skill hint [[hint]]"
 		]
 	  },
 	  {
-		"name": "Solid Showing (G1)",
+		"name": "Solid Showing", "initiator": "(G1)",
 		"text": [
 		  "[[Energy-]]-20\n[[sp+]]+45\n[[1stats]] +8\n[[possible]]Race skill hint [[hint]]",
 		  "[[Energy-]]-10/-30\n[[sp+]]+45\n[[1stats]] +8\n[[possible]]Race skill hint [[hint]]"
 		]
 	  },
 	  {
-		"name": "Solid Showing (G2/G3)",
+		"name": "Solid Showing", "initiator": "(G2/G3)",
 		"text": [
 		  "[[Energy-]]-20\n[[sp+]]+35\n[[1stats]] +5\n[[possible]]Race skill hint [[hint]]",
 		  "[[Energy-]]-10/-30\n[[sp+]]+35\n[[1stats]] +5\n[[possible]]Race skill hint [[hint]]"
 		]
 	  },
 	  {
-		"name": "Solid Showing (Pre/OP)",
+		"name": "Solid Showing", "initiator": "(Pre/OP)",
 		"text": [
 		  "[[Energy-]]-20\n[[sp+]]+30\n[[1stats]] +3\n[[possible]]Race skill hint [[hint]]",
 		  "[[Energy-]]-10/-30\n[[sp+]]+30\n[[1stats]] +3\n[[possible]]Race skill hint [[hint]]"
 		]
 	  },
 	  {
-		"name": "Defeat (G1)",
+		"name": "Defeat", "initiator": "(G1)",
 		"text": [
 		  "[[Energy-]]-25\n[[sp+]]+25\n[[1stats]] +4\n[[possible]]Race skill hint [[hint]]",
 		  "[[Energy-]]-15/-35\n[[sp+]]+25\n[[1stats]] +4\n[[possible]]Race skill hint [[hint]]"
 		]
 	  },
 	  {
-		"name": "Defeat (G2/G3)",
+		"name": "Defeat", "initiator": "(G2/G3)",
 		"text": [
 		  "[[Energy-]]-25\n[[sp+]]+20\n[[1stats]] +3\n[[possible]]Race skill hint [[hint]]",
 		  "[[Energy-]]-15/-35\n[[sp+]]+20\n[[1stats]] +3\n[[possible]]Race skill hint [[hint]]"
 		]
 	  },
 	  {
-		"name": "Defeat (Pre/OP)",
+		"name": "Defeat", "initiator": "(Pre/OP)",
 		"text": [
 		  "[[Energy-]]-25\n[[sp+]]+10\n[[possible]]Race skill hint [[hint]]",
 		  "[[Energy-]]-15/-35\n[[sp+]]+10\n[[possible]]Race skill hint [[hint]]"
 		]
 	  },
 	  {
-		"name": "Etsuko's Elated Coverage (G1)",
+		"name": "Etsuko's Elated Coverage", "initiator": "(G1)",
 		"text": [
 		  "[[Energy-]]-15\n[[sp+]]+45\n[[Fans+]]+500\n[[1stats]] +10\n[[possible]]Race skill hint [[hint]]\nEtsuko Otonashi [[bond+]]+15\n[[Mood+]]+1"
 		]
 	  },
 	  {
-		"name": "Etsuko's Elated Coverage (G2/G3)",
+		"name": "Etsuko's Elated Coverage", "initiator": "(G2/G3)",
 		"text": [
 		  "[[Energy-]]-15\n[[sp+]]+35\n[[Fans+]]+500\n[[1stats]] +8\n[[possible]]Race skill hint [[hint]]\nEtsuko Otonashi [[bond+]]+15\n[[Mood+]]+1"
 		]
 	  },
 	  {
-		"name": "Etsuko's Elated Coverage (Pre/OP)",
+		"name": "Etsuko's Elated Coverage", "initiator": "(Pre/OP)",
 		"text": [
 		  "[[Energy-]]-15\n[[sp+]]+30\n[[Fans+]]+500\n[[1stats]] +5\n[[possible]]Race skill hint [[hint]]\nEtsuko Otonashi [[bond+]]+15\n[[Mood+]]+1"
 		]
 	  },
 	  {
-		"name": "Etsuko's Exhaustive Coverage (G1)",
+		"name": "Etsuko's Exhaustive Coverage", "initiator": "(G1)",
 		"text": [
 		  "[[Energy-]]-15\n[[Energy-]]-25\n[[sp+]]+25\n[[sp+]]+25\n[[1stats]] +4\n[[or]]\n[[1stats]] +4\nEtsuko Otonashi [[bond+]]+15\nEtsuko Otonashi [[bond-]]-10\n[[Mood+]]+1\n[[Mood-]]-1",
 		  "[[Energy-]]-20\n[[sp+]]+25\n[[1stats]] +4\nEtsuko Otonashi [[bond+]]+10"
 		]
 	  },
 	  {
-		"name": "Etsuko's Exhaustive Coverage (G2/G3)",
+		"name": "Etsuko's Exhaustive Coverage", "initiator": "(G2/G3)",
 		"text": [
 		  "[[Energy-]]-15\n[[Energy-]]-25\n[[sp+]]+20\n[[sp+]]+20\n[[1stats]] +3\n[[or]]\n[[1stats]] +3\nEtsuko Otonashi [[bond+]]+15\nEtsuko Otonashi [[bond-]]-10\n[[Mood+]]+1\n[[Mood-]]-1",
 		  "[[Energy-]]-20\n[[sp+]]+20\n[[1stats]] +3\nEtsuko Otonashi [[bond+]]+10"
 		]
 	  },
 	  {
-		"name": "Etsuko's Exhaustive Coverage (Pre/OP)",
+		"name": "Etsuko's Exhaustive Coverage", "initiator": "(Pre/OP)",
 		"text": [
 		  "[[Energy-]]-15\n[[Energy-]]-25\n[[sp+]]+10\n[[sp+]]+10\n[[or]]\nEtsuko Otonashi [[bond+]]+15\nEtsuko Otonashi [[bond-]]-10\n[[Mood+]]+1\n[[Mood-]]-1",
 		  "[[Energy-]]-20\n[[sp+]]+10\nEtsuko Otonashi [[bond+]]+10"
@@ -7980,7 +8002,8 @@
 		]
 	  },
 	  {
-		"name": "Failed training (Get Well Soon!)",
+		"name": "Get Well Soon!",
+		"initiator": "Failed training",
 		"text": [
 		  "\nPrevious training -5\n[[possible]] Aquires {link:Practice Poor}\n[[Mood-]]-1",
 		  "\nAquires {link:Practice Perfect}\n[[or]]\nPrevious training -10\n[[possible]] Aquires {link:Practice Poor}\n[[Mood-]]-1"
@@ -8047,102 +8070,102 @@
 		]
 	  },
 	  {
-		"name": "Victory! (G1)",
+		"name": "Victory!", "initiator": "(G1)",
 		"text": [
 		  "[[Energy-]]-15\n[[sp+]]+45\n[[1stats]] +10\n[[possible]]Race skill hint [[hint]]",
 		  "[[Energy-]]-5/-20\n[[sp+]]+45\n[[1stats]] +10\n[[possible]]Race skill hint [[hint]]"
 		]
 	  },
 	  {
-		"name": "Victory! (G2/G3)",
+		"name": "Victory!", "initiator": "(G2/G3)",
 		"text": [
 		  "[[Energy-]]-15\n[[sp+]]+35\n[[1stats]] +8\n[[possible]]Race skill hint [[hint]]",
 		  "[[Energy-]]-5/-20\n[[sp+]]+35\n[[1stats]] +8\n[[possible]]Race skill hint [[hint]]"
 		]
 	  },
 	  {
-		"name": "Victory! (Pre/OP)",
+		"name": "Victory!", "initiator": "(Pre/OP)",
 		"text": [
 		  "[[Energy-]]-15\n[[sp+]]+30\n[[1stats]] +5\n[[possible]]Race skill hint [[hint]]",
 		  "[[Energy-]]-5/-20\n[[sp+]]+30\n[[1stats]] +5\n[[possible]]Race skill hint [[hint]]"
 		]
 	  },
 	  {
-		"name": "Solid Showing (G1)",
+		"name": "Solid Showing", "initiator": "(G1)",
 		"text": [
 		  "[[Energy-]]-20\n[[sp+]]+45\n[[1stats]] +8\n[[possible]]Race skill hint [[hint]]",
 		  "[[Energy-]]-10/-30\n[[sp+]]+45\n[[1stats]] +8\n[[possible]]Race skill hint [[hint]]"
 		]
 	  },
 	  {
-		"name": "Solid Showing (G2/G3)",
+		"name": "Solid Showing", "initiator": "(G2/G3)",
 		"text": [
 		  "[[Energy-]]-20\n[[sp+]]+35\n[[1stats]] +5\n[[possible]]Race skill hint [[hint]]",
 		  "[[Energy-]]-10/-30\n[[sp+]]+35\n[[1stats]] +5\n[[possible]]Race skill hint [[hint]]"
 		]
 	  },
 	  {
-		"name": "Solid Showing (Pre/OP)",
+		"name": "Solid Showing", "initiator": "(Pre/OP)",
 		"text": [
 		  "[[Energy-]]-20\n[[sp+]]+30\n[[1stats]] +3\n[[possible]]Race skill hint [[hint]]",
 		  "[[Energy-]]-10/-30\n[[sp+]]+30\n[[1stats]] +3\n[[possible]]Race skill hint [[hint]]"
 		]
 	  },
 	  {
-		"name": "Defeat (G1)",
+		"name": "Defeat", "initiator": "(G1)",
 		"text": [
 		  "[[Energy-]]-25\n[[sp+]]+25\n[[1stats]] +4\n[[possible]]Race skill hint [[hint]]",
 		  "[[Energy-]]-15/-35\n[[sp+]]+25\n[[1stats]] +4\n[[possible]]Race skill hint [[hint]]"
 		]
 	  },
 	  {
-		"name": "Defeat (G2/G3)",
+		"name": "Defeat", "initiator": "(G2/G3)",
 		"text": [
 		  "[[Energy-]]-25\n[[sp+]]+20\n[[1stats]] +3\n[[possible]]Race skill hint [[hint]]",
 		  "[[Energy-]]-15/-35\n[[sp+]]+20\n[[1stats]] +3\n[[possible]]Race skill hint [[hint]]"
 		]
 	  },
 	  {
-		"name": "Defeat (Pre/OP)",
+		"name": "Defeat", "initiator": "(Pre/OP)",
 		"text": [
 		  "[[Energy-]]-25\n[[sp+]]+10\n[[possible]]Race skill hint [[hint]]",
 		  "[[Energy-]]-15/-35\n[[sp+]]+10\n[[possible]]Race skill hint [[hint]]"
 		]
 	  },
 	  {
-		"name": "Etsuko's Elated Coverage (G1)",
+		"name": "Etsuko's Elated Coverage", "initiator": "(G1)",
 		"text": [
 		  "[[Energy-]]-15\n[[sp+]]+45\n[[Fans+]]+500\n[[1stats]] +10\n[[possible]]Race skill hint [[hint]]\nEtsuko Otonashi [[bond+]]+15\n[[Mood+]]+1"
 		]
 	  },
 	  {
-		"name": "Etsuko's Elated Coverage (G2/G3)",
+		"name": "Etsuko's Elated Coverage", "initiator": "(G2/G3)",
 		"text": [
 		  "[[Energy-]]-15\n[[sp+]]+35\n[[Fans+]]+500\n[[1stats]] +8\n[[possible]]Race skill hint [[hint]]\nEtsuko Otonashi [[bond+]]+15\n[[Mood+]]+1"
 		]
 	  },
 	  {
-		"name": "Etsuko's Elated Coverage (Pre/OP)",
+		"name": "Etsuko's Elated Coverage", "initiator": "(Pre/OP)",
 		"text": [
 		  "[[Energy-]]-15\n[[sp+]]+30\n[[Fans+]]+500\n[[1stats]] +5\n[[possible]]Race skill hint [[hint]]\nEtsuko Otonashi [[bond+]]+15\n[[Mood+]]+1"
 		]
 	  },
 	  {
-		"name": "Etsuko's Exhaustive Coverage (G1)",
+		"name": "Etsuko's Exhaustive Coverage", "initiator": "(G1)",
 		"text": [
 		  "[[Energy-]]-15\n[[Energy-]]-25\n[[sp+]]+25\n[[sp+]]+25\n[[1stats]] +4\n[[or]]\n[[1stats]] +4\nEtsuko Otonashi [[bond+]]+15\nEtsuko Otonashi [[bond-]]-10\n[[Mood+]]+1\n[[Mood-]]-1",
 		  "[[Energy-]]-20\n[[sp+]]+25\n[[1stats]] +4\nEtsuko Otonashi [[bond+]]+10"
 		]
 	  },
 	  {
-		"name": "Etsuko's Exhaustive Coverage (G2/G3)",
+		"name": "Etsuko's Exhaustive Coverage", "initiator": "(G2/G3)",
 		"text": [
 		  "[[Energy-]]-15\n[[Energy-]]-25\n[[sp+]]+20\n[[sp+]]+20\n[[1stats]] +3\n[[or]]\n[[1stats]] +3\nEtsuko Otonashi [[bond+]]+15\nEtsuko Otonashi [[bond-]]-10\n[[Mood+]]+1\n[[Mood-]]-1",
 		  "[[Energy-]]-20\n[[sp+]]+20\n[[1stats]] +3\nEtsuko Otonashi [[bond+]]+10"
 		]
 	  },
 	  {
-		"name": "Etsuko's Exhaustive Coverage (Pre/OP)",
+		"name": "Etsuko's Exhaustive Coverage", "initiator": "(Pre/OP)",
 		"text": [
 		  "[[Energy-]]-15\n[[Energy-]]-25\n[[sp+]]+10\n[[sp+]]+10\n[[or]]\nEtsuko Otonashi [[bond+]]+15\nEtsuko Otonashi [[bond-]]-10\n[[Mood+]]+1\n[[Mood-]]-1",
 		  "[[Energy-]]-20\n[[sp+]]+10\nEtsuko Otonashi [[bond+]]+10"
@@ -8354,7 +8377,8 @@
 		]
 	  },
 	  {
-		"name": "Failed training (Get Well Soon!)",
+		"name": "Get Well Soon!",
+		"initiator": "Failed training",
 		"text": [
 		  "\nPrevious training -5\n[[possible]] Aquires {link:Practice Poor}\n[[Mood-]]-1",
 		  "\nAquires {link:Practice Perfect}\n[[or]]\nPrevious training -10\n[[possible]] Aquires {link:Practice Poor}\n[[Mood-]]-1"
@@ -8421,102 +8445,102 @@
 		]
 	  },
 	  {
-		"name": "Victory! (G1)",
+		"name": "Victory!", "initiator": "(G1)",
 		"text": [
 		  "[[Energy-]]-15\n[[sp+]]+45\n[[1stats]] +10\n[[possible]]Race skill hint [[hint]]",
 		  "[[Energy-]]-5/-20\n[[sp+]]+45\n[[1stats]] +10\n[[possible]]Race skill hint [[hint]]"
 		]
 	  },
 	  {
-		"name": "Victory! (G2/G3)",
+		"name": "Victory!", "initiator": "(G2/G3)",
 		"text": [
 		  "[[Energy-]]-15\n[[sp+]]+35\n[[1stats]] +8\n[[possible]]Race skill hint [[hint]]",
 		  "[[Energy-]]-5/-20\n[[sp+]]+35\n[[1stats]] +8\n[[possible]]Race skill hint [[hint]]"
 		]
 	  },
 	  {
-		"name": "Victory! (Pre/OP)",
+		"name": "Victory!", "initiator": "(Pre/OP)",
 		"text": [
 		  "[[Energy-]]-15\n[[sp+]]+30\n[[1stats]] +5\n[[possible]]Race skill hint [[hint]]",
 		  "[[Energy-]]-5/-20\n[[sp+]]+30\n[[1stats]] +5\n[[possible]]Race skill hint [[hint]]"
 		]
 	  },
 	  {
-		"name": "Solid Showing (G1)",
+		"name": "Solid Showing", "initiator": "(G1)",
 		"text": [
 		  "[[Energy-]]-20\n[[sp+]]+45\n[[1stats]] +8\n[[possible]]Race skill hint [[hint]]",
 		  "[[Energy-]]-10/-30\n[[sp+]]+45\n[[1stats]] +8\n[[possible]]Race skill hint [[hint]]"
 		]
 	  },
 	  {
-		"name": "Solid Showing (G2/G3)",
+		"name": "Solid Showing", "initiator": "(G2/G3)",
 		"text": [
 		  "[[Energy-]]-20\n[[sp+]]+35\n[[1stats]] +5\n[[possible]]Race skill hint [[hint]]",
 		  "[[Energy-]]-10/-30\n[[sp+]]+35\n[[1stats]] +5\n[[possible]]Race skill hint [[hint]]"
 		]
 	  },
 	  {
-		"name": "Solid Showing (Pre/OP)",
+		"name": "Solid Showing", "initiator": "(Pre/OP)",
 		"text": [
 		  "[[Energy-]]-20\n[[sp+]]+30\n[[1stats]] +3\n[[possible]]Race skill hint [[hint]]",
 		  "[[Energy-]]-10/-30\n[[sp+]]+30\n[[1stats]] +3\n[[possible]]Race skill hint [[hint]]"
 		]
 	  },
 	  {
-		"name": "Defeat (G1)",
+		"name": "Defeat", "initiator": "(G1)",
 		"text": [
 		  "[[Energy-]]-25\n[[sp+]]+25\n[[1stats]] +4\n[[possible]]Race skill hint [[hint]]",
 		  "[[Energy-]]-15/-35\n[[sp+]]+25\n[[1stats]] +4\n[[possible]]Race skill hint [[hint]]"
 		]
 	  },
 	  {
-		"name": "Defeat (G2/G3)",
+		"name": "Defeat", "initiator": "(G2/G3)",
 		"text": [
 		  "[[Energy-]]-25\n[[sp+]]+20\n[[1stats]] +3\n[[possible]]Race skill hint [[hint]]",
 		  "[[Energy-]]-15/-35\n[[sp+]]+20\n[[1stats]] +3\n[[possible]]Race skill hint [[hint]]"
 		]
 	  },
 	  {
-		"name": "Defeat (Pre/OP)",
+		"name": "Defeat", "initiator": "(Pre/OP)",
 		"text": [
 		  "[[Energy-]]-25\n[[sp+]]+10\n[[possible]]Race skill hint [[hint]]",
 		  "[[Energy-]]-15/-35\n[[sp+]]+10\n[[possible]]Race skill hint [[hint]]"
 		]
 	  },
 	  {
-		"name": "Etsuko's Elated Coverage (G1)",
+		"name": "Etsuko's Elated Coverage", "initiator": "(G1)",
 		"text": [
 		  "[[Energy-]]-15\n[[sp+]]+45\n[[Fans+]]+500\n[[1stats]] +10\n[[possible]]Race skill hint [[hint]]\nEtsuko Otonashi [[bond+]]+15\n[[Mood+]]+1"
 		]
 	  },
 	  {
-		"name": "Etsuko's Elated Coverage (G2/G3)",
+		"name": "Etsuko's Elated Coverage", "initiator": "(G2/G3)",
 		"text": [
 		  "[[Energy-]]-15\n[[sp+]]+35\n[[Fans+]]+500\n[[1stats]] +8\n[[possible]]Race skill hint [[hint]]\nEtsuko Otonashi [[bond+]]+15\n[[Mood+]]+1"
 		]
 	  },
 	  {
-		"name": "Etsuko's Elated Coverage (Pre/OP)",
+		"name": "Etsuko's Elated Coverage", "initiator": "(Pre/OP)",
 		"text": [
 		  "[[Energy-]]-15\n[[sp+]]+30\n[[Fans+]]+500\n[[1stats]] +5\n[[possible]]Race skill hint [[hint]]\nEtsuko Otonashi [[bond+]]+15\n[[Mood+]]+1"
 		]
 	  },
 	  {
-		"name": "Etsuko's Exhaustive Coverage (G1)",
+		"name": "Etsuko's Exhaustive Coverage", "initiator": "(G1)",
 		"text": [
 		  "[[Energy-]]-15\n[[Energy-]]-25\n[[sp+]]+25\n[[sp+]]+25\n[[1stats]] +4\n[[or]]\n[[1stats]] +4\nEtsuko Otonashi [[bond+]]+15\nEtsuko Otonashi [[bond-]]-10\n[[Mood+]]+1\n[[Mood-]]-1",
 		  "[[Energy-]]-20\n[[sp+]]+25\n[[1stats]] +4\nEtsuko Otonashi [[bond+]]+10"
 		]
 	  },
 	  {
-		"name": "Etsuko's Exhaustive Coverage (G2/G3)",
+		"name": "Etsuko's Exhaustive Coverage", "initiator": "(G2/G3)",
 		"text": [
 		  "[[Energy-]]-15\n[[Energy-]]-25\n[[sp+]]+20\n[[sp+]]+20\n[[1stats]] +3\n[[or]]\n[[1stats]] +3\nEtsuko Otonashi [[bond+]]+15\nEtsuko Otonashi [[bond-]]-10\n[[Mood+]]+1\n[[Mood-]]-1",
 		  "[[Energy-]]-20\n[[sp+]]+20\n[[1stats]] +3\nEtsuko Otonashi [[bond+]]+10"
 		]
 	  },
 	  {
-		"name": "Etsuko's Exhaustive Coverage (Pre/OP)",
+		"name": "Etsuko's Exhaustive Coverage", "initiator": "(Pre/OP)",
 		"text": [
 		  "[[Energy-]]-15\n[[Energy-]]-25\n[[sp+]]+10\n[[sp+]]+10\n[[or]]\nEtsuko Otonashi [[bond+]]+15\nEtsuko Otonashi [[bond-]]-10\n[[Mood+]]+1\n[[Mood-]]-1",
 		  "[[Energy-]]-20\n[[sp+]]+10\nEtsuko Otonashi [[bond+]]+10"
@@ -8691,7 +8715,8 @@
 		]
 	  },
 	  {
-		"name": "Failed training (Get Well Soon!)",
+		"name": "Get Well Soon!",
+		"initiator": "Failed training",
 		"text": [
 		  "\nPrevious training -5\n[[possible]] Aquires {link:Practice Poor}\n[[Mood-]]-1",
 		  "\nAquires {link:Practice Perfect}\n[[or]]\nPrevious training -10\n[[possible]] Aquires {link:Practice Poor}\n[[Mood-]]-1"
@@ -8758,102 +8783,102 @@
 		]
 	  },
 	  {
-		"name": "Victory! (G1)",
+		"name": "Victory!", "initiator": "(G1)",
 		"text": [
 		  "[[Energy-]]-15\n[[sp+]]+45\n[[1stats]] +10\n[[possible]]Race skill hint [[hint]]",
 		  "[[Energy-]]-5/-20\n[[sp+]]+45\n[[1stats]] +10\n[[possible]]Race skill hint [[hint]]"
 		]
 	  },
 	  {
-		"name": "Victory! (G2/G3)",
+		"name": "Victory!", "initiator": "(G2/G3)",
 		"text": [
 		  "[[Energy-]]-15\n[[sp+]]+35\n[[1stats]] +8\n[[possible]]Race skill hint [[hint]]",
 		  "[[Energy-]]-5/-20\n[[sp+]]+35\n[[1stats]] +8\n[[possible]]Race skill hint [[hint]]"
 		]
 	  },
 	  {
-		"name": "Victory! (Pre/OP)",
+		"name": "Victory!", "initiator": "(Pre/OP)",
 		"text": [
 		  "[[Energy-]]-15\n[[sp+]]+30\n[[1stats]] +5\n[[possible]]Race skill hint [[hint]]",
 		  "[[Energy-]]-5/-20\n[[sp+]]+30\n[[1stats]] +5\n[[possible]]Race skill hint [[hint]]"
 		]
 	  },
 	  {
-		"name": "Solid Showing (G1)",
+		"name": "Solid Showing", "initiator": "(G1)",
 		"text": [
 		  "[[Energy-]]-20\n[[sp+]]+45\n[[1stats]] +8\n[[possible]]Race skill hint [[hint]]",
 		  "[[Energy-]]-10/-30\n[[sp+]]+45\n[[1stats]] +8\n[[possible]]Race skill hint [[hint]]"
 		]
 	  },
 	  {
-		"name": "Solid Showing (G2/G3)",
+		"name": "Solid Showing", "initiator": "(G2/G3)",
 		"text": [
 		  "[[Energy-]]-20\n[[sp+]]+35\n[[1stats]] +5\n[[possible]]Race skill hint [[hint]]",
 		  "[[Energy-]]-10/-30\n[[sp+]]+35\n[[1stats]] +5\n[[possible]]Race skill hint [[hint]]"
 		]
 	  },
 	  {
-		"name": "Solid Showing (Pre/OP)",
+		"name": "Solid Showing", "initiator": "(Pre/OP)",
 		"text": [
 		  "[[Energy-]]-20\n[[sp+]]+30\n[[1stats]] +3\n[[possible]]Race skill hint [[hint]]",
 		  "[[Energy-]]-10/-30\n[[sp+]]+30\n[[1stats]] +3\n[[possible]]Race skill hint [[hint]]"
 		]
 	  },
 	  {
-		"name": "Defeat (G1)",
+		"name": "Defeat", "initiator": "(G1)",
 		"text": [
 		  "[[Energy-]]-25\n[[sp+]]+25\n[[1stats]] +4\n[[possible]]Race skill hint [[hint]]",
 		  "[[Energy-]]-15/-35\n[[sp+]]+25\n[[1stats]] +4\n[[possible]]Race skill hint [[hint]]"
 		]
 	  },
 	  {
-		"name": "Defeat (G2/G3)",
+		"name": "Defeat", "initiator": "(G2/G3)",
 		"text": [
 		  "[[Energy-]]-25\n[[sp+]]+20\n[[1stats]] +3\n[[possible]]Race skill hint [[hint]]",
 		  "[[Energy-]]-15/-35\n[[sp+]]+20\n[[1stats]] +3\n[[possible]]Race skill hint [[hint]]"
 		]
 	  },
 	  {
-		"name": "Defeat (Pre/OP)",
+		"name": "Defeat", "initiator": "(Pre/OP)",
 		"text": [
 		  "[[Energy-]]-25\n[[sp+]]+10\n[[possible]]Race skill hint [[hint]]",
 		  "[[Energy-]]-15/-35\n[[sp+]]+10\n[[possible]]Race skill hint [[hint]]"
 		]
 	  },
 	  {
-		"name": "Etsuko's Elated Coverage (G1)",
+		"name": "Etsuko's Elated Coverage", "initiator": "(G1)",
 		"text": [
 		  "[[Energy-]]-15\n[[sp+]]+45\n[[Fans+]]+500\n[[1stats]] +10\n[[possible]]Race skill hint [[hint]]\nEtsuko Otonashi [[bond+]]+15\n[[Mood+]]+1"
 		]
 	  },
 	  {
-		"name": "Etsuko's Elated Coverage (G2/G3)",
+		"name": "Etsuko's Elated Coverage", "initiator": "(G2/G3)",
 		"text": [
 		  "[[Energy-]]-15\n[[sp+]]+35\n[[Fans+]]+500\n[[1stats]] +8\n[[possible]]Race skill hint [[hint]]\nEtsuko Otonashi [[bond+]]+15\n[[Mood+]]+1"
 		]
 	  },
 	  {
-		"name": "Etsuko's Elated Coverage (Pre/OP)",
+		"name": "Etsuko's Elated Coverage", "initiator": "(Pre/OP)",
 		"text": [
 		  "[[Energy-]]-15\n[[sp+]]+30\n[[Fans+]]+500\n[[1stats]] +5\n[[possible]]Race skill hint [[hint]]\nEtsuko Otonashi [[bond+]]+15\n[[Mood+]]+1"
 		]
 	  },
 	  {
-		"name": "Etsuko's Exhaustive Coverage (G1)",
+		"name": "Etsuko's Exhaustive Coverage", "initiator": "(G1)",
 		"text": [
 		  "[[Energy-]]-15\n[[Energy-]]-25\n[[sp+]]+25\n[[sp+]]+25\n[[1stats]] +4\n[[or]]\n[[1stats]] +4\nEtsuko Otonashi [[bond+]]+15\nEtsuko Otonashi [[bond-]]-10\n[[Mood+]]+1\n[[Mood-]]-1",
 		  "[[Energy-]]-20\n[[sp+]]+25\n[[1stats]] +4\nEtsuko Otonashi [[bond+]]+10"
 		]
 	  },
 	  {
-		"name": "Etsuko's Exhaustive Coverage (G2/G3)",
+		"name": "Etsuko's Exhaustive Coverage", "initiator": "(G2/G3)",
 		"text": [
 		  "[[Energy-]]-15\n[[Energy-]]-25\n[[sp+]]+20\n[[sp+]]+20\n[[1stats]] +3\n[[or]]\n[[1stats]] +3\nEtsuko Otonashi [[bond+]]+15\nEtsuko Otonashi [[bond-]]-10\n[[Mood+]]+1\n[[Mood-]]-1",
 		  "[[Energy-]]-20\n[[sp+]]+20\n[[1stats]] +3\nEtsuko Otonashi [[bond+]]+10"
 		]
 	  },
 	  {
-		"name": "Etsuko's Exhaustive Coverage (Pre/OP)",
+		"name": "Etsuko's Exhaustive Coverage", "initiator": "(Pre/OP)",
 		"text": [
 		  "[[Energy-]]-15\n[[Energy-]]-25\n[[sp+]]+10\n[[sp+]]+10\n[[or]]\nEtsuko Otonashi [[bond+]]+15\nEtsuko Otonashi [[bond-]]-10\n[[Mood+]]+1\n[[Mood-]]-1",
 		  "[[Energy-]]-20\n[[sp+]]+10\nEtsuko Otonashi [[bond+]]+10"
@@ -9034,7 +9059,8 @@
 		]
 	  },
 	  {
-		"name": "Failed training (Get Well Soon!)",
+		"name": "Get Well Soon!",
+		"initiator": "Failed training",
 		"text": [
 		  "\nPrevious training -5\n[[possible]] Aquires {link:Practice Poor}\n[[Mood-]]-1",
 		  "\nAquires {link:Practice Perfect}\n[[or]]\nPrevious training -10\n[[possible]] Aquires {link:Practice Poor}\n[[Mood-]]-1"
@@ -9101,102 +9127,102 @@
 		]
 	  },
 	  {
-		"name": "Victory! (G1)",
+		"name": "Victory!", "initiator": "(G1)",
 		"text": [
 		  "[[Energy-]]-15\n[[sp+]]+45\n[[1stats]] +10\n[[possible]]Race skill hint [[hint]]",
 		  "[[Energy-]]-5/-20\n[[sp+]]+45\n[[1stats]] +10\n[[possible]]Race skill hint [[hint]]"
 		]
 	  },
 	  {
-		"name": "Victory! (G2/G3)",
+		"name": "Victory!", "initiator": "(G2/G3)",
 		"text": [
 		  "[[Energy-]]-15\n[[sp+]]+35\n[[1stats]] +8\n[[possible]]Race skill hint [[hint]]",
 		  "[[Energy-]]-5/-20\n[[sp+]]+35\n[[1stats]] +8\n[[possible]]Race skill hint [[hint]]"
 		]
 	  },
 	  {
-		"name": "Victory! (Pre/OP)",
+		"name": "Victory!", "initiator": "(Pre/OP)",
 		"text": [
 		  "[[Energy-]]-15\n[[sp+]]+30\n[[1stats]] +5\n[[possible]]Race skill hint [[hint]]",
 		  "[[Energy-]]-5/-20\n[[sp+]]+30\n[[1stats]] +5\n[[possible]]Race skill hint [[hint]]"
 		]
 	  },
 	  {
-		"name": "Solid Showing (G1)",
+		"name": "Solid Showing", "initiator": "(G1)",
 		"text": [
 		  "[[Energy-]]-20\n[[sp+]]+45\n[[1stats]] +8\n[[possible]]Race skill hint [[hint]]",
 		  "[[Energy-]]-10/-30\n[[sp+]]+45\n[[1stats]] +8\n[[possible]]Race skill hint [[hint]]"
 		]
 	  },
 	  {
-		"name": "Solid Showing (G2/G3)",
+		"name": "Solid Showing", "initiator": "(G2/G3)",
 		"text": [
 		  "[[Energy-]]-20\n[[sp+]]+35\n[[1stats]] +5\n[[possible]]Race skill hint [[hint]]",
 		  "[[Energy-]]-10/-30\n[[sp+]]+35\n[[1stats]] +5\n[[possible]]Race skill hint [[hint]]"
 		]
 	  },
 	  {
-		"name": "Solid Showing (Pre/OP)",
+		"name": "Solid Showing", "initiator": "(Pre/OP)",
 		"text": [
 		  "[[Energy-]]-20\n[[sp+]]+30\n[[1stats]] +3\n[[possible]]Race skill hint [[hint]]",
 		  "[[Energy-]]-10/-30\n[[sp+]]+30\n[[1stats]] +3\n[[possible]]Race skill hint [[hint]]"
 		]
 	  },
 	  {
-		"name": "Defeat (G1)",
+		"name": "Defeat", "initiator": "(G1)",
 		"text": [
 		  "[[Energy-]]-25\n[[sp+]]+25\n[[1stats]] +4\n[[possible]]Race skill hint [[hint]]",
 		  "[[Energy-]]-15/-35\n[[sp+]]+25\n[[1stats]] +4\n[[possible]]Race skill hint [[hint]]"
 		]
 	  },
 	  {
-		"name": "Defeat (G2/G3)",
+		"name": "Defeat", "initiator": "(G2/G3)",
 		"text": [
 		  "[[Energy-]]-25\n[[sp+]]+20\n[[1stats]] +3\n[[possible]]Race skill hint [[hint]]",
 		  "[[Energy-]]-15/-35\n[[sp+]]+20\n[[1stats]] +3\n[[possible]]Race skill hint [[hint]]"
 		]
 	  },
 	  {
-		"name": "Defeat (Pre/OP)",
+		"name": "Defeat", "initiator": "(Pre/OP)",
 		"text": [
 		  "[[Energy-]]-25\n[[sp+]]+10\n[[possible]]Race skill hint [[hint]]",
 		  "[[Energy-]]-15/-35\n[[sp+]]+10\n[[possible]]Race skill hint [[hint]]"
 		]
 	  },
 	  {
-		"name": "Etsuko's Elated Coverage (G1)",
+		"name": "Etsuko's Elated Coverage", "initiator": "(G1)",
 		"text": [
 		  "[[Energy-]]-15\n[[sp+]]+45\n[[Fans+]]+500\n[[1stats]] +10\n[[possible]]Race skill hint [[hint]]\nEtsuko Otonashi [[bond+]]+15\n[[Mood+]]+1"
 		]
 	  },
 	  {
-		"name": "Etsuko's Elated Coverage (G2/G3)",
+		"name": "Etsuko's Elated Coverage", "initiator": "(G2/G3)",
 		"text": [
 		  "[[Energy-]]-15\n[[sp+]]+35\n[[Fans+]]+500\n[[1stats]] +8\n[[possible]]Race skill hint [[hint]]\nEtsuko Otonashi [[bond+]]+15\n[[Mood+]]+1"
 		]
 	  },
 	  {
-		"name": "Etsuko's Elated Coverage (Pre/OP)",
+		"name": "Etsuko's Elated Coverage", "initiator": "(Pre/OP)",
 		"text": [
 		  "[[Energy-]]-15\n[[sp+]]+30\n[[Fans+]]+500\n[[1stats]] +5\n[[possible]]Race skill hint [[hint]]\nEtsuko Otonashi [[bond+]]+15\n[[Mood+]]+1"
 		]
 	  },
 	  {
-		"name": "Etsuko's Exhaustive Coverage (G1)",
+		"name": "Etsuko's Exhaustive Coverage", "initiator": "(G1)",
 		"text": [
 		  "[[Energy-]]-15\n[[Energy-]]-25\n[[sp+]]+25\n[[sp+]]+25\n[[1stats]] +4\n[[or]]\n[[1stats]] +4\nEtsuko Otonashi [[bond+]]+15\nEtsuko Otonashi [[bond-]]-10\n[[Mood+]]+1\n[[Mood-]]-1",
 		  "[[Energy-]]-20\n[[sp+]]+25\n[[1stats]] +4\nEtsuko Otonashi [[bond+]]+10"
 		]
 	  },
 	  {
-		"name": "Etsuko's Exhaustive Coverage (G2/G3)",
+		"name": "Etsuko's Exhaustive Coverage", "initiator": "(G2/G3)",
 		"text": [
 		  "[[Energy-]]-15\n[[Energy-]]-25\n[[sp+]]+20\n[[sp+]]+20\n[[1stats]] +3\n[[or]]\n[[1stats]] +3\nEtsuko Otonashi [[bond+]]+15\nEtsuko Otonashi [[bond-]]-10\n[[Mood+]]+1\n[[Mood-]]-1",
 		  "[[Energy-]]-20\n[[sp+]]+20\n[[1stats]] +3\nEtsuko Otonashi [[bond+]]+10"
 		]
 	  },
 	  {
-		"name": "Etsuko's Exhaustive Coverage (Pre/OP)",
+		"name": "Etsuko's Exhaustive Coverage", "initiator": "(Pre/OP)",
 		"text": [
 		  "[[Energy-]]-15\n[[Energy-]]-25\n[[sp+]]+10\n[[sp+]]+10\n[[or]]\nEtsuko Otonashi [[bond+]]+15\nEtsuko Otonashi [[bond-]]-10\n[[Mood+]]+1\n[[Mood-]]-1",
 		  "[[Energy-]]-20\n[[sp+]]+10\nEtsuko Otonashi [[bond+]]+10"
@@ -9389,7 +9415,8 @@
 		]
 	  },
 	  {
-		"name": "Failed training (Get Well Soon!)",
+		"name": "Get Well Soon!",
+		"initiator": "Failed training",
 		"text": [
 		  "\nPrevious training -5\n[[possible]] Aquires {link:Practice Poor}\n[[Mood-]]-1",
 		  "\nAquires {link:Practice Perfect}\n[[or]]\nPrevious training -10\n[[possible]] Aquires {link:Practice Poor}\n[[Mood-]]-1"
@@ -9456,102 +9483,102 @@
 		]
 	  },
 	  {
-		"name": "Victory! (G1)",
+		"name": "Victory!", "initiator": "(G1)",
 		"text": [
 		  "[[Energy-]]-15\n[[sp+]]+45\n[[1stats]] +10\n[[possible]]Race skill hint [[hint]]",
 		  "[[Energy-]]-5/-20\n[[sp+]]+45\n[[1stats]] +10\n[[possible]]Race skill hint [[hint]]"
 		]
 	  },
 	  {
-		"name": "Victory! (G2/G3)",
+		"name": "Victory!", "initiator": "(G2/G3)",
 		"text": [
 		  "[[Energy-]]-15\n[[sp+]]+35\n[[1stats]] +8\n[[possible]]Race skill hint [[hint]]",
 		  "[[Energy-]]-5/-20\n[[sp+]]+35\n[[1stats]] +8\n[[possible]]Race skill hint [[hint]]"
 		]
 	  },
 	  {
-		"name": "Victory! (Pre/OP)",
+		"name": "Victory!", "initiator": "(Pre/OP)",
 		"text": [
 		  "[[Energy-]]-15\n[[sp+]]+30\n[[1stats]] +5\n[[possible]]Race skill hint [[hint]]",
 		  "[[Energy-]]-5/-20\n[[sp+]]+30\n[[1stats]] +5\n[[possible]]Race skill hint [[hint]]"
 		]
 	  },
 	  {
-		"name": "Solid Showing (G1)",
+		"name": "Solid Showing", "initiator": "(G1)",
 		"text": [
 		  "[[Energy-]]-20\n[[sp+]]+45\n[[1stats]] +8\n[[possible]]Race skill hint [[hint]]",
 		  "[[Energy-]]-10/-30\n[[sp+]]+45\n[[1stats]] +8\n[[possible]]Race skill hint [[hint]]"
 		]
 	  },
 	  {
-		"name": "Solid Showing (G2/G3)",
+		"name": "Solid Showing", "initiator": "(G2/G3)",
 		"text": [
 		  "[[Energy-]]-20\n[[sp+]]+35\n[[1stats]] +5\n[[possible]]Race skill hint [[hint]]",
 		  "[[Energy-]]-10/-30\n[[sp+]]+35\n[[1stats]] +5\n[[possible]]Race skill hint [[hint]]"
 		]
 	  },
 	  {
-		"name": "Solid Showing (Pre/OP)",
+		"name": "Solid Showing", "initiator": "(Pre/OP)",
 		"text": [
 		  "[[Energy-]]-20\n[[sp+]]+30\n[[1stats]] +3\n[[possible]]Race skill hint [[hint]]",
 		  "[[Energy-]]-10/-30\n[[sp+]]+30\n[[1stats]] +3\n[[possible]]Race skill hint [[hint]]"
 		]
 	  },
 	  {
-		"name": "Defeat (G1)",
+		"name": "Defeat", "initiator": "(G1)",
 		"text": [
 		  "[[Energy-]]-25\n[[sp+]]+25\n[[1stats]] +4\n[[possible]]Race skill hint [[hint]]",
 		  "[[Energy-]]-15/-35\n[[sp+]]+25\n[[1stats]] +4\n[[possible]]Race skill hint [[hint]]"
 		]
 	  },
 	  {
-		"name": "Defeat (G2/G3)",
+		"name": "Defeat", "initiator": "(G2/G3)",
 		"text": [
 		  "[[Energy-]]-25\n[[sp+]]+20\n[[1stats]] +3\n[[possible]]Race skill hint [[hint]]",
 		  "[[Energy-]]-15/-35\n[[sp+]]+20\n[[1stats]] +3\n[[possible]]Race skill hint [[hint]]"
 		]
 	  },
 	  {
-		"name": "Defeat (Pre/OP)",
+		"name": "Defeat", "initiator": "(Pre/OP)",
 		"text": [
 		  "[[Energy-]]-25\n[[sp+]]+10\n[[possible]]Race skill hint [[hint]]",
 		  "[[Energy-]]-15/-35\n[[sp+]]+10\n[[possible]]Race skill hint [[hint]]"
 		]
 	  },
 	  {
-		"name": "Etsuko's Elated Coverage (G1)",
+		"name": "Etsuko's Elated Coverage", "initiator": "(G1)",
 		"text": [
 		  "[[Energy-]]-15\n[[sp+]]+45\n[[Fans+]]+500\n[[1stats]] +10\n[[possible]]Race skill hint [[hint]]\nEtsuko Otonashi [[bond+]]+15\n[[Mood+]]+1"
 		]
 	  },
 	  {
-		"name": "Etsuko's Elated Coverage (G2/G3)",
+		"name": "Etsuko's Elated Coverage", "initiator": "(G2/G3)",
 		"text": [
 		  "[[Energy-]]-15\n[[sp+]]+35\n[[Fans+]]+500\n[[1stats]] +8\n[[possible]]Race skill hint [[hint]]\nEtsuko Otonashi [[bond+]]+15\n[[Mood+]]+1"
 		]
 	  },
 	  {
-		"name": "Etsuko's Elated Coverage (Pre/OP)",
+		"name": "Etsuko's Elated Coverage", "initiator": "(Pre/OP)",
 		"text": [
 		  "[[Energy-]]-15\n[[sp+]]+30\n[[Fans+]]+500\n[[1stats]] +5\n[[possible]]Race skill hint [[hint]]\nEtsuko Otonashi [[bond+]]+15\n[[Mood+]]+1"
 		]
 	  },
 	  {
-		"name": "Etsuko's Exhaustive Coverage (G1)",
+		"name": "Etsuko's Exhaustive Coverage", "initiator": "(G1)",
 		"text": [
 		  "[[Energy-]]-15\n[[Energy-]]-25\n[[sp+]]+25\n[[sp+]]+25\n[[1stats]] +4\n[[or]]\n[[1stats]] +4\nEtsuko Otonashi [[bond+]]+15\nEtsuko Otonashi [[bond-]]-10\n[[Mood+]]+1\n[[Mood-]]-1",
 		  "[[Energy-]]-20\n[[sp+]]+25\n[[1stats]] +4\nEtsuko Otonashi [[bond+]]+10"
 		]
 	  },
 	  {
-		"name": "Etsuko's Exhaustive Coverage (G2/G3)",
+		"name": "Etsuko's Exhaustive Coverage", "initiator": "(G2/G3)",
 		"text": [
 		  "[[Energy-]]-15\n[[Energy-]]-25\n[[sp+]]+20\n[[sp+]]+20\n[[1stats]] +3\n[[or]]\n[[1stats]] +3\nEtsuko Otonashi [[bond+]]+15\nEtsuko Otonashi [[bond-]]-10\n[[Mood+]]+1\n[[Mood-]]-1",
 		  "[[Energy-]]-20\n[[sp+]]+20\n[[1stats]] +3\nEtsuko Otonashi [[bond+]]+10"
 		]
 	  },
 	  {
-		"name": "Etsuko's Exhaustive Coverage (Pre/OP)",
+		"name": "Etsuko's Exhaustive Coverage", "initiator": "(Pre/OP)",
 		"text": [
 		  "[[Energy-]]-15\n[[Energy-]]-25\n[[sp+]]+10\n[[sp+]]+10\n[[or]]\nEtsuko Otonashi [[bond+]]+15\nEtsuko Otonashi [[bond-]]-10\n[[Mood+]]+1\n[[Mood-]]-1",
 		  "[[Energy-]]-20\n[[sp+]]+10\nEtsuko Otonashi [[bond+]]+10"
@@ -9732,7 +9759,8 @@
 		]
 	  },
 	  {
-		"name": "Failed training (Get Well Soon!)",
+		"name": "Get Well Soon!",
+		"initiator": "Failed training",
 		"text": [
 		  "\nPrevious training -5\n[[possible]] Aquires {link:Practice Poor}\n[[Mood-]]-1",
 		  "\nAquires {link:Practice Perfect}\n[[or]]\nPrevious training -10\n[[possible]] Aquires {link:Practice Poor}\n[[Mood-]]-1"
@@ -9799,102 +9827,102 @@
 		]
 	  },
 	  {
-		"name": "Victory! (G1)",
+		"name": "Victory!", "initiator": "(G1)",
 		"text": [
 		  "[[Energy-]]-15\n[[sp+]]+45\n[[1stats]] +10\n[[possible]]Race skill hint [[hint]]",
 		  "[[Energy-]]-5/-20\n[[sp+]]+45\n[[1stats]] +10\n[[possible]]Race skill hint [[hint]]"
 		]
 	  },
 	  {
-		"name": "Victory! (G2/G3)",
+		"name": "Victory!", "initiator": "(G2/G3)",
 		"text": [
 		  "[[Energy-]]-15\n[[sp+]]+35\n[[1stats]] +8\n[[possible]]Race skill hint [[hint]]",
 		  "[[Energy-]]-5/-20\n[[sp+]]+35\n[[1stats]] +8\n[[possible]]Race skill hint [[hint]]"
 		]
 	  },
 	  {
-		"name": "Victory! (Pre/OP)",
+		"name": "Victory!", "initiator": "(Pre/OP)",
 		"text": [
 		  "[[Energy-]]-15\n[[sp+]]+30\n[[1stats]] +5\n[[possible]]Race skill hint [[hint]]",
 		  "[[Energy-]]-5/-20\n[[sp+]]+30\n[[1stats]] +5\n[[possible]]Race skill hint [[hint]]"
 		]
 	  },
 	  {
-		"name": "Solid Showing (G1)",
+		"name": "Solid Showing", "initiator": "(G1)",
 		"text": [
 		  "[[Energy-]]-20\n[[sp+]]+45\n[[1stats]] +8\n[[possible]]Race skill hint [[hint]]",
 		  "[[Energy-]]-10/-30\n[[sp+]]+45\n[[1stats]] +8\n[[possible]]Race skill hint [[hint]]"
 		]
 	  },
 	  {
-		"name": "Solid Showing (G2/G3)",
+		"name": "Solid Showing", "initiator": "(G2/G3)",
 		"text": [
 		  "[[Energy-]]-20\n[[sp+]]+35\n[[1stats]] +5\n[[possible]]Race skill hint [[hint]]",
 		  "[[Energy-]]-10/-30\n[[sp+]]+35\n[[1stats]] +5\n[[possible]]Race skill hint [[hint]]"
 		]
 	  },
 	  {
-		"name": "Solid Showing (Pre/OP)",
+		"name": "Solid Showing", "initiator": "(Pre/OP)",
 		"text": [
 		  "[[Energy-]]-20\n[[sp+]]+30\n[[1stats]] +3\n[[possible]]Race skill hint [[hint]]",
 		  "[[Energy-]]-10/-30\n[[sp+]]+30\n[[1stats]] +3\n[[possible]]Race skill hint [[hint]]"
 		]
 	  },
 	  {
-		"name": "Defeat (G1)",
+		"name": "Defeat", "initiator": "(G1)",
 		"text": [
 		  "[[Energy-]]-25\n[[sp+]]+25\n[[1stats]] +4\n[[possible]]Race skill hint [[hint]]",
 		  "[[Energy-]]-15/-35\n[[sp+]]+25\n[[1stats]] +4\n[[possible]]Race skill hint [[hint]]"
 		]
 	  },
 	  {
-		"name": "Defeat (G2/G3)",
+		"name": "Defeat", "initiator": "(G2/G3)",
 		"text": [
 		  "[[Energy-]]-25\n[[sp+]]+20\n[[1stats]] +3\n[[possible]]Race skill hint [[hint]]",
 		  "[[Energy-]]-15/-35\n[[sp+]]+20\n[[1stats]] +3\n[[possible]]Race skill hint [[hint]]"
 		]
 	  },
 	  {
-		"name": "Defeat (Pre/OP)",
+		"name": "Defeat", "initiator": "(Pre/OP)",
 		"text": [
 		  "[[Energy-]]-25\n[[sp+]]+10\n[[possible]]Race skill hint [[hint]]",
 		  "[[Energy-]]-15/-35\n[[sp+]]+10\n[[possible]]Race skill hint [[hint]]"
 		]
 	  },
 	  {
-		"name": "Etsuko's Elated Coverage (G1)",
+		"name": "Etsuko's Elated Coverage", "initiator": "(G1)",
 		"text": [
 		  "[[Energy-]]-15\n[[sp+]]+45\n[[Fans+]]+500\n[[1stats]] +10\n[[possible]]Race skill hint [[hint]]\nEtsuko Otonashi [[bond+]]+15\n[[Mood+]]+1"
 		]
 	  },
 	  {
-		"name": "Etsuko's Elated Coverage (G2/G3)",
+		"name": "Etsuko's Elated Coverage", "initiator": "(G2/G3)",
 		"text": [
 		  "[[Energy-]]-15\n[[sp+]]+35\n[[Fans+]]+500\n[[1stats]] +8\n[[possible]]Race skill hint [[hint]]\nEtsuko Otonashi [[bond+]]+15\n[[Mood+]]+1"
 		]
 	  },
 	  {
-		"name": "Etsuko's Elated Coverage (Pre/OP)",
+		"name": "Etsuko's Elated Coverage", "initiator": "(Pre/OP)",
 		"text": [
 		  "[[Energy-]]-15\n[[sp+]]+30\n[[Fans+]]+500\n[[1stats]] +5\n[[possible]]Race skill hint [[hint]]\nEtsuko Otonashi [[bond+]]+15\n[[Mood+]]+1"
 		]
 	  },
 	  {
-		"name": "Etsuko's Exhaustive Coverage (G1)",
+		"name": "Etsuko's Exhaustive Coverage", "initiator": "(G1)",
 		"text": [
 		  "[[Energy-]]-15\n[[Energy-]]-25\n[[sp+]]+25\n[[sp+]]+25\n[[1stats]] +4\n[[or]]\n[[1stats]] +4\nEtsuko Otonashi [[bond+]]+15\nEtsuko Otonashi [[bond-]]-10\n[[Mood+]]+1\n[[Mood-]]-1",
 		  "[[Energy-]]-20\n[[sp+]]+25\n[[1stats]] +4\nEtsuko Otonashi [[bond+]]+10"
 		]
 	  },
 	  {
-		"name": "Etsuko's Exhaustive Coverage (G2/G3)",
+		"name": "Etsuko's Exhaustive Coverage", "initiator": "(G2/G3)",
 		"text": [
 		  "[[Energy-]]-15\n[[Energy-]]-25\n[[sp+]]+20\n[[sp+]]+20\n[[1stats]] +3\n[[or]]\n[[1stats]] +3\nEtsuko Otonashi [[bond+]]+15\nEtsuko Otonashi [[bond-]]-10\n[[Mood+]]+1\n[[Mood-]]-1",
 		  "[[Energy-]]-20\n[[sp+]]+20\n[[1stats]] +3\nEtsuko Otonashi [[bond+]]+10"
 		]
 	  },
 	  {
-		"name": "Etsuko's Exhaustive Coverage (Pre/OP)",
+		"name": "Etsuko's Exhaustive Coverage", "initiator": "(Pre/OP)",
 		"text": [
 		  "[[Energy-]]-15\n[[Energy-]]-25\n[[sp+]]+10\n[[sp+]]+10\n[[or]]\nEtsuko Otonashi [[bond+]]+15\nEtsuko Otonashi [[bond-]]-10\n[[Mood+]]+1\n[[Mood-]]-1",
 		  "[[Energy-]]-20\n[[sp+]]+10\nEtsuko Otonashi [[bond+]]+10"
@@ -10087,7 +10115,8 @@
 		]
 	  },
 	  {
-		"name": "Failed training (Get Well Soon!)",
+		"name": "Get Well Soon!",
+		"initiator": "Failed training",
 		"text": [
 		  "\nPrevious training -5\n[[possible]] Aquires {link:Practice Poor}\n[[Mood-]]-1",
 		  "\nAquires {link:Practice Perfect}\n[[or]]\nPrevious training -10\n[[possible]] Aquires {link:Practice Poor}\n[[Mood-]]-1"
@@ -10154,102 +10183,102 @@
 		]
 	  },
 	  {
-		"name": "Victory! (G1)",
+		"name": "Victory!", "initiator": "(G1)",
 		"text": [
 		  "[[Energy-]]-15\n[[sp+]]+45\n[[1stats]] +10\n[[possible]]Race skill hint [[hint]]",
 		  "[[Energy-]]-5/-20\n[[sp+]]+45\n[[1stats]] +10\n[[possible]]Race skill hint [[hint]]"
 		]
 	  },
 	  {
-		"name": "Victory! (G2/G3)",
+		"name": "Victory!", "initiator": "(G2/G3)",
 		"text": [
 		  "[[Energy-]]-15\n[[sp+]]+35\n[[1stats]] +8\n[[possible]]Race skill hint [[hint]]",
 		  "[[Energy-]]-5/-20\n[[sp+]]+35\n[[1stats]] +8\n[[possible]]Race skill hint [[hint]]"
 		]
 	  },
 	  {
-		"name": "Victory! (Pre/OP)",
+		"name": "Victory!", "initiator": "(Pre/OP)",
 		"text": [
 		  "[[Energy-]]-15\n[[sp+]]+30\n[[1stats]] +5\n[[possible]]Race skill hint [[hint]]",
 		  "[[Energy-]]-5/-20\n[[sp+]]+30\n[[1stats]] +5\n[[possible]]Race skill hint [[hint]]"
 		]
 	  },
 	  {
-		"name": "Solid Showing (G1)",
+		"name": "Solid Showing", "initiator": "(G1)",
 		"text": [
 		  "[[Energy-]]-20\n[[sp+]]+45\n[[1stats]] +8\n[[possible]]Race skill hint [[hint]]",
 		  "[[Energy-]]-10/-30\n[[sp+]]+45\n[[1stats]] +8\n[[possible]]Race skill hint [[hint]]"
 		]
 	  },
 	  {
-		"name": "Solid Showing (G2/G3)",
+		"name": "Solid Showing", "initiator": "(G2/G3)",
 		"text": [
 		  "[[Energy-]]-20\n[[sp+]]+35\n[[1stats]] +5\n[[possible]]Race skill hint [[hint]]",
 		  "[[Energy-]]-10/-30\n[[sp+]]+35\n[[1stats]] +5\n[[possible]]Race skill hint [[hint]]"
 		]
 	  },
 	  {
-		"name": "Solid Showing (Pre/OP)",
+		"name": "Solid Showing", "initiator": "(Pre/OP)",
 		"text": [
 		  "[[Energy-]]-20\n[[sp+]]+30\n[[1stats]] +3\n[[possible]]Race skill hint [[hint]]",
 		  "[[Energy-]]-10/-30\n[[sp+]]+30\n[[1stats]] +3\n[[possible]]Race skill hint [[hint]]"
 		]
 	  },
 	  {
-		"name": "Defeat (G1)",
+		"name": "Defeat", "initiator": "(G1)",
 		"text": [
 		  "[[Energy-]]-25\n[[sp+]]+25\n[[1stats]] +4\n[[possible]]Race skill hint [[hint]]",
 		  "[[Energy-]]-15/-35\n[[sp+]]+25\n[[1stats]] +4\n[[possible]]Race skill hint [[hint]]"
 		]
 	  },
 	  {
-		"name": "Defeat (G2/G3)",
+		"name": "Defeat", "initiator": "(G2/G3)",
 		"text": [
 		  "[[Energy-]]-25\n[[sp+]]+20\n[[1stats]] +3\n[[possible]]Race skill hint [[hint]]",
 		  "[[Energy-]]-15/-35\n[[sp+]]+20\n[[1stats]] +3\n[[possible]]Race skill hint [[hint]]"
 		]
 	  },
 	  {
-		"name": "Defeat (Pre/OP)",
+		"name": "Defeat", "initiator": "(Pre/OP)",
 		"text": [
 		  "[[Energy-]]-25\n[[sp+]]+10\n[[possible]]Race skill hint [[hint]]",
 		  "[[Energy-]]-15/-35\n[[sp+]]+10\n[[possible]]Race skill hint [[hint]]"
 		]
 	  },
 	  {
-		"name": "Etsuko's Elated Coverage (G1)",
+		"name": "Etsuko's Elated Coverage", "initiator": "(G1)",
 		"text": [
 		  "[[Energy-]]-15\n[[sp+]]+45\n[[Fans+]]+500\n[[1stats]] +10\n[[possible]]Race skill hint [[hint]]\nEtsuko Otonashi [[bond+]]+15\n[[Mood+]]+1"
 		]
 	  },
 	  {
-		"name": "Etsuko's Elated Coverage (G2/G3)",
+		"name": "Etsuko's Elated Coverage", "initiator": "(G2/G3)",
 		"text": [
 		  "[[Energy-]]-15\n[[sp+]]+35\n[[Fans+]]+500\n[[1stats]] +8\n[[possible]]Race skill hint [[hint]]\nEtsuko Otonashi [[bond+]]+15\n[[Mood+]]+1"
 		]
 	  },
 	  {
-		"name": "Etsuko's Elated Coverage (Pre/OP)",
+		"name": "Etsuko's Elated Coverage", "initiator": "(Pre/OP)",
 		"text": [
 		  "[[Energy-]]-15\n[[sp+]]+30\n[[Fans+]]+500\n[[1stats]] +5\n[[possible]]Race skill hint [[hint]]\nEtsuko Otonashi [[bond+]]+15\n[[Mood+]]+1"
 		]
 	  },
 	  {
-		"name": "Etsuko's Exhaustive Coverage (G1)",
+		"name": "Etsuko's Exhaustive Coverage", "initiator": "(G1)",
 		"text": [
 		  "[[Energy-]]-15\n[[Energy-]]-25\n[[sp+]]+25\n[[sp+]]+25\n[[1stats]] +4\n[[or]]\n[[1stats]] +4\nEtsuko Otonashi [[bond+]]+15\nEtsuko Otonashi [[bond-]]-10\n[[Mood+]]+1\n[[Mood-]]-1",
 		  "[[Energy-]]-20\n[[sp+]]+25\n[[1stats]] +4\nEtsuko Otonashi [[bond+]]+10"
 		]
 	  },
 	  {
-		"name": "Etsuko's Exhaustive Coverage (G2/G3)",
+		"name": "Etsuko's Exhaustive Coverage", "initiator": "(G2/G3)",
 		"text": [
 		  "[[Energy-]]-15\n[[Energy-]]-25\n[[sp+]]+20\n[[sp+]]+20\n[[1stats]] +3\n[[or]]\n[[1stats]] +3\nEtsuko Otonashi [[bond+]]+15\nEtsuko Otonashi [[bond-]]-10\n[[Mood+]]+1\n[[Mood-]]-1",
 		  "[[Energy-]]-20\n[[sp+]]+20\n[[1stats]] +3\nEtsuko Otonashi [[bond+]]+10"
 		]
 	  },
 	  {
-		"name": "Etsuko's Exhaustive Coverage (Pre/OP)",
+		"name": "Etsuko's Exhaustive Coverage", "initiator": "(Pre/OP)",
 		"text": [
 		  "[[Energy-]]-15\n[[Energy-]]-25\n[[sp+]]+10\n[[sp+]]+10\n[[or]]\nEtsuko Otonashi [[bond+]]+15\nEtsuko Otonashi [[bond-]]-10\n[[Mood+]]+1\n[[Mood-]]-1",
 		  "[[Energy-]]-20\n[[sp+]]+10\nEtsuko Otonashi [[bond+]]+10"
@@ -10442,7 +10471,8 @@
 		]
 	  },
 	  {
-		"name": "Failed training (Get Well Soon!)",
+		"name": "Get Well Soon!",
+		"initiator": "Failed training",
 		"text": [
 		  "\nPrevious training -5\n[[possible]] Aquires {link:Practice Poor}\n[[Mood-]]-1",
 		  "\nAquires {link:Practice Perfect}\n[[or]]\nPrevious training -10\n[[possible]] Aquires {link:Practice Poor}\n[[Mood-]]-1"
@@ -10509,102 +10539,102 @@
 		]
 	  },
 	  {
-		"name": "Victory! (G1)",
+		"name": "Victory!", "initiator": "(G1)",
 		"text": [
 		  "[[Energy-]]-15\n[[sp+]]+45\n[[1stats]] +10\n[[possible]]Race skill hint [[hint]]",
 		  "[[Energy-]]-5/-20\n[[sp+]]+45\n[[1stats]] +10\n[[possible]]Race skill hint [[hint]]"
 		]
 	  },
 	  {
-		"name": "Victory! (G2/G3)",
+		"name": "Victory!", "initiator": "(G2/G3)",
 		"text": [
 		  "[[Energy-]]-15\n[[sp+]]+35\n[[1stats]] +8\n[[possible]]Race skill hint [[hint]]",
 		  "[[Energy-]]-5/-20\n[[sp+]]+35\n[[1stats]] +8\n[[possible]]Race skill hint [[hint]]"
 		]
 	  },
 	  {
-		"name": "Victory! (Pre/OP)",
+		"name": "Victory!", "initiator": "(Pre/OP)",
 		"text": [
 		  "[[Energy-]]-15\n[[sp+]]+30\n[[1stats]] +5\n[[possible]]Race skill hint [[hint]]",
 		  "[[Energy-]]-5/-20\n[[sp+]]+30\n[[1stats]] +5\n[[possible]]Race skill hint [[hint]]"
 		]
 	  },
 	  {
-		"name": "Solid Showing (G1)",
+		"name": "Solid Showing", "initiator": "(G1)",
 		"text": [
 		  "[[Energy-]]-20\n[[sp+]]+45\n[[1stats]] +8\n[[possible]]Race skill hint [[hint]]",
 		  "[[Energy-]]-10/-30\n[[sp+]]+45\n[[1stats]] +8\n[[possible]]Race skill hint [[hint]]"
 		]
 	  },
 	  {
-		"name": "Solid Showing (G2/G3)",
+		"name": "Solid Showing", "initiator": "(G2/G3)",
 		"text": [
 		  "[[Energy-]]-20\n[[sp+]]+35\n[[1stats]] +5\n[[possible]]Race skill hint [[hint]]",
 		  "[[Energy-]]-10/-30\n[[sp+]]+35\n[[1stats]] +5\n[[possible]]Race skill hint [[hint]]"
 		]
 	  },
 	  {
-		"name": "Solid Showing (Pre/OP)",
+		"name": "Solid Showing", "initiator": "(Pre/OP)",
 		"text": [
 		  "[[Energy-]]-20\n[[sp+]]+30\n[[1stats]] +3\n[[possible]]Race skill hint [[hint]]",
 		  "[[Energy-]]-10/-30\n[[sp+]]+30\n[[1stats]] +3\n[[possible]]Race skill hint [[hint]]"
 		]
 	  },
 	  {
-		"name": "Defeat (G1)",
+		"name": "Defeat", "initiator": "(G1)",
 		"text": [
 		  "[[Energy-]]-25\n[[sp+]]+25\n[[1stats]] +4\n[[possible]]Race skill hint [[hint]]",
 		  "[[Energy-]]-15/-35\n[[sp+]]+25\n[[1stats]] +4\n[[possible]]Race skill hint [[hint]]"
 		]
 	  },
 	  {
-		"name": "Defeat (G2/G3)",
+		"name": "Defeat", "initiator": "(G2/G3)",
 		"text": [
 		  "[[Energy-]]-25\n[[sp+]]+20\n[[1stats]] +3\n[[possible]]Race skill hint [[hint]]",
 		  "[[Energy-]]-15/-35\n[[sp+]]+20\n[[1stats]] +3\n[[possible]]Race skill hint [[hint]]"
 		]
 	  },
 	  {
-		"name": "Defeat (Pre/OP)",
+		"name": "Defeat", "initiator": "(Pre/OP)",
 		"text": [
 		  "[[Energy-]]-25\n[[sp+]]+10\n[[possible]]Race skill hint [[hint]]",
 		  "[[Energy-]]-15/-35\n[[sp+]]+10\n[[possible]]Race skill hint [[hint]]"
 		]
 	  },
 	  {
-		"name": "Etsuko's Elated Coverage (G1)",
+		"name": "Etsuko's Elated Coverage", "initiator": "(G1)",
 		"text": [
 		  "[[Energy-]]-15\n[[sp+]]+45\n[[Fans+]]+500\n[[1stats]] +10\n[[possible]]Race skill hint [[hint]]\nEtsuko Otonashi [[bond+]]+15\n[[Mood+]]+1"
 		]
 	  },
 	  {
-		"name": "Etsuko's Elated Coverage (G2/G3)",
+		"name": "Etsuko's Elated Coverage", "initiator": "(G2/G3)",
 		"text": [
 		  "[[Energy-]]-15\n[[sp+]]+35\n[[Fans+]]+500\n[[1stats]] +8\n[[possible]]Race skill hint [[hint]]\nEtsuko Otonashi [[bond+]]+15\n[[Mood+]]+1"
 		]
 	  },
 	  {
-		"name": "Etsuko's Elated Coverage (Pre/OP)",
+		"name": "Etsuko's Elated Coverage", "initiator": "(Pre/OP)",
 		"text": [
 		  "[[Energy-]]-15\n[[sp+]]+30\n[[Fans+]]+500\n[[1stats]] +5\n[[possible]]Race skill hint [[hint]]\nEtsuko Otonashi [[bond+]]+15\n[[Mood+]]+1"
 		]
 	  },
 	  {
-		"name": "Etsuko's Exhaustive Coverage (G1)",
+		"name": "Etsuko's Exhaustive Coverage", "initiator": "(G1)",
 		"text": [
 		  "[[Energy-]]-15\n[[Energy-]]-25\n[[sp+]]+25\n[[sp+]]+25\n[[1stats]] +4\n[[or]]\n[[1stats]] +4\nEtsuko Otonashi [[bond+]]+15\nEtsuko Otonashi [[bond-]]-10\n[[Mood+]]+1\n[[Mood-]]-1",
 		  "[[Energy-]]-20\n[[sp+]]+25\n[[1stats]] +4\nEtsuko Otonashi [[bond+]]+10"
 		]
 	  },
 	  {
-		"name": "Etsuko's Exhaustive Coverage (G2/G3)",
+		"name": "Etsuko's Exhaustive Coverage", "initiator": "(G2/G3)",
 		"text": [
 		  "[[Energy-]]-15\n[[Energy-]]-25\n[[sp+]]+20\n[[sp+]]+20\n[[1stats]] +3\n[[or]]\n[[1stats]] +3\nEtsuko Otonashi [[bond+]]+15\nEtsuko Otonashi [[bond-]]-10\n[[Mood+]]+1\n[[Mood-]]-1",
 		  "[[Energy-]]-20\n[[sp+]]+20\n[[1stats]] +3\nEtsuko Otonashi [[bond+]]+10"
 		]
 	  },
 	  {
-		"name": "Etsuko's Exhaustive Coverage (Pre/OP)",
+		"name": "Etsuko's Exhaustive Coverage", "initiator": "(Pre/OP)",
 		"text": [
 		  "[[Energy-]]-15\n[[Energy-]]-25\n[[sp+]]+10\n[[sp+]]+10\n[[or]]\nEtsuko Otonashi [[bond+]]+15\nEtsuko Otonashi [[bond-]]-10\n[[Mood+]]+1\n[[Mood-]]-1",
 		  "[[Energy-]]-20\n[[sp+]]+10\nEtsuko Otonashi [[bond+]]+10"
@@ -10809,7 +10839,8 @@
 		]
 	  },
 	  {
-		"name": "Failed training (Get Well Soon!)",
+		"name": "Get Well Soon!",
+		"initiator": "Failed training",
 		"text": [
 		  "\nPrevious training -5\n[[possible]] Aquires {link:Practice Poor}\n[[Mood-]]-1",
 		  "\nAquires {link:Practice Perfect}\n[[or]]\nPrevious training -10\n[[possible]] Aquires {link:Practice Poor}\n[[Mood-]]-1"
@@ -10876,102 +10907,102 @@
 		]
 	  },
 	  {
-		"name": "Victory! (G1)",
+		"name": "Victory!", "initiator": "(G1)",
 		"text": [
 		  "[[Energy-]]-15\n[[sp+]]+45\n[[1stats]] +10\n[[possible]]Race skill hint [[hint]]",
 		  "[[Energy-]]-5/-20\n[[sp+]]+45\n[[1stats]] +10\n[[possible]]Race skill hint [[hint]]"
 		]
 	  },
 	  {
-		"name": "Victory! (G2/G3)",
+		"name": "Victory!", "initiator": "(G2/G3)",
 		"text": [
 		  "[[Energy-]]-15\n[[sp+]]+35\n[[1stats]] +8\n[[possible]]Race skill hint [[hint]]",
 		  "[[Energy-]]-5/-20\n[[sp+]]+35\n[[1stats]] +8\n[[possible]]Race skill hint [[hint]]"
 		]
 	  },
 	  {
-		"name": "Victory! (Pre/OP)",
+		"name": "Victory!", "initiator": "(Pre/OP)",
 		"text": [
 		  "[[Energy-]]-15\n[[sp+]]+30\n[[1stats]] +5\n[[possible]]Race skill hint [[hint]]",
 		  "[[Energy-]]-5/-20\n[[sp+]]+30\n[[1stats]] +5\n[[possible]]Race skill hint [[hint]]"
 		]
 	  },
 	  {
-		"name": "Solid Showing (G1)",
+		"name": "Solid Showing", "initiator": "(G1)",
 		"text": [
 		  "[[Energy-]]-20\n[[sp+]]+45\n[[1stats]] +8\n[[possible]]Race skill hint [[hint]]",
 		  "[[Energy-]]-10/-30\n[[sp+]]+45\n[[1stats]] +8\n[[possible]]Race skill hint [[hint]]"
 		]
 	  },
 	  {
-		"name": "Solid Showing (G2/G3)",
+		"name": "Solid Showing", "initiator": "(G2/G3)",
 		"text": [
 		  "[[Energy-]]-20\n[[sp+]]+35\n[[1stats]] +5\n[[possible]]Race skill hint [[hint]]",
 		  "[[Energy-]]-10/-30\n[[sp+]]+35\n[[1stats]] +5\n[[possible]]Race skill hint [[hint]]"
 		]
 	  },
 	  {
-		"name": "Solid Showing (Pre/OP)",
+		"name": "Solid Showing", "initiator": "(Pre/OP)",
 		"text": [
 		  "[[Energy-]]-20\n[[sp+]]+30\n[[1stats]] +3\n[[possible]]Race skill hint [[hint]]",
 		  "[[Energy-]]-10/-30\n[[sp+]]+30\n[[1stats]] +3\n[[possible]]Race skill hint [[hint]]"
 		]
 	  },
 	  {
-		"name": "Defeat (G1)",
+		"name": "Defeat", "initiator": "(G1)",
 		"text": [
 		  "[[Energy-]]-25\n[[sp+]]+25\n[[1stats]] +4\n[[possible]]Race skill hint [[hint]]",
 		  "[[Energy-]]-15/-35\n[[sp+]]+25\n[[1stats]] +4\n[[possible]]Race skill hint [[hint]]"
 		]
 	  },
 	  {
-		"name": "Defeat (G2/G3)",
+		"name": "Defeat", "initiator": "(G2/G3)",
 		"text": [
 		  "[[Energy-]]-25\n[[sp+]]+20\n[[1stats]] +3\n[[possible]]Race skill hint [[hint]]",
 		  "[[Energy-]]-15/-35\n[[sp+]]+20\n[[1stats]] +3\n[[possible]]Race skill hint [[hint]]"
 		]
 	  },
 	  {
-		"name": "Defeat (Pre/OP)",
+		"name": "Defeat", "initiator": "(Pre/OP)",
 		"text": [
 		  "[[Energy-]]-25\n[[sp+]]+10\n[[possible]]Race skill hint [[hint]]",
 		  "[[Energy-]]-15/-35\n[[sp+]]+10\n[[possible]]Race skill hint [[hint]]"
 		]
 	  },
 	  {
-		"name": "Etsuko's Elated Coverage (G1)",
+		"name": "Etsuko's Elated Coverage", "initiator": "(G1)",
 		"text": [
 		  "[[Energy-]]-15\n[[sp+]]+45\n[[Fans+]]+500\n[[1stats]] +10\n[[possible]]Race skill hint [[hint]]\nEtsuko Otonashi [[bond+]]+15\n[[Mood+]]+1"
 		]
 	  },
 	  {
-		"name": "Etsuko's Elated Coverage (G2/G3)",
+		"name": "Etsuko's Elated Coverage", "initiator": "(G2/G3)",
 		"text": [
 		  "[[Energy-]]-15\n[[sp+]]+35\n[[Fans+]]+500\n[[1stats]] +8\n[[possible]]Race skill hint [[hint]]\nEtsuko Otonashi [[bond+]]+15\n[[Mood+]]+1"
 		]
 	  },
 	  {
-		"name": "Etsuko's Elated Coverage (Pre/OP)",
+		"name": "Etsuko's Elated Coverage", "initiator": "(Pre/OP)",
 		"text": [
 		  "[[Energy-]]-15\n[[sp+]]+30\n[[Fans+]]+500\n[[1stats]] +5\n[[possible]]Race skill hint [[hint]]\nEtsuko Otonashi [[bond+]]+15\n[[Mood+]]+1"
 		]
 	  },
 	  {
-		"name": "Etsuko's Exhaustive Coverage (G1)",
+		"name": "Etsuko's Exhaustive Coverage", "initiator": "(G1)",
 		"text": [
 		  "[[Energy-]]-15\n[[Energy-]]-25\n[[sp+]]+25\n[[sp+]]+25\n[[1stats]] +4\n[[or]]\n[[1stats]] +4\nEtsuko Otonashi [[bond+]]+15\nEtsuko Otonashi [[bond-]]-10\n[[Mood+]]+1\n[[Mood-]]-1",
 		  "[[Energy-]]-20\n[[sp+]]+25\n[[1stats]] +4\nEtsuko Otonashi [[bond+]]+10"
 		]
 	  },
 	  {
-		"name": "Etsuko's Exhaustive Coverage (G2/G3)",
+		"name": "Etsuko's Exhaustive Coverage", "initiator": "(G2/G3)",
 		"text": [
 		  "[[Energy-]]-15\n[[Energy-]]-25\n[[sp+]]+20\n[[sp+]]+20\n[[1stats]] +3\n[[or]]\n[[1stats]] +3\nEtsuko Otonashi [[bond+]]+15\nEtsuko Otonashi [[bond-]]-10\n[[Mood+]]+1\n[[Mood-]]-1",
 		  "[[Energy-]]-20\n[[sp+]]+20\n[[1stats]] +3\nEtsuko Otonashi [[bond+]]+10"
 		]
 	  },
 	  {
-		"name": "Etsuko's Exhaustive Coverage (Pre/OP)",
+		"name": "Etsuko's Exhaustive Coverage", "initiator": "(Pre/OP)",
 		"text": [
 		  "[[Energy-]]-15\n[[Energy-]]-25\n[[sp+]]+10\n[[sp+]]+10\n[[or]]\nEtsuko Otonashi [[bond+]]+15\nEtsuko Otonashi [[bond-]]-10\n[[Mood+]]+1\n[[Mood-]]-1",
 		  "[[Energy-]]-20\n[[sp+]]+10\nEtsuko Otonashi [[bond+]]+10"
@@ -11166,7 +11197,8 @@
 		]
 	  },
 	  {
-		"name": "Failed training (Get Well Soon!)",
+		"name": "Get Well Soon!",
+		"initiator": "Failed training",
 		"text": [
 		  "\nPrevious training -5\n[[possible]] Aquires {link:Practice Poor}\n[[Mood-]]-1",
 		  "\nAquires {link:Practice Perfect}\n[[or]]\nPrevious training -10\n[[possible]] Aquires {link:Practice Poor}\n[[Mood-]]-1"
@@ -11233,102 +11265,102 @@
 		]
 	  },
 	  {
-		"name": "Victory! (G1)",
+		"name": "Victory!", "initiator": "(G1)",
 		"text": [
 		  "[[Energy-]]-15\n[[sp+]]+45\n[[1stats]] +10\n[[possible]]Race skill hint [[hint]]",
 		  "[[Energy-]]-5/-20\n[[sp+]]+45\n[[1stats]] +10\n[[possible]]Race skill hint [[hint]]"
 		]
 	  },
 	  {
-		"name": "Victory! (G2/G3)",
+		"name": "Victory!", "initiator": "(G2/G3)",
 		"text": [
 		  "[[Energy-]]-15\n[[sp+]]+35\n[[1stats]] +8\n[[possible]]Race skill hint [[hint]]",
 		  "[[Energy-]]-5/-20\n[[sp+]]+35\n[[1stats]] +8\n[[possible]]Race skill hint [[hint]]"
 		]
 	  },
 	  {
-		"name": "Victory! (Pre/OP)",
+		"name": "Victory!", "initiator": "(Pre/OP)",
 		"text": [
 		  "[[Energy-]]-15\n[[sp+]]+30\n[[1stats]] +5\n[[possible]]Race skill hint [[hint]]",
 		  "[[Energy-]]-5/-20\n[[sp+]]+30\n[[1stats]] +5\n[[possible]]Race skill hint [[hint]]"
 		]
 	  },
 	  {
-		"name": "Solid Showing (G1)",
+		"name": "Solid Showing", "initiator": "(G1)",
 		"text": [
 		  "[[Energy-]]-20\n[[sp+]]+45\n[[1stats]] +8\n[[possible]]Race skill hint [[hint]]",
 		  "[[Energy-]]-10/-30\n[[sp+]]+45\n[[1stats]] +8\n[[possible]]Race skill hint [[hint]]"
 		]
 	  },
 	  {
-		"name": "Solid Showing (G2/G3)",
+		"name": "Solid Showing", "initiator": "(G2/G3)",
 		"text": [
 		  "[[Energy-]]-20\n[[sp+]]+35\n[[1stats]] +5\n[[possible]]Race skill hint [[hint]]",
 		  "[[Energy-]]-10/-30\n[[sp+]]+35\n[[1stats]] +5\n[[possible]]Race skill hint [[hint]]"
 		]
 	  },
 	  {
-		"name": "Solid Showing (Pre/OP)",
+		"name": "Solid Showing", "initiator": "(Pre/OP)",
 		"text": [
 		  "[[Energy-]]-20\n[[sp+]]+30\n[[1stats]] +3\n[[possible]]Race skill hint [[hint]]",
 		  "[[Energy-]]-10/-30\n[[sp+]]+30\n[[1stats]] +3\n[[possible]]Race skill hint [[hint]]"
 		]
 	  },
 	  {
-		"name": "Defeat (G1)",
+		"name": "Defeat", "initiator": "(G1)",
 		"text": [
 		  "[[Energy-]]-25\n[[sp+]]+25\n[[1stats]] +4\n[[possible]]Race skill hint [[hint]]",
 		  "[[Energy-]]-15/-35\n[[sp+]]+25\n[[1stats]] +4\n[[possible]]Race skill hint [[hint]]"
 		]
 	  },
 	  {
-		"name": "Defeat (G2/G3)",
+		"name": "Defeat", "initiator": "(G2/G3)",
 		"text": [
 		  "[[Energy-]]-25\n[[sp+]]+20\n[[1stats]] +3\n[[possible]]Race skill hint [[hint]]",
 		  "[[Energy-]]-15/-35\n[[sp+]]+20\n[[1stats]] +3\n[[possible]]Race skill hint [[hint]]"
 		]
 	  },
 	  {
-		"name": "Defeat (Pre/OP)",
+		"name": "Defeat", "initiator": "(Pre/OP)",
 		"text": [
 		  "[[Energy-]]-25\n[[sp+]]+10\n[[possible]]Race skill hint [[hint]]",
 		  "[[Energy-]]-15/-35\n[[sp+]]+10\n[[possible]]Race skill hint [[hint]]"
 		]
 	  },
 	  {
-		"name": "Etsuko's Elated Coverage (G1)",
+		"name": "Etsuko's Elated Coverage", "initiator": "(G1)",
 		"text": [
 		  "[[Energy-]]-15\n[[sp+]]+45\n[[Fans+]]+500\n[[1stats]] +10\n[[possible]]Race skill hint [[hint]]\nEtsuko Otonashi [[bond+]]+15\n[[Mood+]]+1"
 		]
 	  },
 	  {
-		"name": "Etsuko's Elated Coverage (G2/G3)",
+		"name": "Etsuko's Elated Coverage", "initiator": "(G2/G3)",
 		"text": [
 		  "[[Energy-]]-15\n[[sp+]]+35\n[[Fans+]]+500\n[[1stats]] +8\n[[possible]]Race skill hint [[hint]]\nEtsuko Otonashi [[bond+]]+15\n[[Mood+]]+1"
 		]
 	  },
 	  {
-		"name": "Etsuko's Elated Coverage (Pre/OP)",
+		"name": "Etsuko's Elated Coverage", "initiator": "(Pre/OP)",
 		"text": [
 		  "[[Energy-]]-15\n[[sp+]]+30\n[[Fans+]]+500\n[[1stats]] +5\n[[possible]]Race skill hint [[hint]]\nEtsuko Otonashi [[bond+]]+15\n[[Mood+]]+1"
 		]
 	  },
 	  {
-		"name": "Etsuko's Exhaustive Coverage (G1)",
+		"name": "Etsuko's Exhaustive Coverage", "initiator": "(G1)",
 		"text": [
 		  "[[Energy-]]-15\n[[Energy-]]-25\n[[sp+]]+25\n[[sp+]]+25\n[[1stats]] +4\n[[or]]\n[[1stats]] +4\nEtsuko Otonashi [[bond+]]+15\nEtsuko Otonashi [[bond-]]-10\n[[Mood+]]+1\n[[Mood-]]-1",
 		  "[[Energy-]]-20\n[[sp+]]+25\n[[1stats]] +4\nEtsuko Otonashi [[bond+]]+10"
 		]
 	  },
 	  {
-		"name": "Etsuko's Exhaustive Coverage (G2/G3)",
+		"name": "Etsuko's Exhaustive Coverage", "initiator": "(G2/G3)",
 		"text": [
 		  "[[Energy-]]-15\n[[Energy-]]-25\n[[sp+]]+20\n[[sp+]]+20\n[[1stats]] +3\n[[or]]\n[[1stats]] +3\nEtsuko Otonashi [[bond+]]+15\nEtsuko Otonashi [[bond-]]-10\n[[Mood+]]+1\n[[Mood-]]-1",
 		  "[[Energy-]]-20\n[[sp+]]+20\n[[1stats]] +3\nEtsuko Otonashi [[bond+]]+10"
 		]
 	  },
 	  {
-		"name": "Etsuko's Exhaustive Coverage (Pre/OP)",
+		"name": "Etsuko's Exhaustive Coverage", "initiator": "(Pre/OP)",
 		"text": [
 		  "[[Energy-]]-15\n[[Energy-]]-25\n[[sp+]]+10\n[[sp+]]+10\n[[or]]\nEtsuko Otonashi [[bond+]]+15\nEtsuko Otonashi [[bond-]]-10\n[[Mood+]]+1\n[[Mood-]]-1",
 		  "[[Energy-]]-20\n[[sp+]]+10\nEtsuko Otonashi [[bond+]]+10"

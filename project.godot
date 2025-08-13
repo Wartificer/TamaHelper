@@ -20,15 +20,24 @@ config/icon="uid://f8wq2ycqek6e"
 
 [autoload]
 
-Utils="*res://Utils.gd"
-ImageReader="*res://ImageReader.gd"
-FuzzyTextMatcher="*res://FuzzyTextMatcher.gd"
+Utils="*res://Core/Utils.gd"
+ImageReader="*res://Core/ImageReader.gd"
+FuzzyTextMatcher="*res://Core/FuzzyTextMatcher.gd"
+AssetLoader="*res://Core/AssetLoader.gd"
 
 [display]
 
 window/size/viewport_width=400
 window/size/viewport_height=600
 
+[file_customization]
+
+folder_colors={
+"res://Core/": "purple",
+"res://data/": "red"
+}
+
 [gui]
 
+theme/custom="uid://bsi5c1o138wn4"
 theme/custom_font="uid://djyn5xlw44y00"

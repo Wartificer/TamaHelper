@@ -51,7 +51,7 @@ func load_json_data(path : String):
 		print("Error opening file")
 	return {}
 
-var character_button_scene = load("res://CharacterButton.tscn")
+var character_button_scene = load("res://Core/UIElements/CharacterButton.tscn")
 func load_character_list():
 	for character in character_data:
 		var character_button = character_button_scene.instantiate()
@@ -64,7 +64,7 @@ func load_character_list():
 		%CharacterList.add_child(character_button)
 
 
-var timeline_item_scene = load("res://TimelineItem.tscn")
+var timeline_item_scene = load("res://Core/UIElements/TimelineItem.tscn")
 func load_important_events():
 	var events_data = load_json_data("data/important_events.json")
 	
@@ -101,6 +101,8 @@ func load_g1s():
 
 ## Initialize OCR Manager
 func _ready():
+	if AssetLoader.custom_mascot:
+		%Mascot.texture = AssetLoader.custom_mascot
 	get_screen_size()
 	character_data = load_json_data("data/characters/data.json")
 	character_data.sort_custom(func(a, b):
@@ -241,8 +243,8 @@ func process_capture(capture : Image):
 func find_text_in_data(data : Variant, type : String, path: String, text : String) -> Variant:
 	return FuzzyTextMatcher.find_text_in_data_fuzzy(data, type, path, text, 0.5)
 
-var item_image_scene = load("res://ItemImage.tscn")
-var event_texts_scene = load("res://EventTexts.tscn")
+var item_image_scene = load("res://Core/UIElements/ItemImage.tscn")
+var event_texts_scene = load("res://Core/UIElements/EventTexts.tscn")
 func show_event_info(info : Dictionary):
 	var item_image = load(info.path + "images/" + info.image + ".png")
 	if !item_image:
@@ -410,3 +412,11 @@ func on_character_selected(character):
 	set_selected_character_ui()
 	_on_close_character_select_button_pressed()
 	save_settings()
+
+
+func _on_switch_font_pressed() -> void:
+	pass # Replace with function body.
+
+
+func _on_switch_mascot_pressed() -> void:
+	pass # Replace with function body.
