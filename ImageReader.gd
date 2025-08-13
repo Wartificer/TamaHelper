@@ -19,6 +19,7 @@ var checks : Array[Dictionary] = [
 		],
 		"name": "2ch",
 		"label": "2 Choices",
+		"debug_name": "Event"
 	},
 	{
 		"pixels": [
@@ -31,6 +32,7 @@ var checks : Array[Dictionary] = [
 		],
 		"name": "3ch",
 		"label": "3 Choices",
+		"debug_name": "Event"
 	},
 ]
 
@@ -216,7 +218,6 @@ func get_image_texts(screen_size : Vector2, matched : Dictionary, img : Image):
 		
 		# Extract text from the image area
 		var text : String = await OCRManager.extract_text_from_image_async(text_area_image)
-		print(text)
 		texts.push_back(text)
 	
 	return texts

@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bho836vkudijj"
-path="res://.godot/imported/temp_ocr_6.png-2ffeb434621faf90dba3f72a5d47d791.ctex"
+uid="uid://d1hocqg5plj1m"
+path="res://.godot/imported/carrot.png-412a6e3a5c6d5a4bca7da7d1dc0c4416.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://temp_images/temp_ocr_6.png"
-dest_files=["res://.godot/imported/temp_ocr_6.png-2ffeb434621faf90dba3f72a5d47d791.ctex"]
+source_file="res://Images/carrot.png"
+dest_files=["res://.godot/imported/carrot.png-412a6e3a5c6d5a4bca7da7d1dc0c4416.ctex"]
 
 [params]
 

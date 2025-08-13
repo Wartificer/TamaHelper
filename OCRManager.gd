@@ -56,12 +56,13 @@ static func extract_text_from_image(image: Image) -> String:
 		)
 	
 	processed_image.save_png(temp_path)
-	
+		
 	# Extract text
 	var result = _run_tesseract(temp_path)
 	
-	# Clean up temp file
-	DirAccess.remove_absolute(temp_path)
+	if !OS.is_debug_build() or !Utils.save_temp_image:
+		# Clean up temp file
+		DirAccess.remove_absolute(temp_path)
 	
 	return result
 

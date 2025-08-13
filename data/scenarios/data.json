@@ -1,21 +1,21 @@
 [
   {
-    "name": "URA",
-    "events": [
-      {
-        "name": "Exhilarating! What a Scoop!",
-        "text": [
-          "[[Stamina+]]+10\nEtsuko Otonahi [[bond+]]+5",
-          "[[Guts+]]+10\nEtsuko Otonahi [[bond+]]+5"
-        ]
-      },
-      {
-        "name": "A Trainer's Knowledge",
-        "text": [
-          "[[Power+]]+10\nEtsuko Otonahi [[bond+]]+5",
-          "[[Speed+]]+10\nEtsuko Otonahi [[bond+]]+5"
-        ]
-      }
-    ]
+	"name": "URA",
+	"events": [
+	  {
+		"name": "Exhilarating! What a Scoop!",
+		"text": [
+		  "[[Stamina+]]+10\nEtsuko Otonahi [[bond+]]+5",
+		  "[[Guts+]]+10\nEtsuko Otonahi [[bond+]]+5"
+		]
+	  },
+	  {
+		"name": "A Trainer's Knowledge",
+		"text": [
+		  "[[Power+]]+10\nEtsuko Otonahi [[bond+]]+5",
+		  "[[Speed+]]+10\nEtsuko Otonahi [[bond+]]+5"
+		]
+	  }
+	]
   }
 ]

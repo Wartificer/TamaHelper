@@ -1,4 +1,4 @@
-[gd_scene load_steps=18 format=3 uid="uid://dbqd80d1l70t4"]
+[gd_scene load_steps=19 format=3 uid="uid://dbqd80d1l70t4"]
 
 [ext_resource type="Theme" uid="uid://bsi5c1o138wn4" path="res://Theme/Theme.tres" id="1_fos0i"]
 [ext_resource type="Script" uid="uid://beuccnthoabwk" path="res://Main.gd" id="1_glv2v"]
@@ -9,6 +9,7 @@
 [ext_resource type="Texture2D" uid="uid://bfde0cfunamdg" path="res://Images/select-character-placeholder.png" id="4_trn2v"]
 [ext_resource type="Theme" uid="uid://dws1jwukuyny2" path="res://Theme/ChoicesTheme.tres" id="5_03owx"]
 [ext_resource type="Texture2D" uid="uid://dn3bjstcka6te" path="res://Images/icon-close.svg" id="7_lgr22"]
+[ext_resource type="Script" uid="uid://ccgyrwfrtpbs7" path="res://MouseScrollContainer.gd" id="10_wkp8b"]
 
 [sub_resource type="StyleBoxLine" id="StyleBoxLine_03owx"]
 color = Color(1, 1, 1, 0.117647)
@@ -487,6 +488,7 @@ layout_mode = 2
 size_flags_vertical = 1
 horizontal_alignment = 1
 vertical_alignment = 1
+autowrap_mode = 3
 
 [node name="CaptureTimer" type="Timer" parent="."]
 unique_name_in_owner = true
@@ -587,6 +589,7 @@ expand_icon = true
 [node name="ScrollContainer" type="ScrollContainer" parent="CharacterSelect/MarginContainer/VBoxContainer"]
 layout_mode = 2
 size_flags_vertical = 3
+script = ExtResource("10_wkp8b")
 
 [node name="CharacterList" type="FlowContainer" parent="CharacterSelect/MarginContainer/VBoxContainer/ScrollContainer"]
 unique_name_in_owner = true

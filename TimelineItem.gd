@@ -34,6 +34,8 @@ func get_icon(factor : String):
 		return "res://Images/icon-inspiration.png"
 	elif factor == "skill-up":
 		return "res://Images/icon-skill-up.png"
+	elif factor == "raffle":
+		return "res://Images/carrot.png"
 	return "res://Images/icon-random.tres"
 
 func on_item_mouse_enter(data):

@@ -1,5 +1,10 @@
 extends Node
 
+
+## If runnning debug executable, clicking "start" with "keep_alive" off
+## will preserve the temp images on the User folder.
+var save_temp_image : bool
+
 func to_snake_case(text : String):
 	return text.replacen(" ", "_")
 # Text processor class or add these to your existing script

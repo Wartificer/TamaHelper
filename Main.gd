@@ -141,6 +141,7 @@ func capture_screen():
 
 ## Starts the program by capturing the screen
 func _on_start_button_pressed() -> void:
+	Utils.save_temp_image = !keep_alive
 	get_screen_size()
 	capture_screen()
 	if keep_alive:
@@ -184,11 +185,16 @@ func _on_disable_anims_toggled(toggled_on: bool) -> void:
 var date_position_data = {
 		"text_areas": [
 			{"pos": Vector2(260, 38), "size": Vector2(180, 18)},
-		]
+		],
+		"outlined": true,
+		"debug_name": "Event"
 }
+var last_event_name = ""
 func process_capture(capture : Image):
 	# Always check date to keep timeline updated
 	var date_result : Array[String] = await ImageReader.get_image_texts(screen_size, date_position_data, capture)
+	print("//////////////////////////////")
+	print("Extracted date: " + (" - ").join(date_result))
 	update_date(date_result[0])
 	
 	#####################################################################
@@ -196,21 +202,20 @@ func process_capture(capture : Image):
 	var result = ImageReader.check_matching_pixels(screen_size, capture)
 	# If there was no match, stop
 	if result == {}:
+		print("No choices on screen")
 		return
 	
 	#print("MATCHING: " + result.label)
 	
 	## If there is something matching on screen, get the text inside the designated areas
 	var texts_result : Array[String] = await ImageReader.get_image_texts(screen_size, result, capture)
+	print("Extracted event name: " + (" - ").join(texts_result))
 	## If the text is the same as previous text shown, stop process
 	if texts_result == previous_texts_result:
 		return
 	
 	previous_texts_result = texts_result
 	if texts_result.size() > 0:
-		# Clear previous info
-		for child in INFO_CONTAINER.get_children():
-			child.queue_free()
 			
 		# Add information to screen
 		for text in texts_result:
@@ -225,7 +230,11 @@ func process_capture(capture : Image):
 				found = find_text_in_data(support_data, "support", "res://data/supports/", text)
 				
 			# If an event was found for text, present it
-			if found:
+			if found and found.name != last_event_name:
+				last_event_name = found.name
+				# Clear previous info
+				for child in INFO_CONTAINER.get_children():
+					child.queue_free()
 				show_event_info(found)
 
 # Replace your original function with this fuzzy version
