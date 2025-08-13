@@ -39,6 +39,8 @@ Lastly, I'll be updating it as I use it. Right now it only detects multiple choi
 2) Use the small preview on the bottom-left to make sure your correct screen is being captured, if not, open the settings menu at the top-right and switch screens.
 <img width="376" height="84" alt="image" src="https://github.com/user-attachments/assets/9b280be0-d7cd-4684-9aed-7e30a4ec7aba" />
 </br>
+If you'd like, you can change the default font or the bottom mascot by changing the files in the "assets" folder.
+</br>
 </br>
 
 ## Troubleshooting:
