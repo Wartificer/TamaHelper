@@ -54,8 +54,8 @@ Also, on the console that opens next to the app, there will be some logs like th
 
 <img width="316" height="91" alt="477322922-9894f173-54ba-4991-9f92-9d8024fe8fce" src="https://github.com/user-attachments/assets/592e86c7-0072-4069-9766-8f2e0599dc38" />
 
-Note: "No choices on screen" should instead show the name of the event if there is one on screen.
-If you're not seeing even the date and the date is currently visible at the top left on your career, then something might be wrong in the "tesseract" folder. Those files come from an Open Source project on this website and are safe, but just in case, confirm that all the files there are present by comparing the amount of files with the ones inside the zip.
+Note: "No choices on screen" should instead show the name of the event if there is one on screen.</br>
+If you're not seeing text from the in-game date and the date is currently visible at the top left on your career, then something might be wrong in the "tesseract" folder. Those files come from an Open Source project on this website and are safe, but just in case, confirm that all the files there are present by comparing the amount of files with the ones inside the zip.
 
 If you are having issues create a new issue or contact me with this information and I'll do what I can to fix it.
 
