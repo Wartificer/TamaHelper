@@ -12247,5 +12247,361 @@
         "text": []
       }
     ]
+  },
+  {
+    "name": "Narita Brian",
+    "events": [
+      {
+        "name": "Strategy",
+        "text": [
+          "[[Speed+]]+20",
+          "[[Power+]]+20"
+        ]
+      },
+      {
+        "name": "Tact",
+        "text": [
+          "[[Stamina+]]+20",
+          "[[Wit+]]+20"
+        ]
+      },
+      {
+        "name": "Flexibility",
+        "text": [
+          "[[Speed+]]+20\n[[possible]] Aquires {link:Hot Topic}",
+          "[[Guts+]]+20\n[[possible]] Aquires {link:Hot Topic}"
+        ]
+      },
+      {
+        "name": "Aspiration",
+        "text": [
+          "[[Power+]]+10",
+          "[[Energy-]]-10\n[[Power+]]+20"
+        ]
+      },
+      {
+        "name": "Transcendence",
+        "text": [
+          "[[Power+]]+10",
+          "[[Stamina+]]+5\n[[Guts+]]+5"
+        ]
+      },
+      {
+        "name": "Ability",
+        "text": [
+          "[[Speed+]]+15",
+          "[[Passing Pro hint+]]+1"
+        ]
+      },
+      {
+        "name": "Starving Warriors",
+        "text": [
+          "[[Energy+]]+5\n[[Wit+]]+10",
+          "Randomly either\n[[Energy-]]-10\n[[Mood+]]+1\n[[Speed+]]+25\nor\n[[Energy-]]-10\n[[Speed+]]+10",
+          "Randomly either\n[[Energy-]]-10\n[[Mood+]]+1\n[[Stamina+]]+25\nor\n[[Energy-]]-10\n[[Stamina+]]+10",
+          "Randomly either\n[[Energy-]]-10\n[[Mood+]]+1\n[[Power+]]+25\nor\n[[Energy-]]-10\n[[Power+]]+10"
+        ]
+      },
+      {
+        "name": "Carnivore",
+        "text": [
+          "[[Energy+]]+10\n[[sp+]]+5",
+          "Randomly either (~90%)\n[[Energy+]]+30\n[[sp+]]+10\nor (~10%)\n[[Energy+]]+30\n[[sp+]]+10\n[[Speed-]]-5\n[[Power+]]+5\nAquires {link:Slow Metabolism}"
+        ]
+      },
+      {
+        "name": "A Lone Wolf's Diet",
+        "text": [
+          "[[Speed+]]+5\n[[Power+]]+5",
+          "[[Stamina+]]+10"
+        ]
+      },
+      {
+        "name": "Caught by Brian!",
+        "text": [
+          "[[Stamina+]]+10",
+          "[[Guts+]]+10"
+        ]
+      },
+      {
+        "name": "Digging In",
+        "text": [
+          "[[Speed+]]+10",
+          "[[Stamina+]]+10",
+          "[[Guts+]]+10"
+        ]
+      },
+      {
+        "name": "A Lone Wolf Hunts Alone",
+        "text": [
+          "[[Stamina+]]+5\n[[Guts+]]+5",
+          "[[Power+]]+5\n[[Wit+]]+5"
+        ]
+      },
+      {
+        "name": "Breakthrough",
+        "text": [
+          "[[Stamina+]]+10",
+          "[[Wit+]]+10"
+        ]
+      },
+      {
+        "name": "Public Appearance",
+        "text": [
+          "Increased difficulty and rewards of future training goals",
+          "Nothing happens"
+        ]
+      },
+      {
+        "name": "After the Takarazuka Kinen: Talent",
+        "text": []
+      },
+      {
+        "name": "After the Takarazuka Kinen: Composure",
+        "text": []
+      },
+      {
+        "name": "Bonus at start",
+        "text": []
+      },
+      {
+        "name": "Get Well Soon!",
+        "text": [
+          "[[Mood-]]-1\n[[Previous training-]]-5\n[[possible]] Aquires {link:Practice Poor}",
+          "Randomly either\n[[Mood-]]-1\n[[Previous training-]]-10\n[[possible]] Aquires {link:Practice Poor}\nor\nAquires {link:Practice Perfect ○}"
+        ],
+        "initiator": "Failed training"
+      },
+      {
+        "name": "Don't Overdo It!",
+        "text": [
+          "[[Energy+]]+10\n[[Mood-]]-2\n[[Previous training-]]-10\n[[2stats-]]-10\n[[possible]] Aquires {link:Practice Poor}",
+          "Randomly either\n[[Mood-]]-3\n[[Previous training-]]-10\n[[2stats-]]-10\nAquires {link:Practice Poor}\nor\n[[Energy+]]+10\nAquires {link:Practice Perfect ○}"
+        ],
+        "initiator": "Failed training"
+      },
+      {
+        "name": "Extra Training",
+        "text": [
+          "[[Energy-]]-5\n[[Previous training+]]+5\n(random) Heal a negative status effect\n[[Yayoi Akikawa bond+]]+5",
+          "[[Energy+]]+5"
+        ]
+      },
+      {
+        "name": "At Summer Camp (Year 2)",
+        "text": [
+          "[[Power+]]+10",
+          "[[Guts+]]+10"
+        ]
+      },
+      {
+        "name": "Fan Letter",
+        "text": []
+      },
+      {
+        "name": "Dance Lesson",
+        "text": [
+          "[[Stamina+]]+10",
+          "[[Wit+]]+10"
+        ]
+      },
+      {
+        "name": "New Year's Resolutions",
+        "text": [
+          "[[Power+]]+10",
+          "[[Energy+]]+20",
+          "[[sp+]]+20"
+        ]
+      },
+      {
+        "name": "New Year's Shrine Visit",
+        "text": [
+          "[[Energy+]]+30",
+          "[[All+]]+5",
+          "[[sp+]]+35"
+        ]
+      },
+      {
+        "name": "Acupuncture (Just an Acupuncturist, No Worries! ☆)",
+        "text": [
+          "Randomly either (~30%)\n[[All+]]+20\nor (~70%)\n[[Mood-]]-2\n[[All-]]-15\nAquires {link:Night Owl}",
+          "Randomly either (~45%)\nObtain {link:Corner Recovery ○} skill\nObtain {link:Straightaway Recovery} skill\nor (~55%)\n[[Energy-]]-20\n[[Mood-]]-2",
+          "Randomly either (~70%)\nMaximum Energy +12\n[[Energy+]]+40\n[[healall]] Heals all afflictions\nor (~30%)\n[[Energy-]]-20\n[[Mood-]]-2\nAquires {link:Practice Poor}",
+          "Randomly either (~85%)\n[[Energy+]]+20\n[[Mood+]]+1\nAquires {link:Charming ○}\nor (~15%)\n[[Energy-]]-10/-20\n[[Mood-]]-1\n[[possible]] Aquires {link:Practice Poor}",
+          "[[Energy+]]+10"
+        ]
+      },
+      {
+        "name": "Victory!",
+        "text": [
+          "[[Energy-]]-15\n[[1stats+]]+10\n[[sp+]]+45\n[[possible]]Race skill hint [[hint]]",
+          "[[Energy-]]-5/-20\n[[1stats+]]+10\n[[sp+]]+45\n[[possible]]Race skill hint [[hint]]"
+        ],
+        "initiator": "(G1)"
+      },
+      {
+        "name": "Victory!",
+        "text": [
+          "[[Energy-]]-15\n[[1stats+]]+8\n[[sp+]]+35\n[[possible]]Race skill hint [[hint]]",
+          "[[Energy-]]-5/-20\n[[1stats+]]+8\n[[sp+]]+35\n[[possible]]Race skill hint [[hint]]"
+        ],
+        "initiator": "(G2/G3)"
+      },
+      {
+        "name": "Victory!",
+        "text": [
+          "[[Energy-]]-15\n[[1stats+]]+5\n[[sp+]]+30\n[[possible]]Race skill hint [[hint]]",
+          "[[Energy-]]-5/-20\n[[1stats+]]+5\n[[sp+]]+30\n[[possible]]Race skill hint [[hint]]"
+        ],
+        "initiator": "(Pre/OP)"
+      },
+      {
+        "name": "Solid Showing",
+        "text": [
+          "[[Energy-]]-20\n[[1stats+]]+8\n[[sp+]]+45\n[[possible]]Race skill hint [[hint]]",
+          "[[Energy-]]-10/-30\n[[1stats+]]+8\n[[sp+]]+45\n[[possible]]Race skill hint [[hint]]"
+        ],
+        "initiator": "(G1)"
+      },
+      {
+        "name": "Solid Showing",
+        "text": [
+          "[[Energy-]]-20\n[[1stats+]]+5\n[[sp+]]+35\n[[possible]]Race skill hint [[hint]]",
+          "[[Energy-]]-10/-30\n[[1stats+]]+5\n[[sp+]]+35\n[[possible]]Race skill hint [[hint]]"
+        ],
+        "initiator": "(G2/G3)"
+      },
+      {
+        "name": "Solid Showing",
+        "text": [
+          "[[Energy-]]-20\n[[1stats+]]+3\n[[sp+]]+30\n[[possible]]Race skill hint [[hint]]",
+          "[[Energy-]]-10/-30\n[[1stats+]]+3\n[[sp+]]+30\n[[possible]]Race skill hint [[hint]]"
+        ],
+        "initiator": "(Pre/OP)"
+      },
+      {
+        "name": "Defeat",
+        "text": [
+          "[[Energy-]]-25\n[[1stats+]]+4\n[[sp+]]+25\n[[possible]]Race skill hint [[hint]]",
+          "[[Energy-]]-15/-35\n[[1stats+]]+4\n[[sp+]]+25\n[[possible]]Race skill hint [[hint]]"
+        ],
+        "initiator": "(G1)"
+      },
+      {
+        "name": "Defeat",
+        "text": [
+          "[[Energy-]]-25\n[[1stats+]]+3\n[[sp+]]+20\n[[possible]]Race skill hint [[hint]]",
+          "[[Energy-]]-15/-35\n[[1stats+]]+3\n[[sp+]]+20\n[[possible]]Race skill hint [[hint]]"
+        ],
+        "initiator": "(G2/G3)"
+      },
+      {
+        "name": "Defeat",
+        "text": [
+          "[[Energy-]]-25\n[[sp+]]+10\n[[possible]]Race skill hint [[hint]]",
+          "[[Energy-]]-15/-35\n[[sp+]]+10\n[[possible]]Race skill hint [[hint]]"
+        ],
+        "initiator": "(Pre/OP)"
+      },
+      {
+        "name": "Etsuko's Elated Coverage",
+        "text": [],
+        "initiator": "(G1)"
+      },
+      {
+        "name": "Etsuko's Elated Coverage",
+        "text": [],
+        "initiator": "(G2/G3)"
+      },
+      {
+        "name": "Etsuko's Elated Coverage",
+        "text": [],
+        "initiator": "(Pre/OP)"
+      },
+      {
+        "name": "Etsuko's Exhaustive Coverage",
+        "text": [
+          "Randomly either\n[[Energy-]]-25\n[[Mood-]]-1\n[[1stats+]]+4\n[[sp+]]+25\nEtsuko Otonashi [[bond-]]-10\nor\n[[Energy-]]-15\n[[Mood+]]+1\n[[1stats+]]+4\n[[sp+]]+25\nEtsuko Otonashi [[bond+]]+15",
+          "[[Energy-]]-20\n[[1stats+]]+4\n[[sp+]]+25\nEtsuko Otonashi [[bond+]]+10"
+        ],
+        "initiator": "(G1)"
+      },
+      {
+        "name": "Etsuko's Exhaustive Coverage",
+        "text": [
+          "Randomly either\n[[Energy-]]-25\n[[Mood-]]-1\n[[1stats+]]+3\n[[sp+]]+20\nEtsuko Otonashi [[bond-]]-10\nor\n[[Energy-]]-15\n[[Mood+]]+1\n[[1stats+]]+3\n[[sp+]]+20\nEtsuko Otonashi [[bond+]]+15",
+          "[[Energy-]]-20\n[[1stats+]]+3\n[[sp+]]+20\nEtsuko Otonashi [[bond+]]+10"
+        ],
+        "initiator": "(G2/G3)"
+      },
+      {
+        "name": "Etsuko's Exhaustive Coverage",
+        "text": [
+          "Randomly either\n[[Energy-]]-25\n[[Mood-]]-1\n[[sp+]]+10\nEtsuko Otonashi [[bond-]]-10\nor\n[[Energy-]]-15\n[[Mood+]]+1\n[[sp+]]+10\nEtsuko Otonashi [[bond+]]+15",
+          "[[Energy-]]-20\n[[sp+]]+10\nEtsuko Otonashi [[bond+]]+10"
+        ],
+        "initiator": "(Pre/OP)"
+      },
+      {
+        "name": "Hold Back",
+        "text": []
+      },
+      {
+        "name": "Now",
+        "text": []
+      },
+      {
+        "name": "Peak",
+        "text": []
+      },
+      {
+        "name": "Proposition",
+        "text": []
+      },
+      {
+        "name": "Challenge",
+        "text": []
+      },
+      {
+        "name": "Autumn",
+        "text": []
+      },
+      {
+        "name": "Trust",
+        "text": []
+      },
+      {
+        "name": "Sister",
+        "text": []
+      },
+      {
+        "name": "It's Not Easy Being a Lone Wolf",
+        "text": []
+      },
+      {
+        "name": "Master Trainer",
+        "text": []
+      },
+      {
+        "name": "Together",
+        "text": []
+      },
+      {
+        "name": "Looking Over My Shoulder",
+        "text": []
+      },
+      {
+        "name": "Green Redemption",
+        "text": []
+      },
+      {
+        "name": "Eye-Opener",
+        "text": []
+      },
+      {
+        "name": "Perfect Weather",
+        "text": []
+      }
+    ]
   }
 ]
