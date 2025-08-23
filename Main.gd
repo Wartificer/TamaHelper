@@ -234,7 +234,7 @@ var event_texts_scene = load("res://Core/UIElements/EventTexts.tscn")
 func show_event_info(info : Dictionary):
 	var item_image = ""
 	if info.type == "scenario":
-		item_image = AssetLoader.load_image_from_path("scenarios/" + selected_scenario.name + "/icon.png")
+		item_image = AssetLoader.load_image_from_path("scenarios/" + Utils.to_snake_case(selected_scenario.name) + "/icon.png")
 	else:
 		item_image = AssetLoader.load_image_from_path(info.type + "s/" + info.image + ".png")
 	if !item_image:
@@ -323,6 +323,7 @@ var config = ConfigFile.new()
 func save_settings():
 	config.set_value("program", "screen", current_screen)
 	config.set_value("program", "keep_alive", keep_alive)
+	config.set_value("program", "loop_ms", TIMER.wait_time * 1000)
 	config.set_value("program", "always_on_top", always_on_top)
 	config.set_value("program", "disable_anims", disable_anims)
 	
@@ -362,6 +363,8 @@ func load_settings():
 	%CurrentScreenLabel.text = str(current_screen + 1)
 	keep_alive = config.get_value("program", "keep_alive", false)
 	%AutoToggle.set_pressed_no_signal(keep_alive)
+	%LoopMS.set_value_no_signal(config.get_value("program", "loop_ms", 1000))
+	TIMER.wait_time = config.get_value("program", "loop_ms", 1000) / 1000
 	always_on_top = config.get_value("program", "always_on_top", false)
 	DisplayServer.window_set_flag(DisplayServer.WINDOW_FLAG_ALWAYS_ON_TOP, always_on_top)
 	%AlwaysOnTopToggle.set_pressed_no_signal(always_on_top)
@@ -474,4 +477,9 @@ func on_scenario_selected(scenario):
 	selected_scenario = scenario
 	set_selected_scenario_ui()
 	_on_close_scenario_select_button_pressed()
+	save_settings()
+
+
+func _on_loop_ms_value_changed(value: float) -> void:
+	TIMER.wait_time = value/1000
 	save_settings()

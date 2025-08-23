@@ -12,7 +12,7 @@ config_version=5
 
 config/name="TamaHelper"
 config/description="Companion app that scans the screen and shows choice effects and scenario information in UmaMusume."
-config/version="3.0"
+config/version="2.4"
 run/main_scene="uid://dbqd80d1l70t4"
 config/features=PackedStringArray("4.4", "Forward Plus")
 boot_splash/image="uid://qpowt8nxanbj"
