@@ -81,7 +81,6 @@ func load_scenario_list():
 func _ready():
 	if AssetLoader.custom_mascot:
 		%Mascot.texture = AssetLoader.custom_mascot
-	get_screen_size()
 	character_data = AssetLoader.load_all_json_from_folder("characters")
 	character_data.sort_custom(func(a, b):
 		return a["name"] < b["name"]
@@ -98,9 +97,6 @@ func _ready():
 	## Connect to OCR signals
 	#OCRManager.ocr_completed.connect(_on_ocr_completed)
 	#OCRManager.ocr_failed.connect(_on_ocr_failed)
-
-func get_screen_size():
-	screen_size = DisplayServer.screen_get_size(current_screen)
 
 func _on_ocr_completed(text: String):
 	print("OCR Success! Extracted text: ", text)
@@ -125,7 +121,6 @@ func _on_start_button_pressed() -> void:
 	previous_texts_result.clear()
 	last_event_name = ""
 	Utils.save_temp_image = !keep_alive
-	get_screen_size()
 	if keep_alive:
 		if %StartButton.text == "Stop":
 			%StartButton.text = "Start"
@@ -162,7 +157,6 @@ func _on_always_on_top_toggle_toggled(toggled_on: bool) -> void:
 func _on_switch_screen_button_pressed() -> void:
 	current_screen = (current_screen + 1) % screen_count
 	ImageReader.current_screen = current_screen
-	get_screen_size()
 	%CurrentScreenLabel.text = str(current_screen + 1)
 	save_settings()
 
@@ -191,14 +185,14 @@ var date_position_data = {
 var last_event_name = ""
 func process_capture(capture : Image):
 	# Always check date to keep timeline updated
-	var date_result : Array[String] = await ImageReader.get_image_texts(screen_size, date_position_data, capture)
+	var date_result : Array[String] = await ImageReader.get_image_texts(date_position_data, capture)
 	print("//////////////////////////////")
 	print("Extracted date: " + (" - ").join(date_result))
 	update_date(date_result[0])
 	
 	#####################################################################
 	# Check for choices
-	var result = ImageReader.check_matching_pixels(screen_size, capture)
+	var result = ImageReader.check_matching_pixels(capture)
 	# If there was no match, stop
 	if result == {}:
 		print("No choices on screen")
@@ -207,7 +201,7 @@ func process_capture(capture : Image):
 	#print("MATCHING: " + result.label)
 	
 	## If there is something matching on screen, get the text inside the designated areas
-	var texts_result : Array[String] = await ImageReader.get_image_texts(screen_size, result, capture)
+	var texts_result : Array[String] = await ImageReader.get_image_texts(result, capture)
 	print("Extracted event name: " + (" - ").join(texts_result))
 	## If the text is the same as previous text shown, stop process
 	if texts_result == previous_texts_result:
