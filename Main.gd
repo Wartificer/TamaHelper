@@ -161,9 +161,20 @@ func _on_always_on_top_toggle_toggled(toggled_on: bool) -> void:
 ## Switches to check a different screen
 func _on_switch_screen_button_pressed() -> void:
 	current_screen = (current_screen + 1) % screen_count
+	ImageReader.current_screen = current_screen
 	get_screen_size()
 	%CurrentScreenLabel.text = str(current_screen + 1)
 	save_settings()
+
+func _on_detect_game_size_button_pressed() -> void:
+	ImageReader.detect_game_window()
+	if !ImageReader.game_window_config:
+		%WindowDetected.text = "Fullscreen"
+		return
+	%WindowDetected.text = "Windowed"
+	save_settings()
+	
+
 
 func _on_disable_anims_toggled(toggled_on: bool) -> void:
 	disable_anims = toggled_on
@@ -322,6 +333,11 @@ var config = ConfigFile.new()
 
 func save_settings():
 	config.set_value("program", "screen", current_screen)
+	config.set_value("program", "game_window_mode", %WindowDetected.text)
+	config.set_value("program", "game_window_mode_x", ImageReader.game_window_config.X)
+	config.set_value("program", "game_window_mode_y", ImageReader.game_window_config.Y)
+	config.set_value("program", "game_window_mode_w", ImageReader.game_window_config.Width)
+	config.set_value("program", "game_window_mode_h", ImageReader.game_window_config.Height)
 	config.set_value("program", "keep_alive", keep_alive)
 	config.set_value("program", "always_on_top", always_on_top)
 	config.set_value("program", "disable_anims", disable_anims)
@@ -359,7 +375,17 @@ func load_settings():
 	
 	# Load values with defaults if they don't exist
 	current_screen = config.get_value("program", "screen", 0)
+	ImageReader.current_screen = current_screen
 	%CurrentScreenLabel.text = str(current_screen + 1)
+	# Load game window configuration
+	var game_window_mode = config.get_value("program", "game_window_mode", "Fullscreen")
+	if game_window_mode == "Windowed":
+		%WindowDetected.text = "Windowed"
+		ImageReader.game_window_config.X = int(config.get_value("program", "game_window_mode_x", 0))
+		ImageReader.game_window_config.Y = int(config.get_value("program", "game_window_mode_y", 0))
+		ImageReader.game_window_config.Width = int(config.get_value("program", "game_window_mode_w", 1920))
+		ImageReader.game_window_config.Height = int(config.get_value("program", "game_window_mode_w", 1080))
+	
 	keep_alive = config.get_value("program", "keep_alive", false)
 	%AutoToggle.set_pressed_no_signal(keep_alive)
 	always_on_top = config.get_value("program", "always_on_top", false)

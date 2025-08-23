@@ -53,6 +53,11 @@ const REFERENCE_WIDTH = 1920
 const REFERENCE_HEIGHT = 1080
 const REFERENCE_ASPECT_RATIO = float(REFERENCE_WIDTH) / float(REFERENCE_HEIGHT)
 
+var current_screen : int = 1
+# Game Window configuration (position and size, fullscreen by default)
+var game_window_config : Dictionary
+
+
 ## Gets the Windows DPI scaling factor
 func get_dpi_scale_factor() -> float:
 	if _dpi_cache_valid:
@@ -289,3 +294,26 @@ func debug_content_area(screen_size: Vector2, image_size: Vector2 = Vector2.ZERO
 func refresh_dpi_cache() -> void:
 	_dpi_cache_valid = false
 	_cached_dpi_scale = 1.0
+
+
+#region New Game Window Detection
+
+func detect_game_window():
+	var output = []
+	var exit_code = OS.execute("powershell", ["-ExecutionPolicy", "Bypass", "-File", "get-windows.ps1"], output)
+	
+	if exit_code == 0 and output.size() > 0:
+		var json_string = ""
+		for line in output:
+			json_string += line + "\n"
+		
+		var json = JSON.new()
+		var parse_result = json.parse(json_string.strip_edges())
+		
+		if parse_result == OK:
+			var data = json.data
+			for window in data:
+				if window.Title == "Umamusume":
+					game_window_config = window
+
+#endregion
