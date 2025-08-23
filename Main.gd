@@ -81,6 +81,7 @@ func load_scenario_list():
 func _ready():
 	if AssetLoader.custom_mascot:
 		%Mascot.texture = AssetLoader.custom_mascot
+	get_screen_size()
 	character_data = AssetLoader.load_all_json_from_folder("characters")
 	character_data.sort_custom(func(a, b):
 		return a["name"] < b["name"]
@@ -97,6 +98,9 @@ func _ready():
 	## Connect to OCR signals
 	#OCRManager.ocr_completed.connect(_on_ocr_completed)
 	#OCRManager.ocr_failed.connect(_on_ocr_failed)
+
+func get_screen_size():
+	screen_size = DisplayServer.screen_get_size(current_screen)
 
 func _on_ocr_completed(text: String):
 	print("OCR Success! Extracted text: ", text)
@@ -121,6 +125,7 @@ func _on_start_button_pressed() -> void:
 	previous_texts_result.clear()
 	last_event_name = ""
 	Utils.save_temp_image = !keep_alive
+	get_screen_size()
 	if keep_alive:
 		if %StartButton.text == "Stop":
 			%StartButton.text = "Start"
@@ -156,19 +161,9 @@ func _on_always_on_top_toggle_toggled(toggled_on: bool) -> void:
 ## Switches to check a different screen
 func _on_switch_screen_button_pressed() -> void:
 	current_screen = (current_screen + 1) % screen_count
-	ImageReader.current_screen = current_screen
+	get_screen_size()
 	%CurrentScreenLabel.text = str(current_screen + 1)
 	save_settings()
-
-func _on_detect_game_size_button_pressed() -> void:
-	ImageReader.detect_game_window()
-	if !ImageReader.game_window_config:
-		%WindowDetected.text = "Fullscreen"
-		return
-	%WindowDetected.text = "Windowed"
-	save_settings()
-	
-
 
 func _on_disable_anims_toggled(toggled_on: bool) -> void:
 	disable_anims = toggled_on
@@ -185,14 +180,14 @@ var date_position_data = {
 var last_event_name = ""
 func process_capture(capture : Image):
 	# Always check date to keep timeline updated
-	var date_result : Array[String] = await ImageReader.get_image_texts(date_position_data, capture)
+	var date_result : Array[String] = await ImageReader.get_image_texts(screen_size, date_position_data, capture)
 	print("//////////////////////////////")
 	print("Extracted date: " + (" - ").join(date_result))
 	update_date(date_result[0])
 	
 	#####################################################################
 	# Check for choices
-	var result = ImageReader.check_matching_pixels(capture)
+	var result = ImageReader.check_matching_pixels(screen_size, capture)
 	# If there was no match, stop
 	if result == {}:
 		print("No choices on screen")
@@ -201,7 +196,7 @@ func process_capture(capture : Image):
 	#print("MATCHING: " + result.label)
 	
 	## If there is something matching on screen, get the text inside the designated areas
-	var texts_result : Array[String] = await ImageReader.get_image_texts(result, capture)
+	var texts_result : Array[String] = await ImageReader.get_image_texts(screen_size, result, capture)
 	print("Extracted event name: " + (" - ").join(texts_result))
 	## If the text is the same as previous text shown, stop process
 	if texts_result == previous_texts_result:
@@ -327,11 +322,6 @@ var config = ConfigFile.new()
 
 func save_settings():
 	config.set_value("program", "screen", current_screen)
-	config.set_value("program", "game_window_mode", %WindowDetected.text)
-	config.set_value("program", "game_window_mode_x", ImageReader.game_window_config.X)
-	config.set_value("program", "game_window_mode_y", ImageReader.game_window_config.Y)
-	config.set_value("program", "game_window_mode_w", ImageReader.game_window_config.Width)
-	config.set_value("program", "game_window_mode_h", ImageReader.game_window_config.Height)
 	config.set_value("program", "keep_alive", keep_alive)
 	config.set_value("program", "always_on_top", always_on_top)
 	config.set_value("program", "disable_anims", disable_anims)
@@ -369,17 +359,7 @@ func load_settings():
 	
 	# Load values with defaults if they don't exist
 	current_screen = config.get_value("program", "screen", 0)
-	ImageReader.current_screen = current_screen
 	%CurrentScreenLabel.text = str(current_screen + 1)
-	# Load game window configuration
-	var game_window_mode = config.get_value("program", "game_window_mode", "Fullscreen")
-	if game_window_mode == "Windowed":
-		%WindowDetected.text = "Windowed"
-		ImageReader.game_window_config.X = int(config.get_value("program", "game_window_mode_x", 0))
-		ImageReader.game_window_config.Y = int(config.get_value("program", "game_window_mode_y", 0))
-		ImageReader.game_window_config.Width = int(config.get_value("program", "game_window_mode_w", 1920))
-		ImageReader.game_window_config.Height = int(config.get_value("program", "game_window_mode_w", 1080))
-	
 	keep_alive = config.get_value("program", "keep_alive", false)
 	%AutoToggle.set_pressed_no_signal(keep_alive)
 	always_on_top = config.get_value("program", "always_on_top", false)
