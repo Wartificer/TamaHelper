@@ -1,0 +1,40 @@
+{
+  "name": "Nishino Flower",
+  "rarity": "ssr",
+  "type": "speed",
+  "events": [
+    {
+      "name": "How I Can Help",
+      "text": [
+        "Maximum [[Energy+]]+4\n[[sp+]]+10"
+      ]
+    },
+    {
+      "name": "Aspiring to Adulthood",
+      "text": [
+        "[[Energy-]]-10\n[[Wit+]]+20\nNishino Flower [[bond+]]+5",
+        "[[sp+]]+15\n[[Wit+]]+5"
+      ]
+    },
+    {
+      "name": "What's Important!",
+      "text": [
+        "[[Speed+]]+5\n[[Wit+]]+10\n[[or]]\n{link:Straightaway Adept} [[hint]]1\n{link:Beeline Burst} [[hint]]1/+3\n{link:Beeline Burst} [[hint]]1/+3 or {link:Straightaway Adept} [[hint]]1"
+      ]
+    },
+    {
+      "name": "Warmth, Love, and Lunch",
+      "text": [
+        "Nishino Flower [[bond+]]+5\nAquire {link:Charming}",
+        "[[Energy+]]+20\nNishino Flower [[bond+]]+5"
+      ]
+    },
+    {
+      "name": "Let's Bloom Beautifully ♪",
+      "text": [
+        "[[Wit+]]+15\nNishino Flower [[bond+]]+5",
+        "[[Speed+]]+10\n[[Power+]]+5\nNishino Flower [[bond+]]+5"
+      ]
+    }
+  ]
+}

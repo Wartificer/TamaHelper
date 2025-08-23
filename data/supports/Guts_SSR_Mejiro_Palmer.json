@@ -1,0 +1,42 @@
+{
+  "name": "Mejiro Palmer",
+  "rarity": "ssr",
+  "type": "guts",
+  "events": [
+    {
+      "name": "Run Away to First Base",
+      "text": [
+        "[[Energy-]]-15\n[[Stamina+]]+10\n[[Guts+]]+10\nMejiro Palmer [[bond+]]+5",
+        "[[Energy-]]-15\n[[Guts+]]+10\n[[Wit+]]+10\nMejiro Palmer [[bond+]]+5"
+      ]
+    },
+    {
+      "name": "Runaway Romance",
+      "text": [
+        "[[Energy+]]+10\n[[Guts+]]+5\n[[Wit+]]+5\nMejiro Palmer [[bond+]]+5",
+        "[[Energy+]]+10\n{link:Front Runner Savvy} [[hint]]1\nMejiro Palmer [[bond+]]+5"
+      ]
+    },
+    {
+      "name": "Optimistic Escapism: Never Give Up!",
+      "text": [
+        "[[Energy-]]-20\n[[Stamina+]]+5\n[[Guts+]]+5\n[[or]]\n{link:Keeping the Lead} [[hint]]1/+3\n{link:Vanguard Spirit} [[hint]]3\n{link:Vanguard Spirit} [[hint]]3 or {link:Keeping the Lead} [[hint]]1/+3\nMejiro Palmer [[bond+]]+5",
+        "[[Energy+]]+10\n{link:Lone Wolf} [[hint]]1"
+      ]
+    },
+    {
+      "name": "An Inescapable Choice?",
+      "text": [
+        "[[Energy-]]-15\n[[Guts+]]+20\nMejiro Palmer [[bond+]]+5",
+        "[[sp+]]+15\n[[Power+]]+5\nMejiro Palmer [[bond+]]+5"
+      ]
+    },
+    {
+      "name": "Optimistic Escapism",
+      "text": [
+        "[[Guts+]]+15\nMejiro Palmer [[bond+]]+5",
+        "{link:Wet Conditions} [[hint]]1\nMejiro Palmer [[bond+]]+5"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,39 @@
+{
+  "name": "Ines Fujin",
+  "rarity": "ssr",
+  "type": "guts",
+  "events": [
+    {
+      "name": "The Power of a Big Sister",
+      "text": [
+        "[[Energy-]]-10\n[[Speed+]]+5\n[[Stamina+]]+5\n[[Guts+]]+10"
+      ]
+    },
+    {
+      "name": "Take a Step",
+      "text": [
+        "[[Energy-]]-10\n[[sp+]]+30\n[[Guts+]]+10\nInes Fujin [[bond+]]+5"
+      ]
+    },
+    {
+      "name": "Aim for That Sparkling Moment!",
+      "text": [
+        "[[Energy-]]-10\n[[Energy-]]-10\n[[Guts+]]+20\n[[Guts+]]+10\n[[Wit+]]+5\n[[or]]\n[[or]]\n{link:{link:Restless}} [[hint]]3\n{link:Moxie} [[hint]]1\n{link:{link:Restless}} [[hint]]1\n{link:{link:Restless}} [[hint]]1 or {link:Moxie} [[hint]]1"
+      ]
+    },
+    {
+      "name": "It's a Game of Tag!",
+      "text": [
+        "[[Energy+]]+10\n[[Speed+]]+5\nInes Fujin [[bond+]]+5",
+        "{link:Fast-Paced} [[hint]]1\nInes Fujin [[bond+]]+5"
+      ]
+    },
+    {
+      "name": "Ten Minutes Left!",
+      "text": [
+        "[[Guts+]]+15\nInes Fujin [[bond+]]+5",
+        "[[Wit+]]+15\nInes Fujin [[bond+]]+5"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "name": "Nishino Flower",
+  "rarity": "r",
+  "type": "speed",
+  "events": [
+    {
+      "name": "Warmth, Love, and Lunch",
+      "text": [
+        "Nishino Flower [[bond+]]+5\nAquire {link:Charming}",
+        "[[Energy+]]+20\nNishino Flower [[bond+]]+5"
+      ]
+    },
+    {
+      "name": "Let's Bloom Beautifully ♪",
+      "text": [
+        "[[Wit+]]+15\nNishino Flower [[bond+]]+5",
+        "[[Speed+]]+10\n[[Power+]]+5\nNishino Flower [[bond+]]+5"
+      ]
+    }
+  ]
+}

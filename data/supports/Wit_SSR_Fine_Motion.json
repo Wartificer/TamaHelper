@@ -1,0 +1,41 @@
+{
+  "name": "Fine Motion",
+  "rarity": "ssr",
+  "type": "wit",
+  "events": [
+    {
+      "name": "Lovely Training Weather ♪",
+      "text": [
+        "[[sp+]]+20\n[[Wit+]]+5\nFine Motion [[bond+]]+5",
+        "[[Speed+]]+10\n[[Stamina+]]+5",
+        "Fine Motion [[bond+]]+5\nAquire {link:Practice Perfect}"
+      ]
+    },
+    {
+      "name": "Lovely Concert Weather ♪",
+      "text": [
+        "[[Energy+]]+10\n[[sp+]]+10"
+      ]
+    },
+    {
+      "name": "Lovely Racing Weather ♪",
+      "text": [
+        "[[Energy-]]-10\n[[sp+]]+15\n[[Guts+]]+5\n[[Wit+]]+5/+10\n[[or]]\n{link:Prepared to Pass} [[hint]]1\n{link:Speed Star} [[hint]]1/+3\n{link:Speed Star} [[hint]]1/+3 or {link:Prepared to Pass} [[hint]]1"
+      ]
+    },
+    {
+      "name": "Wonderful New Shoes",
+      "text": [
+        "[[sp+]]+10\n[[Speed+]]+5\nFine Motion [[bond+]]+5",
+        "[[Energy-]]-10\n[[sp+]]+20\n[[Stamina+]]+5\nFine Motion [[bond+]]+5"
+      ]
+    },
+    {
+      "name": "Reminiscent Clover",
+      "text": [
+        "{link:Corner Adept} [[hint]]1\nFine Motion [[bond+]]+5",
+        "[[Guts+]]+15\nFine Motion [[bond+]]+5"
+      ]
+    }
+  ]
+}

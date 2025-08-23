@@ -1,0 +1,39 @@
+{
+  "name": "Sakura Bakushin O",
+  "rarity": "ssr",
+  "type": "speed",
+  "events": [
+    {
+      "name": "Bakushin's Cooking!",
+      "text": [
+        "[[Speed+]]+10"
+      ]
+    },
+    {
+      "name": "Bakushin's Love!",
+      "text": [
+        "[[Speed+]]+5\n[[Power+]]+5"
+      ]
+    },
+    {
+      "name": "Bakushin's Huge Success!",
+      "text": [
+        "[[Speed+]]+10\n[[Power+]]+5\n{link:Turbo Sprint} [[hint]]1"
+      ]
+    },
+    {
+      "name": "Genius Efficiency!",
+      "text": [
+        "[[Speed+]]+15\nSakura Bakushin O [[bond+]]+5",
+        "[[Speed+]]+5\n[[Power+]]+10\nSakura Bakushin O [[bond+]]+5"
+      ]
+    },
+    {
+      "name": "Enough to Break into a Dash!",
+      "text": [
+        "{link:Gap Closer} [[hint]]1\nSakura Bakushin O [[bond+]]+5",
+        "[[Energy-]]-10\n[[Speed+]]+10\n[[Power+]]+5\nSakura Bakushin O [[bond+]]+5"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,39 @@
+{
+  "name": "Silence Suzuka",
+  "rarity": "ssr",
+  "type": "speed",
+  "events": [
+    {
+      "name": "Letters → ?",
+      "text": [
+        "[[Speed+]]+10"
+      ]
+    },
+    {
+      "name": "Letters → Feelings → ?",
+      "text": [
+        "[[Speed+]]+10\n[[Power+]]+10"
+      ]
+    },
+    {
+      "name": "Letters → Feelings → Wait for Me, Okay?",
+      "text": [
+        "[[Speed+]]+10\n{link:Unrestrained} [[hint]]1"
+      ]
+    },
+    {
+      "name": "On and On",
+      "text": [
+        "[[Speed+]]+10\n[[Stamina+]]+5\nSilence Suzuka [[bond+]]+5",
+        "[[Speed+]]+15\nSilence Suzuka [[bond+]]+5"
+      ]
+    },
+    {
+      "name": "What Should I Do?",
+      "text": [
+        "[[Speed+]]+5\n[[Stamina+]]+5\n[[Wit+]]+5\nSilence Suzuka [[bond+]]+5",
+        "{link:Left-Handed} [[hint]]1\nSilence Suzuka [[bond+]]+5"
+      ]
+    }
+  ]
+}

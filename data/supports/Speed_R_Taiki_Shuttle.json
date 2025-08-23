@@ -1,0 +1,21 @@
+{
+  "name": "Taiki Shuttle",
+  "rarity": "r",
+  "type": "speed",
+  "events": [
+    {
+      "name": "Yes! Let's Hug ☆",
+      "text": [
+        "[[Speed+]]+10",
+        "[[Speed+]]+5\n[[Power+]]+5"
+      ]
+    },
+    {
+      "name": "Yeehaw! Party Tonight ☆",
+      "text": [
+        "[[Energy-]]-10\n[[Speed+]]+5\n[[Power+]]+10",
+        "{link:Prepared to Pass} [[hint]]1"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,39 @@
+{
+  "name": "Gold City",
+  "rarity": "ssr",
+  "type": "speed",
+  "events": [
+    {
+      "name": "Pride",
+      "text": [
+        "[[Energy+]]+20"
+      ]
+    },
+    {
+      "name": "Struggle",
+      "text": [
+        "[[Energy+]]+10\n[[Stamina+]]+10"
+      ]
+    },
+    {
+      "name": "One Step",
+      "text": [
+        "[[Stamina+]]+10\n{link:Keen Eye} [[hint]]1"
+      ]
+    },
+    {
+      "name": "08:36 / Crap, I Overslept",
+      "text": [
+        "[[sp+]]+45\nGold City [[bond+]]+5\n[[Mood-]]-1",
+        "[[Energy+]]+10\n[[Wit+]]+5\nGold City [[bond+]]+5"
+      ]
+    },
+    {
+      "name": "13:12 / Lunch Break, Gotta Get Myself Together",
+      "text": [
+        "[[sp+]]+30\nGold City [[bond+]]+5",
+        "{link:A Small Breather} [[hint]]1\nGold City [[bond+]]+5"
+      ]
+    }
+  ]
+}

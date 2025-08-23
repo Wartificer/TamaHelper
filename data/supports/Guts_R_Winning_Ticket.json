@@ -1,0 +1,21 @@
+{
+  "name": "Winning Ticket",
+  "rarity": "r",
+  "type": "guts",
+  "events": [
+    {
+      "name": "Full-Power Muscles!",
+      "text": [
+        "[[sp+]]+15\n[[Stamina+]]+5\nWinning Ticket [[bond+]]+5",
+        "[[sp+]]+15\nWinning Ticket [[bond+]]+5\n[[Mood+]]+1"
+      ]
+    },
+    {
+      "name": "Full-Power Racing!",
+      "text": [
+        "{link:Late Surger Corners} [[hint]]1\nWinning Ticket [[bond+]]+5",
+        "[[sp+]]+30\nWinning Ticket [[bond+]]+5"
+      ]
+    }
+  ]
+}

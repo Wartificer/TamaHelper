@@ -1,0 +1,21 @@
+{
+  "name": "Gold Ship",
+  "rarity": "r",
+  "type": "stamina",
+  "events": [
+    {
+      "name": "Adventurer Gold Ship",
+      "text": [
+        "[[Stamina+]]+15\nGold Ship [[bond+]]+5",
+        "[[sp+]]+15\n[[Guts+]]+10\nGold Ship [[bond+]]+5"
+      ]
+    },
+    {
+      "name": "Revive the Brand! Golshi's Yakisoba",
+      "text": [
+        "[[Stamina+]]+5\n[[Mood+]]+1",
+        "{link:Hanshin Racecourse} [[hint]]1\nGold Ship [[bond+]]+5"
+      ]
+    }
+  ]
+}

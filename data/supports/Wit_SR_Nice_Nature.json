@@ -1,0 +1,34 @@
+{
+  "name": "Nice Nature",
+  "rarity": "sr",
+  "type": "wit",
+  "events": [
+    {
+      "name": "Chasing Their Backs",
+      "text": [
+        "[[Energy+]]+5\n[[Wit+]]+3\nNice Nature [[bond+]]+5",
+        "Nice Nature [[bond+]]+20"
+      ]
+    },
+    {
+      "name": "Wind at My Back",
+      "text": [
+        "[[Energy+]]+10\n[[Wit+]]+5\n{link:Long Shot} [[hint]]3\nNice Nature [[bond+]]+5"
+      ]
+    },
+    {
+      "name": "Not like Meow",
+      "text": [
+        "[[Energy+]]+20\nNice Nature [[bond+]]+5",
+        "[[Energy+]]+10\n[[Wit+]]+5\nNice Nature [[bond+]]+5"
+      ]
+    },
+    {
+      "name": "(Delicious) Burden",
+      "text": [
+        "{link:Ramp Up} [[hint]]1\nNice Nature [[bond+]]+5",
+        "Maximum [[Energy+]]+4\nNice Nature [[bond+]]+5\n[[Mood+]]+1"
+      ]
+    }
+  ]
+}

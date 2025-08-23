@@ -1,0 +1,33 @@
+{
+  "name": "Mejiro Ryan",
+  "rarity": "sr",
+  "type": "power",
+  "events": [
+    {
+      "name": "Where Cool Comes From",
+      "text": [
+        "[[sp+]]+15\n[[Power+]]+5\nMejiro Ryan [[bond+]]+5"
+      ]
+    },
+    {
+      "name": "Carried by Cheers",
+      "text": [
+        "[[Power+]]+15\n{link:Nimble Navigator} [[hint]]1\nMejiro Ryan [[bond+]]+5"
+      ]
+    },
+    {
+      "name": "My Muscles and Me, Onward to Tomorrow!",
+      "text": [
+        "[[Energy-]]-10\n[[Power+]]+15\nMejiro Ryan [[bond+]]+5",
+        "Maximum [[Energy+]]+4\n[[Power+]]+5\nMejiro Ryan [[bond+]]+5"
+      ]
+    },
+    {
+      "name": "It's Not Like I Like Romance!",
+      "text": [
+        "{link:Pace Strategy} [[hint]]1\nMejiro Ryan [[bond+]]+5",
+        "[[Energy+]]+30\nMejiro Ryan [[bond+]]+5"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "name": "El Condor Pasa",
+  "rarity": "ssr",
+  "type": "power",
+  "events": [
+    {
+      "name": "World Class",
+      "text": [
+        "[[Power+]]+5\n[[Guts+]]+5"
+      ]
+    },
+    {
+      "name": "Uma-me",
+      "text": [
+        "[[Energy+]]+30\nEl Condor Pasa [[bond+]]+5",
+        "[[chainEnd]]\n{link:Stamina to Spare} [[hint]]1\nEl Condor Pasa [[bond+]]+5"
+      ]
+    },
+    {
+      "name": "Luchadora El!",
+      "text": [
+        "[[Power+]]+10\n{link:Killer Tunes} [[hint]]1"
+      ]
+    },
+    {
+      "name": "Blazing Fire!",
+      "text": [
+        "[[Stamina+]]+10\nEl Condor Pasa [[bond+]]+5",
+        "[[Energy-]]-10\n[[Power+]]+20\nEl Condor Pasa [[bond+]]+5"
+      ]
+    },
+    {
+      "name": "Secret Notebook!",
+      "text": [
+        "[[Power+]]+10\nEl Condor Pasa [[bond+]]+5",
+        "{link:Sunny Days} [[hint]]1\nEl Condor Pasa [[bond+]]+5"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "name": "Mihono Bourbon",
+  "rarity": "sr",
+  "type": "power",
+  "events": [
+    {
+      "name": "I'm Not a Cyborg",
+      "text": [
+        "[[sp+]]+15\n[[Guts+]]+10\nMihono Bourbon [[bond+]]+5",
+        "[[Energy-]]-10\n[[chainEnd]]\n{link:Corner Recovery} [[hint]]1\n[[possible]] Mihono Bourbon [[bond-]]-5"
+      ]
+    },
+    {
+      "name": "New Values Installed",
+      "text": [
+        "[[Energy-]]-10\n[[Power+]]+5\n[[Guts+]]+5\n{link:Front Runner Straightaways} [[hint]]1\nMihono Bourbon [[bond+]]+5"
+      ]
+    },
+    {
+      "name": "Do No Harm",
+      "text": [
+        "[[Energy-]]-10\n[[Stamina+]]+5\n[[Power+]]+15\nMihono Bourbon [[bond+]]+5",
+        "[[Energy+]]+10\n[[Wit+]]+5\nMihono Bourbon [[bond+]]+5"
+      ]
+    },
+    {
+      "name": "Orders Must Be Followed",
+      "text": [
+        "{link:Focus} [[hint]]1\nMihono Bourbon [[bond+]]+5",
+        "[[sp+]]+15\n[[Speed+]]+10\nMihono Bourbon [[bond+]]+5"
+      ]
+    }
+  ]
+}

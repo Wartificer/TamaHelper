@@ -1,0 +1,39 @@
+{
+  "name": "Vodka",
+  "rarity": "ssr",
+  "type": "power",
+  "events": [
+    {
+      "name": "Gotta Follow My Heart",
+      "text": [
+        "[[sp+]]+15\n[[Power+]]+5"
+      ]
+    },
+    {
+      "name": "A Vow to the Setting Sun",
+      "text": [
+        "[[sp+]]+15\n[[Power+]]+5"
+      ]
+    },
+    {
+      "name": "Put That on the Record, Okay?",
+      "text": [
+        "[[sp+]]+30\n[[Power+]]+5\n{link:Breath of Fresh Air} [[hint]]1"
+      ]
+    },
+    {
+      "name": "The Coolest Line",
+      "text": [
+        "[[Power+]]+10\nVodka [[bond+]]+5",
+        "[[sp+]]+15\n[[Power+]]+5\nVodka [[bond+]]+5"
+      ]
+    },
+    {
+      "name": "Enemies on Main Street",
+      "text": [
+        "{link:Nimble Navigator} [[hint]]1\nVodka [[bond+]]+5",
+        "[[sp+]]+15\n[[Power+]]+5\nVodka [[bond+]]+5"
+      ]
+    }
+  ]
+}

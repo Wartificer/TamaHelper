@@ -1,0 +1,39 @@
+{
+  "name": "Gold Ship",
+  "rarity": "ssr",
+  "type": "stamina",
+  "events": [
+    {
+      "name": "Fervor! Air Basketball!",
+      "text": [
+        "[[Energy-]]-10\n[[Stamina+]]+25"
+      ]
+    },
+    {
+      "name": "Respect the Salmon!",
+      "text": [
+        "[[Energy-]]-10\n[[Guts+]]+25"
+      ]
+    },
+    {
+      "name": "Can't Spell \"Rival\" without \"Friend\"!",
+      "text": [
+        "[[Stamina+]]+10\n{link:Corner Connoisseur} [[hint]]1"
+      ]
+    },
+    {
+      "name": "Adventurer Gold Ship",
+      "text": [
+        "[[Stamina+]]+15\nGold Ship [[bond+]]+5",
+        "[[sp+]]+15\n[[Guts+]]+10\nGold Ship [[bond+]]+5"
+      ]
+    },
+    {
+      "name": "Revive the Brand! Golshi's Yakisoba",
+      "text": [
+        "[[Stamina+]]+5\n[[Mood+]]+1",
+        "{link:Hanshin Racecourse} [[hint]]1\nGold Ship [[bond+]]+5"
+      ]
+    }
+  ]
+}

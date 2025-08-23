@@ -1,0 +1,21 @@
+{
+  "name": "Matikanetannhauser",
+  "rarity": "r",
+  "type": "guts",
+  "events": [
+    {
+      "name": "Just Your Typical Hard Work!",
+      "text": [
+        "[[Speed+]]+10\nMatikanetannhauser [[bond+]]+5",
+        "[[Power+]]+10\nMatikanetannhauser [[bond+]]+5"
+      ]
+    },
+    {
+      "name": "Just A Typical Accident?!",
+      "text": [
+        "[[Stamina+]]+5\n[[Guts+]]+10\nMatikanetannhauser [[bond+]]+5",
+        "{link:Subdued Front Runners} [[hint]]1\nMatikanetannhauser [[bond+]]+5"
+      ]
+    }
+  ]
+}

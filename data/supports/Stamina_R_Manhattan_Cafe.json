@@ -1,0 +1,21 @@
+{
+  "name": "Manhattan Cafe",
+  "rarity": "r",
+  "type": "stamina",
+  "events": [
+    {
+      "name": "Solo Nighttime Run",
+      "text": [
+        "[[Stamina+]]+10\nManhattan Cafe [[bond+]]+5",
+        "[[Energy+]]+10\n[[Stamina+]]+5\nManhattan Cafe [[bond+]]+5"
+      ]
+    },
+    {
+      "name": "A Taste of Silence",
+      "text": [
+        "[[sp+]]+15\n[[Stamina+]]+5\nManhattan Cafe [[bond+]]+5",
+        "{link:Non-Standard Distance} [[hint]]1\nManhattan Cafe [[bond+]]+5"
+      ]
+    }
+  ]
+}

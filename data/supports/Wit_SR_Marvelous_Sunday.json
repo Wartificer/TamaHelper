@@ -1,0 +1,33 @@
+{
+  "name": "Marvelous Sunday",
+  "rarity": "sr",
+  "type": "wit",
+  "events": [
+    {
+      "name": "Marvelous World Plan ☆",
+      "text": [
+        "[[Guts+]]+5\n[[Wit+]]+5"
+      ]
+    },
+    {
+      "name": "Marvelously Marvelous ☆",
+      "text": [
+        "[[Guts+]]+15\n[[Wit+]]+15"
+      ]
+    },
+    {
+      "name": "Marvelous, No Question ☆",
+      "text": [
+        "[[Energy+]]+10\n[[Speed+]]+5\nMarvelous Sunday [[bond+]]+5",
+        "[[Speed+]]+5\nMarvelous Sunday [[bond+]]+5\n[[Mood+]]+1"
+      ]
+    },
+    {
+      "name": "How To Be More Marvelous ☆",
+      "text": [
+        "[[Energy+]]+10\nMarvelous Sunday [[bond+]]+5\n[[Mood+]]+1",
+        "{link:Hanshin Racecourse} [[hint]]1\nMarvelous Sunday [[bond+]]+5"
+      ]
+    }
+  ]
+}

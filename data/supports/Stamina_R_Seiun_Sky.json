@@ -1,0 +1,21 @@
+{
+  "name": "Seiun Sky",
+  "rarity": "r",
+  "type": "stamina",
+  "events": [
+    {
+      "name": "Recruiting Cat Catchers",
+      "text": [
+        "[[Energy+]]+10\n[[Wit+]]+5\nSeiun Sky [[bond+]]+5",
+        "[[Energy-]]-10\n[[Speed+]]+15\n[[Stamina+]]+5\nSeiun Sky [[bond+]]+5"
+      ]
+    },
+    {
+      "name": "Recruiting Advisors",
+      "text": [
+        "[[Wit+]]+15\nSeiun Sky [[bond+]]+5",
+        "{link:Keeping the Lead} [[hint]]1\nSeiun Sky [[bond+]]+5"
+      ]
+    }
+  ]
+}

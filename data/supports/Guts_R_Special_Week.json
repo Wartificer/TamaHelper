@@ -1,0 +1,21 @@
+{
+  "name": "Special Week",
+  "rarity": "r",
+  "type": "guts",
+  "events": [
+    {
+      "name": "Watch Where You're Going!",
+      "text": [
+        "{link:Extra Tank} [[hint]]1\nSpecial Week [[bond+]]+5",
+        "[[Guts+]]+15\nSpecial Week [[bond+]]+5"
+      ]
+    },
+    {
+      "name": "So Many Options!",
+      "text": [
+        "[[Energy+]]+10\nSpecial Week [[bond+]]+5\n[[Mood+]]+1",
+        "[[Energy-]]-10\n[[sp+]]+15\n[[Stamina+]]+15\nSpecial Week [[bond+]]+5"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "name": "Haru Urara",
+  "rarity": "r",
+  "type": "guts",
+  "events": [
+    {
+      "name": "Urara's ☆ Study Review",
+      "text": [
+        "[[Energy+]]+10\n[[Wit+]]+5\nHaru Urara [[bond+]]+5",
+        "[[Wit+]]+5\nHaru Urara [[bond+]]+5\n[[Mood+]]+1"
+      ]
+    },
+    {
+      "name": "Urara's ☆ Long Shot Dash!",
+      "text": [
+        "{link:Long Shot} [[hint]]1\nHaru Urara [[bond+]]+5",
+        "[[Energy+]]+10\nHaru Urara [[bond+]]+5\n[[Mood+]]+1"
+      ]
+    }
+  ]
+}

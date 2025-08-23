@@ -1,0 +1,40 @@
+{
+  "name": "Matikanetannhauser",
+  "rarity": "ssr",
+  "type": "guts",
+  "events": [
+    {
+      "name": "Seeking Uniqueness!",
+      "text": [
+        "Matikanetannhauser [[bond+]]+5\n[[Mood+]]+1",
+        "[[Energy+]]+10/+30\nMatikanetannhauser [[bond+]]+5"
+      ]
+    },
+    {
+      "name": "Becoming a Prankster",
+      "text": [
+        "[[sp+]]+10\n[[Power+]]+5\nMatikanetannhauser [[bond+]]+5"
+      ]
+    },
+    {
+      "name": "Unique Running?",
+      "text": [
+        "[[sp+]]+10\n[[sp+]]+15\n[[Power+]]+5\n[[Power+]]+10\n[[or]]\n{link:Calm in a Crowd} [[hint]]3\n{link:Unruffled} [[hint]]3\nMatikanetannhauser [[bond+]]+5\nMatikanetannhauser [[bond+]]+5"
+      ]
+    },
+    {
+      "name": "Just Your Typical Hard Work!",
+      "text": [
+        "[[Speed+]]+10\nMatikanetannhauser [[bond+]]+5",
+        "[[Power+]]+10\nMatikanetannhauser [[bond+]]+5"
+      ]
+    },
+    {
+      "name": "Just A Typical Accident?!",
+      "text": [
+        "[[Stamina+]]+5\n[[Guts+]]+10\nMatikanetannhauser [[bond+]]+5",
+        "{link:Subdued Front Runners} [[hint]]1\nMatikanetannhauser [[bond+]]+5"
+      ]
+    }
+  ]
+}

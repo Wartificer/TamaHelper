@@ -1,0 +1,21 @@
+{
+  "name": "Daitaku Helios",
+  "rarity": "r",
+  "type": "power",
+  "events": [
+    {
+      "name": "Encounter With the Sun ☆",
+      "text": [
+        "[[Power+]]+10\nDaitaku Helios [[bond+]]+5",
+        "Daitaku Helios [[bond+]]+5\nAquire {link:Hot Topic}"
+      ]
+    },
+    {
+      "name": "Smiles Forever",
+      "text": [
+        "[[Speed+]]+5\n[[Power+]]+10\nDaitaku Helios [[bond+]]+5",
+        "{link:Long Shot} [[hint]]1\nDaitaku Helios [[bond+]]+5"
+      ]
+    }
+  ]
+}

@@ -29,6 +29,15 @@ func load_assets():
 	# Load mascot
 	load_mascot(assets_path)
 
+func get_data_path() -> String:
+	if OS.has_feature("editor"):
+		# In editor, use res://data/
+		return ProjectSettings.globalize_path("res://").get_base_dir() + "/data/"
+	else:
+		# In production, use executable_path/data/
+		var exe_path = OS.get_executable_path().get_base_dir()
+		return exe_path + "/data/"
+
 func get_assets_path() -> String:
 	if OS.has_feature("editor"):
 		# In editor, use user://assets/
@@ -121,12 +130,166 @@ func load_font_from_path(path: String) -> Font:
 	
 	return font_file
 
+# Method to scan subfolders and load "data.json" from each one
+func load_data_json_from_subfolders(relative_folder_path: String) -> Array:
+	var base_path = get_data_path()
+	
+	# Construct full folder path
+	var full_folder_path = base_path.path_join(relative_folder_path)
+	
+	# Debug print to verify path
+	print("Looking for subfolders with data.json in: ", full_folder_path)
+	
+	# Check if directory exists
+	if not DirAccess.dir_exists_absolute(full_folder_path):
+		push_error("Directory not found: " + full_folder_path)
+		return []
+	
+	# Open directory
+	var dir = DirAccess.open(full_folder_path)
+	if dir == null:
+		push_error("Failed to open directory: " + full_folder_path)
+		return []
+	
+	var json_data_array: Array = []
+	
+	# Start reading directory contents
+	dir.list_dir_begin()
+	var item_name = dir.get_next()
+	
+	while item_name != "":
+		# Check if it's a directory (subfolder)
+		if dir.current_is_dir() and item_name != "." and item_name != "..":
+			# Construct path to data.json in this subfolder
+			var subfolder_path = full_folder_path.path_join(item_name)
+			var data_json_path = subfolder_path.path_join("data.json")
+			
+			# Check if data.json exists in this subfolder
+			if FileAccess.file_exists(data_json_path):
+				# Load JSON data using our helper method
+				var json_data = load_json_from_fullpath(data_json_path)
+				if json_data != null:
+					json_data_array.append(json_data)
+				else:
+					print("Warning: Failed to load data.json from folder: ", item_name)
+			else:
+				print("Warning: No data.json found in folder: ", item_name)
+		
+		item_name = dir.get_next()
+	
+	# Sort by folder name for consistent ordering
+	json_data_array.sort_custom(func(a, b): return a.folder_name < b.folder_name)
+	
+	return json_data_array
+
+# Method to scan folder and load all JSON files into an array
+func load_all_json_from_folder(relative_folder_path: String) -> Array:
+	var base_path = get_data_path()
+	
+	# Construct full folder path
+	var full_folder_path = base_path.path_join(relative_folder_path)
+	
+	# Check if directory exists
+	if not DirAccess.dir_exists_absolute(full_folder_path):
+		print("Directory not found: " + full_folder_path)
+		return []
+	
+	# Open directory
+	var dir = DirAccess.open(full_folder_path)
+	if dir == null:
+		print("Failed to open directory: " + full_folder_path)
+		return []
+	
+	var json_data_array: Array = []
+	
+	# Start reading directory contents
+	dir.list_dir_begin()
+	var file_name = dir.get_next()
+	
+	while file_name != "":
+		# Check if it's a file (not a directory) and has .json extension
+		if not dir.current_is_dir() and file_name.get_extension().to_lower() == "json":
+			# Construct full file path
+			var file_path = full_folder_path.path_join(file_name)
+			
+			# Load JSON data using our existing method
+			var json_data = load_json_from_fullpath(file_path)
+			if json_data != null:
+				json_data_array.append(json_data)
+		
+		file_name = dir.get_next()
+	
+	print(json_data_array.size())
+	return json_data_array
+
+# Method to load JSON data from external path
+func load_json_from_path(relative_path: String) -> Variant:
+	# Get the base path (project folder in editor, executable folder when exported)
+	var base_path = get_data_path()
+	
+	# Construct full path
+	var full_path = base_path.path_join(relative_path)
+	
+	# Check if file exists
+	if not FileAccess.file_exists(full_path):
+		push_error("JSON file not found: " + full_path)
+		return null
+	
+	# Open and read the file
+	var file = FileAccess.open(full_path, FileAccess.READ)
+	if file == null:
+		push_error("Failed to open JSON file: " + full_path)
+		return null
+	
+	var json_string = file.get_as_text()
+	file.close()
+	
+	# Parse JSON
+	var json = JSON.new()
+	var parse_result = json.parse(json_string)
+	
+	if parse_result != OK:
+		push_error("Failed to parse JSON: " + full_path + " Error at line " + str(json.error_line) + ": " + json.error_string)
+		return null
+	
+	return json.data
+
+# Method to load JSON data from external path
+func load_json_from_fullpath(full_path: String) -> Variant:
+	# Check if file exists
+	if not FileAccess.file_exists(full_path):
+		push_error("JSON file not found: " + full_path)
+		return null
+	
+	# Open and read the file
+	var file = FileAccess.open(full_path, FileAccess.READ)
+	if file == null:
+		push_error("Failed to open JSON file: " + full_path)
+		return null
+	
+	var json_string = file.get_as_text()
+	file.close()
+	
+	# Parse JSON
+	var json = JSON.new()
+	var parse_result = json.parse(json_string)
+	
+	if parse_result != OK:
+		push_error("Failed to parse JSON: " + full_path + " Error at line " + str(json.error_line) + ": " + json.error_string)
+		return null
+	
+	return json.data
+
 func load_image_from_path(path: String) -> Texture2D:
+	var base_path = get_data_path()
+	
+	var full_path = base_path + path
+	
 	var image = Image.new()
-	var error = image.load(path)
+	var error = image.load(full_path)
 	
 	if error != OK:
-		print("Failed to load image: ", path, " Error: ", error)
+		print("Failed to load image: ", full_path, " Error: ", error)
 		return null
 	
 	var texture = ImageTexture.new()

@@ -309,22 +309,70 @@ stretch_mode = 4
 [node name="VBoxContainer" type="VBoxContainer" parent="VBoxContainer2/VBoxContainer/PanelContainer/VBoxContainer/PanelContainer"]
 layout_mode = 2
 
-[node name="HBoxContainer" type="HBoxContainer" parent="VBoxContainer2/VBoxContainer/PanelContainer/VBoxContainer/PanelContainer/VBoxContainer"]
+[node name="HBoxContainer3" type="HBoxContainer" parent="VBoxContainer2/VBoxContainer/PanelContainer/VBoxContainer/PanelContainer/VBoxContainer"]
 layout_mode = 2
+
+[node name="HBoxContainer" type="HBoxContainer" parent="VBoxContainer2/VBoxContainer/PanelContainer/VBoxContainer/PanelContainer/VBoxContainer/HBoxContainer3"]
+layout_mode = 2
+size_flags_horizontal = 0
 theme_override_constants/separation = 10
 alignment = 2
 
-[node name="VBoxContainer" type="VBoxContainer" parent="VBoxContainer2/VBoxContainer/PanelContainer/VBoxContainer/PanelContainer/VBoxContainer/HBoxContainer"]
+[node name="ScenarioSelectButton" type="Button" parent="VBoxContainer2/VBoxContainer/PanelContainer/VBoxContainer/PanelContainer/VBoxContainer/HBoxContainer3/HBoxContainer"]
+clip_contents = true
+custom_minimum_size = Vector2(80, 60)
+layout_mode = 2
+flat = true
+
+[node name="SelectedScenario" type="TextureRect" parent="VBoxContainer2/VBoxContainer/PanelContainer/VBoxContainer/PanelContainer/VBoxContainer/HBoxContainer3/HBoxContainer/ScenarioSelectButton"]
+unique_name_in_owner = true
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 8
+tooltip_text = "Click to select the 
+character you are using on 
+your current career."
+texture = ExtResource("4_trn2v")
+expand_mode = 3
+stretch_mode = 6
+
+[node name="VBoxContainer" type="VBoxContainer" parent="VBoxContainer2/VBoxContainer/PanelContainer/VBoxContainer/PanelContainer/VBoxContainer/HBoxContainer3/HBoxContainer"]
 layout_mode = 2
 alignment = 1
 
-[node name="CareerCharacterLabel" type="Label" parent="VBoxContainer2/VBoxContainer/PanelContainer/VBoxContainer/PanelContainer/VBoxContainer/HBoxContainer/VBoxContainer"]
+[node name="CareerScenarioLabel" type="Label" parent="VBoxContainer2/VBoxContainer/PanelContainer/VBoxContainer/PanelContainer/VBoxContainer/HBoxContainer3/HBoxContainer/VBoxContainer"]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 0
+
+[node name="ClickToChangeScenarioLabel" type="Label" parent="VBoxContainer2/VBoxContainer/PanelContainer/VBoxContainer/PanelContainer/VBoxContainer/HBoxContainer3/HBoxContainer/VBoxContainer"]
+unique_name_in_owner = true
+visible = false
+layout_mode = 2
+size_flags_horizontal = 0
+theme_override_font_sizes/font_size = 11
+text = "< Click to change"
+
+[node name="HBoxContainer2" type="HBoxContainer" parent="VBoxContainer2/VBoxContainer/PanelContainer/VBoxContainer/PanelContainer/VBoxContainer/HBoxContainer3"]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_constants/separation = 10
+alignment = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="VBoxContainer2/VBoxContainer/PanelContainer/VBoxContainer/PanelContainer/VBoxContainer/HBoxContainer3/HBoxContainer2"]
+layout_mode = 2
+alignment = 1
+
+[node name="CareerCharacterLabel" type="Label" parent="VBoxContainer2/VBoxContainer/PanelContainer/VBoxContainer/PanelContainer/VBoxContainer/HBoxContainer3/HBoxContainer2/VBoxContainer"]
 unique_name_in_owner = true
 layout_mode = 2
 size_flags_horizontal = 8
-text = "Select career character >"
 
-[node name="ClickToChangeLabel" type="Label" parent="VBoxContainer2/VBoxContainer/PanelContainer/VBoxContainer/PanelContainer/VBoxContainer/HBoxContainer/VBoxContainer"]
+[node name="ClickToChangeLabel" type="Label" parent="VBoxContainer2/VBoxContainer/PanelContainer/VBoxContainer/PanelContainer/VBoxContainer/HBoxContainer3/HBoxContainer2/VBoxContainer"]
 unique_name_in_owner = true
 visible = false
 layout_mode = 2
@@ -332,13 +380,13 @@ size_flags_horizontal = 8
 theme_override_font_sizes/font_size = 11
 text = "Click to change >"
 
-[node name="CharacterSelectButton" type="Button" parent="VBoxContainer2/VBoxContainer/PanelContainer/VBoxContainer/PanelContainer/VBoxContainer/HBoxContainer"]
+[node name="CharacterSelectButton" type="Button" parent="VBoxContainer2/VBoxContainer/PanelContainer/VBoxContainer/PanelContainer/VBoxContainer/HBoxContainer3/HBoxContainer2"]
 clip_contents = true
 custom_minimum_size = Vector2(80, 60)
 layout_mode = 2
 flat = true
 
-[node name="SelectedCharacter" type="TextureRect" parent="VBoxContainer2/VBoxContainer/PanelContainer/VBoxContainer/PanelContainer/VBoxContainer/HBoxContainer/CharacterSelectButton"]
+[node name="SelectedCharacter" type="TextureRect" parent="VBoxContainer2/VBoxContainer/PanelContainer/VBoxContainer/PanelContainer/VBoxContainer/HBoxContainer3/HBoxContainer2/CharacterSelectButton"]
 unique_name_in_owner = true
 layout_mode = 1
 anchors_preset = 15
@@ -657,13 +705,57 @@ size_flags_vertical = 3
 theme_override_constants/h_separation = 6
 theme_override_constants/v_separation = 6
 
+[node name="ScenarioSelect" type="PanelContainer" parent="."]
+unique_name_in_owner = true
+visible = false
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_trn2v")
+
+[node name="MarginContainer" type="MarginContainer" parent="ScenarioSelect"]
+layout_mode = 2
+theme_override_constants/margin_left = 12
+theme_override_constants/margin_top = 12
+theme_override_constants/margin_right = 12
+theme_override_constants/margin_bottom = 12
+
+[node name="VBoxContainer" type="VBoxContainer" parent="ScenarioSelect/MarginContainer"]
+layout_mode = 2
+
+[node name="CloseScenarioSelectButton" type="Button" parent="ScenarioSelect/MarginContainer/VBoxContainer"]
+custom_minimum_size = Vector2(40, 40)
+layout_mode = 2
+size_flags_horizontal = 8
+icon = ExtResource("7_lgr22")
+flat = true
+expand_icon = true
+
+[node name="ScrollContainer" type="ScrollContainer" parent="ScenarioSelect/MarginContainer/VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+script = ExtResource("10_wkp8b")
+
+[node name="ScenarioList" type="FlowContainer" parent="ScenarioSelect/MarginContainer/VBoxContainer/ScrollContainer"]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_constants/h_separation = 6
+theme_override_constants/v_separation = 6
+
 [connection signal="pressed" from="VBoxContainer2/VBoxContainer/PanelContainer/VBoxContainer/MarginContainer/HBoxContainer/StartButton" to="." method="_on_start_button_pressed"]
 [connection signal="toggled" from="VBoxContainer2/VBoxContainer/PanelContainer/VBoxContainer/MarginContainer/HBoxContainer/AutoToggle" to="." method="_on_auto_toggle_toggled"]
 [connection signal="toggled" from="VBoxContainer2/VBoxContainer/PanelContainer/VBoxContainer/MarginContainer/HBoxContainer/AlwaysOnTopToggle" to="." method="_on_always_on_top_toggle_toggled"]
 [connection signal="pressed" from="VBoxContainer2/VBoxContainer/PanelContainer/VBoxContainer/MarginContainer/HBoxContainer/SettingsMenuButton" to="." method="_on_settings_menu_button_pressed"]
-[connection signal="pressed" from="VBoxContainer2/VBoxContainer/PanelContainer/VBoxContainer/PanelContainer/VBoxContainer/HBoxContainer/CharacterSelectButton" to="." method="_on_character_select_button_pressed"]
+[connection signal="pressed" from="VBoxContainer2/VBoxContainer/PanelContainer/VBoxContainer/PanelContainer/VBoxContainer/HBoxContainer3/HBoxContainer/ScenarioSelectButton" to="." method="_on_scenario_select_button_pressed"]
+[connection signal="pressed" from="VBoxContainer2/VBoxContainer/PanelContainer/VBoxContainer/PanelContainer/VBoxContainer/HBoxContainer3/HBoxContainer2/CharacterSelectButton" to="." method="_on_character_select_button_pressed"]
 [connection signal="timeout" from="CaptureTimer" to="." method="_on_capture_timer_timeout"]
 [connection signal="pressed" from="Settings/MarginContainer/VBoxContainer/CloseSettingsButton" to="." method="_on_close_settings_button_pressed"]
 [connection signal="pressed" from="Settings/MarginContainer/VBoxContainer/HBoxContainer/SwitchScreenButton" to="." method="_on_switch_screen_button_pressed"]
 [connection signal="toggled" from="Settings/MarginContainer/VBoxContainer/DisableAnims" to="." method="_on_disable_anims_toggled"]
 [connection signal="pressed" from="CharacterSelect/MarginContainer/VBoxContainer/CloseCharacterSelectButton" to="." method="_on_close_character_select_button_pressed"]
+[connection signal="pressed" from="ScenarioSelect/MarginContainer/VBoxContainer/CloseScenarioSelectButton" to="." method="_on_close_scenario_select_button_pressed"]

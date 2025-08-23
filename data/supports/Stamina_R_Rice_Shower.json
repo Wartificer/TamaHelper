@@ -1,0 +1,21 @@
+{
+  "name": "Rice Shower",
+  "rarity": "r",
+  "type": "stamina",
+  "events": [
+    {
+      "name": "A Page of Flower Shop Assistance",
+      "text": [
+        "Rice Shower [[bond+]]+5\n[[Mood+]]+2",
+        "[[Stamina+]]+10\nRice Shower [[bond+]]+5"
+      ]
+    },
+    {
+      "name": "A Page About Cloudy Weather",
+      "text": [
+        "[[Speed+]]+5\n[[Guts+]]+5\nRice Shower [[bond+]]+5",
+        "{link:Firm Conditions} [[hint]]1\nRice Shower [[bond+]]+5"
+      ]
+    }
+  ]
+}

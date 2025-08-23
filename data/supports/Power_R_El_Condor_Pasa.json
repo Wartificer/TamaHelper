@@ -1,0 +1,21 @@
+{
+  "name": "El Condor Pasa",
+  "rarity": "r",
+  "type": "power",
+  "events": [
+    {
+      "name": "Blazing Fire!",
+      "text": [
+        "[[Stamina+]]+10\nEl Condor Pasa [[bond+]]+5",
+        "[[Energy-]]-10\n[[Power+]]+20\nEl Condor Pasa [[bond+]]+5"
+      ]
+    },
+    {
+      "name": "Secret Notebook!",
+      "text": [
+        "[[Power+]]+10\nEl Condor Pasa [[bond+]]+5",
+        "{link:Sunny Days} [[hint]]1\nEl Condor Pasa [[bond+]]+5"
+      ]
+    }
+  ]
+}

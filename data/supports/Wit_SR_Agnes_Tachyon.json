@@ -1,0 +1,33 @@
+{
+  "name": "Agnes Tachyon",
+  "rarity": "sr",
+  "type": "wit",
+  "events": [
+    {
+      "name": "Report: Potential of Specialized Training",
+      "text": [
+        "[[sp+]]+15\n[[Wit+]]+5"
+      ]
+    },
+    {
+      "name": "Report: N/A (On Break)",
+      "text": [
+        "[[sp+]]+15\n[[Wit+]]+10\n{link:Subdued Front Runners} [[hint]]1"
+      ]
+    },
+    {
+      "name": "The Correlation between Sleep and Efficiency",
+      "text": [
+        "[[Power+]]+5\n[[Wit+]]+5\nAgnes Tachyon [[bond+]]+5",
+        "[[Wit+]]+10\nAgnes Tachyon [[bond+]]+5"
+      ]
+    },
+    {
+      "name": "Happenstance Introduced Through Intervention",
+      "text": [
+        "{link:Late Surger Savvy} [[hint]]1\nAgnes Tachyon [[bond+]]+5",
+        "[[Wit+]]+10\nAgnes Tachyon [[bond+]]+5"
+      ]
+    }
+  ]
+}

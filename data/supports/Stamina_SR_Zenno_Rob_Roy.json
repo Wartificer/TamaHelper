@@ -1,0 +1,34 @@
+{
+  "name": "Zenno Rob Roy",
+  "rarity": "sr",
+  "type": "stamina",
+  "events": [
+    {
+      "name": "The Bookworm and the Magical Girl",
+      "text": [
+        "[[Stamina+]]+5\n[[Wit+]]+5\nZenno Rob Roy [[bond+]]+5",
+        "[[Energy+]]+20\n[[Power+]]+10\n[[chainEnd]]\nZenno Rob Roy [[bond+]]+5"
+      ]
+    },
+    {
+      "name": "Someday, I'll Be the Main Character",
+      "text": [
+        "[[Stamina+]]+10\n[[Wit+]]+10\n{link:Sharp Gaze} [[hint]]1"
+      ]
+    },
+    {
+      "name": "Book-lover Quirks",
+      "text": [
+        "[[Speed+]]+5\n[[Wit+]]+5\nZenno Rob Roy [[bond+]]+5",
+        "[[Energy+]]+10\n[[Power+]]+5\nZenno Rob Roy [[bond+]]+5"
+      ]
+    },
+    {
+      "name": "A Tale Entrusted",
+      "text": [
+        "[[Stamina+]]+10\n[[Wit+]]+10\nZenno Rob Roy [[bond+]]+5",
+        "{link:Medium Straightaways} [[hint]]1\nZenno Rob Roy [[bond+]]+5"
+      ]
+    }
+  ]
+}

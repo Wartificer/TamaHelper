@@ -1,0 +1,33 @@
+{
+  "name": "Yukino Bijin",
+  "rarity": "sr",
+  "type": "guts",
+  "events": [
+    {
+      "name": "Gotta Practice Order'n!",
+      "text": [
+        "[[Power+]]+5\nYukino Bijin [[bond+]]+5\n[[Mood+]]+1"
+      ]
+    },
+    {
+      "name": "A Natural City Girl",
+      "text": [
+        "[[Wit+]]+25\n[[Mood+]]+1"
+      ]
+    },
+    {
+      "name": "For a Spiffy Concert",
+      "text": [
+        "[[Guts+]]+10\nYukino Bijin [[bond+]]+5",
+        "[[Energy-]]-10\n[[Guts+]]+15\nYukino Bijin [[bond+]]+5"
+      ]
+    },
+    {
+      "name": "Aiming for the City Spots",
+      "text": [
+        "[[Energy-]]-10\n[[Guts+]]+10\nYukino Bijin [[bond+]]+5\n[[Mood+]]+1",
+        "{link:Corner Acceleration} [[hint]]1\nYukino Bijin [[bond+]]+5"
+      ]
+    }
+  ]
+}

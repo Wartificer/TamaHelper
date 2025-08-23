@@ -1,0 +1,33 @@
+{
+  "name": "Mayano Top Gun",
+  "rarity": "sr",
+  "type": "stamina",
+  "events": [
+    {
+      "name": "Still Taxiing?",
+      "text": [
+        "[[sp+]]+30\nMayano Top Gun [[bond+]]+5"
+      ]
+    },
+    {
+      "name": "Take Off toward Trendy ♪",
+      "text": [
+        "[[sp+]]+15\n[[Stamina+]]+10\n{link:Focus} [[hint]]1\nMayano Top Gun [[bond+]]+5"
+      ]
+    },
+    {
+      "name": "Snack Advice for Mayano!",
+      "text": [
+        "[[Stamina+]]+5\n[[Guts+]]+5\nMayano Top Gun [[bond+]]+5",
+        "[[Stamina+]]+10\nMayano Top Gun [[bond+]]+5"
+      ]
+    },
+    {
+      "name": "Fashion Advice for Mayano!",
+      "text": [
+        "{link:Straightaway Adept} [[hint]]1\nMayano Top Gun [[bond+]]+5",
+        "[[Stamina+]]+10\nMayano Top Gun [[bond+]]+5"
+      ]
+    }
+  ]
+}

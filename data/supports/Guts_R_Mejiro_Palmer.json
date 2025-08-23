@@ -1,0 +1,21 @@
+{
+  "name": "Mejiro Palmer",
+  "rarity": "r",
+  "type": "guts",
+  "events": [
+    {
+      "name": "An Inescapable Choice?",
+      "text": [
+        "[[Energy-]]-15\n[[Guts+]]+20\nMejiro Palmer [[bond+]]+5",
+        "[[sp+]]+15\n[[Power+]]+5\nMejiro Palmer [[bond+]]+5"
+      ]
+    },
+    {
+      "name": "Optimistic Escapism",
+      "text": [
+        "[[Guts+]]+15\nMejiro Palmer [[bond+]]+5",
+        "{link:Wet Conditions} [[hint]]1\nMejiro Palmer [[bond+]]+5"
+      ]
+    }
+  ]
+}

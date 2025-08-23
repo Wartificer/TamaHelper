@@ -1,0 +1,40 @@
+{
+  "name": "Special Week",
+  "rarity": "ssr",
+  "type": "guts",
+  "events": [
+    {
+      "name": "Dance in Cleats!",
+      "text": [
+        "[[Speed+]]+5\n[[Stamina+]]+5"
+      ]
+    },
+    {
+      "name": "A Roller Coaster of Feelings!",
+      "text": [
+        "[[Energy-]]-10\n[[Speed+]]+5\n[[Stamina+]]+5\n[[Guts+]]+10\nSpecial Week [[bond+]]+5",
+        "[[Energy+]]+20\n[[Wit+]]+10\n[[chainEnd]]\nSpecial Week [[bond+]]+5"
+      ]
+    },
+    {
+      "name": "Our Audience",
+      "text": [
+        "[[Energy-]]-10\n[[Energy-]]-10\n[[Speed+]]+15\n[[Speed+]]+5\n[[Stamina+]]+15\n[[Stamina+]]+5\n[[Guts+]]+15\n[[Guts+]]+5\n[[or]]\n{link:In Body and Mind} [[hint]]3\n{link:Homestretch Haste} [[hint]]1\nSpecial Week [[bond+]]+5\nSpecial Week [[bond+]]+5"
+      ]
+    },
+    {
+      "name": "Watch Where You're Going!",
+      "text": [
+        "{link:Extra Tank} [[hint]]1\nSpecial Week [[bond+]]+5",
+        "[[Guts+]]+15\nSpecial Week [[bond+]]+5"
+      ]
+    },
+    {
+      "name": "So Many Options!",
+      "text": [
+        "[[Energy+]]+10\nSpecial Week [[bond+]]+5\n[[Mood+]]+1",
+        "[[Energy-]]-10\n[[sp+]]+15\n[[Stamina+]]+15\nSpecial Week [[bond+]]+5"
+      ]
+    }
+  ]
+}

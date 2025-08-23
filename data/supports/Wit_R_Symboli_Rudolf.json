@@ -1,0 +1,21 @@
+{
+  "name": "Symboli Rudolf",
+  "rarity": "r",
+  "type": "wit",
+  "events": [
+    {
+      "name": "The Emperor's Encouragement",
+      "text": [
+        "[[Speed+]]+10",
+        "[[Energy-]]-10\n[[sp+]]+30"
+      ]
+    },
+    {
+      "name": "The Student Council President's Thoughtfulness",
+      "text": [
+        "{link:Rainy Days} [[hint]]1",
+        "[[Stamina+]]+15"
+      ]
+    }
+  ]
+}

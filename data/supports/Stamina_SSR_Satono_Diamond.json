@@ -1,0 +1,41 @@
+{
+  "name": "Satono Diamond",
+  "rarity": "ssr",
+  "type": "stamina",
+  "events": [
+    {
+      "name": "Hope Bearer",
+      "text": [
+        "[[Energy+]]+10\n[[Stamina+]]+2\n[[Guts+]]+2\n[[Wit+]]+2"
+      ]
+    },
+    {
+      "name": "Diamond Fixation",
+      "text": [
+        "[[Wit+]]+10\nSatono Diamond [[bond+]]+5",
+        "[[Energy+]]+15\n[[Stamina+]]+10\n[[Guts+]]+20\n[[or]]\nSatono Diamond [[bond+]]+5\n[[Mood-]]-1"
+      ]
+    },
+    {
+      "name": "Only for You",
+      "text": [
+        "[[Energy-]]-20\n[[Stamina+]]+30\n{link:Iron Will} [[hint]]1\nSatono Diamond [[bond+]]+5",
+        "[[Energy+]]+5\n[[Guts+]]+5\n{link:Iron Will} [[hint]]1\nSatono Diamond [[bond+]]+5"
+      ]
+    },
+    {
+      "name": "I Love New Things!",
+      "text": [
+        "[[Guts+]]+10\nSatono Diamond [[bond+]]+5",
+        "[[Energy-]]-10\n[[Stamina+]]+20\nSatono Diamond [[bond+]]+5"
+      ]
+    },
+    {
+      "name": "I Love Complicated Things!",
+      "text": [
+        "[[Stamina+]]+5\n[[Guts+]]+10\nSatono Diamond [[bond+]]+5",
+        "{link:Hesitant Front Runners} [[hint]]1\nSatono Diamond [[bond+]]+5"
+      ]
+    }
+  ]
+}

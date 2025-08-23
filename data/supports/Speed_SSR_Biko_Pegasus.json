@@ -1,0 +1,39 @@
+{
+  "name": "Biko Pegasus",
+  "rarity": "ssr",
+  "type": "speed",
+  "events": [
+    {
+      "name": "Passionate Promises, Heroic Ambitions!",
+      "text": [
+        "[[Speed+]]+5\n[[Guts+]]+5"
+      ]
+    },
+    {
+      "name": "Brace Yourself: Training with Carrot Ranger!",
+      "text": [
+        "[[Speed+]]+5\n[[Guts+]]+5"
+      ]
+    },
+    {
+      "name": "Showdown! Glorious Victory!",
+      "text": [
+        "[[Speed+]]+5\n[[Power+]]+5\n[[Guts+]]+5\n{link:Plan X} [[hint]]1"
+      ]
+    },
+    {
+      "name": "A Hero's Woes",
+      "text": [
+        "[[Energy+]]+15\nBiko Pegasus [[bond+]]+5",
+        "[[Energy+]]+5\n[[Power+]]+5\nBiko Pegasus [[bond+]]+5"
+      ]
+    },
+    {
+      "name": "Preparing My Special Move!",
+      "text": [
+        "{link:Sprint Straightaways} [[hint]]1\nBiko Pegasus [[bond+]]+5",
+        "[[Energy+]]+30\nBiko Pegasus [[bond+]]+5"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "name": "Smart Falcon",
+  "rarity": "r",
+  "type": "power",
+  "events": [
+    {
+      "name": "Chants Are the Life of a Concert ☆",
+      "text": [
+        "[[Stamina+]]+5\n[[Guts+]]+10\nSmart Falcon [[bond+]]+5",
+        "[[Wit+]]+15\nSmart Falcon [[bond+]]+5"
+      ]
+    },
+    {
+      "name": "If I'm Cute, Come to My Show! ☆",
+      "text": [
+        "[[Energy-]]-10\n[[Power+]]+10\n{link:Final Push} [[hint]]1\nSmart Falcon [[bond+]]+5",
+        "[[Energy+]]+10\n[[Wit+]]+5\nSmart Falcon [[bond+]]+5"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "name": "Kitasan Black",
+  "rarity": "r",
+  "type": "speed",
+  "events": [
+    {
+      "name": "Ah, Friendship",
+      "text": [
+        "[[Power+]]+5\nKitasan Black [[bond+]]+5\n[[Mood+]]+1",
+        "[[Energy+]]+10\nKitasan Black [[bond+]]+5"
+      ]
+    },
+    {
+      "name": "Ah, Home Sweet Home",
+      "text": [
+        "[[Speed+]]+5\n[[Power+]]+10\nKitasan Black [[bond+]]+5",
+        "Kitasan Black [[bond+]]+5\nAquire {link:Practice Perfect}"
+      ]
+    }
+  ]
+}

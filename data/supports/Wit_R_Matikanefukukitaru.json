@@ -1,0 +1,21 @@
+{
+  "name": "Matikanefukukitaru",
+  "rarity": "r",
+  "type": "wit",
+  "events": [
+    {
+      "name": "Maximum Spirituality",
+      "text": [
+        "[[sp+]]+15\n[[Wit+]]+5\nMatikanefukukitaru [[bond+]]+5",
+        "[[Energy-]]-10\n[[Speed+]]+5\n[[Stamina+]]+5\n[[Power+]]+5\nMatikanefukukitaru [[bond+]]+5"
+      ]
+    },
+    {
+      "name": "When Piety and Kindness Intersect",
+      "text": [
+        "[[sp+]]+30\nMatikanefukukitaru [[bond+]]+5",
+        "[[Energy+]]+20\nMatikanefukukitaru [[bond+]]+5"
+      ]
+    }
+  ]
+}

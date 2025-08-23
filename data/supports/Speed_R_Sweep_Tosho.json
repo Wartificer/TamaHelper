@@ -1,0 +1,21 @@
+{
+  "name": "Sweep Tosho",
+  "rarity": "r",
+  "type": "speed",
+  "events": [
+    {
+      "name": "Miracle ☆ Escape!",
+      "text": [
+        "[[Energy+]]+10\n[[Speed+]]+5\nSweep Tosho [[bond+]]+5",
+        "[[Energy-]]-10\n[[Speed+]]+20\nSweep Tosho [[bond+]]+5"
+      ]
+    },
+    {
+      "name": "Wonderful ☆ Mistake!",
+      "text": [
+        "[[Energy-]]-20\n[[Energy-]]-15\n[[sp+]]+40\n[[sp+]]+40\n[[or]]\nSweep Tosho [[bond+]]+5",
+        "Sweep Tosho [[bond+]]+5\nAquire {link:Charming}"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,35 @@
+{
+  "name": "Sweep Tosho",
+  "rarity": "sr",
+  "type": "speed",
+  "events": [
+    {
+      "name": "Some Very Green Friends",
+      "text": [
+        "[[sp+]]+10\n[[Speed+]]+5\n{link:Lucky Seven} [[hint]]1\nSweep Tosho [[bond+]]+5",
+        "{link:Maverick} [[hint]]5\n[[Mood-]]-1"
+      ]
+    },
+    {
+      "name": "Premeditated Mischief",
+      "text": [
+        "[[sp+]]+20\n[[Speed+]]+10\n{link:Levelheaded} [[hint]]1\nSweep Tosho [[bond+]]+5",
+        "{link:Lone Wolf} [[hint]]1\n[[Mood-]]-1"
+      ]
+    },
+    {
+      "name": "Miracle ☆ Escape!",
+      "text": [
+        "[[Energy+]]+10\n[[Speed+]]+5\nSweep Tosho [[bond+]]+5",
+        "[[Energy-]]-10\n[[Speed+]]+20\nSweep Tosho [[bond+]]+5"
+      ]
+    },
+    {
+      "name": "Wonderful ☆ Mistake!",
+      "text": [
+        "[[Energy-]]-20\n[[Energy-]]-15\n[[sp+]]+40\n[[sp+]]+40\n[[or]]\nSweep Tosho [[bond+]]+5",
+        "Sweep Tosho [[bond+]]+5\nAquire {link:Charming}"
+      ]
+    }
+  ]
+}

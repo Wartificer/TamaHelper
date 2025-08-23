@@ -1,0 +1,21 @@
+{
+  "name": "Satono Diamond",
+  "rarity": "r",
+  "type": "stamina",
+  "events": [
+    {
+      "name": "I Love New Things!",
+      "text": [
+        "[[Guts+]]+10\nSatono Diamond [[bond+]]+5",
+        "[[Energy-]]-10\n[[Stamina+]]+20\nSatono Diamond [[bond+]]+5"
+      ]
+    },
+    {
+      "name": "I Love Complicated Things!",
+      "text": [
+        "[[Stamina+]]+5\n[[Guts+]]+10\nSatono Diamond [[bond+]]+5",
+        "{link:Hesitant Front Runners} [[hint]]1\nSatono Diamond [[bond+]]+5"
+      ]
+    }
+  ]
+}

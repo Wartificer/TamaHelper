@@ -1,0 +1,21 @@
+{
+  "name": "Agnes Tachyon",
+  "rarity": "r",
+  "type": "wit",
+  "events": [
+    {
+      "name": "The Correlation between Sleep and Efficiency",
+      "text": [
+        "[[Power+]]+5\n[[Wit+]]+5\nAgnes Tachyon [[bond+]]+5",
+        "[[Wit+]]+10\nAgnes Tachyon [[bond+]]+5"
+      ]
+    },
+    {
+      "name": "Happenstance Introduced Through Intervention",
+      "text": [
+        "{link:Late Surger Savvy} [[hint]]1\nAgnes Tachyon [[bond+]]+5",
+        "[[Wit+]]+10\nAgnes Tachyon [[bond+]]+5"
+      ]
+    }
+  ]
+}

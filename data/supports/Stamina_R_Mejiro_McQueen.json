@@ -1,0 +1,21 @@
+{
+  "name": "Mejiro McQueen",
+  "rarity": "r",
+  "type": "stamina",
+  "events": [
+    {
+      "name": "To Maintain My Weight",
+      "text": [
+        "[[Energy-]]-10\n[[Stamina+]]+15\nMejiro McQueen [[bond+]]+5",
+        "Maximum [[Energy+]]+4\n[[Stamina+]]+5\nMejiro McQueen [[bond+]]+5"
+      ]
+    },
+    {
+      "name": "To Reach the Greatest Heights",
+      "text": [
+        "[[Stamina+]]+5\n[[Guts+]]+5\nMejiro McQueen [[bond+]]+5",
+        "{link:Early Lead} [[hint]]1\nMejiro McQueen [[bond+]]+5"
+      ]
+    }
+  ]
+}

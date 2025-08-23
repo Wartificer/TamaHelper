@@ -1,0 +1,33 @@
+{
+  "name": "Air Groove",
+  "rarity": "sr",
+  "type": "guts",
+  "events": [
+    {
+      "name": "As Dignified as a Moth Orchid",
+      "text": [
+        "[[Power+]]+5\n[[Guts+]]+5"
+      ]
+    },
+    {
+      "name": "Bloom by the Oak",
+      "text": [
+        "[[Energy-]]-20\n[[Power+]]+5\n[[Guts+]]+5\n{link:Straightaway Acceleration} [[hint]]1\nAir Groove [[bond+]]+5"
+      ]
+    },
+    {
+      "name": "Strict but Gracious",
+      "text": [
+        "{link:Go with the Flow} [[hint]]1\nAir Groove [[bond+]]+5",
+        "[[Energy+]]+10\n[[Wit+]]+10"
+      ]
+    },
+    {
+      "name": "Agile but Strong",
+      "text": [
+        "[[Power+]]+15\nAir Groove [[bond+]]+5",
+        "[[Speed+]]+10\n[[Stamina+]]+5\nAir Groove [[bond+]]+5"
+      ]
+    }
+  ]
+}

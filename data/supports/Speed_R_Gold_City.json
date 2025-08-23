@@ -1,0 +1,21 @@
+{
+  "name": "Gold City",
+  "rarity": "r",
+  "type": "speed",
+  "events": [
+    {
+      "name": "08:36 / Crap, I Overslept",
+      "text": [
+        "[[sp+]]+45\nGold City [[bond+]]+5\n[[Mood-]]-1",
+        "[[Energy+]]+10\n[[Wit+]]+5\nGold City [[bond+]]+5"
+      ]
+    },
+    {
+      "name": "13:12 / Lunch Break, Gotta Get Myself Together",
+      "text": [
+        "[[sp+]]+30\nGold City [[bond+]]+5",
+        "{link:A Small Breather} [[hint]]1\nGold City [[bond+]]+5"
+      ]
+    }
+  ]
+}

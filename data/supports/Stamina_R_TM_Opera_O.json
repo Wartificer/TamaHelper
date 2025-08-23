@@ -1,0 +1,21 @@
+{
+  "name": "TM Opera O",
+  "rarity": "r",
+  "type": "stamina",
+  "events": [
+    {
+      "name": "Etude to Victory",
+      "text": [
+        "[[sp+]]+30\n[[Speed+]]+5\n[[Mood-]]-1",
+        "[[sp+]]+15\n[[Power+]]+5"
+      ]
+    },
+    {
+      "name": "Beyond Our Limited Time",
+      "text": [
+        "[[Energy+]]+10\n[[sp+]]+15",
+        "{link:Non-Standard Distance} [[hint]]1"
+      ]
+    }
+  ]
+}

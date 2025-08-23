@@ -1,0 +1,21 @@
+{
+  "name": "Twin Turbo",
+  "rarity": "r",
+  "type": "speed",
+  "events": [
+    {
+      "name": "Just Start Running!",
+      "text": [
+        "[[Speed+]]+20\n[[Mood-]]-1",
+        "[[Energy-]]-10\n[[Power+]]+20"
+      ]
+    },
+    {
+      "name": "I'm All Fired Up!",
+      "text": [
+        "[[Energy+]]+15\nTwin Turbo [[bond+]]+5",
+        "{link:Early Lead} [[hint]]1\nTwin Turbo [[bond+]]+5"
+      ]
+    }
+  ]
+}

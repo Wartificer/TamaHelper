@@ -1,0 +1,42 @@
+{
+  "name": "Yukino Bijin",
+  "rarity": "ssr",
+  "type": "wit",
+  "events": [
+    {
+      "name": "Cozy Memories of Wanko Soba",
+      "text": [
+        "Yukino Bijin [[bond+]]+5\n[[Mood+]]+1",
+        "Maximum [[Energy+]]+4\nYukino Bijin [[bond+]]+5"
+      ]
+    },
+    {
+      "name": "The Class Rep's Intense Crash Course",
+      "text": [
+        "[[Power+]]+5\nYukino Bijin [[bond+]]+5\n[[Mood+]]+1",
+        "[[Power+]]+3\n[[Guts+]]+3\n[[Wit+]]+3\nYukino Bijin [[bond+]]+5"
+      ]
+    },
+    {
+      "name": "I Wanna Win!",
+      "text": [
+        "{link:No Stopping Me!} [[hint]]1\nYukino Bijin [[bond+]]+5\n[[Mood+]]+1",
+        "[[Power+]]+3\n[[Guts+]]+3\n[[Wit+]]+3\n{link:No Stopping Me!} [[hint]]1\nYukino Bijin [[bond+]]+5"
+      ]
+    },
+    {
+      "name": "For a Spiffy Concert",
+      "text": [
+        "[[Guts+]]+10\nYukino Bijin [[bond+]]+5",
+        "[[Energy-]]-10\n[[Guts+]]+15\nYukino Bijin [[bond+]]+5"
+      ]
+    },
+    {
+      "name": "Aiming for the City Spots",
+      "text": [
+        "[[Energy-]]-10\n[[Guts+]]+10\nYukino Bijin [[bond+]]+5\n[[Mood+]]+1",
+        "{link:Corner Acceleration} [[hint]]1\nYukino Bijin [[bond+]]+5"
+      ]
+    }
+  ]
+}

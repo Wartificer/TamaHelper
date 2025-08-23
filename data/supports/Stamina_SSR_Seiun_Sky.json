@@ -1,0 +1,40 @@
+{
+  "name": "Seiun Sky",
+  "rarity": "ssr",
+  "type": "stamina",
+  "events": [
+    {
+      "name": "Be Strategic ☆",
+      "text": [
+        "[[Energy+]]+10\n[[Wit+]]+5\nSeiun Sky [[bond+]]+5",
+        "[[sp+]]+30\n[[chainEnd]]\n{link:Second Wind} [[hint]]1\nSeiun Sky [[bond-]]-5"
+      ]
+    },
+    {
+      "name": "Beware of the Trap",
+      "text": [
+        "[[Speed+]]+5\n[[Stamina+]]+5"
+      ]
+    },
+    {
+      "name": "It's All to Win",
+      "text": [
+        "[[Energy+]]+10\n[[sp+]]+5\n[[Speed+]]+5\n[[Stamina+]]+5\n[[Wit+]]+5\n[[or]]\n{link:Fast-Paced} [[hint]]1\n{link:Escape Artist} [[hint]]1/+3\n{link:Escape Artist} [[hint]]1/+3 or {link:Fast-Paced} [[hint]]1\n[[Mood+]]+1"
+      ]
+    },
+    {
+      "name": "Recruiting Cat Catchers",
+      "text": [
+        "[[Energy+]]+10\n[[Wit+]]+5\nSeiun Sky [[bond+]]+5",
+        "[[Energy-]]-10\n[[Speed+]]+15\n[[Stamina+]]+5\nSeiun Sky [[bond+]]+5"
+      ]
+    },
+    {
+      "name": "Recruiting Advisors",
+      "text": [
+        "[[Wit+]]+15\nSeiun Sky [[bond+]]+5",
+        "{link:Keeping the Lead} [[hint]]1\nSeiun Sky [[bond+]]+5"
+      ]
+    }
+  ]
+}

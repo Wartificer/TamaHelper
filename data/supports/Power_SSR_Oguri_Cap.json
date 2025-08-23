@@ -1,0 +1,41 @@
+{
+  "name": "Oguri Cap",
+  "rarity": "ssr",
+  "type": "power",
+  "events": [
+    {
+      "name": "A Plushie...",
+      "text": [
+        "Maximum [[Energy+]]+4\n[[Power+]]+5"
+      ]
+    },
+    {
+      "name": "How Should I Respond?",
+      "text": [
+        "[[sp+]]+10\n[[Power+]]+5\n{link:Stamina to Spare} [[hint]]1\nOguri Cap [[bond+]]+5",
+        "[[sp+]]+10\n[[Stamina+]]+5\n{link:Outer Swell} [[hint]]1\nOguri Cap [[bond+]]+5"
+      ]
+    },
+    {
+      "name": "What I Want to Say",
+      "text": [
+        "[[sp+]]+15\n[[sp+]]+10\n[[Power+]]+15\n[[Power+]]+10\n[[Guts+]]+10\n[[Guts+]]+5\n[[or]]\n{link:{link:Furious Feat}} [[hint]]3\n{link:{link:Furious Feat}} [[hint]]1\nOguri Cap [[bond+]]+5\nOguri Cap [[bond+]]+5",
+        "[[Energy+]]+30"
+      ]
+    },
+    {
+      "name": "How Should I Respond?",
+      "text": [
+        "[[Energy+]]+5\n[[Power+]]+5",
+        "[[Energy-]]-10\n[[Guts+]]+15"
+      ]
+    },
+    {
+      "name": "Conquering the Crowds",
+      "text": [
+        "[[sp+]]+15\n[[Power+]]+5",
+        "{link:Nakayama Racecourse} [[hint]]1"
+      ]
+    }
+  ]
+}

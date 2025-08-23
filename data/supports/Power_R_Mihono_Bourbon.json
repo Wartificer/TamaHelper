@@ -1,0 +1,21 @@
+{
+  "name": "Mihono Bourbon",
+  "rarity": "r",
+  "type": "power",
+  "events": [
+    {
+      "name": "Do No Harm",
+      "text": [
+        "[[Energy-]]-10\n[[Stamina+]]+5\n[[Power+]]+15\nMihono Bourbon [[bond+]]+5",
+        "[[Energy+]]+10\n[[Wit+]]+5\nMihono Bourbon [[bond+]]+5"
+      ]
+    },
+    {
+      "name": "Orders Must Be Followed",
+      "text": [
+        "{link:Focus} [[hint]]1\nMihono Bourbon [[bond+]]+5",
+        "[[sp+]]+15\n[[Speed+]]+10\nMihono Bourbon [[bond+]]+5"
+      ]
+    }
+  ]
+}

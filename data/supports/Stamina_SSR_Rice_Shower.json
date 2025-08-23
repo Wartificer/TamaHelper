@@ -1,0 +1,39 @@
+{
+  "name": "Rice Shower",
+  "rarity": "ssr",
+  "type": "stamina",
+  "events": [
+    {
+      "name": "A Page from a Windy Day",
+      "text": [
+        "[[Guts+]]+10\nRice Shower [[bond+]]+5"
+      ]
+    },
+    {
+      "name": "A Page from a Day Spent with Friends",
+      "text": [
+        "[[Stamina+]]+10\nRice Shower [[bond+]]+5"
+      ]
+    },
+    {
+      "name": "A Page from a Day of Hard Work",
+      "text": [
+        "[[Energy-]]-10\n[[Energy-]]-10\n[[Energy-]]-10\n[[Stamina+]]+5\n[[Guts+]]+5\n[[or]]\n[[or]]\n{link:{link:Adrenaline Rush}} [[hint]]3\n{link:{link:Adrenaline Rush}} [[hint]]1\n{link:Extra Tank} [[hint]]1\nRice Shower [[bond+]]+5\nRice Shower [[bond+]]+5\nRice Shower [[bond+]]+5"
+      ]
+    },
+    {
+      "name": "A Page of Flower Shop Assistance",
+      "text": [
+        "Rice Shower [[bond+]]+5\n[[Mood+]]+2",
+        "[[Stamina+]]+10\nRice Shower [[bond+]]+5"
+      ]
+    },
+    {
+      "name": "A Page About Cloudy Weather",
+      "text": [
+        "[[Speed+]]+5\n[[Guts+]]+5\nRice Shower [[bond+]]+5",
+        "{link:Firm Conditions} [[hint]]1\nRice Shower [[bond+]]+5"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "name": "Yukino Bijin",
+  "rarity": "r",
+  "type": "guts",
+  "events": [
+    {
+      "name": "For a Spiffy Concert",
+      "text": [
+        "[[Guts+]]+10\nYukino Bijin [[bond+]]+5",
+        "[[Energy-]]-10\n[[Guts+]]+15\nYukino Bijin [[bond+]]+5"
+      ]
+    },
+    {
+      "name": "Aiming for the City Spots",
+      "text": [
+        "[[Energy-]]-10\n[[Guts+]]+10\nYukino Bijin [[bond+]]+5\n[[Mood+]]+1",
+        "{link:Corner Acceleration} [[hint]]1\nYukino Bijin [[bond+]]+5"
+      ]
+    }
+  ]
+}

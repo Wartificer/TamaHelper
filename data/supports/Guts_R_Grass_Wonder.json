@@ -1,0 +1,21 @@
+{
+  "name": "Grass Wonder",
+  "rarity": "r",
+  "type": "guts",
+  "events": [
+    {
+      "name": "Library Vexation",
+      "text": [
+        "[[Wit+]]+10\nGrass Wonder [[bond+]]+5",
+        "[[Guts+]]+5\n[[Wit+]]+5\nGrass Wonder [[bond+]]+5"
+      ]
+    },
+    {
+      "name": "A Friendly Daytime Discussion",
+      "text": [
+        "{link:Frenzied Pace Chasers} [[hint]]1\nGrass Wonder [[bond+]]+5",
+        "{link:Target in Sight} [[hint]]1\nGrass Wonder [[bond+]]+5"
+      ]
+    }
+  ]
+}

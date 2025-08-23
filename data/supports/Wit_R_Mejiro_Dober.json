@@ -1,0 +1,21 @@
+{
+  "name": "Mejiro Dober",
+  "rarity": "r",
+  "type": "wit",
+  "events": [
+    {
+      "name": "Give It a Try",
+      "text": [
+        "[[Energy+]]+15\nMejiro Dober [[bond+]]+5",
+        "[[sp+]]+15\nMejiro Dober [[bond+]]+5\n[[Mood+]]+1"
+      ]
+    },
+    {
+      "name": "Hope She'll Like It...",
+      "text": [
+        "[[sp+]]+45\nMejiro Dober [[bond+]]+5",
+        "{link:Unyielding Spirit} [[hint]]1\nMejiro Dober [[bond+]]+5"
+      ]
+    }
+  ]
+}

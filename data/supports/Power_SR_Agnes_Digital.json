@@ -1,0 +1,33 @@
+{
+  "name": "Agnes Digital",
+  "rarity": "sr",
+  "type": "power",
+  "events": [
+    {
+      "name": "Happy Otaku Life",
+      "text": [
+        "[[Power+]]+10"
+      ]
+    },
+    {
+      "name": "My Love for Umamusume is Eternal!",
+      "text": [
+        "[[Speed+]]+5\n[[Power+]]+10\n{link:Frenzied End Closers} [[hint]]1"
+      ]
+    },
+    {
+      "name": "Umamusume Deficiency!",
+      "text": [
+        "[[Energy+]]+5\n[[Speed+]]+5\nAgnes Digital [[bond+]]+5",
+        "[[Speed+]]+5\n[[Power+]]+5\nAgnes Digital [[bond+]]+5"
+      ]
+    },
+    {
+      "name": "Heavy Romance",
+      "text": [
+        "{link:Rainy Days} [[hint]]1\nAgnes Digital [[bond+]]+5",
+        "{link:Wet Conditions} [[hint]]1\nAgnes Digital [[bond+]]+5"
+      ]
+    }
+  ]
+}

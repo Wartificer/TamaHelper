@@ -1,0 +1,40 @@
+{
+  "name": "Kitasan Black",
+  "rarity": "ssr",
+  "type": "speed",
+  "events": [
+    {
+      "name": "Chasing Brilliance",
+      "text": [
+        "[[Speed+]]+2\n[[Power+]]+2\n[[Wit+]]+2\nKitasan Black [[bond+]]+5\n[[Mood+]]+1"
+      ]
+    },
+    {
+      "name": "Paying It Forward",
+      "text": [
+        "[[Energy+]]+10\nKitasan Black [[bond+]]+5\n[[Mood+]]+1",
+        "[[Speed+]]+5/+10\n{link:Straightaway Adept} [[hint]]1/+3\nKitasan Black [[bond+]]+5"
+      ]
+    },
+    {
+      "name": "We Walk Together",
+      "text": [
+        "[[Speed+]]+10\n[[Speed+]]+5\n[[Power+]]+10\n[[Power+]]+5\n[[or]]\n{link:{link:Professor of Curvature}} [[hint]]3\n{link:{link:Professor of Curvature}} [[hint]]1\nKitasan Black [[bond+]]+5\nKitasan Black [[bond+]]+5"
+      ]
+    },
+    {
+      "name": "Ah, Friendship",
+      "text": [
+        "[[Power+]]+5\nKitasan Black [[bond+]]+5\n[[Mood+]]+1",
+        "[[Energy+]]+10\nKitasan Black [[bond+]]+5"
+      ]
+    },
+    {
+      "name": "Ah, Home Sweet Home",
+      "text": [
+        "[[Speed+]]+5\n[[Power+]]+10\nKitasan Black [[bond+]]+5",
+        "Kitasan Black [[bond+]]+5\nAquire {link:Practice Perfect}"
+      ]
+    }
+  ]
+}

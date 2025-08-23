@@ -1,0 +1,41 @@
+{
+  "name": "Special Week",
+  "rarity": "ssr",
+  "type": "speed",
+  "events": [
+    {
+      "name": "Someday, I'll Be Just Like Her!",
+      "text": [
+        "[[Energy+]]+10\n[[Speed+]]+5"
+      ]
+    },
+    {
+      "name": "Just a Little Closer",
+      "text": [
+        "[[Energy-]]-10\n[[Speed+]]+15\nSpecial Week [[bond+]]+5",
+        "[[Energy-]]-10\n[[sp+]]+20\nSpecial Week [[bond+]]+5",
+        "[[Energy-]]-10\n{link:Shake It Out} [[hint]]1\nSpecial Week [[bond+]]+5"
+      ]
+    },
+    {
+      "name": "Forms of Aspiration",
+      "text": [
+        "[[Energy+]]+10\n[[Energy+]]+10\n[[sp+]]+10\n[[Speed+]]+10\n[[Speed+]]+5\n[[or]]\n{link:Gourmand} [[hint]]3\n{link:Hydrate} [[hint]]1/+3"
+      ]
+    },
+    {
+      "name": "Watch Where You're Going!",
+      "text": [
+        "{link:Extra Tank} [[hint]]1\nSpecial Week [[bond+]]+5",
+        "[[Guts+]]+15\nSpecial Week [[bond+]]+5"
+      ]
+    },
+    {
+      "name": "So Many Options!",
+      "text": [
+        "[[Energy+]]+10\nSpecial Week [[bond+]]+5\n[[Mood+]]+1",
+        "[[Energy-]]-10\n[[sp+]]+15\n[[Stamina+]]+15\nSpecial Week [[bond+]]+5"
+      ]
+    }
+  ]
+}

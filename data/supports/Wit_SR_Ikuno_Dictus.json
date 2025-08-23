@@ -1,0 +1,34 @@
+{
+  "name": "Ikuno Dictus",
+  "rarity": "sr",
+  "type": "wit",
+  "events": [
+    {
+      "name": "Ikuno-Style Friendship",
+      "text": [
+        "[[sp+]]+20\n[[Wit+]]+10"
+      ]
+    },
+    {
+      "name": "Ikuno-Style Support",
+      "text": [
+        "[[Wit+]]+15\n{link:Frenzied Front Runners} [[hint]]3\nIkuno Dictus [[bond+]]+5",
+        "[[Wit+]]+15\n{link:Frenzied End Closers} [[hint]]3\nIkuno Dictus [[bond+]]+5"
+      ]
+    },
+    {
+      "name": "Ikuno-Style Flawless Method",
+      "text": [
+        "[[Wit+]]+10\nIkuno Dictus [[bond+]]+5",
+        "[[sp+]]+30\nIkuno Dictus [[bond+]]+5"
+      ]
+    },
+    {
+      "name": "Ikuno-Style Management",
+      "text": [
+        "[[Stamina+]]+20\nIkuno Dictus [[bond+]]+5",
+        "{link:Trick (Rear)} [[hint]]1\nIkuno Dictus [[bond+]]+5"
+      ]
+    }
+  ]
+}

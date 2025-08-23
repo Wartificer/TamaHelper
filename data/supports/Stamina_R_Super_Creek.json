@@ -1,0 +1,21 @@
+{
+  "name": "Super Creek",
+  "rarity": "r",
+  "type": "stamina",
+  "events": [
+    {
+      "name": "Leave it to Me to Help Out! ♪",
+      "text": [
+        "[[Energy+]]+15\nSuper Creek [[bond+]]+5",
+        "[[Stamina+]]+10\nSuper Creek [[bond+]]+5"
+      ]
+    },
+    {
+      "name": "Leave it to Me to Be Considerate! ♪",
+      "text": [
+        "{link:Deep Breaths} [[hint]]1\nSuper Creek [[bond+]]+5",
+        "[[Energy+]]+10\n[[Stamina+]]+5\nSuper Creek [[bond+]]+5"
+      ]
+    }
+  ]
+}

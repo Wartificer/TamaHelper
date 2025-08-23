@@ -1,0 +1,33 @@
+{
+  "name": "Narita Taishin",
+  "rarity": "sr",
+  "type": "speed",
+  "events": [
+    {
+      "name": "Nighttime Secret",
+      "text": [
+        "[[Speed+]]+5\n[[Stamina+]]+5"
+      ]
+    },
+    {
+      "name": "Enjoy the Musical!",
+      "text": [
+        "[[Speed+]]+5\n[[Stamina+]]+5\n[[Power+]]+5\n{link:I Can See Right Through You} [[hint]]1"
+      ]
+    },
+    {
+      "name": "Just Leave Me Alone",
+      "text": [
+        "[[sp+]]+15\n[[Stamina+]]+5\nNarita Taishin [[bond+]]+5",
+        "[[sp+]]+15\n[[Power+]]+5\nNarita Taishin [[bond+]]+5"
+      ]
+    },
+    {
+      "name": "Just Don't Bother Me",
+      "text": [
+        "{link:Pressure} [[hint]]1\nNarita Taishin [[bond+]]+5",
+        "[[sp+]]+30\nNarita Taishin [[bond+]]+5"
+      ]
+    }
+  ]
+}

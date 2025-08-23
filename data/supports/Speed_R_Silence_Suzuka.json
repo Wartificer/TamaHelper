@@ -1,0 +1,21 @@
+{
+  "name": "Silence Suzuka",
+  "rarity": "r",
+  "type": "speed",
+  "events": [
+    {
+      "name": "On and On",
+      "text": [
+        "[[Speed+]]+10\n[[Stamina+]]+5\nSilence Suzuka [[bond+]]+5",
+        "[[Speed+]]+15\nSilence Suzuka [[bond+]]+5"
+      ]
+    },
+    {
+      "name": "What Should I Do?",
+      "text": [
+        "[[Speed+]]+5\n[[Stamina+]]+5\n[[Wit+]]+5\nSilence Suzuka [[bond+]]+5",
+        "{link:Left-Handed} [[hint]]1\nSilence Suzuka [[bond+]]+5"
+      ]
+    }
+  ]
+}

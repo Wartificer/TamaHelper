@@ -1,0 +1,39 @@
+{
+  "name": "Super Creek",
+  "rarity": "ssr",
+  "type": "stamina",
+  "events": [
+    {
+      "name": "Freshly Made in Ample Amounts",
+      "text": [
+        "[[Energy+]]+10\n[[Stamina+]]+5"
+      ]
+    },
+    {
+      "name": "The Taste of Warmth",
+      "text": [
+        "[[Stamina+]]+5\n[[Power+]]+5"
+      ]
+    },
+    {
+      "name": "Have a Second Helping!",
+      "text": [
+        "[[Stamina+]]+10\n[[Power+]]+5\n{link:Swinging Maestro} [[hint]]1"
+      ]
+    },
+    {
+      "name": "Leave it to Me to Help Out! ♪",
+      "text": [
+        "[[Energy+]]+15\nSuper Creek [[bond+]]+5",
+        "[[Stamina+]]+10\nSuper Creek [[bond+]]+5"
+      ]
+    },
+    {
+      "name": "Leave it to Me to Be Considerate! ♪",
+      "text": [
+        "{link:Deep Breaths} [[hint]]1\nSuper Creek [[bond+]]+5",
+        "[[Energy+]]+10\n[[Stamina+]]+5\nSuper Creek [[bond+]]+5"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "name": "Zenno Rob Roy",
+  "rarity": "r",
+  "type": "stamina",
+  "events": [
+    {
+      "name": "Book-lover Quirks",
+      "text": [
+        "[[Speed+]]+5\n[[Wit+]]+5\nZenno Rob Roy [[bond+]]+5",
+        "[[Energy+]]+10\n[[Power+]]+5\nZenno Rob Roy [[bond+]]+5"
+      ]
+    },
+    {
+      "name": "A Tale Entrusted",
+      "text": [
+        "[[Stamina+]]+10\n[[Wit+]]+10\nZenno Rob Roy [[bond+]]+5",
+        "{link:Medium Straightaways} [[hint]]1\nZenno Rob Roy [[bond+]]+5"
+      ]
+    }
+  ]
+}

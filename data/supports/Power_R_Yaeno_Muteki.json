@@ -1,0 +1,21 @@
+{
+  "name": "Yaeno Muteki",
+  "rarity": "r",
+  "type": "power",
+  "events": [
+    {
+      "name": "Firm and Plain, Yet Close to Virtue",
+      "text": [
+        "[[Speed+]]+10",
+        "[[Power+]]+5\n[[Mood+]]+1"
+      ]
+    },
+    {
+      "name": "The Will to Protect!",
+      "text": [
+        "[[Stamina+]]+10\n[[Power+]]+10",
+        "{link:Medium Corners} [[hint]]1"
+      ]
+    }
+  ]
+}

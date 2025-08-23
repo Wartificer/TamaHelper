@@ -1,0 +1,21 @@
+{
+  "name": "Oguri Cap",
+  "rarity": "r",
+  "type": "power",
+  "events": [
+    {
+      "name": "How Should I Respond?",
+      "text": [
+        "[[Energy+]]+5\n[[Power+]]+5",
+        "[[Energy-]]-10\n[[Guts+]]+15"
+      ]
+    },
+    {
+      "name": "Conquering the Crowds",
+      "text": [
+        "[[sp+]]+15\n[[Power+]]+5",
+        "{link:Nakayama Racecourse} [[hint]]1"
+      ]
+    }
+  ]
+}

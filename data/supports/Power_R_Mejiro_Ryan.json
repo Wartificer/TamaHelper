@@ -1,0 +1,21 @@
+{
+  "name": "Mejiro Ryan",
+  "rarity": "r",
+  "type": "power",
+  "events": [
+    {
+      "name": "My Muscles and Me, Onward to Tomorrow!",
+      "text": [
+        "[[Energy-]]-10\n[[Power+]]+15\nMejiro Ryan [[bond+]]+5",
+        "Maximum [[Energy+]]+4\n[[Power+]]+5\nMejiro Ryan [[bond+]]+5"
+      ]
+    },
+    {
+      "name": "It's Not Like I Like Romance!",
+      "text": [
+        "{link:Pace Strategy} [[hint]]1\nMejiro Ryan [[bond+]]+5",
+        "[[Energy+]]+30\nMejiro Ryan [[bond+]]+5"
+      ]
+    }
+  ]
+}

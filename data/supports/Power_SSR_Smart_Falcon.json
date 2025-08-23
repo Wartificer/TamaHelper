@@ -1,0 +1,40 @@
+{
+  "name": "Smart Falcon",
+  "rarity": "ssr",
+  "type": "power",
+  "events": [
+    {
+      "name": "Always on Stage ☆",
+      "text": [
+        "[[Wit+]]+10\nSmart Falcon [[bond+]]+5",
+        "[[Energy+]]+25\n[[chainEnd]]\n{link:Focus} [[hint]]1\nSmart Falcon [[bond+]]+5"
+      ]
+    },
+    {
+      "name": "Shining Always and Everywhere ☆",
+      "text": [
+        "[[Speed+]]+5\n[[Power+]]+5"
+      ]
+    },
+    {
+      "name": "My Umadol Way ☆",
+      "text": [
+        "Maximum [[Energy+]]+4\n[[Stamina+]]+5\n[[Power+]]+5\n[[Wit+]]+5\n[[or]]\n{link:Center Stage} [[hint]]3\n{link:Prudent Positioning} [[hint]]1\n{link:Prudent Positioning} [[hint]]1 or {link:Center Stage} [[hint]]3"
+      ]
+    },
+    {
+      "name": "Chants Are the Life of a Concert ☆",
+      "text": [
+        "[[Stamina+]]+5\n[[Guts+]]+10\nSmart Falcon [[bond+]]+5",
+        "[[Wit+]]+15\nSmart Falcon [[bond+]]+5"
+      ]
+    },
+    {
+      "name": "If I'm Cute, Come to My Show! ☆",
+      "text": [
+        "[[Energy-]]-10\n[[Power+]]+10\n{link:Final Push} [[hint]]1\nSmart Falcon [[bond+]]+5",
+        "[[Energy+]]+10\n[[Wit+]]+5\nSmart Falcon [[bond+]]+5"
+      ]
+    }
+  ]
+}

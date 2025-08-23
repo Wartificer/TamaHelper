@@ -1,0 +1,21 @@
+{
+  "name": "Ines Fujin",
+  "rarity": "r",
+  "type": "guts",
+  "events": [
+    {
+      "name": "It's a Game of Tag!",
+      "text": [
+        "[[Energy+]]+10\n[[Speed+]]+5\nInes Fujin [[bond+]]+5",
+        "{link:Fast-Paced} [[hint]]1\nInes Fujin [[bond+]]+5"
+      ]
+    },
+    {
+      "name": "Ten Minutes Left!",
+      "text": [
+        "[[Guts+]]+15\nInes Fujin [[bond+]]+5",
+        "[[Wit+]]+15\nInes Fujin [[bond+]]+5"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,82 @@
+{
+  "name": "Tazuna Hayakawa",
+  "rarity": "r",
+  "type": "pal",
+  "events": [
+    {
+      "name": "Milk with a Chance of Apples",
+      "text": [
+        "[[Energy+]]+32\n[[Speed+]]+6\nTazuna Hayakawa [[bond+]]+5\n[[Mood+]]+1"
+      ]
+    },
+    {
+      "name": "Inexplicable Speed",
+      "text": [
+        "[[Energy+]]+32\n[[healaff]] Heals affliction\nTazuna Hayakawa [[bond+]]+5"
+      ]
+    },
+    {
+      "name": "Memories of Cinema",
+      "text": [
+        "[[Energy+]]+32\n[[Stamina+]]+6\nTazuna Hayakawa [[bond+]]+5\n[[Mood+]]+1",
+        "[[Stamina+]]+12\n[[Guts+]]+12\nTazuna Hayakawa [[bond+]]+5\n[[Mood+]]+1"
+      ]
+    },
+    {
+      "name": "(❯❯❯❯) A Sigh and a Bandage",
+      "text": [
+        "[[Energy+]]+45\n[[Wit+]]+6\n[[healaff]] Heals affliction\nTazuna Hayakawa [[bond+]]+5\n[[Mood+]]+1"
+      ]
+    },
+    {
+      "name": "(❯❯❯❯❯) A Surprise Breather",
+      "text": [
+        "[[Energy+]]+45\n[[sp+]]+18\n{link:Focus} [[hint]]1\nTazuna Hayakawa [[bond+]]+5\n[[Mood+]]+2"
+      ]
+    },
+    {
+      "name": "My Chosen Way of Life",
+      "text": [
+        "[[Energy+]]+13\nTazuna Hayakawa [[bond+]]+5\n[[Mood+]]+1",
+        "[[Wit+]]+6\nTazuna Hayakawa [[bond+]]+5\n[[Mood+]]+1"
+      ]
+    },
+    {
+      "name": "Enthusiastic Pair",
+      "text": [
+        "[[Energy+]]+13\n[[Wit+]]+6\n[[unlock]]Dates\nTazuna Hayakawa [[bond+]]+5\n[[Mood+]]+1",
+        "[[chainEnd]]\n{link:Watchful Eye} [[hint]]1\nTazuna Hayakawa [[bond-]]-5\n[[Mood-]]-1"
+      ]
+    },
+    {
+      "name": "Tazuna, the Director's Secretary",
+      "text": [
+        "[[sp+]]+18\nTazuna Hayakawa [[bond+]]+5\n[[Mood+]]+1"
+      ]
+    },
+    {
+      "name": "Good Job! ♪",
+      "text": [
+        "[[Speed+]]+3\nTazuna Hayakawa [[bond+]]+5\n[[possible]] [[Mood+]]+1"
+      ]
+    },
+    {
+      "name": "From Just a Little Closer",
+      "text": [
+        "[[sp+]]+36\n[[All+]]+7"
+      ]
+    },
+    {
+      "name": "The Usual, Please!",
+      "text": [
+        "[[sp+]]+24\n[[All+]]+6"
+      ]
+    },
+    {
+      "name": "A Bond with Tazuna: Aspirations Entrusted",
+      "text": [
+        "[[Energy+]]+13\n[[Speed+]]+18\n{link:Tail Held High} [[hint]]3\nTazuna Hayakawa [[bond+]]+5\n[[Mood+]]+1"
+      ]
+    }
+  ]
+}

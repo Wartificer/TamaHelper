@@ -1,0 +1,39 @@
+{
+  "name": "Tokai Teio",
+  "rarity": "ssr",
+  "type": "speed",
+  "events": [
+    {
+      "name": "Premonitions of a Performer",
+      "text": [
+        "[[Energy+]]+10\n[[Speed+]]+5"
+      ]
+    },
+    {
+      "name": "Short Interlude",
+      "text": [
+        "[[Energy+]]+10\n[[Speed+]]+5\n[[Wit+]]+5"
+      ]
+    },
+    {
+      "name": "Legendary Act",
+      "text": [
+        "[[Energy+]]+10\n[[Speed+]]+5\n{link:Rushing Gale!} [[hint]]1\nTokai Teio [[bond+]]+5"
+      ]
+    },
+    {
+      "name": "My Way, Or...",
+      "text": [
+        "[[sp+]]+15\nTokai Teio [[bond+]]+5\n[[Mood+]]+1",
+        "[[Guts+]]+15\nTokai Teio [[bond+]]+5"
+      ]
+    },
+    {
+      "name": "My Weapon",
+      "text": [
+        "[[Guts+]]+10\nTokai Teio [[bond+]]+5\n[[Mood+]]+1",
+        "{link:Pace Chaser Straightaways} [[hint]]1\nTokai Teio [[bond+]]+5"
+      ]
+    }
+  ]
+}

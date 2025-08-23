@@ -1,0 +1,21 @@
+{
+  "name": "Mayano Top Gun",
+  "rarity": "r",
+  "type": "stamina",
+  "events": [
+    {
+      "name": "Snack Advice for Mayano!",
+      "text": [
+        "[[Stamina+]]+5\n[[Guts+]]+5\nMayano Top Gun [[bond+]]+5",
+        "[[Stamina+]]+10\nMayano Top Gun [[bond+]]+5"
+      ]
+    },
+    {
+      "name": "Fashion Advice for Mayano!",
+      "text": [
+        "{link:Straightaway Adept} [[hint]]1\nMayano Top Gun [[bond+]]+5",
+        "[[Stamina+]]+10\nMayano Top Gun [[bond+]]+5"
+      ]
+    }
+  ]
+}

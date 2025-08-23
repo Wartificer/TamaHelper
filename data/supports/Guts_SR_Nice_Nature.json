@@ -1,0 +1,33 @@
+{
+  "name": "Nice Nature",
+  "rarity": "sr",
+  "type": "guts",
+  "events": [
+    {
+      "name": "A Light Workout (for a Hardworker)",
+      "text": [
+        "[[Stamina+]]+5\n[[Guts+]]+5"
+      ]
+    },
+    {
+      "name": "Visible Improvement (But So What?!)",
+      "text": [
+        "[[Stamina+]]+5\n[[Guts+]]+10\n{link:Extra Tank} [[hint]]1"
+      ]
+    },
+    {
+      "name": "Not like Meow",
+      "text": [
+        "[[Energy+]]+20\nNice Nature [[bond+]]+5",
+        "[[Energy+]]+10\n[[Wit+]]+5\nNice Nature [[bond+]]+5"
+      ]
+    },
+    {
+      "name": "(Delicious) Burden",
+      "text": [
+        "{link:Ramp Up} [[hint]]1\nNice Nature [[bond+]]+5",
+        "Maximum [[Energy+]]+4\nNice Nature [[bond+]]+5\n[[Mood+]]+1"
+      ]
+    }
+  ]
+}

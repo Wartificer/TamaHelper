@@ -1,0 +1,21 @@
+{
+  "name": "Fine Motion",
+  "rarity": "r",
+  "type": "wit",
+  "events": [
+    {
+      "name": "Wonderful New Shoes",
+      "text": [
+        "[[sp+]]+10\n[[Speed+]]+5\nFine Motion [[bond+]]+5",
+        "[[Energy-]]-10\n[[sp+]]+20\n[[Stamina+]]+5\nFine Motion [[bond+]]+5"
+      ]
+    },
+    {
+      "name": "Reminiscent Clover",
+      "text": [
+        "{link:Corner Adept} [[hint]]1\nFine Motion [[bond+]]+5",
+        "[[Guts+]]+15\nFine Motion [[bond+]]+5"
+      ]
+    }
+  ]
+}

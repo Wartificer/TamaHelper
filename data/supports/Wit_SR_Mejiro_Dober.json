@@ -1,0 +1,33 @@
+{
+  "name": "Mejiro Dober",
+  "rarity": "sr",
+  "type": "wit",
+  "events": [
+    {
+      "name": "Don't Need to Be Complimented",
+      "text": [
+        "[[Energy+]]+10\n[[Guts+]]+5"
+      ]
+    },
+    {
+      "name": "Don't Need to Be Seen",
+      "text": [
+        "[[Energy+]]+20\n[[Energy+]]+5\n[[Stamina+]]+15\n[[Stamina+]]+5\n[[or]]\n{link:Slick Surge} [[hint]]1"
+      ]
+    },
+    {
+      "name": "Give It a Try",
+      "text": [
+        "[[Energy+]]+15\nMejiro Dober [[bond+]]+5",
+        "[[sp+]]+15\nMejiro Dober [[bond+]]+5\n[[Mood+]]+1"
+      ]
+    },
+    {
+      "name": "Hope She'll Like It...",
+      "text": [
+        "[[sp+]]+45\nMejiro Dober [[bond+]]+5",
+        "{link:Unyielding Spirit} [[hint]]1\nMejiro Dober [[bond+]]+5"
+      ]
+    }
+  ]
+}

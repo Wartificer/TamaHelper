@@ -1,0 +1,34 @@
+{
+  "name": "Meisho Doto",
+  "rarity": "sr",
+  "type": "guts",
+  "events": [
+    {
+      "name": "What I'm Destined For...",
+      "text": [
+        "[[Energy+]]+10\n[[Guts+]]+5\nMeisho Doto [[bond+]]+5",
+        "Maximum [[Energy+]]+4\n[[Energy-]]-10\n[[Guts+]]+5\n[[Wit+]]+5\n[[Wit+]]+5\n[[or]]\nMeisho Doto [[bond+]]+5\n[[Mood+]]+1"
+      ]
+    },
+    {
+      "name": "What I'm Looking For...",
+      "text": [
+        "[[Energy+]]+10\n[[sp+]]+15\n{link:Prepared to Pass} [[hint]]1\n[[Mood+]]+1"
+      ]
+    },
+    {
+      "name": "I... Will Change",
+      "text": [
+        "[[Energy+]]+10\nMeisho Doto [[bond+]]+5\n[[Mood+]]+1",
+        "[[Guts+]]+15\nMeisho Doto [[bond+]]+5"
+      ]
+    },
+    {
+      "name": "Please... Buy Some Carrots",
+      "text": [
+        "[[Energy+]]+10\n[[Wit+]]+5\nMeisho Doto [[bond+]]+5",
+        "{link:Pace Chaser Corners} [[hint]]1\nMeisho Doto [[bond+]]+5"
+      ]
+    }
+  ]
+}

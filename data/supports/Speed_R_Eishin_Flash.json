@@ -1,0 +1,21 @@
+{
+  "name": "Eishin Flash",
+  "rarity": "r",
+  "type": "speed",
+  "events": [
+    {
+      "name": "Unforeseen Lunch",
+      "text": [
+        "[[Energy+]]+15\nEishin Flash [[bond+]]+5",
+        "[[Speed+]]+5\n[[Guts+]]+5\nEishin Flash [[bond+]]+5"
+      ]
+    },
+    {
+      "name": "Responding to the Unforeseen",
+      "text": [
+        "[[Guts+]]+10\nEishin Flash [[bond+]]+5",
+        "{link:Target in Sight} [[hint]]1\nEishin Flash [[bond+]]+5"
+      ]
+    }
+  ]
+}

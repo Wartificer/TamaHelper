@@ -1,0 +1,39 @@
+{
+  "name": "Air Shakur",
+  "rarity": "ssr",
+  "type": "wit",
+  "events": [
+    {
+      "name": "Block Out the Noise",
+      "text": [
+        "[[Stamina+]]+5\n[[Wit+]]+5"
+      ]
+    },
+    {
+      "name": "A Realist's Passion",
+      "text": [
+        "[[sp+]]+5\n[[Stamina+]]+5\n[[Wit+]]+5"
+      ]
+    },
+    {
+      "name": "I'm the Strongest",
+      "text": [
+        "[[sp+]]+30\n[[Stamina+]]+15\n[[Wit+]]+15\n{link:Unyielding} [[hint]]2"
+      ]
+    },
+    {
+      "name": "//Verification Required",
+      "text": [
+        "[[Energy+]]+10\n[[Guts+]]+5\nAir Shakur [[bond+]]+5",
+        "[[Energy-]]-10\n[[Stamina+]]+5\n[[Guts+]]+10\nAir Shakur [[bond+]]+5"
+      ]
+    },
+    {
+      "name": "//Absolute Desire",
+      "text": [
+        "{link:Pace Strategy} [[hint]]1\nAir Shakur [[bond+]]+5",
+        "Maximum [[Energy+]]+4\n[[Guts+]]+5\nAir Shakur [[bond+]]+5"
+      ]
+    }
+  ]
+}

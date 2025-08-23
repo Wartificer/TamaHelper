@@ -1,0 +1,21 @@
+{
+  "name": "Meisho Doto",
+  "rarity": "r",
+  "type": "guts",
+  "events": [
+    {
+      "name": "I... Will Change",
+      "text": [
+        "[[Energy+]]+10\nMeisho Doto [[bond+]]+5\n[[Mood+]]+1",
+        "[[Guts+]]+15\nMeisho Doto [[bond+]]+5"
+      ]
+    },
+    {
+      "name": "Please... Buy Some Carrots",
+      "text": [
+        "[[Energy+]]+10\n[[Wit+]]+5\nMeisho Doto [[bond+]]+5",
+        "{link:Pace Chaser Corners} [[hint]]1\nMeisho Doto [[bond+]]+5"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,39 @@
+{
+  "name": "Winning Ticket",
+  "rarity": "ssr",
+  "type": "power",
+  "events": [
+    {
+      "name": "Hot Derby Special!",
+      "text": [
+        "[[Stamina+]]+5\n[[Power+]]+5"
+      ]
+    },
+    {
+      "name": "Special Rival Training!",
+      "text": [
+        "[[Energy-]]-10\n[[Stamina+]]+5\n[[Power+]]+5"
+      ]
+    },
+    {
+      "name": "Dream-Fulfilling Challenge!",
+      "text": [
+        "[[Energy-]]-30\n[[Stamina+]]+5\n[[Power+]]+5\n{link:In Body and Mind} [[hint]]2"
+      ]
+    },
+    {
+      "name": "Full-Power Muscles!",
+      "text": [
+        "[[sp+]]+15\n[[Stamina+]]+5\nWinning Ticket [[bond+]]+5",
+        "[[sp+]]+15\nWinning Ticket [[bond+]]+5\n[[Mood+]]+1"
+      ]
+    },
+    {
+      "name": "Full-Power Racing!",
+      "text": [
+        "{link:Late Surger Corners} [[hint]]1\nWinning Ticket [[bond+]]+5",
+        "[[sp+]]+30\nWinning Ticket [[bond+]]+5"
+      ]
+    }
+  ]
+}

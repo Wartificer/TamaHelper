@@ -1,0 +1,21 @@
+{
+  "name": "Marvelous Sunday",
+  "rarity": "r",
+  "type": "wit",
+  "events": [
+    {
+      "name": "Marvelous, No Question ☆",
+      "text": [
+        "[[Energy+]]+10\n[[Speed+]]+5\nMarvelous Sunday [[bond+]]+5",
+        "[[Speed+]]+5\nMarvelous Sunday [[bond+]]+5\n[[Mood+]]+1"
+      ]
+    },
+    {
+      "name": "How To Be More Marvelous ☆",
+      "text": [
+        "[[Energy+]]+10\nMarvelous Sunday [[bond+]]+5\n[[Mood+]]+1",
+        "{link:Hanshin Racecourse} [[hint]]1\nMarvelous Sunday [[bond+]]+5"
+      ]
+    }
+  ]
+}

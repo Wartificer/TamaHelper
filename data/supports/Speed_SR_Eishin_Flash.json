@@ -1,0 +1,33 @@
+{
+  "name": "Eishin Flash",
+  "rarity": "sr",
+  "type": "speed",
+  "events": [
+    {
+      "name": "A Good Manager",
+      "text": [
+        "[[Energy+]]+10\nMaximum [[Energy+]]+4\n[[Mood+]]+1"
+      ]
+    },
+    {
+      "name": "A Good Friend",
+      "text": [
+        "[[Energy+]]+20\n{link:Homestretch Haste} [[hint]]1"
+      ]
+    },
+    {
+      "name": "Unforeseen Lunch",
+      "text": [
+        "[[Energy+]]+15\nEishin Flash [[bond+]]+5",
+        "[[Speed+]]+5\n[[Guts+]]+5\nEishin Flash [[bond+]]+5"
+      ]
+    },
+    {
+      "name": "Responding to the Unforeseen",
+      "text": [
+        "[[Guts+]]+10\nEishin Flash [[bond+]]+5",
+        "{link:Target in Sight} [[hint]]1\nEishin Flash [[bond+]]+5"
+      ]
+    }
+  ]
+}

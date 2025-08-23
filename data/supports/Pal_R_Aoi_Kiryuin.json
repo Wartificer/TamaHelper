@@ -1,0 +1,82 @@
+{
+  "name": "Aoi Kiryuin",
+  "rarity": "r",
+  "type": "pal",
+  "events": [
+    {
+      "name": "Studying with Your Body!",
+      "text": [
+        "[[Energy+]]+32\n[[sp+]]+36\nAoi Kiryuin [[bond+]]+5\n[[Mood+]]+2"
+      ]
+    },
+    {
+      "name": "How I Play at the Park",
+      "text": [
+        "[[Energy+]]+32\n[[Wit+]]+6\nAoi Kiryuin [[bond+]]+5\n[[possible]] [[Mood+]]+1",
+        "[[sp+]]+54\n[[sp+]]+18\n[[Speed+]]+6\n[[or]]\nAoi Kiryuin [[bond+]]+5\nAoi Kiryuin [[bond+]]+5\n[[Mood+]]+1"
+      ]
+    },
+    {
+      "name": "Reckless Training",
+      "text": [
+        "[[Energy+]]+26\n[[sp+]]+36\nAoi Kiryuin [[bond+]]+5\n[[Mood+]]+1"
+      ]
+    },
+    {
+      "name": "(❯❯❯❯) The Joy of Respect",
+      "text": [
+        "[[sp+]]+54\n[[Power+]]+12\nAoi Kiryuin [[bond+]]+5\n[[Mood+]]+1"
+      ]
+    },
+    {
+      "name": "(❯❯❯❯❯) Chasing Dreams",
+      "text": [
+        "[[sp+]]+26\n[[sp+]]+12\n[[Stamina+]]+6\n[[Stamina+]]+6\n[[Power+]]+6\n[[Guts+]]+6\n[[or]]\n{link:Subdued Front Runners} [[hint]]3\nAoi Kiryuin [[bond+]]+5\nAoi Kiryuin [[bond+]]+5\n[[Mood+]]+1"
+      ]
+    },
+    {
+      "name": "Trainer Tip: Always Improve Your Coaching",
+      "text": [
+        "[[Energy+]]+13\n[[sp+]]+18\nAoi Kiryuin [[bond+]]+5",
+        "[[Speed+]]+6\n[[Wit+]]+6\nAoi Kiryuin [[bond+]]+5"
+      ]
+    },
+    {
+      "name": "The Search for a Hobby",
+      "text": [
+        "[[Energy+]]+26\n[[sp+]]+18\n[[unlock]]Dates\nAoi Kiryuin [[bond+]]+5\n[[Mood+]]+1",
+        "[[chainEnd]]\n{link:Maverick} [[hint]]1\nAoi Kiryuin [[bond-]]-5\n[[Mood-]]-1"
+      ]
+    },
+    {
+      "name": "Fellow Trainer Aoi Kiryuin",
+      "text": [
+        "[[sp+]]+18\nAoi Kiryuin [[bond+]]+5\n[[Mood+]]+1"
+      ]
+    },
+    {
+      "name": "Good Job!",
+      "text": [
+        "[[Wit+]]+3\nAoi Kiryuin [[bond+]]+5\n[[possible]] [[Mood+]]+1"
+      ]
+    },
+    {
+      "name": "Gift of Words",
+      "text": [
+        "\n[[All+]]+6\n{link:Lay Low} [[hint]]3\n{link:Hesitant End Closers} [[hint]]1/+3"
+      ]
+    },
+    {
+      "name": "The Perfect Place for a Party",
+      "text": [
+        "[[3stats]] +6"
+      ]
+    },
+    {
+      "name": "A Bond with Aoi: Being a Good Mentor",
+      "text": [
+        "[[sp+]]+18\n[[Wit+]]+18\n{link:Shake It Out} [[hint]]1/+3\nAoi Kiryuin [[bond+]]+5\n[[Mood+]]+1"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "name": "Maruzensky",
+  "rarity": "r",
+  "type": "speed",
+  "events": [
+    {
+      "name": "For an Adorable Younger Student",
+      "text": [
+        "{link:Early Lead} [[hint]]1",
+        "[[Energy+]]+5\n[[Speed+]]+10"
+      ]
+    },
+    {
+      "name": "Drive Destination",
+      "text": [
+        "[[Speed+]]+5\n[[Mood+]]+1",
+        "[[Wit+]]+5\n[[Mood+]]+1"
+      ]
+    }
+  ]
+}

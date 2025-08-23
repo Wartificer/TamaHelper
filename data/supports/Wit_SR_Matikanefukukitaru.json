@@ -1,0 +1,34 @@
+{
+  "name": "Matikanefukukitaru",
+  "rarity": "sr",
+  "type": "wit",
+  "events": [
+    {
+      "name": "Spirits' Lost and Found",
+      "text": [
+        "[[Energy+]]+5\n[[sp+]]+15\nMatikanefukukitaru [[bond+]]+5\n[[Mood+]]+1"
+      ]
+    },
+    {
+      "name": "Guidance and Friends",
+      "text": [
+        "[[sp+]]+45\nMatikanefukukitaru [[bond+]]+5",
+        "[[Energy-]]-20\n[[Energy+]]+10\n[[or]]\n{link:Right-Handed} [[hint]]1\n{link:Right-Handed} [[hint]]3\nMatikanefukukitaru [[bond+]]+5\nMatikanefukukitaru [[bond+]]+5\n[[Mood+]]+1"
+      ]
+    },
+    {
+      "name": "Maximum Spirituality",
+      "text": [
+        "[[sp+]]+15\n[[Wit+]]+5\nMatikanefukukitaru [[bond+]]+5",
+        "[[Energy-]]-10\n[[Speed+]]+5\n[[Stamina+]]+5\n[[Power+]]+5\nMatikanefukukitaru [[bond+]]+5"
+      ]
+    },
+    {
+      "name": "When Piety and Kindness Intersect",
+      "text": [
+        "[[sp+]]+30\nMatikanefukukitaru [[bond+]]+5",
+        "[[Energy+]]+20\nMatikanefukukitaru [[bond+]]+5"
+      ]
+    }
+  ]
+}

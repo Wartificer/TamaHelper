@@ -1,0 +1,35 @@
+{
+  "name": "Daitaku Helios",
+  "rarity": "sr",
+  "type": "power",
+  "events": [
+    {
+      "name": "#BFF #Party!",
+      "text": [
+        "[[Power+]]+10\nDaitaku Helios [[bond+]]+5",
+        "[[Speed+]]+10\nDaitaku Helios [[bond+]]+5"
+      ]
+    },
+    {
+      "name": "#LOL #Party! #Round2",
+      "text": [
+        "[[Power+]]+10\n{link:Straight Descent} [[hint]]1/+3\n[[possible]] [[Speed+]]+10\nDaitaku Helios [[bond+]]+5",
+        "[[Energy+]]+20\n{link:Watchful Eye} [[hint]]1\nDaitaku Helios [[bond+]]+5"
+      ]
+    },
+    {
+      "name": "Encounter With the Sun ☆",
+      "text": [
+        "[[Power+]]+10\nDaitaku Helios [[bond+]]+5",
+        "Daitaku Helios [[bond+]]+5\nAquire {link:Hot Topic}"
+      ]
+    },
+    {
+      "name": "Smiles Forever",
+      "text": [
+        "[[Speed+]]+5\n[[Power+]]+10\nDaitaku Helios [[bond+]]+5",
+        "{link:Long Shot} [[hint]]1\nDaitaku Helios [[bond+]]+5"
+      ]
+    }
+  ]
+}

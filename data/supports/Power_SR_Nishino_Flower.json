@@ -1,0 +1,34 @@
+{
+  "name": "Nishino Flower",
+  "rarity": "sr",
+  "type": "power",
+  "events": [
+    {
+      "name": "I Want You to Rest!",
+      "text": [
+        "[[Speed+]]+3\n[[Power+]]+3\n[[Wit+]]+3\n[[Mood+]]+1"
+      ]
+    },
+    {
+      "name": "I Want to Say Thank You!",
+      "text": [
+        "[[Power+]]+5\n{link:Straightaway Adept} [[hint]]1\nNishino Flower [[bond+]]+5",
+        "[[Wit+]]+5\n{link:Straightaway Acceleration} [[hint]]1\nNishino Flower [[bond+]]+5"
+      ]
+    },
+    {
+      "name": "Warmth, Love, and Lunch",
+      "text": [
+        "Nishino Flower [[bond+]]+5\nAquire {link:Charming}",
+        "[[Energy+]]+20\nNishino Flower [[bond+]]+5"
+      ]
+    },
+    {
+      "name": "Let's Bloom Beautifully ♪",
+      "text": [
+        "[[Wit+]]+15\nNishino Flower [[bond+]]+5",
+        "[[Speed+]]+10\n[[Power+]]+5\nNishino Flower [[bond+]]+5"
+      ]
+    }
+  ]
+}

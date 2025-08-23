@@ -1,0 +1,21 @@
+{
+  "name": "Air Groove",
+  "rarity": "r",
+  "type": "guts",
+  "events": [
+    {
+      "name": "Strict but Gracious",
+      "text": [
+        "{link:Go with the Flow} [[hint]]1\nAir Groove [[bond+]]+5",
+        "[[Energy+]]+10\n[[Wit+]]+10"
+      ]
+    },
+    {
+      "name": "Agile but Strong",
+      "text": [
+        "[[Power+]]+15\nAir Groove [[bond+]]+5",
+        "[[Speed+]]+10\n[[Stamina+]]+5\nAir Groove [[bond+]]+5"
+      ]
+    }
+  ]
+}

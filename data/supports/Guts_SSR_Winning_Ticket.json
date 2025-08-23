@@ -1,0 +1,39 @@
+{
+  "name": "Winning Ticket",
+  "rarity": "ssr",
+  "type": "guts",
+  "events": [
+    {
+      "name": "Username: W&T",
+      "text": [
+        "[[Guts+]]+10"
+      ]
+    },
+    {
+      "name": "Everyone Was Sore for Days!",
+      "text": [
+        "[[Stamina+]]+5\n[[Guts+]]+5"
+      ]
+    },
+    {
+      "name": "We Are BNW!",
+      "text": [
+        "[[Guts+]]+10\n{link:On Your Left!} [[hint]]1"
+      ]
+    },
+    {
+      "name": "Full-Power Muscles!",
+      "text": [
+        "[[sp+]]+15\n[[Stamina+]]+5\nWinning Ticket [[bond+]]+5",
+        "[[sp+]]+15\nWinning Ticket [[bond+]]+5\n[[Mood+]]+1"
+      ]
+    },
+    {
+      "name": "Full-Power Racing!",
+      "text": [
+        "{link:Late Surger Corners} [[hint]]1\nWinning Ticket [[bond+]]+5",
+        "[[sp+]]+30\nWinning Ticket [[bond+]]+5"
+      ]
+    }
+  ]
+}

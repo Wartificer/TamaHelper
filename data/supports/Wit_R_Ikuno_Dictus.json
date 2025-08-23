@@ -1,0 +1,21 @@
+{
+  "name": "Ikuno Dictus",
+  "rarity": "r",
+  "type": "wit",
+  "events": [
+    {
+      "name": "Ikuno-Style Flawless Method",
+      "text": [
+        "[[Wit+]]+10\nIkuno Dictus [[bond+]]+5",
+        "[[sp+]]+30\nIkuno Dictus [[bond+]]+5"
+      ]
+    },
+    {
+      "name": "Ikuno-Style Management",
+      "text": [
+        "[[Stamina+]]+20\nIkuno Dictus [[bond+]]+5",
+        "{link:Trick (Rear)} [[hint]]1\nIkuno Dictus [[bond+]]+5"
+      ]
+    }
+  ]
+}

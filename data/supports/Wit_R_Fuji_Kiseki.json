@@ -1,0 +1,21 @@
+{
+  "name": "Fuji Kiseki",
+  "rarity": "r",
+  "type": "wit",
+  "events": [
+    {
+      "name": "Sleight of Hand",
+      "text": [
+        "[[sp+]]+15\n[[Wit+]]+5\nFuji Kiseki [[bond+]]+5",
+        "[[sp+]]+15\n[[Power+]]+5\nFuji Kiseki [[bond+]]+5"
+      ]
+    },
+    {
+      "name": "Misdirection",
+      "text": [
+        "{link:Prepared to Pass} [[hint]]1\nFuji Kiseki [[bond+]]+5",
+        "[[sp+]]+30\nFuji Kiseki [[bond+]]+5"
+      ]
+    }
+  ]
+}

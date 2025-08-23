@@ -1,0 +1,39 @@
+{
+  "name": "Tamamo Cross",
+  "rarity": "ssr",
+  "type": "stamina",
+  "events": [
+    {
+      "name": "Beef, Pork, Chicken, Curry!",
+      "text": [
+        "[[Stamina+]]+5\n[[Power+]]+5"
+      ]
+    },
+    {
+      "name": "Got My Priorities Straight",
+      "text": [
+        "[[Stamina+]]+5\n[[Power+]]+5\n[[Guts+]]+5"
+      ]
+    },
+    {
+      "name": "My Flaws Make Me Who I Am!",
+      "text": [
+        "[[Stamina+]]+5\n[[Power+]]+10\n{link:Fast & Furious} [[hint]]1"
+      ]
+    },
+    {
+      "name": "Tamamo's School Tour",
+      "text": [
+        "[[Wit+]]+10\nTamamo Cross [[bond+]]+5",
+        "[[Stamina+]]+5\n[[Guts+]]+5\nTamamo Cross [[bond+]]+5"
+      ]
+    },
+    {
+      "name": "A Battle I Can't Lose!",
+      "text": [
+        "{link:Calm in a Crowd} [[hint]]1\nTamamo Cross [[bond+]]+5",
+        "[[Stamina+]]+5\n[[Wit+]]+5\nTamamo Cross [[bond+]]+5"
+      ]
+    }
+  ]
+}

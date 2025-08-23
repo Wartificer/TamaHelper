@@ -1,0 +1,21 @@
+{
+  "name": "Biwa Hayahide",
+  "rarity": "r",
+  "type": "power",
+  "events": [
+    {
+      "name": "Last-Minute Modal Theory",
+      "text": [
+        "[[Power+]]+15\nBiwa Hayahide [[bond+]]+5",
+        "[[sp+]]+15\n[[Speed+]]+10\nBiwa Hayahide [[bond+]]+5"
+      ]
+    },
+    {
+      "name": "Step-Out-of-Your-Comfort-Zone Theory",
+      "text": [
+        "[[Energy-]]-10\n{link:Inside Scoop} [[hint]]1\nBiwa Hayahide [[bond+]]+5",
+        "[[Energy+]]+10\n[[Stamina+]]+10\nBiwa Hayahide [[bond+]]+5"
+      ]
+    }
+  ]
+}

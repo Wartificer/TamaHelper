@@ -1,0 +1,21 @@
+{
+  "name": "Biko Pegasus",
+  "rarity": "r",
+  "type": "speed",
+  "events": [
+    {
+      "name": "A Hero's Woes",
+      "text": [
+        "[[Energy+]]+15\nBiko Pegasus [[bond+]]+5",
+        "[[Energy+]]+5\n[[Power+]]+5\nBiko Pegasus [[bond+]]+5"
+      ]
+    },
+    {
+      "name": "Preparing My Special Move!",
+      "text": [
+        "{link:Sprint Straightaways} [[hint]]1\nBiko Pegasus [[bond+]]+5",
+        "[[Energy+]]+30\nBiko Pegasus [[bond+]]+5"
+      ]
+    }
+  ]
+}

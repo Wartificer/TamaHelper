@@ -1,0 +1,21 @@
+{
+  "name": "Air Shakur",
+  "rarity": "r",
+  "type": "wit",
+  "events": [
+    {
+      "name": "//Verification Required",
+      "text": [
+        "[[Energy+]]+10\n[[Guts+]]+5\nAir Shakur [[bond+]]+5",
+        "[[Energy-]]-10\n[[Stamina+]]+5\n[[Guts+]]+10\nAir Shakur [[bond+]]+5"
+      ]
+    },
+    {
+      "name": "//Absolute Desire",
+      "text": [
+        "{link:Pace Strategy} [[hint]]1\nAir Shakur [[bond+]]+5",
+        "Maximum [[Energy+]]+4\n[[Guts+]]+5\nAir Shakur [[bond+]]+5"
+      ]
+    }
+  ]
+}

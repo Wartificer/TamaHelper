@@ -1,0 +1,21 @@
+{
+  "name": "King Halo",
+  "rarity": "r",
+  "type": "speed",
+  "events": [
+    {
+      "name": "You May Socialize With Me!",
+      "text": [
+        "[[Energy-]]-20\n[[Speed+]]+10\n[[Power+]]+10\n[[Wit+]]+5\nKing Halo [[bond+]]+5",
+        "[[Guts+]]+25\nKing Halo [[bond+]]+5\n[[Mood-]]-1"
+      ]
+    },
+    {
+      "name": "You May Advise Me!",
+      "text": [
+        "[[Guts+]]+10\n[[Wit+]]+5\nKing Halo [[bond+]]+5",
+        "{link:Homestretch Haste} [[hint]]1\nKing Halo [[bond+]]+5"
+      ]
+    }
+  ]
+}

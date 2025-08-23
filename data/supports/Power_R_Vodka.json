@@ -1,0 +1,21 @@
+{
+  "name": "Vodka",
+  "rarity": "r",
+  "type": "power",
+  "events": [
+    {
+      "name": "The Coolest Line",
+      "text": [
+        "[[Power+]]+10\nVodka [[bond+]]+5",
+        "[[sp+]]+15\n[[Power+]]+5\nVodka [[bond+]]+5"
+      ]
+    },
+    {
+      "name": "Enemies on Main Street",
+      "text": [
+        "{link:Nimble Navigator} [[hint]]1\nVodka [[bond+]]+5",
+        "[[sp+]]+15\n[[Power+]]+5\nVodka [[bond+]]+5"
+      ]
+    }
+  ]
+}

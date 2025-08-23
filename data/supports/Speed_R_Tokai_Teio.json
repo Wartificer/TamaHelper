@@ -1,0 +1,21 @@
+{
+  "name": "Tokai Teio",
+  "rarity": "r",
+  "type": "speed",
+  "events": [
+    {
+      "name": "My Way, Or...",
+      "text": [
+        "[[sp+]]+15\nTokai Teio [[bond+]]+5\n[[Mood+]]+1",
+        "[[Guts+]]+15\nTokai Teio [[bond+]]+5"
+      ]
+    },
+    {
+      "name": "My Weapon",
+      "text": [
+        "[[Guts+]]+10\nTokai Teio [[bond+]]+5\n[[Mood+]]+1",
+        "{link:Pace Chaser Straightaways} [[hint]]1\nTokai Teio [[bond+]]+5"
+      ]
+    }
+  ]
+}

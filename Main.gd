@@ -30,8 +30,9 @@ var character_data : Variant
 var support_data : Variant
 var scenario_data : Variant
 
-## Current career character
+## Current career vars
 var selected_character : Dictionary
+var selected_scenario : Dictionary
 
 
 func load_json_data(path : String):
@@ -55,7 +56,7 @@ var character_button_scene = load("res://Core/UIElements/CharacterButton.tscn")
 func load_character_list():
 	for character in character_data:
 		var character_button = character_button_scene.instantiate()
-		var image = load("res://data/characters/images/" + Utils.to_snake_case(character.name) + "-icon.png")
+		var image = AssetLoader.load_image_from_path("characters/" + Utils.to_snake_case(character.name) + "-icon.png")
 		if !image:
 			image = load("res://Images/missing-image.png")
 		character_button.get_child(0).texture = image
@@ -63,39 +64,16 @@ func load_character_list():
 		character_button.pressed.connect(on_character_selected.bind(character))
 		%CharacterList.add_child(character_button)
 
-
-var timeline_item_scene = load("res://Core/UIElements/TimelineItem.tscn")
-func load_important_events():
-	var events_data = load_json_data("data/important_events.json")
-	
-	var dates_list = []
-	for date in Utils.dates:
-		var date_object = {"name": date, "items": []}
-		for event in events_data:
-			if event.date == date:
-				date_object.items.push_back(event)
-		dates_list.push_back(date_object)
-	
-	for date_object in dates_list:
-		var timeline_item = timeline_item_scene.instantiate()
-		timeline_item.set_data(date_object, true)
-		%ImportantEventsTimeline.add_child(timeline_item)
-
-func load_g1s():
-	var g1_data = load_json_data("data/g1_races.json")
-	
-	var dates_list = []
-	for date in Utils.dates:
-		var date_object = {"name": date, "items": []}
-		for race in g1_data:
-			if race.date == date:
-				date_object.items.push_back(race)
-		dates_list.push_back(date_object)
-	
-	for date_object in dates_list:
-		var timeline_item = timeline_item_scene.instantiate()
-		timeline_item.set_data(date_object)
-		%G1RacesTimeline.add_child(timeline_item)
+func load_scenario_list():
+	for scenario in scenario_data:
+		var scenario_button = character_button_scene.instantiate()
+		var image = AssetLoader.load_image_from_path("scenarios/" + Utils.to_snake_case(scenario.name) + "/icon.png")
+		if !image:
+			image = load("res://Images/missing-image.png")
+		scenario_button.get_child(0).texture = image
+		scenario_button.get_child(1).text = scenario.name
+		scenario_button.pressed.connect(on_scenario_selected.bind(scenario))
+		%ScenarioList.add_child(scenario_button)
 
 
 
@@ -104,17 +82,18 @@ func _ready():
 	if AssetLoader.custom_mascot:
 		%Mascot.texture = AssetLoader.custom_mascot
 	get_screen_size()
-	character_data = load_json_data("data/characters/data.json")
+	character_data = AssetLoader.load_all_json_from_folder("characters")
 	character_data.sort_custom(func(a, b):
 		return a["name"] < b["name"]
 	)
-	support_data = load_json_data("data/supports/data.json")
-	scenario_data = load_json_data("data/scenarios/data.json")
+	support_data = AssetLoader.load_all_json_from_folder("supports")
+	scenario_data = AssetLoader.load_data_json_from_subfolders("scenarios")
 	
-	load_important_events()
-	load_g1s()
+	#load_important_events()
+	#load_g1s()
 	
 	load_character_list()
+	load_scenario_list()
 	load_settings()
 	## Connect to OCR signals
 	#OCRManager.ocr_completed.connect(_on_ocr_completed)
@@ -340,6 +319,7 @@ func save_settings():
 	config.set_value("window", "size_y", DisplayServer.window_get_size().y)
 	
 	config.set_value("career", "character", selected_character.name if selected_character != {} else "")
+	config.set_value("career", "scenario", selected_scenario.name if selected_scenario != {} else "")
 	
 	config.save(SETTINGS_FILE)
 
@@ -380,6 +360,13 @@ func load_settings():
 		selected_character = find_dict_by_name(character_data, saved_selected_character)
 		if selected_character.has("name"):
 			set_selected_character_ui()
+	# Load scenario
+	var saved_selected_scenario = config.get_value("career", "scenario", "")
+	if saved_selected_scenario != "":
+		saved_selected_scenario = "URA Finale"
+	selected_scenario = find_dict_by_name(scenario_data, saved_selected_scenario)
+	if selected_scenario.has("name"):
+		set_selected_scenario_ui()
 
 func find_dict_by_name(dict_list: Array, target_name: String) -> Dictionary:
 	for dict in dict_list:
@@ -389,8 +376,17 @@ func find_dict_by_name(dict_list: Array, target_name: String) -> Dictionary:
 
 func set_selected_character_ui():
 	%ClickToChangeLabel.show()
-	%CareerCharacterLabel.text = "Career: " + selected_character.name
-	%SelectedCharacter.texture = load("res://data/characters/images/" + Utils.to_snake_case(selected_character.name) + "-icon.png")
+	%CareerCharacterLabel.text = selected_character.name
+	%SelectedCharacter.texture = AssetLoader.load_image_from_path("characters/" + Utils.to_snake_case(selected_character.name) + "-icon.png")
+
+func set_selected_scenario_ui():
+	%ClickToChangeScenarioLabel.show()
+	%CareerScenarioLabel.text = selected_scenario.name
+	%SelectedScenario.texture = AssetLoader.load_image_from_path("scenarios/" + Utils.to_snake_case(selected_scenario.name) + "/icon.png")
+	set_timelines()
+
+func set_timelines():
+	pass
 
 func _on_settings_menu_button_pressed() -> void:
 	%Settings.show()
@@ -414,9 +410,14 @@ func on_character_selected(character):
 	save_settings()
 
 
-func _on_switch_font_pressed() -> void:
-	pass # Replace with function body.
+func _on_scenario_select_button_pressed() -> void:
+	%ScenarioSelect.show()
 
+func _on_close_scenario_select_button_pressed() -> void:
+	%ScenarioSelect.hide()
 
-func _on_switch_mascot_pressed() -> void:
-	pass # Replace with function body.
+func on_scenario_selected(scenario):
+	selected_scenario = scenario
+	set_selected_scenario_ui()
+	_on_close_scenario_select_button_pressed()
+	save_settings()

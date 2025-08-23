@@ -1,0 +1,21 @@
+{
+  "name": "Hishi Amazon",
+  "rarity": "r",
+  "type": "power",
+  "events": [
+    {
+      "name": "Hishiama's Struggles: Problem Children",
+      "text": [
+        "[[Energy+]]+10\n[[Wit+]]+5\nHishi Amazon [[bond+]]+5",
+        "[[Energy-]]-10\n[[Speed+]]+10\n[[Guts+]]+5\nHishi Amazon [[bond+]]+5"
+      ]
+    },
+    {
+      "name": "Hishiama's Struggles: Final Stretch",
+      "text": [
+        "{link:Hesitant End Closers} [[hint]]1\nHishi Amazon [[bond+]]+5",
+        "[[sp+]]+15\n[[Power+]]+5\nHishi Amazon [[bond+]]+5"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "name": "Nice Nature",
+  "rarity": "r",
+  "type": "guts",
+  "events": [
+    {
+      "name": "Not like Meow",
+      "text": [
+        "[[Energy+]]+20\nNice Nature [[bond+]]+5",
+        "[[Energy+]]+10\n[[Wit+]]+5\nNice Nature [[bond+]]+5"
+      ]
+    },
+    {
+      "name": "(Delicious) Burden",
+      "text": [
+        "{link:Ramp Up} [[hint]]1\nNice Nature [[bond+]]+5",
+        "Maximum [[Energy+]]+4\nNice Nature [[bond+]]+5\n[[Mood+]]+1"
+      ]
+    }
+  ]
+}
