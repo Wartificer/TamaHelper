@@ -1,18 +1,19 @@
 extends Control
 
-func set_data(data : Dictionary, show_label : bool = false):
-	name = data.name
+func set_data(data : Dictionary, scenario : Dictionary, show_label : bool = false):
 	if show_label:
-		var name_split = name.split(" ")
-		$Label.text = name_split[name_split.size()-1]
+		$Label.text = data.date.label
 		$Label.show()
-	set_items(data.items)
+	set_items(data.items, scenario)
 
-func set_items(items : Array):
+func set_items(items : Array, scenario: Dictionary):
 	for item in items:
 		var texture_rect : TextureRect = TextureRect.new()
 		texture_rect.expand_mode = TextureRect.EXPAND_FIT_WIDTH_PROPORTIONAL
-		texture_rect.texture = load("res://" + item.icon)
+		if item.icon.begins_with("{i}"):
+			texture_rect.texture = load("res://Images/" + item.icon.replace("{i}", ""))
+		else:
+			texture_rect.texture = AssetLoader.load_image_from_path(Utils.to_snake_case("scenarios/" + scenario.name) + "/race_images/" + item.icon)
 		texture_rect.connect("mouse_entered", on_item_mouse_enter.bind(item))
 		texture_rect.connect("mouse_exited", on_item_mouse_exit.bind(item))
 		$PanelContainer/HBoxContainer.add_child(texture_rect)

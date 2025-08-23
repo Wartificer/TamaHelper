@@ -297,17 +297,9 @@ layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
 
-[node name="ItemPreview" type="TextureRect" parent="VBoxContainer2/VBoxContainer/PanelContainer/VBoxContainer/PanelContainer"]
-unique_name_in_owner = true
-custom_minimum_size = Vector2(90, 100)
-layout_mode = 2
-size_flags_horizontal = 0
-size_flags_vertical = 0
-expand_mode = 5
-stretch_mode = 4
-
 [node name="VBoxContainer" type="VBoxContainer" parent="VBoxContainer2/VBoxContainer/PanelContainer/VBoxContainer/PanelContainer"]
 layout_mode = 2
+theme_override_constants/separation = 0
 
 [node name="HBoxContainer3" type="HBoxContainer" parent="VBoxContainer2/VBoxContainer/PanelContainer/VBoxContainer/PanelContainer/VBoxContainer"]
 layout_mode = 2
@@ -402,33 +394,75 @@ texture = ExtResource("4_trn2v")
 expand_mode = 3
 stretch_mode = 6
 
-[node name="ScrollContainer" type="ScrollContainer" parent="VBoxContainer2/VBoxContainer/PanelContainer/VBoxContainer/PanelContainer/VBoxContainer"]
+[node name="HSeparator" type="HSeparator" parent="VBoxContainer2/VBoxContainer/PanelContainer/VBoxContainer/PanelContainer/VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 4
+theme_override_constants/separation = 0
+
+[node name="VBoxContainer" type="VBoxContainer" parent="VBoxContainer2/VBoxContainer/PanelContainer/VBoxContainer/PanelContainer/VBoxContainer"]
 layout_mode = 2
 size_flags_vertical = 3
 
-[node name="MarginContainer" type="MarginContainer" parent="VBoxContainer2/VBoxContainer/PanelContainer/VBoxContainer/PanelContainer/VBoxContainer/ScrollContainer"]
+[node name="Control2" type="Control" parent="VBoxContainer2/VBoxContainer/PanelContainer/VBoxContainer/PanelContainer/VBoxContainer/VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="ItemPreview" type="TextureRect" parent="VBoxContainer2/VBoxContainer/PanelContainer/VBoxContainer/PanelContainer/VBoxContainer/VBoxContainer/Control2"]
+unique_name_in_owner = true
+modulate = Color(1, 1, 1, 0.235294)
+custom_minimum_size = Vector2(90, 100)
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+expand_mode = 1
+stretch_mode = 5
+
+[node name="VBoxContainer" type="VBoxContainer" parent="VBoxContainer2/VBoxContainer/PanelContainer/VBoxContainer/PanelContainer/VBoxContainer/VBoxContainer/Control2"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Control" type="Control" parent="VBoxContainer2/VBoxContainer/PanelContainer/VBoxContainer/PanelContainer/VBoxContainer/VBoxContainer/Control2/VBoxContainer"]
+custom_minimum_size = Vector2(0, 20)
+layout_mode = 2
+
+[node name="EventLabel" type="Label" parent="VBoxContainer2/VBoxContainer/PanelContainer/VBoxContainer/PanelContainer/VBoxContainer/VBoxContainer/Control2/VBoxContainer"]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 4
+
+[node name="ScrollContainer" type="ScrollContainer" parent="VBoxContainer2/VBoxContainer/PanelContainer/VBoxContainer/PanelContainer/VBoxContainer/VBoxContainer/Control2/VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="MarginContainer" type="MarginContainer" parent="VBoxContainer2/VBoxContainer/PanelContainer/VBoxContainer/PanelContainer/VBoxContainer/VBoxContainer/Control2/VBoxContainer/ScrollContainer"]
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
 theme_override_constants/margin_left = 40
-theme_override_constants/margin_top = 40
+theme_override_constants/margin_top = 20
 theme_override_constants/margin_right = 40
 theme_override_constants/margin_bottom = 40
 
-[node name="InfoContainer" type="VBoxContainer" parent="VBoxContainer2/VBoxContainer/PanelContainer/VBoxContainer/PanelContainer/VBoxContainer/ScrollContainer/MarginContainer"]
+[node name="InfoContainer" type="VBoxContainer" parent="VBoxContainer2/VBoxContainer/PanelContainer/VBoxContainer/PanelContainer/VBoxContainer/VBoxContainer/Control2/VBoxContainer/ScrollContainer/MarginContainer"]
 unique_name_in_owner = true
 layout_mode = 2
 size_flags_horizontal = 3
-size_flags_vertical = 6
+size_flags_vertical = 2
 theme = ExtResource("5_03owx")
 theme_override_constants/separation = 20
-alignment = 1
 
-[node name="Control" type="Control" parent="VBoxContainer2/VBoxContainer/PanelContainer/VBoxContainer/PanelContainer/VBoxContainer"]
+[node name="Timelines" type="Control" parent="VBoxContainer2/VBoxContainer/PanelContainer/VBoxContainer/PanelContainer/VBoxContainer/VBoxContainer"]
 custom_minimum_size = Vector2(0, 40)
 layout_mode = 2
 
-[node name="VBoxContainer" type="VBoxContainer" parent="VBoxContainer2/VBoxContainer/PanelContainer/VBoxContainer/PanelContainer/VBoxContainer/Control"]
+[node name="VBoxContainer" type="VBoxContainer" parent="VBoxContainer2/VBoxContainer/PanelContainer/VBoxContainer/PanelContainer/VBoxContainer/VBoxContainer/Timelines"]
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
@@ -437,15 +471,15 @@ grow_horizontal = 2
 grow_vertical = 2
 theme_override_constants/separation = 0
 
-[node name="PanelContainer" type="PanelContainer" parent="VBoxContainer2/VBoxContainer/PanelContainer/VBoxContainer/PanelContainer/VBoxContainer/Control/VBoxContainer"]
+[node name="PanelContainer" type="PanelContainer" parent="VBoxContainer2/VBoxContainer/PanelContainer/VBoxContainer/PanelContainer/VBoxContainer/VBoxContainer/Timelines/VBoxContainer"]
 layout_mode = 2
 
-[node name="Control2" type="Control" parent="VBoxContainer2/VBoxContainer/PanelContainer/VBoxContainer/PanelContainer/VBoxContainer/Control/VBoxContainer"]
+[node name="Control2" type="Control" parent="VBoxContainer2/VBoxContainer/PanelContainer/VBoxContainer/PanelContainer/VBoxContainer/VBoxContainer/Timelines/VBoxContainer"]
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
 
-[node name="ImportantEventsTimeline" type="HBoxContainer" parent="VBoxContainer2/VBoxContainer/PanelContainer/VBoxContainer/PanelContainer/VBoxContainer/Control/VBoxContainer/Control2"]
+[node name="ImportantEventsTimeline" type="HBoxContainer" parent="VBoxContainer2/VBoxContainer/PanelContainer/VBoxContainer/PanelContainer/VBoxContainer/VBoxContainer/Timelines/VBoxContainer/Control2"]
 unique_name_in_owner = true
 layout_mode = 1
 anchors_preset = 9
@@ -456,7 +490,7 @@ grow_vertical = 2
 size_flags_vertical = 3
 theme_override_constants/separation = 0
 
-[node name="PanelContainer" type="PanelContainer" parent="VBoxContainer2/VBoxContainer/PanelContainer/VBoxContainer/PanelContainer/VBoxContainer/Control/VBoxContainer/Control2"]
+[node name="PanelContainer" type="PanelContainer" parent="VBoxContainer2/VBoxContainer/PanelContainer/VBoxContainer/PanelContainer/VBoxContainer/VBoxContainer/Timelines/VBoxContainer/Control2"]
 layout_mode = 1
 anchors_preset = 14
 anchor_top = 0.5
@@ -468,12 +502,12 @@ grow_horizontal = 2
 grow_vertical = 2
 theme_override_styles/panel = SubResource("StyleBoxLine_03owx")
 
-[node name="Control" type="Control" parent="VBoxContainer2/VBoxContainer/PanelContainer/VBoxContainer/PanelContainer/VBoxContainer/Control/VBoxContainer"]
+[node name="Control" type="Control" parent="VBoxContainer2/VBoxContainer/PanelContainer/VBoxContainer/PanelContainer/VBoxContainer/VBoxContainer/Timelines/VBoxContainer"]
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
 
-[node name="G1RacesTimeline" type="HBoxContainer" parent="VBoxContainer2/VBoxContainer/PanelContainer/VBoxContainer/PanelContainer/VBoxContainer/Control/VBoxContainer/Control"]
+[node name="G1RacesTimeline" type="HBoxContainer" parent="VBoxContainer2/VBoxContainer/PanelContainer/VBoxContainer/PanelContainer/VBoxContainer/VBoxContainer/Timelines/VBoxContainer/Control"]
 unique_name_in_owner = true
 layout_mode = 1
 anchors_preset = 9
@@ -484,7 +518,7 @@ grow_vertical = 2
 size_flags_vertical = 3
 theme_override_constants/separation = 0
 
-[node name="PanelContainer" type="PanelContainer" parent="VBoxContainer2/VBoxContainer/PanelContainer/VBoxContainer/PanelContainer/VBoxContainer/Control/VBoxContainer/Control"]
+[node name="PanelContainer" type="PanelContainer" parent="VBoxContainer2/VBoxContainer/PanelContainer/VBoxContainer/PanelContainer/VBoxContainer/VBoxContainer/Timelines/VBoxContainer/Control"]
 layout_mode = 1
 anchors_preset = 14
 anchor_top = 0.5
@@ -496,7 +530,7 @@ grow_horizontal = 2
 grow_vertical = 2
 theme_override_styles/panel = SubResource("StyleBoxLine_03owx")
 
-[node name="PanelContainer2" type="PanelContainer" parent="VBoxContainer2/VBoxContainer/PanelContainer/VBoxContainer/PanelContainer/VBoxContainer/Control"]
+[node name="PanelContainer2" type="PanelContainer" parent="VBoxContainer2/VBoxContainer/PanelContainer/VBoxContainer/PanelContainer/VBoxContainer/VBoxContainer/Timelines"]
 layout_mode = 1
 anchors_preset = 9
 anchor_bottom = 1.0
@@ -746,6 +780,11 @@ size_flags_horizontal = 3
 size_flags_vertical = 3
 theme_override_constants/h_separation = 6
 theme_override_constants/v_separation = 6
+
+[node name="Label" type="Label" parent="."]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 20.0
 
 [connection signal="pressed" from="VBoxContainer2/VBoxContainer/PanelContainer/VBoxContainer/MarginContainer/HBoxContainer/StartButton" to="." method="_on_start_button_pressed"]
 [connection signal="toggled" from="VBoxContainer2/VBoxContainer/PanelContainer/VBoxContainer/MarginContainer/HBoxContainer/AutoToggle" to="." method="_on_auto_toggle_toggled"]

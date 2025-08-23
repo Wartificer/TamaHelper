@@ -120,7 +120,7 @@ static func jaro_similarity(s1: String, s2: String) -> float:
 			float(matches - transpositions/2) / matches) / 3.0
 
 # Find fuzzy match in your specific data structure
-static func find_text_in_data_fuzzy(data: Variant, type : String, path: String, text: String, threshold: float = 0.85) -> Variant:
+static func find_text_in_data_fuzzy(data: Variant, type : String, text: String, threshold: float = 0.85) -> Variant:
 	var cleaned_text = clean_ocr_text(text)
 	var best_match = null
 	var best_similarity = 0.0
@@ -132,7 +132,7 @@ static func find_text_in_data_fuzzy(data: Variant, type : String, path: String, 
 				return {
 					"name": event.name,
 					"image": get_support_image(item) if type == "support" else Utils.to_snake_case(item.name),
-					"path": path,
+					"type": type,
 					"texts": event.text,
 					"similarity": 1.0
 				}
@@ -146,7 +146,7 @@ static func find_text_in_data_fuzzy(data: Variant, type : String, path: String, 
 				best_match = {
 					"name": event.name,
 					"image": Utils.to_snake_case(item.name) if type == "character" else get_support_image(item),
-					"path": path,
+					"type": type,
 					"texts": event.text,
 					"similarity": similarity
 				}

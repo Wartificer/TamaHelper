@@ -58,7 +58,7 @@ func load_character_list():
 		var character_button = character_button_scene.instantiate()
 		var image = AssetLoader.load_image_from_path("characters/" + Utils.to_snake_case(character.name) + "-icon.png")
 		if !image:
-			image = load("res://Images/missing-image.png")
+			image = AssetLoader.custom_missing_image
 		character_button.get_child(0).texture = image
 		character_button.get_child(1).text = character.name
 		character_button.pressed.connect(on_character_selected.bind(character))
@@ -69,7 +69,7 @@ func load_scenario_list():
 		var scenario_button = character_button_scene.instantiate()
 		var image = AssetLoader.load_image_from_path("scenarios/" + Utils.to_snake_case(scenario.name) + "/icon.png")
 		if !image:
-			image = load("res://Images/missing-image.png")
+			image = AssetLoader.custom_missing_image
 		scenario_button.get_child(0).texture = image
 		scenario_button.get_child(1).text = scenario.name
 		scenario_button.pressed.connect(on_scenario_selected.bind(scenario))
@@ -122,28 +122,35 @@ func capture_screen():
 
 ## Starts the program by capturing the screen
 func _on_start_button_pressed() -> void:
+	previous_texts_result.clear()
+	last_event_name = ""
 	Utils.save_temp_image = !keep_alive
 	get_screen_size()
-	capture_screen()
 	if keep_alive:
 		if %StartButton.text == "Stop":
 			%StartButton.text = "Start"
+			%StartButton.set_pressed_no_signal(false)
 			%CaptureTimer.stop()
 		else:
 			%StartButton.text = "Stop"
+			%StartButton.set_pressed_no_signal(true)
 			TIMER.start()
 	else:
 		%StartButton.set_pressed_no_signal(false)
+		capture_screen()
+		return
 
 ## When timer finishes, capture again
 func _on_capture_timer_timeout() -> void:
-	capture_screen()
-	if keep_alive:
+	if keep_alive and %StartButton.text == "Stop":
+		capture_screen()
 		TIMER.start()
 
 ## Sets if the program keep_alives or executes only once
 func _on_auto_toggle_toggled(toggled_on: bool) -> void:
 	keep_alive = toggled_on
+	%StartButton.text = "Start"
+	%StartButton.set_pressed_no_signal(false)
 	save_settings()
 
 func _on_always_on_top_toggle_toggled(toggled_on: bool) -> void:
@@ -201,14 +208,14 @@ func process_capture(capture : Image):
 		# Add information to screen
 		for text in texts_result:
 			var found
-			# Find text in character data
-			found = find_text_in_data([selected_character], "character", "res://data/characters/", text)
-			# Find text in scenario instead
+			# Find text in scenario data
+			found = find_text_in_data([selected_scenario], "scenario", text)
+			# Find text in character instead
 			if !found:
-				found = find_text_in_data(scenario_data, "scenario", "res://data/scenarios/", text)
+				found = find_text_in_data([selected_character], "character", text)
 			# Find text in supports instead
 			if !found:
-				found = find_text_in_data(support_data, "support", "res://data/supports/", text)
+				found = find_text_in_data(support_data, "support", text)
 				
 			# If an event was found for text, present it
 			if found and found.name != last_event_name:
@@ -219,16 +226,21 @@ func process_capture(capture : Image):
 				show_event_info(found)
 
 # Replace your original function with this fuzzy version
-func find_text_in_data(data : Variant, type : String, path: String, text : String) -> Variant:
-	return FuzzyTextMatcher.find_text_in_data_fuzzy(data, type, path, text, 0.5)
+func find_text_in_data(data : Variant, type : String, text : String) -> Variant:
+	return FuzzyTextMatcher.find_text_in_data_fuzzy(data, type, text, 0.5)
 
 var item_image_scene = load("res://Core/UIElements/ItemImage.tscn")
 var event_texts_scene = load("res://Core/UIElements/EventTexts.tscn")
 func show_event_info(info : Dictionary):
-	var item_image = load(info.path + "images/" + info.image + ".png")
+	var item_image = ""
+	if info.type == "scenario":
+		item_image = AssetLoader.load_image_from_path("scenarios/" + selected_scenario.name + "/icon.png")
+	else:
+		item_image = AssetLoader.load_image_from_path(info.type + "s/" + info.image + ".png")
 	if !item_image:
-		item_image = load("res://Images/missing-image.png")
-	# Show Item image
+		item_image = AssetLoader.custom_missing_image
+	# Show Item data
+	%EventLabel.text = info.name
 	%ItemPreview.texture = item_image
 	
 	# Show Item event text
@@ -240,9 +252,11 @@ func show_event_info(info : Dictionary):
 		play_random_animation()
 
 func update_date(date_on_screen : String):
-	for i in Utils.dates.size():
-		var date = Utils.dates[i]
-		if date == date_on_screen:
+	if !selected_scenario:
+		return
+	for i in selected_scenario.dates.size():
+		var date = selected_scenario.dates[i]
+		if date.name == date_on_screen:
 			var date_pos = 50 * i * -1 + 75.0
 			%ImportantEventsTimeline.offset_left = date_pos
 			%G1RacesTimeline.offset_left = date_pos
@@ -385,8 +399,44 @@ func set_selected_scenario_ui():
 	%SelectedScenario.texture = AssetLoader.load_image_from_path("scenarios/" + Utils.to_snake_case(selected_scenario.name) + "/icon.png")
 	set_timelines()
 
+var timeline_item_scene = load("res://Core/UIElements/TimelineItem.tscn")
 func set_timelines():
-	pass
+	if !selected_scenario:
+		return
+	
+	# Set fixed events
+	var fixed_events_list = selected_scenario.fixed_events
+	
+	var fixed_event_dates_list = []
+	for date in selected_scenario.dates:
+		var date_object = {"date": date, "items": []}
+		for event in fixed_events_list:
+			if event.date == date.name:
+				date_object.items.push_back(event)
+		fixed_event_dates_list.push_back(date_object)
+	
+	for date_object in fixed_event_dates_list:
+		var timeline_item = timeline_item_scene.instantiate()
+		timeline_item.set_data(date_object, selected_scenario, true)
+		%ImportantEventsTimeline.add_child(timeline_item)
+
+	# Set G1 races
+	var g1_races_list = selected_scenario.races
+	
+	var g1_race_dates_list = []
+	for date in selected_scenario.dates:
+		var date_object = {"date": date, "items": []}
+		for race in g1_races_list:
+			if race.date == date.name:
+				date_object.items.push_back(race)
+		g1_race_dates_list.push_back(date_object)
+	
+	for date_object in g1_race_dates_list:
+		var timeline_item = timeline_item_scene.instantiate()
+		timeline_item.set_data(date_object, selected_scenario)
+		%G1RacesTimeline.add_child(timeline_item)
+
+
 
 func _on_settings_menu_button_pressed() -> void:
 	%Settings.show()
@@ -404,6 +454,8 @@ func _on_close_character_select_button_pressed() -> void:
 	%CharacterSelect.hide()
 
 func on_character_selected(character):
+	previous_texts_result.clear()
+	last_event_name = ""
 	selected_character = character
 	set_selected_character_ui()
 	_on_close_character_select_button_pressed()
@@ -417,6 +469,8 @@ func _on_close_scenario_select_button_pressed() -> void:
 	%ScenarioSelect.hide()
 
 func on_scenario_selected(scenario):
+	previous_texts_result.clear()
+	last_event_name = ""
 	selected_scenario = scenario
 	set_selected_scenario_ui()
 	_on_close_scenario_select_button_pressed()

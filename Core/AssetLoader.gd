@@ -4,6 +4,7 @@ extends Node
 
 var custom_font: Font
 var custom_mascot: Texture2D
+var custom_missing_image: Texture2D
 
 # Valid font extensions
 const FONT_EXTENSIONS = ["ttf", "otf", "woff", "woff2"]
@@ -15,6 +16,7 @@ func _ready():
 	load_assets()
 
 func load_assets():
+	custom_missing_image = load("res://Images/missing-image.png")
 	var assets_path = get_assets_path()
 	print("Checking for custom assets in: ", assets_path)
 	
@@ -23,9 +25,10 @@ func load_assets():
 		print("Custom directory not found at: ", assets_path)
 		return
 	
+	# Load missing image
+	load_missimg(assets_path)
 	# Load font
 	load_font(assets_path)
-	
 	# Load mascot
 	load_mascot(assets_path)
 
@@ -79,6 +82,38 @@ func load_font(base_path: String):
 	
 	dir.list_dir_end()
 
+func load_missimg(base_path: String):
+	var dir = DirAccess.open(base_path)
+	if dir == null:
+		return
+	
+	dir.list_dir_begin()
+	var file_name = dir.get_next()
+	
+	while file_name != "":
+		# Check if filename starts with "missing_image" (case insensitive)
+		if file_name.to_lower().begins_with("missing-image"):
+			var extension = file_name.get_extension().to_lower()
+			
+			# Check if it has a valid image extension
+			if extension in IMAGE_EXTENSIONS:
+				var image_path = base_path + file_name
+				print("Found custom missing_image: ", image_path)
+				
+				var texture = load_image_from_fullpath(image_path)
+				if texture:
+					custom_missing_image = texture
+					print("Successfully loaded custom missing_image: ", file_name)
+					# You can add a signal here to notify other parts of your code
+					missing_image_loaded.emit(custom_missing_image)
+					break
+				else:
+					print("Failed to load missing_image: ", file_name)
+		
+		file_name = dir.get_next()
+	
+	dir.list_dir_end()
+
 func load_mascot(base_path: String):
 	var dir = DirAccess.open(base_path)
 	if dir == null:
@@ -97,7 +132,7 @@ func load_mascot(base_path: String):
 				var image_path = base_path + file_name
 				print("Found custom mascot: ", image_path)
 				
-				var texture = load_image_from_path(image_path)
+				var texture = load_image_from_fullpath(image_path)
 				if texture:
 					custom_mascot = texture
 					print("Successfully loaded custom mascot: ", file_name)
@@ -296,6 +331,18 @@ func load_image_from_path(path: String) -> Texture2D:
 	texture.set_image(image)
 	return texture
 
+func load_image_from_fullpath(full_path: String) -> Texture2D:
+	var image = Image.new()
+	var error = image.load(full_path)
+	
+	if error != OK:
+		print("Failed to load image: ", full_path, " Error: ", error)
+		return null
+	
+	var texture = ImageTexture.new()
+	texture.set_image(image)
+	return texture
+
 func apply_font():
 	if not custom_font:
 		return
@@ -320,6 +367,8 @@ func apply_font():
 
 # Signal that other nodes can connect to
 signal mascot_loaded(texture: Texture2D)
+
+signal missing_image_loaded(texture: Texture2D)
 
 # Helper functions to access the loaded assets from other scripts
 func get_font() -> Font:
