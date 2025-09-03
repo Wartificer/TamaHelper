@@ -1,0 +1,24 @@
+# .github/workflows/generate-manifest.yml
+name: Generate Data Manifest
+on:
+  push:
+    paths:
+      - 'data/**'
+  workflow_dispatch: # Manual trigger
+
+jobs:
+  generate-manifest:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Generate manifest
+        run: |
+          # Generate hashes and create manifest.json
+          python scripts/generate_manifest.py
+      - name: Commit manifest
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git add manifest.json
+          git commit -m "Update data manifest" || exit 0
+          git push
