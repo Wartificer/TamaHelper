@@ -5,6 +5,7 @@ class_name DataUpdater
 
 signal update_progress(progress: float, message: String)
 signal update_complete()
+signal update_impossible()
 signal update_failed(error: String)
 
 const GITHUB_REPO = "Wartificer/TamaHelper"
@@ -61,6 +62,9 @@ func _on_manifest_received(result: int, response_code: int, headers: PackedStrin
 		update_complete.emit()
 		return
 	else:
+		if !VersionComparator.is_version_greater(remote_manifest.min_app_version, ProjectSettings.get_setting("application/config/version", "1.0.0")):
+			update_impossible.emit()
+			return
 		_files_to_update = files_to_update
 		_remote_manifest = remote_manifest
 		update_available.emit()

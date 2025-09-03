@@ -87,6 +87,7 @@ func _ready():
 	AutoUpdater.update_available.connect(on_update_available)
 	AutoUpdater.update_progress.connect(on_update_progress)
 	AutoUpdater.update_complete.connect(on_update_complete)
+	AutoUpdater.update_impossible.connect(on_update_impossible)
 	AutoUpdater.update_failed.connect(on_update_failed)
 	load_game_data()
 
@@ -498,9 +499,6 @@ func on_update_available() -> void:
 	%UpdateStatus.text = "Update available. Click the button below to update"
 	%UpdateButton.show()
 	%UpdateButton.disabled = false
-	
-	## CHECK IF UPDATE IS POSSIBLE DUE TO APP VERSION REQUIREMENT
-	#%UpdateImpossibleContainer.show()
 
 func _on_update_button_pressed() -> void:
 	%UpdateButton.disabled = true
@@ -517,6 +515,10 @@ func on_update_complete(message : String):
 	load_game_data()
 	%CheckUpdatesButton.disabled = false
 
+func on_update_impossible():
+	# CHECK IF UPDATE IS POSSIBLE DUE TO APP VERSION REQUIREMENT
+	%UpdateImpossibleContainer.show()
+	
 func on_update_failed(message : String):
 	%UpdateStatus.text = message
 	%UpdateButton.disabled = false

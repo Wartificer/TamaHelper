@@ -1,4 +1,5 @@
 {
+  "min_app_version": "2.5",
   "characters": {
     "TM_Opera_O": "d9d9a197fd",
     "Mejiro_McQueen": "bc3a3825d4",
