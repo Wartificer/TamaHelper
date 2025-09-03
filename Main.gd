@@ -500,7 +500,7 @@ func _on_check_updates_button_pressed() -> void:
 
 func on_update_available() -> void:
 	%UpdateStatus.text = "Update available. Click the 'Update' button."
-	%UpdateButton.show()
+	%UpdateButtonContainer.show()
 	%UpdateButton.disabled = false
 
 func _on_update_button_pressed() -> void:

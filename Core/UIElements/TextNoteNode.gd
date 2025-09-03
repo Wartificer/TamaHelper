@@ -1,70 +1,45 @@
+# TextNoteNode.gd - Create this as a new script file
 extends GraphNode
 
-@onready var text_edit: TextEdit = $VBoxContainer/TextEdit
-var is_editing = false
+var text_edit: TextEdit
+var node_id: int
 
-func _ready():
-	# Set up the node properties
+func setup_node(id: int, initial_text: String = ""):
+	node_id = id
+	name = "TextNote_" + str(id)
+	#title = "Text Note " + str(id)
+	
+	
+	# Set up the GraphNode
 	resizable = true
-	size = Vector2(250, 150)
+	size = Vector2(300, 200)
 	
-	# Connect signals
+	# Create TextEdit
+	text_edit = TextEdit.new()
+	text_edit.size = Vector2(280, 150)
+	text_edit.size_flags_vertical = Control.SIZE_EXPAND_FILL
+	text_edit.placeholder_text = "Enter your note here..."
+	text_edit.wrap_mode = TextEdit.LINE_WRAPPING_BOUNDARY
+	text_edit.text = initial_text
+	
+	# Add TextEdit to the node
+	add_child(text_edit)
+	
+	# Connect signals for auto-resize
 	text_edit.text_changed.connect(_on_text_changed)
-	text_edit.focus_entered.connect(_on_focus_entered)
-	text_edit.focus_exited.connect(_on_focus_exited)
-	
-	## Set up close button
-	#show_close = true
-	#close_request.connect(_on_close_request)
-	
-	# Configure text edit
-	text_edit.placeholder_text = "Enter your note..."
-	#text_edit.wrap_mode = TextEdit.LINE_WRAPPING_WORD_SMART
-	text_edit.scroll_fit_content_height = true
-
-func set_text(text: String):
-	text_edit.text = text
-	_update_title()
-
-func get_text() -> String:
-	return text_edit.text
 
 func _on_text_changed():
-	_update_title()
+	# Optional: Auto-resize based on content
+	var line_count = text_edit.get_line_count()
+	var new_height = max(150, line_count * 20 + 50)
+	size.y = new_height + 50  # Add some padding for the title
 
-func _update_title():
-	var text = text_edit.text.strip_edges()
-	if text.length() > 0:
-		# Use first line as title, truncate if too long
-		var first_line = text.split("\n")[0]
-		if first_line.length() > 20:
-			title = first_line.substr(0, 17) + "..."
-		else:
-			title = first_line
-	else:
-		title = "Empty Note"
+func get_note_text() -> String:
+	return text_edit.text if text_edit else ""
 
-func _on_focus_entered():
-	is_editing = true
-
-func _on_focus_exited():
-	is_editing = false
+func set_note_text(text: String):
+	if text_edit:
+		text_edit.text = text
 
 func _on_close_request():
 	queue_free()
-
-# Save/Load functionality for future use
-func get_note_data() -> Dictionary:
-	return {
-		"type": "text",
-		"position": position_offset,
-		"size": size,
-		"title": title,
-		"text": text_edit.text
-	}
-
-func load_note_data(data: Dictionary):
-	position_offset = data.get("position", Vector2.ZERO)
-	size = data.get("size", Vector2(250, 150))
-	title = data.get("title", "Note")
-	text_edit.text = data.get("text", "")

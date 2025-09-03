@@ -1,4 +1,4 @@
-[gd_scene load_steps=23 format=3 uid="uid://dbqd80d1l70t4"]
+[gd_scene load_steps=24 format=3 uid="uid://dbqd80d1l70t4"]
 
 [ext_resource type="Script" uid="uid://beuccnthoabwk" path="res://Main.gd" id="1_glv2v"]
 [ext_resource type="Theme" uid="uid://bsi5c1o138wn4" path="res://Theme/Theme.tres" id="1_wkp8b"]
@@ -9,6 +9,7 @@
 [ext_resource type="Theme" uid="uid://dws1jwukuyny2" path="res://Theme/ChoicesTheme.tres" id="5_03owx"]
 [ext_resource type="Texture2D" uid="uid://qpowt8nxanbj" path="res://Images/tamamo.png" id="5_wkp8b"]
 [ext_resource type="PackedScene" uid="uid://hxajlxqfhrhp" path="res://Core/Notes.tscn" id="6_20pc6"]
+[ext_resource type="Texture2D" uid="uid://tr364oyjq7eu" path="res://Images/icon-random.tres" id="7_5vvyt"]
 [ext_resource type="Texture2D" uid="uid://dn3bjstcka6te" path="res://Images/icon-close.svg" id="7_lgr22"]
 [ext_resource type="Script" uid="uid://ccgyrwfrtpbs7" path="res://Core/UIElements/MouseScrollContainer.gd" id="10_wkp8b"]
 
@@ -223,7 +224,7 @@ theme_override_constants/separation = 0
 unique_name_in_owner = true
 layout_mode = 2
 size_flags_vertical = 3
-current_tab = 2
+current_tab = 1
 
 [node name="Helper" type="Control" parent="MainContainer/MainTabs"]
 visible = false
@@ -539,10 +540,10 @@ grow_vertical = 2
 theme_override_styles/panel = SubResource("StyleBoxLine_wkp8b")
 
 [node name="Notes" parent="MainContainer/MainTabs" instance=ExtResource("6_20pc6")]
-visible = false
 layout_mode = 2
 
 [node name="Update" type="Control" parent="MainContainer/MainTabs"]
+visible = false
 layout_mode = 2
 metadata/_tab_index = 2
 
@@ -583,12 +584,33 @@ layout_mode = 2
 theme_type_variation = &"ButtonStyled"
 text = "Check for updates"
 
-[node name="UpdateButton" type="Button" parent="MainContainer/MainTabs/Update/ScrollContainer/MarginContainer/VBoxContainer/HBoxContainer"]
+[node name="UpdateButtonContainer" type="HBoxContainer" parent="MainContainer/MainTabs/Update/ScrollContainer/MarginContainer/VBoxContainer/HBoxContainer"]
 unique_name_in_owner = true
 visible = false
 layout_mode = 2
+theme_override_constants/separation = 7
+
+[node name="UpdateButton" type="Button" parent="MainContainer/MainTabs/Update/ScrollContainer/MarginContainer/VBoxContainer/HBoxContainer/UpdateButtonContainer"]
+unique_name_in_owner = true
+layout_mode = 2
 theme_type_variation = &"ButtonStyled"
 text = "Update"
+
+[node name="TextureRect" type="TextureRect" parent="MainContainer/MainTabs/Update/ScrollContainer/MarginContainer/VBoxContainer/HBoxContainer/UpdateButtonContainer"]
+modulate = Color(0.999226, 0.612666, 0.628432, 1)
+layout_mode = 2
+tooltip_text = "This will only download 
+characters / supports that 
+were either recently added 
+into the game or were
+updated due to changes 
+or fixes.
+
+If you made local 
+changes of your own, they
+ might be overwritten."
+texture = ExtResource("7_5vvyt")
+expand_mode = 3
 
 [node name="UpdateStatus" type="Label" parent="MainContainer/MainTabs/Update/ScrollContainer/MarginContainer/VBoxContainer"]
 unique_name_in_owner = true
@@ -909,7 +931,7 @@ offset_bottom = 20.0
 [connection signal="pressed" from="MainContainer/MainTabs/Helper/VBoxContainer/PanelContainer/VBoxContainer/PanelContainer/HBoxContainer3/HBoxContainer/ScenarioSelectButton" to="." method="_on_scenario_select_button_pressed"]
 [connection signal="pressed" from="MainContainer/MainTabs/Helper/VBoxContainer/PanelContainer/VBoxContainer/PanelContainer/HBoxContainer3/HBoxContainer2/CharacterSelectButton" to="." method="_on_character_select_button_pressed"]
 [connection signal="pressed" from="MainContainer/MainTabs/Update/ScrollContainer/MarginContainer/VBoxContainer/HBoxContainer/CheckUpdatesButton" to="." method="_on_check_updates_button_pressed"]
-[connection signal="pressed" from="MainContainer/MainTabs/Update/ScrollContainer/MarginContainer/VBoxContainer/HBoxContainer/UpdateButton" to="." method="_on_update_button_pressed"]
+[connection signal="pressed" from="MainContainer/MainTabs/Update/ScrollContainer/MarginContainer/VBoxContainer/HBoxContainer/UpdateButtonContainer/UpdateButton" to="." method="_on_update_button_pressed"]
 [connection signal="pressed" from="MainContainer/MainTabs/Update/ScrollContainer/MarginContainer/VBoxContainer/UpdateImpossibleContainer/HBoxContainer3/DownloadButton" to="." method="_on_download_button_pressed"]
 [connection signal="pressed" from="MainContainer/MainTabs/Settings/MarginContainer/VBoxContainer/HBoxContainer/SwitchScreenButton" to="." method="_on_switch_screen_button_pressed"]
 [connection signal="value_changed" from="MainContainer/MainTabs/Settings/MarginContainer/VBoxContainer/HBoxContainer2/HBoxContainer/LoopMS" to="." method="_on_loop_ms_value_changed"]

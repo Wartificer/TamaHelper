@@ -2,23 +2,20 @@
 
 [ext_resource type="Script" uid="uid://bskhqt253m6ih" path="res://Core/Notes.gd" id="1_u15te"]
 
-[node name="Notes" type="Control"]
-layout_mode = 3
+[node name="Notes" type="GraphEdit"]
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+snapping_distance = 10
+panning_scheme = 1
+minimap_size = Vector2(160, 100)
+show_zoom_label = true
+show_grid_buttons = false
+show_arrange_button = false
 script = ExtResource("1_u15te")
 metadata/_tab_index = 1
-
-[node name="NotesGraph" type="GraphEdit" parent="."]
-layout_mode = 1
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
-grow_horizontal = 2
-grow_vertical = 2
 
 [node name="UI" type="Control" parent="."]
 layout_mode = 1
@@ -29,13 +26,23 @@ grow_horizontal = 2
 grow_vertical = 2
 mouse_filter = 2
 
-[node name="AddNoteButton" type="Button" parent="UI"]
-custom_minimum_size = Vector2(30, 0)
+[node name="MarginContainer" type="MarginContainer" parent="UI"]
 layout_mode = 1
-anchors_preset = 1
-anchor_left = 1.0
+anchors_preset = 15
 anchor_right = 1.0
-offset_left = -30.0
-offset_bottom = 28.0
-grow_horizontal = 0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+theme_override_constants/margin_left = 10
+theme_override_constants/margin_top = 10
+theme_override_constants/margin_right = 10
+theme_override_constants/margin_bottom = 10
+
+[node name="AddNoteButton" type="Button" parent="UI/MarginContainer"]
+custom_minimum_size = Vector2(30, 0)
+layout_mode = 2
+size_flags_horizontal = 8
+size_flags_vertical = 0
+theme_type_variation = &"ButtonStyled"
 text = "+"

@@ -2,8 +2,7 @@
 
 [ext_resource type="Script" uid="uid://cjqv3hut5hd8r" path="res://Core/UIElements/TextNoteNode.gd" id="1_3lxe5"]
 
-[node name="TextNoteNode" type="Control"]
-layout_mode = 3
+[node name="TextNoteNode" type="GraphNode"]
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
