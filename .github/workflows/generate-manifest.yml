@@ -14,7 +14,7 @@ jobs:
       - name: Generate manifest
         run: |
           # Generate hashes and create manifest.json
-          python scripts/generate_manifest.py
+          python generate_manifest.py
       - name: Commit manifest
         run: |
           git config --local user.email "action@github.com"
