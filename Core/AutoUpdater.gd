@@ -9,11 +9,11 @@ signal update_impossible()
 signal update_failed(error: String)
 
 const GITHUB_REPO = "Wartificer/TamaHelper"
-const MANIFEST_URL = "https://raw.githubusercontent.com/%s/master/manifest.json" % GITHUB_REPO
+const MANIFEST_URL = "https://raw.githubusercontent.com/%s/master/data/manifest.json" % GITHUB_REPO
 const RAW_BASE_URL = "https://raw.githubusercontent.com/%s/master/data/" % GITHUB_REPO
 
 var data_path = AssetLoader.get_data_path()
-var local_manifest_path = AssetLoader.get_base_path() + "manifest.json"
+var local_manifest_path = data_path + "manifest.json"
 
 var _files_to_update
 var _remote_manifest

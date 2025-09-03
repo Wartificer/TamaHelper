@@ -83,6 +83,7 @@ func load_scenario_list():
 
 ## Initialize OCR Manager
 func _ready():
+	%AppVersion.text = ProjectSettings.get_setting("application/config/version", "1.0.0")
 	if AssetLoader.custom_mascot:
 		%Mascot.texture = AssetLoader.custom_mascot
 	get_screen_size()

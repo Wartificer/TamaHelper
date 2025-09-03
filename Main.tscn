@@ -569,7 +569,24 @@ theme_override_constants/margin_bottom = 20
 layout_mode = 2
 theme_override_constants/separation = 20
 
-[node name="UpdateGuide" type="Label" parent="MainContainer/MainTabs/Update/ScrollContainer/MarginContainer/VBoxContainer"]
+[node name="HBoxContainer2" type="HBoxContainer" parent="MainContainer/MainTabs/Update/ScrollContainer/MarginContainer/VBoxContainer"]
+layout_mode = 2
+
+[node name="UpdateGuide" type="Label" parent="MainContainer/MainTabs/Update/ScrollContainer/MarginContainer/VBoxContainer/HBoxContainer2"]
+custom_minimum_size = Vector2(103.34, 0)
+layout_mode = 2
+size_flags_horizontal = 0
+text = "App Version:"
+autowrap_mode = 3
+
+[node name="AppVersion" type="Label" parent="MainContainer/MainTabs/Update/ScrollContainer/MarginContainer/VBoxContainer/HBoxContainer2"]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 3
+text = "App Version:"
+autowrap_mode = 3
+
+[node name="UpdateGuide2" type="Label" parent="MainContainer/MainTabs/Update/ScrollContainer/MarginContainer/VBoxContainer"]
 layout_mode = 2
 text = "Click the button below to check for updates in Characters and Support cards."
 autowrap_mode = 3
@@ -919,11 +936,6 @@ size_flags_horizontal = 3
 size_flags_vertical = 3
 theme_override_constants/h_separation = 6
 theme_override_constants/v_separation = 6
-
-[node name="Label" type="Label" parent="."]
-layout_mode = 0
-offset_right = 40.0
-offset_bottom = 20.0
 
 [node name="Control" type="Control" parent="."]
 layout_mode = 3
