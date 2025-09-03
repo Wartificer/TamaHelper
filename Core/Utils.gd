@@ -82,8 +82,8 @@ var sp_numbers_negative = [
 ]
 
 var links = {
-	"Full Speed": "Increases movement speed by 50% for 10 seconds",
-	"Magic Boost": "Enhances spell damage by 25%",
+	#"Full Speed": "Increases movement speed by 50% for 10 seconds",
+	#"Magic Boost": "Enhances spell damage by 25%",
 	# Add more links as needed
 }
 

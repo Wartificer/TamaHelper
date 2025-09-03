@@ -493,7 +493,7 @@ func _on_update_button_pressed() -> void:
 	AutoUpdater.check_for_updates()
 
 
-func on_update_progress(message : String):
+func on_update_progress(progress : int, message : String):
 	%UpdateStatus.text = message
 
 func on_update_complete(message : String):

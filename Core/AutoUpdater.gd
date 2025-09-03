@@ -6,11 +6,11 @@ signal update_complete()
 signal update_failed(error: String)
 
 const GITHUB_REPO = "Wartificer/TamaHelper"
-const MANIFEST_URL = "https://raw.githubusercontent.com/%s/main/manifest.json" % GITHUB_REPO
-const RAW_BASE_URL = "https://raw.githubusercontent.com/%s/main/data/" % GITHUB_REPO
+const MANIFEST_URL = "https://raw.githubusercontent.com/%s/master/manifest.json" % GITHUB_REPO
+const RAW_BASE_URL = "https://raw.githubusercontent.com/%s/master/data/" % GITHUB_REPO
 
 var data_path = AssetLoader.get_data_path()
-var local_manifest_path = "user://local_manifest.json"
+var local_manifest_path = AssetLoader.get_base_path() + "manifest.json"
 
 func _ready():
 	# Ensure data directory exists
@@ -38,7 +38,6 @@ func _on_manifest_received(result: int, response_code: int, headers: PackedStrin
 	if response_code != 200:
 		update_failed.emit("Failed to fetch manifest: HTTP " + str(response_code))
 		return
-	print(response_code)
 	
 	var json = JSON.new()
 	var parse_result = json.parse(body.get_string_from_utf8())
@@ -49,7 +48,6 @@ func _on_manifest_received(result: int, response_code: int, headers: PackedStrin
 	
 	var remote_manifest = json.data
 	var local_manifest = _load_local_manifest()
-	print(json.data)
 	
 	var files_to_update = _compare_manifests(local_manifest, remote_manifest)
 	
@@ -80,7 +78,7 @@ func _save_local_manifest(manifest: Dictionary):
 		file.close()
 
 func _compare_manifests(local: Dictionary, remote: Dictionary) -> Array[Dictionary]:
-	var updates = []
+	var updates : Array[Dictionary] = []
 	
 	for category in remote:
 		var remote_items = remote[category] as Dictionary
@@ -106,6 +104,7 @@ func _download_updates(files_to_update: Array, remote_manifest: Dictionary):
 	update_progress.emit(0.1, "Starting downloads...")
 	
 	for file_info in files_to_update:
+		print(file_info)
 		await _download_file(file_info)
 		completed_files += 1
 		var progress = 0.1 + (completed_files / float(total_files)) * 0.9
@@ -141,19 +140,17 @@ func _download_single_file(url: String, local_path: String) -> void:
 	var http_request = HTTPRequest.new()
 	add_child(http_request)
 	
-	var completed = false
-	http_request.request_completed.connect(func(result: int, response_code: int, headers: PackedStringArray, body: PackedByteArray):
+	# Create a signal that we can await directly
+	var download_finished = func(result: int, response_code: int, headers: PackedStringArray, body: PackedByteArray):
 		if response_code == 200:
 			_save_file(local_path, body)
-		completed = true
 		http_request.queue_free()
-	)
 	
+	http_request.request_completed.connect(download_finished)
 	http_request.request(url)
 	
-	# Wait for completion
-	while not completed:
-		await get_tree().process_frame
+	# Wait for the signal to be emitted
+	await http_request.request_completed
 
 func _download_scenario_folder(scenario_name: String) -> void:
 	# First, get the data.json file to see what else is in the folder

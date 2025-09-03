@@ -32,6 +32,15 @@ func load_assets():
 	# Load mascot
 	load_mascot(assets_path)
 
+func get_base_path() -> String:
+	if OS.has_feature("editor"):
+		# In editor, use res://data/
+		return ProjectSettings.globalize_path("res://").get_base_dir() + "/"
+	else:
+		# In production, use executable_path/data/
+		var exe_path = OS.get_executable_path().get_base_dir()
+		return exe_path + "/"
+
 func get_data_path() -> String:
 	if OS.has_feature("editor"):
 		# In editor, use res://data/
