@@ -26,7 +26,7 @@
       "name": "Aspiration",
       "text": [
         "[[Power+]]+10",
-        "[[Energy-]]+10\n[[Power+]]+20"
+        "[[Energy-]]-10\n[[Power+]]+20"
       ]
     },
     {
@@ -47,9 +47,9 @@
       "name": "Starving Warriors",
       "text": [
         "[[Energy+]]+5\n[[Wit+]]+10",
-        "[[Energy-]]-10\n[[Mood+]]+1\n[[Speed+]]+25[[or]][[Energy-]]-10\n[[Speed+]+10",
-		"[[Energy-]]-10\n[[Mood+]]+1\n[[Stamina+]]+25[[or]][[Energy-]]-10\n[[Stamina+]+10",
-		"[[Energy-]]-10\n[[Mood+]]+1\n[[Power+]]+25[[or]][[Energy-]]-10\n[[Power+]+10"
+        "[[Energy-]]-10\n[[Mood+]]+1\n[[Speed+]]+25\n[[or]]\n[[Energy-]]-10\n[[Speed+]+10",
+		"[[Energy-]]-10\n[[Mood+]]+1\n[[Stamina+]]+25\n[[or]]\n[[Energy-]]-10\n[[Stamina+]+10",
+		"[[Energy-]]-10\n[[Mood+]]+1\n[[Power+]]+25\n[[or]]\n[[Energy-]]-10\n[[Power+]+10"
       ]
     },
     {
