@@ -222,15 +222,31 @@ func process_capture(capture : Image):
 		# Add information to screen
 		for text in texts_result:
 			var found
+			# Check all three data sources and keep track of the best match
+			var candidates = []
+			var best_similarity = 0.0
+
 			# Find text in scenario data
-			found = find_text_in_data([selected_scenario], "scenario", text)
-			# Find text in character instead
-			if !found:
-				found = find_text_in_data([selected_character], "character", text)
-			# Find text in supports instead
-			if !found:
-				found = find_text_in_data(support_data, "support", text)
-				
+			var scenario_match = find_text_in_data([selected_scenario], "scenario", text)
+			if scenario_match and scenario_match.has("similarity"):
+				candidates.append(scenario_match)
+
+			# Find text in character data
+			var character_match = find_text_in_data([selected_character], "character", text)
+			if character_match and character_match.has("similarity"):
+				candidates.append(character_match)
+
+			# Find text in support data
+			var support_match = find_text_in_data(support_data, "support", text)
+			if support_match and support_match.has("similarity"):
+				candidates.append(support_match)
+
+			# Find the candidate with the highest similarity
+			for candidate in candidates:
+				if candidate.similarity > best_similarity:
+					best_similarity = candidate.similarity
+					found = candidate
+
 			# If an event was found for text, present it
 			if found and found.name != last_event_name:
 				last_event_name = found.name
@@ -408,11 +424,17 @@ func find_dict_by_name(dict_list: Array, target_name: String) -> Dictionary:
 func set_selected_character_ui():
 	%ClickToChangeLabel.hide()
 	%CareerCharacterLabel.text = selected_character.name
-	%SelectedCharacter.texture = AssetLoader.load_image_from_path("characters/" + Utils.to_snake_case(selected_character.name) + "-icon.png")
+	var image = AssetLoader.load_image_from_path("characters/" + Utils.to_snake_case(selected_character.name) + "-icon.png")
+	if !image:
+		image = AssetLoader.custom_missing_image
+	%SelectedCharacter.texture = image
 
 func set_selected_scenario_ui():
 	#%CareerScenarioLabel.text = selected_scenario.name
-	%SelectedScenario.texture = AssetLoader.load_image_from_path("scenarios/" + Utils.to_snake_case(selected_scenario.name) + "/icon.png")
+	var image = AssetLoader.load_image_from_path("scenarios/" + Utils.to_snake_case(selected_scenario.name) + "/icon.png")
+	if !image:
+		image = AssetLoader.custom_missing_image
+	%SelectedScenario.texture = image
 	set_timelines()
 
 var timeline_item_scene = load("res://Core/UIElements/TimelineItem.tscn")

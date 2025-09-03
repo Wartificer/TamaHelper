@@ -224,10 +224,9 @@ theme_override_constants/separation = 0
 unique_name_in_owner = true
 layout_mode = 2
 size_flags_vertical = 3
-current_tab = 1
+current_tab = 0
 
 [node name="Helper" type="Control" parent="MainContainer/MainTabs"]
-visible = false
 layout_mode = 2
 metadata/_tab_index = 0
 
@@ -540,6 +539,7 @@ grow_vertical = 2
 theme_override_styles/panel = SubResource("StyleBoxLine_wkp8b")
 
 [node name="Notes" parent="MainContainer/MainTabs" instance=ExtResource("6_20pc6")]
+visible = false
 layout_mode = 2
 scroll_offset = Vector2(0, -28)
 
@@ -924,6 +924,27 @@ theme_override_constants/v_separation = 6
 layout_mode = 0
 offset_right = 40.0
 offset_bottom = 20.0
+
+[node name="Control" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+
+[node name="CloseButton" type="Button" parent="Control"]
+custom_minimum_size = Vector2(30, 30)
+layout_mode = 1
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -12.0
+offset_top = -40.0
+offset_right = 18.0
+offset_bottom = -10.0
+grow_horizontal = 0
+size_flags_horizontal = 8
+size_flags_vertical = 0
+icon = ExtResource("7_lgr22")
+flat = true
+expand_icon = true
 
 [connection signal="tab_changed" from="MainContainer/MainTabs" to="." method="_on_main_tabs_tab_changed"]
 [connection signal="pressed" from="MainContainer/MainTabs/Helper/VBoxContainer/MarginContainer/HBoxContainer/StartButton" to="." method="_on_start_button_pressed"]

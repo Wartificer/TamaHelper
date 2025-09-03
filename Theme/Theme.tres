@@ -1,4 +1,4 @@
-[gd_resource type="Theme" load_steps=6 format=3 uid="uid://bsi5c1o138wn4"]
+[gd_resource type="Theme" load_steps=8 format=3 uid="uid://bsi5c1o138wn4"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_abrne"]
 content_margin_left = 8.0
@@ -70,6 +70,10 @@ corner_radius_bottom_right = 4
 corner_radius_bottom_left = 4
 expand_margin_bottom = 4.0
 
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_2ufmn"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_rmkbn"]
+
 [resource]
 ButtonStyled/base_type = &"Button"
 ButtonStyled/colors/font_color = Color(0, 0, 0, 1)
@@ -84,3 +88,5 @@ ButtonStyled/styles/hover = SubResource("StyleBoxFlat_j4jqe")
 ButtonStyled/styles/normal = SubResource("StyleBoxFlat_23v3e")
 ButtonStyled/styles/pressed = SubResource("StyleBoxFlat_k1aya")
 CheckButton/font_sizes/font_size = 12
+CheckButton/styles/focus = SubResource("StyleBoxEmpty_2ufmn")
+TabContainer/styles/tab_focus = SubResource("StyleBoxEmpty_rmkbn")
