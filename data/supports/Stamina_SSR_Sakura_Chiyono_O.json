@@ -1,0 +1,41 @@
+{
+  "name": "Sakura Chiyono O",
+  "rarity": "ssr",
+  "type": "stamina",
+  "events": [
+    {
+      "name": "One Step toward Blooming!",
+      "text": [
+        "[[sp+]]+15"
+      ]
+    },
+    {
+      "name": "Blooming Hope!",
+      "text": [
+        "[[Stamina+]]+15\n[[possible]] Heal affliction\nSakura Chiyono O [[bond+]]+5\n[[or]]\n[[Energy-]]-10\n[[Guts+]]+15\nSakura Chiyono O [[bond+]]+5",
+		"[[Energy+]]+10\n[[Mood+]]+1\nSakura Chiyono O [[bond+]]+5"
+      ]
+    },
+    {
+      "name": "Someday, I'll Bloom!",
+      "text": [
+        "[[Energy-]]-15\n[[Stamina+]]+20\n[[sp+]]+10\n{link:{link:Speed Star}} [[hint]]3\nSakura Chiyono O [[bond+]]+5\n[[or]]\n[[Energy-]]-15\n[[Stamina+]]+10\n[[sp+]]+5\n{link:{link:Prepared to Pass}} [[hint]]3\nSakura Chiyono O [[bond+]]+5",
+		"[[Speed+]]+5]\n[[Stamina+]]+10\n[[Power+]]+5\n[[sp+]]+30\nSakura Chiyono O [[bond+]]+5"
+      ]
+    },
+    {
+      "name": "Today's Words of Wisdom!",
+      "text": [
+        "[[Energy-]]-10\n[[Power]]+20\nSakura Chiyono O [[bond+]]+5",
+        "[[Energy+]]+5\n[[sp+]]+10\nSakura Chiyono O [[bond+]]+5"
+      ]
+    },
+    {
+      "name": "Until I Bloom...",
+      "text": [
+        "[[Energy+]]+5\n[[Stamina+]]+5\nSakura Chiyono O [[bond+]]+5",
+        "{link:Spring Runner} [[hint]]1\nSakura Chiyono O [[bond+]]+5"
+      ]
+    }
+  ]
+}

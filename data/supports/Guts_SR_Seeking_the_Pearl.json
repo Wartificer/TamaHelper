@@ -1,0 +1,35 @@
+{
+  "name": "Seeking the Pearl",
+  "rarity": "sr",
+  "type": "guts",
+  "events": [
+    {
+      "name": "No More Words ♪ Use Body Language!",
+      "text": [
+        "[[Mood+]]+1\n{link:Lucky Seven} [[hint]]1\nSeeking the Pearl [[bond+]]+5",
+        "[[Power+]]+10\n[[Guts+]]+10\nSeeking the Pearl [[bond+]]+5",
+		"[[Energy+]]+30"
+      ]
+    },
+    {
+      "name": "Never Give Up! Endless Possibilities!",
+      "text": [
+        "[[Power+]]+5\n[[Guts+]]+5\n{link:Shifting Gears} [[hint]]1"
+      ]
+    },
+    {
+      "name": "Full-Power Passion!",
+      "text": [
+        "[[Energy+]]+10\nSeeking the Pearl [[bond+]]+5\n[[Mood+]]+1",
+        "[[Power+]]+5\n[[Guts+]]+5\nSeeking the Pearl [[bond+]]+5"
+      ]
+    },
+    {
+      "name": "Full-Power Thinking!",
+      "text": [
+        "[[Wit+]]+20\nSeeking the Pearl [[bond+]]+5",
+        "[[Energy-]]-10\n{link:Uma Stan} [[hint]]3\nSeeking the Pearl [[bond+]]+5"
+      ]
+    }
+  ]
+}

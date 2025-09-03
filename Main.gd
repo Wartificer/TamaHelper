@@ -392,13 +392,12 @@ func find_dict_by_name(dict_list: Array, target_name: String) -> Dictionary:
 	return {}
 
 func set_selected_character_ui():
-	%ClickToChangeLabel.show()
+	%ClickToChangeLabel.hide()
 	%CareerCharacterLabel.text = selected_character.name
 	%SelectedCharacter.texture = AssetLoader.load_image_from_path("characters/" + Utils.to_snake_case(selected_character.name) + "-icon.png")
 
 func set_selected_scenario_ui():
-	%ClickToChangeScenarioLabel.show()
-	%CareerScenarioLabel.text = selected_scenario.name
+	#%CareerScenarioLabel.text = selected_scenario.name
 	%SelectedScenario.texture = AssetLoader.load_image_from_path("scenarios/" + Utils.to_snake_case(selected_scenario.name) + "/icon.png")
 	set_timelines()
 
@@ -439,15 +438,6 @@ func set_timelines():
 		timeline_item.set_data(date_object, selected_scenario)
 		%G1RacesTimeline.add_child(timeline_item)
 
-
-
-func _on_settings_menu_button_pressed() -> void:
-	%Settings.show()
-
-
-func _on_close_settings_button_pressed() -> void:
-	%Settings.hide()
-
 #endregion
 
 func _on_character_select_button_pressed() -> void:
@@ -483,3 +473,7 @@ func on_scenario_selected(scenario):
 func _on_loop_ms_value_changed(value: float) -> void:
 	TIMER.wait_time = value/1000
 	save_settings()
+
+
+func _on_main_tabs_tab_changed(tab: int) -> void:
+	Utils.current_tab = %MainTabs.get_tab_title(tab)

@@ -1,0 +1,40 @@
+{
+  "name": "Mejiro Dober",
+  "rarity": "ssr",
+  "type": "wit",
+  "events": [
+    {
+      "name": "One Step Forward",
+      "text": [
+        "[[Energy-]]-10\n[[sp+]]+15\n[[or]]\n[[sp+]]+45\nMejiro Dober [[bond+]]+5",
+		"[[Guts+]]+5\n[[Wit+]]+5\nMejiro Dober [[bond+]]+5"
+      ]
+    },
+    {
+      "name": "Two Steps Up",
+      "text": [
+        "[[Guts+]]+3\n[[Wit+]]+3\n[[sp+]]+5"
+      ]
+    },
+    {
+      "name": "Three Steps Forward, Two Steps Back",
+      "text": [
+        "[[Energy-]]-10\n[[Guts+]]+5\n[[Wit+]]+5\n{link:The Bigger Picture} [[hint]]1"
+      ]
+    },
+    {
+      "name": "Give It a Try",
+      "text": [
+        "[[Energy+]]+15\nMejiro Dober [[bond+]]+5",
+        "[[Mood+]]+1\n[[sp+]]+15\nMejiro Dober [[bond+]]+5"
+      ]
+    },
+    {
+      "name": "Hope She'll Like It...",
+      "text": [
+		    "[[sp+]]+45\nMejiro Dober [[bond+]]+5",
+        "{link:Unyielding Spirit} [[hint]]1\nMejiro Dober [[bond+]]+5"
+      ]
+    }
+  ]
+}

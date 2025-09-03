@@ -1,13 +1,14 @@
-[gd_scene load_steps=22 format=3 uid="uid://dbqd80d1l70t4"]
+[gd_scene load_steps=23 format=3 uid="uid://dbqd80d1l70t4"]
 
 [ext_resource type="Script" uid="uid://beuccnthoabwk" path="res://Main.gd" id="1_glv2v"]
 [ext_resource type="Theme" uid="uid://bsi5c1o138wn4" path="res://Theme/Theme.tres" id="1_wkp8b"]
-[ext_resource type="Texture2D" uid="uid://b2ypti31necbr" path="res://Images/icon-config.svg" id="3_3dxm6"]
 [ext_resource type="Texture2D" uid="uid://dhghiuefn05vy" path="res://Images/tamamo-handyou.png" id="3_cm0pq"]
+[ext_resource type="Texture2D" uid="uid://du0iwtt0y0euw" path="res://Images/select-scenario-placeholder.png" id="3_wkp8b"]
 [ext_resource type="Texture2D" uid="uid://yib5kbnmqiot" path="res://Images/tamamo-handup.png" id="4_fos0i"]
 [ext_resource type="Texture2D" uid="uid://bfde0cfunamdg" path="res://Images/select-character-placeholder.png" id="4_trn2v"]
 [ext_resource type="Theme" uid="uid://dws1jwukuyny2" path="res://Theme/ChoicesTheme.tres" id="5_03owx"]
 [ext_resource type="Texture2D" uid="uid://qpowt8nxanbj" path="res://Images/tamamo.png" id="5_wkp8b"]
+[ext_resource type="PackedScene" uid="uid://hxajlxqfhrhp" path="res://Core/Notes.tscn" id="6_20pc6"]
 [ext_resource type="Texture2D" uid="uid://dn3bjstcka6te" path="res://Images/icon-close.svg" id="7_lgr22"]
 [ext_resource type="Script" uid="uid://ccgyrwfrtpbs7" path="res://Core/UIElements/MouseScrollContainer.gd" id="10_wkp8b"]
 
@@ -204,10 +205,12 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
 theme = ExtResource("1_wkp8b")
 script = ExtResource("1_glv2v")
 
-[node name="VBoxContainer2" type="VBoxContainer" parent="."]
+[node name="MainContainer" type="VBoxContainer" parent="."]
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
@@ -216,43 +219,48 @@ grow_horizontal = 2
 grow_vertical = 2
 theme_override_constants/separation = 0
 
-[node name="VBoxContainer" type="VBoxContainer" parent="VBoxContainer2"]
+[node name="MainTabs" type="TabContainer" parent="MainContainer"]
+unique_name_in_owner = true
 layout_mode = 2
 size_flags_vertical = 3
+current_tab = 1
 
-[node name="PanelContainer" type="PanelContainer" parent="VBoxContainer2/VBoxContainer"]
+[node name="Helper" type="Control" parent="MainContainer/MainTabs"]
+visible = false
 layout_mode = 2
-size_flags_horizontal = 3
+metadata/_tab_index = 0
+
+[node name="VBoxContainer" type="VBoxContainer" parent="MainContainer/MainTabs/Helper"]
+layout_mode = 2
+offset_right = 400.0
+offset_bottom = 492.0
 size_flags_vertical = 3
 
-[node name="VBoxContainer" type="VBoxContainer" parent="VBoxContainer2/VBoxContainer/PanelContainer"]
-layout_mode = 2
-
-[node name="MarginContainer" type="MarginContainer" parent="VBoxContainer2/VBoxContainer/PanelContainer/VBoxContainer"]
+[node name="MarginContainer" type="MarginContainer" parent="MainContainer/MainTabs/Helper/VBoxContainer"]
 layout_mode = 2
 theme_override_constants/margin_left = 10
-theme_override_constants/margin_top = 4
+theme_override_constants/margin_top = 8
 theme_override_constants/margin_right = 10
-theme_override_constants/margin_bottom = 4
+theme_override_constants/margin_bottom = 8
 
-[node name="HBoxContainer" type="HBoxContainer" parent="VBoxContainer2/VBoxContainer/PanelContainer/VBoxContainer/MarginContainer"]
+[node name="HBoxContainer" type="HBoxContainer" parent="MainContainer/MainTabs/Helper/VBoxContainer/MarginContainer"]
 layout_mode = 2
 theme_override_constants/separation = 12
 
-[node name="StartButton" type="Button" parent="VBoxContainer2/VBoxContainer/PanelContainer/VBoxContainer/MarginContainer/HBoxContainer"]
+[node name="StartButton" type="Button" parent="MainContainer/MainTabs/Helper/VBoxContainer/MarginContainer/HBoxContainer"]
 unique_name_in_owner = true
 layout_mode = 2
 tooltip_text = "Starts the program.
-If \"keep alive\" is checked, 
+If \"loop\" is checked, 
 it will check the screen 
 every 1s. If not, it will 
-check only when you click 
-\"Start\"."
+check only when
+you click \"Start\"."
 theme_type_variation = &"ButtonStyled"
 toggle_mode = true
 text = "Start"
 
-[node name="AutoToggle" type="CheckButton" parent="VBoxContainer2/VBoxContainer/PanelContainer/VBoxContainer/MarginContainer/HBoxContainer"]
+[node name="AutoToggle" type="CheckButton" parent="MainContainer/MainTabs/Helper/VBoxContainer/MarginContainer/HBoxContainer"]
 unique_name_in_owner = true
 layout_mode = 2
 size_flags_horizontal = 2
@@ -264,10 +272,14 @@ button_pressed = true
 text = "Loop"
 flat = true
 
-[node name="AlwaysOnTopToggle" type="CheckButton" parent="VBoxContainer2/VBoxContainer/PanelContainer/VBoxContainer/MarginContainer/HBoxContainer"]
+[node name="HBoxContainer" type="HBoxContainer" parent="MainContainer/MainTabs/Helper/VBoxContainer/MarginContainer/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 10
+
+[node name="AlwaysOnTopToggle" type="CheckButton" parent="MainContainer/MainTabs/Helper/VBoxContainer/MarginContainer/HBoxContainer/HBoxContainer"]
 unique_name_in_owner = true
 layout_mode = 2
-size_flags_horizontal = 2
+size_flags_horizontal = 10
 tooltip_text = "If checked, the app will
 always sit on top of the
 screen, this way, you can
@@ -277,46 +289,34 @@ button_pressed = true
 text = "Always on top"
 flat = true
 
-[node name="SettingsMenuButton" type="Button" parent="VBoxContainer2/VBoxContainer/PanelContainer/VBoxContainer/MarginContainer/HBoxContainer"]
-custom_minimum_size = Vector2(40, 0)
-layout_mode = 2
-tooltip_text = "Open settings menu"
-icon = ExtResource("3_3dxm6")
-flat = true
-expand_icon = true
-
-[node name="MarginContainer2" type="MarginContainer" parent="VBoxContainer2/VBoxContainer/PanelContainer/VBoxContainer"]
-layout_mode = 2
-theme_override_constants/margin_left = 10
-theme_override_constants/margin_top = 4
-theme_override_constants/margin_right = 10
-theme_override_constants/margin_bottom = 4
-
-[node name="PanelContainer" type="PanelContainer" parent="VBoxContainer2/VBoxContainer/PanelContainer/VBoxContainer"]
+[node name="PanelContainer" type="PanelContainer" parent="MainContainer/MainTabs/Helper/VBoxContainer"]
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
 
-[node name="VBoxContainer" type="VBoxContainer" parent="VBoxContainer2/VBoxContainer/PanelContainer/VBoxContainer/PanelContainer"]
+[node name="VBoxContainer" type="VBoxContainer" parent="MainContainer/MainTabs/Helper/VBoxContainer/PanelContainer"]
 layout_mode = 2
 theme_override_constants/separation = 0
 
-[node name="HBoxContainer3" type="HBoxContainer" parent="VBoxContainer2/VBoxContainer/PanelContainer/VBoxContainer/PanelContainer/VBoxContainer"]
+[node name="PanelContainer" type="PanelContainer" parent="MainContainer/MainTabs/Helper/VBoxContainer/PanelContainer/VBoxContainer"]
 layout_mode = 2
 
-[node name="HBoxContainer" type="HBoxContainer" parent="VBoxContainer2/VBoxContainer/PanelContainer/VBoxContainer/PanelContainer/VBoxContainer/HBoxContainer3"]
+[node name="HBoxContainer3" type="HBoxContainer" parent="MainContainer/MainTabs/Helper/VBoxContainer/PanelContainer/VBoxContainer/PanelContainer"]
+layout_mode = 2
+theme_override_constants/separation = 12
+
+[node name="HBoxContainer" type="HBoxContainer" parent="MainContainer/MainTabs/Helper/VBoxContainer/PanelContainer/VBoxContainer/PanelContainer/HBoxContainer3"]
 layout_mode = 2
 size_flags_horizontal = 0
-theme_override_constants/separation = 10
 alignment = 2
 
-[node name="ScenarioSelectButton" type="Button" parent="VBoxContainer2/VBoxContainer/PanelContainer/VBoxContainer/PanelContainer/VBoxContainer/HBoxContainer3/HBoxContainer"]
+[node name="ScenarioSelectButton" type="Button" parent="MainContainer/MainTabs/Helper/VBoxContainer/PanelContainer/VBoxContainer/PanelContainer/HBoxContainer3/HBoxContainer"]
 clip_contents = true
 custom_minimum_size = Vector2(80, 60)
 layout_mode = 2
 flat = true
 
-[node name="SelectedScenario" type="TextureRect" parent="VBoxContainer2/VBoxContainer/PanelContainer/VBoxContainer/PanelContainer/VBoxContainer/HBoxContainer3/HBoxContainer/ScenarioSelectButton"]
+[node name="SelectedScenario" type="TextureRect" parent="MainContainer/MainTabs/Helper/VBoxContainer/PanelContainer/VBoxContainer/PanelContainer/HBoxContainer3/HBoxContainer/ScenarioSelectButton"]
 unique_name_in_owner = true
 layout_mode = 1
 anchors_preset = 15
@@ -328,57 +328,54 @@ size_flags_horizontal = 8
 tooltip_text = "Click to select the 
 character you are using on 
 your current career."
-texture = ExtResource("4_trn2v")
+texture = ExtResource("3_wkp8b")
 expand_mode = 3
 stretch_mode = 6
 
-[node name="VBoxContainer" type="VBoxContainer" parent="VBoxContainer2/VBoxContainer/PanelContainer/VBoxContainer/PanelContainer/VBoxContainer/HBoxContainer3/HBoxContainer"]
+[node name="VBoxContainer" type="VBoxContainer" parent="MainContainer/MainTabs/Helper/VBoxContainer/PanelContainer/VBoxContainer/PanelContainer/HBoxContainer3/HBoxContainer"]
+visible = false
 layout_mode = 2
 alignment = 1
 
-[node name="CareerScenarioLabel" type="Label" parent="VBoxContainer2/VBoxContainer/PanelContainer/VBoxContainer/PanelContainer/VBoxContainer/HBoxContainer3/HBoxContainer/VBoxContainer"]
+[node name="CareerScenarioLabel" type="Label" parent="MainContainer/MainTabs/Helper/VBoxContainer/PanelContainer/VBoxContainer/PanelContainer/HBoxContainer3/HBoxContainer/VBoxContainer"]
 unique_name_in_owner = true
 layout_mode = 2
 size_flags_horizontal = 0
 
-[node name="ClickToChangeScenarioLabel" type="Label" parent="VBoxContainer2/VBoxContainer/PanelContainer/VBoxContainer/PanelContainer/VBoxContainer/HBoxContainer3/HBoxContainer/VBoxContainer"]
-unique_name_in_owner = true
-visible = false
-layout_mode = 2
-size_flags_horizontal = 0
-theme_override_font_sizes/font_size = 11
-text = "< Click to change"
-
-[node name="HBoxContainer2" type="HBoxContainer" parent="VBoxContainer2/VBoxContainer/PanelContainer/VBoxContainer/PanelContainer/VBoxContainer/HBoxContainer3"]
+[node name="HBoxContainer2" type="HBoxContainer" parent="MainContainer/MainTabs/Helper/VBoxContainer/PanelContainer/VBoxContainer/PanelContainer/HBoxContainer3"]
 layout_mode = 2
 size_flags_horizontal = 3
 theme_override_constants/separation = 10
 alignment = 2
 
-[node name="VBoxContainer" type="VBoxContainer" parent="VBoxContainer2/VBoxContainer/PanelContainer/VBoxContainer/PanelContainer/VBoxContainer/HBoxContainer3/HBoxContainer2"]
+[node name="VBoxContainer" type="VBoxContainer" parent="MainContainer/MainTabs/Helper/VBoxContainer/PanelContainer/VBoxContainer/PanelContainer/HBoxContainer3/HBoxContainer2"]
 layout_mode = 2
+size_flags_horizontal = 3
 alignment = 1
 
-[node name="CareerCharacterLabel" type="Label" parent="VBoxContainer2/VBoxContainer/PanelContainer/VBoxContainer/PanelContainer/VBoxContainer/HBoxContainer3/HBoxContainer2/VBoxContainer"]
+[node name="CareerCharacterLabel" type="Label" parent="MainContainer/MainTabs/Helper/VBoxContainer/PanelContainer/VBoxContainer/PanelContainer/HBoxContainer3/HBoxContainer2/VBoxContainer"]
 unique_name_in_owner = true
+custom_minimum_size = Vector2(180, 0)
 layout_mode = 2
 size_flags_horizontal = 8
+horizontal_alignment = 2
+clip_text = true
+text_overrun_behavior = 3
 
-[node name="ClickToChangeLabel" type="Label" parent="VBoxContainer2/VBoxContainer/PanelContainer/VBoxContainer/PanelContainer/VBoxContainer/HBoxContainer3/HBoxContainer2/VBoxContainer"]
+[node name="ClickToChangeLabel" type="Label" parent="MainContainer/MainTabs/Helper/VBoxContainer/PanelContainer/VBoxContainer/PanelContainer/HBoxContainer3/HBoxContainer2/VBoxContainer"]
 unique_name_in_owner = true
-visible = false
 layout_mode = 2
 size_flags_horizontal = 8
 theme_override_font_sizes/font_size = 11
 text = "Click to change >"
 
-[node name="CharacterSelectButton" type="Button" parent="VBoxContainer2/VBoxContainer/PanelContainer/VBoxContainer/PanelContainer/VBoxContainer/HBoxContainer3/HBoxContainer2"]
+[node name="CharacterSelectButton" type="Button" parent="MainContainer/MainTabs/Helper/VBoxContainer/PanelContainer/VBoxContainer/PanelContainer/HBoxContainer3/HBoxContainer2"]
 clip_contents = true
 custom_minimum_size = Vector2(80, 60)
 layout_mode = 2
 flat = true
 
-[node name="SelectedCharacter" type="TextureRect" parent="VBoxContainer2/VBoxContainer/PanelContainer/VBoxContainer/PanelContainer/VBoxContainer/HBoxContainer3/HBoxContainer2/CharacterSelectButton"]
+[node name="SelectedCharacter" type="TextureRect" parent="MainContainer/MainTabs/Helper/VBoxContainer/PanelContainer/VBoxContainer/PanelContainer/HBoxContainer3/HBoxContainer2/CharacterSelectButton"]
 unique_name_in_owner = true
 layout_mode = 1
 anchors_preset = 15
@@ -394,20 +391,20 @@ texture = ExtResource("4_trn2v")
 expand_mode = 3
 stretch_mode = 6
 
-[node name="HSeparator" type="HSeparator" parent="VBoxContainer2/VBoxContainer/PanelContainer/VBoxContainer/PanelContainer/VBoxContainer"]
+[node name="HSeparator" type="HSeparator" parent="MainContainer/MainTabs/Helper/VBoxContainer/PanelContainer/VBoxContainer"]
 layout_mode = 2
 size_flags_vertical = 4
 theme_override_constants/separation = 0
 
-[node name="VBoxContainer" type="VBoxContainer" parent="VBoxContainer2/VBoxContainer/PanelContainer/VBoxContainer/PanelContainer/VBoxContainer"]
+[node name="VBoxContainer" type="VBoxContainer" parent="MainContainer/MainTabs/Helper/VBoxContainer/PanelContainer/VBoxContainer"]
 layout_mode = 2
 size_flags_vertical = 3
 
-[node name="Control2" type="Control" parent="VBoxContainer2/VBoxContainer/PanelContainer/VBoxContainer/PanelContainer/VBoxContainer/VBoxContainer"]
+[node name="Control2" type="Control" parent="MainContainer/MainTabs/Helper/VBoxContainer/PanelContainer/VBoxContainer/VBoxContainer"]
 layout_mode = 2
 size_flags_vertical = 3
 
-[node name="ItemPreview" type="TextureRect" parent="VBoxContainer2/VBoxContainer/PanelContainer/VBoxContainer/PanelContainer/VBoxContainer/VBoxContainer/Control2"]
+[node name="ItemPreview" type="TextureRect" parent="MainContainer/MainTabs/Helper/VBoxContainer/PanelContainer/VBoxContainer/VBoxContainer/Control2"]
 unique_name_in_owner = true
 modulate = Color(1, 1, 1, 0.235294)
 custom_minimum_size = Vector2(90, 100)
@@ -420,7 +417,7 @@ grow_vertical = 2
 expand_mode = 1
 stretch_mode = 5
 
-[node name="VBoxContainer" type="VBoxContainer" parent="VBoxContainer2/VBoxContainer/PanelContainer/VBoxContainer/PanelContainer/VBoxContainer/VBoxContainer/Control2"]
+[node name="VBoxContainer" type="VBoxContainer" parent="MainContainer/MainTabs/Helper/VBoxContainer/PanelContainer/VBoxContainer/VBoxContainer/Control2"]
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
@@ -428,20 +425,20 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 
-[node name="Control" type="Control" parent="VBoxContainer2/VBoxContainer/PanelContainer/VBoxContainer/PanelContainer/VBoxContainer/VBoxContainer/Control2/VBoxContainer"]
-custom_minimum_size = Vector2(0, 20)
+[node name="Control" type="Control" parent="MainContainer/MainTabs/Helper/VBoxContainer/PanelContainer/VBoxContainer/VBoxContainer/Control2/VBoxContainer"]
+custom_minimum_size = Vector2(0, 12)
 layout_mode = 2
 
-[node name="EventLabel" type="Label" parent="VBoxContainer2/VBoxContainer/PanelContainer/VBoxContainer/PanelContainer/VBoxContainer/VBoxContainer/Control2/VBoxContainer"]
+[node name="EventLabel" type="Label" parent="MainContainer/MainTabs/Helper/VBoxContainer/PanelContainer/VBoxContainer/VBoxContainer/Control2/VBoxContainer"]
 unique_name_in_owner = true
 layout_mode = 2
 size_flags_horizontal = 4
 
-[node name="ScrollContainer" type="ScrollContainer" parent="VBoxContainer2/VBoxContainer/PanelContainer/VBoxContainer/PanelContainer/VBoxContainer/VBoxContainer/Control2/VBoxContainer"]
+[node name="ScrollContainer" type="ScrollContainer" parent="MainContainer/MainTabs/Helper/VBoxContainer/PanelContainer/VBoxContainer/VBoxContainer/Control2/VBoxContainer"]
 layout_mode = 2
 size_flags_vertical = 3
 
-[node name="MarginContainer" type="MarginContainer" parent="VBoxContainer2/VBoxContainer/PanelContainer/VBoxContainer/PanelContainer/VBoxContainer/VBoxContainer/Control2/VBoxContainer/ScrollContainer"]
+[node name="MarginContainer" type="MarginContainer" parent="MainContainer/MainTabs/Helper/VBoxContainer/PanelContainer/VBoxContainer/VBoxContainer/Control2/VBoxContainer/ScrollContainer"]
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
@@ -450,7 +447,7 @@ theme_override_constants/margin_top = 20
 theme_override_constants/margin_right = 40
 theme_override_constants/margin_bottom = 40
 
-[node name="InfoContainer" type="VBoxContainer" parent="VBoxContainer2/VBoxContainer/PanelContainer/VBoxContainer/PanelContainer/VBoxContainer/VBoxContainer/Control2/VBoxContainer/ScrollContainer/MarginContainer"]
+[node name="InfoContainer" type="VBoxContainer" parent="MainContainer/MainTabs/Helper/VBoxContainer/PanelContainer/VBoxContainer/VBoxContainer/Control2/VBoxContainer/ScrollContainer/MarginContainer"]
 unique_name_in_owner = true
 layout_mode = 2
 size_flags_horizontal = 3
@@ -458,11 +455,11 @@ size_flags_vertical = 2
 theme = ExtResource("5_03owx")
 theme_override_constants/separation = 20
 
-[node name="Timelines" type="Control" parent="VBoxContainer2/VBoxContainer/PanelContainer/VBoxContainer/PanelContainer/VBoxContainer/VBoxContainer"]
+[node name="Timelines" type="Control" parent="MainContainer/MainTabs/Helper/VBoxContainer/PanelContainer/VBoxContainer/VBoxContainer"]
 custom_minimum_size = Vector2(0, 40)
 layout_mode = 2
 
-[node name="VBoxContainer" type="VBoxContainer" parent="VBoxContainer2/VBoxContainer/PanelContainer/VBoxContainer/PanelContainer/VBoxContainer/VBoxContainer/Timelines"]
+[node name="VBoxContainer" type="VBoxContainer" parent="MainContainer/MainTabs/Helper/VBoxContainer/PanelContainer/VBoxContainer/VBoxContainer/Timelines"]
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
@@ -471,15 +468,15 @@ grow_horizontal = 2
 grow_vertical = 2
 theme_override_constants/separation = 0
 
-[node name="PanelContainer" type="PanelContainer" parent="VBoxContainer2/VBoxContainer/PanelContainer/VBoxContainer/PanelContainer/VBoxContainer/VBoxContainer/Timelines/VBoxContainer"]
+[node name="PanelContainer" type="PanelContainer" parent="MainContainer/MainTabs/Helper/VBoxContainer/PanelContainer/VBoxContainer/VBoxContainer/Timelines/VBoxContainer"]
 layout_mode = 2
 
-[node name="Control2" type="Control" parent="VBoxContainer2/VBoxContainer/PanelContainer/VBoxContainer/PanelContainer/VBoxContainer/VBoxContainer/Timelines/VBoxContainer"]
+[node name="Control2" type="Control" parent="MainContainer/MainTabs/Helper/VBoxContainer/PanelContainer/VBoxContainer/VBoxContainer/Timelines/VBoxContainer"]
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
 
-[node name="ImportantEventsTimeline" type="HBoxContainer" parent="VBoxContainer2/VBoxContainer/PanelContainer/VBoxContainer/PanelContainer/VBoxContainer/VBoxContainer/Timelines/VBoxContainer/Control2"]
+[node name="ImportantEventsTimeline" type="HBoxContainer" parent="MainContainer/MainTabs/Helper/VBoxContainer/PanelContainer/VBoxContainer/VBoxContainer/Timelines/VBoxContainer/Control2"]
 unique_name_in_owner = true
 layout_mode = 1
 anchors_preset = 9
@@ -490,7 +487,7 @@ grow_vertical = 2
 size_flags_vertical = 3
 theme_override_constants/separation = 0
 
-[node name="PanelContainer" type="PanelContainer" parent="VBoxContainer2/VBoxContainer/PanelContainer/VBoxContainer/PanelContainer/VBoxContainer/VBoxContainer/Timelines/VBoxContainer/Control2"]
+[node name="PanelContainer" type="PanelContainer" parent="MainContainer/MainTabs/Helper/VBoxContainer/PanelContainer/VBoxContainer/VBoxContainer/Timelines/VBoxContainer/Control2"]
 layout_mode = 1
 anchors_preset = 14
 anchor_top = 0.5
@@ -502,12 +499,12 @@ grow_horizontal = 2
 grow_vertical = 2
 theme_override_styles/panel = SubResource("StyleBoxLine_03owx")
 
-[node name="Control" type="Control" parent="VBoxContainer2/VBoxContainer/PanelContainer/VBoxContainer/PanelContainer/VBoxContainer/VBoxContainer/Timelines/VBoxContainer"]
+[node name="Control" type="Control" parent="MainContainer/MainTabs/Helper/VBoxContainer/PanelContainer/VBoxContainer/VBoxContainer/Timelines/VBoxContainer"]
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
 
-[node name="G1RacesTimeline" type="HBoxContainer" parent="VBoxContainer2/VBoxContainer/PanelContainer/VBoxContainer/PanelContainer/VBoxContainer/VBoxContainer/Timelines/VBoxContainer/Control"]
+[node name="G1RacesTimeline" type="HBoxContainer" parent="MainContainer/MainTabs/Helper/VBoxContainer/PanelContainer/VBoxContainer/VBoxContainer/Timelines/VBoxContainer/Control"]
 unique_name_in_owner = true
 layout_mode = 1
 anchors_preset = 9
@@ -518,7 +515,7 @@ grow_vertical = 2
 size_flags_vertical = 3
 theme_override_constants/separation = 0
 
-[node name="PanelContainer" type="PanelContainer" parent="VBoxContainer2/VBoxContainer/PanelContainer/VBoxContainer/PanelContainer/VBoxContainer/VBoxContainer/Timelines/VBoxContainer/Control"]
+[node name="PanelContainer" type="PanelContainer" parent="MainContainer/MainTabs/Helper/VBoxContainer/PanelContainer/VBoxContainer/VBoxContainer/Timelines/VBoxContainer/Control"]
 layout_mode = 1
 anchors_preset = 14
 anchor_top = 0.5
@@ -530,7 +527,7 @@ grow_horizontal = 2
 grow_vertical = 2
 theme_override_styles/panel = SubResource("StyleBoxLine_03owx")
 
-[node name="PanelContainer2" type="PanelContainer" parent="VBoxContainer2/VBoxContainer/PanelContainer/VBoxContainer/PanelContainer/VBoxContainer/VBoxContainer/Timelines"]
+[node name="PanelContainer2" type="PanelContainer" parent="MainContainer/MainTabs/Helper/VBoxContainer/PanelContainer/VBoxContainer/VBoxContainer/Timelines"]
 layout_mode = 1
 anchors_preset = 9
 anchor_bottom = 1.0
@@ -541,10 +538,122 @@ offset_bottom = 3.0
 grow_vertical = 2
 theme_override_styles/panel = SubResource("StyleBoxLine_wkp8b")
 
-[node name="HBoxContainer" type="HBoxContainer" parent="VBoxContainer2"]
+[node name="Notes" parent="MainContainer/MainTabs" instance=ExtResource("6_20pc6")]
 layout_mode = 2
 
-[node name="ImagePreview" type="TextureRect" parent="VBoxContainer2/HBoxContainer"]
+[node name="Settings" type="Control" parent="MainContainer/MainTabs"]
+visible = false
+layout_mode = 2
+metadata/_tab_index = 2
+
+[node name="MarginContainer" type="MarginContainer" parent="MainContainer/MainTabs/Settings"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_left = 20
+theme_override_constants/margin_top = 20
+theme_override_constants/margin_right = 20
+theme_override_constants/margin_bottom = 20
+
+[node name="VBoxContainer" type="VBoxContainer" parent="MainContainer/MainTabs/Settings/MarginContainer"]
+layout_mode = 2
+theme_override_constants/separation = 10
+
+[node name="HBoxContainer" type="HBoxContainer" parent="MainContainer/MainTabs/Settings/MarginContainer/VBoxContainer"]
+layout_mode = 2
+theme_override_constants/separation = 20
+
+[node name="SwitchScreenButton" type="Button" parent="MainContainer/MainTabs/Settings/MarginContainer/VBoxContainer/HBoxContainer"]
+unique_name_in_owner = true
+layout_mode = 2
+tooltip_text = "Changes the screen to be 
+scanned to a different 
+screen."
+theme_type_variation = &"ButtonStyled"
+text = "Switch Screen"
+
+[node name="HBoxContainer" type="HBoxContainer" parent="MainContainer/MainTabs/Settings/MarginContainer/VBoxContainer/HBoxContainer"]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="MainContainer/MainTabs/Settings/MarginContainer/VBoxContainer/HBoxContainer/HBoxContainer"]
+layout_mode = 2
+text = "Screen:"
+
+[node name="CurrentScreenLabel" type="Label" parent="MainContainer/MainTabs/Settings/MarginContainer/VBoxContainer/HBoxContainer/HBoxContainer"]
+unique_name_in_owner = true
+layout_mode = 2
+text = "1"
+
+[node name="HBoxContainer2" type="HBoxContainer" parent="MainContainer/MainTabs/Settings/MarginContainer/VBoxContainer"]
+layout_mode = 2
+theme_override_constants/separation = 20
+
+[node name="HBoxContainer" type="HBoxContainer" parent="MainContainer/MainTabs/Settings/MarginContainer/VBoxContainer/HBoxContainer2"]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="MainContainer/MainTabs/Settings/MarginContainer/VBoxContainer/HBoxContainer2/HBoxContainer"]
+layout_mode = 2
+text = "Detect every"
+
+[node name="LoopMS" type="SpinBox" parent="MainContainer/MainTabs/Settings/MarginContainer/VBoxContainer/HBoxContainer2/HBoxContainer"]
+unique_name_in_owner = true
+layout_mode = 2
+min_value = 100.0
+max_value = 5000.0
+value = 1000.0
+rounded = true
+allow_greater = true
+alignment = 2
+
+[node name="Label2" type="Label" parent="MainContainer/MainTabs/Settings/MarginContainer/VBoxContainer/HBoxContainer2/HBoxContainer"]
+layout_mode = 2
+text = "ms on loop"
+
+[node name="HSeparator" type="HSeparator" parent="MainContainer/MainTabs/Settings/MarginContainer/VBoxContainer"]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="MainContainer/MainTabs/Settings/MarginContainer/VBoxContainer"]
+layout_mode = 2
+text = "Other settings"
+
+[node name="DisableAnims" type="CheckButton" parent="MainContainer/MainTabs/Settings/MarginContainer/VBoxContainer"]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 2
+tooltip_text = "Disables Tamamo helping 
+you out by pointing at 
+choice rewards if that is 
+too distracting for you."
+text = "Disable Tamanimations"
+
+[node name="ColorRect" type="ColorRect" parent="MainContainer"]
+layout_mode = 2
+
+[node name="Bottom" type="Control" parent="MainContainer"]
+custom_minimum_size = Vector2(0, 80)
+layout_mode = 2
+
+[node name="ColorRect" type="ColorRect" parent="MainContainer/Bottom"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.0646965, 0.0646965, 0.0646965, 1)
+
+[node name="HBoxContainer" type="HBoxContainer" parent="MainContainer/Bottom"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="ImagePreview" type="TextureRect" parent="MainContainer/Bottom/HBoxContainer"]
 unique_name_in_owner = true
 layout_mode = 2
 size_flags_horizontal = 3
@@ -553,13 +662,13 @@ mouse_filter = 2
 expand_mode = 2
 stretch_mode = 5
 
-[node name="VBoxContainer" type="VBoxContainer" parent="VBoxContainer2/HBoxContainer"]
+[node name="VBoxContainer" type="VBoxContainer" parent="MainContainer/Bottom/HBoxContainer"]
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 8
 alignment = 2
 
-[node name="Mascot" type="TextureRect" parent="VBoxContainer2/HBoxContainer/VBoxContainer"]
+[node name="Mascot" type="TextureRect" parent="MainContainer/Bottom/HBoxContainer/VBoxContainer"]
 unique_name_in_owner = true
 custom_minimum_size = Vector2(0, 80)
 layout_mode = 2
@@ -570,25 +679,25 @@ texture = ExtResource("5_wkp8b")
 expand_mode = 1
 stretch_mode = 6
 
-[node name="Tamamo-handyou" type="Sprite2D" parent="VBoxContainer2/HBoxContainer"]
+[node name="Tamamo-handyou" type="Sprite2D" parent="MainContainer/Bottom/HBoxContainer"]
 visible = false
 position = Vector2(223, 48)
 scale = Vector2(0.136111, 0.136111)
 texture = ExtResource("3_cm0pq")
 
-[node name="Tamamo-handup" type="Sprite2D" parent="VBoxContainer2/HBoxContainer"]
+[node name="Tamamo-handup" type="Sprite2D" parent="MainContainer/Bottom/HBoxContainer"]
 visible = false
 position = Vector2(221, 37)
 scale = Vector2(0.343212, 0.343212)
 texture = ExtResource("4_fos0i")
 
-[node name="TamanimationPlayer" type="AnimationPlayer" parent="VBoxContainer2/HBoxContainer"]
+[node name="TamanimationPlayer" type="AnimationPlayer" parent="MainContainer/Bottom/HBoxContainer"]
 unique_name_in_owner = true
 libraries = {
 &"": SubResource("AnimationLibrary_03owx")
 }
 
-[node name="MascotPlayer" type="AnimationPlayer" parent="VBoxContainer2/HBoxContainer"]
+[node name="MascotPlayer" type="AnimationPlayer" parent="MainContainer/Bottom/HBoxContainer"]
 libraries = {
 &"": SubResource("AnimationLibrary_20pc6")
 }
@@ -624,103 +733,6 @@ autowrap_mode = 3
 
 [node name="CaptureTimer" type="Timer" parent="."]
 unique_name_in_owner = true
-
-[node name="Settings" type="PanelContainer" parent="."]
-unique_name_in_owner = true
-visible = false
-layout_mode = 1
-anchors_preset = 10
-anchor_right = 1.0
-offset_bottom = 51.0
-grow_horizontal = 2
-theme_override_styles/panel = SubResource("StyleBoxFlat_trn2v")
-
-[node name="MarginContainer" type="MarginContainer" parent="Settings"]
-layout_mode = 2
-theme_override_constants/margin_left = 12
-theme_override_constants/margin_top = 12
-theme_override_constants/margin_right = 12
-theme_override_constants/margin_bottom = 12
-
-[node name="VBoxContainer" type="VBoxContainer" parent="Settings/MarginContainer"]
-layout_mode = 2
-theme_override_constants/separation = 10
-
-[node name="CloseSettingsButton" type="Button" parent="Settings/MarginContainer/VBoxContainer"]
-custom_minimum_size = Vector2(40, 40)
-layout_mode = 2
-size_flags_horizontal = 8
-tooltip_text = "Close settings menu"
-icon = ExtResource("7_lgr22")
-flat = true
-expand_icon = true
-
-[node name="HBoxContainer" type="HBoxContainer" parent="Settings/MarginContainer/VBoxContainer"]
-layout_mode = 2
-theme_override_constants/separation = 20
-
-[node name="SwitchScreenButton" type="Button" parent="Settings/MarginContainer/VBoxContainer/HBoxContainer"]
-unique_name_in_owner = true
-layout_mode = 2
-tooltip_text = "Changes the screen to be 
-scanned to a different 
-screen."
-theme_type_variation = &"ButtonStyled"
-text = "Switch Screen"
-
-[node name="HBoxContainer" type="HBoxContainer" parent="Settings/MarginContainer/VBoxContainer/HBoxContainer"]
-layout_mode = 2
-
-[node name="Label" type="Label" parent="Settings/MarginContainer/VBoxContainer/HBoxContainer/HBoxContainer"]
-layout_mode = 2
-text = "Screen"
-
-[node name="CurrentScreenLabel" type="Label" parent="Settings/MarginContainer/VBoxContainer/HBoxContainer/HBoxContainer"]
-unique_name_in_owner = true
-layout_mode = 2
-text = "1"
-
-[node name="HBoxContainer2" type="HBoxContainer" parent="Settings/MarginContainer/VBoxContainer"]
-layout_mode = 2
-theme_override_constants/separation = 20
-
-[node name="HBoxContainer" type="HBoxContainer" parent="Settings/MarginContainer/VBoxContainer/HBoxContainer2"]
-layout_mode = 2
-
-[node name="Label" type="Label" parent="Settings/MarginContainer/VBoxContainer/HBoxContainer2/HBoxContainer"]
-layout_mode = 2
-text = "On loop, detect every"
-
-[node name="LoopMS" type="SpinBox" parent="Settings/MarginContainer/VBoxContainer/HBoxContainer2/HBoxContainer"]
-unique_name_in_owner = true
-layout_mode = 2
-min_value = 100.0
-max_value = 5000.0
-value = 1000.0
-rounded = true
-allow_greater = true
-alignment = 2
-
-[node name="Label2" type="Label" parent="Settings/MarginContainer/VBoxContainer/HBoxContainer2/HBoxContainer"]
-layout_mode = 2
-text = "ms"
-
-[node name="HSeparator" type="HSeparator" parent="Settings/MarginContainer/VBoxContainer"]
-layout_mode = 2
-
-[node name="Label" type="Label" parent="Settings/MarginContainer/VBoxContainer"]
-layout_mode = 2
-text = "Other settings"
-
-[node name="DisableAnims" type="CheckButton" parent="Settings/MarginContainer/VBoxContainer"]
-unique_name_in_owner = true
-layout_mode = 2
-size_flags_horizontal = 2
-tooltip_text = "Disables Tamamo helping 
-you out by pointing at 
-choice rewards if that is 
-too distracting for you."
-text = "Disable Tamanimations"
 
 [node name="CharacterSelect" type="PanelContainer" parent="."]
 unique_name_in_owner = true
@@ -811,16 +823,15 @@ layout_mode = 0
 offset_right = 40.0
 offset_bottom = 20.0
 
-[connection signal="pressed" from="VBoxContainer2/VBoxContainer/PanelContainer/VBoxContainer/MarginContainer/HBoxContainer/StartButton" to="." method="_on_start_button_pressed"]
-[connection signal="toggled" from="VBoxContainer2/VBoxContainer/PanelContainer/VBoxContainer/MarginContainer/HBoxContainer/AutoToggle" to="." method="_on_auto_toggle_toggled"]
-[connection signal="toggled" from="VBoxContainer2/VBoxContainer/PanelContainer/VBoxContainer/MarginContainer/HBoxContainer/AlwaysOnTopToggle" to="." method="_on_always_on_top_toggle_toggled"]
-[connection signal="pressed" from="VBoxContainer2/VBoxContainer/PanelContainer/VBoxContainer/MarginContainer/HBoxContainer/SettingsMenuButton" to="." method="_on_settings_menu_button_pressed"]
-[connection signal="pressed" from="VBoxContainer2/VBoxContainer/PanelContainer/VBoxContainer/PanelContainer/VBoxContainer/HBoxContainer3/HBoxContainer/ScenarioSelectButton" to="." method="_on_scenario_select_button_pressed"]
-[connection signal="pressed" from="VBoxContainer2/VBoxContainer/PanelContainer/VBoxContainer/PanelContainer/VBoxContainer/HBoxContainer3/HBoxContainer2/CharacterSelectButton" to="." method="_on_character_select_button_pressed"]
+[connection signal="tab_changed" from="MainContainer/MainTabs" to="." method="_on_main_tabs_tab_changed"]
+[connection signal="pressed" from="MainContainer/MainTabs/Helper/VBoxContainer/MarginContainer/HBoxContainer/StartButton" to="." method="_on_start_button_pressed"]
+[connection signal="toggled" from="MainContainer/MainTabs/Helper/VBoxContainer/MarginContainer/HBoxContainer/AutoToggle" to="." method="_on_auto_toggle_toggled"]
+[connection signal="toggled" from="MainContainer/MainTabs/Helper/VBoxContainer/MarginContainer/HBoxContainer/HBoxContainer/AlwaysOnTopToggle" to="." method="_on_always_on_top_toggle_toggled"]
+[connection signal="pressed" from="MainContainer/MainTabs/Helper/VBoxContainer/PanelContainer/VBoxContainer/PanelContainer/HBoxContainer3/HBoxContainer/ScenarioSelectButton" to="." method="_on_scenario_select_button_pressed"]
+[connection signal="pressed" from="MainContainer/MainTabs/Helper/VBoxContainer/PanelContainer/VBoxContainer/PanelContainer/HBoxContainer3/HBoxContainer2/CharacterSelectButton" to="." method="_on_character_select_button_pressed"]
+[connection signal="pressed" from="MainContainer/MainTabs/Settings/MarginContainer/VBoxContainer/HBoxContainer/SwitchScreenButton" to="." method="_on_switch_screen_button_pressed"]
+[connection signal="value_changed" from="MainContainer/MainTabs/Settings/MarginContainer/VBoxContainer/HBoxContainer2/HBoxContainer/LoopMS" to="." method="_on_loop_ms_value_changed"]
+[connection signal="toggled" from="MainContainer/MainTabs/Settings/MarginContainer/VBoxContainer/DisableAnims" to="." method="_on_disable_anims_toggled"]
 [connection signal="timeout" from="CaptureTimer" to="." method="_on_capture_timer_timeout"]
-[connection signal="pressed" from="Settings/MarginContainer/VBoxContainer/CloseSettingsButton" to="." method="_on_close_settings_button_pressed"]
-[connection signal="pressed" from="Settings/MarginContainer/VBoxContainer/HBoxContainer/SwitchScreenButton" to="." method="_on_switch_screen_button_pressed"]
-[connection signal="value_changed" from="Settings/MarginContainer/VBoxContainer/HBoxContainer2/HBoxContainer/LoopMS" to="." method="_on_loop_ms_value_changed"]
-[connection signal="toggled" from="Settings/MarginContainer/VBoxContainer/DisableAnims" to="." method="_on_disable_anims_toggled"]
 [connection signal="pressed" from="CharacterSelect/MarginContainer/VBoxContainer/CloseCharacterSelectButton" to="." method="_on_close_character_select_button_pressed"]
 [connection signal="pressed" from="ScenarioSelect/MarginContainer/VBoxContainer/CloseScenarioSelectButton" to="." method="_on_close_scenario_select_button_pressed"]

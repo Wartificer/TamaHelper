@@ -1,0 +1,57 @@
+[gd_scene load_steps=3 format=3 uid="uid://hxajlxqfhrhp"]
+
+[ext_resource type="Script" uid="uid://bskhqt253m6ih" path="res://Core/Notes.gd" id="1_u15te"]
+[ext_resource type="Script" uid="uid://ccgyrwfrtpbs7" path="res://Core/UIElements/MouseScrollContainer.gd" id="2_y60um"]
+
+[node name="Notes" type="Control" node_paths=PackedStringArray("target_element")]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_u15te")
+target_element = NodePath("NotesContainer/NotesContent")
+metadata/_tab_index = 1
+
+[node name="NotesContainer" type="ScrollContainer" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("2_y60um")
+
+[node name="NotesContent" type="Control" parent="NotesContainer"]
+unique_name_in_owner = true
+layout_mode = 2
+
+[node name="UI" type="Control" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+
+[node name="AddButton" type="Button" parent="UI"]
+custom_minimum_size = Vector2(30, 0)
+layout_mode = 1
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -30.0
+offset_bottom = 28.0
+grow_horizontal = 0
+text = "+"
+
+[node name="GraphEdit" type="GraphEdit" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+scroll_offset = Vector2(-40, -40)

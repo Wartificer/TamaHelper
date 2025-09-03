@@ -1,0 +1,40 @@
+{
+  "name": "Hishi Akebono",
+  "rarity": "ssr",
+  "type": "guts",
+  "events": [
+    {
+      "name": "I'm Buono Just the Way I Am ♪",
+      "text": [
+        "Maximum [[Energy+]]+4\n[[Guts+]]+5\nHishi Akebono [[bond+]]+5"
+      ]
+    },
+    {
+      "name": "Let's Go... Buono",
+      "text": [
+        "[[Energy+]]+30\n[[Guts+]]+5\nHishi Akebono [[bond+]]+5\nAquires {link:Slow Metabolism}",
+		"[[Stamina+]]+5\n[[Power+]]+5\nHishi Akebono [[bond+]]+5"
+      ]
+    },
+    {
+      "name": "Buono For You, Buono For Me ☆",
+      "text": [
+        "[[Stamina+]]+5\n[[Guts]]+10\n{link:Sixth Sense} [[hint]]3\n[[or]]\n{link:Dodging Danger} [[hint]]3"
+      ]
+    },
+    {
+      "name": "Eat Up ♪",
+      "text": [
+        "[[Energy+]]+10\nHishi Akebono [[bond+]]+5",
+        "[[Energy-]]-5\n[[Power+]]+15\nHishi Akebono [[bond+]]+5"
+      ]
+    },
+    {
+      "name": "Leave It to Me ♪",
+      "text": [
+		    "[[Stamina+]]+10\nHishi Akebono [[bond+]]+5",
+        "[[Energy-]]-15\n{link:Sprinting Gear} [[hint]]1\nHishi Akebono [[bond+]]+5"
+      ]
+    }
+  ]
+}

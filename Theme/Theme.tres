@@ -83,3 +83,4 @@ ButtonStyled/styles/focus = SubResource("StyleBoxFlat_yd3fu")
 ButtonStyled/styles/hover = SubResource("StyleBoxFlat_j4jqe")
 ButtonStyled/styles/normal = SubResource("StyleBoxFlat_23v3e")
 ButtonStyled/styles/pressed = SubResource("StyleBoxFlat_k1aya")
+CheckButton/font_sizes/font_size = 12

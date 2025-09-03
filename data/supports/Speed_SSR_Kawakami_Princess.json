@@ -1,0 +1,39 @@
+{
+  "name": "Kawakami Princess",
+  "rarity": "ssr",
+  "type": "speed",
+  "events": [
+    {
+      "name": "Modestly! Boldly!",
+      "text": [
+        "[[Energy-]]-5\n[[Power+]]+10\nKawakami Princess [[bond+]]+5"
+      ]
+    },
+    {
+      "name": "Princess Power ☆ to the Max!",
+      "text": [
+        "[[Energy+]]+10\n[[Power+]]+20\nKawakami Princess [[bond+]]+5"
+      ]
+    },
+    {
+      "name": "Hit It! Princess Road!",
+      "text": [
+        "[[Energy-]]-15\n[[Power+]]+30\n{link:{link:Unyielding}} [[hint]]1\nKawakami Princess [[bond+]]+5"
+      ]
+    },
+    {
+      "name": "Princess Punch!",
+      "text": [
+        "[[Guts+]]+10\nKawakami Princess [[bond+]]+5",
+        "[[Mood+]]+1\nKawakami Princess [[bond+]]+5"
+      ]
+    },
+    {
+      "name": "Princess Escape!",
+      "text": [
+        "[[Energy+]]+10\nKawakami Princess [[bond+]]+5",
+        "Kawakami Princess [[bond+]]+5\nAquire {link:Steadfast}"
+      ]
+    }
+  ]
+}

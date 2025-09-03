@@ -1,6 +1,9 @@
 extends Node
 
 
+## Current active tab, used for notes
+var current_tab : String = "Main"
+
 ## If runnning debug executable, clicking "start" with "keep_alive" off
 ## will preserve the temp images on the User folder.
 var save_temp_image : bool
