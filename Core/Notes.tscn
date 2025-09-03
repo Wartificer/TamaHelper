@@ -1,6 +1,7 @@
-[gd_scene load_steps=2 format=3 uid="uid://hxajlxqfhrhp"]
+[gd_scene load_steps=3 format=3 uid="uid://hxajlxqfhrhp"]
 
 [ext_resource type="Script" uid="uid://bskhqt253m6ih" path="res://Core/Notes.gd" id="1_u15te"]
+[ext_resource type="Texture2D" uid="uid://c8q4x40vapued" path="res://Images/help-icon.svg" id="2_y60um"]
 
 [node name="Notes" type="GraphEdit"]
 anchors_preset = 15
@@ -39,7 +40,27 @@ theme_override_constants/margin_top = 10
 theme_override_constants/margin_right = 10
 theme_override_constants/margin_bottom = 10
 
-[node name="AddNoteButton" type="Button" parent="UI/MarginContainer"]
+[node name="HBoxContainer" type="HBoxContainer" parent="UI/MarginContainer"]
+layout_mode = 2
+size_flags_horizontal = 8
+size_flags_vertical = 0
+theme_override_constants/separation = 12
+alignment = 1
+
+[node name="TextureRect" type="TextureRect" parent="UI/MarginContainer/HBoxContainer"]
+custom_minimum_size = Vector2(30, 30)
+layout_mode = 2
+tooltip_text = "Paste text and images
+directly by ctrl+c / ctrl+v.
+Click and press DEL to
+remove notes.
+Your notes will be saved
+between sessions."
+texture = ExtResource("2_y60um")
+expand_mode = 3
+
+[node name="AddNoteButton" type="Button" parent="UI/MarginContainer/HBoxContainer"]
+visible = false
 custom_minimum_size = Vector2(30, 0)
 layout_mode = 2
 size_flags_horizontal = 8

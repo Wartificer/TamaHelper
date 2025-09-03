@@ -60,27 +60,49 @@ func _input(event):
 			_handle_paste()
 
 func _handle_paste():
-	var clipboard_text = DisplayServer.clipboard_get()
-	if clipboard_text != "":
+	var clipboard_image = DisplayServer.clipboard_get_image()
+	if clipboard_image:
 		# Create text node at center of view
 		var center_pos = scroll_offset + size / 2
-		_create_text_node(center_pos, clipboard_text)
+		_create_image_node_from_image(center_pos, clipboard_image)
+	else:
+		var clipboard_text = DisplayServer.clipboard_get()
+		if clipboard_text != "":
+			# Create text node at center of view
+			var center_pos = scroll_offset + size / 2
+			_create_text_node(center_pos, clipboard_text)
 
 func _on_add_button_pressed():
 	# Create a new text node at a default position
 	var pos = Vector2(100 + node_counter * 50, 100 + node_counter * 50)
 	_create_text_node(pos, "New Note")
 
+#func _on_add_image_button_pressed():
+	## Open file dialog to select an image
+	#file_dialog.popup_centered(Vector2i(800, 600))
+
+func _on_file_selected(path: String):
+	# Create image node from selected file
+	var pos = Vector2(100 + node_counter * 50, 100 + node_counter * 50)
+	_create_image_node(pos, path)
+
 func _create_text_node(pos: Vector2, text: String):
-	var text_node = preload("res://Core/UIElements/TextNoteNode.gd").new()
+	var text_node = preload("res://Core/UIElements/TextNoteNode.tscn").instantiate()
 	text_node.setup_node(node_counter, text)
 	text_node.position_offset = pos
 	add_child(text_node)
 	node_counter += 1
 
 func _create_image_node(pos: Vector2, image_path: String):
-	var image_node = preload("res://Core/UIElements/ImageNoteNode.gd").new()
+	var image_node = preload("res://Core/UIElements/ImageNoteNode.tscn").instantiate()
 	image_node.setup_node(node_counter, image_path)
+	image_node.position_offset = pos
+	add_child(image_node)
+	node_counter += 1
+
+func _create_image_node_from_image(pos: Vector2, image: Image, title_text: String = "Image"):
+	var image_node = preload("res://Core/UIElements/ImageNoteNode.tscn").instantiate()
+	image_node.setup_node_from_image(node_counter, image, title_text)
 	image_node.position_offset = pos
 	add_child(image_node)
 	node_counter += 1

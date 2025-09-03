@@ -41,5 +41,5 @@ func set_note_text(text: String):
 	if text_edit:
 		text_edit.text = text
 
-func _on_close_request():
+func _on_close_button_pressed() -> void:
 	queue_free()

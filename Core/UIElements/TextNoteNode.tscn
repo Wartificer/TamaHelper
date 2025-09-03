@@ -1,11 +1,40 @@
-[gd_scene load_steps=2 format=3 uid="uid://8edyaqj2skqp"]
+[gd_scene load_steps=3 format=3 uid="uid://8edyaqj2skqp"]
 
 [ext_resource type="Script" uid="uid://cjqv3hut5hd8r" path="res://Core/UIElements/TextNoteNode.gd" id="1_3lxe5"]
+[ext_resource type="Texture2D" uid="uid://dn3bjstcka6te" path="res://Images/icon-close.svg" id="2_dmrl4"]
 
 [node name="TextNoteNode" type="GraphNode"]
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
-grow_horizontal = 2
-grow_vertical = 2
+offset_right = 36.0
+offset_bottom = 52.0
+slot/0/left_enabled = false
+slot/0/left_type = 0
+slot/0/left_color = Color(1, 1, 1, 1)
+slot/0/left_icon = null
+slot/0/right_enabled = false
+slot/0/right_type = 0
+slot/0/right_color = Color(1, 1, 1, 1)
+slot/0/right_icon = null
+slot/0/draw_stylebox = true
 script = ExtResource("1_3lxe5")
+
+[node name="Control" type="Control" parent="."]
+layout_mode = 2
+
+[node name="CloseButton" type="Button" parent="Control"]
+custom_minimum_size = Vector2(30, 30)
+layout_mode = 1
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -12.0
+offset_top = -40.0
+offset_right = 18.0
+offset_bottom = -10.0
+grow_horizontal = 0
+size_flags_horizontal = 8
+size_flags_vertical = 0
+icon = ExtResource("2_dmrl4")
+flat = true
+expand_icon = true
+
+[connection signal="pressed" from="Control/CloseButton" to="." method="_on_close_button_pressed"]
