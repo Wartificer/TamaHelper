@@ -55,6 +55,7 @@ func load_json_data(path : String):
 var character_button_scene = load("res://Core/UIElements/CharacterButton.tscn")
 func load_character_list():
 	for character in character_data:
+		print(character.name)
 		var character_button = character_button_scene.instantiate()
 		var image = AssetLoader.load_image_from_path("characters/" + Utils.to_snake_case(character.name) + "-icon.png")
 		if !image:
@@ -82,6 +83,14 @@ func _ready():
 	if AssetLoader.custom_mascot:
 		%Mascot.texture = AssetLoader.custom_mascot
 	get_screen_size()
+	
+	AutoUpdater.update_available.connect(on_update_available)
+	AutoUpdater.update_progress.connect(on_update_progress)
+	AutoUpdater.update_complete.connect(on_update_complete)
+	AutoUpdater.update_failed.connect(on_update_failed)
+	load_game_data()
+
+func load_game_data():
 	character_data = AssetLoader.load_all_json_from_folder("characters")
 	character_data.sort_custom(func(a, b):
 		return a["name"] < b["name"]
@@ -95,11 +104,10 @@ func _ready():
 	load_character_list()
 	load_scenario_list()
 	load_settings()
+	
 	## Connect to OCR signals
 	#OCRManager.ocr_completed.connect(_on_ocr_completed)
 	#OCRManager.ocr_failed.connect(_on_ocr_failed)
-	
-	run_auto_updater()
 
 func get_screen_size():
 	screen_size = DisplayServer.screen_get_size(current_screen)
@@ -481,23 +489,34 @@ func _on_main_tabs_tab_changed(tab: int) -> void:
 	Utils.current_tab = %MainTabs.get_tab_title(tab)
 
 
-func run_auto_updater():
-	AutoUpdater.update_progress.connect(on_update_progress)
-	AutoUpdater.update_complete.connect(on_update_complete)
-	AutoUpdater.update_failed.connect(on_update_failed)
-	%UpdateStatus.text = "Updating..."
-	AutoUpdater.check_for_updates()
 
+func _on_check_updates_button_pressed() -> void:
+	AutoUpdater.check_for_updates()
+	%CheckUpdatesButton.disabled = true
+
+func on_update_available() -> void:
+	%UpdateStatus.text = "Update available. Click the button below to update"
+	%UpdateButton.show()
+	%UpdateButton.disabled = false
+	
+	## CHECK IF UPDATE IS POSSIBLE DUE TO APP VERSION REQUIREMENT
+	#%UpdateImpossibleContainer.show()
 
 func _on_update_button_pressed() -> void:
-	AutoUpdater.check_for_updates()
+	%UpdateButton.disabled = true
+	AutoUpdater._download_updates()
 
+func _on_download_button_pressed() -> void:
+	OS.shell_open("https://github.com/Wartificer/TamaHelper/releases")
 
 func on_update_progress(progress : int, message : String):
 	%UpdateStatus.text = message
 
 func on_update_complete(message : String):
 	%UpdateStatus.text = message
+	load_game_data()
+	%CheckUpdatesButton.disabled = false
 
 func on_update_failed(message : String):
 	%UpdateStatus.text = message
+	%UpdateButton.disabled = false
