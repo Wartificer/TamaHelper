@@ -47,6 +47,7 @@ var replacement_dict = {
 	"All-": "[img width="+icon_size+"]res://Images/icon-random.tres[/img][img width="+icon_size+"]res://Images/icon-random.tres[/img][img width="+icon_size+"]res://Images/icon-random.tres[/img][img width="+icon_size+"]res://Images/icon-random.tres[/img][img width="+icon_size+"]res://Images/icon-random.tres[/img]",
 	"healaff": "[img width="+icon_size+"]res://Images/icon-heal.tres[/img]",
 	"healall": "[img width="+icon_size+"]res://Images/icon-heal-all.tres[/img]",
+	"or": "----- [img width="+icon_size+"]res://Images/icon-or.tres[/img] -----",
 	# Add more replacements as needed
 }
 
