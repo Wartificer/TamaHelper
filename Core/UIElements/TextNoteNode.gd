@@ -43,3 +43,6 @@ func set_note_text(text: String):
 
 func _on_close_button_pressed() -> void:
 	queue_free()
+
+func get_text():
+	return text_edit.text

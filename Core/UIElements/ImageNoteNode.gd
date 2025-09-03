@@ -4,13 +4,13 @@ extends GraphNode
 var texture_rect: TextureRect
 var node_id: int
 var image_path: String
-var image_data: Image  # Store the actual image data
+var image_data: Image
 
 func setup_node(id: int, img_path: String):
 	node_id = id
 	image_path = img_path
 	name = "ImageNote_" + str(id)
-	#title = "Image Note " + str(id)
+	title = "Image Note " + str(id)
 	
 	# Set up the GraphNode
 	resizable = true
@@ -27,7 +27,7 @@ func setup_node(id: int, img_path: String):
 
 func setup_node_from_image(id: int, image: Image, title_text: String = "Image"):
 	node_id = id
-	image_path = ""  # No file path since we're using direct image data
+	image_path = ""
 	image_data = image
 	name = "ImageNote_" + str(id)
 	#title = title_text + " " + str(id)
@@ -42,7 +42,7 @@ func _setup_texture_rect_with_image(image: Image):
 	# Create TextureRect for displaying the image
 	texture_rect = TextureRect.new()
 	texture_rect.expand_mode = TextureRect.EXPAND_KEEP_SIZE
-	texture_rect.stretch_mode = TextureRect.STRETCH_KEEP_ASPECT_CENTERED
+	texture_rect.stretch_mode = TextureRect.STRETCH_KEEP_ASPECT
 	
 	# Create texture from image
 	var texture = ImageTexture.new()
@@ -55,16 +55,15 @@ func _setup_texture_rect_with_image(image: Image):
 	var max_height = 300
 	
 	var scale_factor = min(max_width / img_size.x, max_height / img_size.y)
-	scale_factor = min(scale_factor, 1.0)  # Don't scale up
+	scale_factor = min(scale_factor, 1.0)
 	
 	var display_size = img_size * scale_factor
 	texture_rect.size = display_size
-	size = display_size + Vector2(20, 50)  # Add padding for title and border
+	size = display_size + Vector2(20, 50)
 	
 	add_child(texture_rect)
 
 func _show_error_message(message: String):
-	# If image loading fails, show an error message
 	var label = Label.new()
 	label.text = message
 	label.autowrap_mode = TextServer.AUTOWRAP_WORD_SMART
@@ -79,6 +78,7 @@ func get_image_data() -> Image:
 
 func has_image_data() -> bool:
 	return image_data != null
+
 
 func _on_close_button_pressed() -> void:
 	queue_free()
