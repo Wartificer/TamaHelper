@@ -546,65 +546,75 @@ layout_mode = 2
 layout_mode = 2
 metadata/_tab_index = 2
 
-[node name="MarginContainer" type="MarginContainer" parent="MainContainer/MainTabs/Update"]
+[node name="ScrollContainer" type="ScrollContainer" parent="MainContainer/MainTabs/Update"]
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+
+[node name="MarginContainer" type="MarginContainer" parent="MainContainer/MainTabs/Update/ScrollContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
 theme_override_constants/margin_left = 20
 theme_override_constants/margin_top = 20
 theme_override_constants/margin_right = 20
 theme_override_constants/margin_bottom = 20
 
-[node name="VBoxContainer" type="VBoxContainer" parent="MainContainer/MainTabs/Update/MarginContainer"]
+[node name="VBoxContainer" type="VBoxContainer" parent="MainContainer/MainTabs/Update/ScrollContainer/MarginContainer"]
 layout_mode = 2
 theme_override_constants/separation = 20
 
-[node name="HBoxContainer" type="HBoxContainer" parent="MainContainer/MainTabs/Update/MarginContainer/VBoxContainer"]
+[node name="UpdateGuide" type="Label" parent="MainContainer/MainTabs/Update/ScrollContainer/MarginContainer/VBoxContainer"]
+layout_mode = 2
+text = "Click the button below to check for updates in Characters and Support cards."
+autowrap_mode = 3
+
+[node name="HBoxContainer" type="HBoxContainer" parent="MainContainer/MainTabs/Update/ScrollContainer/MarginContainer/VBoxContainer"]
 layout_mode = 2
 size_flags_vertical = 0
 theme_override_constants/separation = 20
 
-[node name="CheckUpdatesButton" type="Button" parent="MainContainer/MainTabs/Update/MarginContainer/VBoxContainer/HBoxContainer"]
+[node name="CheckUpdatesButton" type="Button" parent="MainContainer/MainTabs/Update/ScrollContainer/MarginContainer/VBoxContainer/HBoxContainer"]
 unique_name_in_owner = true
 layout_mode = 2
 theme_type_variation = &"ButtonStyled"
 text = "Check for updates"
 
-[node name="UpdateButton" type="Button" parent="MainContainer/MainTabs/Update/MarginContainer/VBoxContainer/HBoxContainer"]
+[node name="UpdateButton" type="Button" parent="MainContainer/MainTabs/Update/ScrollContainer/MarginContainer/VBoxContainer/HBoxContainer"]
 unique_name_in_owner = true
 visible = false
 layout_mode = 2
 theme_type_variation = &"ButtonStyled"
 text = "Update"
 
-[node name="UpdateStatus" type="Label" parent="MainContainer/MainTabs/Update/MarginContainer/VBoxContainer"]
+[node name="UpdateStatus" type="Label" parent="MainContainer/MainTabs/Update/ScrollContainer/MarginContainer/VBoxContainer"]
 unique_name_in_owner = true
 layout_mode = 2
 autowrap_mode = 3
 
-[node name="UpdateImpossibleContainer" type="VBoxContainer" parent="MainContainer/MainTabs/Update/MarginContainer/VBoxContainer"]
+[node name="UpdateImpossibleContainer" type="VBoxContainer" parent="MainContainer/MainTabs/Update/ScrollContainer/MarginContainer/VBoxContainer"]
 unique_name_in_owner = true
 visible = false
 layout_mode = 2
 theme_override_constants/separation = 20
 
-[node name="Label" type="Label" parent="MainContainer/MainTabs/Update/MarginContainer/VBoxContainer/UpdateImpossibleContainer"]
+[node name="Label" type="Label" parent="MainContainer/MainTabs/Update/ScrollContainer/MarginContainer/VBoxContainer/UpdateImpossibleContainer"]
 layout_mode = 2
 text = "Update cannot be downloaded, you need to re-download the app.
 
 This is most likely because a new scenario has been released and the data structure might have changed drastically.
 
-Please, download the app from the website opene with the button below:"
+Please, download the app from the website opened by the button below:"
 autowrap_mode = 3
 
-[node name="HBoxContainer3" type="HBoxContainer" parent="MainContainer/MainTabs/Update/MarginContainer/VBoxContainer/UpdateImpossibleContainer"]
+[node name="HBoxContainer3" type="HBoxContainer" parent="MainContainer/MainTabs/Update/ScrollContainer/MarginContainer/VBoxContainer/UpdateImpossibleContainer"]
 layout_mode = 2
 size_flags_vertical = 0
 
-[node name="DownloadButton" type="Button" parent="MainContainer/MainTabs/Update/MarginContainer/VBoxContainer/UpdateImpossibleContainer/HBoxContainer3"]
+[node name="DownloadButton" type="Button" parent="MainContainer/MainTabs/Update/ScrollContainer/MarginContainer/VBoxContainer/UpdateImpossibleContainer/HBoxContainer3"]
 unique_name_in_owner = true
 layout_mode = 2
 theme_type_variation = &"ButtonStyled"
@@ -898,9 +908,9 @@ offset_bottom = 20.0
 [connection signal="toggled" from="MainContainer/MainTabs/Helper/VBoxContainer/MarginContainer/HBoxContainer/HBoxContainer/AlwaysOnTopToggle" to="." method="_on_always_on_top_toggle_toggled"]
 [connection signal="pressed" from="MainContainer/MainTabs/Helper/VBoxContainer/PanelContainer/VBoxContainer/PanelContainer/HBoxContainer3/HBoxContainer/ScenarioSelectButton" to="." method="_on_scenario_select_button_pressed"]
 [connection signal="pressed" from="MainContainer/MainTabs/Helper/VBoxContainer/PanelContainer/VBoxContainer/PanelContainer/HBoxContainer3/HBoxContainer2/CharacterSelectButton" to="." method="_on_character_select_button_pressed"]
-[connection signal="pressed" from="MainContainer/MainTabs/Update/MarginContainer/VBoxContainer/HBoxContainer/CheckUpdatesButton" to="." method="_on_check_updates_button_pressed"]
-[connection signal="pressed" from="MainContainer/MainTabs/Update/MarginContainer/VBoxContainer/HBoxContainer/UpdateButton" to="." method="_on_update_button_pressed"]
-[connection signal="pressed" from="MainContainer/MainTabs/Update/MarginContainer/VBoxContainer/UpdateImpossibleContainer/HBoxContainer3/DownloadButton" to="." method="_on_download_button_pressed"]
+[connection signal="pressed" from="MainContainer/MainTabs/Update/ScrollContainer/MarginContainer/VBoxContainer/HBoxContainer/CheckUpdatesButton" to="." method="_on_check_updates_button_pressed"]
+[connection signal="pressed" from="MainContainer/MainTabs/Update/ScrollContainer/MarginContainer/VBoxContainer/HBoxContainer/UpdateButton" to="." method="_on_update_button_pressed"]
+[connection signal="pressed" from="MainContainer/MainTabs/Update/ScrollContainer/MarginContainer/VBoxContainer/UpdateImpossibleContainer/HBoxContainer3/DownloadButton" to="." method="_on_download_button_pressed"]
 [connection signal="pressed" from="MainContainer/MainTabs/Settings/MarginContainer/VBoxContainer/HBoxContainer/SwitchScreenButton" to="." method="_on_switch_screen_button_pressed"]
 [connection signal="value_changed" from="MainContainer/MainTabs/Settings/MarginContainer/VBoxContainer/HBoxContainer2/HBoxContainer/LoopMS" to="." method="_on_loop_ms_value_changed"]
 [connection signal="toggled" from="MainContainer/MainTabs/Settings/MarginContainer/VBoxContainer/DisableAnims" to="." method="_on_disable_anims_toggled"]

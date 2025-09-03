@@ -54,8 +54,9 @@ func load_json_data(path : String):
 
 var character_button_scene = load("res://Core/UIElements/CharacterButton.tscn")
 func load_character_list():
+	for child in %CharacterList.get_children():
+		child.queue_free()
 	for character in character_data:
-		print(character.name)
 		var character_button = character_button_scene.instantiate()
 		var image = AssetLoader.load_image_from_path("characters/" + Utils.to_snake_case(character.name) + "-icon.png")
 		if !image:
@@ -66,6 +67,8 @@ func load_character_list():
 		%CharacterList.add_child(character_button)
 
 func load_scenario_list():
+	for child in %ScenarioList.get_children():
+		child.queue_free()
 	for scenario in scenario_data:
 		var scenario_button = character_button_scene.instantiate()
 		var image = AssetLoader.load_image_from_path("scenarios/" + Utils.to_snake_case(scenario.name) + "/icon.png")
@@ -496,7 +499,7 @@ func _on_check_updates_button_pressed() -> void:
 	%CheckUpdatesButton.disabled = true
 
 func on_update_available() -> void:
-	%UpdateStatus.text = "Update available. Click the button below to update"
+	%UpdateStatus.text = "Update available. Click the 'Update' button."
 	%UpdateButton.show()
 	%UpdateButton.disabled = false
 
@@ -510,14 +513,15 @@ func _on_download_button_pressed() -> void:
 func on_update_progress(progress : int, message : String):
 	%UpdateStatus.text = message
 
-func on_update_complete(message : String):
-	%UpdateStatus.text = message
+func on_update_complete():
+	%UpdateStatus.text = "Update complete!"
 	load_game_data()
-	%CheckUpdatesButton.disabled = false
+	#%CheckUpdatesButton.disabled = false
 
 func on_update_impossible():
 	# CHECK IF UPDATE IS POSSIBLE DUE TO APP VERSION REQUIREMENT
 	%UpdateImpossibleContainer.show()
+	%UpdateStatus.text = "Re-download required."
 	
 func on_update_failed(message : String):
 	%UpdateStatus.text = message

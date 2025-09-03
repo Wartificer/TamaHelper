@@ -89,33 +89,3 @@ static func compare_suffix(suffix1: String, suffix2: String) -> int:
 # Convenience method for checking minimum version requirement
 static func meets_minimum_version(current_version: String, minimum_version: String) -> bool:
 	return is_version_greater(minimum_version, current_version) or current_version == minimum_version
-
-# Example usage and test function
-static func run_tests():
-	print("=== Version Comparison Tests ===")
-	
-	var test_cases = [
-		["2.4", "2.5.1", true],      # 2.5.1 > 2.4
-		["2.5.1", "2.4", false],    # 2.4 < 2.5.1
-		["2.5.1", "2.5.1b", false], # 2.5.1b < 2.5.1 (beta < stable)
-		["2.5.1b", "2.5.1", true],  # 2.5.1 > 2.5.1b
-		["2.5.0", "2.5.1", true],   # 2.5.1 > 2.5.0
-		["1.0.0", "2.0.0", true],   # 2.0.0 > 1.0.0
-		["2.5.1a", "2.5.1b", true], # 2.5.1b > 2.5.1a (beta > alpha)
-		["2.5.1", "2.5.1", false],  # Equal versions
-		["3.0", "2.9.9", false],    # 2.9.9 < 3.0
-	]
-	
-	for case in test_cases:
-		var v1 = case[0]
-		var v2 = case[1]
-		var expected = case[2]
-		var result = is_version_greater(v1, v2)
-		
-		var status = "✓" if result == expected else "✗"
-		print("%s is_version_greater('%s', '%s') = %s (expected %s)" % [status, v1, v2, result, expected])
-	
-	print("\n=== Minimum Version Check Tests ===")
-	print("Current: 2.5.1, Minimum: 2.4.0 -> %s" % meets_minimum_version("2.5.1", "2.4.0"))
-	print("Current: 2.3.0, Minimum: 2.4.0 -> %s" % meets_minimum_version("2.3.0", "2.4.0"))
-	print("Current: 2.5.1b, Minimum: 2.5.1 -> %s" % meets_minimum_version("2.5.1b", "2.5.1"))

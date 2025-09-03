@@ -59,10 +59,11 @@ func _on_manifest_received(result: int, response_code: int, headers: PackedStrin
 	
 	if files_to_update.is_empty():
 		update_progress.emit(1.0, "No updates needed")
-		update_complete.emit()
+		#update_complete.emit()
 		return
 	else:
-		if !VersionComparator.is_version_greater(remote_manifest.min_app_version, ProjectSettings.get_setting("application/config/version", "1.0.0")):
+		print(remote_manifest)
+		if !VersionComparator.meets_minimum_version(remote_manifest.min_app_version, ProjectSettings.get_setting("application/config/version", "1.0.0")):
 			update_impossible.emit()
 			return
 		_files_to_update = files_to_update
@@ -92,6 +93,8 @@ func _compare_manifests(local: Dictionary, remote: Dictionary) -> Array[Dictiona
 	var updates : Array[Dictionary] = []
 	
 	for category in remote:
+		if category == "min_app_version":
+			continue
 		var remote_items = remote[category] as Dictionary
 		var local_items = local.get(category, {}) as Dictionary
 		
@@ -123,7 +126,7 @@ func _download_updates(files_to_update: Array = _files_to_update, remote_manifes
 	# Save updated manifest
 	_save_local_manifest(remote_manifest)
 	
-	update_progress.emit(1.0, "Update complete!")
+	#update_progress.emit(1.0, "Update complete!")
 	update_complete.emit()
 
 func _download_file(file_info: Dictionary) -> void:

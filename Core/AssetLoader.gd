@@ -251,6 +251,7 @@ func load_all_json_from_folder(relative_folder_path: String) -> Array:
 	var file_name = dir.get_next()
 	
 	while file_name != "":
+		print(file_name)
 		# Check if it's a file (not a directory) and has .json extension
 		if not dir.current_is_dir() and file_name.get_extension().to_lower() == "json":
 			# Construct full file path
