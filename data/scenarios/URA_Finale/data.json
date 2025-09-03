@@ -85,7 +85,7 @@
 		{"name": "Senior Year Late Nov", "label": "Nov 2"},
 		{"name": "Senior Year Early Dec", "label": "Dec 1"},
 		{"name": "Senior Year Late Dec", "label": "Dec 2"},
-		{"name": "Pos-Finale", "label": "Extra"}
+		{"name": "Finale Extra", "label": "Extra"}
 	],
 	"races": [
 		{
