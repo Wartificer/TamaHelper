@@ -1,9 +1,9 @@
 # .github/workflows/generate-manifest.yml
 name: Generate Data Manifest
 on:
-  push:
-    paths:
-      - 'data/**'
+#  push:
+#    paths:
+#      - 'data/**'
   workflow_dispatch: # Manual trigger
 
 jobs:
