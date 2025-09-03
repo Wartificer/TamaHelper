@@ -98,6 +98,8 @@ func _ready():
 	## Connect to OCR signals
 	#OCRManager.ocr_completed.connect(_on_ocr_completed)
 	#OCRManager.ocr_failed.connect(_on_ocr_failed)
+	
+	run_auto_updater()
 
 func get_screen_size():
 	screen_size = DisplayServer.screen_get_size(current_screen)
@@ -477,3 +479,25 @@ func _on_loop_ms_value_changed(value: float) -> void:
 
 func _on_main_tabs_tab_changed(tab: int) -> void:
 	Utils.current_tab = %MainTabs.get_tab_title(tab)
+
+
+func run_auto_updater():
+	AutoUpdater.update_progress.connect(on_update_progress)
+	AutoUpdater.update_complete.connect(on_update_complete)
+	AutoUpdater.update_failed.connect(on_update_failed)
+	%UpdateStatus.text = "Updating..."
+	AutoUpdater.check_for_updates()
+
+
+func _on_update_button_pressed() -> void:
+	AutoUpdater.check_for_updates()
+
+
+func on_update_progress(message : String):
+	%UpdateStatus.text = message
+
+func on_update_complete(message : String):
+	%UpdateStatus.text = message
+
+func on_update_failed(message : String):
+	%UpdateStatus.text = message

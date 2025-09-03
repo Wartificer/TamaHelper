@@ -24,6 +24,7 @@ Utils="*res://Core/Utils.gd"
 ImageReader="*res://Core/ImageReader.gd"
 FuzzyTextMatcher="*res://Core/FuzzyTextMatcher.gd"
 AssetLoader="*res://Core/AssetLoader.gd"
+AutoUpdater="*res://Core/AutoUpdater.gd"
 
 [display]
 

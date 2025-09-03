@@ -1,93 +1,110 @@
 extends Control
 
-@onready var add_button = $UI/AddButton
-@onready var notes_container = $NotesContainer
-@onready var notes_viewport = $NotesContainer
-@onready var notes_content = $NotesContainer/NotesContent
+@onready var notes_graph: GraphEdit = $NotesGraph
+@onready var add_button: Button = $UI/AddNoteButton
 
-# The element you want to scale
-@export var target_element: Control
-# Scale limits
-const MIN_SCALE = 0.2
-const MAX_SCALE = 1.0
-# Scale increment per wheel step
-const SCALE_STEP = 0.1
-
-# Preload the note item scene
-var note_item_scene = preload("res://Core/UIElements/NoteItem.tscn")
+var text_note_scene = preload("res://Core/UIElements/TextNoteNode.tscn")
+var image_note_scene = preload("res://Core/UIElements/ImageNoteNode.tscn")
+var note_counter = 0
 
 func _ready():
-	add_button.pressed.connect(_on_add_button_pressed)
+	pass
+	## Connect signals
+	#add_button.pressed.connect(_on_add_note_button_pressed)
+	#notes_graph.files_dropped_on_graph.connect(_on_notes_files_dropped)
+	#
+	## Enable file dropping - corrected method call with proper callable references
+	#notes_graph.set_drag_forwarding(Callable(), _can_drop_data, _drop_data)
+	#
+	## Set up clipboard monitoring for paste functionality
+	#set_process_input(true)
+
+func _input(event):
+	# Handle Ctrl+V for pasting
+	if event is InputEventKey and event.pressed:
+		if event.ctrl_pressed and event.keycode == KEY_V:
+			_handle_paste()
+
+func _handle_paste():
+	# Try to get clipboard content
+	var clipboard_text = DisplayServer.clipboard_get()
 	
-	# Enable drag and drop
-	set_process_input(true)
+	if clipboard_text != "":
+		# Check if it's an image path or URL
+		if _is_image_path(clipboard_text):
+			_create_image_note(clipboard_text)
+		else:
+			# Create text note with clipboard content
+			_create_text_note(clipboard_text)
+
+func _is_image_path(path: String) -> bool:
+	var extensions = [".png", ".jpg", ".jpeg", ".bmp", ".tga", ".webp"]
+	var lower_path = path.to_lower()
 	
-	# Make sure this node can receive input even when not focused
-	set_process_unhandled_input(true)
+	for ext in extensions:
+		if lower_path.ends_with(ext):
+			return true
+	return false
 
-func _on_add_button_pressed():
-	create_text_note()
+func _on_add_note_button_pressed():
+	_create_text_note("")
 
-func create_text_note():
-	var note_item = note_item_scene.instantiate()
-	notes_content.add_child(note_item)
+func _on_notes_files_dropped(files: PackedStringArray, position: Vector2):
+	for file_path in files:
+		if _is_image_path(file_path):
+			_create_image_note(file_path, position)
+		else:
+			# Try to read as text file
+			_create_text_note_from_file(file_path, position)
+
+func _create_text_note(initial_text: String = "", pos: Vector2 = Vector2.ZERO):
+	var note_node = text_note_scene.instantiate()
+	note_counter += 1
 	
-	# Position new note at a random location
-	var rand_pos = Vector2(
-		randf_range(50, 500),
-		randf_range(50, 500)
-	)
-	note_item.position = rand_pos
-	note_item.setup_as_text()
-
-func create_image_note(image_path: String):
-	var note_item = note_item_scene.instantiate()
-	notes_content.add_child(note_item)
+	note_node.name = "TextNote_" + str(note_counter)
+	note_node.title = "Note " + str(note_counter)
+	note_node.position_offset = pos if pos != Vector2.ZERO else _get_random_position()
 	
-	var rand_pos = Vector2(
-		randf_range(50, 500),
-		randf_range(50, 500)
-	)
-	note_item.position = rand_pos
-	note_item.setup_as_image(image_path)
+	notes_graph.add_child(note_node)
+	
+	# Set initial text if provided
+	if initial_text != "":
+		note_node.set_text(initial_text)
 
-# Handle file drops
-func _can_drop_data(position, data):
-	return data.has("files")
+func _create_text_note_from_file(file_path: String, pos: Vector2 = Vector2.ZERO):
+	var file = FileAccess.open(file_path, FileAccess.READ)
+	if file:
+		var content = file.get_as_text()
+		file.close()
+		_create_text_note(content, pos)
+	else:
+		print("Could not read file: ", file_path)
 
-func _drop_data(position, data):
+func _create_image_note(image_path: String, pos: Vector2 = Vector2.ZERO):
+	var note_node = image_note_scene.instantiate()
+	note_counter += 1
+	
+	note_node.name = "ImageNote_" + str(note_counter)
+	note_node.title = "Image " + str(note_counter)
+	note_node.position_offset = pos if pos != Vector2.ZERO else _get_random_position()
+	
+	notes_graph.add_child(note_node)
+	
+	# Load and set the image
+	note_node.set_image(image_path)
+
+func _get_random_position() -> Vector2:
+	var graph_size = notes_graph.size
+	var random_x = randf_range(50, graph_size.x - 250)
+	var random_y = randf_range(50, graph_size.y - 150)
+	return Vector2(random_x, random_y)
+
+func _can_drop_data(position: Vector2, data) -> bool:
+	# Allow dropping of files
+	return data.has("files") or data.has("text")
+
+func _drop_data(position: Vector2, data):
 	if data.has("files"):
-		for file_path in data["files"]:
-			if file_path.get_extension().to_lower() in ["png", "jpg", "jpeg", "bmp", "webp"]:
-				create_image_note(file_path)
-
-func _unhandled_input(event):
-	# Only process if current_tab is "notes"
-	if Utils.current_tab != "Notes":
-		return
-	
-	# Check for mouse wheel events
-	if event is InputEventMouseButton:
-		# Check if CTRL is pressed
-		if event.ctrl_pressed:
-			print("A")
-			var new_scale = target_element.scale.x
-			
-			# Scroll up (wheel up) - increase scale
-			if event.button_index == MOUSE_BUTTON_WHEEL_UP:
-				new_scale = min(new_scale + SCALE_STEP, MAX_SCALE)
-				apply_scale(new_scale)
-				# Mark event as handled so it doesn't propagate
-				get_viewport().set_input_as_handled()
-			
-			# Scroll down (wheel down) - decrease scale
-			elif event.button_index == MOUSE_BUTTON_WHEEL_DOWN:
-				new_scale = max(new_scale - SCALE_STEP, MIN_SCALE)
-				apply_scale(new_scale)
-				# Mark event as handled so it doesn't propagate
-				get_viewport().set_input_as_handled()
-
-func apply_scale(scale_value: float):
-	if target_element:
-		# Apply uniform scaling to both x and y
-		target_element.scale = Vector2(scale_value, scale_value)
+		_on_notes_files_dropped(data["files"], position)
+	elif data.has("text"):
+		_create_text_note(data["text"], position)
