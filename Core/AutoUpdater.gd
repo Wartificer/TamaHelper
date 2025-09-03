@@ -62,8 +62,8 @@ func _on_manifest_received(result: int, response_code: int, headers: PackedStrin
 		#update_complete.emit()
 		return
 	else:
-		print(remote_manifest)
-		if !VersionComparator.meets_minimum_version(remote_manifest.min_app_version, ProjectSettings.get_setting("application/config/version", "1.0.0")):
+		#print(remote_manifest)
+		if !VersionComparator.meets_minimum_version(remote_manifest.min_app_version if remote_manifest.has("min_app_version") else ProjectSettings.get_setting("application/config/version", "1.0.0"), ProjectSettings.get_setting("application/config/version", "1.0.0")):
 			update_impossible.emit()
 			return
 		_files_to_update = files_to_update
