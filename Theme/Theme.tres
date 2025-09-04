@@ -1,4 +1,4 @@
-[gd_resource type="Theme" load_steps=8 format=3 uid="uid://bsi5c1o138wn4"]
+[gd_resource type="Theme" load_steps=9 format=3 uid="uid://bsi5c1o138wn4"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_abrne"]
 content_margin_left = 8.0
@@ -74,6 +74,20 @@ expand_margin_bottom = 4.0
 
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_rmkbn"]
 
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_rmkbn"]
+content_margin_top = 0.0
+content_margin_bottom = 0.0
+bg_color = Color(0.6, 0.6, 0.6, 0)
+border_width_left = 4
+border_width_top = 2
+border_width_right = 4
+border_width_bottom = 2
+border_color = Color(0.961615, 0.967766, 0, 1)
+corner_radius_top_left = 4
+corner_radius_top_right = 4
+corner_radius_bottom_right = 4
+corner_radius_bottom_left = 4
+
 [resource]
 ButtonStyled/base_type = &"Button"
 ButtonStyled/colors/font_color = Color(0, 0, 0, 1)
@@ -90,3 +104,5 @@ ButtonStyled/styles/pressed = SubResource("StyleBoxFlat_k1aya")
 CheckButton/font_sizes/font_size = 12
 CheckButton/styles/focus = SubResource("StyleBoxEmpty_2ufmn")
 TabContainer/styles/tab_focus = SubResource("StyleBoxEmpty_rmkbn")
+TimelineBorderedPanel/base_type = &"PanelContainer"
+TimelineBorderedPanel/styles/panel = SubResource("StyleBoxFlat_rmkbn")

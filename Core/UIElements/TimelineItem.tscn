@@ -42,7 +42,11 @@ grow_horizontal = 2
 grow_vertical = 2
 theme_override_styles/panel = SubResource("StyleBoxFlat_0k8n8")
 
-[node name="HBoxContainer" type="HBoxContainer" parent="PanelContainer"]
+[node name="BorderPanelContainer" type="PanelContainer" parent="PanelContainer"]
+layout_mode = 2
+size_flags_horizontal = 4
+
+[node name="HBoxContainer" type="HBoxContainer" parent="PanelContainer/BorderPanelContainer"]
 custom_minimum_size = Vector2(0, 18)
 layout_mode = 2
 size_flags_horizontal = 4
