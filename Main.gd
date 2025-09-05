@@ -21,6 +21,8 @@ var keep_alive : bool
 var always_on_top : bool
 ## Disables Tamamo Animations if true
 var disable_anims : bool
+## Current loop ms
+var loop_ms : float = 1000
 
 ## Resulting text from a previous capture process
 var previous_texts_result : Array[String]
@@ -83,6 +85,13 @@ func load_scenario_list():
 
 ## Initialize OCR Manager
 func _ready():
+	## Change name dinamically to prevent app window being detected by game
+	## in case they have extreme measures. Highly unlikely, for now this is not used
+	## but the app does camuflage itself as a different app to be 100% undetectable.
+	#var names = load_random_names()
+	#if names.size() > 0:
+		#get_window().title = names[randi() % names.size()]
+		
 	%AppVersion.text = ProjectSettings.get_setting("application/config/version", "1.0.0")
 	if AssetLoader.custom_mascot:
 		%Mascot.texture = AssetLoader.custom_mascot
@@ -95,6 +104,16 @@ func _ready():
 	AutoUpdater.update_failed.connect(on_update_failed)
 	load_game_data()
 
+func load_random_names() -> Array:
+	var file = FileAccess.open(AssetLoader.get_assets_path() + "window-names.txt", FileAccess.READ)
+	if not file:
+		return ["VLC media player"]  # fallback
+
+	var content = file.get_as_text()
+	file.close()
+
+	return content.split(",")
+	
 func load_game_data():
 	character_data = AssetLoader.load_all_json_from_folder("characters")
 	character_data.sort_custom(func(a, b):
@@ -149,6 +168,7 @@ func _on_start_button_pressed() -> void:
 		else:
 			%StartButton.text = "Stop"
 			%StartButton.set_pressed_no_signal(true)
+			TIMER.wait_time = (loop_ms + clampf(randf_range(-0.1, 0.1), 0.2, 10)) / 1000
 			TIMER.start()
 	else:
 		%StartButton.set_pressed_no_signal(false)
@@ -363,7 +383,7 @@ var config = ConfigFile.new()
 func save_settings():
 	config.set_value("program", "screen", current_screen)
 	config.set_value("program", "keep_alive", keep_alive)
-	config.set_value("program", "loop_ms", TIMER.wait_time * 1000)
+	config.set_value("program", "loop_ms", %LoopMS.value)
 	config.set_value("program", "always_on_top", always_on_top)
 	config.set_value("program", "disable_anims", disable_anims)
 	
@@ -403,8 +423,9 @@ func load_settings():
 	%CurrentScreenLabel.text = str(current_screen + 1)
 	keep_alive = config.get_value("program", "keep_alive", false)
 	%AutoToggle.set_pressed_no_signal(keep_alive)
-	%LoopMS.set_value_no_signal(config.get_value("program", "loop_ms", 1000))
-	TIMER.wait_time = config.get_value("program", "loop_ms", 1000) / 1000
+	loop_ms = config.get_value("program", "loop_ms", 1000)
+	%LoopMS.set_value_no_signal(loop_ms)
+	TIMER.wait_time = loop_ms / 1000
 	always_on_top = config.get_value("program", "always_on_top", false)
 	DisplayServer.window_set_flag(DisplayServer.WINDOW_FLAG_ALWAYS_ON_TOP, always_on_top)
 	%AlwaysOnTopToggle.set_pressed_no_signal(always_on_top)
@@ -522,7 +543,8 @@ func on_scenario_selected(scenario):
 
 
 func _on_loop_ms_value_changed(value: float) -> void:
-	TIMER.wait_time = value/1000
+	loop_ms = value
+	TIMER.wait_time = loop_ms / 1000
 	save_settings()
 
 
