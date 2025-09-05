@@ -43,6 +43,13 @@ If you'd like, you can change the default font or the bottom mascot by changing 
 </br>
 </br>
 
+## NEW: Notes and Update tabs
+Added a new tab to get updates on data without needing to download the whole app again. Whenever new characters, supports are added to the game, after they are processed for the app, you can get them using this tab.
+Also added Notes, where you can paste any text or images to keep track of important stuff in a quickly accessible manner.
+
+<img width="400" height="600" alt="485357258-cbc44b7f-a1af-47cf-a7e1-e18a67819a4f" src="https://github.com/user-attachments/assets/b40dcff0-c4dc-4b3c-9930-825116dc240a" />
+
+
 ## Troubleshooting:
 First before anything, make sure tha app reads the correct screen, next to the mascot there should be a miniature of your screen:
 
