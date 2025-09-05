@@ -1,5 +1,9 @@
 extends Control
 
+@onready var border_container = $PanelContainer/BorderPanelContainer
+
+var item_count = 0
+
 func set_data(data : Dictionary, scenario : Dictionary, show_label : bool = false):
 	if show_label:
 		$Label.text = data.date.label
@@ -8,6 +12,7 @@ func set_data(data : Dictionary, scenario : Dictionary, show_label : bool = fals
 
 func set_items(items : Array, scenario: Dictionary):
 	for item in items:
+		item_count += 1
 		var texture_rect : TextureRect = TextureRect.new()
 		texture_rect.expand_mode = TextureRect.EXPAND_FIT_WIDTH_PROPORTIONAL
 		if item.icon.begins_with("{i}"):
@@ -16,7 +21,7 @@ func set_items(items : Array, scenario: Dictionary):
 			texture_rect.texture = AssetLoader.load_image_from_path(Utils.to_snake_case("scenarios/" + scenario.name) + "/race_images/" + item.icon)
 		texture_rect.connect("mouse_entered", on_item_mouse_enter.bind(item))
 		texture_rect.connect("mouse_exited", on_item_mouse_exit.bind(item))
-		$PanelContainer/HBoxContainer.add_child(texture_rect)
+		$PanelContainer/BorderPanelContainer/HBoxContainer.add_child(texture_rect)
 
 func get_icon(factor : String):
 	if factor == "Speed":
@@ -44,3 +49,11 @@ func on_item_mouse_enter(data):
 	
 func on_item_mouse_exit(data):
 	get_parent().owner.hide_tooltip()
+
+func activate():
+	border_container.theme_type_variation = "TimelineBorderedPanel"
+	z_index = 1
+
+func deactivate():
+	border_container.theme_type_variation = ""
+	z_index = 0

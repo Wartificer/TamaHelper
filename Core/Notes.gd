@@ -4,7 +4,7 @@ extends GraphEdit
 @onready var add_button: Button
 var node_counter = 0
 var notes_folder = "notes"
-var notes_file = "notes/notes.json"
+var notes_file = AssetLoader.get_base_path() + "notes/notes.json"
 var saved_images = {}  # Track which images we've already saved
 
 func _ready():
@@ -37,8 +37,8 @@ func _notification(what):
 		_on_quit_request()
 
 func _ensure_notes_directory():
-	if not DirAccess.dir_exists_absolute(notes_folder):
-		DirAccess.open("user://").make_dir_recursive(notes_folder)
+	if not DirAccess.dir_exists_absolute(AssetLoader.get_base_path() + notes_folder):
+		DirAccess.open(AssetLoader.get_base_path()).make_dir_recursive(notes_folder)
 
 func _get_drag_data(position: Vector2):
 	return null
@@ -138,7 +138,7 @@ func _delete_image_file(node_id: int):
 func _on_quit_request():
 	print("App closing, saving notes...")
 	_save_notes()
-	get_tree().quit()
+	#get_tree().quit()
 
 func _save_notes():
 	var notes_data = {

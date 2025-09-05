@@ -282,6 +282,8 @@ func show_event_info(info : Dictionary):
 	if !disable_anims:
 		play_random_animation()
 
+var active_timeline_item
+var last_date = ""
 func update_date(date_on_screen : String):
 	if !selected_scenario:
 		return
@@ -291,6 +293,13 @@ func update_date(date_on_screen : String):
 			var date_pos = 50 * i * -1 + 75.0
 			%ImportantEventsTimeline.offset_left = date_pos
 			%G1RacesTimeline.offset_left = date_pos
+			for timeline_item in timeline_item_nodes:
+				if timeline_item.name == date.name:
+					if active_timeline_item:
+						active_timeline_item.deactivate()
+					active_timeline_item = timeline_item
+					if active_timeline_item.item_count != 0:
+						active_timeline_item.activate()
 
 func show_tooltip(data):
 	if data.has("terrain"):
@@ -347,7 +356,7 @@ func get_weighted_random_animation() -> String:
 func _notification(what):
 	if what == NOTIFICATION_WM_CLOSE_REQUEST:
 		save_settings()
-		get_tree().quit()
+		#get_tree().quit()
 
 var config = ConfigFile.new()
 
@@ -438,6 +447,7 @@ func set_selected_scenario_ui():
 	%SelectedScenario.texture = image
 	set_timelines()
 
+var timeline_item_nodes = []
 var timeline_item_scene = load("res://Core/UIElements/TimelineItem.tscn")
 func set_timelines():
 	if !selected_scenario:
@@ -456,7 +466,9 @@ func set_timelines():
 	
 	for date_object in fixed_event_dates_list:
 		var timeline_item = timeline_item_scene.instantiate()
+		timeline_item.name = date_object.date.name
 		timeline_item.set_data(date_object, selected_scenario, true)
+		timeline_item_nodes.push_back(timeline_item)
 		%ImportantEventsTimeline.add_child(timeline_item)
 
 	# Set G1 races
@@ -472,7 +484,9 @@ func set_timelines():
 	
 	for date_object in g1_race_dates_list:
 		var timeline_item = timeline_item_scene.instantiate()
+		timeline_item.name = date_object.date.name
 		timeline_item.set_data(date_object, selected_scenario)
+		timeline_item_nodes.push_back(timeline_item)
 		%G1RacesTimeline.add_child(timeline_item)
 
 #endregion
