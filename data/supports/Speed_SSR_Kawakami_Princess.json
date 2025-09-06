@@ -6,19 +6,21 @@
     {
       "name": "Modestly! Boldly!",
       "text": [
-        "[[Energy-]]-5\n[[Power+]]+10\nKawakami Princess [[bond+]]+5"
+        "[[Mood+]]+1\n[[Speed+]]+5\nKawakami Princess [[bond+]]+5",
+        "[[sp+]]+10\n{link:Tether} [[hint]]1\nKawakami Princess [[bond+]]+5"
       ]
     },
     {
       "name": "Princess Power ☆ to the Max!",
       "text": [
-        "[[Energy+]]+10\n[[Power+]]+20\nKawakami Princess [[bond+]]+5"
+        "[[Speed+]]+5\n[[Guts+]]+5"
       ]
     },
     {
       "name": "Hit It! Princess Road!",
       "text": [
-        "[[Energy-]]-15\n[[Power+]]+30\n{link:{link:Unyielding}} [[hint]]1\nKawakami Princess [[bond+]]+5"
+        "[[Speed+]]+15\n[[Guts+]]+15\n{link:{link:Center Stage}} [[hint]]1\nKawakami Princess [[bond+]]+5",
+        "[[Energy+]]+25\n[[sp+]]+25"
       ]
     },
     {
@@ -32,7 +34,7 @@
       "name": "Princess Escape!",
       "text": [
         "[[Energy+]]+10\nKawakami Princess [[bond+]]+5",
-        "Kawakami Princess [[bond+]]+5\nAquire {link:Steadfast}"
+        "Aquire {link:Steadfast}\nKawakami Princess [[bond+]]+5"
       ]
     }
   ]

@@ -263,15 +263,15 @@
       "name": "Etsuko's Exhaustive Coverage",
       "initiator": "(G1)",
       "text": [
-        "[[Energy-]]-15\n[[Energy-]]-25\n[[sp+]]+25\n[[sp+]]+25\n[[1stats]] +4\n[[or]]\n[[1stats]] +4\nEtsuko Otonashi [[bond+]]+15\nEtsuko Otonashi [[bond-]]-10\n[[Mood+]]+1\n[[Mood-]]-1",
-        "[[Energy-]]-20\n[[sp+]]+25\n[[1stats]] +4\nEtsuko Otonashi [[bond+]]+10"
+        "[[Energy-]]-25\n[[Mood-]]-1\n[[1stats]] +4\n[[sp+]]+25\nEtsuko Otonashi [[bond-]]-10\n[[or]]\n[[Energy-]]-15\n[[Mood+]]+1\n[[1stats]] +4\n[[sp+]]+25\nEtsuko Otonashi [[bond+]]+15",
+        "[[Energy-]]-20\n[[1stats]] +4\n[[sp+]]+25\nEtsuko Otonashi [[bond+]]+10"
       ]
     },
     {
       "name": "Etsuko's Exhaustive Coverage",
       "initiator": "(G2/G3)",
       "text": [
-        "[[Energy-]]-15\n[[Energy-]]-25\n[[sp+]]+20\n[[sp+]]+20\n[[1stats]] +3\n[[or]]\n[[1stats]] +3\nEtsuko Otonashi [[bond+]]+15\nEtsuko Otonashi [[bond-]]-10\n[[Mood+]]+1\n[[Mood-]]-1",
+        "[[Energy-]]-25\n[[Mood-]]-1\n[[1stats]] +3\n[[sp+]]+20\nEtsuko Otonashi [[bond-]]-10\n[[or]]\n[[Energy-]]-15\n[[Mood+]]+1\n[[1stats]] +3\n[[sp+]]+20\nEtsuko Otonashi [[bond+]]+15",
         "[[Energy-]]-20\n[[sp+]]+20\n[[1stats]] +3\nEtsuko Otonashi [[bond+]]+10"
       ]
     },
@@ -279,7 +279,7 @@
       "name": "Etsuko's Exhaustive Coverage",
       "initiator": "(Pre/OP)",
       "text": [
-        "[[Energy-]]-15\n[[Energy-]]-25\n[[sp+]]+10\n[[sp+]]+10\n[[or]]\nEtsuko Otonashi [[bond+]]+15\nEtsuko Otonashi [[bond-]]-10\n[[Mood+]]+1\n[[Mood-]]-1",
+        "[[Energy-]]-25\n[[Mood-]]-1\n[[sp+]]+25\nEtsuko Otonashi [[bond-]]-10\n[[or]]\n[[Energy-]]-15\n[[Mood+]]+1\n[[sp+]]+25\nEtsuko Otonashi [[bond+]]+15",
         "[[Energy-]]-20\n[[sp+]]+10\nEtsuko Otonashi [[bond+]]+10"
       ]
     },
