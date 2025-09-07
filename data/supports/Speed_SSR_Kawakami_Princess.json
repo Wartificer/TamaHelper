@@ -19,7 +19,7 @@
     {
       "name": "Hit It! Princess Road!",
       "text": [
-        "[[Speed+]]+15\n[[Guts+]]+15\n{link:{link:Center Stage}} [[hint]]1\nKawakami Princess [[bond+]]+5",
+        "[[Speed+]]+15\n[[Guts+]]+15\n{link:Center Stage} [[hint]]1\nKawakami Princess [[bond+]]+5",
         "[[Energy+]]+25\n[[sp+]]+25"
       ]
     },
@@ -34,7 +34,7 @@
       "name": "Princess Escape!",
       "text": [
         "[[Energy+]]+10\nKawakami Princess [[bond+]]+5",
-        "Aquire {link:Steadfast}\nKawakami Princess [[bond+]]+5"
+        "{link:Steadfast} [[hint]]1\nKawakami Princess [[bond+]]+5"
       ]
     }
   ]
