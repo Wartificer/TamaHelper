@@ -19,7 +19,7 @@
     {
       "name": "Buono For You, Buono For Me ☆",
       "text": [
-        "[[Stamina+]]+5\n[[Guts]]+10\n{link:Sixth Sense} [[hint]]3\n[[or]]\n{link:Dodging Danger} [[hint]]3"
+        "[[Stamina+]]+5\n[[Guts+]]+10\n{link:Sixth Sense} [[hint]]3\n[[or]]\n{link:Dodging Danger} [[hint]]3"
       ]
     },
     {
