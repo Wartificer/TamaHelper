@@ -34,7 +34,7 @@
       "name": "Princess Escape!",
       "text": [
         "[[Energy+]]+10\nKawakami Princess [[bond+]]+5",
-        "Kawakami Princess [[bond+]]+5\nAquire {link:Steadfast}"
+        "{link:Steadfast} [[hint]]1\nKawakami Princess [[bond+]]+5"
       ]
     }
   ]
