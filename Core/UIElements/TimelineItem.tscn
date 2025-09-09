@@ -1,54 +1,63 @@
-[gd_scene load_steps=3 format=3 uid="uid://cecam2nvmhirn"]
+[gd_scene load_steps=4 format=3 uid="uid://cecam2nvmhirn"]
 
 [ext_resource type="Script" uid="uid://bjihl0pverpol" path="res://Core/UIElements/TimelineItem.gd" id="1_odcor"]
 
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_7ufq4"]
+
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_0k8n8"]
-bg_color = Color(0, 0, 0, 0.509804)
+bg_color = Color(0, 0, 0, 0)
 border_width_left = 1
 border_width_top = 1
 border_width_right = 1
 border_width_bottom = 1
 border_color = Color(0.8, 0.8, 0.8, 0.0862745)
 
-[node name="TimelineItem" type="Control"]
+[node name="TimelineItem" type="PanelContainer"]
 custom_minimum_size = Vector2(50, 0)
-layout_mode = 3
-anchors_preset = 0
-offset_right = 50.0
+offset_right = 2.0
 offset_bottom = 20.0
+theme_override_styles/panel = SubResource("StyleBoxEmpty_7ufq4")
 script = ExtResource("1_odcor")
 
-[node name="Label" type="Label" parent="."]
-visible = false
+[node name="Control" type="Control" parent="."]
+layout_mode = 2
+size_flags_horizontal = 4
+
+[node name="Label" type="Label" parent="Control"]
 layout_mode = 1
-anchors_preset = 5
+anchors_preset = -1
 anchor_left = 0.5
 anchor_right = 0.5
-offset_left = -8.5
-offset_top = -14.145
-offset_right = 8.5
-offset_bottom = -0.145
+offset_left = -0.5
+offset_top = -13.0
+offset_right = 0.5
+offset_bottom = 14.0
 grow_horizontal = 2
 size_flags_horizontal = 4
 size_flags_vertical = 0
 theme_override_font_sizes/font_size = 11
 
 [node name="PanelContainer" type="PanelContainer" parent="."]
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_0k8n8")
+
+[node name="HBoxContainer" type="HBoxContainer" parent="PanelContainer"]
+custom_minimum_size = Vector2(0, 18)
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme_override_constants/separation = 0
+
+[node name="Control" type="Control" parent="PanelContainer"]
+layout_mode = 2
+mouse_filter = 2
+
+[node name="BorderedContainer" type="PanelContainer" parent="PanelContainer/Control"]
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-theme_override_styles/panel = SubResource("StyleBoxFlat_0k8n8")
-
-[node name="BorderPanelContainer" type="PanelContainer" parent="PanelContainer"]
-layout_mode = 2
-size_flags_horizontal = 4
-
-[node name="HBoxContainer" type="HBoxContainer" parent="PanelContainer/BorderPanelContainer"]
-custom_minimum_size = Vector2(0, 18)
-layout_mode = 2
-size_flags_horizontal = 4
-size_flags_vertical = 4
-theme_override_constants/separation = 0
+mouse_filter = 2
+theme_type_variation = &"TimelinePanel"

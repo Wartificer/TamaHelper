@@ -310,16 +310,21 @@ func update_date(date_on_screen : String):
 	for i in selected_scenario.dates.size():
 		var date = selected_scenario.dates[i]
 		if date.name == date_on_screen:
-			var date_pos = 50 * i * -1 + 75.0
-			%ImportantEventsTimeline.offset_left = date_pos
-			%G1RacesTimeline.offset_left = date_pos
-			for timeline_item in timeline_item_nodes:
+			#var date_pos = 50 * i * -1 + 75.0
+			var timeline_pos = 100
+			for n in timeline_item_nodes.size() / 2:
+				var timeline_item = timeline_item_nodes[n + timeline_item_nodes.size() / 2]
 				if timeline_item.name == date.name:
+					timeline_pos -= timeline_item.size.x / 2
 					if active_timeline_item:
 						active_timeline_item.deactivate()
 					active_timeline_item = timeline_item
+					%ImportantEventsTimeline.offset_left = timeline_pos
+					%G1RacesTimeline.offset_left = timeline_pos
 					if active_timeline_item.item_count != 0:
 						active_timeline_item.activate()
+				else:
+					timeline_pos -= timeline_item.size.x
 
 func show_tooltip(data):
 	if data.has("terrain"):
@@ -471,6 +476,10 @@ func set_selected_scenario_ui():
 var timeline_item_nodes = []
 var timeline_item_scene = load("res://Core/UIElements/TimelineItem.tscn")
 func set_timelines():
+	for node in timeline_item_nodes:
+		node.queue_free()
+	timeline_item_nodes = []
+	
 	if !selected_scenario:
 		return
 	
@@ -492,6 +501,8 @@ func set_timelines():
 		timeline_item_nodes.push_back(timeline_item)
 		%ImportantEventsTimeline.add_child(timeline_item)
 
+	await get_tree().create_timer(0).timeout
+	
 	# Set G1 races
 	var g1_races_list = selected_scenario.races
 	
@@ -503,12 +514,17 @@ func set_timelines():
 				date_object.items.push_back(race)
 		g1_race_dates_list.push_back(date_object)
 	
-	for date_object in g1_race_dates_list:
+	for i in g1_race_dates_list.size():
+		var date_object = g1_race_dates_list[i]
 		var timeline_item = timeline_item_scene.instantiate()
 		timeline_item.name = date_object.date.name
 		timeline_item.set_data(date_object, selected_scenario)
 		timeline_item_nodes.push_back(timeline_item)
 		%G1RacesTimeline.add_child(timeline_item)
+		timeline_item.custom_minimum_size.x = timeline_item_nodes[i].size.x
+		await get_tree().create_timer(0).timeout
+		if timeline_item.size.x > timeline_item_nodes[i].size.x:
+			timeline_item_nodes[i].custom_minimum_size.x = timeline_item.size.x
 
 #endregion
 

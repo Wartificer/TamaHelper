@@ -17,7 +17,7 @@
 color = Color(1, 1, 1, 0.117647)
 
 [sub_resource type="StyleBoxLine" id="StyleBoxLine_wkp8b"]
-color = Color(1, 1, 1, 0.482353)
+color = Color(1, 1, 0, 0.482353)
 thickness = 46
 
 [sub_resource type="Animation" id="Animation_lgr22"]
@@ -231,9 +231,12 @@ layout_mode = 2
 metadata/_tab_index = 0
 
 [node name="VBoxContainer" type="VBoxContainer" parent="MainContainer/MainTabs/Helper"]
-layout_mode = 2
-offset_right = 400.0
-offset_bottom = 492.0
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
 size_flags_vertical = 3
 
 [node name="MarginContainer" type="MarginContainer" parent="MainContainer/MainTabs/Helper/VBoxContainer"]
@@ -409,9 +412,10 @@ unique_name_in_owner = true
 modulate = Color(1, 1, 1, 0.235294)
 custom_minimum_size = Vector2(90, 100)
 layout_mode = 1
-anchors_preset = 15
+anchors_preset = -1
 anchor_right = 1.0
 anchor_bottom = 1.0
+offset_bottom = -8.0
 grow_horizontal = 2
 grow_vertical = 2
 expand_mode = 1
@@ -455,9 +459,21 @@ size_flags_vertical = 2
 theme = ExtResource("5_03owx")
 theme_override_constants/separation = 20
 
+[node name="Control2" type="Control" parent="MainContainer/MainTabs/Helper/VBoxContainer/PanelContainer/VBoxContainer/VBoxContainer/Control2/VBoxContainer"]
+custom_minimum_size = Vector2(0, 8)
+layout_mode = 2
+
 [node name="Timelines" type="Control" parent="MainContainer/MainTabs/Helper/VBoxContainer/PanelContainer/VBoxContainer/VBoxContainer"]
 custom_minimum_size = Vector2(0, 40)
 layout_mode = 2
+
+[node name="PanelContainer" type="PanelContainer" parent="MainContainer/MainTabs/Helper/VBoxContainer/PanelContainer/VBoxContainer/VBoxContainer/Timelines"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
 
 [node name="VBoxContainer" type="VBoxContainer" parent="MainContainer/MainTabs/Helper/VBoxContainer/PanelContainer/VBoxContainer/VBoxContainer/Timelines"]
 layout_mode = 1
@@ -755,6 +771,7 @@ custom_minimum_size = Vector2(0, 80)
 layout_mode = 2
 
 [node name="ColorRect" type="ColorRect" parent="MainContainer/Bottom"]
+visible = false
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
@@ -771,7 +788,15 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 
-[node name="ImagePreview" type="TextureRect" parent="MainContainer/Bottom/HBoxContainer"]
+[node name="MarginContainer" type="MarginContainer" parent="MainContainer/Bottom/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_constants/margin_left = 10
+theme_override_constants/margin_top = 10
+theme_override_constants/margin_right = 10
+theme_override_constants/margin_bottom = 10
+
+[node name="ImagePreview" type="TextureRect" parent="MainContainer/Bottom/HBoxContainer/MarginContainer"]
 unique_name_in_owner = true
 layout_mode = 2
 size_flags_horizontal = 3

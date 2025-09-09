@@ -1,4 +1,4 @@
-[gd_resource type="Theme" load_steps=9 format=3 uid="uid://bsi5c1o138wn4"]
+[gd_resource type="Theme" load_steps=10 format=3 uid="uid://bsi5c1o138wn4"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_abrne"]
 content_margin_left = 8.0
@@ -87,6 +87,12 @@ corner_radius_top_left = 4
 corner_radius_top_right = 4
 corner_radius_bottom_right = 4
 corner_radius_bottom_left = 4
+expand_margin_left = 5.0
+expand_margin_top = 34.0
+expand_margin_right = 5.0
+expand_margin_bottom = 4.0
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_io6mi"]
 
 [resource]
 ButtonStyled/base_type = &"Button"
@@ -106,3 +112,5 @@ CheckButton/styles/focus = SubResource("StyleBoxEmpty_2ufmn")
 TabContainer/styles/tab_focus = SubResource("StyleBoxEmpty_rmkbn")
 TimelineBorderedPanel/base_type = &"PanelContainer"
 TimelineBorderedPanel/styles/panel = SubResource("StyleBoxFlat_rmkbn")
+TimelinePanel/base_type = &"PanelContainer"
+TimelinePanel/styles/panel = SubResource("StyleBoxEmpty_io6mi")

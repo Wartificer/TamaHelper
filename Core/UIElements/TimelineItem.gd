@@ -1,13 +1,13 @@
 extends Control
 
-@onready var border_container = $PanelContainer/BorderPanelContainer
+@onready var border_container = $PanelContainer/Control/BorderedContainer
 
 var item_count = 0
 
 func set_data(data : Dictionary, scenario : Dictionary, show_label : bool = false):
 	if show_label:
-		$Label.text = data.date.label
-		$Label.show()
+		$Control/Label.text = data.date.label
+		$Control/Label.show()
 	set_items(data.items, scenario)
 
 func set_items(items : Array, scenario: Dictionary):
@@ -21,7 +21,7 @@ func set_items(items : Array, scenario: Dictionary):
 			texture_rect.texture = AssetLoader.load_image_from_path(Utils.to_snake_case("scenarios/" + scenario.name) + "/race_images/" + item.icon)
 		texture_rect.connect("mouse_entered", on_item_mouse_enter.bind(item))
 		texture_rect.connect("mouse_exited", on_item_mouse_exit.bind(item))
-		$PanelContainer/BorderPanelContainer/HBoxContainer.add_child(texture_rect)
+		$PanelContainer/HBoxContainer.add_child(texture_rect)
 
 func get_icon(factor : String):
 	if factor == "Speed":
@@ -52,8 +52,8 @@ func on_item_mouse_exit(data):
 
 func activate():
 	border_container.theme_type_variation = "TimelineBorderedPanel"
-	z_index = 1
+	#z_index = 1
 
 func deactivate():
-	border_container.theme_type_variation = ""
-	z_index = 0
+	border_container.theme_type_variation = "TimelinePanel"
+	#z_index = 0
