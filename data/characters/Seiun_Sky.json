@@ -5,11 +5,12 @@
       "name": "Sleepy Time Incense",
       "text": [
         "[[Wit+]]+20",
-        "[[Stamina+]]+10"
+        "[[Stamina+]]+20"
       ]
     },
     {
       "name": "Tactician vs. King",
+      "aliases": ["â€œaD"],
       "text": [
         "[[Guts+]]+20",
         "[[Speed+]]+20"

@@ -696,6 +696,11 @@ theme_override_constants/margin_bottom = 20
 layout_mode = 2
 theme_override_constants/separation = 10
 
+[node name="Label2" type="Label" parent="MainContainer/MainTabs/Settings/MarginContainer/VBoxContainer"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.734608, 0.628885, 0.401617, 1)
+text = "Screenshot settings"
+
 [node name="HBoxContainer" type="HBoxContainer" parent="MainContainer/MainTabs/Settings/MarginContainer/VBoxContainer"]
 layout_mode = 2
 theme_override_constants/separation = 20
@@ -749,8 +754,31 @@ text = "ms on loop"
 [node name="HSeparator" type="HSeparator" parent="MainContainer/MainTabs/Settings/MarginContainer/VBoxContainer"]
 layout_mode = 2
 
+[node name="Label3" type="Label" parent="MainContainer/MainTabs/Settings/MarginContainer/VBoxContainer"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.733333, 0.627451, 0.4, 1)
+text = "UI settings"
+
+[node name="HBoxContainer3" type="HBoxContainer" parent="MainContainer/MainTabs/Settings/MarginContainer/VBoxContainer"]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="MainContainer/MainTabs/Settings/MarginContainer/VBoxContainer/HBoxContainer3"]
+layout_mode = 2
+text = "UI Scale"
+
+[node name="UIScaleSpinBox" type="SpinBox" parent="MainContainer/MainTabs/Settings/MarginContainer/VBoxContainer/HBoxContainer3"]
+unique_name_in_owner = true
+layout_mode = 2
+step = 0.1
+value = 1.0
+allow_greater = true
+
+[node name="HSeparator4" type="HSeparator" parent="MainContainer/MainTabs/Settings/MarginContainer/VBoxContainer"]
+layout_mode = 2
+
 [node name="Label" type="Label" parent="MainContainer/MainTabs/Settings/MarginContainer/VBoxContainer"]
 layout_mode = 2
+theme_override_colors/font_color = Color(0.733333, 0.627451, 0.4, 1)
 text = "Other settings"
 
 [node name="DisableAnims" type="CheckButton" parent="MainContainer/MainTabs/Settings/MarginContainer/VBoxContainer"]
@@ -993,6 +1021,7 @@ expand_icon = true
 [connection signal="pressed" from="MainContainer/MainTabs/Update/ScrollContainer/MarginContainer/VBoxContainer/UpdateImpossibleContainer/HBoxContainer3/DownloadButton" to="." method="_on_download_button_pressed"]
 [connection signal="pressed" from="MainContainer/MainTabs/Settings/MarginContainer/VBoxContainer/HBoxContainer/SwitchScreenButton" to="." method="_on_switch_screen_button_pressed"]
 [connection signal="value_changed" from="MainContainer/MainTabs/Settings/MarginContainer/VBoxContainer/HBoxContainer2/HBoxContainer/LoopMS" to="." method="_on_loop_ms_value_changed"]
+[connection signal="value_changed" from="MainContainer/MainTabs/Settings/MarginContainer/VBoxContainer/HBoxContainer3/UIScaleSpinBox" to="." method="_on_spin_box_value_changed"]
 [connection signal="toggled" from="MainContainer/MainTabs/Settings/MarginContainer/VBoxContainer/DisableAnims" to="." method="_on_disable_anims_toggled"]
 [connection signal="timeout" from="CaptureTimer" to="." method="_on_capture_timer_timeout"]
 [connection signal="pressed" from="CharacterSelect/MarginContainer/VBoxContainer/CloseCharacterSelectButton" to="." method="_on_close_character_select_button_pressed"]

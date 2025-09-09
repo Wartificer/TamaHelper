@@ -389,6 +389,7 @@ func save_settings():
 	config.set_value("program", "screen", current_screen)
 	config.set_value("program", "keep_alive", keep_alive)
 	config.set_value("program", "loop_ms", %LoopMS.value)
+	config.set_value("program", "ui_scale", %UIScaleSpinBox.value)
 	config.set_value("program", "always_on_top", always_on_top)
 	config.set_value("program", "disable_anims", disable_anims)
 	
@@ -424,13 +425,16 @@ func load_settings():
 		DisplayServer.window_set_size(Vector2i(size_x, size_y))
 	
 	# Load values with defaults if they don't exist
-	current_screen = config.get_value("program", "screen", 0)
+	current_screen = config.get_value("program", "screen", 1)
 	%CurrentScreenLabel.text = str(current_screen + 1)
-	keep_alive = config.get_value("program", "keep_alive", false)
+	keep_alive = config.get_value("program", "keep_alive", true)
 	%AutoToggle.set_pressed_no_signal(keep_alive)
 	loop_ms = config.get_value("program", "loop_ms", 1000)
 	%LoopMS.set_value_no_signal(loop_ms)
 	TIMER.wait_time = loop_ms / 1000
+	%UIScaleSpinBox.set_value_no_signal(config.get_value("program", "ui_scale", 1.0))
+	get_window().content_scale_factor = %UIScaleSpinBox.value
+
 	always_on_top = config.get_value("program", "always_on_top", false)
 	DisplayServer.window_set_flag(DisplayServer.WINDOW_FLAG_ALWAYS_ON_TOP, always_on_top)
 	%AlwaysOnTopToggle.set_pressed_no_signal(always_on_top)
@@ -601,3 +605,8 @@ func on_update_impossible():
 func on_update_failed(message : String):
 	%UpdateStatus.text = message
 	%UpdateButton.disabled = false
+
+
+func _on_spin_box_value_changed(value: float) -> void:
+	get_window().content_scale_factor = value
+	save_settings()

@@ -150,6 +150,18 @@ static func find_text_in_data_fuzzy(data: Variant, type : String, text: String, 
 					"texts": event.text,
 					"similarity": similarity
 				}
+			elif event.has("aliases"):
+				for alias in event.aliases:
+					similarity = similarity_percentage(cleaned_text.to_lower(), alias.to_lower())
+					if similarity > best_similarity and similarity >= threshold:
+						best_similarity = similarity
+						best_match = {
+							"name": event.name,
+							"image": Utils.to_snake_case(item.name) if type == "character" else get_support_image(item),
+							"type": type,
+							"texts": event.text,
+							"similarity": similarity
+						}
 	
 	return best_match if best_match else false
 
