@@ -1,4 +1,4 @@
-[gd_scene load_steps=24 format=3 uid="uid://dbqd80d1l70t4"]
+[gd_scene load_steps=25 format=3 uid="uid://dbqd80d1l70t4"]
 
 [ext_resource type="Script" uid="uid://beuccnthoabwk" path="res://Main.gd" id="1_glv2v"]
 [ext_resource type="Theme" uid="uid://bsi5c1o138wn4" path="res://Theme/Theme.tres" id="1_wkp8b"]
@@ -9,6 +9,7 @@
 [ext_resource type="Theme" uid="uid://dws1jwukuyny2" path="res://Theme/ChoicesTheme.tres" id="5_03owx"]
 [ext_resource type="Texture2D" uid="uid://qpowt8nxanbj" path="res://Images/tamamo.png" id="5_wkp8b"]
 [ext_resource type="PackedScene" uid="uid://hxajlxqfhrhp" path="res://Core/Notes.tscn" id="6_20pc6"]
+[ext_resource type="Texture2D" uid="uid://b6abdnf51fjxo" path="res://Images/icon-copy.svg" id="6_c6i3y"]
 [ext_resource type="Texture2D" uid="uid://tr364oyjq7eu" path="res://Images/icon-random.tres" id="7_5vvyt"]
 [ext_resource type="Texture2D" uid="uid://dn3bjstcka6te" path="res://Images/icon-close.svg" id="7_lgr22"]
 [ext_resource type="Script" uid="uid://ccgyrwfrtpbs7" path="res://Core/UIElements/MouseScrollContainer.gd" id="10_wkp8b"]
@@ -462,6 +463,45 @@ theme_override_constants/separation = 20
 [node name="Control2" type="Control" parent="MainContainer/MainTabs/Helper/VBoxContainer/PanelContainer/VBoxContainer/VBoxContainer/Control2/VBoxContainer"]
 custom_minimum_size = Vector2(0, 8)
 layout_mode = 2
+
+[node name="MarginContainer" type="MarginContainer" parent="MainContainer/MainTabs/Helper/VBoxContainer/PanelContainer/VBoxContainer/VBoxContainer/Control2"]
+layout_mode = 1
+anchors_preset = 3
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -40.0
+offset_top = -40.0
+grow_horizontal = 0
+grow_vertical = 0
+theme_override_constants/margin_left = 10
+theme_override_constants/margin_top = 10
+theme_override_constants/margin_right = 10
+theme_override_constants/margin_bottom = 10
+
+[node name="HBoxContainer" type="HBoxContainer" parent="MainContainer/MainTabs/Helper/VBoxContainer/PanelContainer/VBoxContainer/VBoxContainer/Control2/MarginContainer"]
+layout_mode = 2
+mouse_filter = 2
+alignment = 2
+
+[node name="CopiedLabel" type="Label" parent="MainContainer/MainTabs/Helper/VBoxContainer/PanelContainer/VBoxContainer/VBoxContainer/Control2/MarginContainer/HBoxContainer"]
+unique_name_in_owner = true
+visible = false
+z_index = 1
+layout_mode = 2
+text = "Copied detected event name"
+
+[node name="CopyDetectedButton" type="Button" parent="MainContainer/MainTabs/Helper/VBoxContainer/PanelContainer/VBoxContainer/VBoxContainer/Control2/MarginContainer/HBoxContainer"]
+unique_name_in_owner = true
+visible = false
+custom_minimum_size = Vector2(20, 20)
+layout_mode = 2
+size_flags_horizontal = 8
+size_flags_vertical = 4
+mouse_filter = 1
+icon = ExtResource("6_c6i3y")
+expand_icon = true
 
 [node name="Timelines" type="Control" parent="MainContainer/MainTabs/Helper/VBoxContainer/PanelContainer/VBoxContainer/VBoxContainer"]
 custom_minimum_size = Vector2(0, 40)
@@ -1016,6 +1056,7 @@ expand_icon = true
 [connection signal="toggled" from="MainContainer/MainTabs/Helper/VBoxContainer/MarginContainer/HBoxContainer/HBoxContainer/AlwaysOnTopToggle" to="." method="_on_always_on_top_toggle_toggled"]
 [connection signal="pressed" from="MainContainer/MainTabs/Helper/VBoxContainer/PanelContainer/VBoxContainer/PanelContainer/HBoxContainer3/HBoxContainer/ScenarioSelectButton" to="." method="_on_scenario_select_button_pressed"]
 [connection signal="pressed" from="MainContainer/MainTabs/Helper/VBoxContainer/PanelContainer/VBoxContainer/PanelContainer/HBoxContainer3/HBoxContainer2/CharacterSelectButton" to="." method="_on_character_select_button_pressed"]
+[connection signal="pressed" from="MainContainer/MainTabs/Helper/VBoxContainer/PanelContainer/VBoxContainer/VBoxContainer/Control2/MarginContainer/HBoxContainer/CopyDetectedButton" to="." method="_on_copy_detected_button_pressed"]
 [connection signal="pressed" from="MainContainer/MainTabs/Update/ScrollContainer/MarginContainer/VBoxContainer/HBoxContainer/CheckUpdatesButton" to="." method="_on_check_updates_button_pressed"]
 [connection signal="pressed" from="MainContainer/MainTabs/Update/ScrollContainer/MarginContainer/VBoxContainer/HBoxContainer/UpdateButtonContainer/UpdateButton" to="." method="_on_update_button_pressed"]
 [connection signal="pressed" from="MainContainer/MainTabs/Update/ScrollContainer/MarginContainer/VBoxContainer/UpdateImpossibleContainer/HBoxContainer3/DownloadButton" to="." method="_on_download_button_pressed"]

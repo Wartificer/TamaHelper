@@ -239,6 +239,7 @@ func process_capture(capture : Image):
 	
 	previous_texts_result = texts_result
 	if texts_result.size() > 0:
+		%CopyDetectedButton.show()
 			
 		# Add information to screen
 		for text in texts_result:
@@ -610,3 +611,12 @@ func on_update_failed(message : String):
 func _on_spin_box_value_changed(value: float) -> void:
 	get_window().content_scale_factor = value
 	save_settings()
+
+
+func _on_copy_detected_button_pressed() -> void:
+	DisplayServer.clipboard_set((" - ").join(previous_texts_result))
+	%CopiedLabel.show()
+	%CopyDetectedButton.disabled = true
+	await get_tree().create_timer(3).timeout
+	%CopiedLabel.hide()
+	%CopyDetectedButton.disabled = false
