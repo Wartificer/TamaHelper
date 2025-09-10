@@ -322,7 +322,7 @@
     {
       "name": "Get Me in the Mood ☆",
       "text": [
-        "[[or]]\n[[Mood-]]-1\n[[Mood+]]+1"
+        "[[Mood-]]-1\n[[or]]\n[[Mood+]]+1"
       ]
     },
     {
