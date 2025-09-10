@@ -46,7 +46,7 @@
     {
       "name": "Which One is the Lucky Card?!",
       "text": [
-        "[[sp+]]+15\n[[Speed+]]+5\n[[Stamina+]]+5\n[[or]]\n[[or]]\n[[Mood-]]-1\n[[Mood+]]+1"
+        "[[Speed+]]+5\n[[Stamina+]]+5\n[[or]]\n[[Mood+]]+1\n[[sp+]]+15\n[[or]]\n[[Speed+]]+5\n[[Mood-]]-1"
       ]
     },
     {

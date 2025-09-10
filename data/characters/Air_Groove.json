@@ -373,7 +373,7 @@
     {
       "name": "Of Storms and Flowers",
       "text": [
-        "[[Energy+]]+15\n[[Energy+]]+15\n[[Guts-]]-5\n[[Guts-]]-5\nAquires {link:Slacker}\n[[or]]\n[[Mood-]]-1"
+        "[[Energy+]]+15\n[[Mood-]]-1\n[[Guts-]]-5\n[[or]]\n[[Energy+]]+15\n[[Guts-]]-5\nAquires {link:Slacker}\n[[or]]\n[[Energy+]]+15\n[[Mood-]]-1\n[[Guts-]]-5\nAquires {link:Slacker}"
       ]
     }
   ]

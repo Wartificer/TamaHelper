@@ -54,7 +54,7 @@
       "name": "This One's For Keeps!",
       "text": [
         "[[Energy+]]+10",
-        "[[sp+]]+15\n[[sp+]]+60\nAquires {link:Slacker}\n[[or]]\n{link:Non-Standard Distance} [[hint]]1"
+        "[[sp+]]+60\n{link:Non-Standard Distance} [[hint]]1\n[[or]]\n[[sp+]]+15\nAquires {link:Slacker}"
       ]
     },
     {

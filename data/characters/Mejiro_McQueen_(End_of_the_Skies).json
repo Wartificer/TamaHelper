@@ -46,7 +46,7 @@
     {
       "name": "The Allure of Racecourse Food",
       "text": [
-        "[[Energy+]]+30\n[[Energy+]]+30\n[[sp+]]+10\n[[sp+]]+10\n[[Speed-]]-5\n[[Stamina+]]+10\n[[Power+]]+5\nAquires {link:Slow Metabolism}\n[[or]]\n",
+        "[[Energy+]]+30\n[[Stamina+]]+10\n[[sp+]]+10\n[[or]]\n[[Energy+]]+30\n[[sp+]]+10\n[[Speed-]]-5\n[[Power+]]+5\nAquires {link:Slow Metabolism}",
         "[[sp+]]+5\n[[Guts+]]+15"
       ]
     },

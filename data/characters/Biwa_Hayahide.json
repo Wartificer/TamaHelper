@@ -18,7 +18,7 @@
     {
       "name": "Theory, the Greatest Weapon",
       "text": [
-        "[[Stamina+]]+20\n[[Wit+]]+20\n[[or]]\n[[possible]] Aquires {link:{link:Hot Topic}}\n[[possible]] Aquires {link:{link:Hot Topic}}",
+        "[[Wit+]]+20\n[[possible]] Aquires {link:{link:Hot Topic}}\n[[or]]\n[[Stamina+]]+20\n[[possible]] Aquires {link:{link:Hot Topic}}",
         "[[Wit+]]+20\n[[possible]] Aquires {link:Hot Topic}\n[[possible]] Aquires {link:Practice Perfect}"
       ]
     },

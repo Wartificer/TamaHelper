@@ -11,7 +11,7 @@
     {
       "name": "Fill Life with Love",
       "text": [
-        "[[Speed+]]+10\n[[Stamina+]]+10\n[[Wit+]]+20\n[[or]]\n",
+        "[[Speed+]]+10\n[[Stamina+]]+10\n[[or]]\n[[Wit+]]+20",
         "[[Wit+]]+20"
       ]
     },
