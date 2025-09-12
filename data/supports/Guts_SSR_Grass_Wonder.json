@@ -13,13 +13,13 @@
       "name": "A Moment's Respite",
       "text": [
         "[[Energy+]]+15\nGrass Wonder [[bond+]]+5",
-        "[[Energy-]]-10\n[[Power+]]+5\n[[Power+]]+5\n[[Guts+]]+5\n[[Guts+]]+5\n[[Wit+]]+10\n[[Wit+]]+5\n[[or]]\nGrass Wonder [[bond+]]+5\nGrass Wonder [[bond+]]+5"
+        "[[Energy-]]-10\n[[Power+]]+5\n[[Guts+]]+5\n[[Wit+]]+5\nGrass Wonder [[bond+]]+5\n[[or]]\n[[Power+]]+5\n[[Guts+]]+5\n[[Wit+]]+10\nGrass Wonder [[bond+]]+5"
       ]
     },
     {
       "name": "Hidden Petals",
       "text": [
-        "[[Energy-]]-10\n[[Energy-]]-10\n[[Speed+]]+5\n[[Speed+]]+5\n[[Guts+]]+10\n[[Guts+]]+5\n[[Wit+]]+5\n[[Wit+]]+5\n[[or]]\n{link:Furious Feat} [[hint]]3\n{link:Updrafters} [[hint]]1\nGrass Wonder [[bond+]]+5\nGrass Wonder [[bond+]]+5"
+        "[[Energy-]]-10\n[[Speed+]]+5\n[[Guts+]]+5\n[[Wit+]]+5\n{link:Updrafters} [[hint]]1\nGrass Wonder [[bond+]]+5\n[[or]]\n[[Energy-]]-10\n[[Speed+]]+5\n[[Guts+]]+10\n[[Wit+]]+5\n{link:Furious Feat} [[hint]]3\nGrass Wonder [[bond+]]+5"
       ]
     },
     {

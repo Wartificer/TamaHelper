@@ -18,7 +18,7 @@
     {
       "name": "Aim for That Sparkling Moment!",
       "text": [
-        "[[Energy-]]-10\n[[Energy-]]-10\n[[Guts+]]+20\n[[Guts+]]+10\n[[Wit+]]+5\n[[or]]\n[[or]]\n{link:{link:Restless}} [[hint]]3\n{link:Moxie} [[hint]]1\n{link:{link:Restless}} [[hint]]1\n{link:{link:Restless}} [[hint]]1 or {link:Moxie} [[hint]]1"
+        "[[Energy-]]-10\n[[Guts+]]+10\n{link:{link:Restless}} [[hint]]1 or {link:Moxie} [[hint]]1\n[[or]]\n[[Energy-]]-10\n[[Guts+]]+20\n[[Wit+]]+5\n{link:{link:Restless}} [[hint]]3"
       ]
     },
     {

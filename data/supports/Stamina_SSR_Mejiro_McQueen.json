@@ -18,7 +18,7 @@
     {
       "name": "Meeting Expectations",
       "text": [
-        "[[Energy-]]-10\n[[Energy-]]-10\n[[Stamina+]]+10\n[[or]]\n{link:Deep Breaths} [[hint]]1\n{link:Cooldown} [[hint]]3"
+        "[[Energy-]]-10\n[[Stamina+]]+10\n{link:Cooldown} [[hint]]3\n[[or]]\n[[Energy-]]-10\n{link:Deep Breaths} [[hint]]1"
       ]
     },
     {
