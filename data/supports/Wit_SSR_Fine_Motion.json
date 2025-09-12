@@ -20,7 +20,7 @@
     {
       "name": "Lovely Racing Weather ♪",
       "text": [
-        "[[Energy-]]-10\n[[sp+]]+15\n[[Guts+]]+5\n[[Wit+]]+5/+10\n[[or]]\n{link:Prepared to Pass} [[hint]]1\n{link:Speed Star} [[hint]]1/+3\n{link:Speed Star} [[hint]]1/+3 or {link:Prepared to Pass} [[hint]]1"
+        "[[Energy-]]-10\n[[sp+]]+15\n[[Guts+]]+5\n[[Wit+]]+5/+10\n{link:Speed Star} [[hint]]1/+3 or {link:Prepared to Pass} [[hint]]1"
       ]
     },
     {

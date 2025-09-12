@@ -6,21 +6,21 @@
     {
       "name": "I'm Not Afraid!",
       "text": [
-        "[[Energy-]]-10\n[[Speed+]]+10\n[[Speed+]]+10\n[[chainEnd]]\n[[or]]\nTwin Turbo [[bond+]]+5",
+        "[[Speed+]]+10\nTwin Turbo [[bond+]]+5\n[[or]]\n[[Energy-]]-10\n[[Speed+]]+10\n[[chainEnd]]",
         "[[Energy+]]+20\n[[chainEnd]]"
       ]
     },
     {
       "name": "Can't Catch Me!",
       "text": [
-        "[[Energy-]]-10\n[[Speed+]]+10\n[[Speed+]]+15\n[[chainEnd]]\n[[or]]\n{link:Leader's Pride} [[hint]]3\nTwin Turbo [[bond+]]+5",
+        "[[Speed+]]+15\n{link:Leader's Pride} [[hint]]3\nTwin Turbo [[bond+]]+5\n[[or]]\n[[Energy-]]-10\n[[Speed+]]+10\n[[chainEnd]]",
         "[[Energy+]]+25\n[[chainEnd]]"
       ]
     },
     {
       "name": "Turbo Is Strong!",
       "text": [
-        "[[Energy-]]-10\n[[Energy-]]-10\n[[Speed+]]+25\n[[Speed+]]+5\n[[or]]\n{link:Taking the Lead} [[hint]]3\n{link:Early Lead} [[hint]]3\nTwin Turbo [[bond+]]+5",
+        "[[Energy-]]-10\n[[Speed+]]+5\n{link:Early Lead} [[hint]]3\n[[or]]\n[[Energy-]]-10\n[[Speed+]]+25\n{link:Taking the Lead} [[hint]]3\nTwin Turbo [[bond+]]+5",
         "[[Energy+]]+15\n{link:Watchful Eye} [[hint]]1"
       ]
     },

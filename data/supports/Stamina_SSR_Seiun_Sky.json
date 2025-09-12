@@ -19,7 +19,7 @@
     {
       "name": "It's All to Win",
       "text": [
-        "[[Energy+]]+10\n[[sp+]]+5\n[[Speed+]]+5\n[[Stamina+]]+5\n[[Wit+]]+5\n[[or]]\n{link:Fast-Paced} [[hint]]1\n{link:Escape Artist} [[hint]]1/+3\n{link:Escape Artist} [[hint]]1/+3 or {link:Fast-Paced} [[hint]]1\n[[Mood+]]+1"
+        "[[Energy+]]+10\n[[Mood+]]+1\n[[Speed+]]+5\n[[Stamina+]]+5\n[[Wit+]]+5\n[[sp+]]+5\n{link:Escape Artist} [[hint]]1/+3 or {link:Fast-Paced} [[hint]]1"
       ]
     },
     {

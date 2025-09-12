@@ -13,7 +13,7 @@
       "name": "How I Play at the Park",
       "text": [
         "[[Energy+]]+35\n[[Wit+]]+6\nAoi Kiryuin [[bond+]]+5\n[[possible]] [[Mood+]]+1",
-        "[[sp+]]+56\n[[sp+]]+18\n[[Speed+]]+6\n[[or]]\nAoi Kiryuin [[bond+]]+5\nAoi Kiryuin [[bond+]]+5\n[[Mood+]]+1"
+        "[[sp+]]+18\nAoi Kiryuin [[bond+]]+5\n[[or]]\n[[Speed+]]+6\n[[sp+]]+56\n[[Mood+]]+1\nAoi Kiryuin [[bond+]]+5"
       ]
     },
     {
@@ -31,7 +31,7 @@
     {
       "name": "(❯❯❯❯❯) Chasing Dreams",
       "text": [
-        "[[sp+]]+56\n[[sp+]]+18\n[[Stamina+]]+6\n[[Stamina+]]+6\n[[Power+]]+6\n[[Guts+]]+6\n[[or]]\n{link:{link:Subdued Front Runners}} [[hint]]3\n[[possible]] {link:{link:Subdued Front Runners}} [[hint]]1\nAoi Kiryuin [[bond+]]+5\nAoi Kiryuin [[bond+]]+5\n[[Mood+]]+1"
+        "[[Stamina+]]+6\n[[sp+]]+18\nAoi Kiryuin [[bond+]]+5\n[[or]]\n[[Stamina+]]+6\n[[Power+]]+6\n[[Guts+]]+6\n[[sp+]]+26\n[[Mood+]]+1\n{link:Subdued Front Runners} [[hint]]3\nAoi Kiryuin [[bond+]]+5"
       ]
     },
     {

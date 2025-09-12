@@ -20,7 +20,7 @@
     {
       "name": "Optimistic Escapism: Never Give Up!",
       "text": [
-        "[[Energy-]]-20\n[[Stamina+]]+5\n[[Guts+]]+5\n[[or]]\n{link:Keeping the Lead} [[hint]]1/+3\n{link:Vanguard Spirit} [[hint]]3\n{link:Vanguard Spirit} [[hint]]3 or {link:Keeping the Lead} [[hint]]1/+3\nMejiro Palmer [[bond+]]+5",
+        "[[Energy-]]-20\n[[Stamina+]]+5\n[[Guts+]]+5\n{link:Vanguard Spirit} [[hint]]3 or {link:Keeping the Lead} [[hint]]1/+3\nMejiro Palmer [[bond+]]+5",
         "[[Energy+]]+10\n{link:Lone Wolf} [[hint]]1"
       ]
     },
