@@ -46,14 +46,14 @@
     {
       "name": "Serial Riddler",
       "text": [
-        "[[Stamina+]]+5\n[[Power+]]+10\n[[or]]\n[[Mood-]]-1\n[[Mood+]]+1",
+        "[[Stamina+]]+5\n[[Power+]]+10\n[[Mood+]]+1\n[[or]]\n[[Mood-]]-1",
         "[[Wit+]]+10"
       ]
     },
     {
       "name": "Taste of Home",
       "text": [
-        "[[Speed+]]+10\n[[Power+]]+5\n[[or]]\n[[Mood-]]-1\n[[Mood+]]+1",
+        "[[Speed+]]+10\n[[Power+]]+5\n[[Mood+]]+1\n[[or]]\n[[Mood-]]-1",
         "[[Wit+]]+10"
       ]
     },
