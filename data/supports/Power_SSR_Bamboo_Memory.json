@@ -1,0 +1,41 @@
+{
+  "name": "Bamboo Memory",
+  "rarity": "ssr",
+  "type": "power",
+  "events": [
+    {
+      "name": "Ready for the Test!",
+      "text": [
+        "[[Energy-]]-10\n[[Stamina+]]+3\n[[Power+]]+3\n[[Guts+]]+3\n{link:Competitive Spirit ○} [[hint]]1"
+      ]
+    },
+    {
+      "name": "No One Is Above Discipline!",
+      "text": [
+        "Maximum [[Energy+]]+4\n[[Energy-]]-10\n[[Stamina+]]+10\n[[Power+]]+10\n[[Guts+]]+5\n{link:Homestretch Haste} [[hint]]+1\nBamboo Memory [[bond+]]+5\n[[or]]\n[[Energy-]]-20\n[[Stamina+]]+10\n[[Power+]]+10\n[[Guts+]]+5\nBamboo Memory [[bond+]]+5\n[[or]]\n[[Energy-]]-20\n[[Stamina+]]+10\n[[Guts+]]+10\nObtain {link:Running Idle}",
+        "[[Energy-]]-10\n[[Mood+]]+1\n[[Stamina+]]+5\n[[Power+]]+5\nBamboo Memory [[bond+]]+5",
+        "[[Energy+]]+30\n{link:Hesitant Late Surgers} [[hint]]1\n[[chainEnd]]"
+      ]
+    },
+    {
+      "name": "Someday, I'll Be Your Rival!",
+      "text": [
+        "Maximum [[Energy+]]+4\n[[Stamina+]]+10\n[[Power+]]+15\nRising Dragon [[hint]]+3\nBamboo Memory [[bond+]]+5\n[[or]]\n[[Energy-]]-15\n[[Stamina+]]+10\n[[Power+]]+15\n{link:Outer Swell} [[hint]]+3"
+      ]
+    },
+    {
+      "name": "Overthrow the Rival!",
+      "text": [
+        "[[Guts+]]+10\nBamboo Memory [[bond+]]+5",
+        "Maximum [[Energy+]]+4\n[[Energy-]]-5\nBamboo Memory [[bond+]]+5"
+      ]
+    },
+    {
+      "name": "Tons of Trouble!",
+      "text": [
+        "[[Stamina+]]+5\n[[Guts+]]+5\nBamboo Memory [[bond]]+5",
+        "[[Energy-]] -10\n{link:Standard Distance ○} [[hint]]+5\nBamboo Memory [[bond+]]+5"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "name": "Shinko Windy",
+  "rarity": "r",
+  "type": "speed",
+  "events": [
+    {
+      "name": "Chomp Extermination!",
+      "text": [
+        "[[Speed+]]+3\n[[Mood+]]+1\nShinko Windy [[bond+]]+5",
+        "[[Energy+]]+10\n[[sp+]]+5\nShinko Windy [[bond]]+5"
+      ]
+    },
+    {
+      "name": "Chomp Attack!",
+      "text": [
+        "[[sp+]]+15\nShinko Windy [[bond+]]+5",
+        "[[Speed+]]+3\n{link:Unyielding Spirit} [[hint]]+1\nShinko Windy [[bond+]]+5"
+      ]
+    }
+  ]
+}

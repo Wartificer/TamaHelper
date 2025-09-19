@@ -1,0 +1,21 @@
+{
+  "name": "Bamboo Memory",
+  "rarity": "r",
+  "type": "power",
+  "events": [
+    {
+      "name": "Overthrow the Rival!",
+      "text": [
+        "[[Guts+]]+10\nBamboo Memory [[bond+]]+5",
+        "Maximum [[Energy+]]+4\n[[Energy-]]-5\nBamboo Memory [[bond+]]+5"
+      ]
+    },
+    {
+      "name": "Tons of Trouble!",
+      "text": [
+        "[[Stamina+]]+5\n[[Guts+]]+5\nBamboo Memory [[bond]]+5",
+        "[[Energy-]] -10\n{link:Standard Distance ○} [[hint]]+5\nBamboo Memory [[bond+]]+5"
+      ]
+    }
+  ]
+}
