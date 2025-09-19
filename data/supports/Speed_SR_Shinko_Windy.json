@@ -1,0 +1,34 @@
+{
+  "name": "Shinko Windy",
+  "rarity": "sr",
+  "type": "speed",
+  "events": [
+    {
+      "name": "Dig Here, Windy!",
+      "text": [
+        "[[Speed+]]+10\nShinko Windy [[bond+]]+5",
+        "[[Energy-]]-5\n[[sp+]]+30\nShinko Windy [[bond+]]+5"
+      ]
+    },
+    {
+      "name": "C'mon Gates, Open Already!",
+      "text": [
+        "Speed +10\n[[sp+]]+15\n{link:Shifting Gears} [[hint]]+3\nShinko Windy [[bond]]+5\n[[or]]\n[[Speed+]]+5\n[[sp+]]+10\nShinko Windy [[bond+]]+5"
+      ]
+    },
+    {
+      "name": "Chomp Extermination!",
+      "text": [
+        "[[Speed+]]+3\n[[Mood+]]+1\nShinko Windy [[bond+]]+5",
+        "[[Energy+]]+10\n[[sp+]]+5\nShinko Windy [[bond]]+5"
+      ]
+    },
+    {
+      "name": "Chomp Attack!",
+      "text": [
+        "[[sp+]]+15\nShinko Windy [[bond+]]+5",
+        "[[Speed+]]+3\n{link:Unyielding Spirit} [[hint]]+1\nShinko Windy [[bond+]]+5"
+      ]
+    }
+  ]
+}
