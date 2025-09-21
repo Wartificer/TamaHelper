@@ -1,0 +1,41 @@
+{
+  "name": "Gold Ship",
+  "rarity": "ssr",
+  "type": "speed",
+  "events": [
+    {
+      "name": "Raising the Uma Lord's Castle",
+      "text": [
+        "Maximum Energy +4\nGold Ship [[bond+]]+5"
+        "[[Speed+]]+10\nGold Ship [[bond+]]+5"
+      ]
+    },
+    {
+      "name": "Plotting the Uma Lord's Dungeon",
+      "text": [
+        "[[Energy-]]-15\n[[Speed+]]+5\n[[Stamina+]]+5\n{link:Long Straightaways ○} [[hint]]1"
+      ]
+    },
+    {
+      "name": "Assembling the Uma Lord's Minions",
+      "text": [
+        "Randomly either\n[[Energy-]]-10\n[[Speed+]]+5\n[[Stamina+]]+5\n{link:Inside Scoop} [[hint]]3\nGold Ship [[bond+]]+5\n[[or]]\n[[Energy-]]-10\n[[Speed+]]+10\n[[Stamina+]]+10\n{link:Innate Experience} [[hint]]3\nGold Ship [[bond+]]+5"
+		"[[Energy+]]+10\n{link:Maverick ○} [[hint]]1"
+      ]
+    },
+    {
+      "name": "Adventurer Gold Ship",
+      "text": [
+        "[[Stamina+]]+15\nGold Ship [[bond+]]+5",
+        "[[sp+]]+15\n[[Guts+]]+10\nGold Ship [[bond+]]+5"
+      ]
+    },
+    {
+      "name": "Revive the Brand! Golshi's Yakisoba",
+      "text": [
+        "[[Stamina+]]+5\n[[Mood+]]+1",
+        "{link:Hanshin Racecourse} [[hint]]1\nGold Ship [[bond+]]+5"
+      ]
+    }
+  ]
+}
