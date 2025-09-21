@@ -1,0 +1,41 @@
+{
+  "name": "King Halo",
+  "rarity": "ssr",
+  "type": "power",
+  "events": [
+    {
+      "name": "A Captivating Invitation",
+      "text": [
+        "[[Power+]]+10\nKing Halo [[bond+]]+5"
+		"[[Guts+]]+10\nKing Halo [[bond+]]+5"
+      ]
+    },
+    {
+      "name": "Dancer's Pride",
+      "text": [
+        "[[Energy-]]-5\n[[Stamina+]]+10\n[[Power+]]+5\n[[sp+]]+5\nKing Halo [[bond+]]+5",
+        "[[Energy+]]+15\n[[sp+]]5\nKing Halo [[bond+]]+5"
+      ]
+    },
+    {
+      "name": "Glittering Star of the Ball",
+      "text": [
+	"Randomly either\n[[Energy-]]-10\n[[Power+]]+25\n{link:Blinding Flash} [[hint]]3\n[[or]]\n[[Energy-]]-10\n[[Power+]]+20\n{link:Gap Closer} [[hint]]3"
+      ]
+    },
+    {
+      "name": "You May Socialize With Me!",
+      "text": [
+        "[[Energy-]]-20\n[[Speed+]]+10\n[[Power+]]+10\n[[Wit+]]+5\nKing Halo [[bond+]]+5",
+        "[[Guts+]]+25\nKing Halo [[bond+]]+5\n[[Mood-]]-1"
+      ]
+    },
+    {
+      "name": "You May Advise Me!",
+      "text": [
+        "[[Guts+]]+10\n[[Wit+]]+5\nKing Halo [[bond+]]+5",
+        "{link:Homestretch Haste} [[hint]]1\nKing Halo [[bond+]]+5"
+      ]
+    }
+  ]
+}
