@@ -1,0 +1,40 @@
+{
+  "name": "Mejiro Ryan",
+  "rarity": "ssr",
+  "type": "guts",
+  "events": [
+    {
+      "name": "Flustered Afternoon Tea!",
+      "text": [
+        "[[Energy+]]+10\n[[Mode+]]+1",
+		"[[Wit+]]+10\n[[sp+]]+15\n{link:Pace Chaser Savy} [[hint]]3"
+      ]
+    },
+    {
+      "name": "Home Run Derby!",
+      "text": [
+        "[[Power+]]+10\n[[Guts+]]+5"
+      ]
+    },
+    {
+      "name": "Indomitable Hearts on Fire!",
+      "text": [
+        "[[Power+]]+10\n[[Guts+]]+5\n{link:Unyielding} [[hint]]1"
+      ]
+    },
+    {
+      "name": "My Muscles and Me, Onward to Tomorrow!",
+      "text": [
+        "[[Energy-]]-10\n[[Power+]]+15\nMejiro Ryan [[bond+]]+5",
+        "Maximum [[Energy+]]+4\n[[Power+]]+5\nMejiro Ryan [[bond+]]+5"
+      ]
+    },
+    {
+      "name": "It's Not Like I Like Romance!",
+      "text": [
+        "{link:Pace Strategy} [[hint]]1\nMejiro Ryan [[bond+]]+5",
+        "[[Energy+]]+30\nMejiro Ryan [[bond+]]+5"
+      ]
+    }
+  ]
+}
