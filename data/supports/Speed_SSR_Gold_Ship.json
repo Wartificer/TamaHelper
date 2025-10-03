@@ -6,7 +6,7 @@
     {
       "name": "Raising the Uma Lord's Castle",
       "text": [
-        "Maximum Energy +4\nGold Ship [[bond+]]+5"
+        "Maximum Energy +4\nGold Ship [[bond+]]+5",
         "[[Speed+]]+10\nGold Ship [[bond+]]+5"
       ]
     },
@@ -19,8 +19,8 @@
     {
       "name": "Assembling the Uma Lord's Minions",
       "text": [
-        "Randomly either\n[[Energy-]]-10\n[[Speed+]]+5\n[[Stamina+]]+5\n{link:Inside Scoop} [[hint]]3\nGold Ship [[bond+]]+5\n[[or]]\n[[Energy-]]-10\n[[Speed+]]+10\n[[Stamina+]]+10\n{link:Innate Experience} [[hint]]3\nGold Ship [[bond+]]+5"
-		"[[Energy+]]+10\n{link:Maverick ○} [[hint]]1"
+        "Randomly either\n[[Energy-]]-10\n[[Speed+]]+5\n[[Stamina+]]+5\n{link:Inside Scoop} [[hint]]3\nGold Ship [[bond+]]+5\n[[or]]\n[[Energy-]]-10\n[[Speed+]]+10\n[[Stamina+]]+10\n{link:Innate Experience} [[hint]]3\nGold Ship [[bond+]]+5",
+		  "[[Energy+]]+10\n{link:Maverick ○} [[hint]]1"
       ]
     },
     {
