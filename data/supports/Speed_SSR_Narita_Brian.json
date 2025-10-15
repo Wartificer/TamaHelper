@@ -1,0 +1,39 @@
+{
+  "name": "Narita Brian",
+  "rarity": "ssr",
+  "type": "speed",
+  "events": [
+    {
+      "name": "Brian, the Race Planner",
+      "text": [
+        "Maximum Energy +4\n[[Speed+]]+5"
+      ]
+    },
+    {
+      "name": "Only a Sister Knows",
+      "text": [
+        "[[Energy-]]-10\n[[Speed+]]+20"
+      ]
+    },
+    {
+      "name": "Running for the Dream",
+      "text": [
+        "[[Energy-]]-10\n[[Speed+]]+20\n{link:Shatterproof}[[hint]]1"
+      ]
+    },
+    {
+      "name": "Brian, the Race Planner",
+      "text": [
+        "[[Mood+]]+1\n[[Speed+]]+5\nNarita Brian [[bond+]]+5",
+        "Maximum Energy +4\nNarita Brian [[bond+]]+5"
+      ]
+    },
+    {
+      "name": "Lone Wolf",
+      "text": [
+	    "[[Speed+]]+3\n[[Stamina+]]+3\n[[Power+]]+3\nNarita Brian [[bond+]]+5",
+        "{link:Lone Wolf}[[hint]]1\nNarita Brian [[bond+]]+5"
+      ]
+    }
+  ]
+}
