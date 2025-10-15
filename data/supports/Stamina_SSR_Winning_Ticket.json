@@ -1,0 +1,40 @@
+{
+  "name": "Winning Ticket",
+  "rarity": "ssr",
+  "type": "stamina",
+  "events": [
+    {
+      "name": "Tickezo☆Expedition!",
+      "text": [
+        "[[Speed+]]+5\n[[Stamina+]]+5"
+      ]
+    },
+    {
+      "name": "Tickezo☆Friendship!",
+      "text": [
+        "[[Stamina+]]+3\n[[Guts+]]+5\n{link:1,500,000 CC} [[hint]]1\nWinning Ticket [[bond+]]+10",
+        "[[Energy+]]+10\n{link:Maverick} [[hint]]3\nWinning Ticket [[bond+]]-5\n[[chainEnd]]"
+      ]
+    },
+    {
+      "name": "Tickezo☆Night Fever!",
+      "text": [
+        "[[Speed+]]+8\n[[Stamina+]]+8\n[[Guts+]]+8\n{link:Hard Worker} [[hint]]1"
+      ]
+    },
+    {
+      "name": "Full-Power Muscles!",
+      "text": [
+        "[[sp+]]+15\n[[Stamina+]]+5\nWinning Ticket [[bond+]]+5",
+        "[[sp+]]+15\nWinning Ticket [[bond+]]+5\n[[Mood+]]+1"
+      ]
+    },
+    {
+      "name": "Full-Power Racing!",
+      "text": [
+        "{link:Late Surger Corners} [[hint]]1\nWinning Ticket [[bond+]]+5",
+        "[[sp+]]+30\nWinning Ticket [[bond+]]+5"
+      ]
+    }
+  ]
+}

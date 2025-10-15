@@ -1,0 +1,37 @@
+{
+  "name": "Daiwa Scarlet",
+  "rarity": "ssr",
+  "type": "wit",
+  "events": [
+    {
+      "name": "Number One Reactions?",
+      "text": [
+        "[[Speed+]]+3\n[[Power+]]+3\n[[Wit+]]+3\nDaiwa Scarlet [[bond+]]+5",
+        "[[Energy+]]+20\n[[chainEnd]]"
+      ]
+    },{
+      "name": "Learning to Look Scared",
+      "text": [
+        "[[Power+]]+5\n[[Wit+]]+5"
+      ]
+    },{
+      "name": "Poolside Fun",
+      "text": [
+        "[[Energy-]]-5\n[[Power+]]+10\n{link:Race Planner} [[hint]]3\n[[or]]\n[[Energy-]]-5\n[[Power+]]+5\n{link:Preferred Position} [[hint]]3"
+      ]
+    },{
+      "name": "I'm Going to Win Tomorrow!",
+      "text": [
+        "[[Wit+]]+10\nDaiwa Scarlet [[bond+]]+5",
+        "[[sp+]]+15\nDaiwa Scarlet [[bond+]]+5\n[[Mood+]]+1"
+      ]
+    },
+    {
+      "name": "This Is Nothing!",
+      "text": [
+        "{link:Stamina to Spare} [[hint]]1\nDaiwa Scarlet [[bond+]]+5",
+        "[[Energy+]]+20\nDaiwa Scarlet [[bond+]]+5\n[[Mood+]]+1"
+      ]
+    }
+  ]
+}
