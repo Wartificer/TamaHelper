@@ -10,6 +10,7 @@
     },
     {
       "name": "For My Admirer",
+	  "aliases": "PN For My Admi",
       "text": [
         "[[Stamina+]]+10\n[[Guts+]]+10",
         "[[Speed+]]+20"

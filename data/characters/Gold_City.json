@@ -1,119 +1,96 @@
 {
-  "name": "Nice Nature",
+  "name": "Gold City",
   "events": [
     {
-      "name": "Nature and Her Tired Trainer",
+      "name": "Client's Orders",
       "text": [
-        "[[Power+]]+20",
-        "[[Stamina+]]+20"
+        "[[Speed+]]+20",
+        "[[Guts+]]+20"
       ]
     },
     {
-      "name": "Bittersweet Sparkle",
+      "name": "Children and Adults",
       "text": [
-        "[[Power+]]+20",
-        "[[Speed+]]+20"
+        "[[Wit+]]+20",
+        "[[Stamina+]]+10\n[[Guts+]]+10"
       ]
     },
     {
-      "name": "Festive Colors",
+      "name": "Ideal Image",
       "text": [
-        "[[Guts+]]+20\n[[possible]] Aquires {link:Charming}",
-        "[[Stamina+]]+20\n[[possible]] Aquires {link:Charming}"
+        "[[Speed+]]+20\n[[possible]] Aquires {link:Charming}",
+        "[[Power+]]+20\n[[possible]] Aquires {link:Charming}"
       ]
     },
     {
-      "name": "Rainy-Day Fun",
+      "name": "City's Salon",
       "text": [
-        "[[Wit+]]+10",
-        "[[Energy-]]-10\n[[Stamina+]]+10\n[[Guts+]]+10"
-      ]
-    },
-    {
-      "name": "Not My Style",
-      "text": [
-        "[[Energy+]]+5\n[[Mood+]]+1",
-        "[[Speed+]]+5\n[[Power+]]+5"
-      ]
-    },
-    {
-      "name": "Whirlwind Advice",
-      "text": [
-        "{link:Studious} [[hint]]1",
-        "[[Speed+]]+5\n[[Stamina+]]+5\n[[Power+]]+5"
-      ]
-    },
-    {
-      "name": "A Little Can't Hurt",
-      "text": [
-        "[[Energy+]]+10\n[[sp+]]+5",
-        "Randomly either (~90%)\n[[Energy+]]+30\n[[sp+]]+10\n[[or]]\n(~10%)\n[[Speed-]]-5\n[[Power+]]+5\nAquires {link:Slow Metabolism}"
-      ]
-    },
-    {
-      "name": "A Phone Call from Mom",
-      "text": [
-        "[[Stamina+]]+10",
+        "[[Guts+]]+10",
         "[[Speed+]]+10"
       ]
     },
     {
-      "name": "Once in a While",
+      "name": "Never Skip Meals",
       "text": [
-        "[[Stamina+]]+5\n[[Guts+]]+5",
-        "[[Stamina+]]+5\n[[Power+]]+5"
+        "[[Power+]]+10",
+        "[[Stamina+]]+10"
       ]
     },
     {
-      "name": "Bittersweet Twilight",
+      "name": "Dorm Quiz Battle",
       "text": [
-        "[[Speed+]]+10",
-        "[[Guts+]]+10",
-        "[[Wit+]]+10"
+        "[[Speed+]]+10\n[[Power+]]+5",
+        "{link:Unyielding Spirit} [[hint]]1"
       ]
     },
     {
-      "name": "Snapshot of Emotions",
+      "name": "The Work of a Model",
       "text": [
+        "[[Energy-]]-15\n[[sp+]]+40",
+        "[[Mood+]]+1\n[[1stats]] +10"
+      ]
+    },
+    {
+      "name": "A Delicious Trap?",
+      "text": [
+        "[[Energy+]]+10\n[[sp+]]+5",
+        "(~90%)\n[[Energy+]]+30\n[[sp+]]+10\n[[Power+]]+5\n[[or]]\n(~10%)\n[[Energy+]]+30\n[[sp+]]+10\n[[Speed-]]-5\nAquires {link:Slow Metabolism}"
+      ]
+    },
+    {
+      "name": "Might as Well",
+      "text": [
+        "[[Wit+]]+10",
+        "[[Speed+]]+5\n[[sp+]]+15"
+      ]
+    },
+    {
+      "name": "Words Unspoken",
+      "text": [
+        "[[Stamina+]]+5\n[[Power+]]+5",
+        "[[Guts+]]+10"
+      ]
+    },
+    {
+      "name": "Barefoot",
+      "text": [
+        "[[Stamina+]]+10",
         "[[Speed+]]+10",
         "[[Power+]]+10"
       ]
     },
     {
-      "name": "Let's Watch the Fish",
+      "name": "Wanderlust",
+      "text": [
+        "[[Stamina+]]+10",
+        "[[Speed]]+10"
+      ]
+    },
+    {
+      "name": "Yoga Pose!",
       "text": [
         "[[Guts+]]+10",
-        "[[Speed+]]+10"
-      ]
-    },
-    {
-      "name": "Very \"Me\" Results",
-      "text": [
-        "[[sp+]]+65\n[[3stats]] +3"
-      ]
-    },
-    {
-      "name": "After the Satsuki Sho: An Unsatisfying Victory",
-      "text": [
-        "[[sp+]]+45\n[[1stats]] +9"
-      ]
-    },
-    {
-      "name": "After the Satsuki Sho: Still Can't Catch Up",
-      "text": [
-        "[[sp+]]+35\n[[1stats]] +5"
-      ]
-    },
-    {
-      "name": "After the Japanese Derby: No Matter What",
-      "text": [
-        "[[sp+]]+45\n[[1stats]] +9"
-      ]
-    },
-    {
-      "name": "After the Japanese Derby: The Spotlight",
-      "text": [
-        "[[sp+]]+35\n[[1stats]] +5"
+        "[[Power+]]+10"
       ]
     },
     {
@@ -160,14 +137,14 @@
     {
       "name": "Dance Lesson",
       "text": [
-        "[[Speed+]]+10",
-        "[[Guts+]]+10"
+        "[[Guts+]]+10",
+        "[[Wit+]]+10"
       ]
     },
     {
       "name": "New Year's Resolutions",
       "text": [
-        "[[Wit+]]+10",
+        "[[Speed+]]+10",
         "[[Energy+]]+20",
         "[[sp+]]+20"
       ]
@@ -308,75 +285,87 @@
       ]
     },
     {
-      "name": "Doting Family",
+      "name": "Trust and Awkward Smiles",
       "text": [
-        "[[Wit+]]+5"
+        "[[Speed+]]+5"
       ]
     },
     {
-      "name": "What Cheers Me Up",
+      "name": "Support and Expectations",
+      "text": [
+        "[[Power+]]+5"
+      ]
+    },
+    {
+      "name": "Anger and Frustration",
       "text": [
         "[[Guts+]]+5"
       ]
     },
     {
-      "name": "Behind the Throne",
+      "name": "Exaltation and Impatience",
+      "text": [
+        "[[Speed+]]+5"
+      ]
+    },
+    {
+      "name": "Empty",
+      "text": [
+        "[[Stamina+]]+5"
+      ]
+    },
+    {
+      "name": "Golden Sunset",
       "text": [
         "[[Wit+]]+5"
       ]
     },
     {
-      "name": "Nature at the Mejiro's",
+      "name": "Boba Trap",
       "text": [
-        "[[Stamina+]]+5\n[[Guts+]]+5"
+        "[[Stamina-]]-5\n[[Mood-]]-1"
       ]
     },
     {
-      "name": "Flash of Light",
+      "name": "I Overslept!",
       "text": [
-        "[[Guts+]]+5"
-      ]
-    },
-    {
-      "name": "Farewell... My Greatest Comfort",
-      "text": [
-        "[[Guts-]]-5\n[[Mood-]]-1"
+        "[[Energy+]]+25\n[[possible]] Heal affliction\n4 random types of training will be disabled for one turn"
       ]
     },
     {
       "name": "Master Trainer",
       "text": [
-        "[[Wit+]]+10\n[[possible]] Aquires {link:Practice Perfect}"
+        "[[Speed+]]+10\n[[possible]] Aquires {link:Practice Perfect}"
       ]
     },
     {
-      "name": "First Place",
+      "name": "Running Toward the Light",
       "text": [
         "[[sp+]]+5\n[[All+]]+5"
       ]
     },
     {
-      "name": "It's Always Three!",
+      "name": "The Road Home",
       "text": [
         "[[Mood-]]-1"
       ]
     },
     {
-      "name": "Nature's Defeat!",
+      "name": "A Taxing Photo Shoot",
       "text": [
         "[[Energy-]]-10\n[[Mood-]]-1"
       ]
     },
     {
-      "name": "The Star's Name Is...",
+      "name": "Learn from the Runway",
       "text": [
         "[[sp+]]+30\n[[All+]]+5\n[[possible]] Aquires {link:Fast Learner}\n[[Mood+]]+2"
       ]
     },
     {
-      "name": "The Bronze Collector's Target",
+      "name": "Early Morning Shoot",
       "text": [
-        "[[Energy+]]+15\n[[Energy+]]+15\n[[Guts-]]-5\n[[Guts-]]-5\nAquires {link:Slacker}\n[[or]]\n[[Mood-]]-1"
+        "[[Energy+]]+15\n[[Mood-]]-1\n[[Guts-]]-5\n[[or]]\n[[Energy+]]+15\n[[Guts-]]-5\nAquires {link:Slacker}\n[[or]]\n[[Energy+]]+15\n[[Mood-]]-1\n[[Guts-]]-5\nAquires {link:Slacker}"
       ]
     }
   ]

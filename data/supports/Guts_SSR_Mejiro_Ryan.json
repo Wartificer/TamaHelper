@@ -6,7 +6,7 @@
     {
       "name": "Flustered Afternoon Tea!",
       "text": [
-        "[[Energy+]]+10\n[[Mode+]]+1",
+        "[[Energy+]]+10\n[[Mood+]]+1",
 		"[[Wit+]]+10\n[[sp+]]+15\n{link:Pace Chaser Savy} [[hint]]3"
       ]
     },

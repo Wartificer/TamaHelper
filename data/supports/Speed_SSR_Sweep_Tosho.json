@@ -1,0 +1,41 @@
+{
+  "name": "Sweep Tosho",
+  "rarity": "ssr",
+  "type": "speed",
+  "events": [
+    {
+      "name": "Fickle Genius Magical Girl Sweepy ☆",
+      "text": [
+        "Randomly either\n[[Mood+]]+1\n{link:Straightaway Spurt} [[hint]]2\nSweep Tosho [[bond+]]+5\n[[or]]\n[[Mood-]]-1\n[[Wit+]]+5\nSweep Tosho [[bond+]]+5",
+        "[[sp+]]+15\nSweep Tosho [[bond+]]+5"
+      ]
+    },
+    {
+      "name": "A Drop of Black Magic ☆",
+      "text": [
+        "Randomly either\n[[Energy+]]+10\n[[sp+]]+20\nSweep Tosho [[bond+]]+5\n[[or]]\n[[Energy-]]-10\n[[sp+]]+15\nSweep Tosho [[bond+]]+5",
+        "[[Wit+]]+10\nSweep Tosho [[bond+]]+5"
+      ]
+    },
+    {
+      "name": "Her Mood Like a Flower ☆",
+      "text": [
+        "[[Speed+]]+5\n[[Wit+]]+5\n{link:Crusader} [[hint]]1"
+      ]
+    },
+    {
+      "name": "Miracle ☆ Escape!",
+      "text": [
+        "[[Energy+]]+10\n[[Speed+]]+5\nSweep Tosho [[bond+]]+5",
+        "[[Energy-]]-10\n[[Speed+]]+20\nSweep Tosho [[bond+]]+5"
+      ]
+    },
+    {
+      "name": "Wonderful ☆ Mistake!",
+      "text": [
+        "[[Energy-]]-15\n[[sp+]]+40\n[[or]]\n[[Energy-]]-20\n[[sp+]]+40\nSweep Tosho [[bond+]]+5",
+        "Sweep Tosho [[bond+]]+5\nAquire {link:Charming}"
+      ]
+    }
+  ]
+}
