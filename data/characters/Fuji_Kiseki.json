@@ -5,7 +5,7 @@
       "name": "What a Wonderful Stage!",
       "text": [
         "[[Stamina+]]+20",
-        "[[Speed+]]+10\n[[Power+]]10"
+        "[[Speed+]]+10\n[[Power+]]+10"
       ]
     },
     {
@@ -47,7 +47,7 @@
       "name": "Two Superstars Compete",
       "text": [
         "[[Guts+]]+10\n[[sp+]]+15",
-        "Aquires {link:Disorient}[[hint]]1"
+        "Aquires {link:Practice Perfect}[[hint]]1"
       ]
     },
     {

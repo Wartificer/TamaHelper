@@ -1,119 +1,89 @@
 {
-  "name": "Nice Nature",
+  "name": "Special Week (Summer)",
   "events": [
     {
-      "name": "Nature and Her Tired Trainer",
+      "name": "Swimsuit Power Unlocked!",
       "text": [
-        "[[Power+]]+20",
-        "[[Stamina+]]+20"
+        "[[Speed+]]+10,\n[[sp+]]+15"
+        "[[Wit+]]+20"
       ]
     },
     {
-      "name": "Bittersweet Sparkle",
+      "name": "The Best Summer Ever!",
       "text": [
-        "[[Power+]]+20",
-        "[[Speed+]]+20"
+        "[[Stamina+]]+10\n[[Power+]]+10",
+        "[[Energy+]]+10\n[[All]]+2"
       ]
     },
     {
-      "name": "Festive Colors",
+      "name": "Meet My Other Mom",
       "text": [
-        "[[Guts+]]+20\n[[possible]] Aquires {link:Charming}",
-        "[[Stamina+]]+20\n[[possible]] Aquires {link:Charming}"
+        "Aquires {link:Fighter}[[hint]]2\n[[possible]] Aquires {link:Practice Perfect}",
+        "[[Guts+]]+20\n[[possible]] Aquires {link:Practice Perfect}"
       ]
     },
     {
-      "name": "Rainy-Day Fun",
+      "name": "A Beautiful Day for Tennis",
       "text": [
-        "[[Wit+]]+10",
-        "[[Energy-]]-10\n[[Stamina+]]+10\n[[Guts+]]+10"
+        "[[Speed+]]+10",
+        "[[Stamina+]]+10"
       ]
     },
     {
-      "name": "Not My Style",
+      "name": "Karaoke Connoisseur ♪",
       "text": [
-        "[[Energy+]]+5\n[[Mood+]]+1",
-        "[[Speed+]]+5\n[[Power+]]+5"
+        "[[Energy+]]+10",
+        "[[Power+]]+10"
       ]
     },
     {
-      "name": "Whirlwind Advice",
+      "name": "Early Afternoon Payback",
       "text": [
-        "{link:Studious} [[hint]]1",
-        "[[Speed+]]+5\n[[Stamina+]]+5\n[[Power+]]+5"
+        "[[Energy+]]+5\n[[Wit+]]+5",
+        "{link:Pace Strategy} [[hint]]1"
       ]
     },
     {
-      "name": "A Little Can't Hurt",
+      "name": "Putting It Away at the Cafeteria",
       "text": [
         "[[Energy+]]+10\n[[sp+]]+5",
-        "Randomly either (~90%)\n[[Energy+]]+30\n[[sp+]]+10\n[[or]]\n(~10%)\n[[Speed-]]-5\n[[Power+]]+5\nAquires {link:Slow Metabolism}"
+        "(~90%)\n[[Energy+]]+30\n[[sp+]]+10\n[[Power+]]+5\n[[or]]\n(~10%)\n[[Energy+]]+30\n[[sp+]]+10\n[[Speed-]]-5\nAquires {link:Slow Metabolism}"
       ]
     },
     {
-      "name": "A Phone Call from Mom",
+      "name": "Because It's Special",
       "text": [
         "[[Stamina+]]+10",
         "[[Speed+]]+10"
       ]
     },
     {
-      "name": "Once in a While",
+      "name": "A Place I Want to Take You",
       "text": [
+        "[[Wit+]]+10",
+        "[[Stamina+]]+10"
+      ]
+    },
+    {
+      "name": "Someone I Respect",
+      "text": [
+        "[[sp+]]+30",
         "[[Stamina+]]+5\n[[Guts+]]+5",
-        "[[Stamina+]]+5\n[[Power+]]+5"
+        "[[Speed+]]+5\n[[Power+]]+5"
       ]
     },
     {
-      "name": "Bittersweet Twilight",
+      "name": "Just a Little More",
       "text": [
-        "[[Speed+]]+10",
-        "[[Guts+]]+10",
-        "[[Wit+]]+10"
+        "{link:Homestretch Haste} [[hint]]1",
+        "{link:Corner Adept} [[hint]]1"
       ]
     },
     {
-      "name": "Snapshot of Emotions",
+      "name": "Research Fanatic",
       "text": [
-        "[[Speed+]]+10",
-        "[[Power+]]+10"
-      ]
-    },
-    {
-      "name": "Let's Watch the Fish",
-      "text": [
-        "[[Guts+]]+10",
-        "[[Speed+]]+10"
-      ]
-    },
-    {
-      "name": "Very \"Me\" Results",
-      "text": [
-        "[[sp+]]+65\n[[3stats]] +3"
-      ]
-    },
-    {
-      "name": "After the Satsuki Sho: An Unsatisfying Victory",
-      "text": [
-        "[[sp+]]+45\n[[1stats]] +9"
-      ]
-    },
-    {
-      "name": "After the Satsuki Sho: Still Can't Catch Up",
-      "text": [
-        "[[sp+]]+35\n[[1stats]] +5"
-      ]
-    },
-    {
-      "name": "After the Japanese Derby: No Matter What",
-      "text": [
-        "[[sp+]]+45\n[[1stats]] +9"
-      ]
-    },
-    {
-      "name": "After the Japanese Derby: The Spotlight",
-      "text": [
-        "[[sp+]]+35\n[[1stats]] +5"
+        "{link:Tokyo Racecourse} [[hint]]1",
+        "{link:Nakayama Racecourse} [[hint]]1"
       ]
     },
     {
@@ -160,14 +130,14 @@
     {
       "name": "Dance Lesson",
       "text": [
-        "[[Speed+]]+10",
-        "[[Guts+]]+10"
+        "[[Guts+]]+10",
+        "[[Stamina+]]+10"
       ]
     },
     {
       "name": "New Year's Resolutions",
       "text": [
-        "[[Wit+]]+10",
+        "[[Stamina+]]+10",
         "[[Energy+]]+20",
         "[[sp+]]+20"
       ]
@@ -308,37 +278,37 @@
       ]
     },
     {
-      "name": "Doting Family",
+      "name": "Derby Trainer",
       "text": [
         "[[Wit+]]+5"
       ]
     },
     {
-      "name": "What Cheers Me Up",
+      "name": "Derby Press Conference!",
       "text": [
         "[[Guts+]]+5"
       ]
     },
     {
-      "name": "Behind the Throne",
+      "name": "A Rival Named...",
       "text": [
-        "[[Wit+]]+5"
+        "[[Stamina+]]+5"
       ]
     },
     {
-      "name": "Nature at the Mejiro's",
+      "name": "Bird and the Beast",
+      "text": [
+        "[[Speed+]]+5"
+      ]
+    },
+    {
+      "name": "Fire in Your Eyes",
       "text": [
         "[[Stamina+]]+5\n[[Guts+]]+5"
       ]
     },
     {
-      "name": "Flash of Light",
-      "text": [
-        "[[Guts+]]+5"
-      ]
-    },
-    {
-      "name": "Farewell... My Greatest Comfort",
+      "name": "A Dangerous Drink",
       "text": [
         "[[Guts-]]-5\n[[Mood-]]-1"
       ]
@@ -346,35 +316,35 @@
     {
       "name": "Master Trainer",
       "text": [
-        "[[Wit+]]+10\n[[possible]] Aquires {link:Practice Perfect}"
+        "[[Stamina+]]+10\n[[possible]] Aquires {link:Practice Perfect}"
       ]
     },
     {
-      "name": "First Place",
+      "name": "I'm Home!",
       "text": [
         "[[sp+]]+5\n[[All+]]+5"
       ]
     },
     {
-      "name": "It's Always Three!",
+      "name": "Forecast: Gloomy",
       "text": [
         "[[Mood-]]-1"
       ]
     },
     {
-      "name": "Nature's Defeat!",
+      "name": "Invasion of the Giant Carrots?",
       "text": [
         "[[Energy-]]-10\n[[Mood-]]-1"
       ]
     },
     {
-      "name": "The Star's Name Is...",
+      "name": "Could I Be a Genius?!",
       "text": [
         "[[sp+]]+30\n[[All+]]+5\n[[possible]] Aquires {link:Fast Learner}\n[[Mood+]]+2"
       ]
     },
     {
-      "name": "The Bronze Collector's Target",
+      "name": "A Place I Miss...",
       "text": [
         "[[Energy+]]+15\n[[Energy+]]+15\n[[Guts-]]-5\n[[Guts-]]-5\nAquires {link:Slacker}\n[[or]]\n[[Mood-]]-1"
       ]

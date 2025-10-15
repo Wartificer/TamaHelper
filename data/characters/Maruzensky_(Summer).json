@@ -1,119 +1,116 @@
 {
-  "name": "Nice Nature",
+  "name": "Maruzensky (Summer)",
   "events": [
     {
-      "name": "Nature and Her Tired Trainer",
+      "name": "I Want to Be like Maruzen",
       "text": [
-        "[[Power+]]+20",
-        "[[Stamina+]]+20"
+        "[[Speed+]]+10\n[[Power+]]+10",
+        "[[Energy+]]+15"
       ]
     },
     {
-      "name": "Bittersweet Sparkle",
+      "name": "Welcome to Bubblyland",
       "text": [
-        "[[Power+]]+20",
-        "[[Speed+]]+20"
+        "[[Guts+]]+20",
+        "[[Wit+]]+20"
       ]
     },
     {
-      "name": "Festive Colors",
+      "name": "Maruzensky's Treasure",
       "text": [
-        "[[Guts+]]+20\n[[possible]] Aquires {link:Charming}",
+        "Aquires {link:Fast Learner}\n[[possible]] Aquires {link:Charming}",
         "[[Stamina+]]+20\n[[possible]] Aquires {link:Charming}"
       ]
     },
     {
-      "name": "Rainy-Day Fun",
-      "text": [
-        "[[Wit+]]+10",
-        "[[Energy-]]-10\n[[Stamina+]]+10\n[[Guts+]]+10"
-      ]
-    },
-    {
-      "name": "Not My Style",
-      "text": [
-        "[[Energy+]]+5\n[[Mood+]]+1",
-        "[[Speed+]]+5\n[[Power+]]+5"
-      ]
-    },
-    {
-      "name": "Whirlwind Advice",
-      "text": [
-        "{link:Studious} [[hint]]1",
-        "[[Speed+]]+5\n[[Stamina+]]+5\n[[Power+]]+5"
-      ]
-    },
-    {
-      "name": "A Little Can't Hurt",
-      "text": [
-        "[[Energy+]]+10\n[[sp+]]+5",
-        "Randomly either (~90%)\n[[Energy+]]+30\n[[sp+]]+10\n[[or]]\n(~10%)\n[[Speed-]]-5\n[[Power+]]+5\nAquires {link:Slow Metabolism}"
-      ]
-    },
-    {
-      "name": "A Phone Call from Mom",
-      "text": [
-        "[[Stamina+]]+10",
-        "[[Speed+]]+10"
-      ]
-    },
-    {
-      "name": "Once in a While",
-      "text": [
-        "[[Stamina+]]+5\n[[Guts+]]+5",
-        "[[Stamina+]]+5\n[[Power+]]+5"
-      ]
-    },
-    {
-      "name": "Bittersweet Twilight",
+      "name": "Hot Rod",
       "text": [
         "[[Speed+]]+10",
-        "[[Guts+]]+10",
         "[[Wit+]]+10"
       ]
     },
     {
-      "name": "Snapshot of Emotions",
+      "name": "Let's Play ♪",
+      "text": [
+        "[[Energy+]]+10",
+        "[[Energy-]]-5\n[[Power+]]+10\n[[Guts+]]+5"
+      ]
+    },
+    {
+      "name": "A Lady's Style ☆",
+      "text": [
+        "[[sp+]]+10\n[[Speed+]]+5\n[[Mood+]]+1",
+        "{link:Huge Lead} [[hint]]1"
+      ]
+    },
+    {
+      "name": "Let's Cook!",
+      "text": [
+        "[[Speed+]]+10",
+        "[[Guts+]]+10"
+      ]
+    },
+    {
+      "name": "The Road to a Rad Victory!",
+      "text": [
+        "[[Stamina+]]+10",
+        "[[Wit+]]+10"
+      ]
+    },
+    {
+      "name": "Down to Dance!",
       "text": [
         "[[Speed+]]+10",
         "[[Power+]]+10"
       ]
     },
     {
-      "name": "Let's Watch the Fish",
+      "name": "Nostalgia Fever ☆",
+      "text": [
+        "[[Energy+]]+10\n[[sp+]]+5",
+        "(~90%)\n[[Energy+]]+30\n[[sp+]]+10\n[[Power+]]+5\n[[or]]\n(~10%)\n[[Energy+]]+30\n[[sp+]]+10\n[[Speed-]]-5\nAquires {link:Slow Metabolism}"
+      ]
+    },
+    {
+      "name": "The Secret to Supporting Each Other",
+      "text": [
+        "[[Speed+]]+10",
+        "[[Power+]]+10"
+      ]
+    },
+    {
+      "name": "Even Role Models Get Lonely",
+      "text": [
+        "[[Stamina+]]+5\n[[Guts+]]+5",
+        "[[Speed+]]+5\n[[Power+]]+5"
+      ]
+    },
+    {
+      "name": "Take the Wheel",
+      "text": [
+        "[[Power+]]+10",
+        "[[Guts+]]+10",
+        "[[Wit+]]+10"
+      ]
+    },
+    {
+      "name": "Meeting New People Is Trendy ☆",
       "text": [
         "[[Guts+]]+10",
-        "[[Speed+]]+10"
+        "[[Wit+]]+10"
       ]
     },
     {
-      "name": "Very \"Me\" Results",
+      "name": "The Fun Never Stops ♪",
       "text": [
-        "[[sp+]]+65\n[[3stats]] +3"
+        "[[Speed+]]+5\n[[Wit+]]+5",
+        "[[Stamina+]]+5\n[[Power+]]+5"
       ]
     },
     {
-      "name": "After the Satsuki Sho: An Unsatisfying Victory",
+      "name": "Fukushima in Summer",
       "text": [
-        "[[sp+]]+45\n[[1stats]] +9"
-      ]
-    },
-    {
-      "name": "After the Satsuki Sho: Still Can't Catch Up",
-      "text": [
-        "[[sp+]]+35\n[[1stats]] +5"
-      ]
-    },
-    {
-      "name": "After the Japanese Derby: No Matter What",
-      "text": [
-        "[[sp+]]+45\n[[1stats]] +9"
-      ]
-    },
-    {
-      "name": "After the Japanese Derby: The Spotlight",
-      "text": [
-        "[[sp+]]+35\n[[1stats]] +5"
+        "[[Energy-]]-15\n[[sp+]]+60\nAquires {link:Hot Topic}\n[[All+]]+3\n[[Mood+]]+1"
       ]
     },
     {
@@ -161,13 +158,13 @@
       "name": "Dance Lesson",
       "text": [
         "[[Speed+]]+10",
-        "[[Guts+]]+10"
+        "[[Wit+]]+10"
       ]
     },
     {
       "name": "New Year's Resolutions",
       "text": [
-        "[[Wit+]]+10",
+        "[[Speed+]]+10",
         "[[Energy+]]+20",
         "[[sp+]]+20"
       ]
@@ -308,73 +305,73 @@
       ]
     },
     {
-      "name": "Doting Family",
+      "name": "Feeling Top Gear",
+      "text": [
+        "[[Speed+]]+5"
+      ]
+    },
+    {
+      "name": "Walk the Walk",
+      "text": [
+        "[[Speed+]]+5"
+      ]
+    },
+    {
+      "name": "To New Heights",
+      "text": [
+        "[[Power+]]+5"
+      ]
+    },
+    {
+      "name": "A Fun Race",
       "text": [
         "[[Wit+]]+5"
       ]
     },
     {
-      "name": "What Cheers Me Up",
+      "name": "Bring It",
       "text": [
-        "[[Guts+]]+5"
+        "[[Speed+]]+5\n[[Guts+]]+5"
       ]
     },
     {
-      "name": "Behind the Throne",
+      "name": "Virtual Car Race",
       "text": [
-        "[[Wit+]]+5"
-      ]
-    },
-    {
-      "name": "Nature at the Mejiro's",
-      "text": [
-        "[[Stamina+]]+5\n[[Guts+]]+5"
-      ]
-    },
-    {
-      "name": "Flash of Light",
-      "text": [
-        "[[Guts+]]+5"
-      ]
-    },
-    {
-      "name": "Farewell... My Greatest Comfort",
-      "text": [
-        "[[Guts-]]-5\n[[Mood-]]-1"
+        "[[Speed-]]-5\n[[Mood-]]-1"
       ]
     },
     {
       "name": "Master Trainer",
       "text": [
-        "[[Wit+]]+10\n[[possible]] Aquires {link:Practice Perfect}"
+        "[[Speed+]]+10\n[[possible]] Aquires {link:Practice Perfect}"
       ]
     },
     {
-      "name": "First Place",
+      "name": "The Coolest Spot",
       "text": [
         "[[sp+]]+5\n[[All+]]+5"
       ]
     },
     {
-      "name": "It's Always Three!",
+      "name": "Golden Oldies?",
       "text": [
         "[[Mood-]]-1"
       ]
     },
     {
-      "name": "Nature's Defeat!",
+      "name": "Big Trouble!",
       "text": [
         "[[Energy-]]-10\n[[Mood-]]-1"
       ]
     },
     {
-      "name": "The Star's Name Is...",
+      "name": "A Totally Bomb ☆ New Feeling",
       "text": [
         "[[sp+]]+30\n[[All+]]+5\n[[possible]] Aquires {link:Fast Learner}\n[[Mood+]]+2"
       ]
     },
     {
-      "name": "The Bronze Collector's Target",
+      "name": "Shockingly Careless",
       "text": [
         "[[Energy+]]+15\n[[Energy+]]+15\n[[Guts-]]-5\n[[Guts-]]-5\nAquires {link:Slacker}\n[[or]]\n[[Mood-]]-1"
       ]
