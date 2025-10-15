@@ -97,7 +97,7 @@
       "initiator": "Failed training",
       "text": [
         "[[Mood-]]-1\nPrevious training -5\n[[possible]] Aquires {link:Practice Poor}",
-        "[[Mood-]]-1\nPrevious training -10\n[[possible]] Aquires {link:Practice Poor}\n[[or]]Aquires {link:Practice Perfect}"
+        "[[Mood-]]-1\nPrevious training -10\n[[possible]] Aquires {link:Practice Poor}\n[[or]]\nAquires {link:Practice Perfect}"
       ]
     },
     {
