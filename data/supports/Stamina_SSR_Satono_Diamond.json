@@ -13,7 +13,7 @@
       "name": "Diamond Fixation",
       "text": [
         "[[Wit+]]+10\nSatono Diamond [[bond+]]+5",
-        "[[Energy+]]+15\n[[Stamina+]]+10\n[[Guts+]]+20\n[[or]]\nSatono Diamond [[bond+]]+5\n[[Mood-]]-1"
+        "[[Energy+]]+15\n[[Stamina+]]+10\n[[or]]\n[[Mood-]]-1\n[[Guts+]]+20\nSatono Diamond [[bond+]]+5\n"
       ]
     },
     {
