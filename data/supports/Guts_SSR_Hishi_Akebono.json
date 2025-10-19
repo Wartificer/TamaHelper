@@ -12,7 +12,7 @@
     {
       "name": "Let's Go... Buono",
       "text": [
-        "[[Energy+]]+30\n[[Guts+]]+5\nHishi Akebono [[bond+]]+5\nAquires {link:Slow Metabolism}",
+        "[[Energy+]]+30\n[[Guts+]]+5\nHishi Akebono [[bond+]]+5\nAcquires {link:Slow Metabolism}",
 		"[[Stamina+]]+5\n[[Power+]]+5\nHishi Akebono [[bond+]]+5"
       ]
     },
