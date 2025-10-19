@@ -18,8 +18,8 @@
     {
       "name": "Patience Is Key",
       "text": [
-        "[[Guts+]]+20\n[[possible]] Aquires {link:Hot Topic}",
-        "[[Stamina+]]+10\n[[Power+]]+10\n[[possible]] Aquires {link:Hot Topic}"
+        "[[Guts+]]+20\n[[possible]] Acquires {link:Hot Topic}",
+        "[[Stamina+]]+10\n[[Power+]]+10\n[[possible]] Acquires {link:Hot Topic}"
       ]
     },
     {
@@ -46,7 +46,7 @@
     {
       "name": "Sweet Nighttime Temptation",
       "text": [
-        "[[Energy+]]+30\n[[sp+]]+10\n[[Speed+]]+10\n[[possible]] Aquires {link:Slow Metabolism}\n[[possible]] [[Mood-]]-1",
+        "[[Energy+]]+30\n[[sp+]]+10\n[[Speed+]]+10\n[[possible]] Acquires {link:Slow Metabolism}\n[[possible]] [[Mood-]]-1",
         "[[Energy+]]+10\n[[sp+]]+5\n[[Speed+]]+5"
       ]
     },
@@ -54,7 +54,7 @@
       "name": "For My Friends",
       "text": [
         "[[Energy+]]+10\n[[sp+]]+5",
-        "(~90%)\n[[Energy+]]+30\n[[sp+]]+10\n[[Power+]]+5\n[[or]]\n(~10%)\n[[Energy+]]+30\n[[sp+]]+10\n[[Speed-]]-5\nAquires {link:Slow Metabolism}"
+        "(~90%)\n[[Energy+]]+30\n[[sp+]]+10\n[[Power+]]+5\n[[or]]\n(~10%)\n[[Energy+]]+30\n[[sp+]]+10\n[[Speed-]]-5\nAcquires {link:Slow Metabolism}"
       ]
     },
     {
@@ -108,7 +108,7 @@
     {
       "name": "After the Kikuka Sho: Triumph of Bonds!",
       "text": [
-        "[[sp+]]+45\nHeal {link:Under the Weather}\nAquires {link:Shining Brightly}\n[[All+]]+3\nYayoi Akikawa [[bond+]]+4"
+        "[[sp+]]+45\nHeal {link:Under the Weather}\nAcquires {link:Shining Brightly}\n[[All+]]+3\nYayoi Akikawa [[bond+]]+4"
       ]
     },
     {
@@ -121,15 +121,15 @@
       "name": "Get Well Soon!",
       "initiator": "Failed training",
       "text": [
-        "\nPrevious training -5\n[[possible]] Aquires {link:Practice Poor}\n[[Mood-]]-1",
-        "\nAquires {link:Practice Perfect}\n[[or]]\nPrevious training -10\n[[possible]] Aquires {link:Practice Poor}\n[[Mood-]]-1"
+        "\nPrevious training -5\n[[possible]] Acquires {link:Practice Poor}\n[[Mood-]]-1",
+        "\nAcquires {link:Practice Perfect}\n[[or]]\nPrevious training -10\n[[possible]] Acquires {link:Practice Poor}\n[[Mood-]]-1"
       ]
     },
     {
       "name": "Failed training (Don't Overdo It!)",
       "text": [
-        "[[Energy+]]+10\n[[2stats]] -10\nPrevious training -10\n[[possible]] Aquires {link:Practice Poor}\n[[Mood-]]-2",
-        "[[Energy+]]+10\nAquires {link:Practice Perfect}\n[[or]]\nAquires {link:Practice Poor}\n[[2stats]]-10\nPrevious training -10\n[[Mood-]]-3"
+        "[[Energy+]]+10\n[[2stats]] -10\nPrevious training -10\n[[possible]] Acquires {link:Practice Poor}\n[[Mood-]]-2",
+        "[[Energy+]]+10\nAcquires {link:Practice Perfect}\n[[or]]\nAcquires {link:Practice Poor}\n[[2stats]]-10\nPrevious training -10\n[[Mood-]]-3"
       ]
     },
     {
@@ -341,7 +341,7 @@
     {
       "name": "Master Trainer",
       "text": [
-        "[[Stamina+]]+10\n[[possible]] Aquires {link:Practice Perfect}"
+        "[[Stamina+]]+10\n[[possible]] Acquires {link:Practice Perfect}"
       ]
     },
     {
@@ -365,13 +365,13 @@
     {
       "name": "Learning from Children",
       "text": [
-        "[[sp+]]+30\n[[All+]]+5\n[[possible]] Aquires {link:Fast Learner}\n[[Mood+]]+2"
+        "[[sp+]]+30\n[[All+]]+5\n[[possible]] Acquires {link:Fast Learner}\n[[Mood+]]+2"
       ]
     },
     {
       "name": "I Feel Like Cooking",
       "text": [
-        "[[Energy+]]+15\n[[Energy+]]+15\n[[Guts-]]-5\n[[Guts-]]-5\nAquires {link:Slacker}\n[[or]]\n[[Mood-]]-1"
+        "[[Energy+]]+15\n[[Energy+]]+15\n[[Guts-]]-5\n[[Guts-]]-5\nAcquires {link:Slacker}\n[[or]]\n[[Mood-]]-1"
       ]
     }
   ]
