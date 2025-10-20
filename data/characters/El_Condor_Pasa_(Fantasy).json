@@ -18,8 +18,8 @@
     {
       "name": "A Challenge from the Past",
       "text": [
-        "[[Speed+]]+10\n[[Power+]]+10\n[[possible]] Aquires {link:Charming}",
-        "{link:Go with the Flow} [[hint]]2\n[[possible]] Aquires {link:Charming}"
+        "[[Speed+]]+10\n[[Power+]]+10\n[[possible]] Acquires {link:Charming}",
+        "{link:Go with the Flow} [[hint]]2\n[[possible]] Acquires {link:Charming}"
       ]
     },
     {
@@ -47,7 +47,7 @@
       "name": "Hot and Spicy!",
       "text": [
         "[[Energy+]]+10\n[[sp+]]+5",
-        "(~90%)\n[[Energy+]]+30\n[[sp+]]+10\n[[Power+]]+5\n[[or]]\n(~10%)\n[[Energy+]]+30\n[[sp+]]+10\n[[Speed-]]-5\nAquires {link:Slow Metabolism}"
+        "(~90%)\n[[Energy+]]+30\n[[sp+]]+10\n[[Power+]]+5\n[[or]]\n(~10%)\n[[Energy+]]+30\n[[sp+]]+10\n[[Speed-]]-5\nAcquires {link:Slow Metabolism}"
       ]
     },
     {
@@ -96,15 +96,15 @@
       "name": "Get Well Soon!",
       "initiator": "Failed training",
       "text": [
-        "[[Mood-]]-1\nPrevious training -5\n[[possible]] Aquires {link:Practice Poor}",
-        "[[Mood-]]-1\nPrevious training -10\n[[possible]] Aquires {link:Practice Poor}\n[[or]]\nAquires {link:Practice Perfect}"
+        "[[Mood-]]-1\nPrevious training -5\n[[possible]] Acquires {link:Practice Poor}",
+        "[[Mood-]]-1\nPrevious training -10\n[[possible]] Acquires {link:Practice Poor}\n[[or]]\nAcquires {link:Practice Perfect}"
       ]
     },
     {
       "name": "Failed training (Don't Overdo It!)",
       "text": [
-        "[[Energy+]]+10\n[[Mood-]]-2\nPrevious training -10\n[[2stats]] -10\n[[possible]] Aquires {link:Practice Poor}",
-        "[[Mood-]]-3\nPrevious training -10\n[[2stats]]-10\nAquires {link:Practice Poor}\n[[or]]\n[[Energy+]]+10\nAquires {link:Practice Perfect}"
+        "[[Energy+]]+10\n[[Mood-]]-2\nPrevious training -10\n[[2stats]] -10\n[[possible]] Acquires {link:Practice Poor}",
+        "[[Mood-]]-3\nPrevious training -10\n[[2stats]]-10\nAcquires {link:Practice Poor}\n[[or]]\n[[Energy+]]+10\nAcquires {link:Practice Perfect}"
       ]
     },
     {
@@ -322,7 +322,7 @@
     {
       "name": "Master Trainer",
       "text": [
-        "[[Power+]]+10\n[[possible]] Aquires {link:Practice Perfect}"
+        "[[Power+]]+10\n[[possible]] Acquires {link:Practice Perfect}"
       ]
     },
     {
@@ -346,13 +346,13 @@
     {
       "name": "El Especial Explosion!",
       "text": [
-        "[[sp+]]+30\n[[All+]]+5\n[[possible]] Aquires {link:Fast Learner}\n[[Mood+]]+2"
+        "[[sp+]]+30\n[[All+]]+5\n[[possible]] Acquires {link:Fast Learner}\n[[Mood+]]+2"
       ]
     },
     {
       "name": "Forget Something?",
       "text": [
-        "[[Energy+]]+15\n[[Energy+]]+15\n[[Guts-]]-5\n[[Guts-]]-5\nAquires {link:Slacker}\n[[or]]\n[[Mood-]]-1"
+        "[[Energy+]]+15\n[[Energy+]]+15\n[[Guts-]]-5\n[[Guts-]]-5\nAcquires {link:Slacker}\n[[or]]\n[[Mood-]]-1"
       ]
     }
   ]
