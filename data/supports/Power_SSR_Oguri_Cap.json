@@ -19,7 +19,7 @@
     {
       "name": "What I Want to Say",
       "text": [
-        "[[Power+]]+15\n[[Guts+]]+10\n[[sp+]]+10\nOguri Cap [[bond+]]+5\n{link:{link:Furious Feat}} [[hint]]3\n[[or]]\n[[Power+]]+10\n[[Guts+]]+5\n[[sp+]]+15\nOguri Cap [[bond+]]+5\n{link:{link:Furious Feat}} [[hint]]1\n",
+        "[[Power+]]+15\n[[Guts+]]+10\n[[sp+]]+15\nOguri Cap [[bond+]]+5\n{link:{link:Furious Feat}} [[hint]]3\n[[or]]\n[[Power+]]+10\n[[Guts+]]+5\n[[sp+]]+10\nOguri Cap [[bond+]]+5\n{link:{link:Furious Feat}} [[hint]]1\n",
         "[[Energy+]]+30"
       ]
     },

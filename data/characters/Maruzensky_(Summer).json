@@ -18,8 +18,8 @@
     {
       "name": "Maruzensky's Treasure",
       "text": [
-        "Acquires {link:Fast Learner}\n[[possible]] Acquires {link:Charming}",
-        "[[Stamina+]]+20\n[[possible]] Acquires {link:Charming}"
+        "{link:Fast-Paced} [[hint]]2\n[[possible]] Aquires {link:Charming}",
+        "[[Stamina+]]+20\n[[possible]] Aquires {link:Charming}"
       ]
     },
     {
