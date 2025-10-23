@@ -155,8 +155,8 @@
     {
       "name": "Dance Lesson",
       "text": [
-        "[[[Stamina+]]]+10",
-        "[[Speed+]]+10"
+        "[[Guts+]]+10",
+        "[[Power+]]+10"
       ]
     },
     {
