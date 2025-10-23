@@ -19,7 +19,7 @@
     {
       "name": "Warmth, Love, and Lunch",
       "text": [
-        "Nishino Flower [[bond+]]+5\nAquire {link:Charming}",
+        "Nishino Flower [[bond+]]+5\nAcquires {link:Charming}",
         "[[Energy+]]+20\nNishino Flower [[bond+]]+5"
       ]
     },
