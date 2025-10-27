@@ -692,7 +692,7 @@
 			"factors": [
 				"Stats OR Energy OR Skill Points"
 			],
-			"icon": "{i}stat-energy-sp.png"
+			"icon": "{i}icon-possible.tres"
 		},
 		{
 			"name": "New Year's Resolutions",
@@ -700,23 +700,15 @@
 			"factors": [
 				"Stats OR Energy OR Skill Points"
 			],
-			"icon": "{i}stat-energy-sp.png"
+			"icon": "{i}icon-possible.tres"
 		},
 		{
-			"name": "Mood Up POSSS",
-			"date": "Classic Year Late Feb",
+			"name": "Holding an Event!",
+			"date": "Classic Year Early Mar",
 			"factors": [
 				"Mood +1"
 			],
-			"icon": "{i}icon-mood.tres"
-		},
-		{
-			"name": "Mood Up POSSS",
-			"date": "Classic Year Late Mar",
-			"factors": [
-				"Mood +1"
-			],
-			"icon": "{i}icon-mood.tres"
+			"icon": "{i}icon-mood-up.tres"
 		}
 	]
 }
