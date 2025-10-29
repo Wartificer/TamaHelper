@@ -13,7 +13,7 @@
       "name": "Guidance and Friends",
       "text": [
         "[[sp+]]+45\nMatikanefukukitaru [[bond+]]+5",
-        "[[Energy+]]+10\n[[Mood+]]+1\n{link:Right-Handed} [[hint]]1\nMatikanefukukitaru [[bond+]]+5\n[[or]]\n[[Energy-]]-20\n{link:Right-Handed} [[hint]]3\nMatikanefukukitaru [[bond+]]+5"
+        "[[Energy+]]+10\n[[Mood+]]+1\n{link:Right-Handed} [[hint]]3\nMatikanefukukitaru [[bond+]]+5\n[[or]]\n[[Energy-]]-20\n{link:Right-Handed} [[hint]]1\nMatikanefukukitaru [[bond+]]+5"
       ]
     },
     {
