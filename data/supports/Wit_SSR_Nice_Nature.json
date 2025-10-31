@@ -1,0 +1,37 @@
+{
+  "name": "Nice Nature",
+  "rarity": "ssr",
+  "type": "wit",
+  "events": [
+    {
+      "name": "The Extraordinary Nature",
+      "text": [
+        "[[Mood+]]+1\n[[Guts+]]+5\n[[Wit+]]+5\nNice Nature [[bond+]]+5"
+      ]
+    },    {
+      "name": "Irrepressible Feelings",
+      "text": [
+        "[[Energy+]]+10\nNice Nature [[bond+]]+5",
+        "[[Energy-]]+5\n[[Speed+]]+5\n[[Power+]]+5\nNice Nature [[bond+]]+5\nHeal all negative status effects"
+      ]
+    },    {
+      "name": "Revenge with a Quiz!",
+      "text": [
+        "[[Energy+]]+10\n[[Speed+]]+5\n[[Wit+]]+5\n{link:On Your Left!} [[hint]]1\nNice Nature [[bond+]]+5"
+      ]
+    },    {
+      "name": "Not like Meow",
+      "text": [
+        "[[Energy+]]+20\nNice Nature [[bond+]]+5",
+        "[[Energy+]]+10\n[[Wit+]]+5\nNice Nature [[bond+]]+5"
+      ]
+    },
+    {
+      "name": "(Delicious) Burden",
+      "text": [
+        "{link:Ramp Up} [[hint]]1\nNice Nature [[bond+]]+5",
+        "Maximum [[Energy+]]+4\nNice Nature [[bond+]]+5\n[[Mood+]]+1"
+      ]
+    }
+  ]
+}
