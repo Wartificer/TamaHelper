@@ -6,6 +6,7 @@
     "Biwa_Hayahide": "17cef96979",
     "Curren_Chan": "ae56feda72",
     "Daiwa_Scarlet": "515b7464e8",
+    "Eishin_Flash": "453b1fe57d",
     "El_Condor_Pasa": "edde040c2f",
     "El_Condor_Pasa_(Fantasy)": "0b7273445d",
     "Fuji_Kiseki": "155313ecfc",
@@ -47,7 +48,7 @@
     "Winning_Ticket": "bc67f493bb"
   },
   "scenarios": {
-    "URA_Finale": "a8f6d20d05"
+    "URA_Finale": "fc552ec2c0"
   },
   "supports": {
     "Guts_R_Air_Groove": "15caf24fc2",
@@ -150,9 +151,11 @@
     "Stamina_R_Super_Creek": "8c2925af7c",
     "Stamina_R_Tamamo_Cross": "ff510a97d1",
     "Stamina_R_TM_Opera_O": "114b00f01e",
+    "Stamina_R_Tosen_Jordan": "e72626dbd8",
     "Stamina_R_Zenno_Rob_Roy": "c51f6025e7",
     "Stamina_SR_Manhattan_Cafe": "d5719a70fc",
     "Stamina_SR_Mayano_Top_Gun": "93f7ce2819",
+    "Stamina_SR_Tosen_Jordan": "4d0875cbc9",
     "Stamina_SR_Zenno_Rob_Roy": "ac682f9bd1",
     "Stamina_SSR_Gold_Ship": "191f8f31a9",
     "Stamina_SSR_Mejiro_McQueen": "6bb8855711",
@@ -177,15 +180,15 @@
     "Wit_SR_Fuji_Kiseki": "8778d6ccdb",
     "Wit_SR_Ikuno_Dictus": "57a0565988",
     "Wit_SR_Marvelous_Sunday": "c07f1cce0f",
-    "Wit_SR_Matikanefukukitaru": "bde3376210",
+    "Wit_SR_Matikanefukukitaru": "beab30c7b8",
     "Wit_SR_Mejiro_Ardan": "acba5e52b5",
     "Wit_SR_Mejiro_Dober": "39f734132d",
     "Wit_SR_Nice_Nature": "0091760048",
     "Wit_SSR_Air_Shakur": "75008b1842",
     "Wit_SSR_Fine_Motion": "1e6893698d",
-    "Wit_SSR_Mejiro_Ardan": "3996ba78eb",
     "Wit_SSR_Mejiro_Dober": "ccc58fbcba",
-    "Wit_SSR_Seiun_Sky": "db2aa8053f",
+    "Wit_SSR_Nice_Nature": "391ec93527",
+    "Wit_SSR_Seiun_Sky": "1b1fd27ca2",
     "Wit_SSR_Yukino_Bijin": "45e276b0cc"
   }
 }
