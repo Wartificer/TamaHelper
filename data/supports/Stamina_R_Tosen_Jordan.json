@@ -1,0 +1,21 @@
+{
+  "name": "Tosen Jordan",
+  "rarity": "r",
+  "type": "stamina",
+  "events": [
+    {
+      "name": "Doomscrolling the Time Away",
+      "text": [
+        "[[Mood+]]+1\n[[Spped+]]+5\nTosen Jordan [[bond+]]+5",
+        "[[Stamina+]]+10\nTosen Jordan [[bond+]]+5"
+      ]
+    },
+    {
+      "name": "Sponsored Posts Can Be Low-Key Sus",
+      "text": [
+        "[[Energy+]]+10\n[[Mood+]]+1\nTosen Jordan [[bond+]]+5",
+        "{link:Lucky Seven} [[hint]]1\nTosen Jordan [[bond+]]+5"
+      ]
+    }
+  ]
+}

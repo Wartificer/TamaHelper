@@ -1,0 +1,35 @@
+{
+  "name": "Tosen Jordan",
+  "rarity": "sr",
+  "type": "stamina",
+  "events": [
+    {
+      "name": "Nail Artist on the Turf",
+      "text": [
+        "[[sp+]]+40\nTosen Jordan [[bond+]]+5\n[[or]]\n[[sp+]]+10\n[[Mood-]]-1",
+        "[[Stamina+]]+10\nTosen Jordan [[bond+]]+5"
+      ]
+    },
+    {
+      "name": "Not Just for Show",
+      "text": [
+        "[[Energy+]]+10\n{link:Ramp Up} [[hint]]3\nTosen Jordan [[bond+]]+5\n[[or]]\n{link:Ramp Up} [[hint]]1",
+        "[[Energy-]]-5\n[[Stamina+]]+20\nTosen Jordan [[bond+]]+5"
+      ]
+    },
+    {
+      "name": "Doomscrolling the Time Away",
+      "text": [
+        "[[Mood+]]+1\n[[Spped+]]+5\nTosen Jordan [[bond+]]+5",
+        "[[Stamina+]]+10\nTosen Jordan [[bond+]]+5"
+      ]
+    },
+    {
+      "name": "Sponsored Posts Can Be Low-Key Sus",
+      "text": [
+        "[[Energy+]]+10\n[[Mood+]]+1\nTosen Jordan [[bond+]]+5",
+        "{link:Lucky Seven} [[hint]]1\nTosen Jordan [[bond+]]+5"
+      ]
+    }
+  ]
+}
