@@ -1,0 +1,40 @@
+{
+  "name": "Silence Suzuka",
+  "rarity": "ssr",
+  "type": "stamina",
+  "events": [
+    {
+      "name": "A Winning Vocalist",
+      "text": [
+        "[[Guts+]]+10\n{link:Hydrate} [[hint]]1",
+        "[[Speed+]]+10\n{link:Soft Step} [[hint]]1"
+      ]
+    },
+    {
+      "name": "A Dream Dance",
+      "text": [
+        "[[Stamina+]]+10\n[[sp+]]+10"
+      ]
+    },
+    {
+      "name": "A Stage to Remember",
+      "text": [
+        "[[Speed+]]+5\n[[Stamina+]]+10\n{link:Concentration} [[hint]]1"
+      ]
+    },
+    {
+      "name": "On and On",
+      "text": [
+        "[[Speed+]]+10\n[[Stamina+]]+5\nSilence Suzuka [[bond+]]+5",
+        "[[Speed+]]+15\nSilence Suzuka [[bond+]]+5"
+      ]
+    },
+    {
+      "name": "What Should I Do?",
+      "text": [
+        "[[Speed+]]+5\n[[Stamina+]]+5\n[[Wit+]]+5\nSilence Suzuka [[bond+]]+5",
+        "{link:Left-Handed} [[hint]]1\nSilence Suzuka [[bond+]]+5"
+      ]
+    }
+  ]
+}
