@@ -1,0 +1,41 @@
+{
+  "name": "Rice Shower",
+  "rarity": "ssr",
+  "type": "power",
+  "events": [
+    {
+      "name": "Rainy Day, Floating Flowers",
+      "text": [
+        "[[Power+]]+10\nRice Shower [[bond+]]+5",
+        "[[sp]]+40\n{link:Passing Pro} [[hint]]1\n[[chainEnd]]"
+      ]
+    },
+    {
+      "name": "Magical Flowers, Forever Fair",
+      "text": [
+        "[[Stamina+]]+5\n[[Power+]]+10\nRice Shower [[bond+]]+5",
+        "[[Energy+]]+15\n[[Power+]]+5\nRice Shower [[bond+]]+5"
+      ]
+    },
+    {
+      "name": "A Bouquet Fluttering in the Sun",
+      "text": [
+        "[[Stamina+]]+5\n[[Power+]]+5\n[[Wit+]]+5\n{link:Swinging Maestro} [[hint]]1\nRice Shower [[bond+]]+5"
+      ]
+    },
+    {
+      "name": "A Page of Flower Shop Assistance",
+      "text": [
+        "Rice Shower [[bond+]]+5\n[[Mood+]]+2",
+        "[[Stamina+]]+10\nRice Shower [[bond+]]+5"
+      ]
+    },
+    {
+      "name": "A Page About Cloudy Weather",
+      "text": [
+        "[[Speed+]]+5\n[[Guts+]]+5\nRice Shower [[bond+]]+5",
+        "{link:Firm Conditions} [[hint]]1\nRice Shower [[bond+]]+5"
+      ]
+    }
+  ]
+}
