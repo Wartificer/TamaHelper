@@ -1,0 +1,359 @@
+{
+  "name": "Matikanefukukitaru (Full Armor)",
+  "events": [
+    {
+      "name": "I'll Protect You!",
+      "text": [
+        "[[Stamina+]]+20",
+        "Acquires {link:Lucky Seven}"
+      ]
+    },
+    {
+      "name": "Now or Never! Sacred Sites",
+      "text": [
+        "[[Stamina+]]+10\n[[Power+]]+10",
+        "[[Wit+]]+20"
+      ]
+    },
+    {
+      "name": "When Fukukitaru Comes, Fortune Follows",
+      "text": [
+        "[[Speed+]]+20\n[[possible]] Acquires {link:Hot Topic}",
+        "[[Speed+]]+7\n[[Stamina+]]+7\n[[Power+]]+7\n[[possible]] Acquires {link:Hot Topic}"
+      ]
+    },
+    {
+      "name": "Cursed Camera",
+      "text": [
+        "[[Wit+]]+10",
+        "[[sp+]]+30"
+      ]
+    },
+    {
+      "name": "Manhattan's Dream",
+      "text": [
+        "{link:Hesitant Front Runners} [[hint]]1",
+        "[[Stamina+]]+10"
+      ]
+    },
+    {
+      "name": "Pretty Gunslingers",
+      "text": [
+        "[[sp+]]+15\n[[Mood+]]+1",
+        "[[Power+]]+10"
+      ]
+    },
+    {
+      "name": "Which One is the Lucky Card?!",
+      "text": [
+        "[[Speed+]]+5\n[[Stamina+]]+5\n[[or]]\n[[Mood+]]+1\n[[sp+]]+15\n[[or]]\n[[Speed+]]+5\n[[Mood-]]-1"
+      ]
+    },
+    {
+      "name": "Seven Gods of Fortune Fine Food Tour",
+      "text": [
+        "[[Energy+]]+10\n[[sp+]]+5",
+        "(~90%)\n[[Energy+]]+30\n[[sp+]]+10\n[[Power+]]+5\n[[or]]\n(~10%)\n[[Energy+]]+30\n[[sp+]]+10\n[[Speed-]]-5\nAcquires {link:Slow Metabolism}"
+      ]
+    },
+    {
+      "name": "Fukukitaru's Protection against Misfortune",
+      "text": [
+        "[[Guts+]]+10",
+        "[[Power+]]+10"
+      ]
+    },
+    {
+      "name": "Punch in a Pinch",
+      "text": [
+        "[[Speed+]]+10",
+        "[[Stamina+]]+5\n[[Wit+]]+5"
+      ]
+    },
+    {
+      "name": "Fukukitaru's Unique Good-Luck Spell",
+      "text": [
+        "[[Speed+]]+5\n[[Guts+]]+5",
+        "[[Stamina+]]+5\n[[Power+]]+5",
+        "[[Wit+]]+10"
+      ]
+    },
+    {
+      "name": "Taking the Plunge",
+      "text": [
+        "[[Stamina+]]+10",
+        "[[Speed+]]+5\n[[Wit+]]+5"
+      ]
+    },
+    {
+      "name": "Shrine Visit",
+      "text": [
+        "[[Power+]]+5\n[[Guts+]]+5",
+        "[[Speed+]]+5\n[[Stamina+]]+5"
+      ]
+    },
+    {
+      "name": "Bonus at start",
+      "text": [
+        "[[sp+]]+120"
+      ]
+    },
+    {
+      "name": "Get Well Soon!",
+      "initiator": "Failed training",
+      "text": [
+        "\nPrevious training -5\n[[possible]] Acquires {link:Practice Poor}\n[[Mood-]]-1",
+        "\nAcquires {link:Practice Perfect}\n[[or]]\nPrevious training -10\n[[possible]] Acquires {link:Practice Poor}\n[[Mood-]]-1"
+      ]
+    },
+    {
+      "name": "Failed training (Don't Overdo It!)",
+      "text": [
+        "[[Energy+]]+10\n[[2stats]] -10\nPrevious training -10\n[[possible]] Acquires {link:Practice Poor}\n[[Mood-]]-2",
+        "[[Energy+]]+10\nAcquires {link:Practice Perfect}\n[[or]]\nAcquires {link:Practice Poor}\n[[2stats]]-10\nPrevious training -10\n[[Mood-]]-3"
+      ]
+    },
+    {
+      "name": "Extra Training",
+      "text": [
+        "[[Energy-]]-5\nPrevious training +5\n[[possible]] Heal affliction\nYayoi Akikawa [[bond+]]+5",
+        "[[Energy+]]+5"
+      ]
+    },
+    {
+      "name": "At Summer Camp (Year 2)",
+      "text": [
+        "[[Power+]]+10",
+        "[[Guts+]]+10"
+      ]
+    },
+    {
+      "name": "Fan Letter",
+      "text": [
+        "[[sp+]]+30\n[[Mood+]]+1"
+      ]
+    },
+    {
+      "name": "Dance Lesson",
+      "text": [
+        "[[Power+]]+10",
+        "[[Wit+]]+10"
+      ]
+    },
+    {
+      "name": "New Year's Resolutions",
+      "text": [
+        "[[Wit+]]+10",
+        "[[Energy+]]+20",
+        "[[sp+]]+20"
+      ]
+    },
+    {
+      "name": "New Year's Shrine Visit",
+      "text": [
+        "[[Energy+]]+30",
+        "[[All+]]+5",
+        "[[sp+]]+35"
+      ]
+    },
+    {
+      "name": "Acupuncture (Just an Acupuncturist, No Worries! ☆)",
+      "text": [
+        "(~30%)\n[[All+]]+20\n[[or]]\n(~70%)\n[[Mood-]]-2\n[[All-]]-15\nAcquires {link:Night Owl}",
+        "(~45%)\nObtain {link:Corner Recovery} skill\nObtain {link:Straightaway Recovery} skill\n[[or]]\n(~55%)\n[[Energy-]]-20\n[[Mood-]]-2",
+        "(~70%)\nMaximum Energy +12\n[[Energy+]]+40\n[[healall]] Heals all afflictions\n[[or]]\n(~30%)\n[[Energy-]]-20\n[[Mood-]]-2\nAcquires {link:Practice Poor}",
+        "(~85%)\n[[Energy+]]+20\n[[Mood+]]+1\nAcquires {link:Charming}\n[[or]]\n(~15%)\n[[Energy-]]-10/-20\n[[Mood-]]-1\n(random) Acquires {link:Practice Poor}",
+        "[[Energy+]]+10"
+      ]
+    },
+    {
+      "name": "Victory!",
+      "initiator": "(G1)",
+      "text": [
+        "[[Energy-]]-15\n[[sp+]]+45\n[[1stats]] +10\n[[possible]]Race skill hint [[hint]]",
+        "[[Energy-]]-5/-20\n[[sp+]]+45\n[[1stats]] +10\n[[possible]]Race skill hint [[hint]]"
+      ]
+    },
+    {
+      "name": "Victory!",
+      "initiator": "(G2/G3)",
+      "text": [
+        "[[Energy-]]-15\n[[sp+]]+35\n[[1stats]] +8\n[[possible]]Race skill hint [[hint]]",
+        "[[Energy-]]-5/-20\n[[sp+]]+35\n[[1stats]] +8\n[[possible]]Race skill hint [[hint]]"
+      ]
+    },
+    {
+      "name": "Victory!",
+      "initiator": "(Pre/OP)",
+      "text": [
+        "[[Energy-]]-15\n[[sp+]]+30\n[[1stats]] +5\n[[possible]]Race skill hint [[hint]]",
+        "[[Energy-]]-5/-20\n[[sp+]]+30\n[[1stats]] +5\n[[possible]]Race skill hint [[hint]]"
+      ]
+    },
+    {
+      "name": "Solid Showing",
+      "initiator": "(G1)",
+      "text": [
+        "[[Energy-]]-20\n[[sp+]]+45\n[[1stats]] +8\n[[possible]]Race skill hint [[hint]]",
+        "[[Energy-]]-10/-30\n[[sp+]]+45\n[[1stats]] +8\n[[possible]]Race skill hint [[hint]]"
+      ]
+    },
+    {
+      "name": "Solid Showing",
+      "initiator": "(G2/G3)",
+      "text": [
+        "[[Energy-]]-20\n[[sp+]]+35\n[[1stats]] +5\n[[possible]]Race skill hint [[hint]]",
+        "[[Energy-]]-10/-30\n[[sp+]]+35\n[[1stats]] +5\n[[possible]]Race skill hint [[hint]]"
+      ]
+    },
+    {
+      "name": "Solid Showing",
+      "initiator": "(Pre/OP)",
+      "text": [
+        "[[Energy-]]-20\n[[sp+]]+30\n[[1stats]] +3\n[[possible]]Race skill hint [[hint]]",
+        "[[Energy-]]-10/-30\n[[sp+]]+30\n[[1stats]] +3\n[[possible]]Race skill hint [[hint]]"
+      ]
+    },
+    {
+      "name": "Defeat",
+      "initiator": "(G1)",
+      "text": [
+        "[[Energy-]]-25\n[[sp+]]+25\n[[1stats]] +4\n[[possible]]Race skill hint [[hint]]",
+        "[[Energy-]]-15/-35\n[[sp+]]+25\n[[1stats]] +4\n[[possible]]Race skill hint [[hint]]"
+      ]
+    },
+    {
+      "name": "Defeat",
+      "initiator": "(G2/G3)",
+      "text": [
+        "[[Energy-]]-25\n[[sp+]]+20\n[[1stats]] +3\n[[possible]]Race skill hint [[hint]]",
+        "[[Energy-]]-15/-35\n[[sp+]]+20\n[[1stats]] +3\n[[possible]]Race skill hint [[hint]]"
+      ]
+    },
+    {
+      "name": "Defeat",
+      "initiator": "(Pre/OP)",
+      "text": [
+        "[[Energy-]]-25\n[[sp+]]+10\n[[possible]]Race skill hint [[hint]]",
+        "[[Energy-]]-15/-35\n[[sp+]]+10\n[[possible]]Race skill hint [[hint]]"
+      ]
+    },
+    {
+      "name": "Etsuko's Elated Coverage",
+      "initiator": "(G1)",
+      "text": [
+        "[[Energy-]]-15\n[[sp+]]+45\n[[Fans+]]+500\n[[1stats]] +10\n[[possible]]Race skill hint [[hint]]\nEtsuko Otonashi [[bond+]]+15\n[[Mood+]]+1"
+      ]
+    },
+    {
+      "name": "Etsuko's Elated Coverage",
+      "initiator": "(G2/G3)",
+      "text": [
+        "[[Energy-]]-15\n[[sp+]]+35\n[[Fans+]]+500\n[[1stats]] +8\n[[possible]]Race skill hint [[hint]]\nEtsuko Otonashi [[bond+]]+15\n[[Mood+]]+1"
+      ]
+    },
+    {
+      "name": "Etsuko's Elated Coverage",
+      "initiator": "(Pre/OP)",
+      "text": [
+        "[[Energy-]]-15\n[[sp+]]+30\n[[Fans+]]+500\n[[1stats]] +5\n[[possible]]Race skill hint [[hint]]\nEtsuko Otonashi [[bond+]]+15\n[[Mood+]]+1"
+      ]
+    },
+    {
+      "name": "Etsuko's Exhaustive Coverage",
+      "initiator": "(G1)",
+      "text": [
+        "[[Energy-]]-25\n[[Mood-]]-1\n[[1stats]] +4\n[[sp+]]+25\nEtsuko Otonashi [[bond-]]-10\n[[or]]\n[[Energy-]]-15\n[[Mood+]]+1\n[[1stats]] +4\n[[sp+]]+25\nEtsuko Otonashi [[bond+]]+15",
+        "[[Energy-]]-20\n[[1stats]] +4\n[[sp+]]+25\nEtsuko Otonashi [[bond+]]+10"
+      ]
+    },
+    {
+      "name": "Etsuko's Exhaustive Coverage",
+      "initiator": "(G2/G3)",
+      "text": [
+        "[[Energy-]]-25\n[[Mood-]]-1\n[[1stats]] +3\n[[sp+]]+20\nEtsuko Otonashi [[bond-]]-10\n[[or]]\n[[Energy-]]-15\n[[Mood+]]+1\n[[1stats]] +3\n[[sp+]]+20\nEtsuko Otonashi [[bond+]]+15",
+        "[[Energy-]]-20\n[[sp+]]+20\n[[1stats]] +3\nEtsuko Otonashi [[bond+]]+10"
+      ]
+    },
+    {
+      "name": "Etsuko's Exhaustive Coverage",
+      "initiator": "(Pre/OP)",
+      "text": [
+        "[[Energy-]]-25\n[[Mood-]]-1\n[[sp+]]+25\nEtsuko Otonashi [[bond-]]-10\n[[or]]\n[[Energy-]]-15\n[[Mood+]]+1\n[[sp+]]+25\nEtsuko Otonashi [[bond+]]+15",
+        "[[Energy-]]-20\n[[sp+]]+10\nEtsuko Otonashi [[bond+]]+10"
+      ]
+    },
+    {
+      "name": "Scarier than a Ghost!",
+      "text": [
+        "[[Wit+]]+5"
+      ]
+    },
+    {
+      "name": "Dream Crossroads",
+      "text": [
+        "[[Power+]]+5"
+      ]
+    },
+    {
+      "name": "Divine Punishment",
+      "text": [
+        "[[Guts+]]+5"
+      ]
+    },
+    {
+      "name": "Lifespans",
+      "text": [
+        "[[Wit+]]+5"
+      ]
+    },
+    {
+      "name": "Hear My Vow!",
+      "text": [
+        "[[Guts+]]+5\n[[Wit+]]+5"
+      ]
+    },
+    {
+      "name": "Terror! An Ominous Sign",
+      "text": [
+        "[[Speed-]]-5\n[[Mood-]]-1"
+      ]
+    },
+    {
+      "name": "Master Trainer",
+      "text": [
+        "[[Wit+]]+10\n[[possible]] Acquires {link:Practice Perfect}"
+      ]
+    },
+    {
+      "name": "Setting Foot on Sacred Sites",
+      "text": [
+        "[[sp+]]+5\n[[All+]]+5"
+      ]
+    },
+    {
+      "name": "Terror! The First Circle of Hell",
+      "text": [
+        "[[Mood-]]-1"
+      ]
+    },
+    {
+      "name": "Terror! Charm Recovery Dash",
+      "text": [
+        "[[Energy-]]-10\n[[Mood-]]-1"
+      ]
+    },
+    {
+      "name": "Shiraoki's ☆ Arrival",
+      "text": [
+        "[[sp+]]+30\n[[All+]]+5\n[[possible]] Acquires {link:Fast Learner}\n[[Mood+]]+2"
+      ]
+    },
+    {
+      "name": "A Rush at Luck",
+      "text": [
+        "[[Energy+]]+15\n[[Energy+]]+15\n[[Guts-]]-5\n[[Guts-]]-5\nAcquires {link:Slacker}\n[[or]]\n[[Mood-]]-1"
+      ]
+    }
+  ]
+}

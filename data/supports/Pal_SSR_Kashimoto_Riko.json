@@ -1,0 +1,83 @@
+{
+  "name": "Riko Kashimoto",
+  "rarity": "ssr",
+  "type": "pal",
+  "events": [
+    {
+      "name": "The Kashimoto Art of Tidying Up",
+      "text": [
+        "[[Stamina+]]+18\nRiko Kashimoto [[bond+]]+5",
+        "[[Guts+]]+18\nRiko Kashimoto [[bond+]]+5"
+      ]
+    },
+    {
+      "name": "Unexpected Side",
+      "text": [
+        "[[Energy+]]+18\n[[Mood+]]+1\n[[Stamina+]]+12\n{link:Ramp Up} [[hint]]3\nRiko Kashimoto [[bond+]]+12\n[[unlock]]Dates\n[[or]]\n{link:Maverick} [[hint]]5\nRiko Kashimoto [[bond-]]-10\n[[chainEnd]]",
+        "[[Mood+]]+1\n[[Guts+]]+18\nRiko Kashimoto [[bond+]]+5\n[[unlock]]Dates",
+        "{link:Lone Wolf} [[hint]]3\nRiko Kashimoto [[bond-]]-10\n[[chainEnd]]"
+      ]
+    },
+    {
+      "name": "(❯) Sing from the Heart",
+      "text": [
+        "[[Energy+]]+30\n[[Mood+]]+1\n[[Stamina+]]+12\nRiko Kashimoto [[bond+]]+5"
+      ]
+    },
+    {
+      "name": "(❯❯) A Change of Pace",
+      "text": [
+        "[[Energy+]]+24\n[[Mood+]]+1\n[[Stamina+]]+12\n[[Guts+]]+12\nRiko Kashimoto [[bond+]]+5"
+      ]
+    },
+    {
+      "name": "(❯❯❯) Picture Their Joy",
+      "text": [
+        "[[Energy+]]+24\n[[Mood+]]+1\n[[Stamina+]]+12\n[[Guts+]]+6\nRiko Kashimoto [[bond+]]+5",
+        "[[sp+]]+37\n[[Mood+]]+1\nRiko Kashimoto [[bond+]]+5"
+      ]
+    },
+    {
+      "name": "(❯❯❯❯) Confused by Kindness",
+      "text": [
+        "[[Energy+]]+24\n[[Mood+]]+1\n[[Speed+]]+12\n[[Stamina+]]+6\n[[Power+]]+6\nRiko Kashimoto [[bond+]]+5"
+      ]
+    },
+    {
+      "name": "(❯❯❯❯❯) A Peek at Her Heart",
+      "text": [
+        "[[Energy+]]+30\n[[Mood+]]+1\n[[Stamina+]]+12\n[[Guts+]]+12\n{link:Rushing Gale} [[hint]]3\nRiko Kashimoto [[bond+]]+5\n[[or]]\n[[Energy+]]+30\n[[Mood+]]+1\n[[Stamina+]]+6\n[[Guts+]]+6\n{link:Rushing Gale} [[hint]]1\nRiko Kashimoto [[bond+]]+5"
+      ]
+    },
+    {
+      "name": "Riko Kashimoto, the Hard Worker",
+      "text": [
+        "[[Mood+]]+1\n[[Stamina+]]+7\n[[Guts+]]+7\nRiko Kashimoto [[bond+]]+5"
+      ]
+    },
+    {
+      "name": "Good Work",
+      "text": [
+        "[[possible]][[Mood+]]+1\n[[Stamina+]]+3\nRiko Kashimoto [[bond+]]+5"
+      ]
+    },
+    {
+      "name": "A Priceless Connection",
+      "text": [
+        "[[Stamina+]]+18\n[[Guts+]]+18\n[[sp+]]+25"
+      ]
+    },
+    {
+      "name": "We Need This Sometimes",
+      "text": [
+        "[[Stamina+]]+5\n[[Guts+]]+5\n[[sp+]]+7"
+      ]
+    },
+    {
+      "name": "Bonding with Riko: No More Regrets",
+      "text": [
+        "[[Mood+]]+1\n[[Stamina+]]+15\n[[Guts+]]+7\n{link:Sympathy} [[hint]]3\nRiko Kashimoto [[bond+]]+5"
+      ]
+    }
+  ]
+}
