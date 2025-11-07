@@ -222,7 +222,7 @@ func load_data_json_from_subfolders(relative_folder_path: String) -> Array:
 		item_name = dir.get_next()
 	
 	# Sort by folder name for consistent ordering
-	json_data_array.sort_custom(func(a, b): return a.folder_name < b.folder_name)
+	json_data_array.sort_custom(func(a, b): return a.name < b.name)
 	
 	return json_data_array
 

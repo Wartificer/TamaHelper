@@ -14,13 +14,13 @@ var screen_size : Vector2
 ## How many screens are there
 var screen_count : int = DisplayServer.get_screen_count()  # total monitors
 ## Current screen being checked
-var current_screen : int = 1
+var current_screen : int = 0
 ## If the program keep_alives every 1 second
-var keep_alive : bool
+var keep_alive : bool = true
 ## If the app should always be visible.
-var always_on_top : bool
+var always_on_top : bool = true
 ## Disables Tamamo Animations if true
-var disable_anims : bool
+var disable_anims : bool = false
 ## Current loop ms
 var loop_ms : float = 1000
 
@@ -558,6 +558,7 @@ func on_scenario_selected(scenario):
 	previous_texts_result.clear()
 	last_event_name = ""
 	selected_scenario = scenario
+	date_position_data.text_areas = [{"pos": Vector2(scenario.date_area.pos[0], scenario.date_area.pos[1]), "size": Vector2(scenario.date_area.size[0], scenario.date_area.size[1])}]
 	set_selected_scenario_ui()
 	_on_close_scenario_select_button_pressed()
 	save_settings()

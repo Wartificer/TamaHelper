@@ -1030,7 +1030,6 @@ theme_override_constants/h_separation = 6
 theme_override_constants/v_separation = 6
 
 [node name="Control" type="Control" parent="."]
-layout_mode = 3
 anchors_preset = 0
 
 [node name="CloseButton" type="Button" parent="Control"]

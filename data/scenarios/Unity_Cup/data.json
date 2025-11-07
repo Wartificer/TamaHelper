@@ -1,8 +1,8 @@
 {
-	"name": "URA Finale",
+	"name": "Unity Cup",
 	"date_area": {
-		"pos": [242, 196],
-		"size": [370, 50]
+		"pos": [390, 36],
+		"size": [174, 19]
 	},
 	"events": [
 		{
