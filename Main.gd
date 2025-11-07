@@ -450,7 +450,7 @@ func load_settings():
 			set_selected_character_ui()
 	# Load scenario
 	var saved_selected_scenario = config.get_value("career", "scenario", "")
-	if saved_selected_scenario != "":
+	if saved_selected_scenario == "":
 		saved_selected_scenario = "URA Finale"
 	selected_scenario = find_dict_by_name(scenario_data, saved_selected_scenario)
 	if selected_scenario.has("name"):

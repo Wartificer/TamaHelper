@@ -6,6 +6,16 @@
 	},
 	"events": [
 		{
+			"name": "A Team at Last",
+			"text": [
+				"Happy Hoppers -> [[hint]] {link:Mile Maven}",
+				"Blue Bloom -> [[hint]] {link:Cooldown}",
+				"Carrot Pudding -> [[hint]] {link:Indomitable}",
+				"Sunny Runners -> [[hint]] {link:Clairvoyance}",
+				"Team Carrot -> [[hint]] {link:No Stopping Me!}"
+			]
+		},
+		{
 			"name": "Exhilarating! What a Scoop!",
 			"text": [
 				"[[Stamina+]]+10\nEtsuko Otonashi [[bond+]]+5",

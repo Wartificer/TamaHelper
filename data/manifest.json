@@ -20,6 +20,7 @@
     "Maruzensky": "3d7820965c",
     "Maruzensky_(Summer)": "6e8a6b3e9a",
     "Matikanefukukitaru": "da05bcec96",
+    "Matikanefukukitaru_(Full_Armor)": "4fc59d4238",
     "Mayano_Top_Gun": "e41415de95",
     "Mayano_Top_Gun_(Wedding)": "eb8f363d94",
     "Meisho_Doto": "9178c4021d",
@@ -48,7 +49,8 @@
     "Winning_Ticket": "bc67f493bb"
   },
   "scenarios": {
-    "URA_Finale": "fc552ec2c0"
+    "Unity_Cup": "6601fee519",
+    "URA_Finale": "b7bea8d52b"
   },
   "supports": {
     "Guts_R_Air_Groove": "15caf24fc2",
@@ -77,8 +79,10 @@
     "Guts_SSR_Special_Week": "9cecdce6df",
     "Guts_SSR_Winning_Ticket": "6376765f2a",
     "Pal_R_Aoi_Kiryuin": "69361b03af",
+    "Pal_R_Kashimoto_Riko": "3e40f2f093",
     "Pal_R_Tazuna_Hayakawa": "1f6300bd9c",
     "Pal_SR_Aoi_Kiryuin": "7fc0be90d7",
+    "Pal_SSR_Kashimoto_Riko": "2d418e6035",
     "Pal_SSR_Tazuna_Hayakawa": "28fb16a047",
     "Power_R_Agnes_Digital": "9c9c707667",
     "Power_R_Bamboo_Memory": "00a6ed23a7",
@@ -104,6 +108,7 @@
     "Power_SSR_El_Condor_Pasa": "a54070d08f",
     "Power_SSR_King_Halo": "73e08e2233",
     "Power_SSR_Oguri_Cap": "c2e493a335",
+    "Power_SSR_Rice_Shower": "7a51c08ed6",
     "Power_SSR_Smart_Falcon": "5513bf5609",
     "Power_SSR_Vodka": "d6b11d131f",
     "Power_SSR_Winning_Ticket": "d2e06bf176",
