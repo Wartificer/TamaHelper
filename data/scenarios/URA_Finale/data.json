@@ -131,6 +131,27 @@
         		"[[Energy-]]-15/-35\n[[sp+]]+10\n[[possible]]Race skill hint [[hint]]"
       		]
     	},
+		{
+      		"name": "Etsuko's Elated Coverage",
+      		"initiator": "(G1)",
+      		"text": [
+        		"[[Energy-]]-15\n[[sp+]]+45\n[[Fans+]]+500\n[[1stats]] +10\n[[possible]]Race skill hint [[hint]]\nEtsuko Otonashi [[bond+]]+15\n[[Mood+]]+1"
+      		]
+    	},
+    	{
+      		"name": "Etsuko's Elated Coverage",
+      		"initiator": "(G2/G3)",
+      		"text": [
+        		"[[Energy-]]-15\n[[sp+]]+35\n[[Fans+]]+500\n[[1stats]] +8\n[[possible]]Race skill hint [[hint]]\nEtsuko Otonashi [[bond+]]+15\n[[Mood+]]+1"
+      		]
+    	},
+    	{
+      		"name": "Etsuko's Elated Coverage",
+      		"initiator": "(Pre/OP)",
+      		"text": [
+        		"[[Energy-]]-15\n[[sp+]]+30\n[[Fans+]]+500\n[[1stats]] +5\n[[possible]]Race skill hint [[hint]]\nEtsuko Otonashi [[bond+]]+15\n[[Mood+]]+1"
+      		]
+    	},
     	{
       		"name": "Etsuko's Exhaustive Coverage",
       		"initiator": "(G1)",
