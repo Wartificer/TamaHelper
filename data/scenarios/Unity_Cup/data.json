@@ -715,14 +715,6 @@
 				"Stats OR Energy OR Skill Points"
 			],
 			"icon": "{i}icon-possible.tres"
-		},
-		{
-			"name": "Holding an Event!",
-			"date": "Classic Year Early Mar",
-			"factors": [
-				"Mood +1"
-			],
-			"icon": "{i}icon-mood-up.tres"
 		}
 	]
 }
