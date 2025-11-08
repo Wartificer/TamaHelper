@@ -48,6 +48,8 @@ var replacement_dict = {
 	"healaff": "[img width="+icon_size+"]res://Images/icon-heal.tres[/img]",
 	"healall": "[img width="+icon_size+"]res://Images/icon-heal-all.tres[/img]",
 	"or": "----- [img width="+icon_size+"]res://Images/icon-or.tres[/img] -----",
+	"unlock": "[img width="+icon_size+"]res://Images/icon-unlock.png[/img]",
+	"chainEnd": "[img width="+icon_size+"]res://Images/icon-chain-end.png[/img]",
 	# Add more replacements as needed
 }
 
