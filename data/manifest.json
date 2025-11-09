@@ -1,5 +1,5 @@
 {
-  "meets_minimum_version": "2.9a",
+  "min_app_version": "3.0",
   "characters": {
     "Agnes_Tachyon": "967504d9a9",
     "Air_Groove": "b6e9d41537",

@@ -150,13 +150,13 @@ func capture_screen():
 		return  # failed to capture
 
 	## Convert the Image to a Texture for display
-	#var tex = ImageTexture.create_from_image(img)
-	#%ImagePreview.texture = tex
-	process_capture(img)
-
-func debug_date(img):
 	var tex = ImageTexture.create_from_image(img)
 	%ImagePreview.texture = tex
+	process_capture(img)
+
+#func debug_date(img):
+	#var tex = ImageTexture.create_from_image(img)
+	#%ImagePreview.texture = tex
 
 ## Starts the program by capturing the screen
 func _on_start_button_pressed() -> void:
@@ -609,7 +609,7 @@ func on_update_complete():
 func on_update_impossible():
 	# CHECK IF UPDATE IS POSSIBLE DUE TO APP VERSION REQUIREMENT
 	%UpdateImpossibleContainer.show()
-	%UpdateStatus.text = "Re-download required."
+	%UpdateStatus.text = "Latest updates require a download of the latest version of the app."
 	
 func on_update_failed(message : String):
 	%UpdateStatus.text = message

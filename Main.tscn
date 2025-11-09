@@ -286,8 +286,8 @@ layout_mode = 2
 size_flags_horizontal = 10
 tooltip_text = "If checked, the app will
 always sit on top of the
-screen, this way, you can
-position it in front of
+screen, this way, you 
+can position it in front of
 unused areas of the game."
 button_pressed = true
 text = "Always on top"
@@ -330,8 +330,8 @@ grow_horizontal = 2
 grow_vertical = 2
 size_flags_horizontal = 8
 tooltip_text = "Click to select the 
-scenario you are playing on 
-your current career."
+scenario you are playing
+on your current career."
 texture = ExtResource("3_wkp8b")
 expand_mode = 3
 stretch_mode = 6
@@ -388,7 +388,7 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 size_flags_horizontal = 8
-tooltip_text = "Click to select the 
+tooltip_text = "Click to select the
 character you are using on 
 your current career."
 texture = ExtResource("4_trn2v")
@@ -638,12 +638,12 @@ autowrap_mode = 3
 unique_name_in_owner = true
 layout_mode = 2
 size_flags_horizontal = 3
-text = "App Version:"
+text = "0.0"
 autowrap_mode = 3
 
 [node name="UpdateGuide2" type="Label" parent="MainContainer/MainTabs/Update/ScrollContainer/MarginContainer/VBoxContainer"]
 layout_mode = 2
-text = "Click the button below to check for updates in Characters and Support cards."
+text = "Click the button below to check for updates in Scenarios, Characters and Support Cards."
 autowrap_mode = 3
 
 [node name="HBoxContainer" type="HBoxContainer" parent="MainContainer/MainTabs/Update/ScrollContainer/MarginContainer/VBoxContainer"]
