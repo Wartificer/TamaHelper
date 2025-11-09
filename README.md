@@ -111,3 +111,9 @@ Does not constitute a claim of ownership over any Cygames property
 Is intended to fall under fair use provisions for informational purposes
 Should be considered as referencing publicly available game information
 Is not endorsed by or affiliated with Cygames, Inc.
+
+**Icon Attribution**
+
+[Unlock](https://icons8.com/icon/bmqc7DrIxfXZ/unlock) icon by [Icons8](https://icons8.com)
+
+[Broken chain](https://www.freepik.com/icon/breaking_3100122#uuid=7eae5aad-6fbc-44c9-bae7-a5dafe3046fc) icon by [Freepik](https://www.freepik.com/)

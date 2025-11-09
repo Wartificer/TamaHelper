@@ -326,7 +326,7 @@ grow_horizontal = 2
 grow_vertical = 2
 size_flags_horizontal = 8
 tooltip_text = "Click to select the 
-character you are using on 
+scenario you are playing on 
 your current career."
 texture = ExtResource("4_trn2v")
 expand_mode = 3

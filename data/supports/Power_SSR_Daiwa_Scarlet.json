@@ -7,13 +7,13 @@
       "name": "Number One Reactions?",
       "text": [
         "[[Speed+]]+3\n[[Power+]]+3\n[[Wit+]]+3\nDaiwa Scarlet [[bond+]]+5",
-		"[[Energy+]]+15\nEvent chain end"
+		"[[Energy+]]+15\n[[chainEnd]]"
       ]
     },
     {
       "name": "Learning to Look Scared",
       "text": [
-        "[[Power+]]+5\n[[Wit]]+5"
+        "[[Power+]]+5\n[[Wit+]]+5"
       ]
     },
     {

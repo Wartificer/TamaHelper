@@ -18,7 +18,7 @@
     {
       "name": "Running for the Dream",
       "text": [
-        "[[Energy-]]-10\n[[Speed+]]+20\n{link:Shatterproof}[[hint]]1"
+        "[[Energy-]]-10\n[[Speed+]]+20\n{link:Shatterproof} [[hint]]1"
       ]
     },
     {
@@ -32,7 +32,7 @@
       "name": "Lone Wolf",
       "text": [
 	    "[[Speed+]]+3\n[[Stamina+]]+3\n[[Power+]]+3\nNarita Brian [[bond+]]+5",
-        "{link:Lone Wolf}[[hint]]1\nNarita Brian [[bond+]]+5"
+        "{link:Lone Wolf} [[hint]]1\nNarita Brian [[bond+]]+5"
       ]
     }
   ]
