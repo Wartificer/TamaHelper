@@ -12,7 +12,7 @@
       "name": "Irrepressible Feelings",
       "text": [
         "[[Energy+]]+10\nNice Nature [[bond+]]+5",
-        "[[Energy-]]+5\n[[Speed+]]+5\n[[Power+]]+5\nNice Nature [[bond+]]+5\nHeal all negative status effects"
+        "[[Energy-]]-5\n[[Speed+]]+5\n[[Power+]]+5\nNice Nature [[bond+]]+5\nHeal all negative status effects"
       ]
     },    {
       "name": "Revenge with a Quiz!",
