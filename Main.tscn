@@ -597,6 +597,7 @@ theme_override_styles/panel = SubResource("StyleBoxLine_wkp8b")
 [node name="Notes" parent="MainContainer/MainTabs" instance=ExtResource("6_20pc6")]
 visible = false
 layout_mode = 2
+scroll_offset = Vector2(0, -28)
 
 [node name="Update" type="Control" parent="MainContainer/MainTabs"]
 visible = false

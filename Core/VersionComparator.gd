@@ -87,5 +87,5 @@ static func compare_suffix(suffix1: String, suffix2: String) -> int:
 		return 0
 
 # Convenience method for checking minimum version requirement
-static func meets_minimum_version(current_version: String, minimum_version: String) -> bool:
+static func meets_minimum_version(minimum_version: String, current_version: String) -> bool:
 	return is_version_greater(minimum_version, current_version) or current_version == minimum_version
