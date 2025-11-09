@@ -228,11 +228,13 @@ func check_matching_pixels(screen_size : Vector2, img : Image) -> Dictionary:
 	return result
 
 ## Gets text inside the areas from the matched check
-func get_image_texts(screen_size : Vector2, matched : Dictionary, img : Image):
+func get_image_texts(screen_size : Vector2, matched : Dictionary, img : Image, caller : Node):
 	var texts : Array[String] = []
 	
 	# Use the actual image size to detect DPI scaling
 	var image_size = Vector2(img.get_width(), img.get_height())
+	
+	print(matched)
 	
 	# For each "text_area" in a matched check
 	for text_area in matched.text_areas:
@@ -260,6 +262,7 @@ func get_image_texts(screen_size : Vector2, matched : Dictionary, img : Image):
 		
 		# Extract an image of the area
 		var text_area_image = img.get_region(region_rect)
+		caller.debug_date(text_area_image)
 		
 		# Extract text from the image area
 		var text : String = await OCRManager.extract_text_from_image_async(text_area_image)

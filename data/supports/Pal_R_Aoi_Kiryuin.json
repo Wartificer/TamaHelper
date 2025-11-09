@@ -45,7 +45,7 @@
       "name": "The Search for a Hobby",
       "text": [
         "[[Energy+]]+26\n[[sp+]]+18\n[[unlock]]Dates\nAoi Kiryuin [[bond+]]+5\n[[Mood+]]+1",
-        "[[chainEnd]]\n{link:Maverick} [[hint]]1\nAoi Kiryuin [[bond-]]-5\n[[Mood-]]-1"
+        "[[chainEnd]] [color=#d61b02]End event chain[/color]\n{link:Maverick} [[hint]]1\nAoi Kiryuin [[bond-]]-5\n[[Mood-]]-1"
       ]
     },
     {

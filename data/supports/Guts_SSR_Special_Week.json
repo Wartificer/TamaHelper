@@ -13,7 +13,7 @@
       "name": "A Roller Coaster of Feelings!",
       "text": [
         "[[Energy-]]-10\n[[Speed+]]+5\n[[Stamina+]]+5\n[[Guts+]]+10\nSpecial Week [[bond+]]+5",
-        "[[Energy+]]+20\n[[Wit+]]+10\n[[chainEnd]]\nSpecial Week [[bond+]]+5"
+        "[[Energy+]]+20\n[[Wit+]]+10\n[[chainEnd]] [color=#d61b02]End event chain[/color]\nSpecial Week [[bond+]]+5"
       ]
     },
     {

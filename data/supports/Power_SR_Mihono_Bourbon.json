@@ -7,7 +7,7 @@
       "name": "I'm Not a Cyborg",
       "text": [
         "[[sp+]]+15\n[[Guts+]]+10\nMihono Bourbon [[bond+]]+5",
-        "[[Energy-]]-10\n[[chainEnd]]\n{link:Corner Recovery} [[hint]]1\n[[possible]] Mihono Bourbon [[bond-]]-5"
+        "[[Energy-]]-10\n[[chainEnd]] [color=#d61b02]End event chain[/color]\n{link:Corner Recovery} [[hint]]1\n[[possible]] Mihono Bourbon [[bond-]]-5"
       ]
     },
     {

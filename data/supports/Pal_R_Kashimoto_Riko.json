@@ -13,9 +13,9 @@
     {
       "name": "Unexpected Side",
       "text": [
-        "[[Energy+]]+18\n[[Mood+]]+1\n[[Stamina+]]+12\n{link:Ramp Up} [[hint]]3\nRiko Kashimoto [[bond+]]+12\n[[unlock]]Dates\n[[or]]\n{link:Maverick} [[hint]]5\nRiko Kashimoto [[bond-]]-10\n[[chainEnd]]",
+        "[[Energy+]]+18\n[[Mood+]]+1\n[[Stamina+]]+12\n{link:Ramp Up} [[hint]]3\nRiko Kashimoto [[bond+]]+12\n[[unlock]]Dates\n[[or]]\n{link:Maverick} [[hint]]5\nRiko Kashimoto [[bond-]]-10\n[[chainEnd]] [color=#d61b02]End event chain[/color]",
         "[[Mood+]]+1\n[[Guts+]]+18\nRiko Kashimoto [[bond+]]+5\n[[unlock]]Dates",
-        "{link:Lone Wolf} [[hint]]3\nRiko Kashimoto [[bond-]]-10\n[[chainEnd]]"
+        "{link:Lone Wolf} [[hint]]3\nRiko Kashimoto [[bond-]]-10\n[[chainEnd]] [color=#d61b02]End event chain[/color]"
       ]
     },
     {

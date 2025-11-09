@@ -7,7 +7,7 @@
       "name": "The Bookworm and the Magical Girl",
       "text": [
         "[[Stamina+]]+5\n[[Wit+]]+5\nZenno Rob Roy [[bond+]]+5",
-        "[[Energy+]]+20\n[[Power+]]+10\n[[chainEnd]]\nZenno Rob Roy [[bond+]]+5"
+        "[[Energy+]]+20\n[[Power+]]+10\n[[chainEnd]] [color=#d61b02]End event chain[/color]\nZenno Rob Roy [[bond+]]+5"
       ]
     },
     {

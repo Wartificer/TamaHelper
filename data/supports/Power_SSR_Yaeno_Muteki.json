@@ -13,7 +13,7 @@
       "name": "A Reasonable Diet vs. an Explosive Diet",
       "text": [
         "[[Energy+]]+10\n[[sp+]]+10\nYaeno Muteki [[bond+]]+5",
-        "[[Energy+]]+10\n[[sp+]]+10\n[[Wit+]]+10\n[[chainEnd]]\n{link:Playtime's Over!} [[hint]]3"
+        "[[Energy+]]+10\n[[sp+]]+10\n[[Wit+]]+10\n[[chainEnd]] [color=#d61b02]End event chain[/color]\n{link:Playtime's Over!} [[hint]]3"
       ]
     },
     {

@@ -13,7 +13,7 @@
       "name": "Uma-me",
       "text": [
         "[[Energy+]]+30\nEl Condor Pasa [[bond+]]+5",
-        "[[chainEnd]]\n{link:Stamina to Spare} [[hint]]1\nEl Condor Pasa [[bond+]]+5"
+        "[[chainEnd]] [color=#d61b02]End event chain[/color]\n{link:Stamina to Spare} [[hint]]1\nEl Condor Pasa [[bond+]]+5"
       ]
     },
     {

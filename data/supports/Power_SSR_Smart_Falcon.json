@@ -7,7 +7,7 @@
       "name": "Always on Stage ☆",
       "text": [
         "[[Wit+]]+10\nSmart Falcon [[bond+]]+5",
-        "[[Energy+]]+25\n[[chainEnd]]\n{link:Focus} [[hint]]1\nSmart Falcon [[bond+]]+5"
+        "[[Energy+]]+25\n[[chainEnd]] [color=#d61b02]End event chain[/color]\n{link:Focus} [[hint]]1\nSmart Falcon [[bond+]]+5"
       ]
     },
     {

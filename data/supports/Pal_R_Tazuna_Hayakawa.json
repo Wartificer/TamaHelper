@@ -45,7 +45,7 @@
       "name": "Enthusiastic Pair",
       "text": [
         "[[Energy+]]+13\n[[Wit+]]+6\n[[unlock]]Dates\nTazuna Hayakawa [[bond+]]+5\n[[Mood+]]+1",
-        "[[chainEnd]]\n{link:Watchful Eye} [[hint]]1\nTazuna Hayakawa [[bond-]]-5\n[[Mood-]]-1"
+        "[[chainEnd]] [color=#d61b02]End event chain[/color]\n{link:Watchful Eye} [[hint]]1\nTazuna Hayakawa [[bond-]]-5\n[[Mood-]]-1"
       ]
     },
     {

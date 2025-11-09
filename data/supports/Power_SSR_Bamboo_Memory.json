@@ -14,7 +14,7 @@
       "text": [
         "Maximum [[Energy+]]+4\n[[Energy-]]-10\n[[Stamina+]]+10\n[[Power+]]+10\n[[Guts+]]+5\n{link:Homestretch Haste} [[hint]]+1\nBamboo Memory [[bond+]]+5\n[[or]]\n[[Energy-]]-20\n[[Stamina+]]+10\n[[Power+]]+10\n[[Guts+]]+5\nBamboo Memory [[bond+]]+5\n[[or]]\n[[Energy-]]-20\n[[Stamina+]]+10\n[[Guts+]]+10\nObtain {link:Running Idle}",
         "[[Energy-]]-10\n[[Mood+]]+1\n[[Stamina+]]+5\n[[Power+]]+5\nBamboo Memory [[bond+]]+5",
-        "[[Energy+]]+30\n{link:Hesitant Late Surgers} [[hint]]1\n[[chainEnd]]"
+        "[[Energy+]]+30\n{link:Hesitant Late Surgers} [[hint]]1\n[[chainEnd]] [color=#d61b02]End event chain[/color]"
       ]
     },
     {

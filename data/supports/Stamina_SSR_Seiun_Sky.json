@@ -7,7 +7,7 @@
       "name": "Be Strategic ☆",
       "text": [
         "[[Energy+]]+10\n[[Wit+]]+5\nSeiun Sky [[bond+]]+5",
-        "[[sp+]]+30\n[[chainEnd]]\n{link:Second Wind} [[hint]]1\nSeiun Sky [[bond-]]-5"
+        "[[sp+]]+30\n[[chainEnd]] [color=#d61b02]End event chain[/color]\n{link:Second Wind} [[hint]]1\nSeiun Sky [[bond-]]-5"
       ]
     },
     {

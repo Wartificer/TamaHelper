@@ -7,7 +7,7 @@
       "name": "Rainy Day, Floating Flowers",
       "text": [
         "[[Power+]]+10\nRice Shower [[bond+]]+5",
-        "[[sp+]]+40\n{link:Passing Pro} [[hint]]1\n[[chainEnd]]"
+        "[[sp+]]+40\n{link:Passing Pro} [[hint]]1\n[[chainEnd]] [color=#d61b02]End event chain[/color]"
       ]
     },
     {

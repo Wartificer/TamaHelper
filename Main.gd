@@ -149,10 +149,14 @@ func capture_screen():
 	if img == null:
 		return  # failed to capture
 
-	# Convert the Image to a Texture for display
+	## Convert the Image to a Texture for display
+	#var tex = ImageTexture.create_from_image(img)
+	#%ImagePreview.texture = tex
+	process_capture(img)
+
+func debug_date(img):
 	var tex = ImageTexture.create_from_image(img)
 	%ImagePreview.texture = tex
-	process_capture(img)
 
 ## Starts the program by capturing the screen
 func _on_start_button_pressed() -> void:
@@ -207,7 +211,7 @@ func _on_disable_anims_toggled(toggled_on: bool) -> void:
 
 var date_position_data = {
 		"text_areas": [
-			{"pos": Vector2(260, 38), "size": Vector2(180, 18)},
+			{"pos": Vector2(242, 196), "size": Vector2(370, 50)},
 		],
 		"outlined": true,
 		"debug_name": "Event"
@@ -215,7 +219,7 @@ var date_position_data = {
 var last_event_name = ""
 func process_capture(capture : Image):
 	# Always check date to keep timeline updated
-	var date_result : Array[String] = await ImageReader.get_image_texts(screen_size, date_position_data, capture)
+	var date_result : Array[String] = await ImageReader.get_image_texts(screen_size, date_position_data, capture, self)
 	print("//////////////////////////////")
 	print("Extracted date: " + (" - ").join(date_result))
 	update_date(date_result[0])
@@ -231,7 +235,7 @@ func process_capture(capture : Image):
 	#print("MATCHING: " + result.label)
 	
 	## If there is something matching on screen, get the text inside the designated areas
-	var texts_result : Array[String] = await ImageReader.get_image_texts(screen_size, result, capture)
+	var texts_result : Array[String] = await ImageReader.get_image_texts(screen_size, result, capture, self)
 	print("Extracted event name: " + (" - ").join(texts_result))
 	## If the text is the same as previous text shown, stop process
 	if texts_result == previous_texts_result:
@@ -453,6 +457,7 @@ func load_settings():
 	if saved_selected_scenario == "":
 		saved_selected_scenario = "URA Finale"
 	selected_scenario = find_dict_by_name(scenario_data, saved_selected_scenario)
+	date_position_data.text_areas = [{"pos": Vector2(selected_scenario.date_area.pos[0], selected_scenario.date_area.pos[1]), "size": Vector2(selected_scenario.date_area.size[0], selected_scenario.date_area.size[1])}]
 	if selected_scenario.has("name"):
 		set_selected_scenario_ui()
 
@@ -484,6 +489,8 @@ func set_timelines():
 	for node in timeline_item_nodes:
 		node.queue_free()
 	timeline_item_nodes = []
+	
+	await get_tree().create_timer(500)
 	
 	if !selected_scenario:
 		return

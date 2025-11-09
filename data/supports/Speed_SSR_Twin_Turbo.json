@@ -6,15 +6,15 @@
     {
       "name": "I'm Not Afraid!",
       "text": [
-        "[[Speed+]]+10\nTwin Turbo [[bond+]]+5\n[[or]]\n[[Energy-]]-10\n[[Speed+]]+10\n[[chainEnd]]",
-        "[[Energy+]]+20\n[[chainEnd]]"
+        "[[Speed+]]+10\nTwin Turbo [[bond+]]+5\n[[or]]\n[[Energy-]]-10\n[[Speed+]]+10\n[[chainEnd]] [color=#d61b02]End event chain[/color]",
+        "[[Energy+]]+20\n[[chainEnd]] [color=#d61b02]End event chain[/color]"
       ]
     },
     {
       "name": "Can't Catch Me!",
       "text": [
-        "[[Speed+]]+15\n{link:Leader's Pride} [[hint]]3\nTwin Turbo [[bond+]]+5\n[[or]]\n[[Energy-]]-10\n[[Speed+]]+10\n[[chainEnd]]",
-        "[[Energy+]]+25\n[[chainEnd]]"
+        "[[Speed+]]+15\n{link:Leader's Pride} [[hint]]3\nTwin Turbo [[bond+]]+5\n[[or]]\n[[Energy-]]-10\n[[Speed+]]+10\n[[chainEnd]] [color=#d61b02]End event chain[/color]",
+        "[[Energy+]]+25\n[[chainEnd]] [color=#d61b02]End event chain[/color]"
       ]
     },
     {
